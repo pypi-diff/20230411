@@ -274,3 +274,62 @@
 [2023-04-11 00:22:45] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:22:47] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:22:47] INFO root fetch - main [MainThread]: Store serial: [17651140]
+[2023-04-11 00:27:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651140]
+[2023-04-11 00:27:55] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 00:27:55] INFO root fetch - processPackages [np-zro]: New version: [0.1.0.post2] Old Version: [0.1.0.post1]
+[2023-04-11 00:27:55] INFO root fetch - processPackages [ldns-explorer]: New version: [1.3] Old Version: [1.2]
+[2023-04-11 00:27:55] INFO root fetch - processPackages [pandacolumns]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-11 00:27:55] INFO root fetch - processPackages [se-lib]: New version: [0.22] Old Version: [0.21]
+[2023-04-11 00:27:55] INFO root fetch - processPackages [llamacpp]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 00:27:55] INFO root fetch - processPackages [ldns-explorer]: Downloading https://files.pythonhosted.org/packages/e8/c2/f4a1d4736e9649770cb0181187604d8b8d33fa4717dd197c0da101fca5a2/ldns-explorer-1.3.tar.gz
+[2023-04-11 00:27:55] INFO root fetch - processPackages [np-zro]: Downloading https://files.pythonhosted.org/packages/b3/cf/18149074d1c00fb2e9de77769aa04faa6009f08179d988962e0c9fd7c17e/np_zro-0.1.0.post2.tar.gz
+[2023-04-11 00:27:55] INFO root fetch - processPackages [pandacolumns]: Downloading https://files.pythonhosted.org/packages/34/4d/a0aad1b1f2e45d5f0995100e9e71f43f9dd4801c37827302f8f0711880a6/pandacolumns-0.1.8.tar.gz
+[2023-04-11 00:27:55] INFO root fetch - processPackages [ldns-explorer]: executing diffoscope
+[2023-04-11 00:27:55] INFO root fetch - processPackages [ldns-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldns-explorer-1.2.tar.gz tmp/ldns-explorer-1.3.tar.gz --markdown 20230411/l/ldns-explorer/1.2-1.3/diff.md --exclude *.pyd
+[2023-04-11 00:27:55] INFO root fetch - processPackages [np-zro]: executing diffoscope
+[2023-04-11 00:27:55] INFO root fetch - processPackages [np-zro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_zro-0.1.0.post1.tar.gz tmp/np_zro-0.1.0.post2.tar.gz --markdown 20230411/n/np-zro/0.1.0.post1-0.1.0.post2/diff.md --exclude *.pyd
+[2023-04-11 00:27:55] INFO root fetch - processPackages [pandacolumns]: executing diffoscope
+[2023-04-11 00:27:55] INFO root fetch - processPackages [pandacolumns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandacolumns-0.1.7.tar.gz tmp/pandacolumns-0.1.8.tar.gz --markdown 20230411/p/pandacolumns/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-11 00:27:55] INFO root fetch - processPackages [se-lib]: Downloading https://files.pythonhosted.org/packages/de/96/157ecbe816e0cc59e3371218393569a0ca5c05d2228e570c0a32e0648d8b/se_lib-0.22.tar.gz
+[2023-04-11 00:27:55] INFO root fetch - processPackages [se-lib]: executing diffoscope
+[2023-04-11 00:27:55] INFO root fetch - processPackages [se-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/se_lib-0.21.tar.gz tmp/se_lib-0.22.tar.gz --markdown 20230411/s/se-lib/0.21-0.22/diff.md --exclude *.pyd
+[2023-04-11 00:27:56] INFO root fetch - processPackages [llamacpp]: executing diffoscope
+[2023-04-11 00:27:56] INFO root fetch - processPackages [llamacpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamacpp-0.1.8.tar.gz tmp/llamacpp-0.1.9.tar.gz --markdown 20230411/l/llamacpp/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 00:27:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:27:56] INFO root fetch - processPackages [stogui]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-11 00:27:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:27:57] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 00:27:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:27:57] INFO root fetch - processPackages [stogui]: Downloading https://files.pythonhosted.org/packages/e9/2f/54f770fbb84eb33cd915779e95021d4714880817226c3f9f736893e203a0/stogui-0.1.3.tar.gz
+[2023-04-11 00:27:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:27:57] INFO root fetch - processPackages [tsidpy]: New version: [1.1.0.0] Old Version: [1.0.0.5]
+[2023-04-11 00:27:57] INFO root fetch - processPackages [colorist]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-11 00:27:57] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-04-11 00:27:57] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 00:27:57] INFO root fetch - processPackages [tsidpy]: Downloading https://files.pythonhosted.org/packages/29/04/034583e143fcf3bb866f0648c04bbf1b5c599bc3e16fa762f3d72d9b3886/tsidpy-1.0.0.5.tar.gz
+[2023-04-11 00:27:57] INFO root fetch - processPackages [colorist]: Downloading https://files.pythonhosted.org/packages/e4/8b/9a56eb18f99e521c3e6cc749751bbe68d86c4af22454f8baa5221005946e/colorist-1.3.0.tar.gz
+[2023-04-11 00:27:57] INFO root fetch - processPackages [tsidpy]: Downloading https://files.pythonhosted.org/packages/7d/89/7596c2465856016ae4e2215862203bc545034f3b0abd0051392b11870fc3/tsidpy-1.1.0.0.tar.gz
+[2023-04-11 00:27:57] INFO root fetch - processPackages [tsidpy]: executing diffoscope
+[2023-04-11 00:27:57] INFO root fetch - processPackages [tsidpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsidpy-1.0.0.5.tar.gz tmp/tsidpy-1.1.0.0.tar.gz --markdown 20230411/t/tsidpy/1.0.0.5-1.1.0.0/diff.md --exclude *.pyd
+[2023-04-11 00:27:57] INFO root fetch - processPackages [colorist]: Downloading https://files.pythonhosted.org/packages/ca/56/85ea91628e88b65f658e42e653e0938362d027c484d1510f86c3d4d0ac89/colorist-1.4.0.tar.gz
+[2023-04-11 00:27:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:27:57] INFO root fetch - processPackages [colorist]: executing diffoscope
+[2023-04-11 00:27:57] INFO root fetch - processPackages [colorist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colorist-1.3.0.tar.gz tmp/colorist-1.4.0.tar.gz --markdown 20230411/c/colorist/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-11 00:27:57] INFO root fetch - processPackages [JUtils]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-11 00:27:58] INFO root fetch - processPackages [JUtils]: Downloading https://files.pythonhosted.org/packages/9e/78/b87209a1168443848f48d3ce5337a525f179cbc998e7114382b41024e96a/JUtils-0.0.7.tar.gz
+[2023-04-11 00:27:58] INFO root fetch - processPackages [JUtils]: Downloading https://files.pythonhosted.org/packages/a1/11/2bbe1e3964828efc7713c654321a2f8ca9d3c6a2118e08e768c7a9149296/JUtils-0.0.8.tar.gz
+[2023-04-11 00:27:58] INFO root fetch - processPackages [JUtils]: executing diffoscope
+[2023-04-11 00:27:58] INFO root fetch - processPackages [JUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JUtils-0.0.7.tar.gz tmp/JUtils-0.0.8.tar.gz --markdown 20230411/J/JUtils/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-11 00:27:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:27:58] INFO root fetch - processPackages [injective-py]: New version: [0.6.1.3] Old Version: [0.6.1.2]
+[2023-04-11 00:27:58] INFO root fetch - processPackages [injective-py]: executing diffoscope
+[2023-04-11 00:27:58] INFO root fetch - processPackages [injective-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/injective-py-0.6.1.2.tar.gz tmp/injective-py-0.6.1.3.tar.gz --markdown 20230411/i/injective-py/0.6.1.2-0.6.1.3/diff.md --exclude *.pyd
+[2023-04-11 00:27:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:27:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:27:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:27:59] INFO root fetch - processPackages [stogui]: Downloading https://files.pythonhosted.org/packages/04/01/a28f1ee827c0090776b7e25a7106f0515ce9ad97f4d02aca1dded8b9bcfe/stogui-0.1.4.tar.gz
+[2023-04-11 00:27:59] INFO root fetch - processPackages [stogui]: executing diffoscope
+[2023-04-11 00:27:59] INFO root fetch - processPackages [stogui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stogui-0.1.3.tar.gz tmp/stogui-0.1.4.tar.gz --markdown 20230411/s/stogui/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-11 00:28:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:28:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:28:02] INFO root fetch - main [MainThread]: Store serial: [17651211]
