@@ -1103,3 +1103,32 @@
 [2023-04-11 01:44:06] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:44:07] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:44:07] INFO root fetch - main [MainThread]: Store serial: [17651725]
+[2023-04-11 01:49:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651725]
+[2023-04-11 01:49:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-11 01:49:15] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 01:49:15] INFO root fetch - processPackages [dcTrackClient]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 01:49:15] INFO root fetch - processPackages [dcTrackClient]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 01:49:15] INFO root fetch - processPackages [py-shiftmanager]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 01:49:15] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-04-11 01:49:15] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230411/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 01:49:15] INFO root fetch - processPackages [ddtrace]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-04-11 01:49:15] INFO root fetch - processPackages [py-shiftmanager]: Downloading https://files.pythonhosted.org/packages/c0/a1/b5892f820da4db22541ea0dad02253f08ba6fbca3d709884b229c073e7c1/py_shiftmanager-0.1.0.tar.gz
+[2023-04-11 01:49:15] INFO root fetch - processPackages [dcTrackClient]: Downloading https://files.pythonhosted.org/packages/70/1b/c5713e1ae7cdabcc635768532e42253be5fe811144a62e820c139cb983df/dctrackclient-0.0.2.tar.gz
+[2023-04-11 01:49:15] INFO root fetch - processPackages [dcTrackClient]: Downloading https://files.pythonhosted.org/packages/70/1b/c5713e1ae7cdabcc635768532e42253be5fe811144a62e820c139cb983df/dctrackclient-0.0.2.tar.gz
+[2023-04-11 01:49:15] INFO root fetch - processPackages [ddtrace]: Downloading https://files.pythonhosted.org/packages/21/1a/5d9375e10951c5aeb4fe1d8c7ce546d69e4cd6536ac63226f4dd8a7ba36c/ddtrace-1.9.4.tar.gz
+[2023-04-11 01:49:15] INFO root fetch - processPackages [dcTrackClient]: executing diffoscope
+[2023-04-11 01:49:15] INFO root fetch - processPackages [dcTrackClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dctrackclient-0.0.1.tar.gz tmp/dctrackclient-0.0.2.tar.gz --markdown 20230411/d/dcTrackClient/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 01:49:15] INFO root fetch - processPackages [dcTrackClient]: executing diffoscope
+[2023-04-11 01:49:15] INFO root fetch - processPackages [dcTrackClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dctrackclient-0.0.1.tar.gz tmp/dctrackclient-0.0.2.tar.gz --markdown 20230411/d/dcTrackClient/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 01:49:16] INFO root fetch - processPackages [py-shiftmanager]: Downloading https://files.pythonhosted.org/packages/28/2f/2f55b6243e187227b9f08c0acb5b591a3a33c946b1452d87da1ef3967832/py_shiftmanager-0.1.1.tar.gz
+[2023-04-11 01:49:16] INFO root fetch - processPackages [py-shiftmanager]: executing diffoscope
+[2023-04-11 01:49:16] INFO root fetch - processPackages [py-shiftmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_shiftmanager-0.1.0.tar.gz tmp/py_shiftmanager-0.1.1.tar.gz --markdown 20230411/p/py-shiftmanager/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 01:49:16] INFO root fetch - processPackages [ddtrace]: Downloading https://files.pythonhosted.org/packages/14/f5/795b94efa7e39d2ba0615ced082881ff874c2716015ae566b6238aa45e32/ddtrace-1.9.5.tar.gz
+[2023-04-11 01:49:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:49:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:49:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:49:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:49:17] INFO root fetch - processPackages [ddtrace]: executing diffoscope
+[2023-04-11 01:49:17] INFO root fetch - processPackages [ddtrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddtrace-1.9.4.tar.gz tmp/ddtrace-1.9.5.tar.gz --markdown 20230411/d/ddtrace/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-04-11 01:50:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:50:00] INFO root fetch - main [MainThread]: Store serial: [17651807]
