@@ -370,3 +370,22 @@
 [2023-04-11 00:33:13] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:33:17] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:33:17] INFO root fetch - main [MainThread]: Store serial: [17651232]
+[2023-04-11 00:38:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651232]
+[2023-04-11 00:38:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-11 00:38:25] INFO root fetch - processPackages [scikit-duplo]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 00:38:25] INFO root fetch - processPackages [highcharts-stock]: New version: [1.0.0rc7] Old Version: [1.0.0rc6]
+[2023-04-11 00:38:25] INFO root fetch - processPackages [pandacolumns]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 00:38:25] INFO root fetch - processPackages [scikit-duplo]: Downloading https://files.pythonhosted.org/packages/d2/69/48ab67fe3a7fbfad64c26d794fe8b50753bea30fef78cbdbf288ed9399c7/scikit-duplo-0.1.3.tar.gz
+[2023-04-11 00:38:25] INFO root fetch - processPackages [highcharts-stock]: Downloading https://files.pythonhosted.org/packages/2f/87/d4959f3e0d1cec8b82ac021284866ed834dac053d97ce6eefac6637b9f63/highcharts_stock-1.0.0rc6.tar.gz
+[2023-04-11 00:38:25] INFO root fetch - processPackages [pandacolumns]: Downloading https://files.pythonhosted.org/packages/67/15/e81c655fb31eab641cf1e6200238aefded692a6c58b2320cba40e23cd99e/pandacolumns-0.1.9.tar.gz
+[2023-04-11 00:38:25] INFO root fetch - processPackages [scikit-duplo]: executing diffoscope
+[2023-04-11 00:38:25] INFO root fetch - processPackages [scikit-duplo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-duplo-0.1.2.tar.gz tmp/scikit-duplo-0.1.3.tar.gz --markdown 20230411/s/scikit-duplo/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 00:38:25] INFO root fetch - processPackages [pandacolumns]: executing diffoscope
+[2023-04-11 00:38:25] INFO root fetch - processPackages [pandacolumns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandacolumns-0.1.8.tar.gz tmp/pandacolumns-0.1.9.tar.gz --markdown 20230411/p/pandacolumns/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 00:38:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:38:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:38:31] INFO root fetch - processPackages [highcharts-stock]: Downloading https://files.pythonhosted.org/packages/17/cb/54ca9670a9309b6dd06a76974789dd0b949ec90e80d76ee78a860a4d4372/highcharts_stock-1.0.0rc7.tar.gz
+[2023-04-11 00:38:36] INFO root fetch - processPackages [highcharts-stock]: executing diffoscope
+[2023-04-11 00:38:36] INFO root fetch - processPackages [highcharts-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highcharts_stock-1.0.0rc6.tar.gz tmp/highcharts_stock-1.0.0rc7.tar.gz --markdown 20230411/h/highcharts-stock/1.0.0rc6-1.0.0rc7/diff.md --exclude *.pyd
+[2023-04-11 00:39:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:39:11] INFO root fetch - main [MainThread]: Store serial: [17651240]
