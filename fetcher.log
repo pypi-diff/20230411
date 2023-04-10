@@ -447,3 +447,36 @@
 [2023-04-11 00:44:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:44:58] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:44:58] INFO root fetch - main [MainThread]: Store serial: [17651273]
+[2023-04-11 00:50:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651273]
+[2023-04-11 00:50:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-11 00:50:08] INFO root fetch - processPackages [tiny-cli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 00:50:08] INFO root fetch - processPackages [llamabot]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 00:50:08] INFO root fetch - processPackages [se-lib]: New version: [0.23] Old Version: [0.22]
+[2023-04-11 00:50:08] INFO root fetch - processPackages [noisepy-seis]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-11 00:50:08] INFO root fetch - processPackages [gradio]: New version: [3.9.1] Old Version: [3.9]
+[2023-04-11 00:50:08] INFO root fetch - processPackages [tiny-cli]: executing diffoscope
+[2023-04-11 00:50:08] INFO root fetch - processPackages [tiny-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny-cli-1.0.8.tar.gz tmp/tiny-cli-1.0.9.tar.gz --markdown 20230411/t/tiny-cli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 00:50:08] INFO root fetch - processPackages [llamabot]: Downloading https://files.pythonhosted.org/packages/7d/32/8d3cd9f3a2182ffff17ad2f216a32a6d243cdf3ea9a5a4aaff539f25d722/llamabot-0.0.4.tar.gz
+[2023-04-11 00:50:08] INFO root fetch - processPackages [gradio]: Downloading https://files.pythonhosted.org/packages/b2/2d/f8dc88b392cdaac54b5bf6b56af321211f705494f4a0b2a1589717c06ff5/gradio-3.9.tar.gz
+[2023-04-11 00:50:08] INFO root fetch - processPackages [se-lib]: Downloading https://files.pythonhosted.org/packages/21/b7/a6e1cdb822992099e3193675a7876e26b9613fd184b337e6816f1771514d/se_lib-0.23.tar.gz
+[2023-04-11 00:50:08] INFO root fetch - processPackages [noisepy-seis]: Downloading https://files.pythonhosted.org/packages/e5/64/cb3534a28a4c4522e2c457124d36c54cfe7108dce59e6ba4db78a661982c/noisepy_seis-0.5.9.tar.gz
+[2023-04-11 00:50:08] INFO root fetch - processPackages [se-lib]: executing diffoscope
+[2023-04-11 00:50:08] INFO root fetch - processPackages [se-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/se_lib-0.22.tar.gz tmp/se_lib-0.23.tar.gz --markdown 20230411/s/se-lib/0.22-0.23/diff.md --exclude *.pyd
+[2023-04-11 00:50:08] INFO root fetch - processPackages [noisepy-seis]: executing diffoscope
+[2023-04-11 00:50:08] INFO root fetch - processPackages [noisepy-seis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noisepy_seis-0.5.8.tar.gz tmp/noisepy_seis-0.5.9.tar.gz --markdown 20230411/n/noisepy-seis/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-11 00:50:08] INFO root fetch - processPackages [llamabot]: Downloading https://files.pythonhosted.org/packages/2e/ab/4eb8852ada406bc9314896a8147ae24df825887adcc4d883c0ea8c81a87f/llamabot-0.0.5.tar.gz
+[2023-04-11 00:50:08] INFO root fetch - processPackages [llamabot]: executing diffoscope
+[2023-04-11 00:50:08] INFO root fetch - processPackages [llamabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llamabot-0.0.4.tar.gz tmp/llamabot-0.0.5.tar.gz --markdown 20230411/l/llamabot/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 00:50:08] WARNING root fetch - processPackages [gradio]: Skipping package: exceeds size limit 12444246>=10485760
+[2023-04-11 00:50:08] INFO root fetch - main [MainThread]: error
+[2023-04-11 00:50:08] INFO root fetch - processPackages [umzz]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-11 00:50:09] INFO root fetch - processPackages [umzz]: Downloading https://files.pythonhosted.org/packages/d9/a6/8dfa42ee455033dc87c41c1d81679c3e88da0d2042ed3553990485297a8b/umzz-0.0.0.tar.gz
+[2023-04-11 00:50:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:50:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:50:09] INFO root fetch - processPackages [umzz]: Downloading https://files.pythonhosted.org/packages/03/fd/8b4eaa91c807e0d5ece55bd7a8a39586e350712de19790409fd83b92675a/umzz-0.0.1.tar.gz
+[2023-04-11 00:50:09] INFO root fetch - processPackages [umzz]: executing diffoscope
+[2023-04-11 00:50:09] INFO root fetch - processPackages [umzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/umzz-0.0.0.tar.gz tmp/umzz-0.0.1.tar.gz --markdown 20230411/u/umzz/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-11 00:50:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:50:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:50:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:50:10] INFO root fetch - main [MainThread]: Store serial: [17651291]
