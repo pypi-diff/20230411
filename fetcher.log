@@ -916,3 +916,48 @@
 [2023-04-11 01:27:48] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:28:23] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:28:23] INFO root fetch - main [MainThread]: Store serial: [17651566]
+[2023-04-11 01:33:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651566]
+[2023-04-11 01:33:31] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 01:33:31] INFO root fetch - processPackages [neon-skill-data-controls]: New version: [0.3.1a0] Old Version: [0.3.0]
+[2023-04-11 01:33:31] INFO root fetch - processPackages [dcTrackClient]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-04-11 01:33:31] WARNING root fetch - processPackages [StableDiffusionAPI]: Skipping, unable to determine old version
+[2023-04-11 01:33:31] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:33:31] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.269] Old Version: [0.3.268]
+[2023-04-11 01:33:31] INFO root fetch - processPackages [pantsbuild.pants]: New version: [2.9.2rc0] Old Version: [2.9.2]
+[2023-04-11 01:33:31] WARNING root fetch - processPackages [ferre]: Skipping, unable to determine old version
+[2023-04-11 01:33:31] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:33:31] INFO root fetch - processPackages [pytsql]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-11 01:33:31] INFO root fetch - processPackages [neon-skill-data-controls]: Downloading https://files.pythonhosted.org/packages/90/67/c42f7448918a0f1d54d3f832919a30db24e2a75d6afebf5f0fab1da88754/neon_skill_data_controls-0.3.0-py3-none-any.whl
+[2023-04-11 01:33:31] INFO root fetch - processPackages [dcTrackClient]: Downloading https://files.pythonhosted.org/packages/63/c7/994bc346b755d9df52514a7182dcbdd2dc7febf8d92865923064f617d797/dctrackclient-0.0.0.tar.gz
+[2023-04-11 01:33:31] INFO root fetch - processPackages [pantsbuild.pants]: Downloading https://files.pythonhosted.org/packages/9d/fb/48c0150109e3f3706e9104d71fa88777a017fbbdb74c6e6fe4890559df4a/pantsbuild.pants-2.9.2-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-11 01:33:31] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/f1/b5/9b23f894e013e80c790b872c084f853e7928606a62fd2e5a0975e6c9c260/pepperize.cdk-ses-smtp-credentials-0.3.269.tar.gz
+[2023-04-11 01:33:31] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-11 01:33:31] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.268.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.269.tar.gz --markdown 20230411/p/pepperize.cdk-ses-smtp-credentials/0.3.268-0.3.269/diff.md --exclude *.pyd
+[2023-04-11 01:33:31] INFO root fetch - processPackages [pytsql]: Downloading https://files.pythonhosted.org/packages/0d/20/0e56085b1a578534c26b6730458dde9b386d1a17b9cfa34612ede73305d5/pytsql-1.2.0.tar.gz
+[2023-04-11 01:33:31] INFO root fetch - processPackages [neon-skill-data-controls]: Downloading https://files.pythonhosted.org/packages/6f/e9/28d932cb14caafaf7d7e610c16c6ba4f1fa9197966609ea82333113a58da/neon_skill_data_controls-0.3.1a0-py3-none-any.whl
+[2023-04-11 01:33:32] INFO root fetch - processPackages [dcTrackClient]: Downloading https://files.pythonhosted.org/packages/de/8a/65699f58151d78309be84fd9e7ea3d0c33f151435a27c7cbdf762d8b502c/dctrackclient-0.0.1.tar.gz
+[2023-04-11 01:33:32] INFO root fetch - processPackages [dcTrackClient]: executing diffoscope
+[2023-04-11 01:33:32] INFO root fetch - processPackages [dcTrackClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dctrackclient-0.0.0.tar.gz tmp/dctrackclient-0.0.1.tar.gz --markdown 20230411/d/dcTrackClient/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-04-11 01:33:32] INFO root fetch - processPackages [neon-skill-data-controls]: executing diffoscope
+[2023-04-11 01:33:32] INFO root fetch - processPackages [neon-skill-data-controls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_skill_data_controls-0.3.0-py3-none-any.whl.zip tmp/neon_skill_data_controls-0.3.1a0-py3-none-any.whl.zip --markdown 20230411/n/neon-skill-data-controls/0.3.0-0.3.1a0/diff.md --exclude *.pyd
+[2023-04-11 01:33:32] WARNING root fetch - processPackages [pantsbuild.pants]: Skipping package: exceeds size limit 43333544>=10485760
+[2023-04-11 01:33:32] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:33:32] INFO root fetch - processPackages [galaxypad]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 01:33:32] INFO root fetch - processPackages [galaxypad]: executing diffoscope
+[2023-04-11 01:33:32] INFO root fetch - processPackages [galaxypad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galaxypad-1.0.0-py3-none-any.whl.zip tmp/galaxypad-1.0.1-py3-none-any.whl.zip --markdown 20230411/g/galaxypad/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 01:33:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:33:33] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 01:33:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:33:33] INFO root fetch - processPackages [ncbi-datasets-pylib]: New version: [9.1.0] Old Version: [9.0.0]
+[2023-04-11 01:33:33] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 01:33:33] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 01:33:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:33:33] INFO root fetch - processPackages [pytsql]: Downloading https://files.pythonhosted.org/packages/99/40/12382abb9019e06451b03e25d4b7e3c6f1b56c211bfe89caa4b1e4eaaf67/pytsql-1.2.1-cp37-cp37m-manylinux_2_17_i686.manylinux2014_i686.whl
+[2023-04-11 01:33:33] INFO root fetch - processPackages [ncbi-datasets-pylib]: executing diffoscope
+[2023-04-11 01:33:33] INFO root fetch - processPackages [ncbi-datasets-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncbi-datasets-pylib-9.0.0.tar.gz tmp/ncbi-datasets-pylib-9.1.0.tar.gz --markdown 20230411/n/ncbi-datasets-pylib/9.0.0-9.1.0/diff.md --exclude *.pyd
+[2023-04-11 01:33:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:33:34] WARNING root fetch - processPackages [pytsql]: Skipping package: exceeds size limit 20880019>=10485760
+[2023-04-11 01:33:34] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:33:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:33:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:33:36] INFO root fetch - main [MainThread]: Store serial: [17651612]
