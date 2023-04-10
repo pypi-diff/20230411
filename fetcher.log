@@ -744,3 +744,55 @@
 [2023-04-11 01:16:53] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:16:54] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:16:54] INFO root fetch - main [MainThread]: Store serial: [17651457]
+[2023-04-11 01:21:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651457]
+[2023-04-11 01:22:02] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 01:22:02] INFO root fetch - processPackages [datasette-sqlite-vss]: New version: [0.0.3] Old Version: [0.0.2a5]
+[2023-04-11 01:22:02] INFO root fetch - processPackages [poke-env]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-11 01:22:02] INFO root fetch - processPackages [sqlite-vss]: New version: [0.0.3] Old Version: [0.0.2a5]
+[2023-04-11 01:22:02] INFO root fetch - processPackages [telescope-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 01:22:02] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.267] Old Version: [0.3.266]
+[2023-04-11 01:22:02] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-11 01:22:02] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.266.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.267.tar.gz --markdown 20230411/p/pepperize.cdk-ses-smtp-credentials/0.3.266-0.3.267/diff.md --exclude *.pyd
+[2023-04-11 01:22:02] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/23/29/fb02044c2e56c862e4bbbe1cd4958c0f11da256bf7cd89d0fa8a8842af83/datasette_sqlite_vss-0.0.3-py3-none-any.whl
+[2023-04-11 01:22:02] INFO root fetch - processPackages [poke-env]: Downloading https://files.pythonhosted.org/packages/f6/e5/f39b608e30aadd4086eee2c0655ab5491b79dc695ea49f04081dae4c3e85/poke_env-0.5.0.tar.gz
+[2023-04-11 01:22:02] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/f9/86/05a96ba0ce8a7059865926d3765b8b92541540513f6be0b1e52e2744b4d6/sqlite_vss-0.0.3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-04-11 01:22:02] INFO root fetch - processPackages [telescope-sdk]: executing diffoscope
+[2023-04-11 01:22:02] INFO root fetch - processPackages [telescope-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telescope_sdk-0.1.8.tar.gz tmp/telescope_sdk-0.1.9.tar.gz --markdown 20230411/t/telescope-sdk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 01:22:03] INFO root fetch - processPackages [datasette-sqlite-vss]: executing diffoscope
+[2023-04-11 01:22:03] INFO root fetch - processPackages [datasette-sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vss-0.0.2a5-py3-none-any.whl.zip tmp/datasette_sqlite_vss-0.0.3-py3-none-any.whl.zip --markdown 20230411/d/datasette-sqlite-vss/0.0.2a5-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 01:22:03] INFO root fetch - processPackages [sqlite-vss]: executing diffoscope
+[2023-04-11 01:22:03] INFO root fetch - processPackages [sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vss-0.0.2a5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_vss-0.0.3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230411/s/sqlite-vss/0.0.2a5-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 01:22:03] INFO root fetch - processPackages [poke-env]: Downloading https://files.pythonhosted.org/packages/4b/8a/aa696b396c27bec71794f788fb14b3cfdb5c994f21d73dba3b1e43225fbf/poke_env-0.6.0.tar.gz
+[2023-04-11 01:22:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:22:03] WARNING root fetch - processPackages [shard-client]: Skipping, unable to determine old version
+[2023-04-11 01:22:03] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:22:03] INFO root fetch - processPackages [RogueORM]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 01:22:04] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:22:04] INFO root fetch - processPackages [flowtask]: New version: [4.3.1] Old Version: [4.3.0]
+[2023-04-11 01:22:04] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:22:04] WARNING root fetch - processPackages [dcTrackClient]: Skipping, unable to determine old version
+[2023-04-11 01:22:04] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:22:04] INFO root fetch - processPackages [RogueORM]: Downloading https://files.pythonhosted.org/packages/f4/fd/f3de8abcbe06b3623c9139274ef873c8aa8d85222806696ec026d7e3590a/RogueORM-0.0.3.tar.gz
+[2023-04-11 01:22:04] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-11 01:22:04] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-11 01:22:04] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230411/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-11 01:22:04] INFO root fetch - processPackages [flowtask]: Downloading https://files.pythonhosted.org/packages/4f/12/950e280df4a78dc765b8b869ceee0c9ec2b700bb50dcb112e9224a0cac2f/flowtask-4.3.0.tar.gz
+[2023-04-11 01:22:04] INFO root fetch - processPackages [RogueORM]: executing diffoscope
+[2023-04-11 01:22:04] INFO root fetch - processPackages [RogueORM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RogueORM-0.0.2.tar.gz tmp/RogueORM-0.0.3.tar.gz --markdown 20230411/R/RogueORM/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 01:22:04] INFO root fetch - processPackages [flowtask]: Downloading https://files.pythonhosted.org/packages/18/34/334223d16a8132e1fa319577ea0ee34d1f7dc89cfb302be7c669334830bc/flowtask-4.3.1.tar.gz
+[2023-04-11 01:22:04] INFO root fetch - processPackages [poke-env]: executing diffoscope
+[2023-04-11 01:22:04] INFO root fetch - processPackages [poke-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poke_env-0.5.0.tar.gz tmp/poke_env-0.6.0.tar.gz --markdown 20230411/p/poke-env/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-11 01:22:04] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-04-11 01:22:04] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.0.tar.gz tmp/flowtask-4.3.1.tar.gz --markdown 20230411/f/flowtask/4.3.0-4.3.1/diff.md --exclude *.pyd
+[2023-04-11 01:22:05] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:22:05] INFO root fetch - processPackages [django-mjml]: New version: [1.1] Old Version: [1.0]
+[2023-04-11 01:22:05] INFO root fetch - processPackages [django-mjml]: Downloading https://files.pythonhosted.org/packages/c7/82/aaebfc8eac92d3f3e09b1f5437eae024450ae620e112f7d11b0fce03ed35/django-mjml-1.0.tar.gz
+[2023-04-11 01:22:06] INFO root fetch - processPackages [django-mjml]: Downloading https://files.pythonhosted.org/packages/75/e4/9f35561f0020eaa15a211e27dd155f17343fde1cd84195cadd95c79a1537/django-mjml-1.1.tar.gz
+[2023-04-11 01:22:06] INFO root fetch - processPackages [django-mjml]: executing diffoscope
+[2023-04-11 01:22:06] INFO root fetch - processPackages [django-mjml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mjml-1.0.tar.gz tmp/django-mjml-1.1.tar.gz --markdown 20230411/d/django-mjml/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-11 01:22:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:22:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:22:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:22:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:22:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:22:28] INFO root fetch - main [MainThread]: Store serial: [17651497]
