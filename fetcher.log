@@ -333,3 +333,40 @@
 [2023-04-11 00:28:01] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:28:02] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:28:02] INFO root fetch - main [MainThread]: Store serial: [17651211]
+[2023-04-11 00:33:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651211]
+[2023-04-11 00:33:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-11 00:33:10] INFO root fetch - processPackages [sqlalchemy-easy-softdelete]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-11 00:33:10] INFO root fetch - processPackages [pulumi-rancher2]: New version: [3.9.0a1674002293] Old Version: [3.9.0a1673556304]
+[2023-04-11 00:33:10] INFO root fetch - processPackages [cloudlab-client]: New version: [0.1.79] Old Version: [0.1.73]
+[2023-04-11 00:33:10] INFO root fetch - processPackages [rapidpredict]: New version: [0.0.0.2] Old Version: [0.0.0.1]
+[2023-04-11 00:33:10] INFO root fetch - processPackages [noisepy-seis]: New version: [0.5.8] Old Version: [0.5.3]
+[2023-04-11 00:33:10] INFO root fetch - processPackages [pulumi-rancher2]: Downloading https://files.pythonhosted.org/packages/fb/79/f9cda56b44184325f9558dd255b67ce2e31688446d81f02dd2537932f8e1/pulumi_rancher2-3.9.0a1673556304.tar.gz
+[2023-04-11 00:33:10] INFO root fetch - processPackages [sqlalchemy-easy-softdelete]: Downloading https://files.pythonhosted.org/packages/45/b0/44f527559e533d0e4f9ca2b0c8f050e9865738a3288aaedeec44b51cfc2c/sqlalchemy_easy_softdelete-0.7.1.tar.gz
+[2023-04-11 00:33:10] INFO root fetch - processPackages [cloudlab-client]: Downloading https://files.pythonhosted.org/packages/8a/f6/47c88ba34762a44b6d439fb3b546d00958dcc11aabe0cdd53d7758428aaf/cloudlab_client-0.1.73.tar.gz
+[2023-04-11 00:33:10] INFO root fetch - processPackages [rapidpredict]: Downloading https://files.pythonhosted.org/packages/e4/b5/a124f29d13e6f8134247ba8e1809978e9298d49bf31e62bd28aff2a00c55/rapidpredict-0.0.0.1.tar.gz
+[2023-04-11 00:33:10] INFO root fetch - processPackages [sqlalchemy-easy-softdelete]: executing diffoscope
+[2023-04-11 00:33:10] INFO root fetch - processPackages [sqlalchemy-easy-softdelete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy_easy_softdelete-0.7.0.tar.gz tmp/sqlalchemy_easy_softdelete-0.7.1.tar.gz --markdown 20230411/s/sqlalchemy-easy-softdelete/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-11 00:33:11] INFO root fetch - processPackages [noisepy-seis]: Downloading https://files.pythonhosted.org/packages/c8/0e/a08caad6be7effebc2be28d492e83ed088bc17a11acce586e50641fdfcd2/noisepy_seis-0.5.8.tar.gz
+[2023-04-11 00:33:11] INFO root fetch - processPackages [rapidpredict]: Downloading https://files.pythonhosted.org/packages/c9/2a/f41552e23eca434879adaa5ca8dfd0c3b96133a1f9a5efef0deb39e2faa5/rapidpredict-0.0.0.2.tar.gz
+[2023-04-11 00:33:11] INFO root fetch - processPackages [noisepy-seis]: executing diffoscope
+[2023-04-11 00:33:11] INFO root fetch - processPackages [noisepy-seis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noisepy_seis-0.5.3.tar.gz tmp/noisepy_seis-0.5.8.tar.gz --markdown 20230411/n/noisepy-seis/0.5.3-0.5.8/diff.md --exclude *.pyd
+[2023-04-11 00:33:11] INFO root fetch - processPackages [rapidpredict]: executing diffoscope
+[2023-04-11 00:33:11] INFO root fetch - processPackages [rapidpredict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpredict-0.0.0.1.tar.gz tmp/rapidpredict-0.0.0.2.tar.gz --markdown 20230411/r/rapidpredict/0.0.0.1-0.0.0.2/diff.md --exclude *.pyd
+[2023-04-11 00:33:11] INFO root fetch - processPackages [cloudlab-client]: Downloading https://files.pythonhosted.org/packages/71/73/a567fa950f7b7074332bfe709ecdf87e85c52c0d58267905d32b26cfe9c7/cloudlab_client-0.1.79.tar.gz
+[2023-04-11 00:33:11] INFO root fetch - processPackages [cloudlab-client]: executing diffoscope
+[2023-04-11 00:33:11] INFO root fetch - processPackages [cloudlab-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudlab_client-0.1.73.tar.gz tmp/cloudlab_client-0.1.79.tar.gz --markdown 20230411/c/cloudlab-client/0.1.73-0.1.79/diff.md --exclude *.pyd
+[2023-04-11 00:33:11] INFO root fetch - processPackages [pulumi-rancher2]: Downloading https://files.pythonhosted.org/packages/09/8f/5de752a84872417f0e941a7cb9663f7c950be789e844fe1886e2dfdd07f4/pulumi_rancher2-3.9.0a1674002293.tar.gz
+[2023-04-11 00:33:11] INFO root fetch - processPackages [pulumi-rancher2]: executing diffoscope
+[2023-04-11 00:33:11] INFO root fetch - processPackages [pulumi-rancher2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rancher2-3.9.0a1673556304.tar.gz tmp/pulumi_rancher2-3.9.0a1674002293.tar.gz --markdown 20230411/p/pulumi-rancher2/3.9.0a1673556304-3.9.0a1674002293/diff.md --exclude *.pyd
+[2023-04-11 00:33:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:33:12] INFO root fetch - processPackages [yanniszark-common]: New version: [0.1.79] Old Version: [0.1.73]
+[2023-04-11 00:33:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:33:12] INFO root fetch - processPackages [yanniszark-common]: Downloading https://files.pythonhosted.org/packages/3d/05/d33bdc9e9913707990a9651bb3813e84a5d5c80ed39a49ba79e79905dec1/yanniszark_common-0.1.73.tar.gz
+[2023-04-11 00:33:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:33:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:33:12] INFO root fetch - processPackages [yanniszark-common]: Downloading https://files.pythonhosted.org/packages/47/0b/2ba5752498081c947a9ab69861fb2e26a9dc813b8e4210a28a7e886ece77/yanniszark_common-0.1.79.tar.gz
+[2023-04-11 00:33:12] INFO root fetch - processPackages [yanniszark-common]: executing diffoscope
+[2023-04-11 00:33:12] INFO root fetch - processPackages [yanniszark-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yanniszark_common-0.1.73.tar.gz tmp/yanniszark_common-0.1.79.tar.gz --markdown 20230411/y/yanniszark-common/0.1.73-0.1.79/diff.md --exclude *.pyd
+[2023-04-11 00:33:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:33:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:33:17] INFO root fetch - main [MainThread]: Store serial: [17651232]
