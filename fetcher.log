@@ -697,3 +697,50 @@
 [2023-04-11 01:11:40] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:11:41] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:11:41] INFO root fetch - main [MainThread]: Store serial: [17651424]
+[2023-04-11 01:16:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651424]
+[2023-04-11 01:16:48] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 01:16:48] INFO root fetch - processPackages [legion-utils]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-11 01:16:48] INFO root fetch - processPackages [tiny-cli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 01:16:48] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.266] Old Version: [0.3.265]
+[2023-04-11 01:16:48] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-11 01:16:48] INFO root fetch - processPackages [emmet-core]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-11 01:16:49] INFO root fetch - processPackages [tiny-cli]: executing diffoscope
+[2023-04-11 01:16:49] INFO root fetch - processPackages [tiny-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny-cli-1.0.8.tar.gz tmp/tiny-cli-1.0.9.tar.gz --markdown 20230411/t/tiny-cli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 01:16:49] INFO root fetch - processPackages [legion-utils]: Downloading https://files.pythonhosted.org/packages/71/5f/ea751ac90493e53a5c9e30d5971d2a7988d985268607ed23841177165269/legion-utils-0.2.8.tar.gz
+[2023-04-11 01:16:49] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-11 01:16:49] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.8.tar.gz tmp/nudecrawler-0.3.9.tar.gz --markdown 20230411/n/nudecrawler/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-11 01:16:49] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/62/4a/cda3de399a9d863d091c93a3aeb551c7e5fc49df9eab4cf6f8785fd5cee2/pepperize.cdk-ses-smtp-credentials-0.3.266.tar.gz
+[2023-04-11 01:16:49] INFO root fetch - processPackages [emmet-core]: executing diffoscope
+[2023-04-11 01:16:49] INFO root fetch - processPackages [emmet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmet-core-0.9.2.tar.gz tmp/emmet-core-0.9.3.tar.gz --markdown 20230411/e/emmet-core/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-11 01:16:49] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-11 01:16:49] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.265.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.266.tar.gz --markdown 20230411/p/pepperize.cdk-ses-smtp-credentials/0.3.265-0.3.266/diff.md --exclude *.pyd
+[2023-04-11 01:16:49] INFO root fetch - processPackages [legion-utils]: Downloading https://files.pythonhosted.org/packages/26/32/171ec134b311691f95d3ab53528c0d8632169c867348371a877e7b205719/legion-utils-0.2.9.tar.gz
+[2023-04-11 01:16:49] INFO root fetch - processPackages [legion-utils]: executing diffoscope
+[2023-04-11 01:16:49] INFO root fetch - processPackages [legion-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legion-utils-0.2.8.tar.gz tmp/legion-utils-0.2.9.tar.gz --markdown 20230411/l/legion-utils/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-11 01:16:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:16:50] INFO root fetch - processPackages [emmet-builders]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-11 01:16:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:16:50] INFO root fetch - processPackages [cdpcli]: New version: [0.9.9] Old Version: [0.9.84]
+[2023-04-11 01:16:50] INFO root fetch - processPackages [cdpcli]: Downloading https://files.pythonhosted.org/packages/8c/51/597c90c501c4f19d2f28f97f020ba8755ee0a0a2a4060197c8b86b189ae3/cdpcli-0.9.84.tar.gz
+[2023-04-11 01:16:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:16:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:16:50] INFO root fetch - processPackages [emmet-api]: New version: [0.51.9] Old Version: [0.51.8]
+[2023-04-11 01:16:50] WARNING root fetch - processPackages [popstarlight]: Skipping, unable to determine old version
+[2023-04-11 01:16:50] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:16:50] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.267] Old Version: [0.3.266]
+[2023-04-11 01:16:50] INFO root fetch - processPackages [emmet-builders]: executing diffoscope
+[2023-04-11 01:16:50] INFO root fetch - processPackages [emmet-builders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmet-builders-0.9.2.tar.gz tmp/emmet-builders-0.9.3.tar.gz --markdown 20230411/e/emmet-builders/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-11 01:16:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:16:50] INFO root fetch - processPackages [cdpcli]: Downloading https://files.pythonhosted.org/packages/93/32/b9c49cd15469571b388bcf8082817282c493eec94d458b0da1b2c72ce3e3/cdpcli-0.9.9.tar.gz
+[2023-04-11 01:16:51] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/58/c6/708d1ae0c80d9081466ec9d5bd485fced02d02e656ac245cf2b2b5adaa92/pepperize.cdk-ses-smtp-credentials-0.3.267.tar.gz
+[2023-04-11 01:16:51] INFO root fetch - processPackages [emmet-api]: executing diffoscope
+[2023-04-11 01:16:51] INFO root fetch - processPackages [emmet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmet-api-0.51.8.tar.gz tmp/emmet-api-0.51.9.tar.gz --markdown 20230411/e/emmet-api/0.51.8-0.51.9/diff.md --exclude *.pyd
+[2023-04-11 01:16:51] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-11 01:16:51] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.266.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.267.tar.gz --markdown 20230411/p/pepperize.cdk-ses-smtp-credentials/0.3.266-0.3.267/diff.md --exclude *.pyd
+[2023-04-11 01:16:51] INFO root fetch - processPackages [cdpcli]: executing diffoscope
+[2023-04-11 01:16:51] INFO root fetch - processPackages [cdpcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdpcli-0.9.84.tar.gz tmp/cdpcli-0.9.9.tar.gz --markdown 20230411/c/cdpcli/0.9.84-0.9.9/diff.md --exclude *.pyd
+[2023-04-11 01:16:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:16:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:16:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:16:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:16:54] INFO root fetch - main [MainThread]: Store serial: [17651457]
