@@ -142,3 +142,38 @@
 [2023-04-11 00:06:34] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:07:07] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:07:07] INFO root fetch - main [MainThread]: Store serial: [17650998]
+[2023-04-11 00:12:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650998]
+[2023-04-11 00:12:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-11 00:12:15] WARNING root fetch - processPackages [ChatGPTOps]: Skipping, unable to determine old version
+[2023-04-11 00:12:15] INFO root fetch - main [MainThread]: error
+[2023-04-11 00:12:15] INFO root fetch - processPackages [strongmind-platform-sdk]: New version: [2.4.0] Old Version: [2.3.1]
+[2023-04-11 00:12:15] INFO root fetch - processPackages [pyvts]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-11 00:12:15] INFO root fetch - processPackages [infinitesimals]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 00:12:15] WARNING root fetch - processPackages [colorsmax]: Skipping, unable to determine old version
+[2023-04-11 00:12:15] INFO root fetch - main [MainThread]: error
+[2023-04-11 00:12:15] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 00:12:15] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 00:12:16] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: executing diffoscope
+[2023-04-11 00:12:16] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcentralab_qa_infra_automation-0.0.8.tar.gz tmp/dcentralab_qa_infra_automation-0.0.9.tar.gz --markdown 20230411/d/dcentralab-qa-infra-automation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 00:12:16] INFO root fetch - processPackages [pyvts]: Downloading https://files.pythonhosted.org/packages/7b/73/6a4ce6c2ce80f754a03346aeac6a44e17fb091e6aad259637041bd0fcead/pyvts-0.2.1.macosx-13-arm64.tar.gz
+[2023-04-11 00:12:16] INFO root fetch - processPackages [infinitesimals]: Downloading https://files.pythonhosted.org/packages/4d/67/6116d03ef9117bfc0d1d2e966b296145e9188e512d686b18bbf4a5697a97/infinitesimals-0.0.5.tar.gz
+[2023-04-11 00:12:16] INFO root fetch - processPackages [strongmind-platform-sdk]: Downloading https://files.pythonhosted.org/packages/53/b8/ee5dc28cdd189c91776a75476d7426b3dc2204591904d4cca03a595ca142/strongmind-platform-sdk-2.3.1.tar.gz
+[2023-04-11 00:12:16] INFO root fetch - processPackages [infinitesimals]: executing diffoscope
+[2023-04-11 00:12:16] INFO root fetch - processPackages [infinitesimals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinitesimals-0.0.4.tar.gz tmp/infinitesimals-0.0.5.tar.gz --markdown 20230411/i/infinitesimals/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 00:12:16] INFO root fetch - processPackages [pyvts]: executing diffoscope
+[2023-04-11 00:12:16] INFO root fetch - processPackages [pyvts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvts-0.2.0.tar.gz tmp/pyvts-0.2.1.macosx-13-arm64.tar.gz --markdown 20230411/p/pyvts/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-11 00:12:16] INFO root fetch - processPackages [strongmind-platform-sdk]: Downloading https://files.pythonhosted.org/packages/45/c7/3e72202c0ef4591c54b1fe9dcb660eb259817b967a7211d899a5b16febe0/strongmind-platform-sdk-2.4.0.tar.gz
+[2023-04-11 00:12:16] INFO root fetch - processPackages [strongmind-platform-sdk]: executing diffoscope
+[2023-04-11 00:12:16] INFO root fetch - processPackages [strongmind-platform-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strongmind-platform-sdk-2.3.1.tar.gz tmp/strongmind-platform-sdk-2.4.0.tar.gz --markdown 20230411/s/strongmind-platform-sdk/2.3.1-2.4.0/diff.md --exclude *.pyd
+[2023-04-11 00:12:16] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-04-11 00:12:16] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 00:12:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:12:17] INFO root fetch - processPackages [ccxt]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-11 00:12:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:12:17] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-04-11 00:12:17] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.8.tar.gz tmp/ccxt-3.0.9.tar.gz --markdown 20230411/c/ccxt/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-11 00:12:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:12:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:12:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:12:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:12:22] INFO root fetch - main [MainThread]: Store serial: [17651022]
