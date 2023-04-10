@@ -644,3 +644,20 @@
 [2023-04-11 01:01:14] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:01:17] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:01:17] INFO root fetch - main [MainThread]: Store serial: [17651395]
+[2023-04-11 01:06:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651395]
+[2023-04-11 01:06:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-11 01:06:24] INFO root fetch - processPackages [iambic-core]: New version: [0.1.198] Old Version: [0.1.186]
+[2023-04-11 01:06:24] INFO root fetch - processPackages [pyarmor]: New version: [8.1.dev9] Old Version: [8.1.dev7]
+[2023-04-11 01:06:24] INFO root fetch - processPackages [clear-skies]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-11 01:06:24] INFO root fetch - processPackages [pyarmor]: executing diffoscope
+[2023-04-11 01:06:24] INFO root fetch - processPackages [pyarmor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor-8.1.dev7.zip tmp/pyarmor-8.1.dev9.zip --markdown 20230411/p/pyarmor/8.1.dev7-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 01:06:24] INFO root fetch - processPackages [clear-skies]: executing diffoscope
+[2023-04-11 01:06:24] INFO root fetch - processPackages [clear-skies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear-skies-1.8.0.tar.gz tmp/clear-skies-1.9.0.tar.gz --markdown 20230411/c/clear-skies/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 01:06:24] INFO root fetch - processPackages [iambic-core]: Downloading https://files.pythonhosted.org/packages/53/64/0e1f21c357e26402013dd6071eda892d93d9a87db4e2de11b4b6148c55cf/iambic_core-0.1.186.tar.gz
+[2023-04-11 01:06:25] INFO root fetch - processPackages [iambic-core]: Downloading https://files.pythonhosted.org/packages/42/ad/6c12758f7cdf4136eb1e608afedb0dc81d78f3b2b93c7e1e72aa84f14fc9/iambic_core-0.1.198.tar.gz
+[2023-04-11 01:06:25] INFO root fetch - processPackages [iambic-core]: executing diffoscope
+[2023-04-11 01:06:25] INFO root fetch - processPackages [iambic-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iambic_core-0.1.186.tar.gz tmp/iambic_core-0.1.198.tar.gz --markdown 20230411/i/iambic-core/0.1.186-0.1.198/diff.md --exclude *.pyd
+[2023-04-11 01:06:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:06:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:06:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:06:27] INFO root fetch - main [MainThread]: Store serial: [17651404]
