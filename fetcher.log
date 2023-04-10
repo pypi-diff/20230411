@@ -661,3 +661,39 @@
 [2023-04-11 01:06:26] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:06:27] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:06:27] INFO root fetch - main [MainThread]: Store serial: [17651404]
+[2023-04-11 01:11:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651404]
+[2023-04-11 01:11:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-11 01:11:35] INFO root fetch - processPackages [bigdl-serving]: New version: [2.3.0b20230410] Old Version: [2.3.0b20230409]
+[2023-04-11 01:11:35] INFO root fetch - processPackages [sqlmesh]: New version: [0.3.2.dev10] Old Version: [0.3.1.dev9]
+[2023-04-11 01:11:35] INFO root fetch - processPackages [bigdl-nano]: New version: [2.3.0b20230410] Old Version: [2.3.0b20230409]
+[2023-04-11 01:11:35] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.265] Old Version: [0.3.264]
+[2023-04-11 01:11:35] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.3.0b20230410] Old Version: [2.3.0b20230409]
+[2023-04-11 01:11:35] INFO root fetch - processPackages [bigdl-serving]: Downloading https://files.pythonhosted.org/packages/01/73/6b348630af8bc16aa8f51adb48c44b460254f7b5ffa5810ce9a2bcb0af37/bigdl_serving-2.3.0b20230410-py2.py3-none-any.whl
+[2023-04-11 01:11:35] INFO root fetch - processPackages [bigdl-nano]: Downloading https://files.pythonhosted.org/packages/3c/cc/64554e6ed3529293ab45d291fd99596943e1014059e27abc50284b2b317e/bigdl_nano-2.3.0b20230410-py3-none-win_amd64.whl
+[2023-04-11 01:11:35] INFO root fetch - processPackages [sqlmesh]: Downloading https://files.pythonhosted.org/packages/3c/d6/1714842d5619ea23e4cbb6816d71bb751ad3b944c8c1fe39475d13a09ece/sqlmesh-0.3.2.dev10.tar.gz
+[2023-04-11 01:11:35] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/3a/01/7e6482b9effe245d67844fce7f1c927c9f0ce20fa077279fa05032b494f6/pepperize.cdk-ses-smtp-credentials-0.3.265.tar.gz
+[2023-04-11 01:11:35] INFO root fetch - processPackages [bigdl-chronos]: Downloading https://files.pythonhosted.org/packages/2e/1a/36476928b6816ab109539fa1626e50139ace883b50b5d040d1427347dbbc/bigdl_chronos-2.3.0b20230410-py3-none-win_amd64.whl
+[2023-04-11 01:11:35] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-11 01:11:35] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.264.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.265.tar.gz --markdown 20230411/p/pepperize.cdk-ses-smtp-credentials/0.3.264-0.3.265/diff.md --exclude *.pyd
+[2023-04-11 01:11:35] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-04-11 01:11:35] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.3.0b20230409-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.3.0b20230410-py2.py3-none-any.whl.zip --markdown 20230411/b/bigdl-serving/2.3.0b20230409-2.3.0b20230410/diff.md --exclude *.pyd
+[2023-04-11 01:11:36] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-04-11 01:11:36] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.3.0b20230409-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.3.0b20230410-py3-none-win_amd64.whl.zip --markdown 20230411/b/bigdl-chronos/2.3.0b20230409-2.3.0b20230410/diff.md --exclude *.pyd
+[2023-04-11 01:11:36] INFO root fetch - processPackages [sqlmesh]: executing diffoscope
+[2023-04-11 01:11:36] INFO root fetch - processPackages [sqlmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlmesh-0.3.1.dev9.tar.gz tmp/sqlmesh-0.3.2.dev10.tar.gz --markdown 20230411/s/sqlmesh/0.3.1.dev9-0.3.2.dev10/diff.md --exclude *.pyd
+[2023-04-11 01:11:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:11:36] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-11 01:11:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:11:36] INFO root fetch - processPackages [boa-framework]: New version: [0.8.2rc5] Old Version: [0.8.2]
+[2023-04-11 01:11:37] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-04-11 01:11:37] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230411/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-11 01:11:37] INFO root fetch - processPackages [boa-framework]: Downloading https://files.pythonhosted.org/packages/92/57/225e5921b629bb14cde4563c02d326769f09df41a4b62f230a4bfbc72e95/boa-framework-0.8.2.tar.gz
+[2023-04-11 01:11:37] WARNING root fetch - processPackages [boa-framework]: Skipping package: exceeds size limit 12052196>=10485760
+[2023-04-11 01:11:37] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:11:37] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-04-11 01:11:37] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.3.0b20230409-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.3.0b20230410-py3-none-win_amd64.whl.zip --markdown 20230411/b/bigdl-nano/2.3.0b20230409-2.3.0b20230410/diff.md --exclude *.pyd
+[2023-04-11 01:11:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:11:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:11:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:11:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:11:41] INFO root fetch - main [MainThread]: Store serial: [17651424]
