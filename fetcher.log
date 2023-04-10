@@ -547,3 +547,100 @@
 [2023-04-11 00:55:23] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:55:58] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:55:58] INFO root fetch - main [MainThread]: Store serial: [17651339]
+[2023-04-11 01:01:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651339]
+[2023-04-11 01:01:06] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-11 01:01:06] INFO root fetch - processPackages [scikit-duplo]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-11 01:01:06] INFO root fetch - processPackages [model-hub]: New version: [0.21.1rc2] Old Version: [0.21.1rc1]
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-deploy]: New version: [0.21.1rc2] Old Version: [0.21.1rc1]
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined]: New version: [0.21.1rc2] Old Version: [0.21.1rc1]
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-common]: New version: [0.21.1rc2] Old Version: [0.21.1rc1]
+[2023-04-11 01:01:06] INFO root fetch - processPackages [model-hub]: Downloading https://files.pythonhosted.org/packages/90/16/6e54b2c093d2d1643d7ebb408490f68b653f89dbdad09fe0bd3d7c85b189/model_hub-0.21.1rc1-py3-none-any.whl
+[2023-04-11 01:01:06] INFO root fetch - processPackages [scikit-duplo]: Downloading https://files.pythonhosted.org/packages/f4/e3/b8f8232768cfe5f497f756fa1e9ea533ebe42af26b91de79b7c3a18bad8b/scikit-duplo-0.1.4.tar.gz
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined]: Downloading https://files.pythonhosted.org/packages/51/57/e8bd2d7b86bdb60e8bbcc52ea2e5d9fee8ac3cea29aba145f40ecfcae9c8/determined-0.21.1rc1-py3-none-any.whl
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-deploy]: Downloading https://files.pythonhosted.org/packages/2b/3a/996f978b4f57b7da9f35682c7a09a97f5d9b57582295bdebc28cc8ebcbac/determined_deploy-0.21.1rc1-py3-none-any.whl
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-common]: Downloading https://files.pythonhosted.org/packages/fe/c1/3575ff60f54793f5224fed295a57f068c91f4f4bb6dfc94b8494fcdac419/determined_common-0.21.1rc1-py3-none-any.whl
+[2023-04-11 01:01:06] INFO root fetch - processPackages [scikit-duplo]: executing diffoscope
+[2023-04-11 01:01:06] INFO root fetch - processPackages [scikit-duplo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-duplo-0.1.3.tar.gz tmp/scikit-duplo-0.1.4.tar.gz --markdown 20230411/s/scikit-duplo/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-11 01:01:06] INFO root fetch - processPackages [model-hub]: Downloading https://files.pythonhosted.org/packages/91/8f/ee9f74740f6ad1b4baa221e266cf5dc54b602bc56774778f0c9ce43ad29c/model_hub-0.21.1rc2-py3-none-any.whl
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined]: Downloading https://files.pythonhosted.org/packages/02/86/4e914053bc1bbe5a267a04137c718376d247fd468b5f1d8bfced690d2a51/determined-0.21.1rc2-py3-none-any.whl
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-deploy]: Downloading https://files.pythonhosted.org/packages/43/8c/861541e13b8646c2cc650cdb9f6c24127eb789f921791f64efb088e6847e/determined_deploy-0.21.1rc2-py3-none-any.whl
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-common]: Downloading https://files.pythonhosted.org/packages/6b/26/371c47073fd6f6ed1bb22e60e5fe312673ae79e8eb3b92cbb583028b976f/determined_common-0.21.1rc2-py3-none-any.whl
+[2023-04-11 01:01:06] INFO root fetch - processPackages [model-hub]: executing diffoscope
+[2023-04-11 01:01:06] INFO root fetch - processPackages [model-hub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_hub-0.21.1rc1-py3-none-any.whl.zip tmp/model_hub-0.21.1rc2-py3-none-any.whl.zip --markdown 20230411/m/model-hub/0.21.1rc1-0.21.1rc2/diff.md --exclude *.pyd
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-deploy]: executing diffoscope
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/determined_deploy-0.21.1rc1-py3-none-any.whl.zip tmp/determined_deploy-0.21.1rc2-py3-none-any.whl.zip --markdown 20230411/d/determined-deploy/0.21.1rc1-0.21.1rc2/diff.md --exclude *.pyd
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-common]: executing diffoscope
+[2023-04-11 01:01:06] INFO root fetch - processPackages [determined-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/determined_common-0.21.1rc1-py3-none-any.whl.zip tmp/determined_common-0.21.1rc2-py3-none-any.whl.zip --markdown 20230411/d/determined-common/0.21.1rc1-0.21.1rc2/diff.md --exclude *.pyd
+[2023-04-11 01:01:07] INFO root fetch - processPackages [determined]: executing diffoscope
+[2023-04-11 01:01:07] INFO root fetch - processPackages [determined]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/determined-0.21.1rc1-py3-none-any.whl.zip tmp/determined-0.21.1rc2-py3-none-any.whl.zip --markdown 20230411/d/determined/0.21.1rc1-0.21.1rc2/diff.md --exclude *.pyd
+[2023-04-11 01:01:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:07] INFO root fetch - processPackages [determined-cli]: New version: [0.21.1rc2] Old Version: [0.21.1rc1]
+[2023-04-11 01:01:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:08] INFO root fetch - processPackages [robotnikmq]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-11 01:01:08] INFO root fetch - processPackages [determined-cli]: Downloading https://files.pythonhosted.org/packages/80/1f/d7a1995a3923eb151f7087c13855db5dba960f43d61b827ef49982b2c041/determined_cli-0.21.1rc1-py3-none-any.whl
+[2023-04-11 01:01:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:08] WARNING root fetch - processPackages [pybatchexecute]: Skipping, unable to determine old version
+[2023-04-11 01:01:08] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:01:08] INFO root fetch - processPackages [ultralytics]: New version: [8.0.9] Old Version: [8.0.8]
+[2023-04-11 01:01:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:08] INFO root fetch - processPackages [sentry-django-settings]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-11 01:01:08] INFO root fetch - processPackages [robotnikmq]: Downloading https://files.pythonhosted.org/packages/54/ef/d035feaacb99c28fdd01a3db58d2d2e7b1f98b66b033fa6df0095ec330ba/robotnikmq-0.5.1.tar.gz
+[2023-04-11 01:01:08] INFO root fetch - processPackages [robotnikmq]: executing diffoscope
+[2023-04-11 01:01:08] INFO root fetch - processPackages [robotnikmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotnikmq-0.5.0.tar.gz tmp/robotnikmq-0.5.1.tar.gz --markdown 20230411/r/robotnikmq/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-11 01:01:08] INFO root fetch - processPackages [determined-cli]: Downloading https://files.pythonhosted.org/packages/b3/37/e1897a7ebbe1c74cd39405b181d3c71df4dfc10d9dbb1969d4f0df45f629/determined_cli-0.21.1rc2-py3-none-any.whl
+[2023-04-11 01:01:08] INFO root fetch - processPackages [sentry-django-settings]: Downloading https://files.pythonhosted.org/packages/10/7a/4e4af8049668883453e58f6c3ae5cfd8195c9cc84e5ab66875abdbdcc15b/sentry_django_settings-0.5.0.tar.gz
+[2023-04-11 01:01:08] INFO root fetch - processPackages [determined-cli]: executing diffoscope
+[2023-04-11 01:01:08] INFO root fetch - processPackages [determined-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/determined_cli-0.21.1rc1-py3-none-any.whl.zip tmp/determined_cli-0.21.1rc2-py3-none-any.whl.zip --markdown 20230411/d/determined-cli/0.21.1rc1-0.21.1rc2/diff.md --exclude *.pyd
+[2023-04-11 01:01:08] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2023-04-11 01:01:08] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.0.8.tar.gz tmp/ultralytics-8.0.9.tar.gz --markdown 20230411/u/ultralytics/8.0.8-8.0.9/diff.md --exclude *.pyd
+[2023-04-11 01:01:08] INFO root fetch - processPackages [sentry-django-settings]: Downloading https://files.pythonhosted.org/packages/d9/1c/3a819a77e43a1a2b6affeaa9574249d497aba34a71203346d7742a310066/sentry_django_settings-0.6.0.tar.gz
+[2023-04-11 01:01:08] INFO root fetch - processPackages [sentry-django-settings]: executing diffoscope
+[2023-04-11 01:01:08] INFO root fetch - processPackages [sentry-django-settings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentry_django_settings-0.5.0.tar.gz tmp/sentry_django_settings-0.6.0.tar.gz --markdown 20230411/s/sentry-django-settings/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-11 01:01:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:09] WARNING root fetch - processPackages [processplatform]: Skipping, unable to determine old version
+[2023-04-11 01:01:09] INFO root fetch - main [MainThread]: error
+[2023-04-11 01:01:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:09] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-11 01:01:09] INFO root fetch - processPackages [django-silly-auth]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 01:01:09] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/69/d2/0679ea362d7211b558a2e9c7a4a2c1046ad8c4afddfd822be201a648c878/tmnt-cu101-0.7.0b20230410.tar.gz
+[2023-04-11 01:01:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:09] INFO root fetch - processPackages [pyhOn]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-11 01:01:09] INFO root fetch - processPackages [django-silly-auth]: Downloading https://files.pythonhosted.org/packages/10/8e/803a641897684a8ecc5c7794b76d4c503edf12bcc96949aedb05580478f9/django-silly-auth-1.0.2.tar.gz
+[2023-04-11 01:01:09] INFO root fetch - processPackages [django-silly-auth]: executing diffoscope
+[2023-04-11 01:01:09] INFO root fetch - processPackages [django-silly-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-silly-auth-1.0.1.tar.gz tmp/django-silly-auth-1.0.2.tar.gz --markdown 20230411/d/django-silly-auth/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 01:01:09] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-04-11 01:01:09] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230409.tar.gz tmp/tmnt-cu101-0.7.0b20230410.tar.gz --markdown 20230411/t/tmnt-cu101/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-11 01:01:09] INFO root fetch - processPackages [pyhOn]: Downloading https://files.pythonhosted.org/packages/91/62/c37c85471d76f87139808cce14c35700131758cbcb0139afc10ca2f52c8b/pyhOn-0.6.4.tar.gz
+[2023-04-11 01:01:10] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-04-11 01:01:10] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.6.3.tar.gz tmp/pyhOn-0.6.4.tar.gz --markdown 20230411/p/pyhOn/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-11 01:01:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:10] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-11 01:01:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:10] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230410] Old Version: [0.7.0b20230409]
+[2023-04-11 01:01:10] INFO root fetch - processPackages [nudecrawler]: Downloading https://files.pythonhosted.org/packages/19/82/6d5e08fc678e2204ea22b537ad273fe93e5ff1ca2c800b368fc73d7a48c6/nudecrawler-0.3.9.tar.gz
+[2023-04-11 01:01:10] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/28/15/759c841b031fab7afbdeb4e5ae6a325f4aa04a55bda2bea2f9ca17a0cf4c/tmnt-0.7.0b20230410.tar.gz
+[2023-04-11 01:01:10] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-11 01:01:10] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.8.tar.gz tmp/nudecrawler-0.3.9.tar.gz --markdown 20230411/n/nudecrawler/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-11 01:01:10] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-04-11 01:01:10] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230409.tar.gz tmp/tmnt-0.7.0b20230410.tar.gz --markdown 20230411/t/tmnt/0.7.0b20230409-0.7.0b20230410/diff.md --exclude *.pyd
+[2023-04-11 01:01:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:11] INFO root fetch - processPackages [returnn]: New version: [1.20230411.4301] Old Version: [1.20230409.21835]
+[2023-04-11 01:01:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:11] INFO root fetch - processPackages [clear-skies-aws]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-11 01:01:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:11] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 01:01:11] INFO root fetch - processPackages [clear-skies-aws]: Downloading https://files.pythonhosted.org/packages/dc/1c/d25f6ae54487babcc02ebdce7e6e44bd2eff5f6996b8183a664a2af8fcab/clear-skies-aws-1.2.1.tar.gz
+[2023-04-11 01:01:11] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 01:01:11] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 01:01:11] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/04/d0/f5baa80eb2b2c95809c3b5675b215d9116358dbc11ca040f3795329dfadf/returnn-1.20230411.4301.tar.gz
+[2023-04-11 01:01:11] INFO root fetch - processPackages [clear-skies-aws]: Downloading https://files.pythonhosted.org/packages/17/e3/e6d5367e18f325148ae8f84b95c7d6899794fd1d26278bb20c929d15adb9/clear-skies-aws-1.2.2.tar.gz
+[2023-04-11 01:01:11] INFO root fetch - processPackages [clear-skies-aws]: executing diffoscope
+[2023-04-11 01:01:11] INFO root fetch - processPackages [clear-skies-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear-skies-aws-1.2.1.tar.gz tmp/clear-skies-aws-1.2.2.tar.gz --markdown 20230411/c/clear-skies-aws/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-11 01:01:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:12] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-11 01:01:12] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230409.21835.tar.gz tmp/returnn-1.20230411.4301.tar.gz --markdown 20230411/r/returnn/1.20230409.21835-1.20230411.4301/diff.md --exclude *.pyd
+[2023-04-11 01:01:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 01:01:17] INFO root fetch - main [MainThread]: Store serial: [17651395]
