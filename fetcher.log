@@ -177,3 +177,46 @@
 [2023-04-11 00:12:18] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:12:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:12:22] INFO root fetch - main [MainThread]: Store serial: [17651022]
+[2023-04-11 00:17:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651022]
+[2023-04-11 00:17:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-11 00:17:29] INFO root fetch - processPackages [pyvts]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 00:17:29] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-11 00:17:29] INFO root fetch - processPackages [e01loss]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 00:17:29] INFO root fetch - processPackages [poe-web-client]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 00:17:29] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 00:17:29] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-04-11 00:17:29] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230411/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-11 00:17:29] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-04-11 00:17:29] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 00:17:29] INFO root fetch - processPackages [e01loss]: Downloading https://files.pythonhosted.org/packages/6c/b3/4e8896f4ddfa52c77e7a26ffdc9e3ea95afe7d181fa465e583c428cce4d9/e01loss-1.0.0.tar.gz
+[2023-04-11 00:17:29] INFO root fetch - processPackages [poe-web-client]: Downloading https://files.pythonhosted.org/packages/36/53/36a490317e13f7defaf311ef556d23c5ef1c29be798f0a58de5e606bdd28/poe-web-client-0.0.5.tar.gz
+[2023-04-11 00:17:29] INFO root fetch - processPackages [poe-web-client]: executing diffoscope
+[2023-04-11 00:17:29] INFO root fetch - processPackages [poe-web-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poe-web-client-0.0.4.tar.gz tmp/poe-web-client-0.0.5.tar.gz --markdown 20230411/p/poe-web-client/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 00:17:29] INFO root fetch - processPackages [e01loss]: Downloading https://files.pythonhosted.org/packages/ec/e5/711982082a5fce1fdd126a1113d31e6e5e9ae06ff85808980348a09550bc/e01loss-1.0.1.tar.gz
+[2023-04-11 00:17:30] INFO root fetch - processPackages [e01loss]: executing diffoscope
+[2023-04-11 00:17:30] INFO root fetch - processPackages [e01loss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e01loss-1.0.0.tar.gz tmp/e01loss-1.0.1.tar.gz --markdown 20230411/e/e01loss/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 00:17:30] INFO root fetch - processPackages [pyvts]: Downloading https://files.pythonhosted.org/packages/6b/81/5ba047f2b42f8be165346c59f0a4e5d89f160ca9e87f9f6b9b2b52a59a00/pyvts-0.2.2.macosx-13-arm64.tar.gz
+[2023-04-11 00:17:30] INFO root fetch - processPackages [pyvts]: executing diffoscope
+[2023-04-11 00:17:30] INFO root fetch - processPackages [pyvts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvts-0.2.1.macosx-13-arm64.tar.gz tmp/pyvts-0.2.2.macosx-13-arm64.tar.gz --markdown 20230411/p/pyvts/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 00:17:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:17:30] WARNING root fetch - processPackages [pycart]: Skipping, unable to determine old version
+[2023-04-11 00:17:30] INFO root fetch - main [MainThread]: error
+[2023-04-11 00:17:31] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 00:17:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:17:31] INFO root fetch - processPackages [infinitesimals]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-11 00:17:31] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-04-11 00:17:31] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 00:17:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:17:31] INFO root fetch - processPackages [pyvts]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-11 00:17:31] INFO root fetch - processPackages [infinitesimals]: Downloading https://files.pythonhosted.org/packages/60/32/5c7c676c95597c3fb4451f6e573ef4cfc7c5631f39f94ab2d5298a06ec06/infinitesimals-0.0.6.tar.gz
+[2023-04-11 00:17:31] INFO root fetch - processPackages [infinitesimals]: executing diffoscope
+[2023-04-11 00:17:31] INFO root fetch - processPackages [infinitesimals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinitesimals-0.0.5.tar.gz tmp/infinitesimals-0.0.6.tar.gz --markdown 20230411/i/infinitesimals/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 00:17:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:17:31] INFO root fetch - processPackages [pyvts]: Downloading https://files.pythonhosted.org/packages/ca/e5/94a5e99168e6095d3b7f1c01e0729a2892051be4fa5aa5ecc7ac7325faa9/pyvts-0.2.3.tar.gz
+[2023-04-11 00:17:31] INFO root fetch - processPackages [pyvts]: executing diffoscope
+[2023-04-11 00:17:31] INFO root fetch - processPackages [pyvts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvts-0.2.2.macosx-13-arm64.tar.gz tmp/pyvts-0.2.3.tar.gz --markdown 20230411/p/pyvts/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-11 00:17:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:17:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:17:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:17:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:17:32] INFO root fetch - main [MainThread]: Store serial: [17651051]
