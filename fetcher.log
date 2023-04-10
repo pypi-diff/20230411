@@ -62,3 +62,83 @@
 [2023-04-11 00:01:16] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:01:17] INFO root fetch - main [MainThread]: success
 [2023-04-11 00:01:17] INFO root fetch - main [MainThread]: Store serial: [17650953]
+[2023-04-11 00:06:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650953]
+[2023-04-11 00:06:25] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-11 00:06:25] INFO root fetch - processPackages [runtimepy]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-11 00:06:25] INFO root fetch - processPackages [dramatiq-mongodb]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-11 00:06:25] INFO root fetch - processPackages [get-patchlib]: New version: [1.1] Old Version: [0.0.0]
+[2023-04-11 00:06:25] INFO root fetch - processPackages [fixme]: New version: [0.4] Old Version: [0.3]
+[2023-04-11 00:06:25] INFO root fetch - processPackages [get-patchlib]: New version: [1.1] Old Version: [0.0.0]
+[2023-04-11 00:06:26] INFO root fetch - processPackages [get-patchlib]: Downloading https://files.pythonhosted.org/packages/17/a8/1f8c5abd487bb652b4ff877554286ebd9623301cd8a993ac65e223ddd990/get_patchlib-0.0.0.tar.gz
+[2023-04-11 00:06:26] INFO root fetch - processPackages [get-patchlib]: Downloading https://files.pythonhosted.org/packages/17/a8/1f8c5abd487bb652b4ff877554286ebd9623301cd8a993ac65e223ddd990/get_patchlib-0.0.0.tar.gz
+[2023-04-11 00:06:26] INFO root fetch - processPackages [dramatiq-mongodb]: Downloading https://files.pythonhosted.org/packages/6a/73/cabf74eb472e2c54a8a2410d3f427c34054030ce5a565a7243f45c666cfe/dramatiq_mongodb-0.8.3.tar.gz
+[2023-04-11 00:06:26] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/47/03/fcc4e86a0e9e80d09ca578ae17f7f489e3fc5e234b867f353aa2d474c0ed/runtimepy-1.3.1.tar.gz
+[2023-04-11 00:06:26] INFO root fetch - processPackages [dramatiq-mongodb]: executing diffoscope
+[2023-04-11 00:06:26] INFO root fetch - processPackages [dramatiq-mongodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dramatiq_mongodb-0.8.2.tar.gz tmp/dramatiq_mongodb-0.8.3.tar.gz --markdown 20230411/d/dramatiq-mongodb/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-11 00:06:26] INFO root fetch - processPackages [fixme]: Downloading https://files.pythonhosted.org/packages/a9/3d/bfd10f5bfff24748d2629d14536d9f2003d85c478ef9deb200a9df7a298b/fixme-0.4.tar.gz
+[2023-04-11 00:06:26] INFO root fetch - processPackages [fixme]: executing diffoscope
+[2023-04-11 00:06:26] INFO root fetch - processPackages [fixme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixme-0.3.tar.gz tmp/fixme-0.4.tar.gz --markdown 20230411/f/fixme/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-11 00:06:26] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/ca/7f/21eceb10373d710545490ea5df9c06f18e3998e4057b6ca2d1cfdb33db5f/runtimepy-1.3.2.tar.gz
+[2023-04-11 00:06:26] INFO root fetch - processPackages [runtimepy]: executing diffoscope
+[2023-04-11 00:06:26] INFO root fetch - processPackages [runtimepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtimepy-1.3.1.tar.gz tmp/runtimepy-1.3.2.tar.gz --markdown 20230411/r/runtimepy/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-11 00:06:26] INFO root fetch - processPackages [get-patchlib]: Downloading https://files.pythonhosted.org/packages/22/bf/b957bff76684991008e8959e0685ce6ac71b42d44a501555711c575fe782/get_patchlib-1.1.tar.gz
+[2023-04-11 00:06:26] INFO root fetch - processPackages [get-patchlib]: Downloading https://files.pythonhosted.org/packages/22/bf/b957bff76684991008e8959e0685ce6ac71b42d44a501555711c575fe782/get_patchlib-1.1.tar.gz
+[2023-04-11 00:06:26] INFO root fetch - processPackages [get-patchlib]: executing diffoscope
+[2023-04-11 00:06:26] INFO root fetch - processPackages [get-patchlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_patchlib-0.0.0.tar.gz tmp/get_patchlib-1.1.tar.gz --markdown 20230411/g/get-patchlib/0.0.0-1.1/diff.md --exclude *.pyd
+[2023-04-11 00:06:26] INFO root fetch - processPackages [get-patchlib]: executing diffoscope
+[2023-04-11 00:06:26] INFO root fetch - processPackages [get-patchlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_patchlib-0.0.0.tar.gz tmp/get_patchlib-1.1.tar.gz --markdown 20230411/g/get-patchlib/0.0.0-1.1/diff.md --exclude *.pyd
+[2023-04-11 00:06:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:27] INFO root fetch - processPackages [datasette-sqlite-vss]: New version: [0.0.2a5] Old Version: [0.0.2a4]
+[2023-04-11 00:06:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:27] INFO root fetch - processPackages [sqlite-vss]: New version: [0.0.2a5] Old Version: [0.0.2a4]
+[2023-04-11 00:06:27] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/c5/d0/eb203161b70ebb101377eb7b3de4f1da40ccce22e2da349b947f9c4c8494/datasette_sqlite_vss-0.0.2a5-py3-none-any.whl
+[2023-04-11 00:06:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:27] INFO root fetch - processPackages [pyvts]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-11 00:06:27] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/1a/19/21e35b3a363e7fdf44254c8fa26c29451f7f7a0dbc27bf23eb260ce6713e/sqlite_vss-0.0.2a5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-04-11 00:06:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:27] INFO root fetch - processPackages [quasinet]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 00:06:27] INFO root fetch - processPackages [datasette-sqlite-vss]: executing diffoscope
+[2023-04-11 00:06:27] INFO root fetch - processPackages [datasette-sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vss-0.0.2a4-py3-none-any.whl.zip tmp/datasette_sqlite_vss-0.0.2a5-py3-none-any.whl.zip --markdown 20230411/d/datasette-sqlite-vss/0.0.2a4-0.0.2a5/diff.md --exclude *.pyd
+[2023-04-11 00:06:27] INFO root fetch - processPackages [pyvts]: Downloading https://files.pythonhosted.org/packages/59/40/e9152daa7a0fa60fb6d646f22abf128b24be710ede343c75f0534225f1fd/pyvts-0.1.1.tar.gz
+[2023-04-11 00:06:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:27] INFO root fetch - processPackages [quasinet]: Downloading https://files.pythonhosted.org/packages/de/3c/5a89b221f0c1fe1f555c4a941cd741a24b27826341188c553d4e2dbd4955/quasinet-0.0.98.tar.gz
+[2023-04-11 00:06:27] INFO root fetch - processPackages [django-rq-scheduler]: New version: [2023.5.0b2] Old Version: [2023.5.0b1]
+[2023-04-11 00:06:28] INFO root fetch - processPackages [django-rq-scheduler]: Downloading https://files.pythonhosted.org/packages/60/05/4702ff4a55e5e51d5a2921c4e07b539e8d1c40baf71e8a1e8ae7567f9bc7/django_rq_scheduler-2023.5.0b1.tar.gz
+[2023-04-11 00:06:28] INFO root fetch - processPackages [pyvts]: Downloading https://files.pythonhosted.org/packages/c7/75/459ad2d3b1e01e02fca5a92ed7f4a625ce15acfa2d03acea2e209b8cee53/pyvts-0.2.0.tar.gz
+[2023-04-11 00:06:28] INFO root fetch - processPackages [pyvts]: executing diffoscope
+[2023-04-11 00:06:28] INFO root fetch - processPackages [pyvts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvts-0.1.1.tar.gz tmp/pyvts-0.2.0.tar.gz --markdown 20230411/p/pyvts/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 00:06:28] INFO root fetch - processPackages [django-rq-scheduler]: Downloading https://files.pythonhosted.org/packages/23/1d/e84a36f58f5e34bec60eee388705a5507f1a51bc21eaf779d72cf4c9cb25/django_rq_scheduler-2023.5.0b2.tar.gz
+[2023-04-11 00:06:28] INFO root fetch - processPackages [django-rq-scheduler]: executing diffoscope
+[2023-04-11 00:06:28] INFO root fetch - processPackages [django-rq-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_rq_scheduler-2023.5.0b1.tar.gz tmp/django_rq_scheduler-2023.5.0b2.tar.gz --markdown 20230411/d/django-rq-scheduler/2023.5.0b1-2023.5.0b2/diff.md --exclude *.pyd
+[2023-04-11 00:06:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:28] INFO root fetch - processPackages [motion-python]: New version: [0.1.30] Old Version: [0.1.29]
+[2023-04-11 00:06:28] INFO root fetch - processPackages [sqlite-vss]: executing diffoscope
+[2023-04-11 00:06:28] INFO root fetch - processPackages [sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vss-0.0.2a4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_vss-0.0.2a5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230411/s/sqlite-vss/0.0.2a4-0.0.2a5/diff.md --exclude *.pyd
+[2023-04-11 00:06:28] WARNING root fetch - processPackages [quasinet]: Skipping package: exceeds size limit 14399405>=10485760
+[2023-04-11 00:06:28] INFO root fetch - main [MainThread]: error
+[2023-04-11 00:06:28] INFO root fetch - processPackages [spyrograph]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-11 00:06:28] INFO root fetch - processPackages [motion-python]: Downloading https://files.pythonhosted.org/packages/43/59/65a51dab58c7afe2476e9d6b9041b8b5b6f702fe0410c531c812db7e71cc/motion_python-0.1.29.tar.gz
+[2023-04-11 00:06:28] INFO root fetch - processPackages [spyrograph]: Downloading https://files.pythonhosted.org/packages/67/9a/25ba3a250a428f6e3a06d273c6571f937d95528c400781c7a45060385683/spyrograph-0.8.0.tar.gz
+[2023-04-11 00:06:29] INFO root fetch - processPackages [motion-python]: Downloading https://files.pythonhosted.org/packages/36/13/cf3942e39b97b1a0fd42c59147f641ffc82c16ec489d7cb3f6ab22859de2/motion_python-0.1.30.tar.gz
+[2023-04-11 00:06:29] INFO root fetch - processPackages [motion-python]: executing diffoscope
+[2023-04-11 00:06:29] INFO root fetch - processPackages [motion-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motion_python-0.1.29.tar.gz tmp/motion_python-0.1.30.tar.gz --markdown 20230411/m/motion-python/0.1.29-0.1.30/diff.md --exclude *.pyd
+[2023-04-11 00:06:29] INFO root fetch - processPackages [spyrograph]: Downloading https://files.pythonhosted.org/packages/b5/24/7ea9bdfe8369678b6c1d4b4025a32fd71c9ef203a235dbce5c482f2d015f/spyrograph-0.9.0.tar.gz
+[2023-04-11 00:06:29] INFO root fetch - processPackages [spyrograph]: executing diffoscope
+[2023-04-11 00:06:29] INFO root fetch - processPackages [spyrograph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spyrograph-0.8.0.tar.gz tmp/spyrograph-0.9.0.tar.gz --markdown 20230411/s/spyrograph/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 00:06:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:29] INFO root fetch - processPackages [satcfdi]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-04-11 00:06:29] INFO root fetch - processPackages [satcfdi]: Downloading https://files.pythonhosted.org/packages/be/13/8394d3dd0f36b7eeb02321c07bd92764b9d1f283649098cbbe0d1ceb0b77/satcfdi-4.0.9.tar.gz
+[2023-04-11 00:06:29] INFO root fetch - processPackages [satcfdi]: executing diffoscope
+[2023-04-11 00:06:29] INFO root fetch - processPackages [satcfdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satcfdi-4.0.8.tar.gz tmp/satcfdi-4.0.9.tar.gz --markdown 20230411/s/satcfdi/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-04-11 00:06:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:30] INFO root fetch - processPackages [crazydoc]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-11 00:06:30] INFO root fetch - processPackages [crazydoc]: Downloading https://files.pythonhosted.org/packages/7e/69/9c0ccadb7f43ac4ebb0d547e2c547fc9f59248725e6a7da828322bc9dbc7/crazydoc-0.1.5.tar.gz
+[2023-04-11 00:06:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:30] INFO root fetch - processPackages [crazydoc]: Downloading https://files.pythonhosted.org/packages/91/7f/df40726854eeab4bbd8de61d0e79922c733ce79f050a79db687ec75d0783/crazydoc-0.1.6.tar.gz
+[2023-04-11 00:06:30] INFO root fetch - processPackages [crazydoc]: executing diffoscope
+[2023-04-11 00:06:30] INFO root fetch - processPackages [crazydoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazydoc-0.1.5.tar.gz tmp/crazydoc-0.1.6.tar.gz --markdown 20230411/c/crazydoc/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-11 00:06:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:06:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:07:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:07:07] INFO root fetch - main [MainThread]: Store serial: [17650998]
