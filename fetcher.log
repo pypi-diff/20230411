@@ -1,0 +1,64 @@
+[2023-04-11 00:01:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17650915]
+[2023-04-11 00:01:11] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 00:01:11] INFO root fetch - processPackages [cryptographyComplements]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-11 00:01:11] WARNING root fetch - processPackages [np-zro]: Skipping, unable to determine old version
+[2023-04-11 00:01:11] INFO root fetch - main [MainThread]: error
+[2023-04-11 00:01:11] INFO root fetch - processPackages [pylurk]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 00:01:11] INFO root fetch - processPackages [fabrictestbed-extensions]: New version: [1.4.2rc3] Old Version: [1.4.2rc2]
+[2023-04-11 00:01:11] INFO root fetch - processPackages [mypy-json-report]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 00:01:11] INFO root fetch - processPackages [infinitesimals]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 00:01:12] INFO root fetch - processPackages [fabrictestbed-extensions]: Downloading https://files.pythonhosted.org/packages/f1/44/10b1bb73d57870aa29f5d49f735fa1fcc48603c0d3c511470eb317c5cf65/fabrictestbed-extensions-1.4.2rc2.tar.gz
+[2023-04-11 00:01:12] INFO root fetch - processPackages [mypy-json-report]: Downloading https://files.pythonhosted.org/packages/da/1c/27cff7c8d5124cd6af1bf1f2cc3dfaea3aad6374e0643aa6070d55ac1880/mypy_json_report-1.0.1.tar.gz
+[2023-04-11 00:01:12] INFO root fetch - processPackages [pylurk]: Downloading https://files.pythonhosted.org/packages/e5/4a/3ab9596d10591a70dbb3c8afa2e6bd8dcd68aea087a087c8b8145a47e09a/pylurk-0.0.2-py3-none-any.whl
+[2023-04-11 00:01:12] INFO root fetch - processPackages [infinitesimals]: Downloading https://files.pythonhosted.org/packages/8d/4d/297ef9c10d743bb7fce52eb10ae26837349edb318e104426e00af759caf8/infinitesimals-0.0.3.tar.gz
+[2023-04-11 00:01:12] INFO root fetch - processPackages [cryptographyComplements]: Downloading https://files.pythonhosted.org/packages/9e/48/02c032fdb3b7a9c08cdef63d8962cf2380e6692f324f7a0da06bead482ca/cryptographyComplements-0.2.6.tar.gz
+[2023-04-11 00:01:12] INFO root fetch - processPackages [cryptographyComplements]: executing diffoscope
+[2023-04-11 00:01:12] INFO root fetch - processPackages [cryptographyComplements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptographyComplements-0.2.5.tar.gz tmp/cryptographyComplements-0.2.6.tar.gz --markdown 20230411/c/cryptographyComplements/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-11 00:01:12] INFO root fetch - processPackages [infinitesimals]: Downloading https://files.pythonhosted.org/packages/06/ac/5240cd3361748b43b2341e2e2d3403f2fafc7472c45d10290e8a0cb6e66a/infinitesimals-0.0.4.tar.gz
+[2023-04-11 00:01:12] INFO root fetch - processPackages [infinitesimals]: executing diffoscope
+[2023-04-11 00:01:12] INFO root fetch - processPackages [infinitesimals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinitesimals-0.0.3.tar.gz tmp/infinitesimals-0.0.4.tar.gz --markdown 20230411/i/infinitesimals/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 00:01:12] INFO root fetch - processPackages [mypy-json-report]: Downloading https://files.pythonhosted.org/packages/d6/62/6b593399326cb61185c8d69c5faf742b02ff33a2bf36ec2b402aaa5fbfa0/mypy_json_report-1.0.2.tar.gz
+[2023-04-11 00:01:12] INFO root fetch - processPackages [fabrictestbed-extensions]: Downloading https://files.pythonhosted.org/packages/a6/1d/4845bbd980dee70187ecc0e85e5f64ace2959cd07fa4a027b2fb2577cbaa/fabrictestbed-extensions-1.4.2rc3.tar.gz
+[2023-04-11 00:01:12] INFO root fetch - processPackages [mypy-json-report]: executing diffoscope
+[2023-04-11 00:01:12] INFO root fetch - processPackages [mypy-json-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy_json_report-1.0.1.tar.gz tmp/mypy_json_report-1.0.2.tar.gz --markdown 20230411/m/mypy-json-report/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 00:01:12] INFO root fetch - processPackages [pylurk]: Downloading https://files.pythonhosted.org/packages/46/df/d0747b328377fd340f9fe569ef6375c7d23169ddf992e5d4b3bd87c2c60a/pylurk-0.0.3.tar.gz
+[2023-04-11 00:01:12] INFO root fetch - processPackages [pylurk]: executing diffoscope
+[2023-04-11 00:01:12] INFO root fetch - processPackages [pylurk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylurk-0.0.2-py3-none-any.whl.zip tmp/pylurk-0.0.3.tar.gz --markdown 20230411/p/pylurk/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 00:01:12] INFO root fetch - processPackages [fabrictestbed-extensions]: executing diffoscope
+[2023-04-11 00:01:12] INFO root fetch - processPackages [fabrictestbed-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabrictestbed-extensions-1.4.2rc2.tar.gz tmp/fabrictestbed-extensions-1.4.2rc3.tar.gz --markdown 20230411/f/fabrictestbed-extensions/1.4.2rc2-1.4.2rc3/diff.md --exclude *.pyd
+[2023-04-11 00:01:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:13] INFO root fetch - processPackages [supervision]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-11 00:01:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:13] INFO root fetch - processPackages [suta-ble-bed]: New version: [0.3.2] Old Version: [0.3.0]
+[2023-04-11 00:01:14] INFO root fetch - processPackages [vmn]: New version: [0.8.0rc8] Old Version: [0.8.0rc7]
+[2023-04-11 00:01:14] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-11 00:01:14] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-11 00:01:14] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230411/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-11 00:01:14] INFO root fetch - processPackages [supervision]: Downloading https://files.pythonhosted.org/packages/ae/ac/e215af33c531ea7f79f93ea59befcfef738b8395d09cd0cb1b61c50fa7f5/supervision-0.4.0.tar.gz
+[2023-04-11 00:01:14] INFO root fetch - processPackages [suta-ble-bed]: Downloading https://files.pythonhosted.org/packages/d8/fc/fe8459580b0fd30820099607429b98e125290378fd7a4ae03f42dca4ec2d/suta_ble_bed-0.3.0.tar.gz
+[2023-04-11 00:01:14] INFO root fetch - processPackages [supervision]: Downloading https://files.pythonhosted.org/packages/66/c2/3aeb81cfed8d86be7126584d8ea024209e025bc8d16f3a902cbb4c1f4e65/supervision-0.5.0.tar.gz
+[2023-04-11 00:01:14] INFO root fetch - processPackages [supervision]: executing diffoscope
+[2023-04-11 00:01:14] INFO root fetch - processPackages [supervision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervision-0.4.0.tar.gz tmp/supervision-0.5.0.tar.gz --markdown 20230411/s/supervision/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 00:01:14] INFO root fetch - processPackages [vmn]: executing diffoscope
+[2023-04-11 00:01:14] INFO root fetch - processPackages [vmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmn-0.8.0rc7-py3-none-any.whl.zip tmp/vmn-0.8.0rc8-py3-none-any.whl.zip --markdown 20230411/v/vmn/0.8.0rc7-0.8.0rc8/diff.md --exclude *.pyd
+[2023-04-11 00:01:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:14] INFO root fetch - processPackages [np-zro]: New version: [0.1.0.post1] Old Version: [0.1.0]
+[2023-04-11 00:01:14] INFO root fetch - processPackages [suta-ble-bed]: Downloading https://files.pythonhosted.org/packages/10/21/357b73f6bdd0eaabde2bdd31d6f84b91fd7f19bb7e6a420633c3bb717f37/suta_ble_bed-0.3.2.tar.gz
+[2023-04-11 00:01:14] INFO root fetch - processPackages [suta-ble-bed]: executing diffoscope
+[2023-04-11 00:01:14] INFO root fetch - processPackages [suta-ble-bed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/suta_ble_bed-0.3.0.tar.gz tmp/suta_ble_bed-0.3.2.tar.gz --markdown 20230411/s/suta-ble-bed/0.3.0-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 00:01:14] INFO root fetch - processPackages [np-zro]: Downloading https://files.pythonhosted.org/packages/94/69/ef5362dbdb7eeb07e40cd2005c931b433a64e76f530cf79db7314007691b/np_zro-0.1.0.tar.gz
+[2023-04-11 00:01:14] INFO root fetch - processPackages [np-zro]: Downloading https://files.pythonhosted.org/packages/08/9a/929a18ed112c56880a2bc264414325eda5130ad3a094a5e68ef20eddf164/np_zro-0.1.0.post1.tar.gz
+[2023-04-11 00:01:15] INFO root fetch - processPackages [np-zro]: executing diffoscope
+[2023-04-11 00:01:15] INFO root fetch - processPackages [np-zro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_zro-0.1.0.tar.gz tmp/np_zro-0.1.0.post1.tar.gz --markdown 20230411/n/np-zro/0.1.0-0.1.0.post1/diff.md --exclude *.pyd
+[2023-04-11 00:01:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:15] INFO root fetch - processPackages [splight-lib]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-04-11 00:01:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:15] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-04-11 00:01:15] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.2.2.tar.gz tmp/splight-lib-2.2.3.tar.gz --markdown 20230411/s/splight-lib/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-04-11 00:01:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 00:01:17] INFO root fetch - main [MainThread]: Store serial: [17650953]
