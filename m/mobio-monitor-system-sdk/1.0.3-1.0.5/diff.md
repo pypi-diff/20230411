@@ -1,0 +1,137 @@
+# Comparing `tmp/mobio-monitor-system-sdk-1.0.3.tar.gz` & `tmp/mobio-monitor-system-sdk-1.0.5.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "mobio-monitor-system-sdk-1.0.3.tar", last modified: Tue Apr 11 09:31:46 2023, max compression
++gzip compressed data, was "mobio-monitor-system-sdk-1.0.5.tar", last modified: Tue Apr 11 09:45:33 2023, max compression
+```
+
+## Comparing `mobio-monitor-system-sdk-1.0.3.tar` & `mobio-monitor-system-sdk-1.0.5.tar`
+
+### file list
+
+```diff
+@@ -1,18 +1,18 @@
+-drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:31:46.683041 mobio-monitor-system-sdk-1.0.3/
+--rw-r--r--   0 root         (0) root         (0)      890 2023-04-11 09:31:46.682041 mobio-monitor-system-sdk-1.0.3/PKG-INFO
+--rw-r--r--   0 root         (0) root         (0)        0 2023-04-11 09:30:46.000000 mobio-monitor-system-sdk-1.0.3/README.md
+-drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:31:46.673041 mobio-monitor-system-sdk-1.0.3/mobio/
+-drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:31:46.674041 mobio-monitor-system-sdk-1.0.3/mobio/sdks/
+-drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:31:46.677041 mobio-monitor-system-sdk-1.0.3/mobio/sdks/monitor_system/
+--rw-r--r--   0 root         (0) root         (0)        0 2023-04-11 09:30:46.000000 mobio-monitor-system-sdk-1.0.3/mobio/sdks/monitor_system/__init__.py
+--rw-r--r--   0 root         (0) root         (0)     4685 2023-04-11 09:30:46.000000 mobio-monitor-system-sdk-1.0.3/mobio/sdks/monitor_system/__main__.py
+-drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:31:46.681041 mobio-monitor-system-sdk-1.0.3/mobio_monitor_system_sdk.egg-info/
+--rw-r--r--   0 root         (0) root         (0)      890 2023-04-11 09:31:46.000000 mobio-monitor-system-sdk-1.0.3/mobio_monitor_system_sdk.egg-info/PKG-INFO
+--rw-r--r--   0 root         (0) root         (0)      405 2023-04-11 09:31:46.000000 mobio-monitor-system-sdk-1.0.3/mobio_monitor_system_sdk.egg-info/SOURCES.txt
+--rw-r--r--   0 root         (0) root         (0)        1 2023-04-11 09:31:46.000000 mobio-monitor-system-sdk-1.0.3/mobio_monitor_system_sdk.egg-info/dependency_links.txt
+--rw-r--r--   0 root         (0) root         (0)        6 2023-04-11 09:31:46.000000 mobio-monitor-system-sdk-1.0.3/mobio_monitor_system_sdk.egg-info/namespace_packages.txt
+--rw-r--r--   0 root         (0) root         (0)       12 2023-04-11 09:31:46.000000 mobio-monitor-system-sdk-1.0.3/mobio_monitor_system_sdk.egg-info/requires.txt
+--rw-r--r--   0 root         (0) root         (0)        6 2023-04-11 09:31:46.000000 mobio-monitor-system-sdk-1.0.3/mobio_monitor_system_sdk.egg-info/top_level.txt
+--rw-r--r--   0 root         (0) root         (0)      104 2023-04-11 09:30:46.000000 mobio-monitor-system-sdk-1.0.3/pyproject.toml
+--rw-r--r--   0 root         (0) root         (0)       38 2023-04-11 09:31:46.683041 mobio-monitor-system-sdk-1.0.3/setup.cfg
+--rw-r--r--   0 root         (0) root         (0)     9247 2023-04-11 09:31:46.000000 mobio-monitor-system-sdk-1.0.3/setup.py
++drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:45:33.186584 mobio-monitor-system-sdk-1.0.5/
++-rw-r--r--   0 root         (0) root         (0)      890 2023-04-11 09:45:33.185584 mobio-monitor-system-sdk-1.0.5/PKG-INFO
++-rw-r--r--   0 root         (0) root         (0)        0 2023-04-11 09:30:46.000000 mobio-monitor-system-sdk-1.0.5/README.md
++drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:45:33.177584 mobio-monitor-system-sdk-1.0.5/mobio/
++drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:45:33.177584 mobio-monitor-system-sdk-1.0.5/mobio/sdks/
++drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:45:33.180584 mobio-monitor-system-sdk-1.0.5/mobio/sdks/monitor_system/
++-rw-r--r--   0 root         (0) root         (0)      285 2023-04-11 09:44:28.000000 mobio-monitor-system-sdk-1.0.5/mobio/sdks/monitor_system/__main__.py
++-rw-r--r--   0 root         (0) root         (0)     4685 2023-04-11 09:44:28.000000 mobio-monitor-system-sdk-1.0.5/mobio/sdks/monitor_system/initialize_monitor_kafka.py
++drwxr-xr-x   0 root         (0) root         (0)        0 2023-04-11 09:45:33.184584 mobio-monitor-system-sdk-1.0.5/mobio_monitor_system_sdk.egg-info/
++-rw-r--r--   0 root         (0) root         (0)      890 2023-04-11 09:45:33.000000 mobio-monitor-system-sdk-1.0.5/mobio_monitor_system_sdk.egg-info/PKG-INFO
++-rw-r--r--   0 root         (0) root         (0)      421 2023-04-11 09:45:33.000000 mobio-monitor-system-sdk-1.0.5/mobio_monitor_system_sdk.egg-info/SOURCES.txt
++-rw-r--r--   0 root         (0) root         (0)        1 2023-04-11 09:45:33.000000 mobio-monitor-system-sdk-1.0.5/mobio_monitor_system_sdk.egg-info/dependency_links.txt
++-rw-r--r--   0 root         (0) root         (0)        6 2023-04-11 09:45:33.000000 mobio-monitor-system-sdk-1.0.5/mobio_monitor_system_sdk.egg-info/namespace_packages.txt
++-rw-r--r--   0 root         (0) root         (0)       12 2023-04-11 09:45:33.000000 mobio-monitor-system-sdk-1.0.5/mobio_monitor_system_sdk.egg-info/requires.txt
++-rw-r--r--   0 root         (0) root         (0)        6 2023-04-11 09:45:33.000000 mobio-monitor-system-sdk-1.0.5/mobio_monitor_system_sdk.egg-info/top_level.txt
++-rw-r--r--   0 root         (0) root         (0)      104 2023-04-11 09:30:46.000000 mobio-monitor-system-sdk-1.0.5/pyproject.toml
++-rw-r--r--   0 root         (0) root         (0)       38 2023-04-11 09:45:33.186584 mobio-monitor-system-sdk-1.0.5/setup.cfg
++-rw-r--r--   0 root         (0) root         (0)     9247 2023-04-11 09:45:32.000000 mobio-monitor-system-sdk-1.0.5/setup.py
+```
+
+### Comparing `mobio-monitor-system-sdk-1.0.3/PKG-INFO` & `mobio-monitor-system-sdk-1.0.5/PKG-INFO`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: mobio-monitor-system-sdk
+-Version: 1.0.3
++Version: 1.0.5
+ Summary: Mobio Monitor System SDK
+ Home-page: https://github.com/mobiovn
+ Author: MOBIO
+ Author-email: contact@mobio.vn
+ License: MIT
+ Project-URL: Source, https://github.com/mobiovn
+ Description: UNKNOWN
+```
+
+### Comparing `mobio-monitor-system-sdk-1.0.3/mobio/sdks/monitor_system/__main__.py` & `mobio-monitor-system-sdk-1.0.5/mobio/sdks/monitor_system/initialize_monitor_kafka.py`
+
+ * *Files identical despite different names*
+
+### Comparing `mobio-monitor-system-sdk-1.0.3/mobio_monitor_system_sdk.egg-info/PKG-INFO` & `mobio-monitor-system-sdk-1.0.5/mobio_monitor_system_sdk.egg-info/PKG-INFO`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: mobio-monitor-system-sdk
+-Version: 1.0.3
++Version: 1.0.5
+ Summary: Mobio Monitor System SDK
+ Home-page: https://github.com/mobiovn
+ Author: MOBIO
+ Author-email: contact@mobio.vn
+ License: MIT
+ Project-URL: Source, https://github.com/mobiovn
+ Description: UNKNOWN
+```
+
+### Comparing `mobio-monitor-system-sdk-1.0.3/setup.py` & `mobio-monitor-system-sdk-1.0.5/setup.py`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -24,15 +24,15 @@
+         :param filename:
+         :return:
+         """
+         requirements = ["m-singleton"]
+         return requirements
+ 
+ 
+-version_dev='1.0.3'  # Giữ nguyên định dạng không được format file có khoảng trống theo Pycharm (version_dev = '1.0.9' là file run.sh sẽ không bắt được current_version)
++version_dev='1.0.5'  # Giữ nguyên định dạng không được format file có khoảng trống theo Pycharm (version_dev = '1.0.9' là file run.sh sẽ không bắt được current_version)
+ version_prod='1.0.0'  # Giữ nguyên định dạng không được format file có khoảng trống theo Pycharm (version_dev = '1.0.9' là file run.sh sẽ không bắt được current_version)
+ 
+ run_mode = ''
+ 
+ setup(
+     # This is the name of your project. The first time you publish this
+     # package, this name will be registered for you. It will determine how
+@@ -48,15 +48,15 @@
+     name="mobio-monitor-system-sdk" + run_mode,  # Required
+     # Versions should comply with PEP 440:
+     # https://www.python.org/dev/peps/pep-0440/
+     #
+     # For a discussion on single-sourcing the version across setup.py and the
+     # project code, see
+     # https://packaging.python.org/en/latest/single_source_version.html
+-    version='1.0.3',  # Required, Phần này cũng không được format file.
++    version='1.0.5',  # Required, Phần này cũng không được format file.
+     # This is a one-line description or tagline of what your project does. This
+     # corresponds to the "Summary" metadata field:
+     # https://packaging.python.org/specifications/core-metadata/#summary
+     description="Mobio Monitor System SDK",  # Optional
+     # This is an optional longer description of your project that represents
+     # the body of text which users will see when they visit PyPI.
+     #
+```
+

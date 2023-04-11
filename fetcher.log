@@ -11930,3 +11930,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 11:40:19] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:40:21] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:40:21] INFO root fetch - main [MainThread]: Store serial: [17658983]
+[2023-04-11 11:45:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658983]
+[2023-04-11 11:45:29] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 11:45:29] INFO root fetch - processPackages [TyphoonTest]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-11 11:45:29] INFO root fetch - processPackages [ramCOH]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-11 11:45:29] INFO root fetch - processPackages [fuse-client]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-11 11:45:29] INFO root fetch - processPackages [profyle]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 11:45:29] INFO root fetch - processPackages [redbrick-sdk]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-11 11:45:29] INFO root fetch - processPackages [ramCOH]: executing diffoscope
+[2023-04-11 11:45:29] INFO root fetch - processPackages [ramCOH]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramCOH-1.1.0.tar.gz tmp/ramCOH-1.1.1.tar.gz --markdown 20230411/r/ramCOH/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-11 11:45:29] INFO root fetch - processPackages [TyphoonTest]: Downloading https://files.pythonhosted.org/packages/eb/76/2e7b6fc2bbf52c920430df2af311238da54ee0afbf994eafdbd47c6bf5a5/TyphoonTest-1.8.0-cp37-cp37m-win_amd64.whl
+[2023-04-11 11:45:29] INFO root fetch - processPackages [redbrick-sdk]: Downloading https://files.pythonhosted.org/packages/39/80/dc7084102f17b9bfc0989d45c43808a79888bb2b1ede233fc3c06f239087/redbrick-sdk-2.9.0.tar.gz
+[2023-04-11 11:45:29] INFO root fetch - processPackages [fuse-client]: Downloading https://files.pythonhosted.org/packages/ea/88/67e0e399fcc6a3629214e48ab1eec3479593d19afe7d7c715218a12f0293/fuse-client-1.0.6.tar.gz
+[2023-04-11 11:45:29] INFO root fetch - processPackages [profyle]: executing diffoscope
+[2023-04-11 11:45:29] INFO root fetch - processPackages [profyle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profyle-0.0.8.tar.gz tmp/profyle-0.0.9.tar.gz --markdown 20230411/p/profyle/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 11:45:29] INFO root fetch - processPackages [fuse-client]: executing diffoscope
+[2023-04-11 11:45:29] INFO root fetch - processPackages [fuse-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuse_client-1.0.5.tar.gz tmp/fuse-client-1.0.6.tar.gz --markdown 20230411/f/fuse-client/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-11 11:45:29] INFO root fetch - processPackages [TyphoonTest]: Downloading https://files.pythonhosted.org/packages/95/6c/5de56205325fe7a56c7dd77a8a4d064b8a9a5d0d3be00c23953a90759803/TyphoonTest-1.9.0-cp37-cp37m-win_amd64.whl
+[2023-04-11 11:45:29] INFO root fetch - processPackages [redbrick-sdk]: Downloading https://files.pythonhosted.org/packages/a7/76/019f7262b8485c21cf169b7845636395b17c40312c8ef76d03c3492c4218/redbrick-sdk-2.9.1.tar.gz
+[2023-04-11 11:45:30] INFO root fetch - processPackages [redbrick-sdk]: executing diffoscope
+[2023-04-11 11:45:30] INFO root fetch - processPackages [redbrick-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redbrick-sdk-2.9.0.tar.gz tmp/redbrick-sdk-2.9.1.tar.gz --markdown 20230411/r/redbrick-sdk/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-11 11:45:30] INFO root fetch - processPackages [TyphoonTest]: executing diffoscope
+[2023-04-11 11:45:30] INFO root fetch - processPackages [TyphoonTest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TyphoonTest-1.8.0-cp37-cp37m-win_amd64.whl.zip tmp/TyphoonTest-1.9.0-cp37-cp37m-win_amd64.whl.zip --markdown 20230411/T/TyphoonTest/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 11:45:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:30] INFO root fetch - processPackages [flake8-picky-parentheses]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-11 11:45:30] INFO root fetch - processPackages [flake8-picky-parentheses]: Downloading https://files.pythonhosted.org/packages/53/8a/b7b9646db9657a85117f41e9d1110f40999871cba8daaf24d0c4e8a71cc4/flake8-picky-parentheses-0.4.0.tar.gz
+[2023-04-11 11:45:31] INFO root fetch - processPackages [flake8-picky-parentheses]: Downloading https://files.pythonhosted.org/packages/8c/63/0b6bff333b29cdce44b1c06d54e3b936f0148817148588b8a8bbe87b2c2e/flake8-picky-parentheses-0.5.0.tar.gz
+[2023-04-11 11:45:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:31] INFO root fetch - processPackages [selenium-profiles]: New version: [2.2.6] Old Version: [2.2.5.5]
+[2023-04-11 11:45:31] INFO root fetch - processPackages [selenium-profiles]: Downloading https://files.pythonhosted.org/packages/07/0c/94e712b9a26c6482b9e28e6beb6ab5071cf63c3a6ffb6e5bbe668afa4e11/selenium_profiles-2.2.5.5.tar.gz
+[2023-04-11 11:45:31] INFO root fetch - processPackages [flake8-picky-parentheses]: executing diffoscope
+[2023-04-11 11:45:31] INFO root fetch - processPackages [flake8-picky-parentheses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8-picky-parentheses-0.4.0.tar.gz tmp/flake8-picky-parentheses-0.5.0.tar.gz --markdown 20230411/f/flake8-picky-parentheses/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 11:45:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:31] INFO root fetch - processPackages [netunicorn-connector-docker]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 11:45:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:31] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 11:45:31] INFO root fetch - processPackages [mobio-monitor-system-sdk]: New version: [1.0.5] Old Version: [1.0.3]
+[2023-04-11 11:45:31] INFO root fetch - processPackages [netunicorn-connector-docker]: Downloading https://files.pythonhosted.org/packages/98/56/fced4ebdf995a06b43c9f1b497f4e4bbe6959f3c15844bb4b5ea999a2e31/netunicorn-connector-docker-0.1.0.tar.gz
+[2023-04-11 11:45:31] INFO root fetch - processPackages [mobio-monitor-system-sdk]: Downloading https://files.pythonhosted.org/packages/4b/cb/1b3c6090fd8d68d1622d8c84d25d89084bfabf6f00e1aeec8fe690f317af/mobio-monitor-system-sdk-1.0.5.tar.gz
+[2023-04-11 11:45:31] INFO root fetch - processPackages [selenium-profiles]: Downloading https://files.pythonhosted.org/packages/05/fc/6b5d3eccc2558978bbf7b4a56e1603abc9613d4384cbf95d867b965dca8a/selenium_profiles-2.2.6.tar.gz
+[2023-04-11 11:45:31] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: Downloading https://files.pythonhosted.org/packages/a4/35/9177444a8335232f911fa70405f3d818d7c8fb594975300fef83be9524ab/nonebot_plugin_sdgpt-0.1.9.tar.gz
+[2023-04-11 11:45:31] INFO root fetch - processPackages [selenium-profiles]: executing diffoscope
+[2023-04-11 11:45:31] INFO root fetch - processPackages [selenium-profiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium_profiles-2.2.5.5.tar.gz tmp/selenium_profiles-2.2.6.tar.gz --markdown 20230411/s/selenium-profiles/2.2.5.5-2.2.6/diff.md --exclude *.pyd
+[2023-04-11 11:45:31] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: executing diffoscope
+[2023-04-11 11:45:31] INFO root fetch - processPackages [nonebot-plugin-sdgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sdgpt-0.1.8.tar.gz tmp/nonebot_plugin_sdgpt-0.1.9.tar.gz --markdown 20230411/n/nonebot-plugin-sdgpt/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 11:45:31] INFO root fetch - processPackages [mobio-monitor-system-sdk]: executing diffoscope
+[2023-04-11 11:45:31] INFO root fetch - processPackages [mobio-monitor-system-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobio-monitor-system-sdk-1.0.3.tar.gz tmp/mobio-monitor-system-sdk-1.0.5.tar.gz --markdown 20230411/m/mobio-monitor-system-sdk/1.0.3-1.0.5/diff.md --exclude *.pyd
+[2023-04-11 11:45:32] INFO root fetch - processPackages [netunicorn-connector-docker]: Downloading https://files.pythonhosted.org/packages/33/3a/01bbc0b08f1942f899f7bb5068ca7e5963d99209a62624282ef2a5f32143/netunicorn-connector-docker-0.1.1.tar.gz
+[2023-04-11 11:45:32] INFO root fetch - processPackages [netunicorn-connector-docker]: executing diffoscope
+[2023-04-11 11:45:32] INFO root fetch - processPackages [netunicorn-connector-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netunicorn-connector-docker-0.1.0.tar.gz tmp/netunicorn-connector-docker-0.1.1.tar.gz --markdown 20230411/n/netunicorn-connector-docker/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 11:45:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:32] INFO root fetch - processPackages [duqtools]: New version: [1.7.0] Old Version: [1.6.4]
+[2023-04-11 11:45:32] INFO root fetch - processPackages [duqtools]: Downloading https://files.pythonhosted.org/packages/a9/5e/561774de82a66c428044af690962aef05dedcfcae1b0438022ca62f6ce00/duqtools-1.6.4.tar.gz
+[2023-04-11 11:45:32] INFO root fetch - processPackages [duqtools]: Downloading https://files.pythonhosted.org/packages/3f/1f/e0ebe5ad0c4b7a8654b0daed53aa8f974ad3c1c57b6aeca5b8ab2fd8f2b8/duqtools-1.7.0.tar.gz
+[2023-04-11 11:45:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:33] INFO root fetch - processPackages [dipex]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-04-11 11:45:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:33] INFO root fetch - processPackages [dipex]: executing diffoscope
+[2023-04-11 11:45:33] INFO root fetch - processPackages [dipex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dipex-4.9.1.tar.gz tmp/dipex-4.9.2.tar.gz --markdown 20230411/d/dipex/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-04-11 11:45:33] INFO root fetch - processPackages [duqtools]: executing diffoscope
+[2023-04-11 11:45:33] INFO root fetch - processPackages [duqtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duqtools-1.6.4.tar.gz tmp/duqtools-1.7.0.tar.gz --markdown 20230411/d/duqtools/1.6.4-1.7.0/diff.md --exclude *.pyd
+[2023-04-11 11:45:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:45:35] INFO root fetch - main [MainThread]: Store serial: [17659028]
