@@ -3865,3 +3865,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 03:37:50] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:37:51] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:37:51] INFO root fetch - main [MainThread]: Store serial: [17653803]
+[2023-04-11 03:42:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17653803]
+[2023-04-11 03:42:58] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 03:42:58] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.705] Old Version: [0.0.704]
+[2023-04-11 03:42:58] INFO root fetch - processPackages [screcode]: New version: [0.1.2.dev202304110111] Old Version: [0.1.2.dev202304110017]
+[2023-04-11 03:42:58] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-11 03:42:58] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.704.tar.gz tmp/nbdev-apl-0.0.705.tar.gz --markdown 20230411/n/nbdev-apl/0.0.704-0.0.705/diff.md --exclude *.pyd
+[2023-04-11 03:42:58] WARNING root fetch - processPackages [cycept]: Skipping, unable to determine old version
+[2023-04-11 03:42:58] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:42:58] INFO root fetch - processPackages [screcode]: executing diffoscope
+[2023-04-11 03:42:58] INFO root fetch - processPackages [screcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screcode-0.1.2.dev202304110017-py3-none-any.whl.zip tmp/screcode-0.1.2.dev202304110111-py3-none-any.whl.zip --markdown 20230411/s/screcode/0.1.2.dev202304110017-0.1.2.dev202304110111/diff.md --exclude *.pyd
+[2023-04-11 03:42:58] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 03:42:58] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 03:42:58] INFO root fetch - processPackages [sui-brownie]: New version: [0.30.2] Old Version: [0.30.1]
+[2023-04-11 03:42:58] INFO root fetch - processPackages [sui-brownie]: Downloading https://files.pythonhosted.org/packages/5c/96/b2fa766975380c8f3792b6646e46509dc5f3939186eefc6ca1c8b9092ec6/sui_brownie-0.30.1-py3-none-any.whl
+[2023-04-11 03:42:59] INFO root fetch - processPackages [sui-brownie]: Downloading https://files.pythonhosted.org/packages/e8/f0/b795fa8501c88a0938202017946383e83aac932a40b193ef079e54d094a7/sui_brownie-0.30.2-py3-none-any.whl
+[2023-04-11 03:42:59] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2023-04-11 03:42:59] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2023-04-11 03:42:59] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20230411/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:42:59] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20230411/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:42:59] INFO root fetch - processPackages [sui-brownie]: executing diffoscope
+[2023-04-11 03:42:59] INFO root fetch - processPackages [sui-brownie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sui_brownie-0.30.1-py3-none-any.whl.zip tmp/sui_brownie-0.30.2-py3-none-any.whl.zip --markdown 20230411/s/sui-brownie/0.30.1-0.30.2/diff.md --exclude *.pyd
+[2023-04-11 03:42:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:42:59] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 03:42:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:42:59] INFO root fetch - processPackages [py-madvr]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-11 03:42:59] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/3d/2d/dc2e6f59b0632fcada98db27df4ec7179559c8654db9782646863ecca479/py_madvr-1.2.2.tar.gz
+[2023-04-11 03:42:59] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-04-11 03:42:59] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.8.tar.gz tmp/sparrow-order-lib-0.1.9.tar.gz --markdown 20230411/s/sparrow-order-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 03:43:00] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-04-11 03:43:00] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.2.2.tar.gz tmp/py_madvr-1.2.3.tar.gz --markdown 20230411/p/py-madvr/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-11 03:43:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:43:00] INFO root fetch - processPackages [sui-brownie]: New version: [0.30.2] Old Version: [0.30.1]
+[2023-04-11 03:43:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:43:00] INFO root fetch - processPackages [sui-brownie]: executing diffoscope
+[2023-04-11 03:43:00] INFO root fetch - processPackages [sui-brownie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sui_brownie-0.30.1-py3-none-any.whl.zip tmp/sui_brownie-0.30.2-py3-none-any.whl.zip --markdown 20230411/s/sui-brownie/0.30.1-0.30.2/diff.md --exclude *.pyd
+[2023-04-11 03:43:00] INFO root fetch - processPackages [tatarubot2]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-11 03:43:00] INFO root fetch - processPackages [tatarubot2]: Downloading https://files.pythonhosted.org/packages/e1/42/54ee1174392f827f1074a94b8a107551e96a35d7c5e9376a6d19ecd6991e/tatarubot2-0.1.8.tar.gz
+[2023-04-11 03:43:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:43:00] INFO root fetch - processPackages [tatarubot2]: executing diffoscope
+[2023-04-11 03:43:00] INFO root fetch - processPackages [tatarubot2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tatarubot2-0.1.7.tar.gz tmp/tatarubot2-0.1.8.tar.gz --markdown 20230411/t/tatarubot2/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-11 03:43:00] INFO root fetch - processPackages [spanish-nlp]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-11 03:43:01] INFO root fetch - processPackages [spanish-nlp]: executing diffoscope
+[2023-04-11 03:43:01] INFO root fetch - processPackages [spanish-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanish_nlp-0.2.7.tar.gz tmp/spanish_nlp-0.2.8.tar.gz --markdown 20230411/s/spanish-nlp/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-11 03:43:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:43:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:43:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:43:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:43:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:43:02] INFO root fetch - main [MainThread]: Store serial: [17653835]
