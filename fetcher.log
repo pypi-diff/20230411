@@ -7163,3 +7163,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-11 06:37:27] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:37:27] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:37:27] INFO root fetch - main [MainThread]: Store serial: [17656084]
+[2023-04-11 06:42:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656084]
+[2023-04-11 06:42:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-11 06:42:35] WARNING root fetch - processPackages [peaksjs-widget]: Skipping, unable to determine old version
+[2023-04-11 06:42:35] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:42:35] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: New version: [14.0.1.1.1.dev4] Old Version: [14.0.1.1.1.dev3]
+[2023-04-11 06:42:35] INFO root fetch - processPackages [pynecone]: New version: [0.1.24a0] Old Version: [0.1.23a0]
+[2023-04-11 06:42:35] INFO root fetch - processPackages [goodcrap]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 06:42:35] INFO root fetch - processPackages [ga-vqc]: New version: [0.0.52] Old Version: [0.0.51]
+[2023-04-11 06:42:35] INFO root fetch - processPackages [leximpact-prepare-data]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 06:42:35] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: Downloading https://files.pythonhosted.org/packages/50/12/7da5bd0d650e112984860e785d312f50478a892135035760521e470e1781/odoo14_addon_hr_attendance_reason-14.0.1.1.1.dev3-py3-none-any.whl
+[2023-04-11 06:42:35] INFO root fetch - processPackages [leximpact-prepare-data]: Downloading https://files.pythonhosted.org/packages/c7/04/df458683b037e8161644ae2eac53158a0b0dd02d0ddfa91118a5f014e8aa/leximpact_prepare_data-0.0.8.tar.gz
+[2023-04-11 06:42:35] INFO root fetch - processPackages [pynecone]: Downloading https://files.pythonhosted.org/packages/c5/26/f9229e6472acf382c365d62e21bea355f12ad3178fddc22a6cd0b141e74c/pynecone-0.1.24a0.tar.gz
+[2023-04-11 06:42:35] INFO root fetch - processPackages [goodcrap]: Downloading https://files.pythonhosted.org/packages/c1/aa/be2988a9e08b3681ee7db5feda62bac42ca8757e42f4365be95ea2fecce2/goodcrap-0.2.2.tar.gz
+[2023-04-11 06:42:35] INFO root fetch - processPackages [ga-vqc]: Downloading https://files.pythonhosted.org/packages/68/1a/fdde8643fbbe896bd77d626dda1982b0b35d259b0c31b9fd62c0810b53a9/ga_vqc-0.0.52.tar.gz
+[2023-04-11 06:42:35] INFO root fetch - processPackages [goodcrap]: executing diffoscope
+[2023-04-11 06:42:35] INFO root fetch - processPackages [goodcrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goodcrap-0.2.1.tar.gz tmp/goodcrap-0.2.2.tar.gz --markdown 20230411/g/goodcrap/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 06:42:35] INFO root fetch - processPackages [ga-vqc]: executing diffoscope
+[2023-04-11 06:42:35] INFO root fetch - processPackages [ga-vqc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ga_vqc-0.0.51.tar.gz tmp/ga_vqc-0.0.52.tar.gz --markdown 20230411/g/ga-vqc/0.0.51-0.0.52/diff.md --exclude *.pyd
+[2023-04-11 06:42:35] INFO root fetch - processPackages [pynecone]: executing diffoscope
+[2023-04-11 06:42:35] INFO root fetch - processPackages [pynecone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynecone-0.1.23a0.tar.gz tmp/pynecone-0.1.24a0.tar.gz --markdown 20230411/p/pynecone/0.1.23a0-0.1.24a0/diff.md --exclude *.pyd
+[2023-04-11 06:42:35] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: Downloading https://files.pythonhosted.org/packages/bb/6f/f9528d30a0b3bd2e54bdd518cd0486e01bff30d475c045227ebc8ab6d863/odoo14_addon_hr_attendance_reason-14.0.1.1.1.dev4-py3-none-any.whl
+[2023-04-11 06:42:35] INFO root fetch - processPackages [leximpact-prepare-data]: Downloading https://files.pythonhosted.org/packages/d3/c3/f1d317f7b2d163023c42ff5e2bdbe260f7a9d7d657e2289ca93bc914a855/leximpact_prepare_data-0.0.9.tar.gz
+[2023-04-11 06:42:35] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: executing diffoscope
+[2023-04-11 06:42:35] INFO root fetch - processPackages [odoo14-addon-hr-attendance-reason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_hr_attendance_reason-14.0.1.1.1.dev3-py3-none-any.whl.zip tmp/odoo14_addon_hr_attendance_reason-14.0.1.1.1.dev4-py3-none-any.whl.zip --markdown 20230411/o/odoo14-addon-hr-attendance-reason/14.0.1.1.1.dev3-14.0.1.1.1.dev4/diff.md --exclude *.pyd
+[2023-04-11 06:42:35] INFO root fetch - processPackages [leximpact-prepare-data]: executing diffoscope
+[2023-04-11 06:42:35] INFO root fetch - processPackages [leximpact-prepare-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leximpact_prepare_data-0.0.8.tar.gz tmp/leximpact_prepare_data-0.0.9.tar.gz --markdown 20230411/l/leximpact-prepare-data/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 06:42:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:42:36] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-11 06:42:36] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-11 06:42:36] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230411/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-11 06:42:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:42:37] INFO root fetch - processPackages [QualysPy]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-11 06:42:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:42:37] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-04-11 06:42:37] INFO root fetch - processPackages [QualysPy]: Downloading https://files.pythonhosted.org/packages/73/3e/77c3f0a8f5b42a3035676a65b1f33f3c5faa02e3ced53fff43ca9f4c0cdd/qualyspy-0.2.3.tar.gz
+[2023-04-11 06:42:37] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-04-11 06:42:37] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230411/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-04-11 06:42:37] INFO root fetch - processPackages [QualysPy]: executing diffoscope
+[2023-04-11 06:42:37] INFO root fetch - processPackages [QualysPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualyspy-0.2.2.tar.gz tmp/qualyspy-0.2.3.tar.gz --markdown 20230411/Q/QualysPy/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-11 06:42:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:42:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:42:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:42:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:42:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:42:42] INFO root fetch - main [MainThread]: Store serial: [17656110]
