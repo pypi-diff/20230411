@@ -1,14 +1,14 @@
-# Comparing `tmp/ccsdspy-1.0.0.tar.gz` & `tmp/ccsdspy-1.1.0.tar.gz`
+# Comparing `tmp/ccsdspy-1.0.0.tar.gz` & `tmp/ccsdspy-1.1.0-r1.tar.gz`
 
 ## filetype from file(1)
 
 ```diff
 @@ -1 +1 @@
 -gzip compressed data, was "ccsdspy-1.0.0.tar", last modified: Thu Feb  2 16:26:20 2023, max compression
-+gzip compressed data, was "ccsdspy-1.1.0.tar", last modified: Tue Apr 11 15:17:49 2023, max compression
++gzip compressed data, was "ccsdspy-1.1.0.tar", last modified: Tue Apr 11 15:21:25 2023, max compression
 ```
 
-## Comparing `ccsdspy-1.0.0.tar` & `ccsdspy-1.1.0.tar`
+## Comparing `ccsdspy-1.0.0.tar` & `ccsdspy-1.1.0-r1.tar`
 
 ### file list
 
@@ -189,57 +189,57 @@
 --rw-r--r--   0 daniel    (1000) daniel    (1000)     2620 2023-02-02 16:14:56.000000 ccsdspy-1.0.0/pyproject.toml
 --rw-r--r--   0 daniel    (1000) daniel    (1000)      542 2023-02-02 16:14:56.000000 ccsdspy-1.0.0/readthedocs.yml
 --rw-r--r--   0 daniel    (1000) daniel    (1000)      162 2023-02-02 16:26:20.441107 ccsdspy-1.0.0/setup.cfg
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.897923 ccsdspy-1.1.0/
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.594823 ccsdspy-1.1.0/.github/
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.746812 ccsdspy-1.1.0/.github/workflows/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.975703 ccsdspy-1.1.0/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.260404 ccsdspy-1.1.0/.github/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.500154 ccsdspy-1.1.0/.github/workflows/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     1077 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/.github/workflows/ccsdspy-ci.yml
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      803 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/.github/workflows/doc-build.yml
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     1237 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/.gitignore
-+-rw-r--r--   0 daniel    (1000) daniel    (1000)     2588 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/CHANGELOG.rst
++-rw-r--r--   0 daniel    (1000) daniel    (1000)     2618 2023-04-11 15:19:43.000000 ccsdspy-1.1.0/CHANGELOG.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     1490 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/LICENSE.rst
-+-rw-r--r--   0 daniel    (1000) daniel    (1000)     5085 2023-04-11 15:17:49.903884 ccsdspy-1.1.0/PKG-INFO
++-rw-r--r--   0 daniel    (1000) daniel    (1000)     5085 2023-04-11 15:21:25.977696 ccsdspy-1.1.0/PKG-INFO
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     2546 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/README.rst
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.824060 ccsdspy-1.1.0/ccsdspy/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.563958 ccsdspy-1.1.0/ccsdspy/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      526 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/ccsdspy/__init__.py
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     1703 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/__main__.py
-+-rw-r--r--   0 daniel    (1000) daniel    (1000)      160 2023-04-11 15:17:46.000000 ccsdspy-1.1.0/ccsdspy/_version.py
++-rw-r--r--   0 daniel    (1000) daniel    (1000)      160 2023-04-11 15:21:23.000000 ccsdspy-1.1.0/ccsdspy/_version.py
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      166 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/constants.py
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     9270 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/ccsdspy/converters.py
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    19073 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/decode.py
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     6540 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/ccsdspy/packet_fields.py
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    24216 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/ccsdspy/packet_types.py
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.943268 ccsdspy-1.1.0/ccsdspy/tests/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.686702 ccsdspy-1.1.0/ccsdspy/tests/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      121 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/__init__.py
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.656934 ccsdspy-1.1.0/ccsdspy/tests/data/
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.949858 ccsdspy-1.1.0/ccsdspy/tests/data/hs/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.385320 ccsdspy-1.1.0/ccsdspy/tests/data/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.692881 ccsdspy-1.1.0/ccsdspy/tests/data/hs/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      232 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/README.rst
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.967831 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid001/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.717083 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid001/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    73848 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid001/SSAT1_2015-180-00-00-00_2015-180-01-59-58_1_1_sim.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      727 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid001/defs.csv
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.980799 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid010/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.738606 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid010/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)   179163 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid010/SSAT1_2015-180-00-00-00_2015-180-00-59-59_10_1_sim.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     1524 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid010/defs.csv
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.994356 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid035/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.754085 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid035/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)   367200 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid035/SSAT1_2015-180-00-00-00_2015-180-01-59-59_35_1_sim.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     1159 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid035/defs.csv
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.015908 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid130/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.784064 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid130/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)   559689 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid130/SSAT1_2015-180-00-00-00_2015-180-01-59-35_130_1_sim.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      390 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid130/defs.csv
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.040843 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid251/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.813451 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid251/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)  1008000 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid251/SSAT1_2015-180-00-00-00_2015-180-01-59-59_251_1_sim.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      422 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid251/defs.csv
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.099735 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid895/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.858480 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid895/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)  2446980 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid895/SSAT1_2015-180-00-00-00_2015-180-01-59-56_895_1_sim.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      440 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/apid895/defs.csv
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.115676 ccsdspy-1.1.0/ccsdspy/tests/data/hs/attic/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.868169 ccsdspy-1.1.0/ccsdspy/tests/data/hs/attic/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    17668 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/attic/SSAT_Mnemonics.csv
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     2116 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/hs/attic/_expand_mnemnonics.py
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.138978 ccsdspy-1.1.0/ccsdspy/tests/data/packet_def/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.901722 ccsdspy-1.1.0/ccsdspy/tests/data/packet_def/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      111 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/packet_def/simple_csv_3col.csv
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      121 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/packet_def/simple_csv_3col_with_array.csv
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      142 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/packet_def/simple_csv_4col.csv
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      149 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/packet_def/simple_csv_4col_with_array.csv
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.198488 ccsdspy-1.1.0/ccsdspy/tests/data/split/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.984158 ccsdspy-1.1.0/ccsdspy/tests/data/split/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    14820 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/CYGNSS_F7_L0_2022_086_10_15_V01_F__first101pkts.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     1040 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/apid00384.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      416 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/apid00386.tlm
@@ -248,7 +248,7 @@
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     5600 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/apid00393.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     2964 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/apid00394.tlm
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     2448 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/apid01313.tlm
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.705382 ccsdspy-1.1.0/ccsdspy/tests/data/split/defs/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.611159 ccsdspy-1.1.0/ccsdspy/tests/data/split/defs/
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)     1443 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/defs/Conventions.csv
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)     2025 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/defs/DIAG_ADCS_BUS_FSW_INP.csv
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)     2024 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/defs/DIAG_ADCS_BUS_FSW_OUT.csv
@@ -310,7 +310,7 @@
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)     6120 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/defs/SCI_META_V2.csv
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)     2016 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/defs/SCI_RAW.csv
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)     1384 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/split/defs/SUPER_NOM.csv
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.731861 ccsdspy-1.1.0/ccsdspy/tests/data/var_length/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.660620 ccsdspy-1.1.0/ccsdspy/tests/data/var_length/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      634 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/var_length/README.md
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      318 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/var_length/var_length_packets.bin
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     1213 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/data/var_length/var_length_packets.py
@@ -326,38 +326,38 @@
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     4756 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/test_utils.py
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     4182 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/ccsdspy/tests/test_var_length.py
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     7887 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/ccsdspy/utils.py
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:48.865178 ccsdspy-1.1.0/ccsdspy.egg-info/
-+-rw-r--r--   0 daniel    (1000) daniel    (1000)     5085 2023-04-11 15:17:47.000000 ccsdspy-1.1.0/ccsdspy.egg-info/PKG-INFO
-+-rw-r--r--   0 daniel    (1000) daniel    (1000)     6402 2023-04-11 15:17:48.000000 ccsdspy-1.1.0/ccsdspy.egg-info/SOURCES.txt
-+-rw-r--r--   0 daniel    (1000) daniel    (1000)        1 2023-04-11 15:17:47.000000 ccsdspy-1.1.0/ccsdspy.egg-info/dependency_links.txt
-+-rw-r--r--   0 daniel    (1000) daniel    (1000)      194 2023-04-11 15:17:47.000000 ccsdspy-1.1.0/ccsdspy.egg-info/requires.txt
-+-rw-r--r--   0 daniel    (1000) daniel    (1000)        8 2023-04-11 15:17:47.000000 ccsdspy-1.1.0/ccsdspy.egg-info/top_level.txt
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.760821 ccsdspy-1.1.0/docs/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:24.600102 ccsdspy-1.1.0/ccsdspy.egg-info/
++-rw-r--r--   0 daniel    (1000) daniel    (1000)     5085 2023-04-11 15:21:23.000000 ccsdspy-1.1.0/ccsdspy.egg-info/PKG-INFO
++-rw-r--r--   0 daniel    (1000) daniel    (1000)     6402 2023-04-11 15:21:24.000000 ccsdspy-1.1.0/ccsdspy.egg-info/SOURCES.txt
++-rw-r--r--   0 daniel    (1000) daniel    (1000)        1 2023-04-11 15:21:23.000000 ccsdspy-1.1.0/ccsdspy.egg-info/dependency_links.txt
++-rw-r--r--   0 daniel    (1000) daniel    (1000)      194 2023-04-11 15:21:23.000000 ccsdspy-1.1.0/ccsdspy.egg-info/requires.txt
++-rw-r--r--   0 daniel    (1000) daniel    (1000)        8 2023-04-11 15:21:23.000000 ccsdspy-1.1.0/ccsdspy.egg-info/top_level.txt
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.714146 ccsdspy-1.1.0/docs/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     8399 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/Makefile
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.764777 ccsdspy-1.1.0/docs/_static/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.720351 ccsdspy-1.1.0/docs/_static/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    36033 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/logo.png
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.805701 ccsdspy-1.1.0/docs/_static/used-by/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.791345 ccsdspy-1.1.0/docs/_static/used-by/
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)  1343999 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/used-by/goes-r.png
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)    74095 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/used-by/hermes.png
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)   240058 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/used-by/mms.jpg
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)   152642 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/used-by/punch.png
 +-rwxr-xr-x   0 daniel    (1000) daniel    (1000)      106 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/used-by/resize.sh
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.827779 ccsdspy-1.1.0/docs/_static/used-by/small/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.828406 ccsdspy-1.1.0/docs/_static/used-by/small/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    20111 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/used-by/small/goes-r.png
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    14174 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/used-by/small/hermes.png
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    41871 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/used-by/small/mms.jpg
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)    13675 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_static/used-by/small/punch.png
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.840744 ccsdspy-1.1.0/docs/_templates/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.842482 ccsdspy-1.1.0/docs/_templates/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      463 2023-03-18 01:24:52.000000 ccsdspy-1.1.0/docs/_templates/github.html
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)       80 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/_templates/logo.html
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      134 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/docs/api.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     7670 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/docs/conf.py
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.845566 ccsdspy-1.1.0/docs/dev-guide/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.855471 ccsdspy-1.1.0/docs/dev-guide/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     7281 2023-03-18 01:25:20.000000 ccsdspy-1.1.0/docs/dev-guide/index.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     2830 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/docs/index.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     7768 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/make.bat
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)       34 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/requirements.txt
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.883779 ccsdspy-1.1.0/docs/user-guide/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.949122 ccsdspy-1.1.0/docs/user-guide/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     3411 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/user-guide/ccsds.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     3995 2023-04-11 15:15:13.000000 ccsdspy-1.1.0/docs/user-guide/converters.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     3253 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/user-guide/fixedlength.rst
@@ -365,12 +365,12 @@
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     1853 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/user-guide/packetfields.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     4672 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/user-guide/utils.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     3777 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/user-guide/variablelength.rst
-+drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:17:49.892756 ccsdspy-1.1.0/docs/whatsnew/
++drwxr-xr-x   0 daniel    (1000) daniel    (1000)        0 2023-04-11 15:21:25.962087 ccsdspy-1.1.0/docs/whatsnew/
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)       95 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/whatsnew/changelog.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      110 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/docs/whatsnew/index.rst
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)     2716 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/pyproject.toml
 +-rw-r--r--   0 daniel    (1000) daniel    (1000)      542 2023-03-18 01:23:55.000000 ccsdspy-1.1.0/readthedocs.yml
-+-rw-r--r--   0 daniel    (1000) daniel    (1000)      162 2023-04-11 15:17:49.906756 ccsdspy-1.1.0/setup.cfg
++-rw-r--r--   0 daniel    (1000) daniel    (1000)      162 2023-04-11 15:21:25.982073 ccsdspy-1.1.0/setup.cfg
 ```
 
 ### Comparing `ccsdspy-1.0.0/.github/workflows/ccsdspy-ci.yml` & `ccsdspy-1.1.0/.github/workflows/ccsdspy-ci.yml`
