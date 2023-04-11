@@ -10347,3 +10347,84 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 10:09:07] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:09:08] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:09:08] INFO root fetch - main [MainThread]: Store serial: [17658007]
+[2023-04-11 10:14:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658007]
+[2023-04-11 10:14:16] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-11 10:14:16] WARNING root fetch - processPackages [tiktokenize]: Skipping, unable to determine old version
+[2023-04-11 10:14:16] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:14:16] INFO root fetch - processPackages [odoo14-addon-stock-picking-mass-action]: New version: [14.0.1.0.3.dev5] Old Version: [14.0.1.0.3.dev4]
+[2023-04-11 10:14:16] INFO root fetch - processPackages [perun.proxy.utils]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-11 10:14:16] INFO root fetch - processPackages [ckanext-attribution]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-04-11 10:14:16] INFO root fetch - processPackages [je-load-density]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 10:14:16] INFO root fetch - processPackages [mitzu]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-11 10:14:16] INFO root fetch - processPackages [odoo14-addon-stock-picking-mass-action]: Downloading https://files.pythonhosted.org/packages/75/30/ef4cbdc9636fbe0e8790cfa1ca7e81795e809802d3548f652a943653ea44/odoo14_addon_stock_picking_mass_action-14.0.1.0.3.dev4-py3-none-any.whl
+[2023-04-11 10:14:16] INFO root fetch - processPackages [perun.proxy.utils]: Downloading https://files.pythonhosted.org/packages/ed/db/76ad4a6d632de4b582a192267e9dee810f7940b6a71db9c28f64f1b55622/perun.proxy.utils-1.0.0.tar.gz
+[2023-04-11 10:14:16] INFO root fetch - processPackages [ckanext-attribution]: Downloading https://files.pythonhosted.org/packages/6c/5b/af07e370d7d87fa147c5701c15889ff4e89ae84a98a863b2ab7ebd44ffa1/ckanext-attribution-1.2.7.tar.gz
+[2023-04-11 10:14:16] INFO root fetch - processPackages [je-load-density]: Downloading https://files.pythonhosted.org/packages/4c/8c/dba8992c47ab061a70303761eacd4d5fbff44d8f454381c8e568f6b95847/je_load_density-0.0.8.tar.gz
+[2023-04-11 10:14:16] INFO root fetch - processPackages [mitzu]: executing diffoscope
+[2023-04-11 10:14:16] INFO root fetch - processPackages [mitzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitzu-0.5.8.tar.gz tmp/mitzu-0.5.9.tar.gz --markdown 20230411/m/mitzu/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-11 10:14:16] INFO root fetch - processPackages [perun.proxy.utils]: Downloading https://files.pythonhosted.org/packages/f3/42/bcb80ed1f5e4591699c5c859f3794f3e7bdfff832634285155807383effc/perun.proxy.utils-1.1.0.tar.gz
+[2023-04-11 10:14:16] INFO root fetch - processPackages [odoo14-addon-stock-picking-mass-action]: Downloading https://files.pythonhosted.org/packages/42/f5/0687de51712584326ac9fcf2bcd752dba94a140b277a0248f4fc795f88ec/odoo14_addon_stock_picking_mass_action-14.0.1.0.3.dev5-py3-none-any.whl
+[2023-04-11 10:14:16] INFO root fetch - processPackages [perun.proxy.utils]: executing diffoscope
+[2023-04-11 10:14:16] INFO root fetch - processPackages [perun.proxy.utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perun.proxy.utils-1.0.0.tar.gz tmp/perun.proxy.utils-1.1.0.tar.gz --markdown 20230411/p/perun.proxy.utils/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 10:14:17] INFO root fetch - processPackages [je-load-density]: Downloading https://files.pythonhosted.org/packages/7c/6d/23fc8524faa26c12e97439e14d6a72ec372159914b55201815df9724ddb5/je_load_density-0.0.9.tar.gz
+[2023-04-11 10:14:17] INFO root fetch - processPackages [odoo14-addon-stock-picking-mass-action]: executing diffoscope
+[2023-04-11 10:14:17] INFO root fetch - processPackages [odoo14-addon-stock-picking-mass-action]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_picking_mass_action-14.0.1.0.3.dev4-py3-none-any.whl.zip tmp/odoo14_addon_stock_picking_mass_action-14.0.1.0.3.dev5-py3-none-any.whl.zip --markdown 20230411/o/odoo14-addon-stock-picking-mass-action/14.0.1.0.3.dev4-14.0.1.0.3.dev5/diff.md --exclude *.pyd
+[2023-04-11 10:14:17] INFO root fetch - processPackages [ckanext-attribution]: Downloading https://files.pythonhosted.org/packages/44/de/e2cc4681974564645b0a5edbcf3dc0ac47246b7c20f2790ebd9547158dc5/ckanext-attribution-1.2.8.tar.gz
+[2023-04-11 10:14:17] INFO root fetch - processPackages [je-load-density]: executing diffoscope
+[2023-04-11 10:14:17] INFO root fetch - processPackages [je-load-density]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_load_density-0.0.8.tar.gz tmp/je_load_density-0.0.9.tar.gz --markdown 20230411/j/je-load-density/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 10:14:17] INFO root fetch - processPackages [ckanext-attribution]: executing diffoscope
+[2023-04-11 10:14:17] INFO root fetch - processPackages [ckanext-attribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-attribution-1.2.7.tar.gz tmp/ckanext-attribution-1.2.8.tar.gz --markdown 20230411/c/ckanext-attribution/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-04-11 10:14:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:18] INFO root fetch - processPackages [talkwave]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 10:14:18] INFO root fetch - processPackages [talkwave]: Downloading https://files.pythonhosted.org/packages/1a/f2/e512f7494902bf289830c5af04ef520c082c0bc51447a8877ac8ddb18a93/talkwave-0.0.1.tar.gz
+[2023-04-11 10:14:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:18] INFO root fetch - processPackages [odoo-addon-stock-picking-mass-action]: New version: [15.0.1.0.1.6] Old Version: [15.0.1.0.1.5]
+[2023-04-11 10:14:18] INFO root fetch - processPackages [talkwave]: Downloading https://files.pythonhosted.org/packages/8c/cc/4b8e1869b3977cd1cf0ebb01b9c28eb7249463164c5cd012c898e4f934de/talkwave-0.0.2.tar.gz
+[2023-04-11 10:14:18] INFO root fetch - processPackages [odoo-addon-stock-picking-mass-action]: Downloading https://files.pythonhosted.org/packages/12/30/2637af7b0fb7f9204c74a2c7eecd6955f85386bfe03f6099292cbcd9df9d/odoo_addon_stock_picking_mass_action-15.0.1.0.1.5-py3-none-any.whl
+[2023-04-11 10:14:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:18] INFO root fetch - processPackages [talkwave]: executing diffoscope
+[2023-04-11 10:14:18] INFO root fetch - processPackages [talkwave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talkwave-0.0.1.tar.gz tmp/talkwave-0.0.2.tar.gz --markdown 20230411/t/talkwave/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 10:14:18] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 10:14:18] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/1c/df/a08a0d4221d9beca0d5fd6dda646c3a07951f26d77714cafa8a7c4b9c5cc/p-template-generator-0.1.8.tar.gz
+[2023-04-11 10:14:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:18] INFO root fetch - processPackages [ckanext-contact]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-04-11 10:14:18] INFO root fetch - processPackages [odoo-addon-stock-picking-mass-action]: Downloading https://files.pythonhosted.org/packages/07/16/f15be3fd819e936ae7b5254fcaf5c7ed6f8c5e19b691362b9eb7db0b6654/odoo_addon_stock_picking_mass_action-15.0.1.0.1.6-py3-none-any.whl
+[2023-04-11 10:14:18] INFO root fetch - processPackages [odoo-addon-stock-picking-mass-action]: executing diffoscope
+[2023-04-11 10:14:18] INFO root fetch - processPackages [odoo-addon-stock-picking-mass-action]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_picking_mass_action-15.0.1.0.1.5-py3-none-any.whl.zip tmp/odoo_addon_stock_picking_mass_action-15.0.1.0.1.6-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-stock-picking-mass-action/15.0.1.0.1.5-15.0.1.0.1.6/diff.md --exclude *.pyd
+[2023-04-11 10:14:19] INFO root fetch - processPackages [ckanext-contact]: Downloading https://files.pythonhosted.org/packages/f8/8c/328d897e3a96f9a2f3a5a0bda8400e65a37a357a127a8d8b148b1d8613e1/ckanext-contact-2.2.0.tar.gz
+[2023-04-11 10:14:19] INFO root fetch - processPackages [ckanext-contact]: Downloading https://files.pythonhosted.org/packages/74/cd/59d74cc5626d7aeb277d836316f050bdccb819794bcb496076cc73f8aa20/ckanext-contact-2.3.0.tar.gz
+[2023-04-11 10:14:19] INFO root fetch - processPackages [ckanext-contact]: executing diffoscope
+[2023-04-11 10:14:19] INFO root fetch - processPackages [ckanext-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-contact-2.2.0.tar.gz tmp/ckanext-contact-2.3.0.tar.gz --markdown 20230411/c/ckanext-contact/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-04-11 10:14:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:19] INFO root fetch - processPackages [ckanext-ckanpackager]: New version: [2.2.7] Old Version: [2.2.6]
+[2023-04-11 10:14:19] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/4d/c6/b1ba9d57550b94b120e03283c8ce61d054c3f089aed5ef88f169c30f97d8/p-template-generator-0.1.9.tar.gz
+[2023-04-11 10:14:20] INFO root fetch - processPackages [ckanext-ckanpackager]: Downloading https://files.pythonhosted.org/packages/d2/6c/2a9e2b248d40113f5a4c2367ef6faa993144fae871dea6fc347f101c3896/ckanext-ckanpackager-2.2.6.tar.gz
+[2023-04-11 10:14:20] INFO root fetch - processPackages [ckanext-ckanpackager]: Downloading https://files.pythonhosted.org/packages/42/58/0091068776d0ec760d50ab38cdf8d55e76bcfaeb3af2727be6518a5eef59/ckanext-ckanpackager-2.2.7.tar.gz
+[2023-04-11 10:14:20] INFO root fetch - processPackages [ckanext-ckanpackager]: executing diffoscope
+[2023-04-11 10:14:20] INFO root fetch - processPackages [ckanext-ckanpackager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-ckanpackager-2.2.6.tar.gz tmp/ckanext-ckanpackager-2.2.7.tar.gz --markdown 20230411/c/ckanext-ckanpackager/2.2.6-2.2.7/diff.md --exclude *.pyd
+[2023-04-11 10:14:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:20] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2023-04-11 10:14:20] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.8.tar.gz tmp/p-template-generator-0.1.9.tar.gz --markdown 20230411/p/p-template-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 10:14:20] WARNING root fetch - processPackages [rcg]: Skipping, unable to determine old version
+[2023-04-11 10:14:20] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:14:20] INFO root fetch - processPackages [pantsbuild.pants.testutil]: New version: [2.9.2rc0] Old Version: [2.9.2]
+[2023-04-11 10:14:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:20] INFO root fetch - processPackages [ckanext-doi]: New version: [3.1.7] Old Version: [3.1.6]
+[2023-04-11 10:14:20] INFO root fetch - processPackages [pantsbuild.pants.testutil]: Downloading https://files.pythonhosted.org/packages/4e/7d/aeafade716239bdbf6323e1aa8cab40ec135933628cd8b4f30180462f909/pantsbuild.pants.testutil-2.9.2-py37.py38.py39-none-any.whl
+[2023-04-11 10:14:20] INFO root fetch - processPackages [ckanext-doi]: Downloading https://files.pythonhosted.org/packages/04/c4/5a4a11ad21e2a84abdcee0849df1006f0a92a2d55238c867179f40f32c8c/ckanext-doi-3.1.6.tar.gz
+[2023-04-11 10:14:21] INFO root fetch - processPackages [pantsbuild.pants.testutil]: Downloading https://files.pythonhosted.org/packages/99/3d/05b882eb653f3774a6e1520e5e16ce1c59df3737b664846d8bde71c8a2c1/pantsbuild.pants.testutil-2.9.2rc0-py37.py38.py39-none-any.whl
+[2023-04-11 10:14:21] INFO root fetch - processPackages [ckanext-doi]: Downloading https://files.pythonhosted.org/packages/4b/f2/d6429db50f3ed97f0c33412ff9267564222abc4b6780f96cbe186fa233a1/ckanext-doi-3.1.7.tar.gz
+[2023-04-11 10:14:21] INFO root fetch - processPackages [pantsbuild.pants.testutil]: executing diffoscope
+[2023-04-11 10:14:21] INFO root fetch - processPackages [pantsbuild.pants.testutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pantsbuild.pants.testutil-2.9.2-py37.py38.py39-none-any.whl.zip tmp/pantsbuild.pants.testutil-2.9.2rc0-py37.py38.py39-none-any.whl.zip --markdown 20230411/p/pantsbuild.pants.testutil/2.9.2-2.9.2rc0/diff.md --exclude *.pyd
+[2023-04-11 10:14:21] INFO root fetch - processPackages [ckanext-doi]: executing diffoscope
+[2023-04-11 10:14:21] INFO root fetch - processPackages [ckanext-doi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-doi-3.1.6.tar.gz tmp/ckanext-doi-3.1.7.tar.gz --markdown 20230411/c/ckanext-doi/3.1.6-3.1.7/diff.md --exclude *.pyd
+[2023-04-11 10:14:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:21] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-11 10:14:21] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-11 10:14:21] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230411/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-11 10:14:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:14:23] INFO root fetch - main [MainThread]: Store serial: [17658078]
