@@ -13371,3 +13371,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 13:40:01] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:40:02] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:40:02] INFO root fetch - main [MainThread]: Store serial: [17659949]
+[2023-04-11 13:45:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659949]
+[2023-04-11 13:45:09] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 13:45:09] INFO root fetch - processPackages [basking-sdk]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-11 13:45:09] INFO root fetch - processPackages [ytsaurus-spyt]: New version: [1.69.3b438.post3932209.dev1] Old Version: [1.69.3b436.post17234365.dev1]
+[2023-04-11 13:45:09] INFO root fetch - processPackages [pyraisdk-test]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-11 13:45:09] INFO root fetch - processPackages [aioflureedb]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-04-11 13:45:09] INFO root fetch - processPackages [zmeiapi]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-11 13:45:10] INFO root fetch - processPackages [zmeiapi]: Downloading https://files.pythonhosted.org/packages/73/27/00741b4b874b24d28b7a6d8beb1a09338918967debed59f1f51cdf6fb8b8/zmeiapi-0.1.6.tar.gz
+[2023-04-11 13:45:10] INFO root fetch - processPackages [aioflureedb]: executing diffoscope
+[2023-04-11 13:45:10] INFO root fetch - processPackages [aioflureedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioflureedb-0.7.8.tar.gz tmp/aioflureedb-0.7.9.tar.gz --markdown 20230411/a/aioflureedb/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-04-11 13:45:10] INFO root fetch - processPackages [basking-sdk]: Downloading https://files.pythonhosted.org/packages/bd/7f/788f623d72868024475b42401a9a1e31ef786f7aa06bafdfa6950704d113/basking-sdk-0.9.8.tar.gz
+[2023-04-11 13:45:10] INFO root fetch - processPackages [pyraisdk-test]: Downloading https://files.pythonhosted.org/packages/7a/5e/da5a510d881d5c7fa552069cee93e4da7fd2d6eae5527ef266b0ad374730/pyraisdk_test-0.2.6.tar.gz
+[2023-04-11 13:45:10] INFO root fetch - processPackages [ytsaurus-spyt]: Downloading https://files.pythonhosted.org/packages/33/2c/647571c8a36313e4cbcb98466b43911afe2218d0b83676c2e463753d1b88/ytsaurus-spyt-1.69.3b438.post3932209.dev1.tar.gz
+[2023-04-11 13:45:10] INFO root fetch - processPackages [ytsaurus-spyt]: executing diffoscope
+[2023-04-11 13:45:10] INFO root fetch - processPackages [ytsaurus-spyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytsaurus-spyt-1.69.3b436.post17234365.dev1.tar.gz tmp/ytsaurus-spyt-1.69.3b438.post3932209.dev1.tar.gz --markdown 20230411/y/ytsaurus-spyt/1.69.3b436.post17234365.dev1-1.69.3b438.post3932209.dev1/diff.md --exclude *.pyd
+[2023-04-11 13:45:10] INFO root fetch - processPackages [zmeiapi]: Downloading https://files.pythonhosted.org/packages/08/07/128646396f915306d508b6ca75053fffea9367610313b1bf5e732cb21693/zmeiapi-0.1.7.tar.gz
+[2023-04-11 13:45:10] INFO root fetch - processPackages [pyraisdk-test]: Downloading https://files.pythonhosted.org/packages/73/29/e5021a32b9ff184d2f5a7842c5da12b62022dbaacc46d3447f8f4edd8bad/pyraisdk_test-0.2.7.tar.gz
+[2023-04-11 13:45:10] INFO root fetch - processPackages [zmeiapi]: executing diffoscope
+[2023-04-11 13:45:10] INFO root fetch - processPackages [zmeiapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zmeiapi-0.1.6.tar.gz tmp/zmeiapi-0.1.7.tar.gz --markdown 20230411/z/zmeiapi/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-11 13:45:10] INFO root fetch - processPackages [pyraisdk-test]: executing diffoscope
+[2023-04-11 13:45:10] INFO root fetch - processPackages [pyraisdk-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyraisdk_test-0.2.6.tar.gz tmp/pyraisdk_test-0.2.7.tar.gz --markdown 20230411/p/pyraisdk-test/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-11 13:45:10] INFO root fetch - processPackages [basking-sdk]: Downloading https://files.pythonhosted.org/packages/fe/4a/dcb7d8e63397c8a76449619a49b4e6d7bab38e18321fa4b9c5c190f7ec5d/basking-sdk-0.9.9.tar.gz
+[2023-04-11 13:45:10] INFO root fetch - processPackages [basking-sdk]: executing diffoscope
+[2023-04-11 13:45:10] INFO root fetch - processPackages [basking-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basking-sdk-0.9.8.tar.gz tmp/basking-sdk-0.9.9.tar.gz --markdown 20230411/b/basking-sdk/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-11 13:45:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:11] INFO root fetch - processPackages [aiogram-tools]: New version: [1.0.0] Old Version: [0.5]
+[2023-04-11 13:45:11] INFO root fetch - processPackages [aiogram-tools]: Downloading https://files.pythonhosted.org/packages/67/7e/31bae3c3565af653f88223b79f1ebe4222e9f4ab7234af35cbaea8c44e9f/aiogram-tools-0.5.tar.gz
+[2023-04-11 13:45:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:11] WARNING root fetch - processPackages [panfeed]: Skipping, unable to determine old version
+[2023-04-11 13:45:11] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:45:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:11] INFO root fetch - processPackages [zmeiapi]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-11 13:45:11] INFO root fetch - processPackages [pycart]: New version: [0.1.18] Old Version: [0.1.16]
+[2023-04-11 13:45:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:11] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.6b0] Old Version: [0.8.5b7]
+[2023-04-11 13:45:11] INFO root fetch - processPackages [zmeiapi]: executing diffoscope
+[2023-04-11 13:45:11] INFO root fetch - processPackages [zmeiapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zmeiapi-0.1.6.tar.gz tmp/zmeiapi-0.1.7.tar.gz --markdown 20230411/z/zmeiapi/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-11 13:45:11] INFO root fetch - processPackages [aiogram-tools]: Downloading https://files.pythonhosted.org/packages/1c/4c/ef8e751d87fb050286fffda6a7f53bfc7b059761ec8e3265e306f3e97795/aiogram-tools-1.0.0.tar.gz
+[2023-04-11 13:45:11] INFO root fetch - processPackages [pycart]: Downloading https://files.pythonhosted.org/packages/db/e0/aded9c755837a2be137e6eee776a1e5a7c5d981f8b59f982dfd013f2f8bc/pycart-0.1.16.tar.gz
+[2023-04-11 13:45:11] WARNING root fetch - processPackages [pycart]: Skipping package: exceeds size limit 33007479>=10485760
+[2023-04-11 13:45:11] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:45:11] INFO root fetch - processPackages [aiogram-tools]: executing diffoscope
+[2023-04-11 13:45:11] INFO root fetch - processPackages [aiogram-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-tools-0.5.tar.gz tmp/aiogram-tools-1.0.0.tar.gz --markdown 20230411/a/aiogram-tools/0.5-1.0.0/diff.md --exclude *.pyd
+[2023-04-11 13:45:11] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/63/62/0a2cc5fbf6762f2d7a7cfe5d4ee4e3fa4eaae58329f86819f378cee95c96/python-project-structure-0.8.6b0.tar.gz
+[2023-04-11 13:45:11] INFO root fetch - processPackages [asmr-spider]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 13:45:12] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-11 13:45:12] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.5b7.tar.gz tmp/python-project-structure-0.8.6b0.tar.gz --markdown 20230411/p/python-project-structure/0.8.5b7-0.8.6b0/diff.md --exclude *.pyd
+[2023-04-11 13:45:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:12] INFO root fetch - processPackages [py-hft]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 13:45:12] INFO root fetch - processPackages [asmr-spider]: Downloading https://files.pythonhosted.org/packages/ad/67/0ab9f0b97c86c93438e771cd45b1bcd8d74ea423be7ac1b3314e1bf1c64a/asmr_spider-0.0.3.tar.gz
+[2023-04-11 13:45:12] INFO root fetch - processPackages [asmr-spider]: executing diffoscope
+[2023-04-11 13:45:12] INFO root fetch - processPackages [asmr-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asmr_spider-0.0.2.tar.gz tmp/asmr_spider-0.0.3.tar.gz --markdown 20230411/a/asmr-spider/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 13:45:12] INFO root fetch - processPackages [py-hft]: Downloading https://files.pythonhosted.org/packages/13/75/98319112497a16a6ec0911d4f19708df91855d0f7406154fb194d8b85426/py_hft-0.1.1.tar.gz
+[2023-04-11 13:45:12] INFO root fetch - processPackages [py-hft]: Downloading https://files.pythonhosted.org/packages/c3/a3/12cf154bc84f544d378a0189495d9cdc9bc10a0a32dc477a39ee7f9096b5/py_hft-0.1.2.tar.gz
+[2023-04-11 13:45:12] INFO root fetch - processPackages [py-hft]: executing diffoscope
+[2023-04-11 13:45:12] INFO root fetch - processPackages [py-hft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_hft-0.1.1.tar.gz tmp/py_hft-0.1.2.tar.gz --markdown 20230411/p/py-hft/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 13:45:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:12] INFO root fetch - processPackages [returnn]: New version: [1.20230411.4301] Old Version: [1.20230411.132032]
+[2023-04-11 13:45:12] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-11 13:45:12] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230411.132032.tar.gz tmp/returnn-1.20230411.4301.tar.gz --markdown 20230411/r/returnn/1.20230411.132032-1.20230411.4301/diff.md --exclude *.pyd
+[2023-04-11 13:45:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:45:17] INFO root fetch - main [MainThread]: Store serial: [17659991]
