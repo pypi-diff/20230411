@@ -10536,3 +10536,129 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 10:19:37] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:19:38] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:19:38] INFO root fetch - main [MainThread]: Store serial: [17658139]
+[2023-04-11 10:24:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658139]
+[2023-04-11 10:24:47] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-11 10:24:47] INFO root fetch - processPackages [swane]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 10:24:47] INFO root fetch - processPackages [xj-finance]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-11 10:24:47] INFO root fetch - processPackages [ckanext-nhm]: New version: [5.6.0] Old Version: [5.5.1]
+[2023-04-11 10:24:47] INFO root fetch - processPackages [ckanext-query-dois]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-04-11 10:24:47] INFO root fetch - processPackages [swane-supplement]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 10:24:47] INFO root fetch - processPackages [swane]: Downloading https://files.pythonhosted.org/packages/9d/a4/613e4f8ce5cc244ce8fdd9bc7ce41f50b5364d61988c32ec5adca13f4b45/swane-0.0.3.tar.gz
+[2023-04-11 10:24:47] INFO root fetch - processPackages [ckanext-query-dois]: Downloading https://files.pythonhosted.org/packages/9d/ed/e62817427469a45f0ea70b8596c728c4a4094784ec8788925af4e20e9bcd/ckanext-query-dois-3.0.3.tar.gz
+[2023-04-11 10:24:47] INFO root fetch - processPackages [ckanext-nhm]: Downloading https://files.pythonhosted.org/packages/64/a3/c00d237c207e2f0da07ff248006573661947cc6d0d3fe9248357d4d51a0e/ckanext-nhm-5.5.1.tar.gz
+[2023-04-11 10:24:47] INFO root fetch - processPackages [swane-supplement]: Downloading https://files.pythonhosted.org/packages/fc/ee/bc821d89d0b9306a31d364f76effcec075da587ff46faf5e2c84338b752b/swane_supplement-0.1.1.tar.gz
+[2023-04-11 10:24:47] INFO root fetch - processPackages [xj-finance]: Downloading https://files.pythonhosted.org/packages/74/96/95508bbc7e7cd1e7f3773a45548d6823319123265fb6568e0ba64f6ccd96/xj_finance-1.1.5.tar.gz
+[2023-04-11 10:24:47] INFO root fetch - processPackages [swane]: Downloading https://files.pythonhosted.org/packages/1a/8f/3954d038d614684603ba410be1e1d5486dc2b1a4a9ef09679bb5024eb0c1/swane-0.0.4.tar.gz
+[2023-04-11 10:24:47] INFO root fetch - processPackages [swane]: executing diffoscope
+[2023-04-11 10:24:47] INFO root fetch - processPackages [swane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swane-0.0.3.tar.gz tmp/swane-0.0.4.tar.gz --markdown 20230411/s/swane/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 10:24:47] WARNING root fetch - processPackages [ckanext-nhm]: Skipping package: exceeds size limit 29272735>=10485760
+[2023-04-11 10:24:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:24:47] WARNING root fetch - processPackages [swane-supplement]: Skipping package: exceeds size limit 62748388>=10485760
+[2023-04-11 10:24:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:24:47] INFO root fetch - processPackages [mibandpreview]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-11 10:24:47] INFO root fetch - processPackages [bs-admin-utils]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 10:24:47] INFO root fetch - processPackages [xj-finance]: executing diffoscope
+[2023-04-11 10:24:47] INFO root fetch - processPackages [xj-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_finance-1.1.4.tar.gz tmp/xj_finance-1.1.5.tar.gz --markdown 20230411/x/xj-finance/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-11 10:24:47] INFO root fetch - processPackages [ckanext-query-dois]: Downloading https://files.pythonhosted.org/packages/c9/c1/8e1fe4abdd1f3602e9e17659973b5acf8e9dadbf44cd598c0c47eb51f397/ckanext-query-dois-3.0.4.tar.gz
+[2023-04-11 10:24:47] INFO root fetch - processPackages [ckanext-query-dois]: executing diffoscope
+[2023-04-11 10:24:47] INFO root fetch - processPackages [ckanext-query-dois]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-query-dois-3.0.3.tar.gz tmp/ckanext-query-dois-3.0.4.tar.gz --markdown 20230411/c/ckanext-query-dois/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-04-11 10:24:47] INFO root fetch - processPackages [mibandpreview]: Downloading https://files.pythonhosted.org/packages/9f/16/18cc305c7d98bd83592b549a260bf83c70c4932feb4134a04820ff9d41ba/mibandpreview-1.2.1-py3-none-any.whl
+[2023-04-11 10:24:47] INFO root fetch - processPackages [bs-admin-utils]: Downloading https://files.pythonhosted.org/packages/03/b0/a528bc1445002a2591b61fbc334cc937fc47c33a25720300b9cf403677ae/bs_admin_utils-1.0.1.tar.gz
+[2023-04-11 10:24:48] INFO root fetch - processPackages [bs-admin-utils]: Downloading https://files.pythonhosted.org/packages/21/88/033988c7aa12a9cb4093b32cb7e1182a59a7a7fac169270780c3ee571f59/bs_admin_utils-1.0.2.tar.gz
+[2023-04-11 10:24:48] INFO root fetch - processPackages [mibandpreview]: Downloading https://files.pythonhosted.org/packages/77/df/ca51335858c507f69c53399598e263f7f154bb17a5f70ce5284a260cd708/mibandpreview-1.2.2-py3-none-any.whl
+[2023-04-11 10:24:48] INFO root fetch - processPackages [bs-admin-utils]: executing diffoscope
+[2023-04-11 10:24:48] INFO root fetch - processPackages [bs-admin-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bs_admin_utils-1.0.1.tar.gz tmp/bs_admin_utils-1.0.2.tar.gz --markdown 20230411/b/bs-admin-utils/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 10:24:48] INFO root fetch - processPackages [mibandpreview]: executing diffoscope
+[2023-04-11 10:24:48] INFO root fetch - processPackages [mibandpreview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mibandpreview-1.2.1-py3-none-any.whl.zip tmp/mibandpreview-1.2.2-py3-none-any.whl.zip --markdown 20230411/m/mibandpreview/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-11 10:24:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-extension]: New version: [11.0.1.1.1.99.dev1] Old Version: [11.0.1.1.1]
+[2023-04-11 10:24:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-withdrawal]: New version: [11.0.1.0.0.99.dev6] Old Version: [11.0.1.0.0.99.dev5]
+[2023-04-11 10:24:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo13-addon-membership-extension]: New version: [13.0.1.0.1.dev6] Old Version: [13.0.1.0.1.dev5]
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-extension]: Downloading https://files.pythonhosted.org/packages/7a/a9/d9b74acaf42f37f5c8788a9b6e3f9bdb90319c91ddea6bcb8ad3b816d7b7/odoo11_addon_membership_extension-11.0.1.1.1-py2.py3-none-any.whl
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-withdrawal]: Downloading https://files.pythonhosted.org/packages/9e/ac/9c707418ce2dac80819e19bcbbc03b9b7fbd215a4f7311c6288e70684c1a/odoo11_addon_membership_withdrawal-11.0.1.0.0.99.dev5-py2.py3-none-any.whl
+[2023-04-11 10:24:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo13-addon-membership-withdrawal]: New version: [13.0.1.0.1.dev8] Old Version: [13.0.1.0.1.dev7]
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo13-addon-membership-extension]: Downloading https://files.pythonhosted.org/packages/70/ff/d8e89e394f39b4303b6d80be4dfbe4cab34cfb666c4466b1243556ac0462/odoo13_addon_membership_extension-13.0.1.0.1.dev5-py3-none-any.whl
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-extension]: Downloading https://files.pythonhosted.org/packages/fb/69/4957cf26db39097b418402da8f29c656431fb58a7ec2ca758359da12dcd8/odoo11_addon_membership_extension-11.0.1.1.1.99.dev1-py2.py3-none-any.whl
+[2023-04-11 10:24:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:49] INFO root fetch - processPackages [sessender]: New version: [0.4.7] Old Version: [0.4.5]
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo13-addon-membership-withdrawal]: Downloading https://files.pythonhosted.org/packages/00/c4/1f9fee4c4ac0170d5cdcf58f0619f80dc1529dbc48471b0c6a0ed94232ac/odoo13_addon_membership_withdrawal-13.0.1.0.1.dev7-py3-none-any.whl
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-extension]: executing diffoscope
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_membership_extension-11.0.1.1.1-py2.py3-none-any.whl.zip tmp/odoo11_addon_membership_extension-11.0.1.1.1.99.dev1-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-membership-extension/11.0.1.1.1-11.0.1.1.1.99.dev1/diff.md --exclude *.pyd
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-withdrawal]: Downloading https://files.pythonhosted.org/packages/5e/95/c4741f9eb5ee3fdf596bbc26b27cbccf00d49cb3e977ae6c9ab8433715ac/odoo11_addon_membership_withdrawal-11.0.1.0.0.99.dev6-py2.py3-none-any.whl
+[2023-04-11 10:24:49] INFO root fetch - processPackages [sessender]: Downloading https://files.pythonhosted.org/packages/14/de/ec01bf3e034a82f0d822847780b7419165624b3c6b8d9961e9218ce9a38e/sessender-0.4.7.tar.gz
+[2023-04-11 10:24:49] INFO root fetch - processPackages [sessender]: executing diffoscope
+[2023-04-11 10:24:49] INFO root fetch - processPackages [sessender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sessender-0.4.5.tar.gz tmp/sessender-0.4.7.tar.gz --markdown 20230411/s/sessender/0.4.5-0.4.7/diff.md --exclude *.pyd
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo13-addon-membership-withdrawal]: Downloading https://files.pythonhosted.org/packages/2d/5d/df4691489b264f7b2ca5d55be9ef6c66f2aa7604e9a13c865e50149520de/odoo13_addon_membership_withdrawal-13.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-withdrawal]: executing diffoscope
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo11-addon-membership-withdrawal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_membership_withdrawal-11.0.1.0.0.99.dev5-py2.py3-none-any.whl.zip tmp/odoo11_addon_membership_withdrawal-11.0.1.0.0.99.dev6-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-membership-withdrawal/11.0.1.0.0.99.dev5-11.0.1.0.0.99.dev6/diff.md --exclude *.pyd
+[2023-04-11 10:24:49] INFO root fetch - processPackages [odoo13-addon-membership-extension]: Downloading https://files.pythonhosted.org/packages/5d/10/57aded962d38aa956aeb3a963b3570c194076cfa61767901c75e5e63551e/odoo13_addon_membership_extension-13.0.1.0.1.dev6-py3-none-any.whl
+[2023-04-11 10:24:50] INFO root fetch - processPackages [odoo13-addon-membership-withdrawal]: executing diffoscope
+[2023-04-11 10:24:50] INFO root fetch - processPackages [odoo13-addon-membership-withdrawal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_membership_withdrawal-13.0.1.0.1.dev7-py3-none-any.whl.zip tmp/odoo13_addon_membership_withdrawal-13.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20230411/o/odoo13-addon-membership-withdrawal/13.0.1.0.1.dev7-13.0.1.0.1.dev8/diff.md --exclude *.pyd
+[2023-04-11 10:24:50] INFO root fetch - processPackages [odoo13-addon-membership-extension]: executing diffoscope
+[2023-04-11 10:24:50] INFO root fetch - processPackages [odoo13-addon-membership-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_membership_extension-13.0.1.0.1.dev5-py3-none-any.whl.zip tmp/odoo13_addon_membership_extension-13.0.1.0.1.dev6-py3-none-any.whl.zip --markdown 20230411/o/odoo13-addon-membership-extension/13.0.1.0.1.dev5-13.0.1.0.1.dev6/diff.md --exclude *.pyd
+[2023-04-11 10:24:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:50] INFO root fetch - processPackages [ckanext-sketchfab]: New version: [2.1.7] Old Version: [2.1.6]
+[2023-04-11 10:24:50] INFO root fetch - processPackages [ckanext-sketchfab]: Downloading https://files.pythonhosted.org/packages/77/62/56c8d403285118a4fa02944177ee121319d1ed49c9517483bf1aac1f254b/ckanext-sketchfab-2.1.6.tar.gz
+[2023-04-11 10:24:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:51] INFO root fetch - processPackages [bittrade-huobi-websocket]: New version: [0.3.0] Old Version: [0.2.6]
+[2023-04-11 10:24:51] INFO root fetch - processPackages [ckanext-sketchfab]: Downloading https://files.pythonhosted.org/packages/ab/58/2713c34838b293b38b6f868e0aff56c868c317da957b33f86e4e66d3868a/ckanext-sketchfab-2.1.7.tar.gz
+[2023-04-11 10:24:51] INFO root fetch - processPackages [ckanext-sketchfab]: executing diffoscope
+[2023-04-11 10:24:51] INFO root fetch - processPackages [ckanext-sketchfab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-sketchfab-2.1.6.tar.gz tmp/ckanext-sketchfab-2.1.7.tar.gz --markdown 20230411/c/ckanext-sketchfab/2.1.6-2.1.7/diff.md --exclude *.pyd
+[2023-04-11 10:24:51] INFO root fetch - processPackages [bittrade-huobi-websocket]: Downloading https://files.pythonhosted.org/packages/cd/51/912ae9222e430b62b7064c56cec1f322372c339cfea839469238a0276321/bittrade_huobi_websocket-0.2.6.tar.gz
+[2023-04-11 10:24:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:51] INFO root fetch - processPackages [zmeiapi]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 10:24:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:51] INFO root fetch - processPackages [bittrade-huobi-websocket]: Downloading https://files.pythonhosted.org/packages/41/9e/8c674ab3d83c15ea2e974b9f46a9c52b3e53a8ce7183a6eb39340fdc227d/bittrade_huobi_websocket-0.3.0.tar.gz
+[2023-04-11 10:24:51] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 10:24:51] INFO root fetch - processPackages [bittrade-huobi-websocket]: executing diffoscope
+[2023-04-11 10:24:51] INFO root fetch - processPackages [bittrade-huobi-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bittrade_huobi_websocket-0.2.6.tar.gz tmp/bittrade_huobi_websocket-0.3.0.tar.gz --markdown 20230411/b/bittrade-huobi-websocket/0.2.6-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 10:24:51] INFO root fetch - processPackages [zmeiapi]: Downloading https://files.pythonhosted.org/packages/86/a5/2ce1da1a8b01178960af6fa21d0a8fc78f5d616534bdd7ba27a013ede17a/zmeiapi-0.1.2.tar.gz
+[2023-04-11 10:24:51] INFO root fetch - processPackages [djangoldp-needle]: Downloading https://files.pythonhosted.org/packages/6b/53/b93361f682d7fd87256a190eda03894d63d7868e53b0dd5d9aa2ae7edb28/djangoldp_needle-0.1.8.tar.gz
+[2023-04-11 10:24:51] INFO root fetch - processPackages [zmeiapi]: Downloading https://files.pythonhosted.org/packages/82/75/115720961d96a56103b684e77b79b032ed6f3511cdb1aacf2c1972b4f31e/zmeiapi-0.1.3.tar.gz
+[2023-04-11 10:24:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:51] INFO root fetch - processPackages [zmeiapi]: executing diffoscope
+[2023-04-11 10:24:51] INFO root fetch - processPackages [zmeiapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zmeiapi-0.1.2.tar.gz tmp/zmeiapi-0.1.3.tar.gz --markdown 20230411/z/zmeiapi/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 10:24:51] INFO root fetch - processPackages [ckanext-statistics]: New version: [3.1.6] Old Version: [3.1.5]
+[2023-04-11 10:24:52] INFO root fetch - processPackages [ckanext-statistics]: Downloading https://files.pythonhosted.org/packages/e3/90/79fd5b13ca8d2cb0d4eb4448334f3f6c0a48e06e2d0a6f8333cba802cf70/ckanext-statistics-3.1.5.tar.gz
+[2023-04-11 10:24:52] INFO root fetch - processPackages [djangoldp-needle]: Downloading https://files.pythonhosted.org/packages/5f/a8/f808d16ee5b9bdf280bdb0812ed247745ca69cb8c2f140d4b9aff2175da2/djangoldp_needle-0.1.9.tar.gz
+[2023-04-11 10:24:52] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-11 10:24:52] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230411/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 10:24:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:52] INFO root fetch - processPackages [oci-cli]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-04-11 10:24:52] INFO root fetch - processPackages [ckanext-statistics]: Downloading https://files.pythonhosted.org/packages/b4/da/4e8a5dd3efccda62c3b23e2609baed984793e0947235ea09ceb0235eb910/ckanext-statistics-3.1.6.tar.gz
+[2023-04-11 10:24:52] INFO root fetch - processPackages [ckanext-statistics]: executing diffoscope
+[2023-04-11 10:24:52] INFO root fetch - processPackages [ckanext-statistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-statistics-3.1.5.tar.gz tmp/ckanext-statistics-3.1.6.tar.gz --markdown 20230411/c/ckanext-statistics/3.1.5-3.1.6/diff.md --exclude *.pyd
+[2023-04-11 10:24:52] INFO root fetch - processPackages [oci-cli]: Downloading https://files.pythonhosted.org/packages/28/26/9545f447fdb6b4a5f9a826926f2e62e7e1ab1ce79158df9f197679f1b25d/oci-cli-3.9.0.tar.gz
+[2023-04-11 10:24:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:52] INFO root fetch - processPackages [dartrig]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-11 10:24:53] INFO root fetch - processPackages [dartrig]: Downloading https://files.pythonhosted.org/packages/a5/fb/89e4c4f13eda595589c925bc58253b8d4d55ff8d925982ae0c54bb2f8549/dartrig-0.0.7.tar.gz
+[2023-04-11 10:24:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:53] INFO root fetch - processPackages [authress-sdk]: New version: [2.0.21] Old Version: [2.0.19]
+[2023-04-11 10:24:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:53] INFO root fetch - processPackages [gidgetlab-kit]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-11 10:24:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:53] INFO root fetch - processPackages [tvault]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-11 10:24:53] INFO root fetch - processPackages [gidgetlab-kit]: executing diffoscope
+[2023-04-11 10:24:53] INFO root fetch - processPackages [gidgetlab-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gidgetlab-kit-0.5.0.tar.gz tmp/gidgetlab_kit-0.6.0.tar.gz --markdown 20230411/g/gidgetlab-kit/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-11 10:24:53] INFO root fetch - processPackages [authress-sdk]: Downloading https://files.pythonhosted.org/packages/4d/25/6d153e0a1cca890954c7292bdff1a04ce00c0a378045ebfe1bc13169f9aa/authress-sdk-2.0.19.tar.gz
+[2023-04-11 10:24:53] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-11 10:24:53] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.3.1-py3-none-any.whl.zip tmp/tvault-0.3.2-py3-none-any.whl.zip --markdown 20230411/t/tvault/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 10:24:53] INFO root fetch - processPackages [dartrig]: Downloading https://files.pythonhosted.org/packages/43/da/9dfeedde2a75f742837adf56a5003ede9895f5d4ca196d2ebcf10947fc56/dartrig-0.0.8.tar.gz
+[2023-04-11 10:24:53] INFO root fetch - processPackages [authress-sdk]: Downloading https://files.pythonhosted.org/packages/4e/c5/d2f5ef3a52e5a6b8c184fa48b3336c9813fa84eb9514a2728748eead300e/authress-sdk-2.0.21.tar.gz
+[2023-04-11 10:24:53] INFO root fetch - processPackages [dartrig]: executing diffoscope
+[2023-04-11 10:24:53] INFO root fetch - processPackages [dartrig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dartrig-0.0.7.tar.gz tmp/dartrig-0.0.8.tar.gz --markdown 20230411/d/dartrig/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-11 10:24:53] INFO root fetch - processPackages [authress-sdk]: executing diffoscope
+[2023-04-11 10:24:53] INFO root fetch - processPackages [authress-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authress-sdk-2.0.19.tar.gz tmp/authress-sdk-2.0.21.tar.gz --markdown 20230411/a/authress-sdk/2.0.19-2.0.21/diff.md --exclude *.pyd
+[2023-04-11 10:24:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:24:56] INFO root fetch - processPackages [oci-cli]: Downloading https://files.pythonhosted.org/packages/c1/02/2a386b82d70ada3a13133f3015b40f55f9b5b6d7b77baf7dc6f9d32e39ef/oci-cli-3.9.1.tar.gz
+[2023-04-11 10:25:00] INFO root fetch - processPackages [oci-cli]: executing diffoscope
+[2023-04-11 10:25:00] INFO root fetch - processPackages [oci-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oci-cli-3.9.0.tar.gz tmp/oci-cli-3.9.1.tar.gz --markdown 20230411/o/oci-cli/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-04-11 10:28:01] ERROR root fetch - processPackages [oci-cli]: Timeout during execution of pkgdiff
+[2023-04-11 10:28:01] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:28:01] INFO root fetch - main [MainThread]: Store serial: [17658219]
