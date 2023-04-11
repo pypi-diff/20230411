@@ -13734,3 +13734,98 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 14:06:34] INFO root fetch - processPackages [tetun-lid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tetun_lid-1.0.0.tar.gz tmp/tetun_lid-1.0.1.tar.gz --markdown 20230411/t/tetun-lid/1.0.0-1.0.1/diff.md --exclude *.pyd
 [2023-04-11 14:06:37] INFO root fetch - main [MainThread]: success
 [2023-04-11 14:06:37] INFO root fetch - main [MainThread]: Store serial: [17660269]
+[2023-04-11 14:11:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17660269]
+[2023-04-11 14:11:44] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-11 14:11:44] INFO root fetch - processPackages [nekoton]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 14:11:44] INFO root fetch - processPackages [winorwin]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 14:11:44] INFO root fetch - processPackages [tspublisher]: New version: [0.0.1.dev973] Old Version: [0.0.1.dev962]
+[2023-04-11 14:11:44] INFO root fetch - processPackages [edge-impulse-linux]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-11 14:11:44] INFO root fetch - processPackages [longbridge]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-11 14:11:44] INFO root fetch - processPackages [tspublisher]: executing diffoscope
+[2023-04-11 14:11:44] INFO root fetch - processPackages [tspublisher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tspublisher-0.0.1.dev962.tar.gz tmp/tspublisher-0.0.1.dev973.tar.gz --markdown 20230411/t/tspublisher/0.0.1.dev962-0.0.1.dev973/diff.md --exclude *.pyd
+[2023-04-11 14:11:44] INFO root fetch - processPackages [edge-impulse-linux]: executing diffoscope
+[2023-04-11 14:11:44] INFO root fetch - processPackages [edge-impulse-linux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge_impulse_linux-1.0.7.tar.gz tmp/edge_impulse_linux-1.0.8.tar.gz --markdown 20230411/e/edge-impulse-linux/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-11 14:11:44] INFO root fetch - processPackages [winorwin]: Downloading https://files.pythonhosted.org/packages/15/1f/3ffbff730ed410e66f61c80c682c45e1824acc148f632b1beecb0b940f7c/winorwin-0.0.3.tar.gz
+[2023-04-11 14:11:44] INFO root fetch - processPackages [nekoton]: Downloading https://files.pythonhosted.org/packages/ea/46/6384304a8e629130e5eec195f4f821726d0c3a3c0070cffe78b334e4b33d/nekoton-0.1.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 14:11:44] INFO root fetch - processPackages [longbridge]: Downloading https://files.pythonhosted.org/packages/d1/a4/ddaf2c4051c174e664afcac3c6960fe3c243ee5221bbb2b7cf034444d64f/longbridge-0.2.8.tar.gz
+[2023-04-11 14:11:45] WARNING root fetch - processPackages [winorwin]: Skipping package: exceeds size limit 28473740>=10485760
+[2023-04-11 14:11:45] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:11:45] INFO root fetch - processPackages [PythonLanguageEasy]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 14:11:45] INFO root fetch - processPackages [PythonLanguageEasy]: Downloading https://files.pythonhosted.org/packages/09/54/908d1d66a74061f45c53841a11028d377674f6fd3f6a4774e080bd784a7d/PythonLanguageEasy-1.0.0.win-amd64.zip
+[2023-04-11 14:11:45] INFO root fetch - processPackages [longbridge]: Downloading https://files.pythonhosted.org/packages/24/92/5ff3d6963889e844b0de3a7c2b3b92073bb9ecaf124bec5d587b033424e0/longbridge-0.2.9.tar.gz
+[2023-04-11 14:11:45] INFO root fetch - processPackages [longbridge]: executing diffoscope
+[2023-04-11 14:11:45] INFO root fetch - processPackages [longbridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longbridge-0.2.8.tar.gz tmp/longbridge-0.2.9.tar.gz --markdown 20230411/l/longbridge/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-11 14:11:45] INFO root fetch - processPackages [PythonLanguageEasy]: Downloading https://files.pythonhosted.org/packages/a2/f3/3a4c20411f654e6308886582a164ccf2e77a8a0ddedeea5765cf2c175924/PythonLanguageEasy-1.0.1.win-amd64.zip
+[2023-04-11 14:11:45] INFO root fetch - processPackages [PythonLanguageEasy]: executing diffoscope
+[2023-04-11 14:11:45] INFO root fetch - processPackages [PythonLanguageEasy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PythonLanguageEasy-1.0.0.win-amd64.zip tmp/PythonLanguageEasy-1.0.1.win-amd64.zip --markdown 20230411/P/PythonLanguageEasy/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 14:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:45] INFO root fetch - processPackages [aiogram-tools]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 14:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:46] INFO root fetch - processPackages [hoppr-security-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 14:11:46] INFO root fetch - processPackages [aiogram-tools]: Downloading https://files.pythonhosted.org/packages/94/ea/09612c44a1db15ec5c851b9a4d03d702c0393ef924bb8fee3f45fd0b434c/aiogram-tools-1.0.1.tar.gz
+[2023-04-11 14:11:46] INFO root fetch - processPackages [aiogram-tools]: executing diffoscope
+[2023-04-11 14:11:46] INFO root fetch - processPackages [aiogram-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-tools-1.0.0.tar.gz tmp/aiogram-tools-1.0.1.tar.gz --markdown 20230411/a/aiogram-tools/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 14:11:46] INFO root fetch - processPackages [hoppr-security-commons]: executing diffoscope
+[2023-04-11 14:11:46] INFO root fetch - processPackages [hoppr-security-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hoppr_security_commons-0.0.8.tar.gz tmp/hoppr_security_commons-0.0.9.tar.gz --markdown 20230411/h/hoppr-security-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 14:11:46] INFO root fetch - processPackages [nekoton]: Downloading https://files.pythonhosted.org/packages/1f/99/7eac72bb84e0843c6f2dbf7ff0dcfe9b5fec6dcf58b5e062f9b4d9d773ec/nekoton-0.1.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 14:11:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:46] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 14:11:46] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: executing diffoscope
+[2023-04-11 14:11:46] INFO root fetch - processPackages [pepperize.cdk-ssm-parameters-cross-region]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ssm-parameters-cross-region-0.0.98.tar.gz tmp/pepperize.cdk-ssm-parameters-cross-region-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-ssm-parameters-cross-region/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 14:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:47] WARNING root fetch - processPackages [sneaksmc]: Skipping, unable to determine old version
+[2023-04-11 14:11:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:11:47] INFO root fetch - processPackages [vdk-meta-jobs]: New version: [0.1.833741966] Old Version: [0.1.824443273]
+[2023-04-11 14:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:47] INFO root fetch - processPackages [hestia-earth-validation]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-11 14:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:47] INFO root fetch - processPackages [cchenutils]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-11 14:11:47] INFO root fetch - processPackages [vdk-meta-jobs]: Downloading https://files.pythonhosted.org/packages/88/8c/09d44aa111357b1b1ac4ee47f17e52288a32ddffabbad0707cb2e264c018/vdk-meta-jobs-0.1.824443273.tar.gz
+[2023-04-11 14:11:47] INFO root fetch - processPackages [hestia-earth-validation]: Downloading https://files.pythonhosted.org/packages/33/b1/1105a4e61f23c309958db8eb0a5c59b945e3291d912a253970b1cdb90f73/hestia-earth-validation-0.9.2.tar.gz
+[2023-04-11 14:11:47] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/f1/33/09ccc3f5158bc5be10e9d3ad1aeadf1421aab8d0b2a199c01d3f42fe290f/cchenutils-0.4.3-py3-none-any.whl
+[2023-04-11 14:11:47] INFO root fetch - processPackages [vdk-meta-jobs]: Downloading https://files.pythonhosted.org/packages/78/14/53272df3d242d79bc5aae1f9378d5fde8c773b07aa471c4e78fb56b17a4b/vdk-meta-jobs-0.1.833741966.tar.gz
+[2023-04-11 14:11:48] INFO root fetch - processPackages [vdk-meta-jobs]: executing diffoscope
+[2023-04-11 14:11:48] INFO root fetch - processPackages [vdk-meta-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vdk-meta-jobs-0.1.824443273.tar.gz tmp/vdk-meta-jobs-0.1.833741966.tar.gz --markdown 20230411/v/vdk-meta-jobs/0.1.824443273-0.1.833741966/diff.md --exclude *.pyd
+[2023-04-11 14:11:48] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-11 14:11:48] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.4.2-py3-none-any.whl.zip tmp/cchenutils-0.4.3-py3-none-any.whl.zip --markdown 20230411/c/cchenutils/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-11 14:11:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:48] INFO root fetch - processPackages [fuse-client]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-11 14:11:48] INFO root fetch - processPackages [hestia-earth-validation]: Downloading https://files.pythonhosted.org/packages/b0/45/d5ba27a9ee459bf387b017277d998197192c37d8374146ae34a294f8a0af/hestia-earth-validation-0.9.3.tar.gz
+[2023-04-11 14:11:48] INFO root fetch - processPackages [fuse-client]: Downloading https://files.pythonhosted.org/packages/9a/21/138519c88f9d90560802d68fbffedbc6d792520df33f90f2bf7a5e7babd9/fuse-client-1.0.8.tar.gz
+[2023-04-11 14:11:48] INFO root fetch - processPackages [nekoton]: executing diffoscope
+[2023-04-11 14:11:48] INFO root fetch - processPackages [nekoton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nekoton-0.1.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nekoton-0.1.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230411/n/nekoton/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 14:11:48] INFO root fetch - processPackages [fuse-client]: executing diffoscope
+[2023-04-11 14:11:48] INFO root fetch - processPackages [fuse-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuse-client-1.0.7.tar.gz tmp/fuse-client-1.0.8.tar.gz --markdown 20230411/f/fuse-client/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-11 14:11:48] INFO root fetch - processPackages [hestia-earth-validation]: executing diffoscope
+[2023-04-11 14:11:48] INFO root fetch - processPackages [hestia-earth-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hestia-earth-validation-0.9.2.tar.gz tmp/hestia-earth-validation-0.9.3.tar.gz --markdown 20230411/h/hestia-earth-validation/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-11 14:11:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:49] INFO root fetch - processPackages [add-testing]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-11 14:11:49] INFO root fetch - processPackages [add-testing]: Downloading https://files.pythonhosted.org/packages/6c/ad/7e57f753a935cbe3358fc5214e191189a1ce4b5a81d978cf70691f16d845/add-testing-1.3.2.tar.gz
+[2023-04-11 14:11:49] INFO root fetch - processPackages [add-testing]: executing diffoscope
+[2023-04-11 14:11:49] INFO root fetch - processPackages [add-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/add-testing-1.3.1.tar.gz tmp/add-testing-1.3.2.tar.gz --markdown 20230411/a/add-testing/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-11 14:11:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:49] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 14:11:49] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-11 14:11:49] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230411/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 14:11:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:50] INFO root fetch - processPackages [dbt-firebolt]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-11 14:11:50] INFO root fetch - processPackages [dbt-firebolt]: Downloading https://files.pythonhosted.org/packages/4e/af/1e12f006e4a565c2b87fa68b33668cc03f39a8c898926db79a47a8e9fb6d/dbt_firebolt-1.4.0.tar.gz
+[2023-04-11 14:11:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:50] INFO root fetch - processPackages [qin-plot]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-11 14:11:50] INFO root fetch - processPackages [qin-plot]: Downloading https://files.pythonhosted.org/packages/bc/aa/9f704fb358904700d8bf7fb7415e7b08fe508cdd41c47cdd365671f6f740/qin_plot-1.0.4.tar.gz
+[2023-04-11 14:11:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:50] WARNING root fetch - processPackages [clera]: Skipping, unable to determine old version
+[2023-04-11 14:11:50] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:11:50] INFO root fetch - processPackages [dbt-firebolt]: Downloading https://files.pythonhosted.org/packages/8e/62/fa01864a4b17d512cbfff7d12933e610d4b03051fad4100ebdcf8bb52e2e/dbt_firebolt-1.4.1.tar.gz
+[2023-04-11 14:11:51] WARNING root fetch - processPackages [PyLanguageEasy]: Skipping, unable to determine old version
+[2023-04-11 14:11:51] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:11:51] INFO root fetch - processPackages [dbt-firebolt]: executing diffoscope
+[2023-04-11 14:11:51] INFO root fetch - processPackages [dbt-firebolt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_firebolt-1.4.0.tar.gz tmp/dbt_firebolt-1.4.1.tar.gz --markdown 20230411/d/dbt-firebolt/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-11 14:11:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:51] INFO root fetch - processPackages [qin-plot]: Downloading https://files.pythonhosted.org/packages/6b/ea/6d76c10daab22f704d9e26d93e7ec8db277e83168ff3a582dfab5e5d7f1a/qin_plot-1.0.5.tar.gz
+[2023-04-11 14:11:51] INFO root fetch - processPackages [qin-plot]: executing diffoscope
+[2023-04-11 14:11:51] INFO root fetch - processPackages [qin-plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qin_plot-1.0.4.tar.gz tmp/qin_plot-1.0.5.tar.gz --markdown 20230411/q/qin-plot/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-11 14:11:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:11:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:14:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:14:14] INFO root fetch - main [MainThread]: Store serial: [17660358]
