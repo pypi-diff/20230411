@@ -20530,3 +20530,59 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 20:40:04] INFO root fetch - main [MainThread]: success
 [2023-04-11 20:40:04] INFO root fetch - main [MainThread]: success
 [2023-04-11 20:40:04] INFO root fetch - main [MainThread]: Store serial: [17664943]
+[2023-04-11 20:45:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17664943]
+[2023-04-11 20:45:12] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 20:45:12] INFO root fetch - processPackages [brds]: New version: [0.3.0] Old Version: [0.2.8]
+[2023-04-11 20:45:12] INFO root fetch - processPackages [chalice-spec]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-11 20:45:12] INFO root fetch - processPackages [oc4idskit]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 20:45:12] INFO root fetch - processPackages [tendril-utils-db]: New version: [0.5.0] Old Version: [0.4.5]
+[2023-04-11 20:45:12] INFO root fetch - processPackages [magnum-cluster-api]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-11 20:45:13] INFO root fetch - processPackages [brds]: Downloading https://files.pythonhosted.org/packages/69/45/4567834c4063c6215c84c76159331a5d3c97cc101dc28fba4366c4c08bdc/brds-0.3.0.tar.gz
+[2023-04-11 20:45:13] INFO root fetch - processPackages [chalice-spec]: Downloading https://files.pythonhosted.org/packages/42/c6/b2aac97527fc072162ab72a7677312fa25e885ecd311625b91d7db986ffb/chalice_spec-0.3.1.tar.gz
+[2023-04-11 20:45:13] INFO root fetch - processPackages [oc4idskit]: Downloading https://files.pythonhosted.org/packages/6e/39/b7ca4b8c57518fc6e69d626ca2149511c3fdd78182776386a9d5664aa944/oc4idskit-0.0.2.tar.gz
+[2023-04-11 20:45:13] INFO root fetch - processPackages [tendril-utils-db]: Downloading https://files.pythonhosted.org/packages/66/44/fbb0a3fe16e7edc11b3bcbb17f891c89d6078028f87f0d1f3f67fa628b8d/tendril-utils-db-0.4.5.tar.gz
+[2023-04-11 20:45:13] INFO root fetch - processPackages [brds]: executing diffoscope
+[2023-04-11 20:45:13] INFO root fetch - processPackages [brds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brds-0.2.8.tar.gz tmp/brds-0.3.0.tar.gz --markdown 20230411/b/brds/0.2.8-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 20:45:13] INFO root fetch - processPackages [magnum-cluster-api]: Downloading https://files.pythonhosted.org/packages/e2/78/f43fba7f935176995e77c081dfa396b24776d5163abf70b11c5f659b1396/magnum_cluster_api-0.5.1.tar.gz
+[2023-04-11 20:45:13] INFO root fetch - processPackages [magnum-cluster-api]: executing diffoscope
+[2023-04-11 20:45:13] INFO root fetch - processPackages [magnum-cluster-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magnum_cluster_api-0.5.0.tar.gz tmp/magnum_cluster_api-0.5.1.tar.gz --markdown 20230411/m/magnum-cluster-api/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-11 20:45:13] INFO root fetch - processPackages [tendril-utils-db]: Downloading https://files.pythonhosted.org/packages/24/ae/27abe664c7a2fbc16b1e51c47280a9cdbc2ba653b35053d751645ac13b63/tendril-utils-db-0.5.0.tar.gz
+[2023-04-11 20:45:13] INFO root fetch - processPackages [oc4idskit]: Downloading https://files.pythonhosted.org/packages/d5/89/df1f11a9ebd8faacd9b05e14ea5374df404f1a33d95d5009401b4636f193/oc4idskit-0.0.3.tar.gz
+[2023-04-11 20:45:13] INFO root fetch - processPackages [chalice-spec]: Downloading https://files.pythonhosted.org/packages/e9/27/c73b642f75938fee4958f69823b8ac8b537cae26a62b0d7a66049e88e1ea/chalice_spec-0.4.0-py3-none-any.whl
+[2023-04-11 20:45:13] INFO root fetch - processPackages [tendril-utils-db]: executing diffoscope
+[2023-04-11 20:45:13] INFO root fetch - processPackages [tendril-utils-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-utils-db-0.4.5.tar.gz tmp/tendril-utils-db-0.5.0.tar.gz --markdown 20230411/t/tendril-utils-db/0.4.5-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 20:45:13] INFO root fetch - processPackages [oc4idskit]: executing diffoscope
+[2023-04-11 20:45:13] INFO root fetch - processPackages [oc4idskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oc4idskit-0.0.2.tar.gz tmp/oc4idskit-0.0.3.tar.gz --markdown 20230411/o/oc4idskit/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 20:45:13] INFO root fetch - processPackages [chalice-spec]: executing diffoscope
+[2023-04-11 20:45:13] INFO root fetch - processPackages [chalice-spec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalice_spec-0.3.1.tar.gz tmp/chalice_spec-0.4.0-py3-none-any.whl.zip --markdown 20230411/c/chalice-spec/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-11 20:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:14] INFO root fetch - processPackages [advancedrequests]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-04-11 20:45:14] INFO root fetch - processPackages [advancedrequests]: Downloading https://files.pythonhosted.org/packages/27/45/0ef97f7ebbf06c562465dc817ad058d79627279c31ea79a4d159d16f3fa4/advancedrequests-1.0.0.tar.gz
+[2023-04-11 20:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:14] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-11 20:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:14] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-04-11 20:45:14] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230411/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-11 20:45:14] INFO root fetch - processPackages [sneaksmc]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 20:45:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:14] INFO root fetch - processPackages [haicu]: New version: [0.0.98] Old Version: [0.0.97]
+[2023-04-11 20:45:15] INFO root fetch - processPackages [advancedrequests]: Downloading https://files.pythonhosted.org/packages/8f/5c/02fd7aca605b4889999406c7cc2c09fa57eff65867f943d683fdc19620c7/advancedrequests-1.0.2.tar.gz
+[2023-04-11 20:45:15] INFO root fetch - processPackages [advancedrequests]: executing diffoscope
+[2023-04-11 20:45:15] INFO root fetch - processPackages [advancedrequests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/advancedrequests-1.0.0.tar.gz tmp/advancedrequests-1.0.2.tar.gz --markdown 20230411/a/advancedrequests/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 20:45:15] INFO root fetch - processPackages [haicu]: Downloading https://files.pythonhosted.org/packages/f1/6a/d5330df41a26f8262218875655a0538cb84224094e88dd4d67c812f6344b/haicu-0.0.97-py3-none-any.whl
+[2023-04-11 20:45:15] INFO root fetch - processPackages [sneaksmc]: Downloading https://files.pythonhosted.org/packages/d8/91/fc619bb79ab5527158b9937c620d58eee3be31f8f95ed3305a8a98ccc0f2/sneaksmc-0.0.5.tar.gz
+[2023-04-11 20:45:15] INFO root fetch - processPackages [sneaksmc]: executing diffoscope
+[2023-04-11 20:45:15] INFO root fetch - processPackages [sneaksmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sneaksmc-0.0.4.tar.gz tmp/sneaksmc-0.0.5.tar.gz --markdown 20230411/s/sneaksmc/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 20:45:15] INFO root fetch - processPackages [haicu]: Downloading https://files.pythonhosted.org/packages/df/6f/e5ca4bd314c7068e52c0d629b2dc5ef4e6648d618814d52606421955a0f4/haicu-0.0.98-py3-none-any.whl
+[2023-04-11 20:45:15] INFO root fetch - processPackages [haicu]: executing diffoscope
+[2023-04-11 20:45:15] INFO root fetch - processPackages [haicu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haicu-0.0.97-py3-none-any.whl.zip tmp/haicu-0.0.98-py3-none-any.whl.zip --markdown 20230411/h/haicu/0.0.97-0.0.98/diff.md --exclude *.pyd
+[2023-04-11 20:45:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:15] INFO root fetch - processPackages [haicu]: New version: [0.0.98] Old Version: [0.0.97]
+[2023-04-11 20:45:15] INFO root fetch - processPackages [haicu]: executing diffoscope
+[2023-04-11 20:45:15] INFO root fetch - processPackages [haicu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haicu-0.0.97-py3-none-any.whl.zip tmp/haicu-0.0.98-py3-none-any.whl.zip --markdown 20230411/h/haicu/0.0.97-0.0.98/diff.md --exclude *.pyd
+[2023-04-11 20:45:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:45:25] INFO root fetch - main [MainThread]: Store serial: [17664970]
