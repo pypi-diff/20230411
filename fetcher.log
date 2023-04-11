@@ -20972,3 +20972,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 21:22:26] INFO root fetch - processPackages [elektra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elektra-0.0.8.tar.gz tmp/elektra-0.0.9.tar.gz --markdown 20230411/e/elektra/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-04-11 21:22:27] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:22:27] INFO root fetch - main [MainThread]: Store serial: [17665293]
+[2023-04-11 21:27:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17665293]
+[2023-04-11 21:27:35] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 21:27:35] INFO root fetch - processPackages [appsurifyci]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-11 21:27:35] INFO root fetch - processPackages [PyGeodesy]: New version: [23.4.6] Old Version: [23.4.5]
+[2023-04-11 21:27:35] WARNING root fetch - processPackages [rucio-consistency]: Skipping, unable to determine old version
+[2023-04-11 21:27:35] INFO root fetch - main [MainThread]: error
+[2023-04-11 21:27:35] INFO root fetch - processPackages [bgmi]: New version: [5.0.0a3] Old Version: [5.0.0a2]
+[2023-04-11 21:27:35] INFO root fetch - processPackages [slg-dev-ops]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-11 21:27:35] INFO root fetch - processPackages [schatsi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 21:27:35] INFO root fetch - processPackages [slg-dev-ops]: executing diffoscope
+[2023-04-11 21:27:35] INFO root fetch - processPackages [slg-dev-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slg-dev-ops-1.8.0.tar.gz tmp/slg-dev-ops-1.9.0.tar.gz --markdown 20230411/s/slg-dev-ops/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 21:27:35] INFO root fetch - processPackages [appsurifyci]: Downloading https://files.pythonhosted.org/packages/dc/06/e3e113a46a344bf8b0900db1ca2e93ff6701d0ecd4a67d261883ae891adf/appsurifyci-0.1.7.tar.gz
+[2023-04-11 21:27:35] INFO root fetch - processPackages [bgmi]: Downloading https://files.pythonhosted.org/packages/d1/4a/c3af3c0fbeda6f4db50b75b31030a1ab818b6ff09a51ecd45d933117e975/bgmi-5.0.0a3.tar.gz
+[2023-04-11 21:27:35] INFO root fetch - processPackages [schatsi]: Downloading https://files.pythonhosted.org/packages/4b/55/f796806f98761ad95fb17017bf49b4f748af1e03f583b41f82b844799ce2/schatsi-0.1.8.tar.gz
+[2023-04-11 21:27:35] INFO root fetch - processPackages [PyGeodesy]: Downloading https://files.pythonhosted.org/packages/46/7c/8737d3d8eb7e90053928d0f07ad98a911445e6a9e3f02602e2f85d07fff3/PyGeodesy-23.4.5.zip
+[2023-04-11 21:27:35] INFO root fetch - processPackages [bgmi]: executing diffoscope
+[2023-04-11 21:27:35] INFO root fetch - processPackages [bgmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgmi-5.0.0a2.tar.gz tmp/bgmi-5.0.0a3.tar.gz --markdown 20230411/b/bgmi/5.0.0a2-5.0.0a3/diff.md --exclude *.pyd
+[2023-04-11 21:27:35] INFO root fetch - processPackages [appsurifyci]: executing diffoscope
+[2023-04-11 21:27:35] INFO root fetch - processPackages [appsurifyci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appsurifyci-0.1.6.tar.gz tmp/appsurifyci-0.1.7.tar.gz --markdown 20230411/a/appsurifyci/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-11 21:27:36] INFO root fetch - processPackages [schatsi]: Downloading https://files.pythonhosted.org/packages/ac/40/4affcfdce54f53f87b59fa0fc510effd70827bcc69241ab37ee18e47747e/schatsi-0.1.9.tar.gz
+[2023-04-11 21:27:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:27:36] INFO root fetch - processPackages [idun-guardian-client]: New version: [1.1b9] Old Version: [1.1b4]
+[2023-04-11 21:27:36] INFO root fetch - processPackages [schatsi]: executing diffoscope
+[2023-04-11 21:27:36] INFO root fetch - processPackages [schatsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schatsi-0.1.8.tar.gz tmp/schatsi-0.1.9.tar.gz --markdown 20230411/s/schatsi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 21:27:36] INFO root fetch - processPackages [idun-guardian-client]: Downloading https://files.pythonhosted.org/packages/b1/b2/9cc829f54bfe1bf30913ee5bab009effd4c421bea9a8e1ace4094fc50bc7/idun_guardian_client-1.1b9.tar.gz
+[2023-04-11 21:27:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:27:36] INFO root fetch - processPackages [pylookout]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-11 21:27:36] INFO root fetch - processPackages [idun-guardian-client]: executing diffoscope
+[2023-04-11 21:27:36] INFO root fetch - processPackages [idun-guardian-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idun_guardian_client-1.1b4.tar.gz tmp/idun_guardian_client-1.1b9.tar.gz --markdown 20230411/i/idun-guardian-client/1.1b4-1.1b9/diff.md --exclude *.pyd
+[2023-04-11 21:27:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:27:36] INFO root fetch - processPackages [bigc]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-11 21:27:37] INFO root fetch - processPackages [pylookout]: Downloading https://files.pythonhosted.org/packages/a0/da/7094104bf1cc86ffdc1ad269ce7e931676cd1bb98c54cc2bf57c1050f614/pylookout-0.2.4.tar.gz
+[2023-04-11 21:27:37] INFO root fetch - processPackages [PyGeodesy]: Downloading https://files.pythonhosted.org/packages/79/99/545e386b88f62cf599402e964d08e1f37fcacf758cbffa82818877f1a228/PyGeodesy-23.4.6.zip
+[2023-04-11 21:27:37] INFO root fetch - processPackages [bigc]: Downloading https://files.pythonhosted.org/packages/f2/5b/3adc6ac00dbc80866c2a4aeee9aac068a04181a44c7b4dc69ca1b55c3fd3/bigc-0.2.4.tar.gz
+[2023-04-11 21:27:37] INFO root fetch - processPackages [bigc]: Downloading https://files.pythonhosted.org/packages/8c/0d/573340cbc1add48afc494d7d566a4815af3f86baff9b44d768fadcf9dc9c/bigc-0.2.5.tar.gz
+[2023-04-11 21:27:37] INFO root fetch - processPackages [pylookout]: Downloading https://files.pythonhosted.org/packages/9a/81/e549eaae1960705d1a0c6b792722b2971cd5dfa6866974d28e236a591405/pylookout-0.2.5.tar.gz
+[2023-04-11 21:27:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:27:37] INFO root fetch - processPackages [pyodbc]: New version: [4.0.9] Old Version: [4.0.8]
+[2023-04-11 21:27:37] INFO root fetch - processPackages [bigc]: executing diffoscope
+[2023-04-11 21:27:37] INFO root fetch - processPackages [bigc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigc-0.2.4.tar.gz tmp/bigc-0.2.5.tar.gz --markdown 20230411/b/bigc/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-11 21:27:37] INFO root fetch - processPackages [pylookout]: executing diffoscope
+[2023-04-11 21:27:37] INFO root fetch - processPackages [pylookout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylookout-0.2.4.tar.gz tmp/pylookout-0.2.5.tar.gz --markdown 20230411/p/pylookout/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-11 21:27:37] INFO root fetch - processPackages [pyodbc]: Downloading https://files.pythonhosted.org/packages/e7/9c/58731138465269722a126ce9f2990a66c581a352328b9579b0d0c650e34a/pyodbc-4.0.8.tar.gz
+[2023-04-11 21:27:38] INFO root fetch - processPackages [pyodbc]: Downloading https://files.pythonhosted.org/packages/ea/00/3adf631502fa010c2ceefa062049fd325d5a0f671c78e759d407372b96c0/pyodbc-4.0.9.tar.gz
+[2023-04-11 21:27:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:27:38] INFO root fetch - processPackages [pyodbc]: executing diffoscope
+[2023-04-11 21:27:38] INFO root fetch - processPackages [pyodbc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyodbc-4.0.8.tar.gz tmp/pyodbc-4.0.9.tar.gz --markdown 20230411/p/pyodbc/4.0.8-4.0.9/diff.md --exclude *.pyd
+[2023-04-11 21:27:38] INFO root fetch - processPackages [PyGeodesy]: executing diffoscope
+[2023-04-11 21:27:38] INFO root fetch - processPackages [PyGeodesy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGeodesy-23.4.5.zip tmp/PyGeodesy-23.4.6.zip --markdown 20230411/P/PyGeodesy/23.4.5-23.4.6/diff.md --exclude *.pyd
+[2023-04-11 21:27:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:27:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:27:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:28:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:28:31] INFO root fetch - main [MainThread]: Store serial: [17665346]
