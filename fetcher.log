@@ -22239,3 +22239,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 22:47:31] INFO root fetch - main [MainThread]: success
 [2023-04-11 22:47:32] INFO root fetch - main [MainThread]: success
 [2023-04-11 22:47:32] INFO root fetch - main [MainThread]: Store serial: [17666022]
+[2023-04-11 22:52:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17666022]
+[2023-04-11 22:52:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-11 22:52:39] INFO root fetch - processPackages [shub-workflow]: New version: [1.9.7.4] Old Version: [1.9.7.3]
+[2023-04-11 22:52:39] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 22:52:39] INFO root fetch - processPackages [hordelib]: New version: [0.4.1] Old Version: [0.2.0]
+[2023-04-11 22:52:39] INFO root fetch - processPackages [PyComplexHeatmap]: New version: [1.4.1] Old Version: [1.4]
+[2023-04-11 22:52:39] INFO root fetch - processPackages [montecarlodata]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-11 22:52:39] INFO root fetch - processPackages [shub-workflow]: executing diffoscope
+[2023-04-11 22:52:39] INFO root fetch - processPackages [shub-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shub-workflow-1.9.7.3.tar.gz tmp/shub-workflow-1.9.7.4.tar.gz --markdown 20230411/s/shub-workflow/1.9.7.3-1.9.7.4/diff.md --exclude *.pyd
+[2023-04-11 22:52:39] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-11 22:52:39] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.8.tar.gz tmp/kfsdutils-0.0.9.tar.gz --markdown 20230411/k/kfsdutils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 22:52:39] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-11 22:52:39] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.2.0.tar.gz tmp/hordelib-0.4.1.tar.gz --markdown 20230411/h/hordelib/0.2.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-11 22:52:40] INFO root fetch - processPackages [PyComplexHeatmap]: Downloading https://files.pythonhosted.org/packages/b0/19/fb9c7ffba878859d73d6c0524e7d90e0f6df245f2e3dcc9a0cf3945e4723/PyComplexHeatmap-1.4.1.tar.gz
+[2023-04-11 22:52:40] INFO root fetch - processPackages [montecarlodata]: executing diffoscope
+[2023-04-11 22:52:40] INFO root fetch - processPackages [montecarlodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/montecarlodata-0.9.1.tar.gz tmp/montecarlodata-0.9.2.tar.gz --markdown 20230411/m/montecarlodata/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-11 22:52:40] INFO root fetch - processPackages [PyComplexHeatmap]: executing diffoscope
+[2023-04-11 22:52:40] INFO root fetch - processPackages [PyComplexHeatmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyComplexHeatmap-1.4.tar.gz tmp/PyComplexHeatmap-1.4.1.tar.gz --markdown 20230411/P/PyComplexHeatmap/1.4-1.4.1/diff.md --exclude *.pyd
+[2023-04-11 22:52:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:52:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:52:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:52:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:52:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:52:42] INFO root fetch - main [MainThread]: Store serial: [17666034]
