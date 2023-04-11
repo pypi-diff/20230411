@@ -14527,3 +14527,83 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 14:50:14] INFO root fetch - main [MainThread]: success
 [2023-04-11 14:50:15] INFO root fetch - main [MainThread]: success
 [2023-04-11 14:50:15] INFO root fetch - main [MainThread]: Store serial: [17660876]
+[2023-04-11 14:55:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17660876]
+[2023-04-11 14:55:23] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-11 14:55:23] INFO root fetch - processPackages [ayeaye]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 14:55:23] INFO root fetch - processPackages [sepal-ui]: New version: [2.9.4] Old Version: [2.8.0]
+[2023-04-11 14:55:23] INFO root fetch - processPackages [os2mo-data-import]: New version: [5.2.0] Old Version: [5.1.2]
+[2023-04-11 14:55:23] INFO root fetch - processPackages [gs-quant]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-11 14:55:23] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.8.0.dev20230411] Old Version: [0.8.0.dev20230410]
+[2023-04-11 14:55:23] INFO root fetch - processPackages [sepal-ui]: Downloading https://files.pythonhosted.org/packages/24/64/5d896f91256f77cd511add9b527727ea6dd712410ee2d0f0247e6be239f7/sepal-ui-2.8.0.tar.gz
+[2023-04-11 14:55:23] INFO root fetch - processPackages [ayeaye]: Downloading https://files.pythonhosted.org/packages/f2/6b/8b5d41607a25ef4c9c1721c6ec7ad0d8e2e642b7917e5af7f2abab43f22e/ayeaye-0.0.8.tar.gz
+[2023-04-11 14:55:23] INFO root fetch - processPackages [os2mo-data-import]: Downloading https://files.pythonhosted.org/packages/48/03/3a63d8d99aad3e54e17b265ba097d5b8f6c812d2b3fc21c08c23443ee5f6/os2mo_data_import-5.1.2.tar.gz
+[2023-04-11 14:55:23] INFO root fetch - processPackages [gs-quant]: Downloading https://files.pythonhosted.org/packages/77/9e/f079e7681d4c32e69072b14b0d21098d1b5fe57ebaff629f558dbc0081e8/gs_quant-0.9.98.tar.gz
+[2023-04-11 14:55:23] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/49/01/760fa446672f32419b206edc1302b88974b3095794c7efd5d636bbe7a484/tensorcircuit-nightly-0.8.0.dev20230410.tar.gz
+[2023-04-11 14:55:24] INFO root fetch - processPackages [os2mo-data-import]: Downloading https://files.pythonhosted.org/packages/2e/97/00d680a589d1f21e685c063a72a79303b7cadc26b3d068edf4354112a8e0/os2mo_data_import-5.2.0.tar.gz
+[2023-04-11 14:55:24] INFO root fetch - processPackages [sepal-ui]: Downloading https://files.pythonhosted.org/packages/5e/e5/6d0b12f60d176279fee66063fb417dc8a0e5864fed5480e227daab6f10b9/sepal-ui-2.9.4.tar.gz
+[2023-04-11 14:55:24] INFO root fetch - processPackages [gs-quant]: Downloading https://files.pythonhosted.org/packages/a0/6c/8583175eb2e346953d610a7a9e74caf702618a30139507f1ba65c69c8bad/gs_quant-0.9.99.tar.gz
+[2023-04-11 14:55:24] INFO root fetch - processPackages [sepal-ui]: executing diffoscope
+[2023-04-11 14:55:24] INFO root fetch - processPackages [sepal-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sepal-ui-2.8.0.tar.gz tmp/sepal-ui-2.9.4.tar.gz --markdown 20230411/s/sepal-ui/2.8.0-2.9.4/diff.md --exclude *.pyd
+[2023-04-11 14:55:24] INFO root fetch - processPackages [ayeaye]: Downloading https://files.pythonhosted.org/packages/d3/40/38f102a96f92b589174e6e48225ca8d3a50cacf0b958d0b7085b5bedbf28/ayeaye-0.0.9.tar.gz
+[2023-04-11 14:55:24] INFO root fetch - processPackages [gs-quant]: executing diffoscope
+[2023-04-11 14:55:24] INFO root fetch - processPackages [gs-quant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_quant-0.9.98.tar.gz tmp/gs_quant-0.9.99.tar.gz --markdown 20230411/g/gs-quant/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-11 14:55:24] INFO root fetch - processPackages [os2mo-data-import]: executing diffoscope
+[2023-04-11 14:55:24] INFO root fetch - processPackages [os2mo-data-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os2mo_data_import-5.1.2.tar.gz tmp/os2mo_data_import-5.2.0.tar.gz --markdown 20230411/o/os2mo-data-import/5.1.2-5.2.0/diff.md --exclude *.pyd
+[2023-04-11 14:55:24] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/c8/54/260a2938f9da0a55ad7fc63e35607634c6688eb3f230e9cf503a09b596c4/tensorcircuit-nightly-0.8.0.dev20230411.tar.gz
+[2023-04-11 14:55:24] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-04-11 14:55:24] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.8.0.dev20230410.tar.gz tmp/tensorcircuit-nightly-0.8.0.dev20230411.tar.gz --markdown 20230411/t/tensorcircuit-nightly/0.8.0.dev20230410-0.8.0.dev20230411/diff.md --exclude *.pyd
+[2023-04-11 14:55:24] INFO root fetch - processPackages [ayeaye]: executing diffoscope
+[2023-04-11 14:55:24] INFO root fetch - processPackages [ayeaye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ayeaye-0.0.8.tar.gz tmp/ayeaye-0.0.9.tar.gz --markdown 20230411/a/ayeaye/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 14:55:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:25] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-11 14:55:25] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-11 14:55:25] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230411/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-11 14:55:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:25] INFO root fetch - processPackages [alethiometer]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-11 14:55:26] INFO root fetch - processPackages [alethiometer]: Downloading https://files.pythonhosted.org/packages/60/00/03a05ea085011f84b3f001cb2b7385963db58a131689d50c4361fc0cedfc/alethiometer-1.0.4.tar.gz
+[2023-04-11 14:55:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:26] INFO root fetch - processPackages [netorca-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 14:55:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:26] INFO root fetch - processPackages [alethiometer]: executing diffoscope
+[2023-04-11 14:55:26] INFO root fetch - processPackages [alethiometer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alethiometer-1.0.3.tar.gz tmp/alethiometer-1.0.4.tar.gz --markdown 20230411/a/alethiometer/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-11 14:55:26] INFO root fetch - processPackages [thrivve-core]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 14:55:26] INFO root fetch - processPackages [netorca-sdk]: Downloading https://files.pythonhosted.org/packages/27/05/336984f7c58634cb8f02e301f6e805f99223c0083277573c15a08b65daa4/netorca_sdk-0.0.8.tar.gz
+[2023-04-11 14:55:26] INFO root fetch - processPackages [thrivve-core]: Downloading https://files.pythonhosted.org/packages/c4/17/e592301c3aa34e7852aaf8c8da9f1f93a54f9d0aff0605a4690f18f05fc4/thrivve_core-0.0.5.tar.gz
+[2023-04-11 14:55:26] INFO root fetch - processPackages [thrivve-core]: executing diffoscope
+[2023-04-11 14:55:26] INFO root fetch - processPackages [thrivve-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thrivve_core-0.0.4.tar.gz tmp/thrivve_core-0.0.5.tar.gz --markdown 20230411/t/thrivve-core/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 14:55:26] INFO root fetch - processPackages [netorca-sdk]: Downloading https://files.pythonhosted.org/packages/04/f9/d6bae7241d181e2251d4906691b472dab5bf8e30a053a5d8fe581627f769/netorca_sdk-0.0.9.tar.gz
+[2023-04-11 14:55:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:27] INFO root fetch - processPackages [ipywebgl]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 14:55:27] INFO root fetch - processPackages [netorca-sdk]: executing diffoscope
+[2023-04-11 14:55:27] INFO root fetch - processPackages [netorca-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netorca_sdk-0.0.8.tar.gz tmp/netorca_sdk-0.0.9.tar.gz --markdown 20230411/n/netorca-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 14:55:27] INFO root fetch - processPackages [ipywebgl]: Downloading https://files.pythonhosted.org/packages/6d/7a/c7e65ab39e9eb1601f4e37c9bf9e35e861825c8e799f5e8c7c1642047845/ipywebgl-0.1.1.tar.gz
+[2023-04-11 14:55:27] INFO root fetch - processPackages [ipywebgl]: Downloading https://files.pythonhosted.org/packages/77/d4/f0954657a5a6bb41765b4511751d3abcb53f279cf3310b76e65211ed5b3d/ipywebgl-0.1.2.tar.gz
+[2023-04-11 14:55:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:27] INFO root fetch - processPackages [prettyqt]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-04-11 14:55:27] INFO root fetch - processPackages [prettyqt]: Downloading https://files.pythonhosted.org/packages/4e/20/a9ebdeba1be7bc74685a81febbb9623b5453adb4639ee9bae2559a524d61/prettyqt-1.2.0.tar.gz
+[2023-04-11 14:55:28] INFO root fetch - processPackages [ipywebgl]: executing diffoscope
+[2023-04-11 14:55:28] INFO root fetch - processPackages [ipywebgl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipywebgl-0.1.1.tar.gz tmp/ipywebgl-0.1.2.tar.gz --markdown 20230411/i/ipywebgl/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 14:55:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:28] INFO root fetch - processPackages [lightning-cloud]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-11 14:55:28] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-04-11 14:55:28] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.1.2.tar.gz tmp/prettyqt-1.2.0.tar.gz --markdown 20230411/p/prettyqt/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-04-11 14:55:28] INFO root fetch - processPackages [lightning-cloud]: Downloading https://files.pythonhosted.org/packages/cc/b2/6cf07379228de7dd2a95d71aa5ffeb852881582c3e3afab5a34c0608edb2/lightning_cloud-0.5.8.tar.gz
+[2023-04-11 14:55:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:28] INFO root fetch - processPackages [multiple-docking]: New version: [0.8] Old Version: [0.7]
+[2023-04-11 14:55:28] INFO root fetch - processPackages [multiple-docking]: Downloading https://files.pythonhosted.org/packages/cf/f6/3d5219d3aac3dcc23e2bd79ba3cd86f6e4792fd8423a83e9ee6cc5501ed6/multiple_docking-0.7.tar.gz
+[2023-04-11 14:55:29] INFO root fetch - processPackages [multiple-docking]: Downloading https://files.pythonhosted.org/packages/01/ae/a5b906d49e3b184e1deb0e50f8afa781ae44ad9627f0afebd770fe8f3265/multiple_docking-0.8.tar.gz
+[2023-04-11 14:55:29] INFO root fetch - processPackages [lightning-cloud]: Downloading https://files.pythonhosted.org/packages/94/51/94fe26b6f4d8fb15a8f81782e5eff9a59c23e6ed1d39892a4bf696d4001f/lightning_cloud-0.5.9.tar.gz
+[2023-04-11 14:55:29] INFO root fetch - processPackages [lightning-cloud]: executing diffoscope
+[2023-04-11 14:55:29] INFO root fetch - processPackages [lightning-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning_cloud-0.5.8.tar.gz tmp/lightning_cloud-0.5.9.tar.gz --markdown 20230411/l/lightning-cloud/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-11 14:55:29] INFO root fetch - processPackages [multiple-docking]: executing diffoscope
+[2023-04-11 14:55:29] INFO root fetch - processPackages [multiple-docking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiple_docking-0.7.tar.gz tmp/multiple_docking-0.8.tar.gz --markdown 20230411/m/multiple-docking/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-11 14:55:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:30] INFO root fetch - processPackages [whisper-dictation]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-11 14:55:30] INFO root fetch - processPackages [whisper-dictation]: executing diffoscope
+[2023-04-11 14:55:30] INFO root fetch - processPackages [whisper-dictation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_dictation-0.1.0.tar.gz tmp/whisper_dictation-0.2.0.tar.gz --markdown 20230411/w/whisper-dictation/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 14:55:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:55:35] INFO root fetch - main [MainThread]: Store serial: [17660918]
