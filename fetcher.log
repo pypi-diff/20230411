@@ -12982,3 +12982,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 13:08:07] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:08:29] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:08:29] INFO root fetch - main [MainThread]: Store serial: [17659693]
+[2023-04-11 13:13:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659693]
+[2023-04-11 13:13:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-11 13:13:36] INFO root fetch - processPackages [gordo]: New version: [5.0.0rc2] Old Version: [5.0.0rc1]
+[2023-04-11 13:13:36] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-11 13:13:36] INFO root fetch - processPackages [spotinst-sdk2]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-04-11 13:13:36] INFO root fetch - processPackages [pybi-next]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-04-11 13:13:36] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 13:13:37] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: executing diffoscope
+[2023-04-11 13:13:37] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.projen-awscdk-app-ts-0.0.98.tar.gz tmp/pepperize.projen-awscdk-app-ts-0.0.99.tar.gz --markdown 20230411/p/pepperize.projen-awscdk-app-ts/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 13:13:37] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-11 13:13:37] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230411/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-11 13:13:37] INFO root fetch - processPackages [pybi-next]: Downloading https://files.pythonhosted.org/packages/df/e1/66a388808575ce920508c6d03aa8a5649ad6da21d56bcc047df31312906d/pybi-next-0.3.9.tar.gz
+[2023-04-11 13:13:37] INFO root fetch - processPackages [gordo]: Downloading https://files.pythonhosted.org/packages/b2/9b/68c9c1bfb3c2a513648de2c38cdbf2194ec547386b7133576b9a8fb8a951/gordo-5.0.0rc1.tar.gz
+[2023-04-11 13:13:37] INFO root fetch - processPackages [spotinst-sdk2]: Downloading https://files.pythonhosted.org/packages/72/87/2cd70b24dbf11e16e6bdccadfade4bec30d5f6cb90b128270d98e8cc5643/spotinst-sdk2-2.1.8.tar.gz
+[2023-04-11 13:13:37] INFO root fetch - processPackages [pybi-next]: Downloading https://files.pythonhosted.org/packages/0c/30/7fcd0bb94308131a4b7acbfdcbacdf09f75a39e264c66afbe8e80327c162/pybi-next-0.4.0.tar.gz
+[2023-04-11 13:13:37] INFO root fetch - processPackages [gordo]: Downloading https://files.pythonhosted.org/packages/46/e0/fdf76f26b6f6ee08d731ba404dd29841893694f18545002a92bbb2a717e5/gordo-5.0.0rc2.tar.gz
+[2023-04-11 13:13:37] INFO root fetch - processPackages [pybi-next]: executing diffoscope
+[2023-04-11 13:13:37] INFO root fetch - processPackages [pybi-next]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybi-next-0.3.9.tar.gz tmp/pybi-next-0.4.0.tar.gz --markdown 20230411/p/pybi-next/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-04-11 13:13:37] INFO root fetch - processPackages [gordo]: executing diffoscope
+[2023-04-11 13:13:37] INFO root fetch - processPackages [gordo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gordo-5.0.0rc1.tar.gz tmp/gordo-5.0.0rc2.tar.gz --markdown 20230411/g/gordo/5.0.0rc1-5.0.0rc2/diff.md --exclude *.pyd
+[2023-04-11 13:13:37] INFO root fetch - processPackages [spotinst-sdk2]: Downloading https://files.pythonhosted.org/packages/24/ca/c26f81e85bd7ecda3b64d20be266440204fbbdf1046b69bea4f97a17b4bb/spotinst-sdk2-2.1.9.tar.gz
+[2023-04-11 13:13:38] INFO root fetch - processPackages [spotinst-sdk2]: executing diffoscope
+[2023-04-11 13:13:38] INFO root fetch - processPackages [spotinst-sdk2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotinst-sdk2-2.1.8.tar.gz tmp/spotinst-sdk2-2.1.9.tar.gz --markdown 20230411/s/spotinst-sdk2/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-04-11 13:13:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:13:38] WARNING root fetch - processPackages [gotya-text-anonymizer]: Skipping, unable to determine old version
+[2023-04-11 13:13:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:13:38] INFO root fetch - processPackages [emBRICK]: New version: [0.20] Old Version: [0.19]
+[2023-04-11 13:13:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:13:38] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 13:13:38] INFO root fetch - processPackages [emBRICK]: Downloading https://files.pythonhosted.org/packages/ec/f1/04c209bb3adf44f968e3c220815774423d95173a0f4f2c7658b7df620f42/emBRICK-0.19.tar.gz
+[2023-04-11 13:13:38] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: executing diffoscope
+[2023-04-11 13:13:38] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-private-bucket-0.0.98.tar.gz tmp/pepperize.cdk-private-bucket-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-private-bucket/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 13:13:38] INFO root fetch - processPackages [emBRICK]: Downloading https://files.pythonhosted.org/packages/ef/a9/3eaef31905d8c6d017ecc59f7fafdd34ca6ed412a3dacd46e55d39fb7c6d/emBRICK-0.20.tar.gz
+[2023-04-11 13:13:38] INFO root fetch - processPackages [emBRICK]: executing diffoscope
+[2023-04-11 13:13:38] INFO root fetch - processPackages [emBRICK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emBRICK-0.19.tar.gz tmp/emBRICK-0.20.tar.gz --markdown 20230411/e/emBRICK/0.19-0.20/diff.md --exclude *.pyd
+[2023-04-11 13:13:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:13:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:13:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:13:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:13:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:13:39] INFO root fetch - main [MainThread]: Store serial: [17659719]
