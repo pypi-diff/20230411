@@ -7788,3 +7788,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 07:34:08] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:34:15] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:34:15] INFO root fetch - main [MainThread]: Store serial: [17656498]
+[2023-04-11 07:39:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656498]
+[2023-04-11 07:39:23] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 07:39:23] INFO root fetch - processPackages [pytest-embedded]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-11 07:39:23] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1438] Old Version: [0.20230411.1434]
+[2023-04-11 07:39:23] INFO root fetch - processPackages [dms-influx2]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-11 07:39:23] INFO root fetch - processPackages [sl4p]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-04-11 07:39:23] WARNING root fetch - processPackages [bkapi-plugins]: Skipping, unable to determine old version
+[2023-04-11 07:39:23] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:39:23] INFO root fetch - processPackages [pytest-embedded-serial]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-11 07:39:23] INFO root fetch - processPackages [pytest-embedded]: Downloading https://files.pythonhosted.org/packages/37/ae/69c4d94e2b2310b4bebaa77fd86ddd556149a12528dbc95f69ea5fa7da26/pytest-embedded-1.2.4.tar.gz
+[2023-04-11 07:39:23] INFO root fetch - processPackages [dms-influx2]: Downloading https://files.pythonhosted.org/packages/e8/7a/f72cf0def5abcfce9de2cc7c1d34e5f66b9317bb763e88ae3d6d61a44a46/dms-influx2-0.2.5.tar.gz
+[2023-04-11 07:39:23] INFO root fetch - processPackages [sl4p]: Downloading https://files.pythonhosted.org/packages/89/37/65188fd69b49adfa05421be315a1006e0e76aded39bb0edeba7ac9c62944/sl4p-1.4.2-py3-none-win_amd64.whl
+[2023-04-11 07:39:23] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/7a/af/3ed1d4d1c52e6bbd1a0af1b3f2142262cc201836ba99414494ca1aa22e55/krutils-0.20230411.1438.tar.gz
+[2023-04-11 07:39:23] INFO root fetch - processPackages [pytest-embedded-serial]: Downloading https://files.pythonhosted.org/packages/db/1f/7cd2326f11c77b7506fb44aedd605259ee4c465f841d5b73bcb0813e7724/pytest-embedded-serial-1.2.4.tar.gz
+[2023-04-11 07:39:23] INFO root fetch - processPackages [sl4p]: Downloading https://files.pythonhosted.org/packages/ac/b1/5fe5a394c07477712071ab18896fde64b44fa1ca468a833d22a0a55df083/sl4p-1.4.3-py3-none-win_amd64.whl
+[2023-04-11 07:39:23] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 07:39:23] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1434.tar.gz tmp/krutils-0.20230411.1438.tar.gz --markdown 20230411/k/krutils/0.20230411.1434-0.20230411.1438/diff.md --exclude *.pyd
+[2023-04-11 07:39:23] INFO root fetch - processPackages [sl4p]: executing diffoscope
+[2023-04-11 07:39:23] INFO root fetch - processPackages [sl4p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sl4p-1.4.2-py3-none-win_amd64.whl.zip tmp/sl4p-1.4.3-py3-none-win_amd64.whl.zip --markdown 20230411/s/sl4p/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-04-11 07:39:23] INFO root fetch - processPackages [dms-influx2]: Downloading https://files.pythonhosted.org/packages/f9/b3/c1e72675adf118d10183d6e28d4b41682bd4b6dc4d0825b8fd6af4471846/dms-influx2-0.2.6.tar.gz
+[2023-04-11 07:39:23] INFO root fetch - processPackages [pytest-embedded]: Downloading https://files.pythonhosted.org/packages/83/07/ec18b8a7f37c932afa16400228c3bb112251f545c028f7ff10af39d65944/pytest-embedded-1.2.5.tar.gz
+[2023-04-11 07:39:23] INFO root fetch - processPackages [pytest-embedded-serial]: Downloading https://files.pythonhosted.org/packages/83/f0/65d354669986c4d24e968eaa0869330e567d271b957e2d731749dd6f13c1/pytest-embedded-serial-1.2.5.tar.gz
+[2023-04-11 07:39:23] INFO root fetch - processPackages [dms-influx2]: executing diffoscope
+[2023-04-11 07:39:23] INFO root fetch - processPackages [dms-influx2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dms-influx2-0.2.5.tar.gz tmp/dms-influx2-0.2.6.tar.gz --markdown 20230411/d/dms-influx2/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-11 07:39:24] INFO root fetch - processPackages [pytest-embedded]: executing diffoscope
+[2023-04-11 07:39:24] INFO root fetch - processPackages [pytest-embedded]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-embedded-1.2.4.tar.gz tmp/pytest-embedded-1.2.5.tar.gz --markdown 20230411/p/pytest-embedded/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-11 07:39:24] INFO root fetch - processPackages [pytest-embedded-serial]: executing diffoscope
+[2023-04-11 07:39:24] INFO root fetch - processPackages [pytest-embedded-serial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-embedded-serial-1.2.4.tar.gz tmp/pytest-embedded-serial-1.2.5.tar.gz --markdown 20230411/p/pytest-embedded-serial/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-11 07:39:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:24] INFO root fetch - processPackages [pytest-embedded-serial-esp]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-11 07:39:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:24] INFO root fetch - processPackages [pytest-embedded-idf]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-serial-esp]: Downloading https://files.pythonhosted.org/packages/a1/53/a482360485f69ca6f3a28d8eae19b89cec31abf140c7027fd3d6b6307344/pytest-embedded-serial-esp-1.2.4.tar.gz
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-idf]: Downloading https://files.pythonhosted.org/packages/22/d8/9afda4df91b743c4928479774427cbd9381758893ca53e434f041e910cc6/pytest-embedded-idf-1.2.4.tar.gz
+[2023-04-11 07:39:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-jtag]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-11 07:39:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-qemu]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-11 07:39:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-serial-esp]: Downloading https://files.pythonhosted.org/packages/a6/0e/f454bb60fdec6ff5417637882b0f3090b58bf3aafd8550b4e430d06cbb59/pytest-embedded-serial-esp-1.2.5.tar.gz
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-arduino]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-idf]: Downloading https://files.pythonhosted.org/packages/e1/38/025903972c8fc18c5a25cc7a84346aa78e3216b8b410d36f3fcc4fe2d446/pytest-embedded-idf-1.2.5.tar.gz
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-jtag]: Downloading https://files.pythonhosted.org/packages/db/57/01ee9300805e487473a9b27145a2aab7c41db045378e98ffd34b5a885ee5/pytest-embedded-jtag-1.2.4.tar.gz
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-idf]: executing diffoscope
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-idf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-embedded-idf-1.2.4.tar.gz tmp/pytest-embedded-idf-1.2.5.tar.gz --markdown 20230411/p/pytest-embedded-idf/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-serial-esp]: executing diffoscope
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-serial-esp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-embedded-serial-esp-1.2.4.tar.gz tmp/pytest-embedded-serial-esp-1.2.5.tar.gz --markdown 20230411/p/pytest-embedded-serial-esp/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-jtag]: Downloading https://files.pythonhosted.org/packages/9e/9d/4e91cfbbc59b1e919bc87b14a54652fe28a2cdf2ee518fa85281876e1cf3/pytest-embedded-jtag-1.2.5.tar.gz
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-qemu]: Downloading https://files.pythonhosted.org/packages/71/22/e241f3378d30a0a9837f78ab332ca60241bf348773349b21a0a12d781e2a/pytest-embedded-qemu-1.2.4.tar.gz
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-jtag]: executing diffoscope
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-jtag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-embedded-jtag-1.2.4.tar.gz tmp/pytest-embedded-jtag-1.2.5.tar.gz --markdown 20230411/p/pytest-embedded-jtag/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-11 07:39:25] INFO root fetch - processPackages [pytest-embedded-arduino]: Downloading https://files.pythonhosted.org/packages/a3/74/e92f80d5e591f4a3890ffaec57cfed87219733520d187585c27d9a65d772/pytest-embedded-arduino-1.2.4.tar.gz
+[2023-04-11 07:39:26] INFO root fetch - processPackages [pytest-embedded-qemu]: Downloading https://files.pythonhosted.org/packages/fe/17/45f2c91de5d26f206a09aa3a949eb4c51e2fd7c3f274ec05629485ad9f65/pytest-embedded-qemu-1.2.5.tar.gz
+[2023-04-11 07:39:26] INFO root fetch - processPackages [pytest-embedded-arduino]: Downloading https://files.pythonhosted.org/packages/b8/cd/aac4783e6897175dfbb7f22be2a3067f9602e61a6fa3efbd299a9f1b913b/pytest-embedded-arduino-1.2.5.tar.gz
+[2023-04-11 07:39:26] INFO root fetch - processPackages [pytest-embedded-arduino]: executing diffoscope
+[2023-04-11 07:39:26] INFO root fetch - processPackages [pytest-embedded-arduino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-embedded-arduino-1.2.4.tar.gz tmp/pytest-embedded-arduino-1.2.5.tar.gz --markdown 20230411/p/pytest-embedded-arduino/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-11 07:39:26] INFO root fetch - processPackages [pytest-embedded-qemu]: executing diffoscope
+[2023-04-11 07:39:26] INFO root fetch - processPackages [pytest-embedded-qemu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-embedded-qemu-1.2.4.tar.gz tmp/pytest-embedded-qemu-1.2.5.tar.gz --markdown 20230411/p/pytest-embedded-qemu/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-11 07:39:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:26] INFO root fetch - processPackages [jira-select]: New version: [3.0.0a1] Old Version: [2.1.1]
+[2023-04-11 07:39:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:26] INFO root fetch - processPackages [jira-select]: Downloading https://files.pythonhosted.org/packages/71/03/076a34aadb7508b37bba39c1b07a3bec9c508a42d7e527a01b1a6a0e2027/jira-select-2.1.1.tar.gz
+[2023-04-11 07:39:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:27] INFO root fetch - processPackages [jira-select]: Downloading https://files.pythonhosted.org/packages/64/06/258ac5a5fc2cf6b571b0638163cc4e68fbf696e2998ada0693475a7827a1/jira-select-3.0.0a1.tar.gz
+[2023-04-11 07:39:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:27] INFO root fetch - processPackages [jira-select]: executing diffoscope
+[2023-04-11 07:39:27] INFO root fetch - processPackages [jira-select]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jira-select-2.1.1.tar.gz tmp/jira-select-3.0.0a1.tar.gz --markdown 20230411/j/jira-select/2.1.1-3.0.0a1/diff.md --exclude *.pyd
+[2023-04-11 07:39:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:39:29] INFO root fetch - main [MainThread]: Store serial: [17656544]
