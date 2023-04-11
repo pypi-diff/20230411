@@ -8089,3 +8089,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 08:00:34] INFO root fetch - main [MainThread]: success
 [2023-04-11 08:00:34] INFO root fetch - main [MainThread]: success
 [2023-04-11 08:00:34] INFO root fetch - main [MainThread]: Store serial: [17656712]
+[2023-04-11 08:05:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656712]
+[2023-04-11 08:05:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-11 08:05:42] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230410] Old Version: [2.4.0.dev20230409]
+[2023-04-11 08:05:42] INFO root fetch - processPackages [bpnet-lite]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-11 08:05:42] INFO root fetch - processPackages [np-zro]: New version: [0.1.0.post4] Old Version: [0.1.0.post2]
+[2023-04-11 08:05:42] WARNING root fetch - processPackages [boolean-expression]: Skipping, unable to determine old version
+[2023-04-11 08:05:42] INFO root fetch - main [MainThread]: error
+[2023-04-11 08:05:42] INFO root fetch - processPackages [PyQtGuiLib]: New version: [2.7.18.11] Old Version: [2.6.18.11]
+[2023-04-11 08:05:42] INFO root fetch - processPackages [snapctl]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-11 08:05:42] INFO root fetch - processPackages [PyQtGuiLib]: Downloading https://files.pythonhosted.org/packages/15/8e/a0a0522f71cedfdd1656c572ef1c6923f898f595e2c8aac2be5dcbc9856e/PyQtGuiLib-2.6.18.11.tar.gz
+[2023-04-11 08:05:42] INFO root fetch - processPackages [bpnet-lite]: Downloading https://files.pythonhosted.org/packages/fa/8d/3c14c3ec6b94593901e1f4b6cd3b8bb7f08acd5b99157b4cd72991841452/bpnet_lite-0.3.1-py3-none-any.whl
+[2023-04-11 08:05:42] INFO root fetch - processPackages [snapctl]: Downloading https://files.pythonhosted.org/packages/80/e5/59f663e55362aa162a21b11836364a4874c334dac228a8d85e66e274a5bf/snapctl-0.1.2.tar.gz
+[2023-04-11 08:05:42] INFO root fetch - processPackages [bpnet-lite]: executing diffoscope
+[2023-04-11 08:05:42] INFO root fetch - processPackages [bpnet-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bpnet_lite-0.3.0-py3-none-any.whl.zip tmp/bpnet_lite-0.3.1-py3-none-any.whl.zip --markdown 20230411/b/bpnet-lite/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-11 08:05:42] INFO root fetch - processPackages [np-zro]: Downloading https://files.pythonhosted.org/packages/fa/a4/9bdd2ca9f4e35693c7aef5790a4ff2315555ffb7c7a0e17236af63a8efa3/np_zro-0.1.0.post4.tar.gz
+[2023-04-11 08:05:42] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/46/d1/54a16c686463bc958a3182d03844ffc162c8e4f1fc97986bcb9bd4838dda/pyg-nightly-2.4.0.dev20230410.tar.gz
+[2023-04-11 08:05:42] INFO root fetch - processPackages [np-zro]: executing diffoscope
+[2023-04-11 08:05:42] INFO root fetch - processPackages [np-zro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_zro-0.1.0.post2.tar.gz tmp/np_zro-0.1.0.post4.tar.gz --markdown 20230411/n/np-zro/0.1.0.post2-0.1.0.post4/diff.md --exclude *.pyd
+[2023-04-11 08:05:42] INFO root fetch - processPackages [PyQtGuiLib]: Downloading https://files.pythonhosted.org/packages/1a/28/d804baeca7e2c5083cc9477dca9851d11efefaebed6bf48dec2dc0f7e37a/PyQtGuiLib-2.7.18.11.tar.gz
+[2023-04-11 08:05:42] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-04-11 08:05:42] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230409.tar.gz tmp/pyg-nightly-2.4.0.dev20230410.tar.gz --markdown 20230411/p/pyg-nightly/2.4.0.dev20230409-2.4.0.dev20230410/diff.md --exclude *.pyd
+[2023-04-11 08:05:42] INFO root fetch - processPackages [snapctl]: Downloading https://files.pythonhosted.org/packages/e5/54/8c7adfdc0a9867a68a4b4986a3145c1cbf063c6d25374119b0d2eed64d77/snapctl-0.2.0.tar.gz
+[2023-04-11 08:05:42] INFO root fetch - processPackages [PyQtGuiLib]: executing diffoscope
+[2023-04-11 08:05:42] INFO root fetch - processPackages [PyQtGuiLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQtGuiLib-2.6.18.11.tar.gz tmp/PyQtGuiLib-2.7.18.11.tar.gz --markdown 20230411/P/PyQtGuiLib/2.6.18.11-2.7.18.11/diff.md --exclude *.pyd
+[2023-04-11 08:05:43] INFO root fetch - processPackages [snapctl]: executing diffoscope
+[2023-04-11 08:05:43] INFO root fetch - processPackages [snapctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapctl-0.1.2.tar.gz tmp/snapctl-0.2.0.tar.gz --markdown 20230411/s/snapctl/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 08:05:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:05:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:05:43] INFO root fetch - processPackages [rio-vrt]: New version: [0.1.0] Old Version: [0.0.0]
+[2023-04-11 08:05:44] INFO root fetch - processPackages [rio-vrt]: Downloading https://files.pythonhosted.org/packages/c3/b4/91aa61e588d1f54700342544f7938731e6028b4033ba4e1d8e0b288f1393/rio-vrt-0.0.0.tar.gz
+[2023-04-11 08:05:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:05:44] INFO root fetch - processPackages [rio-vrt]: Downloading https://files.pythonhosted.org/packages/49/52/ec6c5190392226f5d193363582b59a08d32640a50e94fbf3145e82155ef9/rio-vrt-0.1.0.tar.gz
+[2023-04-11 08:05:44] INFO root fetch - processPackages [rio-vrt]: executing diffoscope
+[2023-04-11 08:05:44] INFO root fetch - processPackages [rio-vrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio-vrt-0.0.0.tar.gz tmp/rio-vrt-0.1.0.tar.gz --markdown 20230411/r/rio-vrt/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 08:05:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:05:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:05:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:05:49] INFO root fetch - main [MainThread]: Store serial: [17656746]
