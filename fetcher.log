@@ -15351,3 +15351,84 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 15:39:43] INFO root fetch - main [MainThread]: success
 [2023-04-11 15:39:45] INFO root fetch - main [MainThread]: success
 [2023-04-11 15:39:45] INFO root fetch - main [MainThread]: Store serial: [17661480]
+[2023-04-11 15:44:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17661480]
+[2023-04-11 15:44:53] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-11 15:44:53] INFO root fetch - processPackages [gotya-text-anonymizer]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-11 15:44:53] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: New version: [1.8.0a1681218804] Old Version: [1.8.0a1681218753]
+[2023-04-11 15:44:53] INFO root fetch - processPackages [sliceline]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-11 15:44:53] WARNING root fetch - processPackages [eccLib]: Skipping, unable to determine old version
+[2023-04-11 15:44:53] INFO root fetch - main [MainThread]: error
+[2023-04-11 15:44:53] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: New version: [1.8.0a1681218804] Old Version: [1.8.0a1681218753]
+[2023-04-11 15:44:53] INFO root fetch - processPackages [danling]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-11 15:44:53] INFO root fetch - processPackages [gotya-text-anonymizer]: Downloading https://files.pythonhosted.org/packages/85/76/8a8d36b4feeb78bea8572ab8bb31a0925fb5b216f5095f5d88833201c0f2/gotya-text-anonymizer-1.1.0.tar.gz
+[2023-04-11 15:44:53] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: Downloading https://files.pythonhosted.org/packages/fb/c3/cc3acdeb7af740d385d217c9e9b32a5bfd6c89ebe479727ce08d6a2eac81/lbrlabs_pulumi_scaleway-1.8.0a1681218753.tar.gz
+[2023-04-11 15:44:53] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: Downloading https://files.pythonhosted.org/packages/fb/c3/cc3acdeb7af740d385d217c9e9b32a5bfd6c89ebe479727ce08d6a2eac81/lbrlabs_pulumi_scaleway-1.8.0a1681218753.tar.gz
+[2023-04-11 15:44:53] INFO root fetch - processPackages [sliceline]: Downloading https://files.pythonhosted.org/packages/b5/fc/c85f7da81d9f4e56a15f49a4b69ebeb48043d6a18672d63853ac71af7e6b/sliceline-0.2.8.tar.gz
+[2023-04-11 15:44:53] INFO root fetch - processPackages [danling]: Downloading https://files.pythonhosted.org/packages/0b/7f/e479bd4149c092d8a96fe732e9f92216b66be35a7c144906dea7a6a62fc1/danling-0.2.0.tar.gz
+[2023-04-11 15:44:53] INFO root fetch - processPackages [gotya-text-anonymizer]: Downloading https://files.pythonhosted.org/packages/87/8a/6194f6cd47cb1f874561bb9aa74f0ab675cb1eb4801f0e9b734bfa2650e9/gotya-text-anonymizer-1.1.1.tar.gz
+[2023-04-11 15:44:53] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: Downloading https://files.pythonhosted.org/packages/7e/dd/f70ae097cab741a0b6495aea45874a5e117b2401703fd10fe6b5eef99602/lbrlabs_pulumi_scaleway-1.8.0a1681218804.tar.gz
+[2023-04-11 15:44:53] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: Downloading https://files.pythonhosted.org/packages/7e/dd/f70ae097cab741a0b6495aea45874a5e117b2401703fd10fe6b5eef99602/lbrlabs_pulumi_scaleway-1.8.0a1681218804.tar.gz
+[2023-04-11 15:44:53] INFO root fetch - processPackages [gotya-text-anonymizer]: executing diffoscope
+[2023-04-11 15:44:53] INFO root fetch - processPackages [gotya-text-anonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gotya-text-anonymizer-1.1.0.tar.gz tmp/gotya-text-anonymizer-1.1.1.tar.gz --markdown 20230411/g/gotya-text-anonymizer/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-11 15:44:54] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: executing diffoscope
+[2023-04-11 15:44:54] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_scaleway-1.8.0a1681218753.tar.gz tmp/lbrlabs_pulumi_scaleway-1.8.0a1681218804.tar.gz --markdown 20230411/l/lbrlabs-pulumi-scaleway/1.8.0a1681218753-1.8.0a1681218804/diff.md --exclude *.pyd
+[2023-04-11 15:44:54] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: executing diffoscope
+[2023-04-11 15:44:54] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_scaleway-1.8.0a1681218753.tar.gz tmp/lbrlabs_pulumi_scaleway-1.8.0a1681218804.tar.gz --markdown 20230411/l/lbrlabs-pulumi-scaleway/1.8.0a1681218753-1.8.0a1681218804/diff.md --exclude *.pyd
+[2023-04-11 15:44:54] INFO root fetch - processPackages [sliceline]: Downloading https://files.pythonhosted.org/packages/20/2d/5cab06456b425f87a32fea88e221483716312b6890c304d9f6f71ddb3c3f/sliceline-0.2.9.tar.gz
+[2023-04-11 15:44:54] INFO root fetch - processPackages [sliceline]: executing diffoscope
+[2023-04-11 15:44:54] INFO root fetch - processPackages [sliceline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sliceline-0.2.8.tar.gz tmp/sliceline-0.2.9.tar.gz --markdown 20230411/s/sliceline/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-11 15:44:54] INFO root fetch - processPackages [danling]: executing diffoscope
+[2023-04-11 15:44:54] INFO root fetch - processPackages [danling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danling-0.1.9.tar.gz tmp/danling-0.2.0.tar.gz --markdown 20230411/d/danling/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 15:44:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:44:55] INFO root fetch - processPackages [coscine]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-11 15:44:55] INFO root fetch - processPackages [coscine]: Downloading https://files.pythonhosted.org/packages/03/e2/0ed1825defa4650cf99ee2f78e07a1b2f8fbf559d91dc2c600c9167a33e2/coscine-0.9.2.tar.gz
+[2023-04-11 15:44:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:44:55] INFO root fetch - processPackages [twilog-web-archiver]: New version: [1.0.0] Old Version: [0.1.2]
+[2023-04-11 15:44:55] INFO root fetch - processPackages [coscine]: executing diffoscope
+[2023-04-11 15:44:55] INFO root fetch - processPackages [coscine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coscine-0.9.1.tar.gz tmp/coscine-0.9.2.tar.gz --markdown 20230411/c/coscine/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-11 15:44:55] INFO root fetch - processPackages [twilog-web-archiver]: Downloading https://files.pythonhosted.org/packages/a2/e1/d76b1cd5868d4085e0d85d079159fe20950c39c9e190dda03e823678cbf9/twilog-web-archiver-0.1.2.tar.gz
+[2023-04-11 15:44:56] INFO root fetch - processPackages [twilog-web-archiver]: Downloading https://files.pythonhosted.org/packages/4a/2e/3beb0b2de270b4b45154d73253f859d95f80048aeda343246ee6c062b249/twilog-web-archiver-1.0.0.tar.gz
+[2023-04-11 15:44:56] INFO root fetch - processPackages [twilog-web-archiver]: executing diffoscope
+[2023-04-11 15:44:56] INFO root fetch - processPackages [twilog-web-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twilog-web-archiver-0.1.2.tar.gz tmp/twilog-web-archiver-1.0.0.tar.gz --markdown 20230411/t/twilog-web-archiver/0.1.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-11 15:44:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:44:56] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: New version: [1.8.0a1681218804] Old Version: [1.8.0a1681218753]
+[2023-04-11 15:44:56] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: executing diffoscope
+[2023-04-11 15:44:56] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_scaleway-1.8.0a1681218753.tar.gz tmp/lbrlabs_pulumi_scaleway-1.8.0a1681218804.tar.gz --markdown 20230411/l/lbrlabs-pulumi-scaleway/1.8.0a1681218753-1.8.0a1681218804/diff.md --exclude *.pyd
+[2023-04-11 15:44:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:44:57] INFO root fetch - processPackages [bemserver-core]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-11 15:44:57] INFO root fetch - processPackages [bemserver-core]: Downloading https://files.pythonhosted.org/packages/b1/66/c49551bc5f9270b1b2cac0cd22528e42994131401b0de6395bed23e31a22/bemserver-core-0.9.0.tar.gz
+[2023-04-11 15:44:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:44:57] INFO root fetch - processPackages [indykite-sdk-python]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-11 15:44:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:44:57] INFO root fetch - processPackages [perspective-python]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-11 15:44:58] INFO root fetch - processPackages [bemserver-core]: Downloading https://files.pythonhosted.org/packages/11/12/23087979f0bc92dc55a84583d2e12a7deb66597ba67cf684e53dd196c8f2/bemserver-core-0.9.1.tar.gz
+[2023-04-11 15:44:58] INFO root fetch - processPackages [indykite-sdk-python]: Downloading https://files.pythonhosted.org/packages/50/f3/0a2a0a7f8486f219a6a319ede3c2de5288cb2e115cd7139571b4cd724d82/indykite-sdk-python-1.8.0.tar.gz
+[2023-04-11 15:44:58] INFO root fetch - processPackages [perspective-python]: Downloading https://files.pythonhosted.org/packages/a9/80/78c2e26dbd00f07d606b6bf32e43279b35ac6010a70c411e3569290c92fe/perspective-python-2.0.0.tar.gz
+[2023-04-11 15:44:58] INFO root fetch - processPackages [bemserver-core]: executing diffoscope
+[2023-04-11 15:44:58] INFO root fetch - processPackages [bemserver-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bemserver-core-0.9.0.tar.gz tmp/bemserver-core-0.9.1.tar.gz --markdown 20230411/b/bemserver-core/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-11 15:44:58] INFO root fetch - processPackages [indykite-sdk-python]: Downloading https://files.pythonhosted.org/packages/1d/24/d3c0f1913c780f3c300d6d0606ce03543a97b03f19a6fc0be3c53e1b8774/indykite-sdk-python-1.9.0.tar.gz
+[2023-04-11 15:44:58] INFO root fetch - processPackages [indykite-sdk-python]: executing diffoscope
+[2023-04-11 15:44:58] INFO root fetch - processPackages [indykite-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indykite-sdk-python-1.8.0.tar.gz tmp/indykite-sdk-python-1.9.0.tar.gz --markdown 20230411/i/indykite-sdk-python/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 15:44:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:44:58] INFO root fetch - processPackages [EnergyCapSdk]: New version: [8.2302.4493] Old Version: [8.2302.4492]
+[2023-04-11 15:44:59] INFO root fetch - processPackages [EnergyCapSdk]: Downloading https://files.pythonhosted.org/packages/21/0c/acc12b16943af0cb11530ab0be6c7317582858dc8c801a06f57efa874f8e/EnergyCapSdk-8.2302.4493.tar.gz
+[2023-04-11 15:44:59] INFO root fetch - processPackages [EnergyCapSdk]: executing diffoscope
+[2023-04-11 15:44:59] INFO root fetch - processPackages [EnergyCapSdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EnergyCapSdk-8.2302.4492.tar.gz tmp/EnergyCapSdk-8.2302.4493.tar.gz --markdown 20230411/E/EnergyCapSdk/8.2302.4492-8.2302.4493/diff.md --exclude *.pyd
+[2023-04-11 15:44:59] INFO root fetch - processPackages [perspective-python]: Downloading https://files.pythonhosted.org/packages/fb/2b/1f2cb61fe6d8b70ddb581f6b10c0bb81e3a29af2c2551a7ec5e13cd15c1e/perspective_python-2.0.1-cp39-cp39-macosx_11_0_x86_64.whl
+[2023-04-11 15:44:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:44:59] INFO root fetch - processPackages [benchmark-4dn]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-11 15:44:59] WARNING root fetch - processPackages [perspective-python]: Skipping package: exceeds size limit 23438644>=10485760
+[2023-04-11 15:44:59] INFO root fetch - main [MainThread]: error
+[2023-04-11 15:45:00] INFO root fetch - processPackages [pytorch-optimizer]: New version: [2.5.2] Old Version: [2.5.1]
+[2023-04-11 15:45:00] INFO root fetch - processPackages [pytorch-optimizer]: Downloading https://files.pythonhosted.org/packages/cc/1e/0a68bcaffb9b30fd495a2ccffa44a0661b10be388ab902d543c0f0139ac5/pytorch_optimizer-2.5.1.tar.gz
+[2023-04-11 15:45:00] INFO root fetch - processPackages [benchmark-4dn]: executing diffoscope
+[2023-04-11 15:45:00] INFO root fetch - processPackages [benchmark-4dn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Benchmark-4dn-0.5.8.tar.gz tmp/Benchmark-4dn-0.5.9.tar.gz --markdown 20230411/b/benchmark-4dn/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-11 15:45:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:45:00] INFO root fetch - processPackages [pytorch-optimizer]: Downloading https://files.pythonhosted.org/packages/44/1d/bb8111c18e5cc51bf9401a53d1703d8f742e1931f092a44222881998a2be/pytorch_optimizer-2.5.2.tar.gz
+[2023-04-11 15:45:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:45:00] INFO root fetch - processPackages [pytorch-optimizer]: executing diffoscope
+[2023-04-11 15:45:00] INFO root fetch - processPackages [pytorch-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch_optimizer-2.5.1.tar.gz tmp/pytorch_optimizer-2.5.2.tar.gz --markdown 20230411/p/pytorch-optimizer/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2023-04-11 15:45:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:45:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:45:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:45:32] INFO root fetch - main [MainThread]: Store serial: [17661538]
