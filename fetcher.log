@@ -12941,3 +12941,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 13:02:57] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:02:57] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:02:57] INFO root fetch - main [MainThread]: Store serial: [17659662]
+[2023-04-11 13:08:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659662]
+[2023-04-11 13:08:05] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-04-11 13:08:05] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 13:08:05] WARNING root fetch - processPackages [chaepy]: Skipping, unable to determine old version
+[2023-04-11 13:08:05] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-04-11 13:08:05] INFO root fetch - processPackages [renku]: New version: [2.4.0rc1] Old Version: [2.3.2]
+[2023-04-11 13:08:05] INFO root fetch - processPackages [pygameHat]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-11 13:08:05] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: executing diffoscope
+[2023-04-11 13:08:05] INFO root fetch - processPackages [pepperize.projen-awscdk-app-ts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.projen-awscdk-app-ts-0.0.98.tar.gz tmp/pepperize.projen-awscdk-app-ts-0.0.99.tar.gz --markdown 20230411/p/pepperize.projen-awscdk-app-ts/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: Downloading https://files.pythonhosted.org/packages/36/73/f15f12673f77ae02f7437777be1eea4a42ae48e52928d48b969552be1e18/EasyPylan-0.0.3.tar.gz
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: Downloading https://files.pythonhosted.org/packages/36/73/f15f12673f77ae02f7437777be1eea4a42ae48e52928d48b969552be1e18/EasyPylan-0.0.3.tar.gz
+[2023-04-11 13:08:05] INFO root fetch - processPackages [pygameHat]: Downloading https://files.pythonhosted.org/packages/79/92/485360ba3ce65569fd3b8b1612732d9c9b0e860976d76e3fb882d99fc296/pygameHat-1.0.6.tar.gz
+[2023-04-11 13:08:05] INFO root fetch - processPackages [renku]: Downloading https://files.pythonhosted.org/packages/41/84/b451e061b7cd93d17656d91b87adbd28af05ca4485eac8ff914e0b9423f6/renku-2.3.2.tar.gz
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: Downloading https://files.pythonhosted.org/packages/f1/42/608c48360cf242e993039e2a1eb7ba561b1ddcf9b12399190268483dc60b/EasyPylan-0.1.0.tar.gz
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: Downloading https://files.pythonhosted.org/packages/f1/42/608c48360cf242e993039e2a1eb7ba561b1ddcf9b12399190268483dc60b/EasyPylan-0.1.0.tar.gz
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: executing diffoscope
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EasyPylan-0.0.3.tar.gz tmp/EasyPylan-0.1.0.tar.gz --markdown 20230411/E/EasyPylan/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 13:08:05] INFO root fetch - processPackages [pygameHat]: Downloading https://files.pythonhosted.org/packages/6e/41/d82e93c11a4fe98d08b737397e37e3c0ea2a1698eccf3ed6559a06d91726/pygameHat-1.0.7.tar.gz
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: executing diffoscope
+[2023-04-11 13:08:05] INFO root fetch - processPackages [EasyPylan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EasyPylan-0.0.3.tar.gz tmp/EasyPylan-0.1.0.tar.gz --markdown 20230411/E/EasyPylan/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 13:08:05] INFO root fetch - processPackages [renku]: Downloading https://files.pythonhosted.org/packages/a4/c8/29a501984366f8651cd0cec8cf9db960c2fc677c0ca506142119b1322ffd/renku-2.4.0rc1.tar.gz
+[2023-04-11 13:08:05] INFO root fetch - processPackages [pygameHat]: executing diffoscope
+[2023-04-11 13:08:05] INFO root fetch - processPackages [pygameHat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygameHat-1.0.6.tar.gz tmp/pygameHat-1.0.7.tar.gz --markdown 20230411/p/pygameHat/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-11 13:08:05] INFO root fetch - processPackages [renku]: executing diffoscope
+[2023-04-11 13:08:05] INFO root fetch - processPackages [renku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renku-2.3.2.tar.gz tmp/renku-2.4.0rc1.tar.gz --markdown 20230411/r/renku/2.3.2-2.4.0rc1/diff.md --exclude *.pyd
+[2023-04-11 13:08:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:08:06] WARNING root fetch - processPackages [dnngior]: Skipping, unable to determine old version
+[2023-04-11 13:08:06] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:08:06] WARNING root fetch - processPackages [gotya-text-anonymizer]: Skipping, unable to determine old version
+[2023-04-11 13:08:06] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:08:06] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 13:08:06] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: executing diffoscope
+[2023-04-11 13:08:06] INFO root fetch - processPackages [pepperize.cdk-private-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-private-bucket-0.0.98.tar.gz tmp/pepperize.cdk-private-bucket-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-private-bucket/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 13:08:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:08:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:08:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:08:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:08:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:08:29] INFO root fetch - main [MainThread]: Store serial: [17659693]
