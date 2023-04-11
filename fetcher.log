@@ -18120,3 +18120,75 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 18:28:06] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:28:11] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:28:11] INFO root fetch - main [MainThread]: Store serial: [17663441]
+[2023-04-11 18:33:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663441]
+[2023-04-11 18:33:18] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 18:33:18] INFO root fetch - processPackages [dapp-runner]: New version: [0.1.1] Old Version: [0.1.0a1]
+[2023-04-11 18:33:18] INFO root fetch - processPackages [google-maps-addressvalidation]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-11 18:33:18] INFO root fetch - processPackages [google-cloud-workstations]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-11 18:33:18] INFO root fetch - processPackages [smooth-trajectory]: New version: [0.1.0] Old Version: [0.0.6]
+[2023-04-11 18:33:18] INFO root fetch - processPackages [vxquant]: New version: [2023.4.1] Old Version: [2023.3.1]
+[2023-04-11 18:33:19] INFO root fetch - processPackages [dapp-runner]: Downloading https://files.pythonhosted.org/packages/62/b5/02ec59f15ad61197bdc932a1d09f760da605badd0c0017de27425951a851/dapp-runner-0.1.0a1.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [google-maps-addressvalidation]: Downloading https://files.pythonhosted.org/packages/ce/41/b84d691b955271402bfd0d2aceefb58785c7fe7f4fd839d5c1adbceadefd/google-maps-addressvalidation-0.3.1.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [vxquant]: Downloading https://files.pythonhosted.org/packages/ef/23/5fd5fe25972091848f10a7a86da42b59fe1f3dae4cc1f9834866cf8bcf22/vxquant-2023.3.1.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [google-cloud-workstations]: Downloading https://files.pythonhosted.org/packages/c6/cd/ecc0fbdeb30e7437d5500f6534e1f7e50a06641a88ce670e30463c5d822a/google-cloud-workstations-0.2.0.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [smooth-trajectory]: Downloading https://files.pythonhosted.org/packages/a2/70/42382d33b7e9cc227313ac7c902c52f784799927e798c3c2ee9be91edf6e/smooth_trajectory-0.0.6.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [dapp-runner]: Downloading https://files.pythonhosted.org/packages/cd/3c/6944fe06ea28960130765d9ce7df577b482b1f0f3f91f0eca62ac08bf6a6/dapp-runner-0.1.1.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [google-maps-addressvalidation]: Downloading https://files.pythonhosted.org/packages/e9/fa/319ceed3b4324db4a464362745447eb0e04a5cda1a92ee4eeed07b1d9237/google-maps-addressvalidation-0.3.2.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [google-cloud-workstations]: Downloading https://files.pythonhosted.org/packages/19/c4/7d90cc0f3c45db2a1a2dcb85352309ad3872f698ba9dac6f84e7305c0f99/google-cloud-workstations-0.2.1.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [smooth-trajectory]: Downloading https://files.pythonhosted.org/packages/2c/60/85b521c5c86393602668a8c7be26aad929c091347c2d528a7dfba20c0919/smooth_trajectory-0.1.0.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [vxquant]: Downloading https://files.pythonhosted.org/packages/5d/ee/63adc252212506604dcbe517597a61fe4bf4ba1434dbad77d3f7bb629365/vxquant-2023.4.1.tar.gz
+[2023-04-11 18:33:19] INFO root fetch - processPackages [google-maps-addressvalidation]: executing diffoscope
+[2023-04-11 18:33:19] INFO root fetch - processPackages [dapp-runner]: executing diffoscope
+[2023-04-11 18:33:19] INFO root fetch - processPackages [google-maps-addressvalidation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-maps-addressvalidation-0.3.1.tar.gz tmp/google-maps-addressvalidation-0.3.2.tar.gz --markdown 20230411/g/google-maps-addressvalidation/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 18:33:19] INFO root fetch - processPackages [dapp-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dapp-runner-0.1.0a1.tar.gz tmp/dapp-runner-0.1.1.tar.gz --markdown 20230411/d/dapp-runner/0.1.0a1-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 18:33:19] INFO root fetch - processPackages [google-cloud-workstations]: executing diffoscope
+[2023-04-11 18:33:19] INFO root fetch - processPackages [google-cloud-workstations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-workstations-0.2.0.tar.gz tmp/google-cloud-workstations-0.2.1.tar.gz --markdown 20230411/g/google-cloud-workstations/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-11 18:33:19] INFO root fetch - processPackages [smooth-trajectory]: executing diffoscope
+[2023-04-11 18:33:19] INFO root fetch - processPackages [smooth-trajectory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smooth_trajectory-0.0.6.tar.gz tmp/smooth_trajectory-0.1.0.tar.gz --markdown 20230411/s/smooth-trajectory/0.0.6-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 18:33:19] INFO root fetch - processPackages [vxquant]: executing diffoscope
+[2023-04-11 18:33:19] INFO root fetch - processPackages [vxquant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vxquant-2023.3.1.tar.gz tmp/vxquant-2023.4.1.tar.gz --markdown 20230411/v/vxquant/2023.3.1-2023.4.1/diff.md --exclude *.pyd
+[2023-04-11 18:33:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:20] WARNING root fetch - processPackages [book-name-generator]: Skipping, unable to determine old version
+[2023-04-11 18:33:20] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:33:20] INFO root fetch - processPackages [bbot]: New version: [1.0.5.1614] Old Version: [1.0.5.1612rc0]
+[2023-04-11 18:33:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:21] INFO root fetch - processPackages [lacuscore]: New version: [1.4.6] Old Version: [1.4.5]
+[2023-04-11 18:33:21] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/3b/4e/aeb89aef043a6d2719172b6ec5adc96202688b3d22415d7288bcccb8da65/bbot-1.0.5.1614.tar.gz
+[2023-04-11 18:33:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:21] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc264] Old Version: [3.0.2rc263]
+[2023-04-11 18:33:21] INFO root fetch - processPackages [lacuscore]: Downloading https://files.pythonhosted.org/packages/39/c6/460bd7e3f5e9d0a5a51436fe94492490144810b8b9c35ff8b0fd745412f1/lacuscore-1.4.6.tar.gz
+[2023-04-11 18:33:21] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/5d/d6/550c7d9ea9c49e2b2165649d5513954e30bea48d1684fad57326dbd93a42/car-connector-framework-3.0.2rc263.tar.gz
+[2023-04-11 18:33:21] INFO root fetch - processPackages [lacuscore]: executing diffoscope
+[2023-04-11 18:33:21] INFO root fetch - processPackages [lacuscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lacuscore-1.4.5.tar.gz tmp/lacuscore-1.4.6.tar.gz --markdown 20230411/l/lacuscore/1.4.5-1.4.6/diff.md --exclude *.pyd
+[2023-04-11 18:33:21] INFO root fetch - processPackages [bbot]: executing diffoscope
+[2023-04-11 18:33:21] INFO root fetch - processPackages [bbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbot-1.0.5.1612rc0.tar.gz tmp/bbot-1.0.5.1614.tar.gz --markdown 20230411/b/bbot/1.0.5.1612rc0-1.0.5.1614/diff.md --exclude *.pyd
+[2023-04-11 18:33:21] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/9c/97/7e348132fd4a02a45002f5a9eae56ef819b5017320c3d7d7b22593356eab/car-connector-framework-3.0.2rc264.tar.gz
+[2023-04-11 18:33:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:21] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-11 18:33:21] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-11 18:33:21] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc263.tar.gz tmp/car-connector-framework-3.0.2rc264.tar.gz --markdown 20230411/c/car-connector-framework/3.0.2rc263-3.0.2rc264/diff.md --exclude *.pyd
+[2023-04-11 18:33:21] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/3f/8f/98bc5643e5ec70bf4dea4947a47906aace485ec524425d981d66bab1a37c/nonebot_plugin_bilichat-1.2.2.tar.gz
+[2023-04-11 18:33:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:22] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc264] Old Version: [3.0.2rc263]
+[2023-04-11 18:33:22] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2023-04-11 18:33:22] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-1.2.1.tar.gz tmp/nonebot_plugin_bilichat-1.2.2.tar.gz --markdown 20230411/n/nonebot-plugin-bilichat/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-11 18:33:22] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-11 18:33:22] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc263.tar.gz tmp/car-connector-framework-3.0.2rc264.tar.gz --markdown 20230411/c/car-connector-framework/3.0.2rc263-3.0.2rc264/diff.md --exclude *.pyd
+[2023-04-11 18:33:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:22] INFO root fetch - processPackages [ssb-sgis]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-11 18:33:22] INFO root fetch - processPackages [ssb-sgis]: Downloading https://files.pythonhosted.org/packages/8e/83/9e2344c7b1127b9b8c8474a1e40509079f878d43c372c4339374dd662872/ssb_sgis-0.1.3.tar.gz
+[2023-04-11 18:33:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:22] INFO root fetch - processPackages [DKUtils]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-11 18:33:23] INFO root fetch - processPackages [DKUtils]: Downloading https://files.pythonhosted.org/packages/63/4c/b0cbf3191cab5fddb12ab88051535c8be35784af55224c3144950cae24cc/DKUtils-2.9.5.tar.gz
+[2023-04-11 18:33:23] INFO root fetch - processPackages [ssb-sgis]: Downloading https://files.pythonhosted.org/packages/46/53/eb25df4df8c64eb4b87e4e54361be0e63af9362609905a7dca34bec854d0/ssb_sgis-0.1.4.tar.gz
+[2023-04-11 18:33:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:23] INFO root fetch - processPackages [ssb-sgis]: executing diffoscope
+[2023-04-11 18:33:23] INFO root fetch - processPackages [ssb-sgis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_sgis-0.1.3.tar.gz tmp/ssb_sgis-0.1.4.tar.gz --markdown 20230411/s/ssb-sgis/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-11 18:33:23] INFO root fetch - processPackages [DKUtils]: Downloading https://files.pythonhosted.org/packages/78/0e/2d9847e06f772dff53050d9ca9f796fb0dc164ef3d70354f80c0ba6f8aff/DKUtils-2.9.6.tar.gz
+[2023-04-11 18:33:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:23] INFO root fetch - processPackages [DKUtils]: executing diffoscope
+[2023-04-11 18:33:23] INFO root fetch - processPackages [DKUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DKUtils-2.9.5.tar.gz tmp/DKUtils-2.9.6.tar.gz --markdown 20230411/D/DKUtils/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-11 18:33:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:33:24] INFO root fetch - main [MainThread]: Store serial: [17663481]
