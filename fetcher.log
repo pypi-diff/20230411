@@ -13437,3 +13437,35 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 13:45:13] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:45:17] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:45:17] INFO root fetch - main [MainThread]: Store serial: [17659991]
+[2023-04-11 13:50:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659991]
+[2023-04-11 13:50:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-11 13:50:24] INFO root fetch - processPackages [auto-pypi-uploader]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-11 13:50:24] WARNING root fetch - processPackages [contact-energy-nz]: Skipping, unable to determine old version
+[2023-04-11 13:50:24] WARNING root fetch - processPackages [map-pde]: Skipping, unable to determine old version
+[2023-04-11 13:50:24] WARNING root fetch - processPackages [pytypest]: Skipping, unable to determine old version
+[2023-04-11 13:50:24] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:50:24] INFO root fetch - processPackages [biobb-chemistry]: New version: [4.0.0] Old Version: [3.9.0]
+[2023-04-11 13:50:24] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:50:24] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:50:24] INFO root fetch - processPackages [dash-carbon-components]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-11 13:50:24] INFO root fetch - processPackages [ddd-struct]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-11 13:50:25] INFO root fetch - processPackages [auto-pypi-uploader]: Downloading https://files.pythonhosted.org/packages/34/29/7af4026bb6f965aeb43d18fb6c490392de09404a62fc5c67d6c1bf84b2b1/auto_pypi_uploader-1.0.0.tar.gz
+[2023-04-11 13:50:25] INFO root fetch - processPackages [dash-carbon-components]: Downloading https://files.pythonhosted.org/packages/a0/9d/8c720a084604e1334da9000c4c0a43e714cadeff46b3f5607a154e86e5aa/dash_carbon_components-0.4.1.tar.gz
+[2023-04-11 13:50:25] INFO root fetch - processPackages [ddd-struct]: Downloading https://files.pythonhosted.org/packages/b2/3a/86490777e4a5c27035020a0f6f4c2f1489b74a5d2c2f588245bf38677e7f/ddd-struct-0.2.4.tar.gz
+[2023-04-11 13:50:25] INFO root fetch - processPackages [biobb-chemistry]: Downloading https://files.pythonhosted.org/packages/c7/42/4b842f9178688adb384cd631b3fe43856b18ee565e66f1af64d85c93e9eb/biobb_chemistry-3.9.0.tar.gz
+[2023-04-11 13:50:25] INFO root fetch - processPackages [ddd-struct]: executing diffoscope
+[2023-04-11 13:50:25] INFO root fetch - processPackages [ddd-struct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddd-struct-0.2.3.tar.gz tmp/ddd-struct-0.2.4.tar.gz --markdown 20230411/d/ddd-struct/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-11 13:50:25] INFO root fetch - processPackages [auto-pypi-uploader]: Downloading https://files.pythonhosted.org/packages/f9/7c/1c5680740a83b30fd377bf9d703606c60225908c1ce00b5d06d203207546/auto_pypi_uploader-1.1.0.tar.gz
+[2023-04-11 13:50:25] INFO root fetch - processPackages [biobb-chemistry]: Downloading https://files.pythonhosted.org/packages/20/98/e7b509e553beab965b2d85b5a49476951ec8fe6cd56f7b581c149db871ac/biobb_chemistry-4.0.0.tar.gz
+[2023-04-11 13:50:25] INFO root fetch - processPackages [dash-carbon-components]: Downloading https://files.pythonhosted.org/packages/43/07/76e67c9c215a891abbc1784a7de47d9d3631e1b6f40a30aa77bc7df28864/dash_carbon_components-0.4.2.tar.gz
+[2023-04-11 13:50:25] INFO root fetch - processPackages [biobb-chemistry]: executing diffoscope
+[2023-04-11 13:50:25] INFO root fetch - processPackages [biobb-chemistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobb_chemistry-3.9.0.tar.gz tmp/biobb_chemistry-4.0.0.tar.gz --markdown 20230411/b/biobb-chemistry/3.9.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-11 13:50:25] INFO root fetch - processPackages [auto-pypi-uploader]: executing diffoscope
+[2023-04-11 13:50:25] INFO root fetch - processPackages [auto-pypi-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_pypi_uploader-1.0.0.tar.gz tmp/auto_pypi_uploader-1.1.0.tar.gz --markdown 20230411/a/auto-pypi-uploader/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 13:50:25] INFO root fetch - processPackages [dash-carbon-components]: executing diffoscope
+[2023-04-11 13:50:25] INFO root fetch - processPackages [dash-carbon-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_carbon_components-0.4.1.tar.gz tmp/dash_carbon_components-0.4.2.tar.gz --markdown 20230411/d/dash-carbon-components/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-11 13:50:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:50:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:50:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:50:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:50:43] INFO root fetch - main [MainThread]: Store serial: [17660019]
