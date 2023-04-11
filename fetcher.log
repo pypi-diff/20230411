@@ -9000,3 +9000,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 09:00:48] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:00:50] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:00:50] INFO root fetch - main [MainThread]: Store serial: [17657227]
+[2023-04-11 09:05:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17657227]
+[2023-04-11 09:05:58] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 09:05:58] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1606] Old Version: [0.20230411.1458]
+[2023-04-11 09:05:58] INFO root fetch - processPackages [pylipd]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-11 09:05:58] INFO root fetch - processPackages [odoo13-addon-kpi]: New version: [13.0.1.0.2.dev2] Old Version: [13.0.1.0.2.dev1]
+[2023-04-11 09:05:58] INFO root fetch - processPackages [odoo12-addon-kpi]: New version: [12.0.1.0.1.99.dev2] Old Version: [12.0.1.0.1.99.dev1]
+[2023-04-11 09:05:58] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-04-11 09:05:59] INFO root fetch - processPackages [pylipd]: Downloading https://files.pythonhosted.org/packages/50/0c/8e0a3e1049e907038c8bc43e03ca06865da8b9f8d839d6fb5c31d8f8bc75/pylipd-1.2.3.tar.gz
+[2023-04-11 09:05:59] INFO root fetch - processPackages [odoo12-addon-kpi]: Downloading https://files.pythonhosted.org/packages/52/3e/357bc4f64e1a83278df9cbe64211bf86a74b069b3a8e9327b3f3a31336ad/odoo12_addon_kpi-12.0.1.0.1.99.dev1-py3-none-any.whl
+[2023-04-11 09:05:59] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-04-11 09:05:59] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230411/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-04-11 09:05:59] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/b3/05/4b040da9fbaf0c4c5ca11ded6dd855235f0785b673d56db34b9b6e0e6e29/krutils-0.20230411.1606.tar.gz
+[2023-04-11 09:05:59] INFO root fetch - processPackages [pylipd]: executing diffoscope
+[2023-04-11 09:05:59] INFO root fetch - processPackages [pylipd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylipd-1.2.2.tar.gz tmp/pylipd-1.2.3.tar.gz --markdown 20230411/p/pylipd/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-11 09:05:59] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 09:05:59] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1458.tar.gz tmp/krutils-0.20230411.1606.tar.gz --markdown 20230411/k/krutils/0.20230411.1458-0.20230411.1606/diff.md --exclude *.pyd
+[2023-04-11 09:05:59] INFO root fetch - processPackages [odoo13-addon-kpi]: Downloading https://files.pythonhosted.org/packages/e9/19/b99f13ee373c2218cc376ed5134de31460c27f5bf9b2fc02f859a3f74fc3/odoo13_addon_kpi-13.0.1.0.2.dev1-py3-none-any.whl
+[2023-04-11 09:05:59] INFO root fetch - processPackages [odoo12-addon-kpi]: Downloading https://files.pythonhosted.org/packages/57/bc/32c8c79cd3cb98e0832395bc036e05b7e985ebf66e36b865e1ab107c9ed3/odoo12_addon_kpi-12.0.1.0.1.99.dev2-py3-none-any.whl
+[2023-04-11 09:05:59] INFO root fetch - processPackages [odoo13-addon-kpi]: Downloading https://files.pythonhosted.org/packages/19/1d/638ec78f586e301218b8124d6ad95f9005a29e3693d2c31a4f2fb64906ce/odoo13_addon_kpi-13.0.1.0.2.dev2-py3-none-any.whl
+[2023-04-11 09:05:59] INFO root fetch - processPackages [odoo12-addon-kpi]: executing diffoscope
+[2023-04-11 09:05:59] INFO root fetch - processPackages [odoo12-addon-kpi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_kpi-12.0.1.0.1.99.dev1-py3-none-any.whl.zip tmp/odoo12_addon_kpi-12.0.1.0.1.99.dev2-py3-none-any.whl.zip --markdown 20230411/o/odoo12-addon-kpi/12.0.1.0.1.99.dev1-12.0.1.0.1.99.dev2/diff.md --exclude *.pyd
+[2023-04-11 09:05:59] INFO root fetch - processPackages [odoo13-addon-kpi]: executing diffoscope
+[2023-04-11 09:05:59] INFO root fetch - processPackages [odoo13-addon-kpi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_kpi-13.0.1.0.2.dev1-py3-none-any.whl.zip tmp/odoo13_addon_kpi-13.0.1.0.2.dev2-py3-none-any.whl.zip --markdown 20230411/o/odoo13-addon-kpi/13.0.1.0.2.dev1-13.0.1.0.2.dev2/diff.md --exclude *.pyd
+[2023-04-11 09:06:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:00] INFO root fetch - processPackages [tks-simple-pika]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-11 09:06:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:00] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-11 09:06:00] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-04-11 09:06:00] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230411/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-11 09:06:00] INFO root fetch - processPackages [tks-simple-pika]: Downloading https://files.pythonhosted.org/packages/58/40/b5d1c7474d60d8836b915b550c9c3d66fbc399472dd3f840e15177dd5e44/tks_simple_pika-1.1.7-py2.py3-none-any.whl
+[2023-04-11 09:06:01] INFO root fetch - processPackages [tks-simple-pika]: Downloading https://files.pythonhosted.org/packages/10/be/1408be4d06033bd8fda18d5b5216e90e64c4c7fb2e8e350811f30ad91ade/tks_simple_pika-1.1.8-py2.py3-none-any.whl
+[2023-04-11 09:06:01] INFO root fetch - processPackages [tks-simple-pika]: executing diffoscope
+[2023-04-11 09:06:01] INFO root fetch - processPackages [tks-simple-pika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tks_simple_pika-1.1.7-py2.py3-none-any.whl.zip tmp/tks_simple_pika-1.1.8-py2.py3-none-any.whl.zip --markdown 20230411/t/tks-simple-pika/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-11 09:06:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:01] INFO root fetch - processPackages [doubleagent]: New version: [1.64] Old Version: [1.63]
+[2023-04-11 09:06:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:01] INFO root fetch - processPackages [common-test]: New version: [9.9.0] Old Version: [9.8.0]
+[2023-04-11 09:06:01] INFO root fetch - processPackages [doubleagent]: Downloading https://files.pythonhosted.org/packages/26/75/b14399cbade1995b8c0b8030027ce704f4715cae26b36a3913b44c9c0c9f/doubleagent-1.64.tar.gz
+[2023-04-11 09:06:01] INFO root fetch - processPackages [doubleagent]: executing diffoscope
+[2023-04-11 09:06:01] INFO root fetch - processPackages [doubleagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doubleagent-1.63.tar.gz tmp/doubleagent-1.64.tar.gz --markdown 20230411/d/doubleagent/1.63-1.64/diff.md --exclude *.pyd
+[2023-04-11 09:06:01] INFO root fetch - processPackages [common-test]: Downloading https://files.pythonhosted.org/packages/0d/86/8f14c854e9056eb4efd50d2c1c72d24a40ba7c21b99d923def5dcd06549b/common-test-9.8.0.tar.gz
+[2023-04-11 09:06:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:01] INFO root fetch - processPackages [common-test]: Downloading https://files.pythonhosted.org/packages/b2/3d/dea7a4f00b536785cfd8844a3e95e5f329036bceaa0e361a35256e46eb3c/common-test-9.9.0.tar.gz
+[2023-04-11 09:06:01] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1608] Old Version: [0.20230411.1606]
+[2023-04-11 09:06:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:02] WARNING root fetch - processPackages [refractiveindex]: Skipping, unable to determine old version
+[2023-04-11 09:06:02] INFO root fetch - main [MainThread]: error
+[2023-04-11 09:06:02] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/41/fe/123bf34675869fee9cba6d15318f924a0ab0d014e40b45cc5f7f220c2e2e/krutils-0.20230411.1608.tar.gz
+[2023-04-11 09:06:02] INFO root fetch - processPackages [common-test]: executing diffoscope
+[2023-04-11 09:06:02] INFO root fetch - processPackages [common-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/common-test-9.8.0.tar.gz tmp/common-test-9.9.0.tar.gz --markdown 20230411/c/common-test/9.8.0-9.9.0/diff.md --exclude *.pyd
+[2023-04-11 09:06:02] WARNING root fetch - processPackages [netunicorn-connector-docker]: Skipping, unable to determine old version
+[2023-04-11 09:06:02] INFO root fetch - main [MainThread]: error
+[2023-04-11 09:06:02] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 09:06:02] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1606.tar.gz tmp/krutils-0.20230411.1608.tar.gz --markdown 20230411/k/krutils/0.20230411.1606-0.20230411.1608/diff.md --exclude *.pyd
+[2023-04-11 09:06:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:06:14] INFO root fetch - main [MainThread]: Store serial: [17657253]
