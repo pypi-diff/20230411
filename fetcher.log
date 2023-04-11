@@ -20832,3 +20832,55 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 21:06:35] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:06:36] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:06:36] INFO root fetch - main [MainThread]: Store serial: [17665170]
+[2023-04-11 21:11:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17665170]
+[2023-04-11 21:11:43] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 21:11:43] INFO root fetch - processPackages [firecli]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-11 21:11:43] INFO root fetch - processPackages [qbittorrent-api]: New version: [6.0.0] Old Version: [2023.4.45]
+[2023-04-11 21:11:43] INFO root fetch - processPackages [landsatxplore]: New version: [0.9] Old Version: [0.8]
+[2023-04-11 21:11:43] INFO root fetch - processPackages [ovos-utils]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-11 21:11:43] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 21:11:43] INFO root fetch - processPackages [ovos-utils]: executing diffoscope
+[2023-04-11 21:11:43] INFO root fetch - processPackages [ovos-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_utils-0.0.9.tar.gz tmp/ovos_utils-0.0.9a1.tar.gz --markdown 20230411/o/ovos-utils/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-11 21:11:43] INFO root fetch - processPackages [landsatxplore]: executing diffoscope
+[2023-04-11 21:11:43] INFO root fetch - processPackages [landsatxplore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landsatxplore-0.8.tar.gz tmp/landsatxplore-0.9.tar.gz --markdown 20230411/l/landsatxplore/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-11 21:11:43] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-11 21:11:43] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.8.tar.gz tmp/kfsdutils-0.0.9.tar.gz --markdown 20230411/k/kfsdutils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 21:11:43] INFO root fetch - processPackages [firecli]: Downloading https://files.pythonhosted.org/packages/e6/f4/4049e807bb4aad1cbf521de5ddf17654d6b92faa954d3621fcd549cffe01/firecli-1.1.2.tar.gz
+[2023-04-11 21:11:44] INFO root fetch - processPackages [qbittorrent-api]: Downloading https://files.pythonhosted.org/packages/4d/78/db15a59a8869a9bbc7aa908b304fb366444feec868b2e3849038cf5b812c/qbittorrent-api-2023.4.45.tar.gz
+[2023-04-11 21:11:44] INFO root fetch - processPackages [firecli]: Downloading https://files.pythonhosted.org/packages/c1/63/94e1af807024fe5d6b317d4bfdcdc30de31b2402b6bdad58b97ab5fdb11f/firecli-1.1.3.tar.gz
+[2023-04-11 21:11:44] INFO root fetch - processPackages [qbittorrent-api]: Downloading https://files.pythonhosted.org/packages/36/02/332b4c5faf3f6ba012d81e95f3c6edee1a65892cd8e697f5424546c999ab/qbittorrent-api-6.0.0.tar.gz
+[2023-04-11 21:11:44] INFO root fetch - processPackages [firecli]: executing diffoscope
+[2023-04-11 21:11:44] INFO root fetch - processPackages [firecli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firecli-1.1.2.tar.gz tmp/firecli-1.1.3.tar.gz --markdown 20230411/f/firecli/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-11 21:11:44] INFO root fetch - processPackages [qbittorrent-api]: executing diffoscope
+[2023-04-11 21:11:44] INFO root fetch - processPackages [qbittorrent-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qbittorrent-api-2023.4.45.tar.gz tmp/qbittorrent-api-6.0.0.tar.gz --markdown 20230411/q/qbittorrent-api/2023.4.45-6.0.0/diff.md --exclude *.pyd
+[2023-04-11 21:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:11:45] INFO root fetch - processPackages [windmill-api]: New version: [1.87.0] Old Version: [1.86.0]
+[2023-04-11 21:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:11:45] INFO root fetch - processPackages [wmill]: New version: [1.87.0] Old Version: [1.86.0]
+[2023-04-11 21:11:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:11:45] INFO root fetch - processPackages [wmill-pg]: New version: [1.87.0] Old Version: [1.86.0]
+[2023-04-11 21:11:45] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/6b/39/e555bc460baf5f73055de3c7b365bc4371eeb23c709e779e25c0d6acd542/windmill_api-1.87.0.tar.gz
+[2023-04-11 21:11:45] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/83/6d/84a1da8f736d4e524a18cde98c5c4eeb5746ea5c97ae220f1b74c2237b4e/wmill-1.87.0.tar.gz
+[2023-04-11 21:11:45] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-04-11 21:11:45] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.86.0.tar.gz tmp/windmill_api-1.87.0.tar.gz --markdown 20230411/w/windmill-api/1.86.0-1.87.0/diff.md --exclude *.pyd
+[2023-04-11 21:11:45] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/50/1a/f01f1c29d3e38a05b6ec91b202e5133cac85ce8949e5cfc4c1fcdb098199/wmill_pg-1.87.0.tar.gz
+[2023-04-11 21:11:45] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-04-11 21:11:45] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.86.0.tar.gz tmp/wmill-1.87.0.tar.gz --markdown 20230411/w/wmill/1.86.0-1.87.0/diff.md --exclude *.pyd
+[2023-04-11 21:11:45] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-04-11 21:11:45] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.86.0.tar.gz tmp/wmill_pg-1.87.0.tar.gz --markdown 20230411/w/wmill-pg/1.86.0-1.87.0/diff.md --exclude *.pyd
+[2023-04-11 21:11:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:11:46] INFO root fetch - processPackages [ovos-utils]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-11 21:11:46] INFO root fetch - processPackages [ovos-utils]: executing diffoscope
+[2023-04-11 21:11:46] INFO root fetch - processPackages [ovos-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_utils-0.0.9.tar.gz tmp/ovos_utils-0.0.9a1.tar.gz --markdown 20230411/o/ovos-utils/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-11 21:11:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:11:46] INFO root fetch - processPackages [dominance-analysis]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-11 21:11:46] INFO root fetch - processPackages [dominance-analysis]: Downloading https://files.pythonhosted.org/packages/67/7d/0c694aec228ecd33c97d5aeb55758edd36fb1d2962c8f821ba9078400654/dominance_analysis-1.1.8.tar.gz
+[2023-04-11 21:11:46] INFO root fetch - processPackages [dominance-analysis]: Downloading https://files.pythonhosted.org/packages/40/bf/94ca6ae156b7a127de518dd524ff2478c35562d5e3dea57129deacc86364/dominance_analysis-1.1.9.tar.gz
+[2023-04-11 21:11:46] INFO root fetch - processPackages [dominance-analysis]: executing diffoscope
+[2023-04-11 21:11:46] INFO root fetch - processPackages [dominance-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dominance_analysis-1.1.8.tar.gz tmp/dominance_analysis-1.1.9.tar.gz --markdown 20230411/d/dominance-analysis/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-11 21:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:11:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:11:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:12:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:12:00] INFO root fetch - main [MainThread]: Store serial: [17665201]
