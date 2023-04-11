@@ -8042,3 +8042,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 07:55:21] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:55:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:55:22] INFO root fetch - main [MainThread]: Store serial: [17656650]
+[2023-04-11 08:00:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656650]
+[2023-04-11 08:00:30] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-11 08:00:30] INFO root fetch - processPackages [ovos-bus-client]: New version: [0.0.3a9] Old Version: [0.0.3a8]
+[2023-04-11 08:00:30] INFO root fetch - processPackages [pyntone]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-11 08:00:30] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1458] Old Version: [0.20230411.1450]
+[2023-04-11 08:00:30] INFO root fetch - processPackages [cchenutils]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-11 08:00:30] INFO root fetch - processPackages [rustlets]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-11 08:00:30] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/6d/db/748cebc37fab28b0b3515bcf75c50e820710c2bca77ba4a80e790e680767/krutils-0.20230411.1458.tar.gz
+[2023-04-11 08:00:30] INFO root fetch - processPackages [rustlets]: Downloading https://files.pythonhosted.org/packages/02/db/c68e6decd1e97bcf9c351c67ab17c962037e9b55e034ed3020ca45d6c180/rustlets-0.2.0.tar.gz
+[2023-04-11 08:00:30] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/53/d8/8b7fac82442eae9af183239b45d6947f0a47613f0e238b7c5b78b626a3b7/cchenutils-0.0.8-py3-none-any.whl
+[2023-04-11 08:00:30] INFO root fetch - processPackages [pyntone]: Downloading https://files.pythonhosted.org/packages/2f/bf/914edec712a70fcf9a42b2abb2abdd51eb2f542e85ee61e6e51e236b2f9f/pyntone-0.2.0.tar.gz
+[2023-04-11 08:00:30] INFO root fetch - processPackages [ovos-bus-client]: executing diffoscope
+[2023-04-11 08:00:30] INFO root fetch - processPackages [ovos-bus-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_bus_client-0.0.3a8-py3-none-any.whl.zip tmp/ovos_bus_client-0.0.3a9-py3-none-any.whl.zip --markdown 20230411/o/ovos-bus-client/0.0.3a8-0.0.3a9/diff.md --exclude *.pyd
+[2023-04-11 08:00:30] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 08:00:30] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1450.tar.gz tmp/krutils-0.20230411.1458.tar.gz --markdown 20230411/k/krutils/0.20230411.1450-0.20230411.1458/diff.md --exclude *.pyd
+[2023-04-11 08:00:30] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-11 08:00:30] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.0.7-py3-none-any.whl.zip tmp/cchenutils-0.0.8-py3-none-any.whl.zip --markdown 20230411/c/cchenutils/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-11 08:00:30] INFO root fetch - processPackages [pyntone]: executing diffoscope
+[2023-04-11 08:00:30] INFO root fetch - processPackages [pyntone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyntone-0.1.0.tar.gz tmp/pyntone-0.2.0.tar.gz --markdown 20230411/p/pyntone/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 08:00:30] INFO root fetch - processPackages [rustlets]: Downloading https://files.pythonhosted.org/packages/8a/72/ea891be1c0a7b57391ade3a8f6e0f53c81d2a0a1e6ddc620502abb44c4d7/rustlets-0.2.1.tar.gz
+[2023-04-11 08:00:30] INFO root fetch - processPackages [rustlets]: executing diffoscope
+[2023-04-11 08:00:30] INFO root fetch - processPackages [rustlets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustlets-0.2.0.tar.gz tmp/rustlets-0.2.1.tar.gz --markdown 20230411/r/rustlets/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-11 08:00:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:00:32] INFO root fetch - processPackages [gradient-free-optimizers]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-04-11 08:00:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:00:32] WARNING root fetch - processPackages [bkapi-plugins-py]: Skipping, unable to determine old version
+[2023-04-11 08:00:32] INFO root fetch - main [MainThread]: error
+[2023-04-11 08:00:32] INFO root fetch - processPackages [resampler]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-11 08:00:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:00:32] INFO root fetch - processPackages [gradient-free-optimizers]: Downloading https://files.pythonhosted.org/packages/be/10/390566587fddab896753c25607972807ae5429642a2812a8c75acdbb0644/gradient_free_optimizers-1.2.5-py3-none-any.whl
+[2023-04-11 08:00:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:00:32] INFO root fetch - processPackages [resampler]: Downloading https://files.pythonhosted.org/packages/ff/fb/3f0b3cb5201f7bef8507d7ebda42cd30185679d21955fbaa03e91b5ef4c5/resampler-0.7.2.tar.gz
+[2023-04-11 08:00:32] INFO root fetch - processPackages [paper-qa]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-11 08:00:32] INFO root fetch - processPackages [paper-qa]: Downloading https://files.pythonhosted.org/packages/1d/64/8e61d1b94d4cfa6cf9244ff6e27353e8593836503b8b2f58a32c9d43d5db/paper-qa-1.1.1.tar.gz
+[2023-04-11 08:00:32] INFO root fetch - processPackages [resampler]: Downloading https://files.pythonhosted.org/packages/50/e8/3be468966fddc4b797420fd8bc1811bfce6a9fe69701ca8d7ab1f4189613/resampler-0.7.3.tar.gz
+[2023-04-11 08:00:32] INFO root fetch - processPackages [resampler]: executing diffoscope
+[2023-04-11 08:00:32] INFO root fetch - processPackages [resampler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resampler-0.7.2.tar.gz tmp/resampler-0.7.3.tar.gz --markdown 20230411/r/resampler/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-11 08:00:32] INFO root fetch - processPackages [gradient-free-optimizers]: Downloading https://files.pythonhosted.org/packages/2c/31/5939de3eeb5e411a18575b84a0aabd9ee72871939b9c10dfc5e844a289ca/gradient_free_optimizers-1.2.6-py3-none-any.whl
+[2023-04-11 08:00:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:00:32] INFO root fetch - processPackages [gradient-free-optimizers]: executing diffoscope
+[2023-04-11 08:00:32] INFO root fetch - processPackages [gradient-free-optimizers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradient_free_optimizers-1.2.5-py3-none-any.whl.zip tmp/gradient_free_optimizers-1.2.6-py3-none-any.whl.zip --markdown 20230411/g/gradient-free-optimizers/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-04-11 08:00:32] INFO root fetch - processPackages [paper-qa]: executing diffoscope
+[2023-04-11 08:00:32] INFO root fetch - processPackages [paper-qa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-qa-1.1.0.tar.gz tmp/paper-qa-1.1.1.tar.gz --markdown 20230411/p/paper-qa/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-11 08:00:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:00:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:00:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:00:34] INFO root fetch - main [MainThread]: Store serial: [17656712]
