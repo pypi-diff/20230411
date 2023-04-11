@@ -10428,3 +10428,111 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 10:14:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:14:23] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:14:23] INFO root fetch - main [MainThread]: Store serial: [17658078]
+[2023-04-11 10:19:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658078]
+[2023-04-11 10:19:30] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-11 10:19:30] INFO root fetch - processPackages [ckanext-gallery]: New version: [2.2.7] Old Version: [2.2.6]
+[2023-04-11 10:19:30] INFO root fetch - processPackages [tvault]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-11 10:19:30] WARNING root fetch - processPackages [gcode-metadata]: Skipping, unable to determine old version
+[2023-04-11 10:19:30] INFO root fetch - processPackages [tvault]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-11 10:19:30] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:19:30] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-11 10:19:30] INFO root fetch - processPackages [moped]: New version: [1rc1] Old Version: [1.9.9]
+[2023-04-11 10:19:30] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-11 10:19:30] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230411/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-11 10:19:30] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/ae/d0/32cc70a8a875e95a79fa05682e5fbaf5f430c5807b3999fdc9064299932c/tvault-0.3.1-py3-none-any.whl
+[2023-04-11 10:19:30] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/ae/d0/32cc70a8a875e95a79fa05682e5fbaf5f430c5807b3999fdc9064299932c/tvault-0.3.1-py3-none-any.whl
+[2023-04-11 10:19:30] INFO root fetch - processPackages [ckanext-gallery]: Downloading https://files.pythonhosted.org/packages/3f/54/e776bb3bf8ff6e32598822c0f4a2633117b3619b44ca161b435aa7ca07df/ckanext-gallery-2.2.6.tar.gz
+[2023-04-11 10:19:30] INFO root fetch - processPackages [moped]: Downloading https://files.pythonhosted.org/packages/fa/e5/eae730d18630be4dc4e22bf10412607b7b68e8adba0ea08af0f1a74ce2ba/moped-1.9.9.tar.gz
+[2023-04-11 10:19:31] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/ce/bf/92fa854f186e244569f7a071eeb20f8ca02ceec2cfa60c6ca9fe7d5fdfe9/tvault-0.3.2-py3-none-any.whl
+[2023-04-11 10:19:31] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-11 10:19:31] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.3.1-py3-none-any.whl.zip tmp/tvault-0.3.2-py3-none-any.whl.zip --markdown 20230411/t/tvault/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 10:19:31] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-11 10:19:31] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.3.1-py3-none-any.whl.zip tmp/tvault-0.3.2-py3-none-any.whl.zip --markdown 20230411/t/tvault/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 10:19:31] INFO root fetch - processPackages [ckanext-gallery]: Downloading https://files.pythonhosted.org/packages/15/28/a6e9e5a5b0ec1d3456bdbd615fe4d2a3c21c42cf855dd0feec3728202ff1/ckanext-gallery-2.2.7.tar.gz
+[2023-04-11 10:19:31] INFO root fetch - processPackages [ckanext-gallery]: executing diffoscope
+[2023-04-11 10:19:31] INFO root fetch - processPackages [ckanext-gallery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-gallery-2.2.6.tar.gz tmp/ckanext-gallery-2.2.7.tar.gz --markdown 20230411/c/ckanext-gallery/2.2.6-2.2.7/diff.md --exclude *.pyd
+[2023-04-11 10:19:31] INFO root fetch - processPackages [moped]: Downloading https://files.pythonhosted.org/packages/73/71/391f981ecc1118b3a2d5699507b8d46eba5a3f8290bcf8184f6e741fef40/moped-1rc1.tar.gz
+[2023-04-11 10:19:31] INFO root fetch - processPackages [moped]: executing diffoscope
+[2023-04-11 10:19:31] INFO root fetch - processPackages [moped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moped-1.9.9.tar.gz tmp/moped-1rc1.tar.gz --markdown 20230411/m/moped/1.9.9-1rc1/diff.md --exclude *.pyd
+[2023-04-11 10:19:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-gbif]: New version: [2.1.7] Old Version: [2.1.6]
+[2023-04-11 10:19:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:32] WARNING root fetch - processPackages [gcode-metadata]: Skipping, unable to determine old version
+[2023-04-11 10:19:32] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-graph]: New version: [2.1.7] Old Version: [2.1.6]
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-gbif]: Downloading https://files.pythonhosted.org/packages/f2/b3/89f899daf290f54a6077ba8a571caedd37529cda219ff238513b09496722/ckanext-gbif-2.1.6.tar.gz
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-graph]: Downloading https://files.pythonhosted.org/packages/33/33/d8c60ca20da895225c170b17aaf5ff4ded3fe69599cfb014ad8c034fa3b2/ckanext-graph-2.1.6.tar.gz
+[2023-04-11 10:19:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:32] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: New version: [12.0.2.2.1.99.dev3] Old Version: [12.0.2.2.1.99.dev2]
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-gbif]: Downloading https://files.pythonhosted.org/packages/7b/25/8caea5f2dabee0b174d77f2b8533a1f7fb486386a4b4033dc4c41474a62f/ckanext-gbif-2.1.7.tar.gz
+[2023-04-11 10:19:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-gbif]: executing diffoscope
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-gbif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-gbif-2.1.6.tar.gz tmp/ckanext-gbif-2.1.7.tar.gz --markdown 20230411/c/ckanext-gbif/2.1.6-2.1.7/diff.md --exclude *.pyd
+[2023-04-11 10:19:32] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-graph]: Downloading https://files.pythonhosted.org/packages/7d/3e/4dd46e9d0adf48fcd6f392a4f08dd468b14eefffbc3ff89377536a9d915a/ckanext-graph-2.1.7.tar.gz
+[2023-04-11 10:19:32] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: Downloading https://files.pythonhosted.org/packages/c6/9e/0d5b2d048cce223ade272834d3ac97a871aad372a29c8cbe140b62e5dcfb/odoo12_addon_hr_timesheet_sheet_role-12.0.2.2.1.99.dev2-py3-none-any.whl
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-graph]: executing diffoscope
+[2023-04-11 10:19:32] INFO root fetch - processPackages [ckanext-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-graph-2.1.6.tar.gz tmp/ckanext-graph-2.1.7.tar.gz --markdown 20230411/c/ckanext-graph/2.1.6-2.1.7/diff.md --exclude *.pyd
+[2023-04-11 10:19:32] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/a4/76/0caf3e54fc1b0c685c01abdb7deb283a4e0ab62467df218edf79256efe6d/mpservice-0.9.9.tar.gz
+[2023-04-11 10:19:33] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: Downloading https://files.pythonhosted.org/packages/4b/6b/573d1b5bbe223ba5e781ae454ce0d0be8c3e48f47b1d270aa671c3af048b/odoo12_addon_hr_timesheet_sheet_role-12.0.2.2.1.99.dev3-py3-none-any.whl
+[2023-04-11 10:19:33] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: executing diffoscope
+[2023-04-11 10:19:33] INFO root fetch - processPackages [odoo12-addon-hr-timesheet-sheet-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_hr_timesheet_sheet_role-12.0.2.2.1.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_hr_timesheet_sheet_role-12.0.2.2.1.99.dev3-py3-none-any.whl.zip --markdown 20230411/o/odoo12-addon-hr-timesheet-sheet-role/12.0.2.2.1.99.dev2-12.0.2.2.1.99.dev3/diff.md --exclude *.pyd
+[2023-04-11 10:19:33] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/62/83/992eb812676a1d5b8ffbc5c9ba7e1bd57f82c86ae5c8a0e509834c8df031/mpservice-0.9.9.post1.tar.gz
+[2023-04-11 10:19:33] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-04-11 10:19:33] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230411/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-04-11 10:19:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:33] INFO root fetch - processPackages [ckanext-iiif]: New version: [3.0.7] Old Version: [3.0.6]
+[2023-04-11 10:19:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:33] WARNING root fetch - processPackages [myiqoptionapi]: Skipping, unable to determine old version
+[2023-04-11 10:19:33] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:19:33] INFO root fetch - processPackages [ckanext-iiif]: Downloading https://files.pythonhosted.org/packages/dd/5c/16e916aa091c371daf23471943f5f600e0a5f23161f8eee589485526458d/ckanext-iiif-3.0.6.tar.gz
+[2023-04-11 10:19:33] INFO root fetch - processPackages [MailMagician]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-11 10:19:34] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/75/7a/2d2dbf8d3b81e8819d25186d7853e26fa3f1935270ee94bd0e98cdd5e7f9/MailMagician-0.1.0.tar.gz
+[2023-04-11 10:19:34] INFO root fetch - processPackages [ckanext-iiif]: Downloading https://files.pythonhosted.org/packages/94/45/fcbd2782f0462b314f97d5d782c0717a136b3b993cf5f9fc60dc9b0e1b0d/ckanext-iiif-3.0.7.tar.gz
+[2023-04-11 10:19:34] INFO root fetch - processPackages [MailMagician]: Downloading https://files.pythonhosted.org/packages/e4/4c/3881e740599f090bb67be841c30b7547f227a30aa22eff46b8bed1c9fc5c/MailMagician-0.2.0.tar.gz
+[2023-04-11 10:19:34] INFO root fetch - processPackages [ckanext-iiif]: executing diffoscope
+[2023-04-11 10:19:34] INFO root fetch - processPackages [ckanext-iiif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-iiif-3.0.6.tar.gz tmp/ckanext-iiif-3.0.7.tar.gz --markdown 20230411/c/ckanext-iiif/3.0.6-3.0.7/diff.md --exclude *.pyd
+[2023-04-11 10:19:34] INFO root fetch - processPackages [MailMagician]: executing diffoscope
+[2023-04-11 10:19:34] INFO root fetch - processPackages [MailMagician]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MailMagician-0.1.0.tar.gz tmp/MailMagician-0.2.0.tar.gz --markdown 20230411/M/MailMagician/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 10:19:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:34] INFO root fetch - processPackages [pathaia]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 10:19:34] INFO root fetch - processPackages [pathaia]: Downloading https://files.pythonhosted.org/packages/2b/f3/e9834506b193c2d889b0b0f60b6f631abc8285d4044a224534a5d967ab8e/pathaia-0.2.1.tar.gz
+[2023-04-11 10:19:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:34] INFO root fetch - processPackages [irissqlcli]: New version: [0.5.1] Old Version: [0.5.0b3]
+[2023-04-11 10:19:34] INFO root fetch - processPackages [irissqlcli]: Downloading https://files.pythonhosted.org/packages/69/9e/add3d899e3ff50f8eb771c3079462a2d7f953bbe180e2bc98a102c57c260/irissqlcli-0.5.0b3.tar.gz
+[2023-04-11 10:19:34] INFO root fetch - processPackages [pathaia]: Downloading https://files.pythonhosted.org/packages/ef/96/856ce75d3ce54c266159c85425977dfc32186c7cf41cb726042d21262d56/pathaia-0.2.2.tar.gz
+[2023-04-11 10:19:34] INFO root fetch - processPackages [pathaia]: executing diffoscope
+[2023-04-11 10:19:34] INFO root fetch - processPackages [pathaia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pathaia-0.2.1.tar.gz tmp/pathaia-0.2.2.tar.gz --markdown 20230411/p/pathaia/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 10:19:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:35] INFO root fetch - processPackages [irissqlcli]: Downloading https://files.pythonhosted.org/packages/a7/ec/eac4e4ad7fd290bd39156aac5a7adeb05812ec1aebe42d7f1a7da9d86f29/irissqlcli-0.5.1.tar.gz
+[2023-04-11 10:19:35] INFO root fetch - processPackages [ckanext-ldap]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-04-11 10:19:35] INFO root fetch - processPackages [irissqlcli]: executing diffoscope
+[2023-04-11 10:19:35] INFO root fetch - processPackages [irissqlcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irissqlcli-0.5.0b3.tar.gz tmp/irissqlcli-0.5.1.tar.gz --markdown 20230411/i/irissqlcli/0.5.0b3-0.5.1/diff.md --exclude *.pyd
+[2023-04-11 10:19:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:35] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: New version: [15.0.1.1.0.6] Old Version: [15.0.1.1.0.5]
+[2023-04-11 10:19:35] INFO root fetch - processPackages [ckanext-ldap]: Downloading https://files.pythonhosted.org/packages/db/12/0493d873a29e97edd2c2690a154870f9fdbaebcf9dc6253501b38384b7be/ckanext-ldap-3.2.8.tar.gz
+[2023-04-11 10:19:35] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: Downloading https://files.pythonhosted.org/packages/b1/08/14958f07491158db145f5d72326deddfe019752bb81dc584f81f6c7ca53f/odoo_addon_hr_timesheet_sheet-15.0.1.1.0.5-py3-none-any.whl
+[2023-04-11 10:19:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:35] INFO root fetch - processPackages [ckanext-list]: New version: [2.1.7] Old Version: [2.1.6]
+[2023-04-11 10:19:35] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: Downloading https://files.pythonhosted.org/packages/d5/41/5766c17b250afd341f9a43ca50e7027aa679316ee37c5ff6d6248323b033/odoo_addon_hr_timesheet_sheet-15.0.1.1.0.6-py3-none-any.whl
+[2023-04-11 10:19:35] INFO root fetch - processPackages [ckanext-ldap]: Downloading https://files.pythonhosted.org/packages/85/71/f5fd95183b274bcd4bd28126482622c0e5fb7eb90cfc8308c4d4fe256c8c/ckanext-ldap-3.2.9.tar.gz
+[2023-04-11 10:19:36] INFO root fetch - processPackages [ckanext-list]: Downloading https://files.pythonhosted.org/packages/62/1d/aca9dbbeab5a76bc9f6340d6b1f0ced02ba836862075b107903b1362b1fb/ckanext-list-2.1.6.tar.gz
+[2023-04-11 10:19:36] INFO root fetch - processPackages [ckanext-ldap]: executing diffoscope
+[2023-04-11 10:19:36] INFO root fetch - processPackages [ckanext-ldap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-ldap-3.2.8.tar.gz tmp/ckanext-ldap-3.2.9.tar.gz --markdown 20230411/c/ckanext-ldap/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-04-11 10:19:36] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: executing diffoscope
+[2023-04-11 10:19:36] INFO root fetch - processPackages [odoo-addon-hr-timesheet-sheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_hr_timesheet_sheet-15.0.1.1.0.5-py3-none-any.whl.zip tmp/odoo_addon_hr_timesheet_sheet-15.0.1.1.0.6-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-hr-timesheet-sheet/15.0.1.1.0.5-15.0.1.1.0.6/diff.md --exclude *.pyd
+[2023-04-11 10:19:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:36] INFO root fetch - processPackages [DeepSlice]: New version: [1.1.0] Old Version: [1.0.6]
+[2023-04-11 10:19:36] INFO root fetch - processPackages [ckanext-list]: Downloading https://files.pythonhosted.org/packages/b4/07/23f43681d8c587c69a33500dc5527bdde3824d232775043d908c85679b62/ckanext-list-2.1.7.tar.gz
+[2023-04-11 10:19:36] INFO root fetch - processPackages [DeepSlice]: Downloading https://files.pythonhosted.org/packages/11/02/25cb45136f550abd9745dbdfbf157e278b47d9c85f2199347c02fd274b2c/DeepSlice-1.0.6.tar.gz
+[2023-04-11 10:19:36] INFO root fetch - processPackages [ckanext-list]: executing diffoscope
+[2023-04-11 10:19:36] INFO root fetch - processPackages [ckanext-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-list-2.1.6.tar.gz tmp/ckanext-list-2.1.7.tar.gz --markdown 20230411/c/ckanext-list/2.1.6-2.1.7/diff.md --exclude *.pyd
+[2023-04-11 10:19:36] INFO root fetch - processPackages [DeepSlice]: Downloading https://files.pythonhosted.org/packages/8a/fa/7bda79d03f99ef647fa9d3644d2d509c0d946efb778178d1b02c3cc5e93c/DeepSlice-1.1.0.tar.gz
+[2023-04-11 10:19:36] INFO root fetch - processPackages [DeepSlice]: executing diffoscope
+[2023-04-11 10:19:36] INFO root fetch - processPackages [DeepSlice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DeepSlice-1.0.6.tar.gz tmp/DeepSlice-1.1.0.tar.gz --markdown 20230411/D/DeepSlice/1.0.6-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 10:19:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:19:38] INFO root fetch - main [MainThread]: Store serial: [17658139]
