@@ -12667,3 +12667,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 12:34:00] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:34:01] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:34:01] INFO root fetch - main [MainThread]: Store serial: [17659485]
+[2023-04-11 12:39:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659485]
+[2023-04-11 12:39:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-11 12:39:08] INFO root fetch - processPackages [Trapalyzer]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-11 12:39:08] INFO root fetch - processPackages [django-composite-auto-field]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 12:39:08] INFO root fetch - processPackages [embedding-explorer]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 12:39:08] INFO root fetch - processPackages [terra-ai-datasets]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-11 12:39:08] INFO root fetch - processPackages [openvds]: New version: [3.2.3] Old Version: [3.2.2]
+[2023-04-11 12:39:08] INFO root fetch - processPackages [embedding-explorer]: Downloading https://files.pythonhosted.org/packages/70/74/a9024e7c515894590b30acad3cfa2d507bf755bf41974bdafdd5bb7491dc/embedding_explorer-0.1.1.tar.gz
+[2023-04-11 12:39:08] INFO root fetch - processPackages [Trapalyzer]: Downloading https://files.pythonhosted.org/packages/af/33/9eb06c93f9df37268b0d32767269d0f2987395521ad1d17fdc3565f7d994/Trapalyzer-0.0.7.tar.gz
+[2023-04-11 12:39:08] INFO root fetch - processPackages [openvds]: Downloading https://files.pythonhosted.org/packages/96/b3/8e5dfd3e3841540ad5200ef1e5c93e0eede9131077de5cb254dea5eab53a/openvds-3.2.2-cp39-cp39-win_amd64.whl
+[2023-04-11 12:39:08] INFO root fetch - processPackages [Trapalyzer]: executing diffoscope
+[2023-04-11 12:39:08] INFO root fetch - processPackages [Trapalyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Trapalyzer-0.0.6.tar.gz tmp/Trapalyzer-0.0.7.tar.gz --markdown 20230411/T/Trapalyzer/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-11 12:39:08] INFO root fetch - processPackages [django-composite-auto-field]: Downloading https://files.pythonhosted.org/packages/f9/18/cb2cbf546b2f6d8d6313e7232a92f6027da0d2a509a3fb208015721bf2c0/django-composite-auto-field-0.1.3-dist.tar.gz
+[2023-04-11 12:39:08] INFO root fetch - processPackages [django-composite-auto-field]: executing diffoscope
+[2023-04-11 12:39:08] INFO root fetch - processPackages [django-composite-auto-field]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-composite-auto-field-0.1.2.tar.gz tmp/django-composite-auto-field-0.1.3-dist.tar.gz --markdown 20230411/d/django-composite-auto-field/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 12:39:08] INFO root fetch - processPackages [terra-ai-datasets]: Downloading https://files.pythonhosted.org/packages/f6/e2/cbf0b758d34a57c1e6dbb42e6dc25337dbc376c1311f12f476852ef77644/terra_ai_datasets-1.1.1.tar.gz
+[2023-04-11 12:39:09] INFO root fetch - processPackages [embedding-explorer]: Downloading https://files.pythonhosted.org/packages/e1/61/ed74f23ca3335e0813f7261a3a8c4921ce0f2908328f9dbd210c0b5ed591/embedding_explorer-0.1.2.tar.gz
+[2023-04-11 12:39:09] INFO root fetch - processPackages [embedding-explorer]: executing diffoscope
+[2023-04-11 12:39:09] INFO root fetch - processPackages [embedding-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedding_explorer-0.1.1.tar.gz tmp/embedding_explorer-0.1.2.tar.gz --markdown 20230411/e/embedding-explorer/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 12:39:09] INFO root fetch - processPackages [terra-ai-datasets]: executing diffoscope
+[2023-04-11 12:39:09] INFO root fetch - processPackages [terra-ai-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terra_ai_datasets-1.1.0.tar.gz tmp/terra_ai_datasets-1.1.1.tar.gz --markdown 20230411/t/terra-ai-datasets/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-11 12:39:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:39:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:39:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:39:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:39:13] INFO root fetch - processPackages [openvds]: Downloading https://files.pythonhosted.org/packages/b4/94/fd2a2df8eb1722df60dddeeddc09a9ed1f56ee010d232e236935674c2192/openvds-3.2.3-cp39-cp39-win_amd64.whl
+[2023-04-11 12:39:16] INFO root fetch - processPackages [openvds]: executing diffoscope
+[2023-04-11 12:39:16] INFO root fetch - processPackages [openvds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openvds-3.2.2-cp39-cp39-win_amd64.whl.zip tmp/openvds-3.2.3-cp39-cp39-win_amd64.whl.zip --markdown 20230411/o/openvds/3.2.2-3.2.3/diff.md --exclude *.pyd
+[2023-04-11 12:41:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:41:02] INFO root fetch - main [MainThread]: Store serial: [17659510]

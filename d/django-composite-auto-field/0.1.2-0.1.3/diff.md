@@ -1,14 +1,14 @@
-# Comparing `tmp/django-composite-auto-field-0.1.2.tar.gz` & `tmp/django-composite-auto-field-0.1.3.tar.gz`
+# Comparing `tmp/django-composite-auto-field-0.1.2.tar.gz` & `tmp/django-composite-auto-field-0.1.3-dist.tar.gz`
 
 ## filetype from file(1)
 
 ```diff
 @@ -1 +1 @@
 -gzip compressed data, was "django-composite-auto-field-0.1.2.tar", last modified: Wed Jan  5 08:59:46 2022, max compression
-+gzip compressed data, was "django-composite-auto-field-0.1.3.tar", last modified: Tue Apr 11 10:05:39 2023, max compression
++gzip compressed data, was "django-composite-auto-field-0.1.3.tar", last modified: Tue Apr 11 10:34:52 2023, max compression
 ```
 
-## Comparing `django-composite-auto-field-0.1.2.tar` & `django-composite-auto-field-0.1.3.tar`
+## Comparing `django-composite-auto-field-0.1.2.tar` & `django-composite-auto-field-0.1.3-dist.tar`
 
 ### file list
 
@@ -30,22 +30,22 @@
 --rw-r--r--   0 nik        (501) staff       (20)       68 2022-01-05 08:59:46.000000 django-composite-auto-field-0.1.2/django_composite_auto_field.egg-info/top_level.txt
 --rw-r--r--   0 nik        (501) staff       (20)     1024 2022-01-05 08:59:46.011289 django-composite-auto-field-0.1.2/setup.cfg
 --rw-r--r--   0 nik        (501) staff       (20)       38 2021-10-14 19:17:59.000000 django-composite-auto-field-0.1.2/setup.py
-+drwxrwxrwx   0        0        0        0 2023-04-11 10:05:39.578329 django-composite-auto-field-0.1.3/
++drwxrwxrwx   0        0        0        0 2023-04-11 10:34:52.415839 django-composite-auto-field-0.1.3/
 +-rw-rw-rw-   0        0        0     1497 2023-04-11 07:32:19.000000 django-composite-auto-field-0.1.3/LICENSE
 +-rw-rw-rw-   0        0        0      170 2023-04-11 07:32:19.000000 django-composite-auto-field-0.1.3/MANIFEST.in
-+-rw-rw-rw-   0        0        0     4108 2023-04-11 10:05:39.578329 django-composite-auto-field-0.1.3/PKG-INFO
-+-rw-rw-rw-   0        0        0     2820 2023-04-11 10:01:38.000000 django-composite-auto-field-0.1.3/README.rst
-+drwxrwxrwx   0        0        0        0 2023-04-11 10:05:39.575330 django-composite-auto-field-0.1.3/django_composite_auto_field/
++-rw-rw-rw-   0        0        0     4161 2023-04-11 10:34:52.415839 django-composite-auto-field-0.1.3/PKG-INFO
++-rw-rw-rw-   0        0        0     2873 2023-04-11 10:34:25.000000 django-composite-auto-field-0.1.3/README.rst
++drwxrwxrwx   0        0        0        0 2023-04-11 10:34:52.411954 django-composite-auto-field-0.1.3/django_composite_auto_field/
 +-rw-rw-rw-   0        0        0        0 2023-04-11 07:32:19.000000 django-composite-auto-field-0.1.3/django_composite_auto_field/__init__.py
 +-rw-rw-rw-   0        0        0     2430 2023-04-11 07:32:19.000000 django-composite-auto-field-0.1.3/django_composite_auto_field/fields.py
 +-rw-rw-rw-   0        0        0       18 2023-04-11 07:32:19.000000 django-composite-auto-field-0.1.3/django_composite_auto_field/urls.py
-+drwxrwxrwx   0        0        0        0 2023-04-11 10:05:39.578329 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/
-+-rw-rw-rw-   0        0        0     4108 2023-04-11 10:05:39.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/PKG-INFO
-+-rw-rw-rw-   0        0        0      417 2023-04-11 10:05:39.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/SOURCES.txt
-+-rw-rw-rw-   0        0        0        1 2023-04-11 10:05:39.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/dependency_links.txt
-+-rw-rw-rw-   0        0        0       12 2023-04-11 10:05:39.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/requires.txt
-+-rw-rw-rw-   0        0        0       68 2023-04-11 10:05:39.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/top_level.txt
-+-rw-rw-rw-   0        0        0     1230 2023-04-11 10:05:39.579328 django-composite-auto-field-0.1.3/setup.cfg
++drwxrwxrwx   0        0        0        0 2023-04-11 10:34:52.414837 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/
++-rw-rw-rw-   0        0        0     4161 2023-04-11 10:34:52.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/PKG-INFO
++-rw-rw-rw-   0        0        0      417 2023-04-11 10:34:52.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/SOURCES.txt
++-rw-rw-rw-   0        0        0        1 2023-04-11 10:34:52.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/dependency_links.txt
++-rw-rw-rw-   0        0        0       12 2023-04-11 10:34:52.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/requires.txt
++-rw-rw-rw-   0        0        0       68 2023-04-11 10:34:52.000000 django-composite-auto-field-0.1.3/django_composite_auto_field.egg-info/top_level.txt
++-rw-rw-rw-   0        0        0     1230 2023-04-11 10:34:52.416354 django-composite-auto-field-0.1.3/setup.cfg
 +-rw-rw-rw-   0        0        0       41 2023-04-11 07:32:19.000000 django-composite-auto-field-0.1.3/setup.py
 ```
 
@@ -84,10 +84,10 @@
 
 ### Comparing `django-composite-auto-field-0.1.2/PKG-INFO` & `django-composite-auto-field-0.1.3/README.rst`
 
- * *Files 22% similar despite different names*
+ * *Files 24% similar despite different names*
 
 ```diff
-@@ -1,91 +1,81 @@
+@@ -1,91 +1,84 @@
 -Metadata-Version: 2.1
 -Name: django-composite-auto-field
 -Version: 0.1.2
@@ -239,8 +239,11 @@
 +    # activate the virtual environment
 +    source venv\bin\activate
 +
-+    # installa requirements
++    # install requirements
 +    pip install -r .\requirements.txt
++
++    # run migrations
++    python manage.py migrate
 +
 +    # run tests
 +    python manage.py test
@@ -400,6 +403,228 @@
 +                if not kwargs[key] == self.defaults[key]:
 +                    warnings.warn(self.warning)
 +                    break
+```
+
+### Comparing `django-composite-auto-field-0.1.2/django_composite_auto_field.egg-info/PKG-INFO` & `django-composite-auto-field-0.1.3/PKG-INFO`
+
+ * *Files 27% similar despite different names*
+
+```diff
+@@ -1,91 +1,115 @@
+-Metadata-Version: 2.1
+-Name: django-composite-auto-field
+-Version: 0.1.2
+-Summary: A simple Django Field for storing auto-incrementing field.
+-Home-page: https://github.com/N1K1TAS95/django_composite_auto_field
+-Author: Nikita Sinko
+-Author-email: n.sinko95@gmail.com
+-License: BSD-2-Clause
+-Platform: UNKNOWN
+-Classifier: Environment :: Web Environment
+-Classifier: Framework :: Django
+-Classifier: Framework :: Django :: 3.1
+-Classifier: Intended Audience :: Developers
+-Classifier: License :: OSI Approved :: BSD License
+-Classifier: Operating System :: OS Independent
+-Classifier: Programming Language :: Python
+-Classifier: Programming Language :: Python :: 3
+-Classifier: Programming Language :: Python :: 3 :: Only
+-Classifier: Programming Language :: Python :: 3.6
+-Classifier: Programming Language :: Python :: 3.7
+-Classifier: Programming Language :: Python :: 3.8
+-Classifier: Programming Language :: Python :: 3.9
+-Classifier: Topic :: Internet :: WWW/HTTP
+-Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+-Requires-Python: >=3.6
+-License-File: LICENSE
+-
+-=============================
+-django-composite-auto-field
+-=============================
+-
+-.. contents:: A simple Django Field for storing auto-incrementing field. It's useful for storing such as orders code for much easier reading.
+-
+-----
+-
+-Installation
+-------------
+-Install django-composite-auto-field::
+-
+-    pip install django-composite-auto-field
+-
+-Usage
+------
+-This field uses Django's Aggregate and Max functions to extract the latest code from the database and does a minimum of parsing to calculate the next code. This avoids having to store a counter in the database. Therefore, for correct operation, once the field arguments have been set, it is advisable not to modify them anymore, or to manually act on the codes already calculated and stored in the database.
+-
+-Import to your models::
+-
+-    from django_composite_auto_field.fields import CompositeAutoField
+-
+-Usage::
+-
+-    class Order(models.Model):
+-        code = CompositeAutoField(prefix='ORD', use_year=True, zeros=5)
+-
+-Arguments::
+-
+-    prefix      # It's used to indicate prefix for the code
+-    use_year    # When it's True, last two numbers of current year will be used after prefix
+-    zero        # Indicated number of zeros before the number
+-
+-Run::
+-
+-    python manage.py makemigrations
+-    python manage.py migrate
+-
+-For example. Using Arguments from above as shown, will result in codes::
+-
+-    ORD2100001
+-    ORD2100002
+-    ORD2100003
+-    ...
+-
+-If the year is used, every year the counter will be automatically reset and the count will restart with 1.
+-
+-Release Notes
+--------------
+-* 0.1.1 - initial release
+-    - provides CompositeAutoField for storing auto-incrementing field
+-    - supports Django 3.1 on python 3.6, 3.7, 3.8 and 3.9 - as per the `official django docs <https://docs.djangoproject.com/en/dev/faq/install/#what-python-version-can-i-use-with-django>`_
+-
+-Todo
+-----
+-    - ❌ Create test cases
+-    - ✔️ Initial release on GitHub
+-    - ✔️ Initial release on PyPi
+-    - ❌ Improve last code parsing for make arguments changeable
+-
+-Contributing
+-------------
+-It's an open source project, so any contributions are welcome!
+-
++Metadata-Version: 2.1
++Name: django-composite-auto-field
++Version: 0.1.3
++Summary: A simple Django Field for storing auto-incrementing field.
++Home-page: https://github.com/N1K1TAS95/django_composite_auto_field
++Author: Nikita Sinko
++Author-email: n.sinko95@gmail.com
++License: BSD-2-Clause
++Classifier: Environment :: Web Environment
++Classifier: Framework :: Django
++Classifier: Framework :: Django :: 3.2
++Classifier: Framework :: Django :: 4.0
++Classifier: Framework :: Django :: 4.1
++Classifier: Framework :: Django :: 4.2
++Classifier: Intended Audience :: Developers
++Classifier: License :: OSI Approved :: BSD License
++Classifier: Operating System :: OS Independent
++Classifier: Programming Language :: Python
++Classifier: Programming Language :: Python :: 3
++Classifier: Programming Language :: Python :: 3 :: Only
++Classifier: Programming Language :: Python :: 3.6
++Classifier: Programming Language :: Python :: 3.7
++Classifier: Programming Language :: Python :: 3.8
++Classifier: Programming Language :: Python :: 3.9
++Classifier: Programming Language :: Python :: 3.10
++Classifier: Programming Language :: Python :: 3.11
++Classifier: Topic :: Internet :: WWW/HTTP
++Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
++Requires-Python: >=3.6
++License-File: LICENSE
++
++=============================
++django-composite-auto-field
++=============================
++
++.. contents:: A simple Django Field for storing auto-incrementing field. It's useful for storing such as orders code for much easier reading.
++
++----
++
++Installation
++------------
++Install django-composite-auto-field::
++
++    pip install django-composite-auto-field
++
++Usage
++-----
++This field uses Django's Aggregate and Max functions to extract the latest code from the database and does a minimum of parsing to calculate the next code. This avoids having to store a counter in the database. Therefore, for correct operation, once the field arguments have been set, it is advisable not to modify them anymore, or to manually act on the codes already calculated and stored in the database.
++
++Import to your models::
++
++    from django_composite_auto_field.fields import CompositeAutoField
++
++Usage::
++
++    class Order(models.Model):
++        code = CompositeAutoField(prefix='ORD', use_year=True, zeros=5)
++
++Arguments::
++
++    prefix      # It's used to indicate prefix for the code, default is "CC"
++    use_year    # When it's True, last two numbers of current year will be used after prefix
++    zero        # Indicated number of zeros before the number
++
++Run::
++
++    python manage.py makemigrations
++    python manage.py migrate
++
++For example. Using Arguments from above as shown, will result in codes::
++
++    ORD2100001
++    ORD2100002
++    ORD2100003
++    ...
++
++If the year is used, every year the counter will be automatically reset and the count will restart with 1.
++If you pass a string to the field, it will be used instead of the generated value. Pay attention to the passed values, they will be used for the generation of subsequent values.
++
++Tests
++-------------
++To run tests::
++
++    # clone this repository on your PC
++
++    # create the virtual environment
++    python -m venv venv
++
++    # activate the virtual environment
++    source venv\bin\activate
++
++    # install requirements
++    pip install -r .\requirements.txt
++
++    # run migrations
++    python manage.py migrate
++
++    # run tests
++    python manage.py test
++
++Release Notes
++-------------
++* 0.1.3
++    - added tests
++    - added support for custom string as argument
++    - added support for Django 4.2 on python 3.8, 3.9, 3.10 and 3.11 - as per the `official django docs <https://docs.djangoproject.com/en/dev/faq/install/#what-python-version-can-i-use-with-django>`_
++* 0.1.2
++    - fixed year change
++* 0.1.1 - initial release
++    - provides CompositeAutoField for storing auto-incrementing field
++    - supports Django 3.1 on python 3.6, 3.7, 3.8 and 3.9 - as per the `official django docs <https://docs.djangoproject.com/en/dev/faq/install/#what-python-version-can-i-use-with-django>`_
++
++Contributing
++------------
++It's an open source project, so any contributions are welcome!
+```
+
+#### encoding
+
+```diff
+@@ -1 +1 @@
+-utf-8
++us-ascii
 ```
 
 ### Comparing `django-composite-auto-field-0.1.2/setup.cfg` & `django-composite-auto-field-0.1.3/setup.cfg`
