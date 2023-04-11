@@ -16240,3 +16240,83 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 16:26:23] INFO root fetch - main [MainThread]: success
 [2023-04-11 16:26:25] INFO root fetch - main [MainThread]: success
 [2023-04-11 16:26:25] INFO root fetch - main [MainThread]: Store serial: [17662150]
+[2023-04-11 16:31:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17662150]
+[2023-04-11 16:31:33] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-11 16:31:33] INFO root fetch - processPackages [tinybird-cli]: New version: [1.0.0b99] Old Version: [1.0.0b98]
+[2023-04-11 16:31:33] INFO root fetch - processPackages [codeforlife-portal]: New version: [6.9.0] Old Version: [6.8.9]
+[2023-04-11 16:31:33] INFO root fetch - processPackages [formenergy-observability]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-11 16:31:33] INFO root fetch - processPackages [alphastats]: New version: [0.5.0] Old Version: [0.4.4]
+[2023-04-11 16:31:33] INFO root fetch - processPackages [cfl-common]: New version: [6.9.0] Old Version: [6.8.9]
+[2023-04-11 16:31:33] INFO root fetch - processPackages [tinybird-cli]: executing diffoscope
+[2023-04-11 16:31:33] INFO root fetch - processPackages [tinybird-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cli-1.0.0b98.tar.gz tmp/tinybird-cli-1.0.0b99.tar.gz --markdown 20230411/t/tinybird-cli/1.0.0b98-1.0.0b99/diff.md --exclude *.pyd
+[2023-04-11 16:31:33] INFO root fetch - processPackages [alphastats]: Downloading https://files.pythonhosted.org/packages/c1/56/1865995d53cde83c7812dd61017fe136c02fd18eeecdc268dbb498ab7a5b/alphastats-0.4.4.tar.gz
+[2023-04-11 16:31:33] INFO root fetch - processPackages [formenergy-observability]: Downloading https://files.pythonhosted.org/packages/cd/8d/0f4e4e416f54dbd5f1991c80b486f102f801be2a7b4c00a314d14b4357b6/formenergy-observability-0.1.1.tar.gz
+[2023-04-11 16:31:33] INFO root fetch - processPackages [codeforlife-portal]: Downloading https://files.pythonhosted.org/packages/f2/3d/d076be2df98e91e0582f7670e0c14a35b57a909d2ef20da6af88845c78ac/codeforlife-portal-6.8.9.tar.gz
+[2023-04-11 16:31:33] INFO root fetch - processPackages [cfl-common]: Downloading https://files.pythonhosted.org/packages/39/0c/ab055a3d77f3c24c39b7455ba3358c91d1217de2dde396545a2eebda525e/cfl-common-6.8.9.tar.gz
+[2023-04-11 16:31:34] INFO root fetch - processPackages [formenergy-observability]: Downloading https://files.pythonhosted.org/packages/3e/b3/841c77690c0eb32c8ee15ebe0aecb69e7b5947eeefebbe170403d8414e08/formenergy-observability-0.2.0.tar.gz
+[2023-04-11 16:31:34] INFO root fetch - processPackages [alphastats]: Downloading https://files.pythonhosted.org/packages/b4/a1/7463b562f273eeaab677a674986879fcaf58508261c6ac8744fc074cc61e/alphastats-0.5.0.tar.gz
+[2023-04-11 16:31:34] INFO root fetch - processPackages [formenergy-observability]: executing diffoscope
+[2023-04-11 16:31:34] INFO root fetch - processPackages [formenergy-observability]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formenergy-observability-0.1.1.tar.gz tmp/formenergy-observability-0.2.0.tar.gz --markdown 20230411/f/formenergy-observability/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 16:31:34] INFO root fetch - processPackages [cfl-common]: Downloading https://files.pythonhosted.org/packages/05/c2/911736fd9caff48e395c4b7643549153b78727af673a7f2ac84e0b673c45/cfl-common-6.9.0.tar.gz
+[2023-04-11 16:31:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:34] WARNING root fetch - processPackages [shipyard-templates]: Skipping, unable to determine old version
+[2023-04-11 16:31:34] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:31:34] WARNING root fetch - processPackages [colorsmaster]: Skipping, unable to determine old version
+[2023-04-11 16:31:34] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:31:35] INFO root fetch - processPackages [richvalues]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-04-11 16:31:35] INFO root fetch - processPackages [cfl-common]: executing diffoscope
+[2023-04-11 16:31:35] INFO root fetch - processPackages [cfl-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfl-common-6.8.9.tar.gz tmp/cfl-common-6.9.0.tar.gz --markdown 20230411/c/cfl-common/6.8.9-6.9.0/diff.md --exclude *.pyd
+[2023-04-11 16:31:35] INFO root fetch - processPackages [alphastats]: executing diffoscope
+[2023-04-11 16:31:35] INFO root fetch - processPackages [alphastats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphastats-0.4.4.tar.gz tmp/alphastats-0.5.0.tar.gz --markdown 20230411/a/alphastats/0.4.4-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 16:31:35] INFO root fetch - processPackages [richvalues]: Downloading https://files.pythonhosted.org/packages/3a/2c/76b8773b8f3b71ea54b1e84cea9d0ab49af98e4802f53a36690a6e09d49f/richvalues-3.0.6.tar.gz
+[2023-04-11 16:31:35] INFO root fetch - processPackages [richvalues]: executing diffoscope
+[2023-04-11 16:31:35] INFO root fetch - processPackages [richvalues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richvalues-3.0.5.tar.gz tmp/richvalues-3.0.6.tar.gz --markdown 20230411/r/richvalues/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2023-04-11 16:31:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:35] INFO root fetch - processPackages [chirpstack-api]: New version: [4.3.1] Old Version: [4.3.0]
+[2023-04-11 16:31:36] INFO root fetch - processPackages [chirpstack-api]: Downloading https://files.pythonhosted.org/packages/60/e5/f9309a659a05a86197f3aea98571a3c3cbdfebbee544e6aa8d7975ba3421/chirpstack_api-4.3.0-py3-none-any.whl
+[2023-04-11 16:31:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:36] INFO root fetch - processPackages [morphcp]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-04-11 16:31:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:36] INFO root fetch - processPackages [chirpstack-api]: Downloading https://files.pythonhosted.org/packages/4d/81/c8b082876032b18962d766a59ee5ca86694b08054c22da439cc7af476b4e/chirpstack_api-4.3.1-py3-none-any.whl
+[2023-04-11 16:31:36] WARNING root fetch - processPackages [shipyard-bp-utils]: Skipping, unable to determine old version
+[2023-04-11 16:31:36] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:31:36] WARNING root fetch - processPackages [datrafilcha]: Skipping, unable to determine old version
+[2023-04-11 16:31:36] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:31:36] INFO root fetch - processPackages [morphcp]: Downloading https://files.pythonhosted.org/packages/a5/39/aa8fb0aa7e722a451322426d91f4116f78f260402d1b3d84236843ad9664/morphcp-0.0.6.tar.gz
+[2023-04-11 16:31:36] INFO root fetch - processPackages [ape-hardhat]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-11 16:31:36] INFO root fetch - processPackages [chirpstack-api]: executing diffoscope
+[2023-04-11 16:31:36] INFO root fetch - processPackages [chirpstack-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chirpstack_api-4.3.0-py3-none-any.whl.zip tmp/chirpstack_api-4.3.1-py3-none-any.whl.zip --markdown 20230411/c/chirpstack-api/4.3.0-4.3.1/diff.md --exclude *.pyd
+[2023-04-11 16:31:36] INFO root fetch - processPackages [ape-hardhat]: Downloading https://files.pythonhosted.org/packages/96/90/50aa1bfa7ea2c3b6a5bdce2e06443eff3e50a4cf984e76217832013c21aa/ape-hardhat-0.6.2.tar.gz
+[2023-04-11 16:31:36] INFO root fetch - processPackages [morphcp]: Downloading https://files.pythonhosted.org/packages/7c/db/427c3c96aef18f223d2336a4f983cbe03ac86ab2dec4779de618423e48fe/morphcp-0.0.9.tar.gz
+[2023-04-11 16:31:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:37] INFO root fetch - processPackages [morphcp]: executing diffoscope
+[2023-04-11 16:31:37] INFO root fetch - processPackages [morphcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphcp-0.0.6.tar.gz tmp/morphcp-0.0.9.tar.gz --markdown 20230411/m/morphcp/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 16:31:37] INFO root fetch - processPackages [autumn8]: New version: [1.0.1.post1] Old Version: [1.0.1]
+[2023-04-11 16:31:37] INFO root fetch - processPackages [ape-hardhat]: Downloading https://files.pythonhosted.org/packages/cd/4d/3c19da6a4c194f37001377438a43f662279095a7325ccdab746cc2ae9484/ape-hardhat-0.6.3.tar.gz
+[2023-04-11 16:31:37] INFO root fetch - processPackages [autumn8]: Downloading https://files.pythonhosted.org/packages/b8/44/4a0074660863a42ccce39fac8032ce7e86e9b1a001ac7d769954061eb28e/autumn8-1.0.1.post1.tar.gz
+[2023-04-11 16:31:37] INFO root fetch - processPackages [ape-hardhat]: executing diffoscope
+[2023-04-11 16:31:37] INFO root fetch - processPackages [ape-hardhat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-hardhat-0.6.2.tar.gz tmp/ape-hardhat-0.6.3.tar.gz --markdown 20230411/a/ape-hardhat/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-11 16:31:37] INFO root fetch - processPackages [autumn8]: executing diffoscope
+[2023-04-11 16:31:37] INFO root fetch - processPackages [autumn8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autumn8-1.0.1.tar.gz tmp/autumn8-1.0.1.post1.tar.gz --markdown 20230411/a/autumn8/1.0.1-1.0.1.post1/diff.md --exclude *.pyd
+[2023-04-11 16:31:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:37] WARNING root fetch - processPackages [biobb-flexdyn]: Skipping, unable to determine old version
+[2023-04-11 16:31:37] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:31:37] INFO root fetch - processPackages [richvalues]: New version: [3.0.7] Old Version: [3.0.6]
+[2023-04-11 16:31:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:38] INFO root fetch - processPackages [richvalues]: Downloading https://files.pythonhosted.org/packages/4e/61/6e19820e006c8bcd68b12406d66f3d5544c317c37da793733d422ce54360/richvalues-3.0.7.tar.gz
+[2023-04-11 16:31:38] INFO root fetch - processPackages [cloud-governance]: New version: [1.1.9] Old Version: [1.1.86]
+[2023-04-11 16:31:38] INFO root fetch - processPackages [cloud-governance]: Downloading https://files.pythonhosted.org/packages/1b/ed/e5a0dafff0d99b404738b3f0bc2bb3aa938fb6d104d50532627a3c0aaf86/cloud-governance-1.1.86.tar.gz
+[2023-04-11 16:31:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:38] INFO root fetch - processPackages [cloud-governance]: Downloading https://files.pythonhosted.org/packages/69/7d/2af3d1ff9de80efb4c3fbb6bc20c0d47043fd3a258363bb6ed4e4a5ad1e8/cloud-governance-1.1.9.tar.gz
+[2023-04-11 16:31:39] INFO root fetch - processPackages [cloud-governance]: executing diffoscope
+[2023-04-11 16:31:39] INFO root fetch - processPackages [cloud-governance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-governance-1.1.86.tar.gz tmp/cloud-governance-1.1.9.tar.gz --markdown 20230411/c/cloud-governance/1.1.86-1.1.9/diff.md --exclude *.pyd
+[2023-04-11 16:31:41] INFO root fetch - processPackages [richvalues]: executing diffoscope
+[2023-04-11 16:31:41] INFO root fetch - processPackages [richvalues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richvalues-3.0.6.tar.gz tmp/richvalues-3.0.7.tar.gz --markdown 20230411/r/richvalues/3.0.6-3.0.7/diff.md --exclude *.pyd
+[2023-04-11 16:31:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:46] INFO root fetch - processPackages [codeforlife-portal]: Downloading https://files.pythonhosted.org/packages/4b/33/908cc56053eac27f161dd60178364693054a2d8a33fc18e1bc5001a50954/codeforlife-portal-6.9.0.tar.gz
+[2023-04-11 16:31:48] INFO root fetch - processPackages [codeforlife-portal]: executing diffoscope
+[2023-04-11 16:31:48] INFO root fetch - processPackages [codeforlife-portal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeforlife-portal-6.8.9.tar.gz tmp/codeforlife-portal-6.9.0.tar.gz --markdown 20230411/c/codeforlife-portal/6.8.9-6.9.0/diff.md --exclude *.pyd
+[2023-04-11 16:31:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:31:53] INFO root fetch - main [MainThread]: Store serial: [17662222]
