@@ -21181,3 +21181,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 21:39:58] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:40:33] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:40:33] INFO root fetch - main [MainThread]: Store serial: [17665460]
+[2023-04-11 21:45:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17665460]
+[2023-04-11 21:45:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-11 21:45:48] INFO root fetch - processPackages [wvpy]: New version: [0.4.0] Old Version: [0.3.9]
+[2023-04-11 21:45:48] WARNING root fetch - processPackages [py-ezbar]: Skipping, unable to determine old version
+[2023-04-11 21:45:48] INFO root fetch - main [MainThread]: error
+[2023-04-11 21:45:48] INFO root fetch - processPackages [alpaca-py]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-11 21:45:48] INFO root fetch - processPackages [graphql-service-framework]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 21:45:52] INFO root fetch - processPackages [ezcode]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 21:45:54] INFO root fetch - processPackages [wvpy]: Downloading https://files.pythonhosted.org/packages/00/a4/cbe468a8e38925fa7ca606dbc59779e8236fbfde6b6744ea20f6543e6425/wvpy-0.3.9.tar.gz
+[2023-04-11 21:45:56] INFO root fetch - processPackages [wvpy]: Downloading https://files.pythonhosted.org/packages/d4/c9/089ea059c26334474ccf9379ab12ac5cbe782af1b8bf23fde118b0281c1c/wvpy-0.4.0.tar.gz
+[2023-04-11 21:45:56] INFO root fetch - processPackages [wvpy]: executing diffoscope
+[2023-04-11 21:45:56] INFO root fetch - processPackages [wvpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wvpy-0.3.9.tar.gz tmp/wvpy-0.4.0.tar.gz --markdown 20230411/w/wvpy/0.3.9-0.4.0/diff.md --exclude *.pyd
+[2023-04-11 21:45:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:46:00] INFO root fetch - processPackages [alpaca-py]: Downloading https://files.pythonhosted.org/packages/4c/ed/00f8d479aa29602c849dd2852872ab2b3d4b676a9b4f2a0587d80a1bb618/alpaca-py-0.8.0.tar.gz
+[2023-04-11 21:46:03] INFO root fetch - processPackages [alpaca-py]: Downloading https://files.pythonhosted.org/packages/f6/e3/8e04f3640ceaa3be26a2ff0cca247bbf973276be5451c3be67661c48f59f/alpaca_py-0.8.1.tar.gz
+[2023-04-11 21:46:03] INFO root fetch - processPackages [alpaca-py]: executing diffoscope
+[2023-04-11 21:46:03] INFO root fetch - processPackages [alpaca-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alpaca-py-0.8.0.tar.gz tmp/alpaca_py-0.8.1.tar.gz --markdown 20230411/a/alpaca-py/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-11 21:46:03] WARNING root fetch - processPackages [deep-tracking]: Skipping, unable to determine old version
+[2023-04-11 21:46:03] INFO root fetch - main [MainThread]: error
+[2023-04-11 21:46:04] INFO root fetch - processPackages [macrostrat-database]: New version: [2.0.1] Old Version: [2.0.0.dev3]
+[2023-04-11 21:46:04] INFO root fetch - processPackages [graphql-service-framework]: executing diffoscope
+[2023-04-11 21:46:04] INFO root fetch - processPackages [graphql-service-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_service_framework-1.0.8.tar.gz tmp/graphql_service_framework-1.0.9.tar.gz --markdown 20230411/g/graphql-service-framework/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 21:46:04] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:46:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:46:09] INFO root fetch - processPackages [gitflow-pyproject-version-bumper]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 21:46:15] INFO root fetch - processPackages [gitflow-pyproject-version-bumper]: Downloading https://files.pythonhosted.org/packages/77/e2/ad27c92ab878995f8a39c4b6581da25aa27405bfb38eb4e3f15a24e97455/gitflow-pyproject-version-bumper-0.1.2.tar.gz
+[2023-04-11 21:46:24] INFO root fetch - processPackages [macrostrat-database]: Downloading https://files.pythonhosted.org/packages/1a/36/3450ec25b555fcbf268630815ab6aaebfc6a1add970aab9a1badcbd8dc88/macrostrat_database-2.0.1-py3-none-any.whl
+[2023-04-11 21:46:25] INFO root fetch - processPackages [macrostrat-database]: executing diffoscope
+[2023-04-11 21:46:25] INFO root fetch - processPackages [macrostrat-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrostrat_database-2.0.0.dev3.tar.gz tmp/macrostrat_database-2.0.1-py3-none-any.whl.zip --markdown 20230411/m/macrostrat-database/2.0.0.dev3-2.0.1/diff.md --exclude *.pyd
+[2023-04-11 21:46:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:46:28] INFO root fetch - processPackages [ezcode]: executing diffoscope
+[2023-04-11 21:46:28] INFO root fetch - processPackages [ezcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezcode-1.0.8.tar.gz tmp/ezcode-1.0.9.tar.gz --markdown 20230411/e/ezcode/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 21:46:29] INFO root fetch - processPackages [gitflow-pyproject-version-bumper]: Downloading https://files.pythonhosted.org/packages/12/c6/99c3e880fac7540ee8dea6c92cef0bcac4facef3a771ac61aa3b18cad1f3/gitflow-pyproject-version-bumper-0.1.3.tar.gz
+[2023-04-11 21:46:29] INFO root fetch - processPackages [gitflow-pyproject-version-bumper]: executing diffoscope
+[2023-04-11 21:46:29] INFO root fetch - processPackages [gitflow-pyproject-version-bumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitflow-pyproject-version-bumper-0.1.2.tar.gz tmp/gitflow-pyproject-version-bumper-0.1.3.tar.gz --markdown 20230411/g/gitflow-pyproject-version-bumper/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 21:46:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:46:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:46:30] INFO root fetch - main [MainThread]: Store serial: [17665494]
