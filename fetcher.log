@@ -15284,3 +15284,70 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 15:34:26] INFO root fetch - processPackages [alphaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alphaz-0.7.3.6.tar.gz tmp/alphaz-0.7.3.7.tar.gz --markdown 20230411/a/alphaz/0.7.3.6-0.7.3.7/diff.md --exclude *.pyd
 [2023-04-11 15:34:30] INFO root fetch - main [MainThread]: success
 [2023-04-11 15:34:30] INFO root fetch - main [MainThread]: Store serial: [17661433]
+[2023-04-11 15:39:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17661433]
+[2023-04-11 15:39:38] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-11 15:39:38] WARNING root fetch - processPackages [gotya-text-anonymizer]: Skipping, unable to determine old version
+[2023-04-11 15:39:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 15:39:38] WARNING root fetch - processPackages [simepy]: Skipping, unable to determine old version
+[2023-04-11 15:39:38] INFO root fetch - processPackages [weekdaytime]: New version: [0.0.9] Old Version: [0.0.12]
+[2023-04-11 15:39:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 15:39:38] INFO root fetch - processPackages [lacuscore]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-04-11 15:39:38] INFO root fetch - processPackages [django-pgpubsub]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-11 15:39:38] INFO root fetch - processPackages [kameleo.local-api-client]: New version: [2.9.0] Old Version: [2.6.0]
+[2023-04-11 15:39:38] WARNING root fetch - processPackages [gotya-text-anonymizer]: Skipping, unable to determine old version
+[2023-04-11 15:39:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 15:39:38] ERROR root fetch - processPackages [eccLib]: Unable to get metadata: No such project 'eccLib'
+[2023-04-11 15:39:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 15:39:38] INFO root fetch - processPackages [ramCOH]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-11 15:39:38] INFO root fetch - processPackages [weekdaytime]: Downloading https://files.pythonhosted.org/packages/5b/77/1efffdaafb788078ab9cdd8dc0db559201a3705be7b1fbfafd8fa5944380/weekdaytime-0.0.12.tar.gz
+[2023-04-11 15:39:38] INFO root fetch - processPackages [django-pgpubsub]: Downloading https://files.pythonhosted.org/packages/b4/37/2c69572b345f64a24f7eb78815ff620c3a797d167b7eb03405f554404399/django_pgpubsub-1.0.5.tar.gz
+[2023-04-11 15:39:38] INFO root fetch - processPackages [lacuscore]: Downloading https://files.pythonhosted.org/packages/73/0c/0adb61674569882ebc2bd306cf5fef87d2eab78ecb2db5479f1c6b56b238/lacuscore-1.4.4.tar.gz
+[2023-04-11 15:39:38] INFO root fetch - processPackages [kameleo.local-api-client]: Downloading https://files.pythonhosted.org/packages/c9/5a/cd4681ffc3caf00a4afbcc1f5296ac0f0f5facb841d8d6c809aeca89e6d1/kameleo.local_api_client-2.6.0.tar.gz
+[2023-04-11 15:39:39] INFO root fetch - processPackages [ramCOH]: Downloading https://files.pythonhosted.org/packages/74/a7/4408efd9d17d1adf651aed20146e9e0207ed54bd5764cd248d6fa31292a4/ramCOH-1.1.2.tar.gz
+[2023-04-11 15:39:39] INFO root fetch - processPackages [weekdaytime]: executing diffoscope
+[2023-04-11 15:39:39] INFO root fetch - processPackages [weekdaytime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weekdaytime-0.0.12.tar.gz tmp/weekdaytime-0.0.9.tar.gz --markdown 20230411/w/weekdaytime/0.0.12-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 15:39:39] INFO root fetch - processPackages [lacuscore]: executing diffoscope
+[2023-04-11 15:39:39] INFO root fetch - processPackages [lacuscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lacuscore-1.4.3.tar.gz tmp/lacuscore-1.4.4.tar.gz --markdown 20230411/l/lacuscore/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-04-11 15:39:39] INFO root fetch - processPackages [django-pgpubsub]: executing diffoscope
+[2023-04-11 15:39:39] INFO root fetch - processPackages [django-pgpubsub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pgpubsub-1.0.4.tar.gz tmp/django_pgpubsub-1.0.5.tar.gz --markdown 20230411/d/django-pgpubsub/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-11 15:39:39] INFO root fetch - processPackages [ramCOH]: executing diffoscope
+[2023-04-11 15:39:39] INFO root fetch - processPackages [ramCOH]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramCOH-1.1.1.tar.gz tmp/ramCOH-1.1.2.tar.gz --markdown 20230411/r/ramCOH/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-11 15:39:39] INFO root fetch - processPackages [kameleo.local-api-client]: Downloading https://files.pythonhosted.org/packages/9e/8f/de0acae5cbcd3277c67c17ab66618830c78f209626351b0ee615ab53ba65/kameleo.local_api_client-2.9.0.tar.gz
+[2023-04-11 15:39:39] INFO root fetch - processPackages [kameleo.local-api-client]: executing diffoscope
+[2023-04-11 15:39:39] INFO root fetch - processPackages [kameleo.local-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kameleo.local_api_client-2.6.0.tar.gz tmp/kameleo.local_api_client-2.9.0.tar.gz --markdown 20230411/k/kameleo.local-api-client/2.6.0-2.9.0/diff.md --exclude *.pyd
+[2023-04-11 15:39:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:40] INFO root fetch - processPackages [python-selvpcclient]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-04-11 15:39:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:40] INFO root fetch - processPackages [python-selvpcclient]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-04-11 15:39:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:40] INFO root fetch - processPackages [python-selvpcclient]: Downloading https://files.pythonhosted.org/packages/2a/8c/8a1e66aea04413334ca6198ae0ba01c054a668602258a7fcea71f7c569d6/python-selvpcclient-2.3.0.tar.gz
+[2023-04-11 15:39:40] INFO root fetch - processPackages [python-selvpcclient]: Downloading https://files.pythonhosted.org/packages/2a/8c/8a1e66aea04413334ca6198ae0ba01c054a668602258a7fcea71f7c569d6/python-selvpcclient-2.3.0.tar.gz
+[2023-04-11 15:39:40] INFO root fetch - processPackages [ydata-sdk]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-11 15:39:40] INFO root fetch - processPackages [biobb-dna]: New version: [4.0.0] Old Version: [3.9.0]
+[2023-04-11 15:39:40] INFO root fetch - processPackages [ydata-sdk]: Downloading https://files.pythonhosted.org/packages/40/62/b58752a6fd7c3a5be8edfbf3ec3e46b8c4d457204a303cf1721ac21d71b1/ydata_sdk-0.3.0-py39-none-any.whl
+[2023-04-11 15:39:40] INFO root fetch - processPackages [biobb-dna]: Downloading https://files.pythonhosted.org/packages/26/0a/bb6609ac290394bd02d32b42b00f45c6483f9f677eea6ac9d41b946a6162/biobb_dna-3.9.0.tar.gz
+[2023-04-11 15:39:40] INFO root fetch - processPackages [python-selvpcclient]: Downloading https://files.pythonhosted.org/packages/e6/6c/ca10b47d2f86cceb96bbcb84a63285c7bf84f361a53e1996d2702f19551d/python-selvpcclient-2.4.0.tar.gz
+[2023-04-11 15:39:40] INFO root fetch - processPackages [python-selvpcclient]: Downloading https://files.pythonhosted.org/packages/e6/6c/ca10b47d2f86cceb96bbcb84a63285c7bf84f361a53e1996d2702f19551d/python-selvpcclient-2.4.0.tar.gz
+[2023-04-11 15:39:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:41] INFO root fetch - processPackages [ydata-sdk]: Downloading https://files.pythonhosted.org/packages/27/d3/a891f3dd38995b16e85b3abc3560e518c24bd93fbb31dc660a264cf46580/ydata_sdk-0.4.0-py39-none-any.whl
+[2023-04-11 15:39:41] INFO root fetch - processPackages [beards-analytics]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 15:39:41] INFO root fetch - processPackages [python-selvpcclient]: executing diffoscope
+[2023-04-11 15:39:41] INFO root fetch - processPackages [python-selvpcclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-selvpcclient-2.3.0.tar.gz tmp/python-selvpcclient-2.4.0.tar.gz --markdown 20230411/p/python-selvpcclient/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-04-11 15:39:41] INFO root fetch - processPackages [python-selvpcclient]: executing diffoscope
+[2023-04-11 15:39:41] INFO root fetch - processPackages [python-selvpcclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-selvpcclient-2.3.0.tar.gz tmp/python-selvpcclient-2.4.0.tar.gz --markdown 20230411/p/python-selvpcclient/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-04-11 15:39:41] INFO root fetch - processPackages [biobb-dna]: Downloading https://files.pythonhosted.org/packages/8b/e4/122357aae8b362e3e252dbfdfaf43ceeb84901c1e961284fab6a21328182/biobb_dna-4.0.0.tar.gz
+[2023-04-11 15:39:41] INFO root fetch - processPackages [ydata-sdk]: executing diffoscope
+[2023-04-11 15:39:41] INFO root fetch - processPackages [ydata-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ydata_sdk-0.3.0-py39-none-any.whl.zip tmp/ydata_sdk-0.4.0-py39-none-any.whl.zip --markdown 20230411/y/ydata-sdk/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-11 15:39:41] INFO root fetch - processPackages [beards-analytics]: Downloading https://files.pythonhosted.org/packages/7c/3e/264e11d0e5e567896e0c62f3c9b8447c4ff94f344d289ded935362bed313/beards_analytics-0.1.0-py3-none-any.whl
+[2023-04-11 15:39:41] INFO root fetch - processPackages [biobb-dna]: executing diffoscope
+[2023-04-11 15:39:41] INFO root fetch - processPackages [biobb-dna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobb_dna-3.9.0.tar.gz tmp/biobb_dna-4.0.0.tar.gz --markdown 20230411/b/biobb-dna/3.9.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-11 15:39:41] INFO root fetch - processPackages [beards-analytics]: Downloading https://files.pythonhosted.org/packages/35/37/c8a59b272483daf5dad5964afe87991705f722caa4fbd7c65dd17f02698f/beards_analytics-0.1.1-py3-none-any.whl
+[2023-04-11 15:39:41] INFO root fetch - processPackages [beards-analytics]: executing diffoscope
+[2023-04-11 15:39:41] INFO root fetch - processPackages [beards-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beards_analytics-0.1.0-py3-none-any.whl.zip tmp/beards_analytics-0.1.1-py3-none-any.whl.zip --markdown 20230411/b/beards-analytics/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 15:39:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:39:45] INFO root fetch - main [MainThread]: Store serial: [17661480]
