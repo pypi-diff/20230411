@@ -18192,3 +18192,85 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 18:33:24] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:33:24] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:33:24] INFO root fetch - main [MainThread]: Store serial: [17663481]
+[2023-04-11 18:38:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663481]
+[2023-04-11 18:38:32] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-11 18:38:32] INFO root fetch - processPackages [cortex-cli]: New version: [1.12.4] Old Version: [1.12.3]
+[2023-04-11 18:38:32] WARNING root fetch - processPackages [handytat]: Skipping, unable to determine old version
+[2023-04-11 18:38:32] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:38:32] INFO root fetch - processPackages [help2man]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-11 18:38:32] INFO root fetch - processPackages [dvc-pandas]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-11 18:38:33] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-11 18:38:33] INFO root fetch - processPackages [ascvid]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-11 18:38:33] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-11 18:38:33] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230411/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-11 18:38:33] INFO root fetch - processPackages [dvc-pandas]: Downloading https://files.pythonhosted.org/packages/4d/65/06cf4921a7274d1deb182a3a904bc184ea331d146ab8471bbe345f50e0c2/dvc-pandas-0.0.9.tar.gz
+[2023-04-11 18:38:33] INFO root fetch - processPackages [help2man]: Downloading https://files.pythonhosted.org/packages/a4/f4/d85dc19415c17127e217d89a8b666385acb67ddf01c41af6f3872d042866/help2man-0.0.5.tar.gz
+[2023-04-11 18:38:33] INFO root fetch - processPackages [cortex-cli]: Downloading https://files.pythonhosted.org/packages/e3/d5/703ac324bcdc96913c41188c4c50efd5295ba45369953231e8aa3fd0a1aa/cortex_cli-1.12.4.tar.gz
+[2023-04-11 18:38:33] INFO root fetch - processPackages [ascvid]: Downloading https://files.pythonhosted.org/packages/00/a6/d4137c6360597cadcaf891e13a6c151055ebd2c42dc2ed417824e90a11bb/ascvid-1.4.0.tar.gz
+[2023-04-11 18:38:33] INFO root fetch - processPackages [cortex-cli]: executing diffoscope
+[2023-04-11 18:38:33] INFO root fetch - processPackages [cortex-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortex_cli-1.12.3.tar.gz tmp/cortex_cli-1.12.4.tar.gz --markdown 20230411/c/cortex-cli/1.12.3-1.12.4/diff.md --exclude *.pyd
+[2023-04-11 18:38:33] INFO root fetch - processPackages [ascvid]: executing diffoscope
+[2023-04-11 18:38:33] INFO root fetch - processPackages [ascvid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ascvid-1.3.0.tar.gz tmp/ascvid-1.4.0.tar.gz --markdown 20230411/a/ascvid/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-11 18:38:33] INFO root fetch - processPackages [help2man]: Downloading https://files.pythonhosted.org/packages/7c/47/cb45e173a06ad3379cdf1a3a0145b6056e038b0fa6ec0a728995a90409d5/help2man-0.0.6.tar.gz
+[2023-04-11 18:38:33] INFO root fetch - processPackages [dvc-pandas]: Downloading https://files.pythonhosted.org/packages/3c/30/db27baa2dba41dd4db23383a8b50e17f1b8a05adf0a047b1b8ec79af11d3/dvc-pandas-0.1.0.tar.gz
+[2023-04-11 18:38:33] INFO root fetch - processPackages [help2man]: executing diffoscope
+[2023-04-11 18:38:33] INFO root fetch - processPackages [help2man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/help2man-0.0.5.tar.gz tmp/help2man-0.0.6.tar.gz --markdown 20230411/h/help2man/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 18:38:33] INFO root fetch - processPackages [dvc-pandas]: executing diffoscope
+[2023-04-11 18:38:33] INFO root fetch - processPackages [dvc-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvc-pandas-0.0.9.tar.gz tmp/dvc-pandas-0.1.0.tar.gz --markdown 20230411/d/dvc-pandas/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 18:38:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:34] INFO root fetch - processPackages [DonatelloPyzza]: New version: [1.6.5.2] Old Version: [1.6.5.1]
+[2023-04-11 18:38:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:34] INFO root fetch - processPackages [DonatelloPyzza]: Downloading https://files.pythonhosted.org/packages/ef/e5/6fd003dcea6961baaa5c9e9e4a0f8366e1ba2b42945b003467e0f65dba78/donatellopyzza-1.6.5.2.tar.gz
+[2023-04-11 18:38:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:35] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.13.0.dev20230411] Old Version: [2.13.0.dev20230410]
+[2023-04-11 18:38:35] INFO root fetch - processPackages [gs-dbs-client]: New version: [0.2.6.post9] Old Version: [0.2.6.post8]
+[2023-04-11 18:38:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:35] INFO root fetch - processPackages [dapr-dev]: New version: [1.9.0rc1.dev1449] Old Version: [1.9.0rc1.dev1443]
+[2023-04-11 18:38:35] INFO root fetch - processPackages [DonatelloPyzza]: executing diffoscope
+[2023-04-11 18:38:35] INFO root fetch - processPackages [DonatelloPyzza]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donatellopyzza-1.6.5.1.tar.gz tmp/donatellopyzza-1.6.5.2.tar.gz --markdown 20230411/D/DonatelloPyzza/1.6.5.1-1.6.5.2/diff.md --exclude *.pyd
+[2023-04-11 18:38:35] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/c4/1d/20190ef840643510b2eb9d4fd0fdec0c533f904882e5ad5ace3a2b4b606d/tf_nightly_intel-2.13.0.dev20230410-cp39-cp39-win_amd64.whl
+[2023-04-11 18:38:35] INFO root fetch - processPackages [gs-dbs-client]: Downloading https://files.pythonhosted.org/packages/25/b6/2fafa4c500c6781c82abca3239d102ab8eca752333d3a829b73ba87073c6/gs-dbs-client-0.2.6.post8.tar.gz
+[2023-04-11 18:38:35] INFO root fetch - processPackages [dapr-dev]: Downloading https://files.pythonhosted.org/packages/fb/78/2d9dbac935befb0a3b05c7cdd9897f809875590b9ae743295fa586972f02/dapr-dev-1.9.0rc1.dev1443.tar.gz
+[2023-04-11 18:38:35] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 178120532>=10485760
+[2023-04-11 18:38:35] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:38:35] INFO root fetch - processPackages [flask-dapr-dev]: New version: [1.9.0rc1.dev1449] Old Version: [1.9.0rc1.dev1443]
+[2023-04-11 18:38:35] INFO root fetch - processPackages [dapr-dev]: Downloading https://files.pythonhosted.org/packages/dd/2a/6022aa84f52cff56de04aed15fbe64f03d7083365a460b242aaffeb85490/dapr-dev-1.9.0rc1.dev1449.tar.gz
+[2023-04-11 18:38:35] INFO root fetch - processPackages [flask-dapr-dev]: Downloading https://files.pythonhosted.org/packages/7d/81/2000230b01229f4881a5edb8717b2f087b15425118ad11fd81ab31265df5/flask-dapr-dev-1.9.0rc1.dev1443.tar.gz
+[2023-04-11 18:38:35] INFO root fetch - processPackages [dapr-dev]: executing diffoscope
+[2023-04-11 18:38:35] INFO root fetch - processPackages [dapr-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dapr-dev-1.9.0rc1.dev1443.tar.gz tmp/dapr-dev-1.9.0rc1.dev1449.tar.gz --markdown 20230411/d/dapr-dev/1.9.0rc1.dev1443-1.9.0rc1.dev1449/diff.md --exclude *.pyd
+[2023-04-11 18:38:35] INFO root fetch - processPackages [gs-dbs-client]: Downloading https://files.pythonhosted.org/packages/dd/58/b78ade396daa994f4236344712ad49810942a800b3d2f7a0cea347ad0489/gs-dbs-client-0.2.6.post9.tar.gz
+[2023-04-11 18:38:35] INFO root fetch - processPackages [flask-dapr-dev]: Downloading https://files.pythonhosted.org/packages/72/21/c3c8402d0d29919a3873cdfd9eac55726ffaaeb1afd7b944c55e34b8c4fc/flask-dapr-dev-1.9.0rc1.dev1449.tar.gz
+[2023-04-11 18:38:35] INFO root fetch - processPackages [flask-dapr-dev]: executing diffoscope
+[2023-04-11 18:38:35] INFO root fetch - processPackages [flask-dapr-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-dapr-dev-1.9.0rc1.dev1443.tar.gz tmp/flask-dapr-dev-1.9.0rc1.dev1449.tar.gz --markdown 20230411/f/flask-dapr-dev/1.9.0rc1.dev1443-1.9.0rc1.dev1449/diff.md --exclude *.pyd
+[2023-04-11 18:38:36] INFO root fetch - processPackages [gs-dbs-client]: executing diffoscope
+[2023-04-11 18:38:36] INFO root fetch - processPackages [gs-dbs-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs-dbs-client-0.2.6.post8.tar.gz tmp/gs-dbs-client-0.2.6.post9.tar.gz --markdown 20230411/g/gs-dbs-client/0.2.6.post8-0.2.6.post9/diff.md --exclude *.pyd
+[2023-04-11 18:38:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:36] INFO root fetch - processPackages [dapr-ext-grpc-dev]: New version: [1.9.0rc1.dev1449] Old Version: [1.9.0rc1.dev1443]
+[2023-04-11 18:38:36] INFO root fetch - processPackages [dapr-ext-grpc-dev]: Downloading https://files.pythonhosted.org/packages/b1/19/15aa011fb408837a513a0904b358a260a801a8b0634f4146bd2c3db91c64/dapr-ext-grpc-dev-1.9.0rc1.dev1443.tar.gz
+[2023-04-11 18:38:36] INFO root fetch - processPackages [dapr-ext-grpc-dev]: Downloading https://files.pythonhosted.org/packages/26/b2/f2906b85c7ba91f0abfb86a5f349fce6a024a94bd9d8ef6281be7ce95fe4/dapr-ext-grpc-dev-1.9.0rc1.dev1449.tar.gz
+[2023-04-11 18:38:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:37] INFO root fetch - processPackages [dapr-ext-grpc-dev]: executing diffoscope
+[2023-04-11 18:38:37] INFO root fetch - processPackages [dapr-ext-grpc-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dapr-ext-grpc-dev-1.9.0rc1.dev1443.tar.gz tmp/dapr-ext-grpc-dev-1.9.0rc1.dev1449.tar.gz --markdown 20230411/d/dapr-ext-grpc-dev/1.9.0rc1.dev1443-1.9.0rc1.dev1449/diff.md --exclude *.pyd
+[2023-04-11 18:38:37] WARNING root fetch - processPackages [pelican-youtube-thumbnails]: Skipping, unable to determine old version
+[2023-04-11 18:38:37] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:38:37] INFO root fetch - processPackages [dapr-ext-fastapi-dev]: New version: [1.9.0rc1.dev1449] Old Version: [1.9.0rc1.dev1443]
+[2023-04-11 18:38:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:37] INFO root fetch - processPackages [clipcrop]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-11 18:38:37] INFO root fetch - processPackages [arraytex]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-11 18:38:37] INFO root fetch - processPackages [dapr-ext-fastapi-dev]: Downloading https://files.pythonhosted.org/packages/6d/86/ddb48cde29979fe85e46a1c42268aa201c493c97d4f6357771be4bc4d4ef/dapr-ext-fastapi-dev-1.9.0rc1.dev1443.tar.gz
+[2023-04-11 18:38:37] INFO root fetch - processPackages [clipcrop]: Downloading https://files.pythonhosted.org/packages/02/3c/1525cb8db8652946a24807c4a3776ce1830886b9e64a2cd69bf9b594a862/clipcrop-1.0.4.tar.gz
+[2023-04-11 18:38:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:37] INFO root fetch - processPackages [dapr-ext-fastapi-dev]: Downloading https://files.pythonhosted.org/packages/f5/28/3355a2b54a052c57f63478ce414e426fb527a39a9d039fd45efc31343321/dapr-ext-fastapi-dev-1.9.0rc1.dev1449.tar.gz
+[2023-04-11 18:38:37] INFO root fetch - processPackages [clipcrop]: executing diffoscope
+[2023-04-11 18:38:37] INFO root fetch - processPackages [clipcrop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipcrop-1.0.3.tar.gz tmp/clipcrop-1.0.4.tar.gz --markdown 20230411/c/clipcrop/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-11 18:38:37] INFO root fetch - processPackages [arraytex]: Downloading https://files.pythonhosted.org/packages/e1/1b/78a4ccc51ecf7395688e13c78ec8e73c1779950a341bb0703c449dbeed12/arraytex-0.0.7.tar.gz
+[2023-04-11 18:38:37] INFO root fetch - processPackages [dapr-ext-fastapi-dev]: executing diffoscope
+[2023-04-11 18:38:37] INFO root fetch - processPackages [dapr-ext-fastapi-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dapr-ext-fastapi-dev-1.9.0rc1.dev1443.tar.gz tmp/dapr-ext-fastapi-dev-1.9.0rc1.dev1449.tar.gz --markdown 20230411/d/dapr-ext-fastapi-dev/1.9.0rc1.dev1443-1.9.0rc1.dev1449/diff.md --exclude *.pyd
+[2023-04-11 18:38:37] INFO root fetch - processPackages [arraytex]: executing diffoscope
+[2023-04-11 18:38:37] INFO root fetch - processPackages [arraytex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraytex-0.0.6.tar.gz tmp/arraytex-0.0.7.tar.gz --markdown 20230411/a/arraytex/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-11 18:38:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:38:39] INFO root fetch - main [MainThread]: Store serial: [17663537]
