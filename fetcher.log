@@ -2038,3 +2038,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2023-04-11 02:55:09] INFO root fetch - main [MainThread]: error
 [2023-04-11 02:55:09] INFO root fetch - main [MainThread]: Store serial: [17652415]
+[2023-04-11 03:00:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17652415]
+[2023-04-11 03:00:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-11 03:00:17] WARNING root fetch - processPackages [path-sqlmaper]: Skipping, unable to determine old version
+[2023-04-11 03:00:17] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:00:17] INFO root fetch - processPackages [vision-datasets]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-11 03:00:17] INFO root fetch - processPackages [nsface-cpu-python]: New version: [1.1.53] Old Version: [1.1.51]
+[2023-04-11 03:00:17] INFO root fetch - processPackages [naplib]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-11 03:00:17] INFO root fetch - processPackages [xj-thread]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-11 03:00:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 03:00:17] INFO root fetch - processPackages [naplib]: Downloading https://files.pythonhosted.org/packages/e6/5d/19248d42daefba5ca1c83671c019cb0ea8347a188d56d5f98994cb239bd1/naplib-0.3.1.tar.gz
+[2023-04-11 03:00:17] INFO root fetch - processPackages [vision-datasets]: Downloading https://files.pythonhosted.org/packages/cf/59/93f150f8c678390e29176da116b34a9e68aeb315e13b2568b3c7aff73011/vision_datasets-0.2.8.tar.gz
+[2023-04-11 03:00:17] INFO root fetch - processPackages [nsface-cpu-python]: Downloading https://files.pythonhosted.org/packages/c9/4b/72be945293ab6ec71cbb08352198ec7b08b1009189e15135c821e75901bd/nsface_cpu_python-1.1.53-py3-none-any.whl
+[2023-04-11 03:00:17] INFO root fetch - processPackages [nsface-cpu-python]: executing diffoscope
+[2023-04-11 03:00:17] INFO root fetch - processPackages [nsface-cpu-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsface_cpu_python-1.1.51-py3-none-any.whl.zip tmp/nsface_cpu_python-1.1.53-py3-none-any.whl.zip --markdown 20230411/n/nsface-cpu-python/1.1.51-1.1.53/diff.md --exclude *.pyd
+[2023-04-11 03:00:17] INFO root fetch - processPackages [xj-thread]: executing diffoscope
+[2023-04-11 03:00:17] INFO root fetch - processPackages [xj-thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_thread-1.2.98.tar.gz tmp/xj_thread-1.2.99.tar.gz --markdown 20230411/x/xj-thread/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-11 03:00:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-04-11 03:00:17] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230411/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:00:17] INFO root fetch - processPackages [vision-datasets]: Downloading https://files.pythonhosted.org/packages/b3/ae/c5c5ac2d9bb2baff02b3feb3edf3240d498dc61566b6e99ad1e5dea6fc3d/vision_datasets-0.2.9.tar.gz
+[2023-04-11 03:00:18] INFO root fetch - processPackages [vision-datasets]: executing diffoscope
+[2023-04-11 03:00:18] INFO root fetch - processPackages [vision-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision_datasets-0.2.8.tar.gz tmp/vision_datasets-0.2.9.tar.gz --markdown 20230411/v/vision-datasets/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-11 03:00:18] WARNING root fetch - processPackages [naplib]: Skipping package: exceeds size limit 83201100>=10485760
+[2023-04-11 03:00:18] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:00:18] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 03:00:18] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 03:00:18] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 03:00:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:00:18] WARNING root fetch - processPackages [atprotocol]: Skipping, unable to determine old version
+[2023-04-11 03:00:18] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:00:18] INFO root fetch - processPackages [benchling-api-client]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 03:00:19] INFO root fetch - processPackages [benchling-api-client]: Downloading https://files.pythonhosted.org/packages/ce/1d/9c3669396c4c52924ccf39a48a438a2c8167c4fb512eca865bd64066d33e/benchling_api_client-2.0.98.tar.gz
+[2023-04-11 03:00:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:00:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:00:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:00:20] INFO root fetch - processPackages [benchling-api-client]: Downloading https://files.pythonhosted.org/packages/f9/23/649c2147d11c171b4b3d27c6a52dab32d22dc24ec1c248cf5d1dd8a4451d/benchling_api_client-2.0.99.tar.gz
+[2023-04-11 03:00:21] INFO root fetch - processPackages [benchling-api-client]: executing diffoscope
+[2023-04-11 03:00:21] INFO root fetch - processPackages [benchling-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benchling_api_client-2.0.98.tar.gz tmp/benchling_api_client-2.0.99.tar.gz --markdown 20230411/b/benchling-api-client/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:00:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:02:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:02:12] INFO root fetch - main [MainThread]: Store serial: [17652452]
