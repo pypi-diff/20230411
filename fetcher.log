@@ -7080,3 +7080,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-11 06:27:03] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:27:03] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:27:03] INFO root fetch - main [MainThread]: Store serial: [17656042]
+[2023-04-11 06:32:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656042]
+[2023-04-11 06:32:11] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-11 06:32:11] INFO root fetch - processPackages [tap-checkly]: New version: [0.0.2b1] Old Version: [0.0.1b1]
+[2023-04-11 06:32:11] INFO root fetch - processPackages [hiq-python]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-11 06:32:11] INFO root fetch - processPackages [pytest-sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-11 06:32:11] INFO root fetch - processPackages [pytest-seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-11 06:32:11] INFO root fetch - processPackages [cs-models]: New version: [0.0.99.dev4] Old Version: [0.0.99.dev3]
+[2023-04-11 06:32:11] INFO root fetch - processPackages [tap-checkly]: Downloading https://files.pythonhosted.org/packages/0f/84/44f0fec2861bc6bf8e7319936c163a8fc69aef52bc8ad9f071592e1becf1/tap_checkly-0.0.1b1.tar.gz
+[2023-04-11 06:32:11] INFO root fetch - processPackages [hiq-python]: Downloading https://files.pythonhosted.org/packages/fa/6b/d0a7fe1a5892ecbacb7169fd8b9fd22f204a51632cdca6677b7875d7a6df/hiq_python-1.1.8-py3-none-any.whl
+[2023-04-11 06:32:11] INFO root fetch - processPackages [cs-models]: executing diffoscope
+[2023-04-11 06:32:11] INFO root fetch - processPackages [cs-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-models-0.0.99.dev3.tar.gz tmp/cs-models-0.0.99.dev4.tar.gz --markdown 20230411/c/cs-models/0.0.99.dev3-0.0.99.dev4/diff.md --exclude *.pyd
+[2023-04-11 06:32:11] INFO root fetch - processPackages [pytest-sbase]: executing diffoscope
+[2023-04-11 06:32:11] INFO root fetch - processPackages [pytest-sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-sbase-4.9.8.tar.gz tmp/pytest-sbase-4.9.9.tar.gz --markdown 20230411/p/pytest-sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-11 06:32:11] INFO root fetch - processPackages [pytest-seleniumbase]: executing diffoscope
+[2023-04-11 06:32:11] INFO root fetch - processPackages [pytest-seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-seleniumbase-4.9.8.tar.gz tmp/pytest-seleniumbase-4.9.9.tar.gz --markdown 20230411/p/pytest-seleniumbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-11 06:32:11] INFO root fetch - processPackages [tap-checkly]: Downloading https://files.pythonhosted.org/packages/cd/0c/ee55bc3e364214e74441e33fd27ab0516c2825d17eb7aff4940e80c1de6b/tap_checkly-0.0.2b1.tar.gz
+[2023-04-11 06:32:12] INFO root fetch - processPackages [hiq-python]: Downloading https://files.pythonhosted.org/packages/f7/68/51fd4e42517a2aa99374533b235cd7690043c6f0a462be5dbd09f71966e0/hiq_python-1.1.9-py3-none-any.whl
+[2023-04-11 06:32:12] INFO root fetch - processPackages [tap-checkly]: executing diffoscope
+[2023-04-11 06:32:12] INFO root fetch - processPackages [tap-checkly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_checkly-0.0.1b1.tar.gz tmp/tap_checkly-0.0.2b1.tar.gz --markdown 20230411/t/tap-checkly/0.0.1b1-0.0.2b1/diff.md --exclude *.pyd
+[2023-04-11 06:32:12] INFO root fetch - processPackages [hiq-python]: executing diffoscope
+[2023-04-11 06:32:12] INFO root fetch - processPackages [hiq-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiq_python-1.1.8-py3-none-any.whl.zip tmp/hiq_python-1.1.9-py3-none-any.whl.zip --markdown 20230411/h/hiq-python/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-11 06:32:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:32:13] INFO root fetch - processPackages [odoo12-addon-helpdesk-mgmt]: New version: [12.0.1.9.1.99.dev9] Old Version: [12.0.1.9.1.99.dev7]
+[2023-04-11 06:32:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:32:13] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: New version: [14.0.2.6.1.dev6] Old Version: [14.0.2.6.1.dev5]
+[2023-04-11 06:32:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:32:13] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: New version: [15.0.3.5.1.4] Old Version: [15.0.3.5.1.3]
+[2023-04-11 06:32:13] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: Downloading https://files.pythonhosted.org/packages/ed/e7/291d6690b3fedf6372eba2b3abb437b6aaeab3bb7047f80ec20c1750a63e/odoo14_addon_helpdesk_mgmt-14.0.2.6.1.dev6-py3-none-any.whl
+[2023-04-11 06:32:13] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: Downloading https://files.pythonhosted.org/packages/f8/9e/ee5e4d3a26193e001e0027e01d8cf643100cd4c34aa46a2ec9e04f8a7162/odoo_addon_helpdesk_mgmt-15.0.3.5.1.4-py3-none-any.whl
+[2023-04-11 06:32:13] INFO root fetch - processPackages [odoo12-addon-helpdesk-mgmt]: executing diffoscope
+[2023-04-11 06:32:13] INFO root fetch - processPackages [odoo12-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_helpdesk_mgmt-12.0.1.9.1.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_helpdesk_mgmt-12.0.1.9.1.99.dev9-py3-none-any.whl.zip --markdown 20230411/o/odoo12-addon-helpdesk-mgmt/12.0.1.9.1.99.dev7-12.0.1.9.1.99.dev9/diff.md --exclude *.pyd
+[2023-04-11 06:32:13] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: executing diffoscope
+[2023-04-11 06:32:13] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_helpdesk_mgmt-15.0.3.5.1.3-py3-none-any.whl.zip tmp/odoo_addon_helpdesk_mgmt-15.0.3.5.1.4-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-helpdesk-mgmt/15.0.3.5.1.3-15.0.3.5.1.4/diff.md --exclude *.pyd
+[2023-04-11 06:32:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:32:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:32:14] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: executing diffoscope
+[2023-04-11 06:32:14] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_helpdesk_mgmt-14.0.2.6.1.dev5-py3-none-any.whl.zip tmp/odoo14_addon_helpdesk_mgmt-14.0.2.6.1.dev6-py3-none-any.whl.zip --markdown 20230411/o/odoo14-addon-helpdesk-mgmt/14.0.2.6.1.dev5-14.0.2.6.1.dev6/diff.md --exclude *.pyd
+[2023-04-11 06:32:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:32:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:32:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:32:15] INFO root fetch - main [MainThread]: Store serial: [17656067]
