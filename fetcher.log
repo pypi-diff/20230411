@@ -12773,3 +12773,83 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 12:46:53] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:47:10] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:47:10] INFO root fetch - main [MainThread]: Store serial: [17659567]
+[2023-04-11 12:52:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659567]
+[2023-04-11 12:52:19] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-11 12:52:19] INFO root fetch - processPackages [PowerWrapper]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 12:52:19] INFO root fetch - processPackages [vbjax]: New version: [0.0.9rc3] Old Version: [0.0.9rc2]
+[2023-04-11 12:52:19] INFO root fetch - processPackages [tap-google-search-console]: New version: [1.0.0] Old Version: [0.2.1]
+[2023-04-11 12:52:19] INFO root fetch - processPackages [edwh-pipcompile-plugin]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 12:52:19] INFO root fetch - processPackages [czthry]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-11 12:52:19] ERROR root fetch - processPackages [PowerWrapper]: Unable to fetch info: No such project/version 'PowerWrapper' 0.0.3
+[2023-04-11 12:52:19] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:52:19] INFO root fetch - processPackages [czthry]: executing diffoscope
+[2023-04-11 12:52:19] INFO root fetch - processPackages [czthry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czthry-0.0.7.tar.gz tmp/czthry-0.0.9.tar.gz --markdown 20230411/c/czthry/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 12:52:19] INFO root fetch - processPackages [edwh-pipcompile-plugin]: executing diffoscope
+[2023-04-11 12:52:19] INFO root fetch - processPackages [edwh-pipcompile-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh_pipcompile_plugin-0.1.0.tar.gz tmp/edwh_pipcompile_plugin-0.1.1.tar.gz --markdown 20230411/e/edwh-pipcompile-plugin/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 12:52:19] INFO root fetch - processPackages [vbjax]: Downloading https://files.pythonhosted.org/packages/fd/11/5e6124854eed23e01d0aedfe798f3efafd48de6ba8835121425e9c775843/vbjax-0.0.9rc2.tar.gz
+[2023-04-11 12:52:19] INFO root fetch - processPackages [tap-google-search-console]: Downloading https://files.pythonhosted.org/packages/8c/fc/9aa8994a8845557d93e825421e38c1d7125f30979f6cbfca5b74760dd479/tap-google-search-console-0.2.1.tar.gz
+[2023-04-11 12:52:19] INFO root fetch - processPackages [aioflureedb]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-04-11 12:52:19] INFO root fetch - processPackages [aioflureedb]: Downloading https://files.pythonhosted.org/packages/9d/6d/8ac4c3a8f1cd60364c3ca96b32baa3054eda3b2fa294a68095455790bfa4/aioflureedb-0.7.8.tar.gz
+[2023-04-11 12:52:19] INFO root fetch - processPackages [vbjax]: Downloading https://files.pythonhosted.org/packages/5f/29/f58925c88a6cb4fb9868a140912c14da5e670371b7f027e5f195bf9156ed/vbjax-0.0.9rc3.tar.gz
+[2023-04-11 12:52:19] INFO root fetch - processPackages [tap-google-search-console]: Downloading https://files.pythonhosted.org/packages/43/8a/1210ffe6c4f3ce55c77692cf395b01d3b3a3c9d27f1f4b6381eb1000cb79/tap-google-search-console-1.0.0.tar.gz
+[2023-04-11 12:52:20] INFO root fetch - processPackages [vbjax]: executing diffoscope
+[2023-04-11 12:52:20] INFO root fetch - processPackages [vbjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbjax-0.0.9rc2.tar.gz tmp/vbjax-0.0.9rc3.tar.gz --markdown 20230411/v/vbjax/0.0.9rc2-0.0.9rc3/diff.md --exclude *.pyd
+[2023-04-11 12:52:20] INFO root fetch - processPackages [aioflureedb]: Downloading https://files.pythonhosted.org/packages/7b/a2/588d416903c4b5cd5bca141ac28ed474c8255cf907cdd4e06195a48172e5/aioflureedb-0.7.9.tar.gz
+[2023-04-11 12:52:20] INFO root fetch - processPackages [tap-google-search-console]: executing diffoscope
+[2023-04-11 12:52:20] INFO root fetch - processPackages [tap-google-search-console]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap-google-search-console-0.2.1.tar.gz tmp/tap-google-search-console-1.0.0.tar.gz --markdown 20230411/t/tap-google-search-console/0.2.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-11 12:52:20] INFO root fetch - processPackages [aioflureedb]: executing diffoscope
+[2023-04-11 12:52:20] INFO root fetch - processPackages [aioflureedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioflureedb-0.7.8.tar.gz tmp/aioflureedb-0.7.9.tar.gz --markdown 20230411/a/aioflureedb/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-04-11 12:52:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:20] INFO root fetch - processPackages [edwh]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-11 12:52:20] INFO root fetch - processPackages [edwh]: Downloading https://files.pythonhosted.org/packages/a7/5c/f2edac53bfdf4927704ef9fabeb344ef1eec90de85e7110ccb2150209214/edwh-0.4.2.tar.gz
+[2023-04-11 12:52:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:20] INFO root fetch - processPackages [touch-sdk]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-11 12:52:20] INFO root fetch - processPackages [edwh]: executing diffoscope
+[2023-04-11 12:52:20] INFO root fetch - processPackages [edwh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh-0.4.1.tar.gz tmp/edwh-0.4.2.tar.gz --markdown 20230411/e/edwh/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-11 12:52:20] INFO root fetch - processPackages [touch-sdk]: Downloading https://files.pythonhosted.org/packages/63/08/5984735f47a03084b849930184e0c1400625eecb3ad345c846b01f4fcad5/touch_sdk-0.6.3.tar.gz
+[2023-04-11 12:52:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:21] INFO root fetch - processPackages [napari-cellseg3d]: New version: [0.0.2rc2] Old Version: [0.0.2rc1]
+[2023-04-11 12:52:21] INFO root fetch - processPackages [touch-sdk]: Downloading https://files.pythonhosted.org/packages/89/53/f5f326e3313d3a4047c00422871731ddd1429c910e64db54a24afef1a8c3/touch_sdk-0.6.4.tar.gz
+[2023-04-11 12:52:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:21] INFO root fetch - processPackages [gradio-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 12:52:21] INFO root fetch - processPackages [napari-cellseg3d]: Downloading https://files.pythonhosted.org/packages/b5/73/ddd2fe7d703214674056ee5da61f9f41b999c3dfeb5e16d63e7563eb565d/napari-cellseg3d-0.0.2rc1.tar.gz
+[2023-04-11 12:52:21] INFO root fetch - processPackages [gradio-client]: Downloading https://files.pythonhosted.org/packages/fe/e0/8e7b58f10c519256701123e79abdaad3744fb52da40ce7c62ef1cd4223a8/gradio_client-0.0.8.tar.gz
+[2023-04-11 12:52:21] INFO root fetch - processPackages [touch-sdk]: executing diffoscope
+[2023-04-11 12:52:21] INFO root fetch - processPackages [touch-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/touch_sdk-0.6.3.tar.gz tmp/touch_sdk-0.6.4.tar.gz --markdown 20230411/t/touch-sdk/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-11 12:52:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:21] INFO root fetch - processPackages [hil-core]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 12:52:21] INFO root fetch - processPackages [hil-core]: Downloading https://files.pythonhosted.org/packages/99/0c/f0336da4fcb0c320e721182597967cfe954f3196bebf0b040da04a5b45c0/hil_core-0.0.2-cp37-cp37m-win_amd64.whl
+[2023-04-11 12:52:21] INFO root fetch - processPackages [gradio-client]: Downloading https://files.pythonhosted.org/packages/bd/3a/51af5c7bd425b8f5ba426326a13561f07413871dae0ba3b326bc7ccb986a/gradio_client-0.0.9.tar.gz
+[2023-04-11 12:52:21] INFO root fetch - processPackages [napari-cellseg3d]: Downloading https://files.pythonhosted.org/packages/30/19/60416eda7dd66096efaba80c705c69766043cdaaf5cca46ec02c3286e74a/napari_cellseg3d-0.0.2rc2.tar.gz
+[2023-04-11 12:52:21] INFO root fetch - processPackages [hil-core]: Downloading https://files.pythonhosted.org/packages/31/8b/2d2cb1a483956fc66e23eb781304cb453edb94a85fc0d3fd773694fe293c/hil_core-0.0.3-cp37-cp37m-win_amd64.whl
+[2023-04-11 12:52:21] INFO root fetch - processPackages [gradio-client]: executing diffoscope
+[2023-04-11 12:52:21] INFO root fetch - processPackages [gradio-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_client-0.0.8.tar.gz tmp/gradio_client-0.0.9.tar.gz --markdown 20230411/g/gradio-client/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 12:52:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:22] INFO root fetch - processPackages [napari-cellseg3d]: executing diffoscope
+[2023-04-11 12:52:22] INFO root fetch - processPackages [napari-cellseg3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-cellseg3d-0.0.2rc1.tar.gz tmp/napari_cellseg3d-0.0.2rc2.tar.gz --markdown 20230411/n/napari-cellseg3d/0.0.2rc1-0.0.2rc2/diff.md --exclude *.pyd
+[2023-04-11 12:52:22] INFO root fetch - processPackages [starfile]: New version: [0.4.9] Old Version: [0.4.7]
+[2023-04-11 12:52:22] INFO root fetch - processPackages [hil-core]: executing diffoscope
+[2023-04-11 12:52:22] INFO root fetch - processPackages [hil-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hil_core-0.0.2-cp37-cp37m-win_amd64.whl.zip tmp/hil_core-0.0.3-cp37-cp37m-win_amd64.whl.zip --markdown 20230411/h/hil-core/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 12:52:22] INFO root fetch - processPackages [starfile]: Downloading https://files.pythonhosted.org/packages/09/75/287961019c1c5b5deae7d171cbe9bb562601ad64f1f8f24587aae471fbc0/starfile-0.4.7.tar.gz
+[2023-04-11 12:52:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:22] INFO root fetch - processPackages [macrometa-target-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 12:52:22] INFO root fetch - processPackages [starfile]: Downloading https://files.pythonhosted.org/packages/37/36/4f9dc96d6e96b0a86f907335195831d848ec7846be653ef7c283ebf9aca6/starfile-0.4.9.tar.gz
+[2023-04-11 12:52:22] INFO root fetch - processPackages [macrometa-target-snowflake]: Downloading https://files.pythonhosted.org/packages/2c/e4/8bcbc5f4f3068a7d86e14052af3e60ebc730e141065f99e9fd303b8c72b9/macrometa-target-snowflake-0.0.8.tar.gz
+[2023-04-11 12:52:22] INFO root fetch - processPackages [starfile]: executing diffoscope
+[2023-04-11 12:52:22] INFO root fetch - processPackages [starfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starfile-0.4.7.tar.gz tmp/starfile-0.4.9.tar.gz --markdown 20230411/s/starfile/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2023-04-11 12:52:23] INFO root fetch - processPackages [macrometa-target-snowflake]: Downloading https://files.pythonhosted.org/packages/7e/fa/48b7ff1ddeb683244982cee81022d74733ce456fa556798f0546b6a9b81c/macrometa-target-snowflake-0.0.9.tar.gz
+[2023-04-11 12:52:23] INFO root fetch - processPackages [macrometa-target-snowflake]: executing diffoscope
+[2023-04-11 12:52:23] INFO root fetch - processPackages [macrometa-target-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-snowflake-0.0.8.tar.gz tmp/macrometa-target-snowflake-0.0.9.tar.gz --markdown 20230411/m/macrometa-target-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 12:52:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:23] INFO root fetch - processPackages [richvalues]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-04-11 12:52:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:23] WARNING root fetch - processPackages [clsprop]: Skipping, unable to determine old version
+[2023-04-11 12:52:23] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:52:23] INFO root fetch - processPackages [richvalues]: Downloading https://files.pythonhosted.org/packages/0e/d6/f625e9aef00f2b03bbbadb3999e1a247e1df411def7c8aec0b7665c20b6d/richvalues-3.0.2.tar.gz
+[2023-04-11 12:52:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:23] INFO root fetch - processPackages [richvalues]: executing diffoscope
+[2023-04-11 12:52:23] INFO root fetch - processPackages [richvalues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richvalues-3.0.1.tar.gz tmp/richvalues-3.0.2.tar.gz --markdown 20230411/r/richvalues/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-04-11 12:52:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:52:24] INFO root fetch - main [MainThread]: Store serial: [17659609]
