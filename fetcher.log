@@ -3914,3 +3914,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 03:43:02] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:43:02] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:43:02] INFO root fetch - main [MainThread]: Store serial: [17653835]
+[2023-04-11 03:48:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17653835]
+[2023-04-11 03:48:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-11 03:48:10] WARNING root fetch - processPackages [gpttui]: Skipping, unable to determine old version
+[2023-04-11 03:48:10] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:48:10] INFO root fetch - processPackages [goby-sdk]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-11 03:48:10] INFO root fetch - processPackages [phiterm]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-04-11 03:48:10] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 03:48:10] INFO root fetch - processPackages [blender-stubs]: New version: [3.2.0.27.dev4653449796] Old Version: [3.2.0.27.dev4648006602]
+[2023-04-11 03:48:10] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 03:48:10] INFO root fetch - processPackages [blender-stubs]: executing diffoscope
+[2023-04-11 03:48:10] INFO root fetch - processPackages [blender-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blender-stubs-3.2.0.27.dev4648006602.tar.gz tmp/blender-stubs-3.2.0.27.dev4653449796.tar.gz --markdown 20230411/b/blender-stubs/3.2.0.27.dev4648006602-3.2.0.27.dev4653449796/diff.md --exclude *.pyd
+[2023-04-11 03:48:10] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 03:48:10] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 03:48:10] INFO root fetch - processPackages [goby-sdk]: Downloading https://files.pythonhosted.org/packages/3a/ba/819ea4c830d98b6550aa2812a0300301f118fdada271c4f72dc2c92b96e6/goby_sdk-1.0.4.tar.gz
+[2023-04-11 03:48:10] INFO root fetch - processPackages [phiterm]: Downloading https://files.pythonhosted.org/packages/d3/10/3f6a71d377c4002bb8695a94518a6eaada08509ff0c1d4bdcf54baea4a27/phiterm-1.5.9.tar.gz
+[2023-04-11 03:48:10] INFO root fetch - processPackages [goby-sdk]: executing diffoscope
+[2023-04-11 03:48:10] INFO root fetch - processPackages [goby-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goby_sdk-1.0.3.tar.gz tmp/goby_sdk-1.0.4.tar.gz --markdown 20230411/g/goby-sdk/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-11 03:48:10] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-04-11 03:48:10] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230411/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:48:10] INFO root fetch - processPackages [phiterm]: executing diffoscope
+[2023-04-11 03:48:10] INFO root fetch - processPackages [phiterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phiterm-1.5.8.tar.gz tmp/phiterm-1.5.9.tar.gz --markdown 20230411/p/phiterm/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-04-11 03:48:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:48:11] INFO root fetch - processPackages [phidata]: New version: [1.5.9] Old Version: [1.5.7]
+[2023-04-11 03:48:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:48:12] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/ff/4a/180ca00fdb1d742fd119596ab11af6bbc67422e4ca0a67786c82bda3cb3b/phidata-1.5.9.tar.gz
+[2023-04-11 03:48:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:48:12] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2023-04-11 03:48:12] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-1.5.7.tar.gz tmp/phidata-1.5.9.tar.gz --markdown 20230411/p/phidata/1.5.7-1.5.9/diff.md --exclude *.pyd
+[2023-04-11 03:48:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:48:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:48:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:48:15] INFO root fetch - main [MainThread]: Store serial: [17653862]
