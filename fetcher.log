@@ -12597,3 +12597,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 12:28:46] INFO root fetch - processPackages [Trapalyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Trapalyzer-0.0.5.tar.gz tmp/Trapalyzer-0.0.6.tar.gz --markdown 20230411/T/Trapalyzer/0.0.5-0.0.6/diff.md --exclude *.pyd
 [2023-04-11 12:28:48] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:28:48] INFO root fetch - main [MainThread]: Store serial: [17659437]
+[2023-04-11 12:33:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659437]
+[2023-04-11 12:33:55] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-11 12:33:55] INFO root fetch - processPackages [pulumi-sdm]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-11 12:33:55] INFO root fetch - processPackages [openlane]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-04-11 12:33:55] INFO root fetch - processPackages [st-common-data]: New version: [0.2.6.0] Old Version: [0.2.5.1]
+[2023-04-11 12:33:55] INFO root fetch - processPackages [fastuml]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-11 12:33:55] INFO root fetch - processPackages [czthry]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-11 12:33:56] INFO root fetch - processPackages [openlane]: executing diffoscope
+[2023-04-11 12:33:56] INFO root fetch - processPackages [openlane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openlane-2.0.0a8.tar.gz tmp/openlane-2.0.0a9.tar.gz --markdown 20230411/o/openlane/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-04-11 12:33:56] INFO root fetch - processPackages [pulumi-sdm]: Downloading https://files.pythonhosted.org/packages/b1/a3/07cfaf7f5115c8908a28cb7864b7590d60e2b3fec4c6095d7d9cb32cab63/pulumi_sdm-0.4.2.tar.gz
+[2023-04-11 12:33:56] INFO root fetch - processPackages [st-common-data]: Downloading https://files.pythonhosted.org/packages/95/a2/88a485613ba67915b35e03a3b367be88693cd7955ead9775cea95923324a/st_common_data-0.2.5.1.tar.gz
+[2023-04-11 12:33:56] INFO root fetch - processPackages [fastuml]: Downloading https://files.pythonhosted.org/packages/32/35/d2ef7821287c6e1b4936884c28954bb2b037150aa8480295f2b4a718a882/fastuml-0.3.1.tar.gz
+[2023-04-11 12:33:56] INFO root fetch - processPackages [czthry]: executing diffoscope
+[2023-04-11 12:33:56] INFO root fetch - processPackages [czthry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czthry-0.0.7.tar.gz tmp/czthry-0.0.9.tar.gz --markdown 20230411/c/czthry/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 12:33:56] INFO root fetch - processPackages [pulumi-sdm]: executing diffoscope
+[2023-04-11 12:33:56] INFO root fetch - processPackages [pulumi-sdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sdm-0.4.1.tar.gz tmp/pulumi_sdm-0.4.2.tar.gz --markdown 20230411/p/pulumi-sdm/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-11 12:33:56] INFO root fetch - processPackages [st-common-data]: Downloading https://files.pythonhosted.org/packages/6c/2e/aeecd43286b75ead1fdcdd0eb6c33e0c70fc71272dd570f55434177cbdd2/st_common_data-0.2.6.0.tar.gz
+[2023-04-11 12:33:56] INFO root fetch - processPackages [fastuml]: executing diffoscope
+[2023-04-11 12:33:56] INFO root fetch - processPackages [fastuml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastuml-0.3.0.tar.gz tmp/fastuml-0.3.1.tar.gz --markdown 20230411/f/fastuml/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-11 12:33:56] INFO root fetch - processPackages [st-common-data]: executing diffoscope
+[2023-04-11 12:33:56] INFO root fetch - processPackages [st-common-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_common_data-0.2.5.1.tar.gz tmp/st_common_data-0.2.6.0.tar.gz --markdown 20230411/s/st-common-data/0.2.5.1-0.2.6.0/diff.md --exclude *.pyd
+[2023-04-11 12:33:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:33:57] INFO root fetch - processPackages [kondo-ml]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 12:33:57] INFO root fetch - processPackages [kondo-ml]: Downloading https://files.pythonhosted.org/packages/95/15/0f7f14d52574fb0d64a1801faa97f2513d560bf3434399417e5841260d69/kondo_ml-0.0.1.tar.gz
+[2023-04-11 12:33:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:33:57] WARNING root fetch - processPackages [protocol-verwerker]: Skipping, unable to determine old version
+[2023-04-11 12:33:57] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:33:57] INFO root fetch - processPackages [taxonomy-connector]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-11 12:33:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:33:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:33:57] INFO root fetch - processPackages [edwh]: New version: [0.4.1] Old Version: [0.3.3]
+[2023-04-11 12:33:57] INFO root fetch - processPackages [pylipd]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-04-11 12:33:57] INFO root fetch - processPackages [taxonomy-connector]: Downloading https://files.pythonhosted.org/packages/86/d4/cc43cca65b5c3a1ffb7ae8e713f7aa52c9f9dbb7b0c7e2655457762c6d7b/taxonomy-connector-1.8.0.tar.gz
+[2023-04-11 12:33:57] INFO root fetch - processPackages [edwh]: Downloading https://files.pythonhosted.org/packages/96/5c/a5b7db0c58fcc2c7c4c0605828653a7b20cd5055832bc39dced7abe79c54/edwh-0.4.1.tar.gz
+[2023-04-11 12:33:57] INFO root fetch - processPackages [pylipd]: Downloading https://files.pythonhosted.org/packages/b5/e9/c95e43dafe36df411d8566d69b799deb47b22dfd1e70243edcc3ac91d898/pylipd-1.2.4.tar.gz
+[2023-04-11 12:33:57] INFO root fetch - processPackages [kondo-ml]: Downloading https://files.pythonhosted.org/packages/72/dd/ea3bff0c463be3aeb25c208fbb8e0cb933c1c4aeb7f4a749055df88bfe90/kondo_ml-0.0.2.tar.gz
+[2023-04-11 12:33:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:33:58] INFO root fetch - processPackages [odoo14-addon-base-sequence-default]: New version: [14.0.1.0.0] Old Version: [14.0.0.1.1.dev2]
+[2023-04-11 12:33:58] INFO root fetch - processPackages [edwh]: executing diffoscope
+[2023-04-11 12:33:58] INFO root fetch - processPackages [edwh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh-0.3.3.tar.gz tmp/edwh-0.4.1.tar.gz --markdown 20230411/e/edwh/0.3.3-0.4.1/diff.md --exclude *.pyd
+[2023-04-11 12:33:58] INFO root fetch - processPackages [kondo-ml]: executing diffoscope
+[2023-04-11 12:33:58] INFO root fetch - processPackages [kondo-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kondo_ml-0.0.1.tar.gz tmp/kondo_ml-0.0.2.tar.gz --markdown 20230411/k/kondo-ml/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 12:33:58] INFO root fetch - processPackages [pylipd]: executing diffoscope
+[2023-04-11 12:33:58] INFO root fetch - processPackages [pylipd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylipd-1.2.3.tar.gz tmp/pylipd-1.2.4.tar.gz --markdown 20230411/p/pylipd/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-04-11 12:33:58] INFO root fetch - processPackages [odoo14-addon-base-sequence-default]: Downloading https://files.pythonhosted.org/packages/2f/cf/b38e6c8065c3054a0cf87486e6f2354d5c4595e6d15df0bac3da94d0d271/odoo14_addon_base_sequence_default-14.0.0.1.1.dev2-py3-none-any.whl
+[2023-04-11 12:33:58] INFO root fetch - processPackages [taxonomy-connector]: Downloading https://files.pythonhosted.org/packages/60/82/6933c49b21a0da5d910b384c5a3e2d4e588fb3ed4771a25beb40febc3ed4/taxonomy-connector-1.9.0.tar.gz
+[2023-04-11 12:33:58] INFO root fetch - processPackages [odoo14-addon-base-sequence-default]: Downloading https://files.pythonhosted.org/packages/12/00/7cb6eb121f95b398c37495f64d9c30d119481dfd6dad894d5e15c409bde9/odoo14_addon_base_sequence_default-14.0.1.0.0-py3-none-any.whl
+[2023-04-11 12:33:58] INFO root fetch - processPackages [taxonomy-connector]: executing diffoscope
+[2023-04-11 12:33:58] INFO root fetch - processPackages [taxonomy-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taxonomy-connector-1.8.0.tar.gz tmp/taxonomy-connector-1.9.0.tar.gz --markdown 20230411/t/taxonomy-connector/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 12:33:58] INFO root fetch - processPackages [odoo14-addon-base-sequence-default]: executing diffoscope
+[2023-04-11 12:33:58] INFO root fetch - processPackages [odoo14-addon-base-sequence-default]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_base_sequence_default-14.0.0.1.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_base_sequence_default-14.0.1.0.0-py3-none-any.whl.zip --markdown 20230411/o/odoo14-addon-base-sequence-default/14.0.0.1.1.dev2-14.0.1.0.0/diff.md --exclude *.pyd
+[2023-04-11 12:33:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:33:59] INFO root fetch - processPackages [django-feedback-govuk]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 12:33:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:33:59] INFO root fetch - processPackages [hitchpylibrarytoolkit]: New version: [0.6.9] Old Version: [0.6.7]
+[2023-04-11 12:33:59] INFO root fetch - processPackages [django-feedback-govuk]: Downloading https://files.pythonhosted.org/packages/14/83/3eb3a9e8f80e6f81afdae04d223cc26d1122a221932c5c0db01eba7bb23a/django_feedback_govuk-0.1.2.tar.gz
+[2023-04-11 12:33:59] INFO root fetch - processPackages [hitchpylibrarytoolkit]: executing diffoscope
+[2023-04-11 12:33:59] INFO root fetch - processPackages [hitchpylibrarytoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitchpylibrarytoolkit-0.6.7.tar.gz tmp/hitchpylibrarytoolkit-0.6.9.tar.gz --markdown 20230411/h/hitchpylibrarytoolkit/0.6.7-0.6.9/diff.md --exclude *.pyd
+[2023-04-11 12:33:59] INFO root fetch - processPackages [django-feedback-govuk]: executing diffoscope
+[2023-04-11 12:33:59] INFO root fetch - processPackages [django-feedback-govuk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_feedback_govuk-0.1.1.tar.gz tmp/django_feedback_govuk-0.1.2.tar.gz --markdown 20230411/d/django-feedback-govuk/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 12:33:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:33:59] INFO root fetch - processPackages [plhtools]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-11 12:33:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:34:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:34:00] INFO root fetch - processPackages [plhtools]: executing diffoscope
+[2023-04-11 12:34:00] INFO root fetch - processPackages [plhtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plhtools-1.1.8.tar.gz tmp/plhtools-1.1.9.tar.gz --markdown 20230411/p/plhtools/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-11 12:34:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:34:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:34:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:34:01] INFO root fetch - main [MainThread]: Store serial: [17659485]
