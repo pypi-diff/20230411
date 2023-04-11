@@ -1745,3 +1745,76 @@
 [2023-04-11 02:37:25] INFO root fetch - main [MainThread]: success
 [2023-04-11 02:37:26] INFO root fetch - main [MainThread]: success
 [2023-04-11 02:37:26] INFO root fetch - main [MainThread]: Store serial: [17652287]
+[2023-04-11 02:42:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17652287]
+[2023-04-11 02:42:33] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-11 02:42:33] INFO root fetch - processPackages [pvcobra]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-11 02:42:33] INFO root fetch - processPackages [distribute-compute-config]: New version: [0.14.3] Old Version: [0.14.2]
+[2023-04-11 02:42:33] INFO root fetch - processPackages [lpminimk3]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-11 02:42:33] INFO root fetch - processPackages [pvleopard]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-11 02:42:33] INFO root fetch - processPackages [pvcheetah]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-11 02:42:33] INFO root fetch - processPackages [pvleopard]: Downloading https://files.pythonhosted.org/packages/17/40/e6ab0fa515de5374f3f86d19423c5dffab54b3a99fcf80e5dc06e483fd9b/pvleopard-1.2.1.tar.gz
+[2023-04-11 02:42:33] INFO root fetch - processPackages [distribute-compute-config]: Downloading https://files.pythonhosted.org/packages/99/da/1898022b38ac8b03e86723b10768ef98ad9d62364d3dfea6ca3c2433a656/distribute_compute_config-0.14.2.tar.gz
+[2023-04-11 02:42:33] INFO root fetch - processPackages [pvcobra]: Downloading https://files.pythonhosted.org/packages/f9/fe/141702dcc41ba96707227e7a79bd8afa32c09d5b12dbbef2f11425f6a002/pvcobra-1.2.0.tar.gz
+[2023-04-11 02:42:33] INFO root fetch - processPackages [pvcheetah]: Downloading https://files.pythonhosted.org/packages/30/d2/c9363a70c467a2d9493d31054b55042207627410a267dbe06f8cccae5f3e/pvcheetah-1.1.2.tar.gz
+[2023-04-11 02:42:33] INFO root fetch - processPackages [lpminimk3]: Downloading https://files.pythonhosted.org/packages/53/f1/b7a5fab25ccecc1051c166bf6f15c81515e9b3bfa9f7d0ecc1fdad976ef1/lpminimk3-0.5.0.tar.gz
+[2023-04-11 02:42:33] WARNING root fetch - processPackages [pvcheetah]: Skipping package: exceeds size limit 16232131>=10485760
+[2023-04-11 02:42:33] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:42:33] INFO root fetch - processPackages [pvkoala]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 02:42:34] INFO root fetch - processPackages [lpminimk3]: Downloading https://files.pythonhosted.org/packages/0f/0f/73aac200448f475ecb8a64fc4ddffa8eb74151cf0d9331ffe3a45f10b39e/lpminimk3-0.5.1.tar.gz
+[2023-04-11 02:42:34] INFO root fetch - processPackages [pvkoala]: Downloading https://files.pythonhosted.org/packages/39/43/b24d4c726beeb6e19cc65bb3cab745b33ff14ed5c6b8f7e63c92b847519c/pvkoala-1.0.0.tar.gz
+[2023-04-11 02:42:34] INFO root fetch - processPackages [lpminimk3]: executing diffoscope
+[2023-04-11 02:42:34] INFO root fetch - processPackages [lpminimk3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lpminimk3-0.5.0.tar.gz tmp/lpminimk3-0.5.1.tar.gz --markdown 20230411/l/lpminimk3/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-11 02:42:34] WARNING root fetch - processPackages [pvleopard]: Skipping package: exceeds size limit 24485498>=10485760
+[2023-04-11 02:42:34] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:42:34] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-11 02:42:34] INFO root fetch - processPackages [pvcobra]: Downloading https://files.pythonhosted.org/packages/22/30/5505c4b4ed8eac96915f01773bf08d43d8746063cb9b3ef5d03416049cbd/pvcobra-1.2.1.tar.gz
+[2023-04-11 02:42:34] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-04-11 02:42:34] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230411/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-11 02:42:34] INFO root fetch - processPackages [distribute-compute-config]: Downloading https://files.pythonhosted.org/packages/9f/0a/221e96c9cfb07cfa38985bd46513ceaa20dc5c41ea11e56960f126308626/distribute_compute_config-0.14.3.tar.gz
+[2023-04-11 02:42:34] INFO root fetch - processPackages [pvcobra]: executing diffoscope
+[2023-04-11 02:42:34] INFO root fetch - processPackages [pvcobra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvcobra-1.2.0.tar.gz tmp/pvcobra-1.2.1.tar.gz --markdown 20230411/p/pvcobra/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-11 02:42:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:35] INFO root fetch - processPackages [distribute-compute-config]: executing diffoscope
+[2023-04-11 02:42:35] INFO root fetch - processPackages [distribute-compute-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/distribute_compute_config-0.14.2.tar.gz tmp/distribute_compute_config-0.14.3.tar.gz --markdown 20230411/d/distribute-compute-config/0.14.2-0.14.3/diff.md --exclude *.pyd
+[2023-04-11 02:42:35] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 02:42:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:35] INFO root fetch - processPackages [data-repo-client]: New version: [1.64.0] Old Version: [1.468.0]
+[2023-04-11 02:42:35] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 02:42:35] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 02:42:35] INFO root fetch - processPackages [data-repo-client]: Downloading https://files.pythonhosted.org/packages/97/5a/5f228262a193326e3927f6b6a033bf37b7603e0d55ecdfa84a213b964223/data-repo-client-1.468.0.tar.gz
+[2023-04-11 02:42:36] INFO root fetch - processPackages [data-repo-client]: executing diffoscope
+[2023-04-11 02:42:36] INFO root fetch - processPackages [data-repo-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-repo-client-1.468.0.tar.gz tmp/data-repo-client-1.64.0.tar.gz --markdown 20230411/d/data-repo-client/1.468.0-1.64.0/diff.md --exclude *.pyd
+[2023-04-11 02:42:37] INFO root fetch - processPackages [pvkoala]: Downloading https://files.pythonhosted.org/packages/23/51/3783e57cbcf6ac179bda846b0b2b88afdd1b4037de3d3e9836c748f898d9/pvkoala-1.0.1.tar.gz
+[2023-04-11 02:42:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:38] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.0.dev202304100044] Old Version: [4.9.0.dev202304090044]
+[2023-04-11 02:42:38] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/b5/2c/ce305c64a9ffd32875edbe0f2df1a81ffc62d33526242b2888f2ae43e699/tfds-nightly-4.9.0.dev202304100044.tar.gz
+[2023-04-11 02:42:38] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-04-11 02:42:38] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.0.dev202304090044.tar.gz tmp/tfds-nightly-4.9.0.dev202304100044.tar.gz --markdown 20230411/t/tfds-nightly/4.9.0.dev202304090044-4.9.0.dev202304100044/diff.md --exclude *.pyd
+[2023-04-11 02:42:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:38] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 02:42:38] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-04-11 02:42:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:39] INFO root fetch - processPackages [freeagent-api]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-11 02:42:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:39] INFO root fetch - processPackages [fastapi-oracle]: New version: [0.5.0] Old Version: [0.4.5]
+[2023-04-11 02:42:39] INFO root fetch - processPackages [freeagent-api]: Downloading https://files.pythonhosted.org/packages/1f/c2/45b68587bcc34a74e0d31bb434579a587f8a743ec52d517eee984de40da6/freeagent_api-0.4.0.tar.gz
+[2023-04-11 02:42:39] INFO root fetch - processPackages [pvkoala]: executing diffoscope
+[2023-04-11 02:42:39] INFO root fetch - processPackages [pvkoala]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvkoala-1.0.0.tar.gz tmp/pvkoala-1.0.1.tar.gz --markdown 20230411/p/pvkoala/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 02:42:39] INFO root fetch - processPackages [fastapi-oracle]: Downloading https://files.pythonhosted.org/packages/88/6c/17647f770c0badedd984e07314027ff84b59d9ffe62b51f2df655fec533e/fastapi_oracle-0.4.5-py3-none-any.whl
+[2023-04-11 02:42:39] INFO root fetch - processPackages [freeagent-api]: Downloading https://files.pythonhosted.org/packages/b0/5b/19defd896fdfa16c6bf865bab6b17914e1005bc7db51ee898bd6b0b64697/freeagent_api-0.5.0.tar.gz
+[2023-04-11 02:42:39] INFO root fetch - processPackages [freeagent-api]: executing diffoscope
+[2023-04-11 02:42:39] INFO root fetch - processPackages [freeagent-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeagent_api-0.4.0.tar.gz tmp/freeagent_api-0.5.0.tar.gz --markdown 20230411/f/freeagent-api/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 02:42:39] INFO root fetch - processPackages [fastapi-oracle]: Downloading https://files.pythonhosted.org/packages/d2/47/b99bc7ee0c7378639e0ad617a71b66b4275a932767fb98e2ecf8daed9a15/fastapi_oracle-0.5.0-py3-none-any.whl
+[2023-04-11 02:42:39] INFO root fetch - processPackages [fastapi-oracle]: executing diffoscope
+[2023-04-11 02:42:39] INFO root fetch - processPackages [fastapi-oracle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_oracle-0.4.5-py3-none-any.whl.zip tmp/fastapi_oracle-0.5.0-py3-none-any.whl.zip --markdown 20230411/f/fastapi-oracle/0.4.5-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 02:42:39] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-04-11 02:42:39] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:42:39] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 02:42:39] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-04-11 02:42:39] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.4.8.tar.gz tmp/kubric-nightly-2023.4.9.tar.gz --markdown 20230411/k/kubric-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-11 02:42:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:42:50] INFO root fetch - main [MainThread]: Store serial: [17652324]
