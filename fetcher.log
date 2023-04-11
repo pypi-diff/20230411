@@ -20202,3 +20202,46 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 20:12:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 20:12:23] INFO root fetch - main [MainThread]: success
 [2023-04-11 20:12:23] INFO root fetch - main [MainThread]: Store serial: [17664692]
+[2023-04-11 20:17:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17664692]
+[2023-04-11 20:17:31] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-11 20:17:31] INFO root fetch - processPackages [haicu]: New version: [0.0.95] Old Version: [0.0.94]
+[2023-04-11 20:17:31] INFO root fetch - processPackages [tkreform]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-11 20:17:31] INFO root fetch - processPackages [faradaysec]: New version: [4.3.4] Old Version: [4.3.3]
+[2023-04-11 20:17:31] INFO root fetch - processPackages [pypaq]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-11 20:17:31] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-11 20:17:31] INFO root fetch - processPackages [haicu]: Downloading https://files.pythonhosted.org/packages/23/c6/fb5d36b99c970717f1c7c16d8e53c51df1915998733108881e8b29cfa46e/haicu-0.0.94.tar.gz
+[2023-04-11 20:17:31] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-11 20:17:31] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230411/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-11 20:17:31] INFO root fetch - processPackages [pypaq]: Downloading https://files.pythonhosted.org/packages/bf/3e/ba0a6e3cb7f89ceda606dfd7cd261b4a05340b9baa59508397c20baf8e43/pypaq-1.1.2.tar.gz
+[2023-04-11 20:17:31] INFO root fetch - processPackages [faradaysec]: Downloading https://files.pythonhosted.org/packages/a0/9a/6d0dab1453cb5314ae09dcbf4db5f2c19459be1c09b023e7c4887d101953/faradaysec-4.3.3.tar.gz
+[2023-04-11 20:17:31] INFO root fetch - processPackages [tkreform]: Downloading https://files.pythonhosted.org/packages/ea/ab/573a58090833d99a1b8a03f18565ad369cc5f7f5ffd1dc6e91213ef23dd9/tkreform-0.3.4.tar.gz
+[2023-04-11 20:17:31] INFO root fetch - processPackages [haicu]: Downloading https://files.pythonhosted.org/packages/ce/1a/6461187dce27f265be16236df275ebce10783e4797d0332d36923ccb7d06/haicu-0.0.95.tar.gz
+[2023-04-11 20:17:31] INFO root fetch - processPackages [tkreform]: executing diffoscope
+[2023-04-11 20:17:31] INFO root fetch - processPackages [tkreform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkreform-0.3.3.tar.gz tmp/tkreform-0.3.4.tar.gz --markdown 20230411/t/tkreform/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-11 20:17:31] INFO root fetch - processPackages [haicu]: executing diffoscope
+[2023-04-11 20:17:31] INFO root fetch - processPackages [haicu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haicu-0.0.94.tar.gz tmp/haicu-0.0.95.tar.gz --markdown 20230411/h/haicu/0.0.94-0.0.95/diff.md --exclude *.pyd
+[2023-04-11 20:17:31] INFO root fetch - processPackages [pypaq]: Downloading https://files.pythonhosted.org/packages/5d/2b/5cb958bfd817b1b6a0b97b0d4aa701517b6ea8ebf6f585a87b7884f745cf/pypaq-1.1.3.tar.gz
+[2023-04-11 20:17:31] INFO root fetch - processPackages [pypaq]: executing diffoscope
+[2023-04-11 20:17:31] INFO root fetch - processPackages [pypaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypaq-1.1.2.tar.gz tmp/pypaq-1.1.3.tar.gz --markdown 20230411/p/pypaq/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-11 20:17:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:17:32] INFO root fetch - processPackages [slg-dev-ops]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-11 20:17:32] INFO root fetch - processPackages [faradaysec]: Downloading https://files.pythonhosted.org/packages/96/77/ffc803da8d4a525203e5b7cd477d1532a26af383ad2b1f7481cbbf85dee8/faradaysec-4.3.4.tar.gz
+[2023-04-11 20:17:32] INFO root fetch - processPackages [slg-dev-ops]: executing diffoscope
+[2023-04-11 20:17:32] INFO root fetch - processPackages [slg-dev-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slg-dev-ops-1.8.0.tar.gz tmp/slg-dev-ops-1.9.0.tar.gz --markdown 20230411/s/slg-dev-ops/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 20:17:32] INFO root fetch - processPackages [faradaysec]: executing diffoscope
+[2023-04-11 20:17:32] INFO root fetch - processPackages [faradaysec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faradaysec-4.3.3.tar.gz tmp/faradaysec-4.3.4.tar.gz --markdown 20230411/f/faradaysec/4.3.3-4.3.4/diff.md --exclude *.pyd
+[2023-04-11 20:17:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:17:33] INFO root fetch - processPackages [FlipperNested]: New version: [1.8.0] Old Version: [1.7.1]
+[2023-04-11 20:17:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:17:33] INFO root fetch - processPackages [dojo-truant]: New version: [2023.4.7.3] Old Version: [2023.4.7.2]
+[2023-04-11 20:17:33] INFO root fetch - processPackages [dojo-truant]: executing diffoscope
+[2023-04-11 20:17:33] INFO root fetch - processPackages [dojo-truant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dojo_truant-2023.4.7.2.tar.gz tmp/dojo_truant-2023.4.7.3.tar.gz --markdown 20230411/d/dojo-truant/2023.4.7.2-2023.4.7.3/diff.md --exclude *.pyd
+[2023-04-11 20:17:33] INFO root fetch - processPackages [FlipperNested]: Downloading https://files.pythonhosted.org/packages/cd/38/981d94658401a8c2638352cf7cc18523ea6dabd4de52e5f85cef599638a6/FlipperNested-1.8.0.tar.gz
+[2023-04-11 20:17:33] INFO root fetch - processPackages [FlipperNested]: executing diffoscope
+[2023-04-11 20:17:33] INFO root fetch - processPackages [FlipperNested]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlipperNested-1.7.1.tar.gz tmp/FlipperNested-1.8.0.tar.gz --markdown 20230411/F/FlipperNested/1.7.1-1.8.0/diff.md --exclude *.pyd
+[2023-04-11 20:17:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:17:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:17:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:17:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:18:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:18:44] INFO root fetch - main [MainThread]: Store serial: [17664747]
