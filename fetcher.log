@@ -4441,3 +4441,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 04:40:37] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:40:37] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:40:37] INFO root fetch - main [MainThread]: Store serial: [17654298]
+[2023-04-11 04:45:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17654298]
+[2023-04-11 04:45:46] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 04:45:46] INFO root fetch - processPackages [mbapy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 04:45:46] INFO root fetch - processPackages [sonos-websocket]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 04:45:46] WARNING root fetch - processPackages [byoungpil]: Skipping, unable to determine old version
+[2023-04-11 04:45:46] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:45:46] WARNING root fetch - processPackages [jungwonhee]: Skipping, unable to determine old version
+[2023-04-11 04:45:46] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:45:46] INFO root fetch - processPackages [rapidpredict]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2023-04-11 04:45:46] WARNING root fetch - processPackages [sanghyun2052733]: Skipping, unable to determine old version
+[2023-04-11 04:45:46] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:45:46] INFO root fetch - processPackages [nonebot-plugin-bing-chat]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-04-11 04:45:46] INFO root fetch - processPackages [JangHyoJoon]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 04:45:46] INFO root fetch - processPackages [mbapy]: Downloading https://files.pythonhosted.org/packages/cf/c0/bf660cac38ad785d89902f34c7fa9f085e1a99813cfb8f0afabc7653b334/mbapy-0.0.8.tar.gz
+[2023-04-11 04:45:46] INFO root fetch - processPackages [sonos-websocket]: Downloading https://files.pythonhosted.org/packages/97/ff/4560080d49b1b27b9fd2be960033d92b51403b801487231766db87cb13c8/sonos-websocket-0.0.4.tar.gz
+[2023-04-11 04:45:46] INFO root fetch - processPackages [rapidpredict]: Downloading https://files.pythonhosted.org/packages/51/09/6cb0fa03399b0339145b296216ece0f0026b024ef0c295fb2ee3f6f83631/rapidpredict-0.0.0.4.tar.gz
+[2023-04-11 04:45:46] INFO root fetch - processPackages [sonos-websocket]: executing diffoscope
+[2023-04-11 04:45:46] INFO root fetch - processPackages [sonos-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sonos-websocket-0.0.3.tar.gz tmp/sonos-websocket-0.0.4.tar.gz --markdown 20230411/s/sonos-websocket/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 04:45:46] INFO root fetch - processPackages [nonebot-plugin-bing-chat]: Downloading https://files.pythonhosted.org/packages/7a/f6/81ad0a933597a8a11bfc171bdba6a972c22389eb81c705b45f8ee987aef3/nonebot-plugin-bing-chat-0.7.8.tar.gz
+[2023-04-11 04:45:46] INFO root fetch - processPackages [JangHyoJoon]: Downloading https://files.pythonhosted.org/packages/1e/ff/5ec006c2d16a002966ea66e0fa7b5b6e5e6cb7defb701725743a7784ac25/JangHyoJoon-0.0.3-py3-none-any.whl
+[2023-04-11 04:45:46] INFO root fetch - processPackages [JangHyoJoon]: executing diffoscope
+[2023-04-11 04:45:46] INFO root fetch - processPackages [JangHyoJoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JangHyoJoon-0.0.2-py3-none-any.whl.zip tmp/JangHyoJoon-0.0.3-py3-none-any.whl.zip --markdown 20230411/J/JangHyoJoon/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 04:45:46] INFO root fetch - processPackages [rapidpredict]: Downloading https://files.pythonhosted.org/packages/eb/1b/6aa503815cbbcf14131e739414d52d18d5298ee91a66adf6be15335d079e/rapidpredict-0.0.0.5.tar.gz
+[2023-04-11 04:45:47] INFO root fetch - processPackages [rapidpredict]: executing diffoscope
+[2023-04-11 04:45:47] INFO root fetch - processPackages [rapidpredict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpredict-0.0.0.4.tar.gz tmp/rapidpredict-0.0.0.5.tar.gz --markdown 20230411/r/rapidpredict/0.0.0.4-0.0.0.5/diff.md --exclude *.pyd
+[2023-04-11 04:45:47] INFO root fetch - processPackages [nonebot-plugin-bing-chat]: Downloading https://files.pythonhosted.org/packages/e5/1b/70d329be70a69765fd2e333596ee6d5a5708cd302621ef36cbec95aacbb5/nonebot-plugin-bing-chat-0.7.9.tar.gz
+[2023-04-11 04:45:47] INFO root fetch - processPackages [nonebot-plugin-bing-chat]: executing diffoscope
+[2023-04-11 04:45:47] INFO root fetch - processPackages [nonebot-plugin-bing-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-bing-chat-0.7.8.tar.gz tmp/nonebot-plugin-bing-chat-0.7.9.tar.gz --markdown 20230411/n/nonebot-plugin-bing-chat/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-04-11 04:45:47] INFO root fetch - processPackages [mbapy]: Downloading https://files.pythonhosted.org/packages/57/77/561dd598bc1cb79b5dce57363452e96a6c77f847695075711961df03a183/mbapy-0.0.9.tar.gz
+[2023-04-11 04:45:47] INFO root fetch - processPackages [mbapy]: executing diffoscope
+[2023-04-11 04:45:47] INFO root fetch - processPackages [mbapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbapy-0.0.8.tar.gz tmp/mbapy-0.0.9.tar.gz --markdown 20230411/m/mbapy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 04:45:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:45:47] WARNING root fetch - processPackages [ByeongSuGo]: Skipping, unable to determine old version
+[2023-04-11 04:45:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:45:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:45:48] WARNING root fetch - processPackages [oss230411]: Skipping, unable to determine old version
+[2023-04-11 04:45:48] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:45:48] INFO root fetch - processPackages [jarvis-ui]: New version: [0.7] Old Version: [0.5.4]
+[2023-04-11 04:45:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:45:48] INFO root fetch - processPackages [sqlmesh]: New version: [0.3.2.dev11] Old Version: [0.3.2.dev10]
+[2023-04-11 04:45:48] INFO root fetch - processPackages [jarvis-ui]: Downloading https://files.pythonhosted.org/packages/af/50/c8c0742b4b7e669bd73629d4218b8f78eca530ad24af91bc0d0662b126b2/jarvis_ui-0.5.4-py3-none-any.whl
+[2023-04-11 04:45:48] INFO root fetch - processPackages [astronomica]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 04:45:48] INFO root fetch - processPackages [sqlmesh]: Downloading https://files.pythonhosted.org/packages/b8/31/a918e5afdcba0f9f88b20ac7e8f6804809abbc67c2bc826c56ad7d895844/sqlmesh-0.3.2.dev11.tar.gz
+[2023-04-11 04:45:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:45:48] INFO root fetch - processPackages [astronomica]: Downloading https://files.pythonhosted.org/packages/ed/1f/777a60bcabc1ca5deb8ef47016185e4d5c965d8d92f7245d0f1168a5fbf7/astronomica-0.0.2.tar.gz
+[2023-04-11 04:45:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:45:48] INFO root fetch - processPackages [astronomica]: executing diffoscope
+[2023-04-11 04:45:48] INFO root fetch - processPackages [astronomica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astronomica-0.0.1.tar.gz tmp/astronomica-0.0.2.tar.gz --markdown 20230411/a/astronomica/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 04:45:49] INFO root fetch - processPackages [jarvis-ui]: Downloading https://files.pythonhosted.org/packages/6c/98/abb03b2fe6582fcdad62386eb2ab9677a5497e401844b084b653e0d7d98d/jarvis_ui-0.7-py3-none-any.whl
+[2023-04-11 04:45:49] INFO root fetch - processPackages [jarvis-ui]: executing diffoscope
+[2023-04-11 04:45:49] INFO root fetch - processPackages [jarvis-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis_ui-0.5.4-py3-none-any.whl.zip tmp/jarvis_ui-0.7-py3-none-any.whl.zip --markdown 20230411/j/jarvis-ui/0.5.4-0.7/diff.md --exclude *.pyd
+[2023-04-11 04:45:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:45:50] INFO root fetch - processPackages [sqlmesh]: executing diffoscope
+[2023-04-11 04:45:50] INFO root fetch - processPackages [sqlmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlmesh-0.3.2.dev10.tar.gz tmp/sqlmesh-0.3.2.dev11.tar.gz --markdown 20230411/s/sqlmesh/0.3.2.dev10-0.3.2.dev11/diff.md --exclude *.pyd
+[2023-04-11 04:45:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:45:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:45:55] INFO root fetch - main [MainThread]: Store serial: [17654337]
