@@ -17893,3 +17893,90 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 18:11:41] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:12:11] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:12:11] INFO root fetch - main [MainThread]: Store serial: [17663290]
+[2023-04-11 18:17:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663290]
+[2023-04-11 18:17:19] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-11 18:17:19] INFO root fetch - processPackages [gotya-text-anonymizer]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-11 18:17:19] WARNING root fetch - processPackages [itkdb-gtk]: Skipping, unable to determine old version
+[2023-04-11 18:17:19] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:17:19] INFO root fetch - processPackages [rdoclient]: New version: [1.5.0] Old Version: [1.4.3]
+[2023-04-11 18:17:19] INFO root fetch - processPackages [gotya-text-anonymizer]: executing diffoscope
+[2023-04-11 18:17:19] INFO root fetch - processPackages [gotya-text-anonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gotya-text-anonymizer-1.1.4.tar.gz tmp/gotya-text-anonymizer-1.1.5.tar.gz --markdown 20230411/g/gotya-text-anonymizer/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-11 18:17:19] INFO root fetch - processPackages [meilisearchdsl]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-11 18:17:19] INFO root fetch - processPackages [kpops]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-11 18:17:19] INFO root fetch - processPackages [playwrightcapture]: New version: [1.19.5] Old Version: [1.19.4]
+[2023-04-11 18:17:19] INFO root fetch - processPackages [playwrightcapture]: executing diffoscope
+[2023-04-11 18:17:19] INFO root fetch - processPackages [playwrightcapture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playwrightcapture-1.19.4.tar.gz tmp/playwrightcapture-1.19.5.tar.gz --markdown 20230411/p/playwrightcapture/1.19.4-1.19.5/diff.md --exclude *.pyd
+[2023-04-11 18:17:19] INFO root fetch - processPackages [kpops]: Downloading https://files.pythonhosted.org/packages/d3/8f/9da6bfd1b70afaaf7f3f8f327d384e566d838e32fe0054d821b6b11417ef/kpops-1.0.1.tar.gz
+[2023-04-11 18:17:19] INFO root fetch - processPackages [meilisearchdsl]: Downloading https://files.pythonhosted.org/packages/dd/bc/d97bf72e62b74e1d2dc055af30eb8321b9963482c03c32904aa181b23f85/meilisearchdsl-0.1.4.tar.gz
+[2023-04-11 18:17:19] INFO root fetch - processPackages [rdoclient]: Downloading https://files.pythonhosted.org/packages/49/9d/33bdfcbfe288168cb0c7f884f2401292d7b1f17f7832bfd0278220b0cc3a/rdoclient-1.4.3.tar.gz
+[2023-04-11 18:17:19] INFO root fetch - processPackages [meilisearchdsl]: Downloading https://files.pythonhosted.org/packages/5c/9e/66fa7c5d191ddc76cc426599669663d968dcf31374a1bc8e7e963aa98d86/meilisearchdsl-0.1.5.tar.gz
+[2023-04-11 18:17:19] INFO root fetch - processPackages [kpops]: Downloading https://files.pythonhosted.org/packages/aa/fc/7398b9853c6e90c86e7512ed8c29cef571da7d881c5f97562c6a582ba82b/kpops-1.1.0.tar.gz
+[2023-04-11 18:17:19] INFO root fetch - processPackages [rdoclient]: Downloading https://files.pythonhosted.org/packages/a1/be/b80df0a1982cc8678259bc505daedd8f3e1dc14895947c47db87c53f851d/rdoclient-1.5.0.tar.gz
+[2023-04-11 18:17:19] INFO root fetch - processPackages [meilisearchdsl]: executing diffoscope
+[2023-04-11 18:17:19] INFO root fetch - processPackages [meilisearchdsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meilisearchdsl-0.1.4.tar.gz tmp/meilisearchdsl-0.1.5.tar.gz --markdown 20230411/m/meilisearchdsl/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-11 18:17:20] INFO root fetch - processPackages [kpops]: executing diffoscope
+[2023-04-11 18:17:20] INFO root fetch - processPackages [kpops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kpops-1.0.1.tar.gz tmp/kpops-1.1.0.tar.gz --markdown 20230411/k/kpops/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 18:17:20] INFO root fetch - processPackages [rdoclient]: executing diffoscope
+[2023-04-11 18:17:20] INFO root fetch - processPackages [rdoclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdoclient-1.4.3.tar.gz tmp/rdoclient-1.5.0.tar.gz --markdown 20230411/r/rdoclient/1.4.3-1.5.0/diff.md --exclude *.pyd
+[2023-04-11 18:17:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:20] INFO root fetch - processPackages [edx-drf-extensions]: New version: [8.5.3] Old Version: [8.4.1]
+[2023-04-11 18:17:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:20] INFO root fetch - processPackages [edx-drf-extensions]: Downloading https://files.pythonhosted.org/packages/44/b4/58339044cfaf6b358aa0bd72cb99947df7a74f0e45a7503cbc20ae6a21e7/edx-drf-extensions-8.4.1.tar.gz
+[2023-04-11 18:17:20] INFO root fetch - processPackages [text-fabric]: New version: [9.5.2] Old Version: [9.5.1]
+[2023-04-11 18:17:20] INFO root fetch - processPackages [text-fabric]: Downloading https://files.pythonhosted.org/packages/43/2d/ea1910fa4bdc447dcc6ca95352e531aea631321d699f661e3d5267526488/text_fabric-9.5.1-py3-none-any.whl
+[2023-04-11 18:17:21] INFO root fetch - processPackages [edx-drf-extensions]: Downloading https://files.pythonhosted.org/packages/ca/8a/a01d4f07e1749886a6291bc2744df96e0b260d9d07b6f9d66a4e4e156ddb/edx-drf-extensions-8.5.3.tar.gz
+[2023-04-11 18:17:21] INFO root fetch - processPackages [edx-drf-extensions]: executing diffoscope
+[2023-04-11 18:17:21] INFO root fetch - processPackages [edx-drf-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edx-drf-extensions-8.4.1.tar.gz tmp/edx-drf-extensions-8.5.3.tar.gz --markdown 20230411/e/edx-drf-extensions/8.4.1-8.5.3/diff.md --exclude *.pyd
+[2023-04-11 18:17:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:21] INFO root fetch - processPackages [argo-workflows]: New version: [6.4.7] Old Version: [6.4.6]
+[2023-04-11 18:17:21] INFO root fetch - processPackages [cortex-cli]: New version: [1.12.3] Old Version: [1.11.1]
+[2023-04-11 18:17:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:21] INFO root fetch - processPackages [argo-workflows]: Downloading https://files.pythonhosted.org/packages/4f/27/7be30c1535f45534a6e2c6ae27bdc076554372926b2de4b4101369df5daf/argo-workflows-6.4.6.tar.gz
+[2023-04-11 18:17:21] WARNING root fetch - processPackages [botcity-ms365-excel-plugin]: Skipping, unable to determine old version
+[2023-04-11 18:17:21] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:17:21] INFO root fetch - processPackages [cortex-cli]: Downloading https://files.pythonhosted.org/packages/71/ea/a55cb8cf9ac080f32b5f0156ec3d0f5a5907628d8d5cf6113b43f6d4221a/cortex_cli-1.11.1.tar.gz
+[2023-04-11 18:17:21] INFO root fetch - processPackages [ovos-PHAL-plugin-system]: New version: [0.0.4a2] Old Version: [0.0.4a1]
+[2023-04-11 18:17:21] INFO root fetch - processPackages [argo-workflows]: Downloading https://files.pythonhosted.org/packages/f5/01/b69d1c2423c493b8d80462eff1227eded00a1650bea5ec0f8e4d77051a4b/argo-workflows-6.4.7.tar.gz
+[2023-04-11 18:17:21] INFO root fetch - processPackages [cortex-cli]: Downloading https://files.pythonhosted.org/packages/13/f5/489a8998b1f70ea306ec8300d119af604609af7a2d9e8374a81777b68e62/cortex_cli-1.12.3.tar.gz
+[2023-04-11 18:17:22] INFO root fetch - processPackages [argo-workflows]: executing diffoscope
+[2023-04-11 18:17:22] INFO root fetch - processPackages [argo-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argo-workflows-6.4.6.tar.gz tmp/argo-workflows-6.4.7.tar.gz --markdown 20230411/a/argo-workflows/6.4.6-6.4.7/diff.md --exclude *.pyd
+[2023-04-11 18:17:22] INFO root fetch - processPackages [ovos-PHAL-plugin-system]: Downloading https://files.pythonhosted.org/packages/59/d4/a15f14582b8fc4bfd1a5be9affec88ab8d4004dadb97f7751c3da235d269/ovos-PHAL-plugin-system-0.0.4a2.tar.gz
+[2023-04-11 18:17:22] INFO root fetch - processPackages [cortex-cli]: executing diffoscope
+[2023-04-11 18:17:22] INFO root fetch - processPackages [cortex-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cortex_cli-1.11.1.tar.gz tmp/cortex_cli-1.12.3.tar.gz --markdown 20230411/c/cortex-cli/1.11.1-1.12.3/diff.md --exclude *.pyd
+[2023-04-11 18:17:22] INFO root fetch - processPackages [ovos-PHAL-plugin-system]: executing diffoscope
+[2023-04-11 18:17:22] INFO root fetch - processPackages [ovos-PHAL-plugin-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos-PHAL-plugin-system-0.0.4a1.tar.gz tmp/ovos-PHAL-plugin-system-0.0.4a2.tar.gz --markdown 20230411/o/ovos-PHAL-plugin-system/0.0.4a1-0.0.4a2/diff.md --exclude *.pyd
+[2023-04-11 18:17:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:22] INFO root fetch - processPackages [dequeai]: New version: [0.694] Old Version: [0.692]
+[2023-04-11 18:17:22] INFO root fetch - processPackages [dequeai]: Downloading https://files.pythonhosted.org/packages/53/c2/915ea6b7c87d294b27c09ed6b18cf1e925c30c2f8fa6fed1f23c197a7fc4/dequeai-0.692.tar.gz
+[2023-04-11 18:17:23] INFO root fetch - processPackages [dequeai]: Downloading https://files.pythonhosted.org/packages/31/1c/9a026e3e66d23b93975d27c86946d0aed3fec8e38c10d48cbd1df294baa6/dequeai-0.694.tar.gz
+[2023-04-11 18:17:23] INFO root fetch - processPackages [dequeai]: executing diffoscope
+[2023-04-11 18:17:23] INFO root fetch - processPackages [dequeai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dequeai-0.692.tar.gz tmp/dequeai-0.694.tar.gz --markdown 20230411/d/dequeai/0.692-0.694/diff.md --exclude *.pyd
+[2023-04-11 18:17:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:23] INFO root fetch - processPackages [robocorp-logging]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 18:17:23] INFO root fetch - processPackages [text-fabric]: Downloading https://files.pythonhosted.org/packages/5a/68/601e800ea7b082fabb89c3c0c122fd9fa13b4da75c0bdfbafa945139092a/text_fabric-9.5.2-py3-none-any.whl
+[2023-04-11 18:17:23] INFO root fetch - processPackages [stpyvista]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-11 18:17:23] INFO root fetch - processPackages [stpyvista]: Downloading https://files.pythonhosted.org/packages/dd/ac/82e4f07999b42f3b0d7a91278ffa04639002d6788424195aaef1db851a9d/stpyvista-0.0.7.tar.gz
+[2023-04-11 18:17:23] INFO root fetch - processPackages [robocorp-logging]: Downloading https://files.pythonhosted.org/packages/74/41/b45446fc56175e0fa026a2bbd1e97fe6799f906c37bb35079f6a567b9fe5/robocorp_logging-0.0.4.tar.gz
+[2023-04-11 18:17:23] INFO root fetch - processPackages [robocorp-logging]: executing diffoscope
+[2023-04-11 18:17:23] INFO root fetch - processPackages [robocorp-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robocorp-logging-0.0.3.tar.gz tmp/robocorp_logging-0.0.4.tar.gz --markdown 20230411/r/robocorp-logging/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 18:17:24] INFO root fetch - processPackages [stpyvista]: Downloading https://files.pythonhosted.org/packages/49/b5/c427149f60aee6fd895cff9c5371373b8f948685927b05964933f0cec1c3/stpyvista-0.0.8.tar.gz
+[2023-04-11 18:17:24] INFO root fetch - processPackages [stpyvista]: executing diffoscope
+[2023-04-11 18:17:24] INFO root fetch - processPackages [stpyvista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stpyvista-0.0.7.tar.gz tmp/stpyvista-0.0.8.tar.gz --markdown 20230411/s/stpyvista/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-11 18:17:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:24] INFO root fetch - processPackages [unknowncode]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 18:17:24] INFO root fetch - processPackages [unknowncode]: executing diffoscope
+[2023-04-11 18:17:24] INFO root fetch - processPackages [unknowncode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unknowncode-0.2.1.tar.gz tmp/unknowncode-0.2.2.tar.gz --markdown 20230411/u/unknowncode/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 18:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:25] INFO root fetch - processPackages [python-roborock]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-11 18:17:25] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-04-11 18:17:25] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.6.1.tar.gz tmp/python_roborock-0.6.2.tar.gz --markdown 20230411/p/python-roborock/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-11 18:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:25] INFO root fetch - processPackages [text-fabric]: executing diffoscope
+[2023-04-11 18:17:25] INFO root fetch - processPackages [text-fabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text_fabric-9.5.1-py3-none-any.whl.zip tmp/text_fabric-9.5.2-py3-none-any.whl.zip --markdown 20230411/t/text-fabric/9.5.1-9.5.2/diff.md --exclude *.pyd
+[2023-04-11 18:17:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:17:29] INFO root fetch - main [MainThread]: Store serial: [17663344]
