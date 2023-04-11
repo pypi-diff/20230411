@@ -7408,3 +7408,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-11 06:59:31] INFO root fetch - processPackages [streamsets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamsets-5.2.0b2.tar.gz tmp/streamsets-5.2.0b3.tar.gz --markdown 20230411/s/streamsets/5.2.0b2-5.2.0b3/diff.md --exclude *.pyd
 [2023-04-11 06:59:34] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:59:34] INFO root fetch - main [MainThread]: Store serial: [17656282]
+[2023-04-11 07:04:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656282]
+[2023-04-11 07:04:42] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-11 07:04:42] INFO root fetch - processPackages [javonet-python-sdk]: New version: [2.1.0] Old Version: [2.0.4]
+[2023-04-11 07:04:42] INFO root fetch - processPackages [rapid-pe]: New version: [0.0.7.dev20230411] Old Version: [0.0.7.dev20230410]
+[2023-04-11 07:04:42] WARNING root fetch - processPackages [kz-iin-validator]: Skipping, unable to determine old version
+[2023-04-11 07:04:42] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:04:42] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230411] Old Version: [1.1.8b20230410]
+[2023-04-11 07:04:42] INFO root fetch - processPackages [zytlib]: New version: [0.3.319] Old Version: [0.3.318]
+[2023-04-11 07:04:42] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.13.0.dev20230410] Old Version: [2.13.0.dev20230409]
+[2023-04-11 07:04:42] INFO root fetch - processPackages [javonet-python-sdk]: Downloading https://files.pythonhosted.org/packages/3f/e6/b91414b0754667f339ef9377430c5b14efdc284cfcea4b65703fc9d2d0cd/javonet-python-sdk-2.0.4.tar.gz
+[2023-04-11 07:04:43] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/be/69/20f7963d97e7806102cac7600fa5dedcf386d9504f9b3e9c8da7124c32e6/rapid_pe-0.0.7.dev20230410.tar.gz
+[2023-04-11 07:04:43] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/6c/87/a8c916f8d93e33958eeb69ea905809de02160477fb0d5a1d2c4d2722cb59/multi_model_server-1.1.8b20230411-py2.py3-none-any.whl
+[2023-04-11 07:04:43] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/a0/25/0875912ad80847d417eb9307864dcf8d1e294c661670ad484946dcf6fde9/zytlib-0.3.318-py3-none-any.whl
+[2023-04-11 07:04:43] WARNING root fetch - processPackages [javonet-python-sdk]: Skipping package: exceeds size limit 88710849>=10485760
+[2023-04-11 07:04:43] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:04:43] INFO root fetch - processPackages [deepdriver]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-11 07:04:43] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/74/7e/5524427b0f41d9c73e3436a496ed685e4e134d4537df35bc674e09ff238a/tflite_runtime_nightly-2.13.0.dev20230410-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-11 07:04:43] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/30/19/9d43942a3c5855a1afdce7fdc1aeb4c115138f218f3c1e3fd7e46bda9a1b/rapid_pe-0.0.7.dev20230411.tar.gz
+[2023-04-11 07:04:43] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/72/a4/776e1821c4e85d78b915336f10926872691d34a7064d3b094d5cfaeaa508/zytlib-0.3.319-py3-none-any.whl
+[2023-04-11 07:04:43] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-04-11 07:04:43] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.318-py3-none-any.whl.zip tmp/zytlib-0.3.319-py3-none-any.whl.zip --markdown 20230411/z/zytlib/0.3.318-0.3.319/diff.md --exclude *.pyd
+[2023-04-11 07:04:43] INFO root fetch - processPackages [deepdriver]: executing diffoscope
+[2023-04-11 07:04:43] INFO root fetch - processPackages [deepdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdriver-0.9.4.tar.gz tmp/deepdriver-0.9.5.tar.gz --markdown 20230411/d/deepdriver/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-11 07:04:43] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-11 07:04:43] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.0.7.dev20230410.tar.gz tmp/rapid_pe-0.0.7.dev20230411.tar.gz --markdown 20230411/r/rapid-pe/0.0.7.dev20230410-0.0.7.dev20230411/diff.md --exclude *.pyd
+[2023-04-11 07:04:44] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-04-11 07:04:44] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.13.0.dev20230409-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.13.0.dev20230410-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230411/t/tflite-runtime-nightly/2.13.0.dev20230409-2.13.0.dev20230410/diff.md --exclude *.pyd
+[2023-04-11 07:04:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:04:45] WARNING root fetch - processPackages [HaiqvML]: Skipping, unable to determine old version
+[2023-04-11 07:04:45] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:04:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:04:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:04:46] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-04-11 07:04:46] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230410-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230411-py2.py3-none-any.whl.zip --markdown 20230411/m/multi-model-server/1.1.8b20230410-1.1.8b20230411/diff.md --exclude *.pyd
+[2023-04-11 07:05:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:07:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:07:44] INFO root fetch - main [MainThread]: Store serial: [17656346]
