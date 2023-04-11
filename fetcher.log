@@ -16736,3 +16736,105 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 16:58:50] INFO root fetch - main [MainThread]: success
 [2023-04-11 16:59:19] INFO root fetch - main [MainThread]: success
 [2023-04-11 16:59:19] INFO root fetch - main [MainThread]: Store serial: [17662492]
+[2023-04-11 17:04:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17662492]
+[2023-04-11 17:04:28] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-11 17:04:28] INFO root fetch - processPackages [rria-api-denso]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 17:04:28] INFO root fetch - processPackages [starfishX]: New version: [0.155556] Old Version: [0.155555]
+[2023-04-11 17:04:28] INFO root fetch - processPackages [Data-Save]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-11 17:04:28] INFO root fetch - processPackages [pyntone]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-04-11 17:04:28] INFO root fetch - processPackages [dargus]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 17:04:28] INFO root fetch - processPackages [rria-api-denso]: Downloading https://files.pythonhosted.org/packages/3b/76/31d87946b55c586db7ba40e8a142c28c6be8c0f81fe312c0d973601dcb9f/rria_api_denso-0.1.0.tar.gz
+[2023-04-11 17:04:28] INFO root fetch - processPackages [dargus]: Downloading https://files.pythonhosted.org/packages/c0/91/7de56a11f7d8d88c0f5fe1b40bf28ab7ae8420573ec80748456d82137ae8/dargus-1.0.0.tar.gz
+[2023-04-11 17:04:28] INFO root fetch - processPackages [Data-Save]: Downloading https://files.pythonhosted.org/packages/db/c9/4c75f454b451aba7e8e0706e79e8213ac0cf9a7f4cf3915a1a6ab37d1132/Data_Save-1.0.0.tar.gz
+[2023-04-11 17:04:28] INFO root fetch - processPackages [starfishX]: Downloading https://files.pythonhosted.org/packages/fa/88/8070d24e79fdd0583209cd5cd7e2375fe8fac1269bc09ca313574912df04/starfishX-0.155555.tar.gz
+[2023-04-11 17:04:28] INFO root fetch - processPackages [pyntone]: Downloading https://files.pythonhosted.org/packages/28/9d/b4d83bafa8de6e2135dbb5bcb5bd6971bd2daa84f6d7e79a310cc5fe1b8c/pyntone-0.2.1.tar.gz
+[2023-04-11 17:04:29] INFO root fetch - processPackages [pyntone]: executing diffoscope
+[2023-04-11 17:04:29] INFO root fetch - processPackages [pyntone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyntone-0.1.0.tar.gz tmp/pyntone-0.2.1.tar.gz --markdown 20230411/p/pyntone/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-11 17:04:29] INFO root fetch - processPackages [rria-api-denso]: Downloading https://files.pythonhosted.org/packages/5f/bc/bdb782165b5bdcea1c093767103f5309a906f1f1f72a3d90769c58548038/rria_api_denso-0.1.1.tar.gz
+[2023-04-11 17:04:29] INFO root fetch - processPackages [starfishX]: Downloading https://files.pythonhosted.org/packages/63/ff/573ef116c943a96397bddd1fb6832ed13c83cb3ed6d48b6023ee9cd4c4b8/starfishX-0.155556.tar.gz
+[2023-04-11 17:04:29] INFO root fetch - processPackages [dargus]: Downloading https://files.pythonhosted.org/packages/dd/41/c5d55709cb696d3af50e90e9b2aa4b4070fc36697cd7472e814119040008/dargus-1.0.1.tar.gz
+[2023-04-11 17:04:29] INFO root fetch - processPackages [Data-Save]: Downloading https://files.pythonhosted.org/packages/39/67/5b6f52d25c8a5adbc59b823166352c4a57f561e349d62268085748d72368/Data_Save-1.1.0.tar.gz
+[2023-04-11 17:04:29] INFO root fetch - processPackages [rria-api-denso]: executing diffoscope
+[2023-04-11 17:04:29] INFO root fetch - processPackages [rria-api-denso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rria_api_denso-0.1.0.tar.gz tmp/rria_api_denso-0.1.1.tar.gz --markdown 20230411/r/rria-api-denso/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 17:04:29] INFO root fetch - processPackages [starfishX]: executing diffoscope
+[2023-04-11 17:04:29] INFO root fetch - processPackages [starfishX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starfishX-0.155555.tar.gz tmp/starfishX-0.155556.tar.gz --markdown 20230411/s/starfishX/0.155555-0.155556/diff.md --exclude *.pyd
+[2023-04-11 17:04:29] INFO root fetch - processPackages [dargus]: executing diffoscope
+[2023-04-11 17:04:29] INFO root fetch - processPackages [dargus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dargus-1.0.0.tar.gz tmp/dargus-1.0.1.tar.gz --markdown 20230411/d/dargus/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 17:04:29] INFO root fetch - processPackages [Data-Save]: executing diffoscope
+[2023-04-11 17:04:29] INFO root fetch - processPackages [Data-Save]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Data_Save-1.0.0.tar.gz tmp/Data_Save-1.1.0.tar.gz --markdown 20230411/D/Data-Save/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 17:04:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:30] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.13.0.dev20230411] Old Version: [2.13.0.dev20230410]
+[2023-04-11 17:04:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:30] INFO root fetch - processPackages [napari-cellseg3d]: New version: [0.0.2rc5] Old Version: [0.0.2rc4]
+[2023-04-11 17:04:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:30] WARNING root fetch - processPackages [dnngior]: Skipping, unable to determine old version
+[2023-04-11 17:04:30] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:04:30] INFO root fetch - processPackages [acquire]: New version: [3.6.dev4] Old Version: [3.6.dev3]
+[2023-04-11 17:04:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:30] INFO root fetch - processPackages [np-gui]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 17:04:30] INFO root fetch - processPackages [napari-cellseg3d]: Downloading https://files.pythonhosted.org/packages/8b/2f/976cfc3224fe3ca8c62dbb08b6666aff83c737f4f16c795b017f3f1fac78/napari_cellseg3d-0.0.2rc5.tar.gz
+[2023-04-11 17:04:30] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/7f/2c/b7bf706504ecaa0623102e88a102c7e14eab110357e5a04251864c8b5189/tensorflow_text_nightly-2.13.0.dev20230411-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 17:04:30] INFO root fetch - processPackages [acquire]: Downloading https://files.pythonhosted.org/packages/17/c8/ad33d54760b2e3655ec42b75610ffe52c4346d7ec6c9fd534f24709b34ea/acquire-3.6.dev4.tar.gz
+[2023-04-11 17:04:30] INFO root fetch - processPackages [np-gui]: Downloading https://files.pythonhosted.org/packages/11/f5/e236320456eedda77bb984d3ea9b7b519f19f8a61c859a4e745102c400dd/np_gui-0.0.2.tar.gz
+[2023-04-11 17:04:31] INFO root fetch - processPackages [napari-cellseg3d]: executing diffoscope
+[2023-04-11 17:04:31] INFO root fetch - processPackages [napari-cellseg3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_cellseg3d-0.0.2rc4.tar.gz tmp/napari_cellseg3d-0.0.2rc5.tar.gz --markdown 20230411/n/napari-cellseg3d/0.0.2rc4-0.0.2rc5/diff.md --exclude *.pyd
+[2023-04-11 17:04:31] INFO root fetch - processPackages [acquire]: executing diffoscope
+[2023-04-11 17:04:31] INFO root fetch - processPackages [acquire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acquire-3.6.dev3.tar.gz tmp/acquire-3.6.dev4.tar.gz --markdown 20230411/a/acquire/3.6.dev3-3.6.dev4/diff.md --exclude *.pyd
+[2023-04-11 17:04:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:31] INFO root fetch - processPackages [awsenergylabelercli]: New version: [3.2.2] Old Version: [3.2.1]
+[2023-04-11 17:04:31] INFO root fetch - processPackages [awsenergylabelercli]: Downloading https://files.pythonhosted.org/packages/c1/08/4ca6b3290c7643a54cc20a63a540c09260421a8ae3997581cf51f58e09ad/awsenergylabelercli-3.2.1.tar.gz
+[2023-04-11 17:04:31] INFO root fetch - processPackages [awsenergylabelercli]: Downloading https://files.pythonhosted.org/packages/ef/63/971bd291f696449b7e1cda18b58094e1aad72e653637a76de1ecb23ef122/awsenergylabelercli-3.2.2.tar.gz
+[2023-04-11 17:04:31] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-04-11 17:04:31] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.13.0.dev20230410-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.13.0.dev20230411-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230411/t/tensorflow-text-nightly/2.13.0.dev20230410-2.13.0.dev20230411/diff.md --exclude *.pyd
+[2023-04-11 17:04:31] INFO root fetch - processPackages [np-gui]: Downloading https://files.pythonhosted.org/packages/4c/b4/cfd9597585fb34e49cb147adcecad28050dd854d7ef53e9b7b9115b79463/np_gui-0.0.3.tar.gz
+[2023-04-11 17:04:31] INFO root fetch - processPackages [awsenergylabelercli]: executing diffoscope
+[2023-04-11 17:04:31] INFO root fetch - processPackages [awsenergylabelercli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awsenergylabelercli-3.2.1.tar.gz tmp/awsenergylabelercli-3.2.2.tar.gz --markdown 20230411/a/awsenergylabelercli/3.2.1-3.2.2/diff.md --exclude *.pyd
+[2023-04-11 17:04:32] INFO root fetch - processPackages [np-gui]: executing diffoscope
+[2023-04-11 17:04:32] INFO root fetch - processPackages [np-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_gui-0.0.2.tar.gz tmp/np_gui-0.0.3.tar.gz --markdown 20230411/n/np-gui/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 17:04:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:32] INFO root fetch - processPackages [morphcp]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-04-11 17:04:32] INFO root fetch - processPackages [morphcp]: executing diffoscope
+[2023-04-11 17:04:32] INFO root fetch - processPackages [morphcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphcp-0.0.6.tar.gz tmp/morphcp-0.0.9.tar.gz --markdown 20230411/m/morphcp/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 17:04:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:32] INFO root fetch - processPackages [meshtastic]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-04-11 17:04:32] INFO root fetch - processPackages [meshtastic]: Downloading https://files.pythonhosted.org/packages/25/99/c2a0be19cd4b4a59fdea055511fcb481566794d82939fa08a6c762180dec/meshtastic-2.1.5.tar.gz
+[2023-04-11 17:04:33] INFO root fetch - processPackages [meshtastic]: Downloading https://files.pythonhosted.org/packages/d2/ba/cc701b5940ac446b4bdd2ed2cf3cbe380a7068c1071955b5b0f0ff9e6546/meshtastic-2.1.6.tar.gz
+[2023-04-11 17:04:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:33] INFO root fetch - processPackages [geomapi]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-11 17:04:33] INFO root fetch - processPackages [meshtastic]: executing diffoscope
+[2023-04-11 17:04:33] INFO root fetch - processPackages [meshtastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshtastic-2.1.5.tar.gz tmp/meshtastic-2.1.6.tar.gz --markdown 20230411/m/meshtastic/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-04-11 17:04:33] INFO root fetch - processPackages [geomapi]: Downloading https://files.pythonhosted.org/packages/ab/20/3ae6af0350970a17df706b54ba39d6d5a94e26c2f14a8fc5453bdcf7a42a/geomapi-0.1.9.tar.gz
+[2023-04-11 17:04:33] INFO root fetch - processPackages [geomapi]: Downloading https://files.pythonhosted.org/packages/b1/78/889e6709da9677b641f712281e01f923ead18b8467c6e2110786d2c5aed3/geomapi-0.2.0.tar.gz
+[2023-04-11 17:04:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:33] INFO root fetch - processPackages [oss-pip-jacobi]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 17:04:34] INFO root fetch - processPackages [oss-pip-jacobi]: Downloading https://files.pythonhosted.org/packages/3f/f7/fdbab883eb4b6d5d3f98d1b01deed33420ad72387800a4a35906e490e377/oss_pip_jacobi-0.0.1-py3-none-any.whl
+[2023-04-11 17:04:34] INFO root fetch - processPackages [geomapi]: executing diffoscope
+[2023-04-11 17:04:34] INFO root fetch - processPackages [geomapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geomapi-0.1.9.tar.gz tmp/geomapi-0.2.0.tar.gz --markdown 20230411/g/geomapi/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 17:04:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:34] INFO root fetch - processPackages [oss-pip-jacobi]: Downloading https://files.pythonhosted.org/packages/f7/b0/795d3615bb9bf6f8c9446095f236a352f647b9f581f53d30ce62cf89c4f0/oss_pip_jacobi-0.0.2-py3-none-any.whl
+[2023-04-11 17:04:34] INFO root fetch - processPackages [rria-api-denso]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 17:04:34] INFO root fetch - processPackages [rria-api-denso]: executing diffoscope
+[2023-04-11 17:04:34] INFO root fetch - processPackages [rria-api-denso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rria_api_denso-0.1.0.tar.gz tmp/rria_api_denso-0.1.1.tar.gz --markdown 20230411/r/rria-api-denso/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 17:04:34] INFO root fetch - processPackages [oss-pip-jacobi]: executing diffoscope
+[2023-04-11 17:04:34] INFO root fetch - processPackages [oss-pip-jacobi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oss_pip_jacobi-0.0.1-py3-none-any.whl.zip tmp/oss_pip_jacobi-0.0.2-py3-none-any.whl.zip --markdown 20230411/o/oss-pip-jacobi/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 17:04:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:35] INFO root fetch - processPackages [streamsets]: New version: [5.2.0b4] Old Version: [5.2.0b3]
+[2023-04-11 17:04:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:35] INFO root fetch - processPackages [dashboard-dataviz-panel]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 17:04:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:35] INFO root fetch - processPackages [gudhi]: New version: [3.8.0rc2] Old Version: [3.8.0rc1]
+[2023-04-11 17:04:35] INFO root fetch - processPackages [streamsets]: Downloading https://files.pythonhosted.org/packages/6e/65/f1abb8609ce062dd4a9934ed82a7f828310c986386eb1c70ec62352e199c/streamsets-5.2.0b4.tar.gz
+[2023-04-11 17:04:35] INFO root fetch - processPackages [dashboard-dataviz-panel]: Downloading https://files.pythonhosted.org/packages/37/b8/9c6b5bd0da82a533ac836bd56de43b5e26b35df515ef522d72d9e43bc9d5/dashboard_dataviz_panel-0.1.3-py3-none-any.whl
+[2023-04-11 17:04:35] INFO root fetch - processPackages [dashboard-dataviz-panel]: executing diffoscope
+[2023-04-11 17:04:35] INFO root fetch - processPackages [dashboard-dataviz-panel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dashboard_dataviz_panel-0.1.2-py3-none-any.whl.zip tmp/dashboard_dataviz_panel-0.1.3-py3-none-any.whl.zip --markdown 20230411/d/dashboard-dataviz-panel/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 17:04:35] INFO root fetch - processPackages [gudhi]: Downloading https://files.pythonhosted.org/packages/1f/05/766428d7488cd05b9a502928a1cd7821447a40359d766fa869a356420b0c/gudhi-3.8.0rc2-cp38-cp38-macosx_10_15_universal2.whl
+[2023-04-11 17:04:36] INFO root fetch - processPackages [gudhi]: executing diffoscope
+[2023-04-11 17:04:36] INFO root fetch - processPackages [gudhi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gudhi-3.8.0rc1.tar.gz tmp/gudhi-3.8.0rc2-cp38-cp38-macosx_10_15_universal2.whl.zip --markdown 20230411/g/gudhi/3.8.0rc1-3.8.0rc2/diff.md --exclude *.pyd
+[2023-04-11 17:04:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:37] INFO root fetch - processPackages [streamsets]: executing diffoscope
+[2023-04-11 17:04:37] INFO root fetch - processPackages [streamsets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamsets-5.2.0b3.tar.gz tmp/streamsets-5.2.0b4.tar.gz --markdown 20230411/s/streamsets/5.2.0b3-5.2.0b4/diff.md --exclude *.pyd
+[2023-04-11 17:04:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:04:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:05:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:05:48] INFO root fetch - main [MainThread]: Store serial: [17662556]
