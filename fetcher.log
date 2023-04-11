@@ -22100,3 +22100,70 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 22:31:32] INFO root fetch - main [MainThread]: success
 [2023-04-11 22:31:41] INFO root fetch - main [MainThread]: success
 [2023-04-11 22:31:41] INFO root fetch - main [MainThread]: Store serial: [17665936]
+[2023-04-11 22:36:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17665936]
+[2023-04-11 22:36:53] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 22:36:53] INFO root fetch - processPackages [frigidaire]: New version: [0.8] Old Version: [0.7]
+[2023-04-11 22:36:53] INFO root fetch - processPackages [iloscar]: New version: [0.1a0] Old Version: [0.1.2a0]
+[2023-04-11 22:36:53] INFO root fetch - processPackages [torch-utilities]: New version: [1.0.0] Old Version: [0.0.1]
+[2023-04-11 22:36:53] INFO root fetch - processPackages [returnn]: New version: [1.20230411.4301] Old Version: [1.20230411.222227]
+[2023-04-11 22:36:53] INFO root fetch - processPackages [dtiplayground]: New version: [0.5.7b9] Old Version: [0.5.7b8]
+[2023-04-11 22:36:53] INFO root fetch - processPackages [torch-utilities]: executing diffoscope
+[2023-04-11 22:36:53] INFO root fetch - processPackages [torch-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_utilities-0.0.1-py3-none-any.whl.zip tmp/torch_utilities-1.0.0.tar.gz --markdown 20230411/t/torch-utilities/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-11 22:36:53] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/3f/9b/bb4044e29038e14fe7be027893770a8d1246c9566c41b8d76f68ab0b625f/returnn-1.20230411.222227.tar.gz
+[2023-04-11 22:36:53] INFO root fetch - processPackages [frigidaire]: Downloading https://files.pythonhosted.org/packages/79/a4/bfae4cedd9898802e6ce0f9d85acfbc99fe9a0fdba2be25f68a73ecc3df0/frigidaire-0.7.tar.gz
+[2023-04-11 22:36:53] INFO root fetch - processPackages [iloscar]: Downloading https://files.pythonhosted.org/packages/8e/09/9b6087537b1fd08809a48a455d28c3079ff03b12d79065e9b81071a33aae/iloscar-0.1.2a0.tar.gz
+[2023-04-11 22:36:53] INFO root fetch - processPackages [dtiplayground]: Downloading https://files.pythonhosted.org/packages/8d/01/ab30a5aa257c13ab4fb7ec2480ead1fccb00515f0fd12db1c9661dd9ea26/dtiplayground-0.5.7b8.tar.gz
+[2023-04-11 22:36:54] INFO root fetch - processPackages [frigidaire]: Downloading https://files.pythonhosted.org/packages/d9/2a/a579207ff06e07f868f36f96843de4cbf8a245257d2638517d7b840f5d86/frigidaire-0.8.tar.gz
+[2023-04-11 22:36:54] INFO root fetch - processPackages [iloscar]: Downloading https://files.pythonhosted.org/packages/54/21/e00e474c99210b50815a55555a7721db707a942bfb244bbf89e6db5e9710/iloscar-0.1a0.tar.gz
+[2023-04-11 22:36:54] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-11 22:36:54] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230411.222227.tar.gz tmp/returnn-1.20230411.4301.tar.gz --markdown 20230411/r/returnn/1.20230411.222227-1.20230411.4301/diff.md --exclude *.pyd
+[2023-04-11 22:36:54] INFO root fetch - processPackages [frigidaire]: executing diffoscope
+[2023-04-11 22:36:54] INFO root fetch - processPackages [frigidaire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frigidaire-0.7.tar.gz tmp/frigidaire-0.8.tar.gz --markdown 20230411/f/frigidaire/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-11 22:36:54] INFO root fetch - processPackages [iloscar]: executing diffoscope
+[2023-04-11 22:36:54] INFO root fetch - processPackages [iloscar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iloscar-0.1.2a0.tar.gz tmp/iloscar-0.1a0.tar.gz --markdown 20230411/i/iloscar/0.1.2a0-0.1a0/diff.md --exclude *.pyd
+[2023-04-11 22:36:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:36:54] INFO root fetch - processPackages [iloscar]: New version: [0.1a0] Old Version: [0.1.2a0]
+[2023-04-11 22:36:55] INFO root fetch - processPackages [iloscar]: executing diffoscope
+[2023-04-11 22:36:55] INFO root fetch - processPackages [iloscar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iloscar-0.1.2a0.tar.gz tmp/iloscar-0.1a0.tar.gz --markdown 20230411/i/iloscar/0.1.2a0-0.1a0/diff.md --exclude *.pyd
+[2023-04-11 22:36:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:36:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:36:55] INFO root fetch - processPackages [hasiihelper]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-11 22:36:55] WARNING root fetch - processPackages [data-io-flow]: Skipping, unable to determine old version
+[2023-04-11 22:36:55] INFO root fetch - main [MainThread]: error
+[2023-04-11 22:36:55] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 22:36:55] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-11 22:36:55] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230411/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 22:36:56] INFO root fetch - processPackages [hasiihelper]: Downloading https://files.pythonhosted.org/packages/79/8a/79ae2741573b71ff732107b0f865dc764879736e3c5effa2165dea2970f4/hasiihelper-0.1.0.tar.gz
+[2023-04-11 22:36:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:36:56] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc268] Old Version: [3.0.2rc267]
+[2023-04-11 22:36:56] INFO root fetch - processPackages [dtiplayground]: Downloading https://files.pythonhosted.org/packages/a2/26/89fe4b5db4216d9093b7fa3a96a872870d3a689f2098e59eb2de7d99b718/dtiplayground-0.5.7b9.tar.gz
+[2023-04-11 22:36:56] INFO root fetch - processPackages [hasiihelper]: Downloading https://files.pythonhosted.org/packages/0c/a0/f9580b20ba79855481ac5f69162578cba0bc8f645e31fe0e0ddc207e35ae/hasiihelper-0.2.0.tar.gz
+[2023-04-11 22:36:56] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/00/e5/ce84ce2bda973acbe2a57b143a6ab9c6ed928c34588c9fa3b61cd038530b/car-connector-framework-3.0.2rc267.tar.gz
+[2023-04-11 22:36:56] INFO root fetch - processPackages [hasiihelper]: executing diffoscope
+[2023-04-11 22:36:56] INFO root fetch - processPackages [hasiihelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hasiihelper-0.1.0.tar.gz tmp/hasiihelper-0.2.0.tar.gz --markdown 20230411/h/hasiihelper/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 22:36:56] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/a6/6e/a439f51039ddd2bb1fa50388fdbb5a293b8dcb44a963f4a9810dd2e0028c/car-connector-framework-3.0.2rc268.tar.gz
+[2023-04-11 22:36:57] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-11 22:36:57] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc267.tar.gz tmp/car-connector-framework-3.0.2rc268.tar.gz --markdown 20230411/c/car-connector-framework/3.0.2rc267-3.0.2rc268/diff.md --exclude *.pyd
+[2023-04-11 22:36:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:36:57] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc268] Old Version: [3.0.2rc267]
+[2023-04-11 22:36:57] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-11 22:36:57] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc267.tar.gz tmp/car-connector-framework-3.0.2rc268.tar.gz --markdown 20230411/c/car-connector-framework/3.0.2rc267-3.0.2rc268/diff.md --exclude *.pyd
+[2023-04-11 22:36:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:36:57] INFO root fetch - processPackages [libcnmc]: New version: [23.9.1] Old Version: [23.9.0]
+[2023-04-11 22:36:57] INFO root fetch - processPackages [libcnmc]: Downloading https://files.pythonhosted.org/packages/91/88/c28ff84568ef323398498b71d609a92ca287ddcdf8a851536ab656221bc4/libcnmc-23.9.0.tar.gz
+[2023-04-11 22:36:58] INFO root fetch - processPackages [dtiplayground]: executing diffoscope
+[2023-04-11 22:36:58] INFO root fetch - processPackages [dtiplayground]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtiplayground-0.5.7b8.tar.gz tmp/dtiplayground-0.5.7b9.tar.gz --markdown 20230411/d/dtiplayground/0.5.7b8-0.5.7b9/diff.md --exclude *.pyd
+[2023-04-11 22:36:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:36:58] INFO root fetch - processPackages [libcnmc]: Downloading https://files.pythonhosted.org/packages/fc/9f/639d42b63484a91cf9f1c60f9bb709f1ed853240f45c2e02047054beffa6/libcnmc-23.9.1.tar.gz
+[2023-04-11 22:36:58] INFO root fetch - processPackages [griptape-core]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-11 22:36:58] INFO root fetch - processPackages [libcnmc]: executing diffoscope
+[2023-04-11 22:36:58] INFO root fetch - processPackages [libcnmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libcnmc-23.9.0.tar.gz tmp/libcnmc-23.9.1.tar.gz --markdown 20230411/l/libcnmc/23.9.0-23.9.1/diff.md --exclude *.pyd
+[2023-04-11 22:36:58] INFO root fetch - processPackages [griptape-core]: Downloading https://files.pythonhosted.org/packages/21/6b/ec375a9f689f1e88e9686459582c1a69f0d49e8dd346ad8318e62248ae7f/griptape_core-0.4.0.tar.gz
+[2023-04-11 22:36:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:36:58] INFO root fetch - processPackages [griptape-core]: executing diffoscope
+[2023-04-11 22:36:58] INFO root fetch - processPackages [griptape-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape_core-0.3.0.tar.gz tmp/griptape_core-0.4.0.tar.gz --markdown 20230411/g/griptape-core/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-11 22:36:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:36:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:37:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:37:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:37:01] INFO root fetch - main [MainThread]: Store serial: [17665975]
