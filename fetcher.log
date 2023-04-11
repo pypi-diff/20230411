@@ -4281,3 +4281,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 04:19:39] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:19:40] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:19:40] INFO root fetch - main [MainThread]: Store serial: [17654153]
+[2023-04-11 04:24:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17654153]
+[2023-04-11 04:24:47] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 04:24:47] WARNING root fetch - processPackages [dss06023calc]: Skipping, unable to determine old version
+[2023-04-11 04:24:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:24:47] INFO root fetch - processPackages [processplatform]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-11 04:24:47] INFO root fetch - processPackages [rec-pangu]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-11 04:24:47] INFO root fetch - processPackages [afwf]: New version: [0.4.1] Old Version: [0.3.2]
+[2023-04-11 04:24:47] WARNING root fetch - processPackages [juseokson230411]: Skipping, unable to determine old version
+[2023-04-11 04:24:47] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230411] Old Version: [1.2.20230410]
+[2023-04-11 04:24:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:24:47] WARNING root fetch - processPackages [dainKim]: Skipping, unable to determine old version
+[2023-04-11 04:24:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:24:47] WARNING root fetch - processPackages [mle-project]: Skipping, unable to determine old version
+[2023-04-11 04:24:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:24:48] INFO root fetch - processPackages [mlflow-asus-aimaker]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 04:24:48] INFO root fetch - processPackages [processplatform]: Downloading https://files.pythonhosted.org/packages/37/e2/ca7cde58fae0bd9691c2f19c78b5f923dad672c60f18ba65d9794a7d2353/processplatform-1.0.3.tar.gz
+[2023-04-11 04:24:48] INFO root fetch - processPackages [rec-pangu]: Downloading https://files.pythonhosted.org/packages/38/e3/c5eaac8d8396016807ead284e2eeebf52dca7597d71236e3b4380d2a1d7d/rec_pangu-0.3.7-py3-none-any.whl
+[2023-04-11 04:24:48] INFO root fetch - processPackages [rec-pangu]: executing diffoscope
+[2023-04-11 04:24:48] INFO root fetch - processPackages [rec-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rec_pangu-0.3.6-py3-none-any.whl.zip tmp/rec_pangu-0.3.7-py3-none-any.whl.zip --markdown 20230411/r/rec-pangu/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-11 04:24:48] INFO root fetch - processPackages [mlflow-asus-aimaker]: Downloading https://files.pythonhosted.org/packages/3a/ae/104b4c8258861d1a744bf0594c9de1a7244bd1eb495a84308ce2425dffbc/mlflow-asus-aimaker-1.0.1.tar.gz
+[2023-04-11 04:24:48] INFO root fetch - processPackages [afwf]: Downloading https://files.pythonhosted.org/packages/17/af/0017b456af71cc91039987121238b5ef0c945a6abe95eabc1e1b3d2cc949/afwf-0.4.1.tar.gz
+[2023-04-11 04:24:48] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/6b/c7/26f1118dc62462061cc8e4448c275e1296aacc36046c2b47ed37dbc9fe29/iam_actions-1.2.20230411.tar.gz
+[2023-04-11 04:24:48] INFO root fetch - processPackages [afwf]: executing diffoscope
+[2023-04-11 04:24:48] INFO root fetch - processPackages [afwf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afwf-0.3.2.tar.gz tmp/afwf-0.4.1.tar.gz --markdown 20230411/a/afwf/0.3.2-0.4.1/diff.md --exclude *.pyd
+[2023-04-11 04:24:48] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-04-11 04:24:48] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230410.tar.gz tmp/iam_actions-1.2.20230411.tar.gz --markdown 20230411/i/iam-actions/1.2.20230410-1.2.20230411/diff.md --exclude *.pyd
+[2023-04-11 04:24:48] INFO root fetch - processPackages [processplatform]: Downloading https://files.pythonhosted.org/packages/43/6c/fc8b98e748e721a818b8bb04c9aeb893eb1b5f407cafd6b8e288e5e11d61/processplatform-1.0.4.tar.gz
+[2023-04-11 04:24:48] INFO root fetch - processPackages [mlflow-asus-aimaker]: Downloading https://files.pythonhosted.org/packages/89/fc/b0bf3bfca5c32c6143229b38cd923345c03582ce2909d3dd385d1c04aadb/mlflow-asus-aimaker-1.0.2.tar.gz
+[2023-04-11 04:24:48] INFO root fetch - processPackages [mlflow-asus-aimaker]: executing diffoscope
+[2023-04-11 04:24:48] INFO root fetch - processPackages [mlflow-asus-aimaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow-asus-aimaker-1.0.1.tar.gz tmp/mlflow-asus-aimaker-1.0.2.tar.gz --markdown 20230411/m/mlflow-asus-aimaker/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 04:24:48] INFO root fetch - processPackages [processplatform]: executing diffoscope
+[2023-04-11 04:24:48] INFO root fetch - processPackages [processplatform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/processplatform-1.0.3.tar.gz tmp/processplatform-1.0.4.tar.gz --markdown 20230411/p/processplatform/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-11 04:24:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:24:49] INFO root fetch - processPackages [JangHyoJoon]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 04:24:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:24:49] INFO root fetch - processPackages [opencv-stubs]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 04:24:49] INFO root fetch - processPackages [JangHyoJoon]: Downloading https://files.pythonhosted.org/packages/be/b6/993f27904dbac80b0eb3a091ed87a7b19e53c9200d7078aecd2c1bed4ed9/JangHyoJoon-0.0.1-py3-none-any.whl
+[2023-04-11 04:24:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:24:50] INFO root fetch - processPackages [dismod-mr]: New version: [1.1.2.7] Old Version: [1.1.1]
+[2023-04-11 04:24:50] INFO root fetch - processPackages [opencv-stubs]: Downloading https://files.pythonhosted.org/packages/46/0b/bdcc1f73ea3104e9e546fb62c3cdbbd34ac6d80e0bb9af2ccfde0a21703e/opencv_stubs-0.0.1.tar.gz
+[2023-04-11 04:24:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:24:50] INFO root fetch - processPackages [JangHyoJoon]: Downloading https://files.pythonhosted.org/packages/aa/70/4015bfeba1dc78789a64c8311de952b3be790d644272c81c747c1ceed640/JangHyoJoon-0.0.2-py3-none-any.whl
+[2023-04-11 04:24:50] INFO root fetch - processPackages [JangHyoJoon]: executing diffoscope
+[2023-04-11 04:24:50] INFO root fetch - processPackages [JangHyoJoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JangHyoJoon-0.0.1-py3-none-any.whl.zip tmp/JangHyoJoon-0.0.2-py3-none-any.whl.zip --markdown 20230411/J/JangHyoJoon/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 04:24:50] INFO root fetch - processPackages [dismod-mr]: Downloading https://files.pythonhosted.org/packages/f5/d5/4f68d93812af44915cca061fec2de2ce232393f011a1ad72b696a4d16fb5/dismod_mr-1.1.1.tar.gz
+[2023-04-11 04:24:50] INFO root fetch - processPackages [opencv-stubs]: Downloading https://files.pythonhosted.org/packages/25/15/24976eb2190e920b9b209c0b578f91af49ca8588d5168d10fdbdc5e15685/opencv_stubs-0.0.2.tar.gz
+[2023-04-11 04:24:50] INFO root fetch - processPackages [opencv-stubs]: executing diffoscope
+[2023-04-11 04:24:50] INFO root fetch - processPackages [opencv-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencv_stubs-0.0.1.tar.gz tmp/opencv_stubs-0.0.2.tar.gz --markdown 20230411/o/opencv-stubs/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 04:24:50] INFO root fetch - processPackages [dismod-mr]: Downloading https://files.pythonhosted.org/packages/ce/39/f5a4e30f3c8be11f29dbaab53baa85e74687ba5998b21a5c730e5883979d/dismod_mr-1.1.2.7.tar.gz
+[2023-04-11 04:24:50] INFO root fetch - processPackages [dismod-mr]: executing diffoscope
+[2023-04-11 04:24:50] INFO root fetch - processPackages [dismod-mr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dismod_mr-1.1.1.tar.gz tmp/dismod_mr-1.1.2.7.tar.gz --markdown 20230411/d/dismod-mr/1.1.1-1.1.2.7/diff.md --exclude *.pyd
+[2023-04-11 04:24:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:24:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:24:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:24:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:24:53] INFO root fetch - main [MainThread]: Store serial: [17654192]
