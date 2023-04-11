@@ -1220,3 +1220,64 @@
 [2023-04-11 02:00:25] INFO root fetch - main [MainThread]: success
 [2023-04-11 02:00:25] INFO root fetch - main [MainThread]: success
 [2023-04-11 02:00:25] INFO root fetch - main [MainThread]: Store serial: [17651869]
+[2023-04-11 02:05:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651869]
+[2023-04-11 02:05:32] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 02:05:32] INFO root fetch - processPackages [arklibrary]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 02:05:32] WARNING root fetch - processPackages [jarvis-toolkit]: Skipping, unable to determine old version
+[2023-04-11 02:05:32] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:05:32] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230410] Old Version: [0.0.8.dev20230409]
+[2023-04-11 02:05:32] INFO root fetch - processPackages [processplatform]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 02:05:32] INFO root fetch - processPackages [pyarmor.cli.core]: New version: [2.1.dev9] Old Version: [2.1.dev7]
+[2023-04-11 02:05:32] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-04-11 02:05:32] INFO root fetch - processPackages [arklibrary]: executing diffoscope
+[2023-04-11 02:05:32] INFO root fetch - processPackages [arklibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arklibrary-0.0.8.tar.gz tmp/arklibrary-0.0.9.tar.gz --markdown 20230411/a/arklibrary/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 02:05:32] INFO root fetch - processPackages [processplatform]: Downloading https://files.pythonhosted.org/packages/74/01/8bcc754ce41b4df1c9b74fd25534e8d57febe86888b0d394d701b60c23d3/processplatform-1.0.0.tar.gz
+[2023-04-11 02:05:32] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/76/bb/e7b8dc9940559e32c6c42a1de4681af22eee8ca9d5c571e6ed9fbd6921b7/jaxutils-nightly-0.0.8.dev20230410.tar.gz
+[2023-04-11 02:05:33] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-04-11 02:05:33] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230411/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-04-11 02:05:33] INFO root fetch - processPackages [processplatform]: Downloading https://files.pythonhosted.org/packages/45/68/8f85139b5e4729e128d1207da85804d0cd1553151ba81dbf53590a9a0078/processplatform-1.0.1.tar.gz
+[2023-04-11 02:05:33] INFO root fetch - processPackages [pyarmor.cli.core]: executing diffoscope
+[2023-04-11 02:05:33] INFO root fetch - processPackages [pyarmor.cli.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core-2.1.dev7-cp39-none-win_amd64.whl.zip tmp/pyarmor.cli.core-2.1.dev9-cp39-none-win_amd64.whl.zip --markdown 20230411/p/pyarmor.cli.core/2.1.dev7-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 02:05:33] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-04-11 02:05:33] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230409.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230410.tar.gz --markdown 20230411/j/jaxutils-nightly/0.0.8.dev20230409-0.0.8.dev20230410/diff.md --exclude *.pyd
+[2023-04-11 02:05:33] INFO root fetch - processPackages [processplatform]: executing diffoscope
+[2023-04-11 02:05:33] INFO root fetch - processPackages [processplatform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/processplatform-1.0.0.tar.gz tmp/processplatform-1.0.1.tar.gz --markdown 20230411/p/processplatform/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 02:05:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:34] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1681085229] Old Version: [1680998840]
+[2023-04-11 02:05:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:34] INFO root fetch - processPackages [chromedriver-py]: New version: [99.0.4844.51] Old Version: [99.0.4844.35]
+[2023-04-11 02:05:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:34] INFO root fetch - processPackages [dacy]: New version: [2.5.0] Old Version: [2.4.2]
+[2023-04-11 02:05:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:34] INFO root fetch - processPackages [pyarmor.cli]: New version: [8.1.dev9] Old Version: [8.1.dev8]
+[2023-04-11 02:05:34] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/ff/d4/586d043dff8b3e0239ecdff0a68ca08bebaa609e9a845463cf5917994431/torchlayers-nightly-1681085229.tar.gz
+[2023-04-11 02:05:34] INFO root fetch - processPackages [pyarmor.cli]: executing diffoscope
+[2023-04-11 02:05:34] INFO root fetch - processPackages [pyarmor.cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli-8.1.dev8-py2.py3-none-any.whl.zip tmp/pyarmor.cli-8.1.dev9-py2.py3-none-any.whl.zip --markdown 20230411/p/pyarmor.cli/8.1.dev8-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 02:05:34] INFO root fetch - processPackages [chromedriver-py]: Downloading https://files.pythonhosted.org/packages/39/03/f1ac791b3c69bd62af64eb3b4f2f0c942828a41ad7eb4840f42ff715c79a/chromedriver-py-99.0.4844.35.tar.gz
+[2023-04-11 02:05:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:34] INFO root fetch - processPackages [dacy]: Downloading https://files.pythonhosted.org/packages/8c/df/831af97963a809d585e12bdffa2fafffec3f2ab411ed97c12908ff3c162c/dacy-2.4.2.tar.gz
+[2023-04-11 02:05:34] INFO root fetch - processPackages [arkdriver]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 02:05:34] INFO root fetch - processPackages [arkdriver]: Downloading https://files.pythonhosted.org/packages/fc/07/bbb2e4f0042e5c0c25db38911dd89d60c147d1044392120aa839e3b15c25/arkdriver-0.1.8.tar.gz
+[2023-04-11 02:05:34] WARNING root fetch - processPackages [arkdriver]: Skipping package: exceeds size limit 23411222>=10485760
+[2023-04-11 02:05:34] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:05:34] INFO root fetch - processPackages [pipster]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-11 02:05:34] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-04-11 02:05:34] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1680998840.tar.gz tmp/torchlayers-nightly-1681085229.tar.gz --markdown 20230411/t/torchlayers-nightly/1680998840-1681085229/diff.md --exclude *.pyd
+[2023-04-11 02:05:34] INFO root fetch - processPackages [pipster]: Downloading https://files.pythonhosted.org/packages/a4/33/aec2e00bb89e805753d2dc701ddd72dec99439ae354bb0692f2b3839b100/pipster-0.0.7.tar.gz
+[2023-04-11 02:05:35] INFO root fetch - processPackages [pipster]: Downloading https://files.pythonhosted.org/packages/31/8d/9c14835f119b87bb52f335d3c69c503b6173fe2ec5bd9f00c7287d3d6048/pipster-0.0.9.tar.gz
+[2023-04-11 02:05:35] INFO root fetch - processPackages [pipster]: executing diffoscope
+[2023-04-11 02:05:35] INFO root fetch - processPackages [pipster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipster-0.0.7.tar.gz tmp/pipster-0.0.9.tar.gz --markdown 20230411/p/pipster/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 02:05:35] WARNING root fetch - processPackages [chromedriver-py]: Skipping package: exceeds size limit 29238079>=10485760
+[2023-04-11 02:05:35] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:05:35] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 02:05:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:35] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-04-11 02:05:35] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230411/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 02:05:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:37] INFO root fetch - processPackages [dacy]: Downloading https://files.pythonhosted.org/packages/b6/e9/f02740ec972061707a6391ffa95b159a4816e5ce37c618c11b8500fe50d3/dacy-2.5.0.tar.gz
+[2023-04-11 02:05:40] INFO root fetch - processPackages [dacy]: executing diffoscope
+[2023-04-11 02:05:40] INFO root fetch - processPackages [dacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dacy-2.4.2.tar.gz tmp/dacy-2.5.0.tar.gz --markdown 20230411/d/dacy/2.4.2-2.5.0/diff.md --exclude *.pyd
+[2023-04-11 02:05:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:05:43] INFO root fetch - main [MainThread]: Store serial: [17651924]
