@@ -17794,3 +17794,102 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 18:06:24] INFO root fetch - processPackages [jsmetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsmetrics-0.1.0.tar.gz tmp/jsmetrics-0.1.1b0.tar.gz --markdown 20230411/j/jsmetrics/0.1.0-0.1.1b0/diff.md --exclude *.pyd
 [2023-04-11 18:06:26] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:06:26] INFO root fetch - main [MainThread]: Store serial: [17663221]
+[2023-04-11 18:11:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663221]
+[2023-04-11 18:11:34] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-11 18:11:34] INFO root fetch - processPackages [python-roborock]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-11 18:11:34] INFO root fetch - processPackages [litestar]: New version: [2.0.0a4] Old Version: [2.0.0a3]
+[2023-04-11 18:11:34] INFO root fetch - processPackages [toollib]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-11 18:11:34] INFO root fetch - processPackages [wtt01]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-11 18:11:34] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 18:11:34] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/c7/2c/856864fd9e9f67cd34fba85b64b46e85f3d7ada83ab8247407133b281e55/toollib-1.2.9-py3-none-any.whl
+[2023-04-11 18:11:34] INFO root fetch - processPackages [wtt01]: Downloading https://files.pythonhosted.org/packages/e1/34/e41fe92f254758da552d014dd445537b7de58fd429398ed347e8819886aa/wtt01-0.2.4.tar.gz
+[2023-04-11 18:11:34] INFO root fetch - processPackages [python-roborock]: Downloading https://files.pythonhosted.org/packages/0d/95/c8eb71e5cc5114e9991bc052208fcff6b4caef2e5071f9df1e2bfdcc3dbc/python_roborock-0.6.2.tar.gz
+[2023-04-11 18:11:34] INFO root fetch - processPackages [litestar]: Downloading https://files.pythonhosted.org/packages/e3/d2/b6153beff91acc9441cd0fbabd32b1ce3f06900072da093393ec444d1046/litestar-2.0.0a4.tar.gz
+[2023-04-11 18:11:34] INFO root fetch - processPackages [toollib]: executing diffoscope
+[2023-04-11 18:11:34] INFO root fetch - processPackages [toollib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toollib-1.2.8-py3-none-any.whl.zip tmp/toollib-1.2.9-py3-none-any.whl.zip --markdown 20230411/t/toollib/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-11 18:11:34] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-04-11 18:11:34] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.6.1.tar.gz tmp/python_roborock-0.6.2.tar.gz --markdown 20230411/p/python-roborock/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-11 18:11:34] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-04-11 18:11:34] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 18:11:34] INFO root fetch - processPackages [litestar]: executing diffoscope
+[2023-04-11 18:11:34] INFO root fetch - processPackages [litestar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litestar-2.0.0a3.tar.gz tmp/litestar-2.0.0a4.tar.gz --markdown 20230411/l/litestar/2.0.0a3-2.0.0a4/diff.md --exclude *.pyd
+[2023-04-11 18:11:34] INFO root fetch - processPackages [wtt01]: Downloading https://files.pythonhosted.org/packages/52/f1/49acf9ccc7519cb5e5c92ed2d9139c954064c64765ec354dc9740344d222/wtt01-0.2.5.tar.gz
+[2023-04-11 18:11:34] INFO root fetch - processPackages [wtt01]: executing diffoscope
+[2023-04-11 18:11:34] INFO root fetch - processPackages [wtt01]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtt01-0.2.4.tar.gz tmp/wtt01-0.2.5.tar.gz --markdown 20230411/w/wtt01/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-11 18:11:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:35] INFO root fetch - processPackages [biglist]: New version: [0.7.9b3] Old Version: [0.7.9b2]
+[2023-04-11 18:11:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:35] INFO root fetch - processPackages [SimpleEngine]: New version: [0.5] Old Version: [0.4]
+[2023-04-11 18:11:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:36] INFO root fetch - processPackages [talkwave]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 18:11:36] INFO root fetch - processPackages [biglist]: Downloading https://files.pythonhosted.org/packages/2a/dc/93a56682c2e34b02604168611fea16acef1ec5c636c1eb128cb941db1983/biglist-0.7.9b3.tar.gz
+[2023-04-11 18:11:36] INFO root fetch - processPackages [SimpleEngine]: Downloading https://files.pythonhosted.org/packages/a8/e8/4a70820022ae22528339c8d80ceba9c6e6d7ce04c5ac008c5ccd03168e39/SimpleEngine-0.5.tar.gz
+[2023-04-11 18:11:36] INFO root fetch - processPackages [talkwave]: Downloading https://files.pythonhosted.org/packages/64/52/7b368179a69f04f90ad08d6d0598a566aef988d3039d43b60846a7236cb6/talkwave-0.0.3.tar.gz
+[2023-04-11 18:11:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:36] INFO root fetch - processPackages [funcpck]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 18:11:36] INFO root fetch - processPackages [biglist]: executing diffoscope
+[2023-04-11 18:11:36] INFO root fetch - processPackages [biglist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biglist-0.7.9b2.tar.gz tmp/biglist-0.7.9b3.tar.gz --markdown 20230411/b/biglist/0.7.9b2-0.7.9b3/diff.md --exclude *.pyd
+[2023-04-11 18:11:36] INFO root fetch - processPackages [SimpleEngine]: executing diffoscope
+[2023-04-11 18:11:36] INFO root fetch - processPackages [SimpleEngine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleEngine-0.4.tar.gz tmp/SimpleEngine-0.5.tar.gz --markdown 20230411/S/SimpleEngine/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-11 18:11:36] INFO root fetch - processPackages [talkwave]: executing diffoscope
+[2023-04-11 18:11:36] INFO root fetch - processPackages [talkwave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talkwave-0.0.2.tar.gz tmp/talkwave-0.0.3.tar.gz --markdown 20230411/t/talkwave/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 18:11:36] INFO root fetch - processPackages [funcpck]: Downloading https://files.pythonhosted.org/packages/2d/c4/b0a02e5ae44a368ab1370a420170f7652efd009863ba433e08b02a631702/funcpck-0.0.1.tar.gz
+[2023-04-11 18:11:36] INFO root fetch - processPackages [funcpck]: Downloading https://files.pythonhosted.org/packages/64/17/f1abdec0d830b4c81108efdd4955e08267e629e532e386398c05b2c5bd67/funcpck-0.0.2.tar.gz
+[2023-04-11 18:11:36] INFO root fetch - processPackages [funcpck]: executing diffoscope
+[2023-04-11 18:11:36] INFO root fetch - processPackages [funcpck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcpck-0.0.1.tar.gz tmp/funcpck-0.0.2.tar.gz --markdown 20230411/f/funcpck/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 18:11:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:37] INFO root fetch - processPackages [pydbbackups]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 18:11:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:37] INFO root fetch - processPackages [logo-standardizer]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 18:11:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:37] INFO root fetch - processPackages [pydbbackups]: Downloading https://files.pythonhosted.org/packages/77/0c/1c772a2e5a7dc22e10fff89cd51a5494609f6eb7aea8564417fedfb4b80b/pydbbackups-0.0.3.tar.gz
+[2023-04-11 18:11:37] INFO root fetch - processPackages [medvedi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 18:11:37] INFO root fetch - processPackages [logo-standardizer]: Downloading https://files.pythonhosted.org/packages/ca/0c/05274c6cfecdba4f8e1b0b294901a18727157115fa5afd73b66bd7face59/logo_standardizer-1.0.0.tar.gz
+[2023-04-11 18:11:37] INFO root fetch - processPackages [medvedi]: executing diffoscope
+[2023-04-11 18:11:37] INFO root fetch - processPackages [medvedi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medvedi-0.1.8.tar.gz tmp/medvedi-0.1.9.tar.gz --markdown 20230411/m/medvedi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 18:11:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:37] INFO root fetch - processPackages [DR-lord-sdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 18:11:37] INFO root fetch - processPackages [pydbbackups]: Downloading https://files.pythonhosted.org/packages/3f/38/1936b196edf987186b5e4d23c08edaec0c36e67407e6d67e2dc76227688d/pydbbackups-0.0.4.tar.gz
+[2023-04-11 18:11:37] INFO root fetch - processPackages [logo-standardizer]: Downloading https://files.pythonhosted.org/packages/c6/62/4270bf639222ab2e42c71e8c72a3ca5cca66e2cd1e96900c2d66512572ab/logo_standardizer-1.0.1.tar.gz
+[2023-04-11 18:11:37] INFO root fetch - processPackages [DR-lord-sdk]: Downloading https://files.pythonhosted.org/packages/04/a3/b0cab1f74a60b87945e8cb76755c1ba1244cef1bfe6ffdbb9d034e9c5059/DR-lord-sdk-0.0.1.tar.gz
+[2023-04-11 18:11:37] INFO root fetch - processPackages [pydbbackups]: executing diffoscope
+[2023-04-11 18:11:37] INFO root fetch - processPackages [pydbbackups]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydbbackups-0.0.3.tar.gz tmp/pydbbackups-0.0.4.tar.gz --markdown 20230411/p/pydbbackups/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 18:11:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:37] INFO root fetch - processPackages [logo-standardizer]: executing diffoscope
+[2023-04-11 18:11:37] INFO root fetch - processPackages [logo-standardizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logo_standardizer-1.0.0.tar.gz tmp/logo_standardizer-1.0.1.tar.gz --markdown 20230411/l/logo-standardizer/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 18:11:37] INFO root fetch - processPackages [ecs-composex]: New version: [0.9.2] Old Version: [0.8.9]
+[2023-04-11 18:11:38] INFO root fetch - processPackages [DR-lord-sdk]: Downloading https://files.pythonhosted.org/packages/c4/13/10307a841397a005a10f046257822412668d8817e00397704077cba8cd2e/DR-lord-sdk-0.0.2.tar.gz
+[2023-04-11 18:11:38] INFO root fetch - processPackages [ecs-composex]: Downloading https://files.pythonhosted.org/packages/71/65/25118bd168574eb25b00b44521d69a32ebbb8ff437dcc4638e6968c6cdb5/ecs_composex-0.8.9.tar.gz
+[2023-04-11 18:11:38] INFO root fetch - processPackages [DR-lord-sdk]: executing diffoscope
+[2023-04-11 18:11:38] INFO root fetch - processPackages [DR-lord-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DR-lord-sdk-0.0.1.tar.gz tmp/DR-lord-sdk-0.0.2.tar.gz --markdown 20230411/D/DR-lord-sdk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 18:11:38] INFO root fetch - processPackages [ecs-composex]: Downloading https://files.pythonhosted.org/packages/82/e2/6ac5b2b2eca42a9b9d8d90efb9d2bd1e3a36ec6a48879ad6635a60b3ec4a/ecs_composex-0.9.2.tar.gz
+[2023-04-11 18:11:38] INFO root fetch - processPackages [ecs-composex]: executing diffoscope
+[2023-04-11 18:11:38] INFO root fetch - processPackages [ecs-composex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecs_composex-0.8.9.tar.gz tmp/ecs_composex-0.9.2.tar.gz --markdown 20230411/e/ecs-composex/0.8.9-0.9.2/diff.md --exclude *.pyd
+[2023-04-11 18:11:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:39] INFO root fetch - processPackages [grewpy]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-11 18:11:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:39] INFO root fetch - processPackages [moto]: New version: [4.1.7.dev9] Old Version: [4.1.7.dev8]
+[2023-04-11 18:11:39] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 18:11:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:39] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-11 18:11:39] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.7.dev8.tar.gz tmp/moto-4.1.7.dev9.tar.gz --markdown 20230411/m/moto/4.1.7.dev8-4.1.7.dev9/diff.md --exclude *.pyd
+[2023-04-11 18:11:39] INFO root fetch - processPackages [hcgf]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-04-11 18:11:39] INFO root fetch - processPackages [grewpy]: Downloading https://files.pythonhosted.org/packages/60/32/e8779959ceede557cffea62ed8a4cf72771314cc0b9b3f1caa5122558709/grewpy-0.2.0.tar.gz
+[2023-04-11 18:11:39] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-04-11 18:11:39] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 18:11:39] INFO root fetch - processPackages [hcgf]: Downloading https://files.pythonhosted.org/packages/06/4e/b1f59e6250af2049abd6b460836fb5945ca577c7093e3dc5b4f94ac99200/hcgf-0.0.7.tar.gz
+[2023-04-11 18:11:39] INFO root fetch - processPackages [grewpy]: Downloading https://files.pythonhosted.org/packages/1b/2c/bf73636bfc5bdbb2d32b585a40d5d2f82203160214a177eb3f4cd5fb38a4/grewpy-0.3.0.tar.gz
+[2023-04-11 18:11:39] INFO root fetch - processPackages [grewpy]: executing diffoscope
+[2023-04-11 18:11:39] INFO root fetch - processPackages [grewpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grewpy-0.2.0.tar.gz tmp/grewpy-0.3.0.tar.gz --markdown 20230411/g/grewpy/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 18:11:39] INFO root fetch - processPackages [hcgf]: Downloading https://files.pythonhosted.org/packages/19/b0/f7ff29f7575ca78b0c9cc13c4258d724364a85413bdb046add93f4bebb91/hcgf-0.1.0.tar.gz
+[2023-04-11 18:11:39] INFO root fetch - processPackages [hcgf]: executing diffoscope
+[2023-04-11 18:11:39] INFO root fetch - processPackages [hcgf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcgf-0.0.7.tar.gz tmp/hcgf-0.1.0.tar.gz --markdown 20230411/h/hcgf/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 18:11:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:40] WARNING root fetch - processPackages [codeless-django]: Skipping, unable to determine old version
+[2023-04-11 18:11:40] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:11:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:11:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:12:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:12:11] INFO root fetch - main [MainThread]: Store serial: [17663290]
