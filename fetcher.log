@@ -10048,3 +10048,152 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 09:57:51] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:58:24] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:58:24] INFO root fetch - main [MainThread]: Store serial: [17657837]
+[2023-04-11 10:03:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17657837]
+[2023-04-11 10:03:32] INFO root fetch - main [MainThread]: Found 26 changed packages
+[2023-04-11 10:03:32] INFO root fetch - processPackages [atlasofsmoothspaces]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-11 10:03:32] INFO root fetch - processPackages [nvosscript]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-11 10:03:32] INFO root fetch - processPackages [fml40-reference-implementation]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-11 10:03:32] INFO root fetch - processPackages [cornflakes]: New version: [3.2.1] Old Version: [3.2.0]
+[2023-04-11 10:03:32] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-11 10:03:32] INFO root fetch - processPackages [cornflakes]: Downloading https://files.pythonhosted.org/packages/28/96/17c0dd3c07a21d6791ce1f25676132ce10174304da32da4a09814a30eaa1/cornflakes-3.2.0.tar.gz
+[2023-04-11 10:03:32] INFO root fetch - processPackages [atlasofsmoothspaces]: Downloading https://files.pythonhosted.org/packages/5f/f2/b81bc2fd0bf5a9e1fa75bf18e6694b421c9f8ef5f603079c238b84ae6c8d/atlasofsmoothspaces-1.0.5.tar.gz
+[2023-04-11 10:03:32] INFO root fetch - processPackages [fml40-reference-implementation]: Downloading https://files.pythonhosted.org/packages/6c/cf/be045b4c186d25e92ea7543b07d65ab853fafc1a9dd406f71a7c6c39a916/fml40_reference_implementation-0.2.7-py3-none-any.whl
+[2023-04-11 10:03:32] INFO root fetch - processPackages [nvosscript]: Downloading https://files.pythonhosted.org/packages/ff/69/d87db1948142ef736a4ecee48d2e74cc7db455f182efd7657054374e9e5d/nvosscript-1.1.7.tar.gz
+[2023-04-11 10:03:32] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-11 10:03:32] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230411/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-11 10:03:32] INFO root fetch - processPackages [atlasofsmoothspaces]: executing diffoscope
+[2023-04-11 10:03:32] INFO root fetch - processPackages [atlasofsmoothspaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlasofsmoothspaces-1.0.4.tar.gz tmp/atlasofsmoothspaces-1.0.5.tar.gz --markdown 20230411/a/atlasofsmoothspaces/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-11 10:03:32] INFO root fetch - processPackages [nvosscript]: executing diffoscope
+[2023-04-11 10:03:32] INFO root fetch - processPackages [nvosscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvosscript-1.1.6.tar.gz tmp/nvosscript-1.1.7.tar.gz --markdown 20230411/n/nvosscript/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-11 10:03:32] INFO root fetch - processPackages [fml40-reference-implementation]: Downloading https://files.pythonhosted.org/packages/39/5c/8491937da6f8b004368535a85506fe6316a95162832d7585940b93627b75/fml40_reference_implementation-0.2.8-py3-none-any.whl
+[2023-04-11 10:03:33] INFO root fetch - processPackages [fml40-reference-implementation]: executing diffoscope
+[2023-04-11 10:03:33] INFO root fetch - processPackages [fml40-reference-implementation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fml40_reference_implementation-0.2.7-py3-none-any.whl.zip tmp/fml40_reference_implementation-0.2.8-py3-none-any.whl.zip --markdown 20230411/f/fml40-reference-implementation/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-11 10:03:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:33] INFO root fetch - processPackages [macrobond-data-api]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 10:03:33] INFO root fetch - processPackages [cornflakes]: Downloading https://files.pythonhosted.org/packages/4c/3d/49378dc9209a41c3de2a01cb336366b6fd40e93d84b7ff9aeca2c7fe53a0/cornflakes-3.2.1.tar.gz
+[2023-04-11 10:03:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:33] INFO root fetch - processPackages [qutrunk]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 10:03:33] INFO root fetch - processPackages [macrobond-data-api]: Downloading https://files.pythonhosted.org/packages/68/e7/58cc2aae03e02c4ee098f788aa921915424202544c8028ef873d4e4cc15b/macrobond-data-api-0.0.8.tar.gz
+[2023-04-11 10:03:34] INFO root fetch - processPackages [qutrunk]: Downloading https://files.pythonhosted.org/packages/f6/67/30817e02e4234fa0108ef6dfe3f84eb3d3e271f3129c92575c86222abbe1/qutrunk-0.2.1.tar.gz
+[2023-04-11 10:03:34] INFO root fetch - processPackages [macrobond-data-api]: Downloading https://files.pythonhosted.org/packages/ea/00/b11cce1c664a68e5a8d43d9b3e171ce45da84d795f3c54a1fd6eecf3aaea/macrobond-data-api-0.0.9.tar.gz
+[2023-04-11 10:03:34] INFO root fetch - processPackages [macrobond-data-api]: executing diffoscope
+[2023-04-11 10:03:34] INFO root fetch - processPackages [macrobond-data-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrobond-data-api-0.0.8.tar.gz tmp/macrobond-data-api-0.0.9.tar.gz --markdown 20230411/m/macrobond-data-api/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 10:03:34] INFO root fetch - processPackages [cornflakes]: executing diffoscope
+[2023-04-11 10:03:34] INFO root fetch - processPackages [cornflakes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cornflakes-3.2.0.tar.gz tmp/cornflakes-3.2.1.tar.gz --markdown 20230411/c/cornflakes/3.2.0-3.2.1/diff.md --exclude *.pyd
+[2023-04-11 10:03:34] INFO root fetch - processPackages [qutrunk]: Downloading https://files.pythonhosted.org/packages/a1/2b/c50e228c57426a761fa5fbe5be350c4f83ffc6d3f031da90800d68e5e925/qutrunk-0.2.2.tar.gz
+[2023-04-11 10:03:34] INFO root fetch - processPackages [qutrunk]: executing diffoscope
+[2023-04-11 10:03:34] INFO root fetch - processPackages [qutrunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qutrunk-0.2.1.tar.gz tmp/qutrunk-0.2.2.tar.gz --markdown 20230411/q/qutrunk/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 10:03:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:36] INFO root fetch - processPackages [fluss]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 10:03:36] INFO root fetch - processPackages [fluss]: Downloading https://files.pythonhosted.org/packages/53/b7/8ff92a5a6685a4072ae111d8bec915e15a5682020fcc403fa91a69346a35/fluss-0.1.8.tar.gz
+[2023-04-11 10:03:36] INFO root fetch - processPackages [fluss]: Downloading https://files.pythonhosted.org/packages/50/76/9edfc881baab8d439ab2edc2727312771bb676cf387e48ce1a149177f1f6/fluss-0.1.9.tar.gz
+[2023-04-11 10:03:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:36] INFO root fetch - processPackages [odoo11-addon-stock-cycle-count]: New version: [11.0.1.0.2.99.dev3] Old Version: [11.0.1.0.2.99.dev2]
+[2023-04-11 10:03:36] INFO root fetch - processPackages [fluss]: executing diffoscope
+[2023-04-11 10:03:36] INFO root fetch - processPackages [fluss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluss-0.1.8.tar.gz tmp/fluss-0.1.9.tar.gz --markdown 20230411/f/fluss/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 10:03:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:36] INFO root fetch - processPackages [invenio-db]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-04-11 10:03:37] INFO root fetch - processPackages [odoo11-addon-stock-cycle-count]: Downloading https://files.pythonhosted.org/packages/c8/e6/47f46d6fb98a783c006a90330e1366cf7a1afa9197a0cdf410f6cdb75547/odoo11_addon_stock_cycle_count-11.0.1.0.2.99.dev2-py2.py3-none-any.whl
+[2023-04-11 10:03:37] INFO root fetch - processPackages [invenio-db]: Downloading https://files.pythonhosted.org/packages/ca/a9/946ae733eeeb07a9f7b08ced95f0088b7206e4468712a3d415d7a427fe08/invenio-db-1.0.9.tar.gz
+[2023-04-11 10:03:37] INFO root fetch - processPackages [odoo11-addon-stock-cycle-count]: Downloading https://files.pythonhosted.org/packages/9c/bf/f00898945b3b3924064e649f170dc1c9f4437033cac7512c65b45d27325e/odoo11_addon_stock_cycle_count-11.0.1.0.2.99.dev3-py2.py3-none-any.whl
+[2023-04-11 10:03:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:37] INFO root fetch - processPackages [odoo11-addon-stock-quant-manual-assign]: New version: [11.0.1.0.1.99.dev4] Old Version: [11.0.1.0.1.99.dev3]
+[2023-04-11 10:03:37] INFO root fetch - processPackages [invenio-db]: Downloading https://files.pythonhosted.org/packages/4f/0e/d18c848fbe4fc671ffb50bb4a06aed2104ddf1e9539c45916f4f97a3bd64/invenio-db-1.1.0.tar.gz
+[2023-04-11 10:03:37] INFO root fetch - processPackages [odoo11-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/90/e2/c2ae3d33a4d0236e74cd5f5ba28a4a2996f9248742cbd97f9a338d5c5465/odoo11_addon_stock_quant_manual_assign-11.0.1.0.1.99.dev3-py2.py3-none-any.whl
+[2023-04-11 10:03:37] INFO root fetch - processPackages [odoo11-addon-stock-cycle-count]: executing diffoscope
+[2023-04-11 10:03:37] INFO root fetch - processPackages [odoo11-addon-stock-cycle-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_stock_cycle_count-11.0.1.0.2.99.dev2-py2.py3-none-any.whl.zip tmp/odoo11_addon_stock_cycle_count-11.0.1.0.2.99.dev3-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-stock-cycle-count/11.0.1.0.2.99.dev2-11.0.1.0.2.99.dev3/diff.md --exclude *.pyd
+[2023-04-11 10:03:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:37] INFO root fetch - processPackages [invenio-db]: executing diffoscope
+[2023-04-11 10:03:37] INFO root fetch - processPackages [invenio-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-db-1.0.9.tar.gz tmp/invenio-db-1.1.0.tar.gz --markdown 20230411/i/invenio-db/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 10:03:37] INFO root fetch - processPackages [arte]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-11 10:03:38] INFO root fetch - processPackages [arte]: Downloading https://files.pythonhosted.org/packages/73/85/3032fe95fa4c098c0af0e414296c274a68ba2c6a05d6df39fdb88ef6eb32/arte-0.5.0.tar.gz
+[2023-04-11 10:03:38] INFO root fetch - processPackages [odoo11-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/18/13/e54fa0cc24d40971674263bf3136b3b5e96d6058bfe422496006b6cc37ac/odoo11_addon_stock_quant_manual_assign-11.0.1.0.1.99.dev4-py2.py3-none-any.whl
+[2023-04-11 10:03:38] INFO root fetch - processPackages [arte]: Downloading https://files.pythonhosted.org/packages/41/9b/82d2a6c275c9f8e1cec64a9808d64075b7a821f1d46056b8fd2602403a7e/arte-0.6.0.tar.gz
+[2023-04-11 10:03:38] INFO root fetch - processPackages [odoo11-addon-stock-quant-manual-assign]: executing diffoscope
+[2023-04-11 10:03:38] INFO root fetch - processPackages [odoo11-addon-stock-quant-manual-assign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_stock_quant_manual_assign-11.0.1.0.1.99.dev3-py2.py3-none-any.whl.zip tmp/odoo11_addon_stock_quant_manual_assign-11.0.1.0.1.99.dev4-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-stock-quant-manual-assign/11.0.1.0.1.99.dev3-11.0.1.0.1.99.dev4/diff.md --exclude *.pyd
+[2023-04-11 10:03:38] INFO root fetch - processPackages [arte]: executing diffoscope
+[2023-04-11 10:03:38] INFO root fetch - processPackages [arte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arte-0.5.0.tar.gz tmp/arte-0.6.0.tar.gz --markdown 20230411/a/arte/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-11 10:03:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:39] INFO root fetch - processPackages [hue-sunrise]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-11 10:03:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:39] INFO root fetch - processPackages [hue-sunrise]: Downloading https://files.pythonhosted.org/packages/ca/e9/540d059956f78f9c8fe289ac263b36659e46539f8aa5f3d1bed8516aceb4/hue_sunrise-0.6.8.tar.gz
+[2023-04-11 10:03:39] INFO root fetch - processPackages [arkitekt]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-11 10:03:39] INFO root fetch - processPackages [arkitekt]: Downloading https://files.pythonhosted.org/packages/00/54/cf082ac30bc03edfbeb8f9158602842ce8e0a7504195104e55cc22c2a48a/arkitekt-0.4.8.tar.gz
+[2023-04-11 10:03:39] INFO root fetch - processPackages [hue-sunrise]: Downloading https://files.pythonhosted.org/packages/fa/05/26bf05e0f3613c7bb941514f32b7c545625037f03289eec39ac8cf0557c9/hue_sunrise-0.6.9.tar.gz
+[2023-04-11 10:03:39] INFO root fetch - processPackages [hue-sunrise]: executing diffoscope
+[2023-04-11 10:03:39] INFO root fetch - processPackages [hue-sunrise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hue_sunrise-0.6.8.tar.gz tmp/hue_sunrise-0.6.9.tar.gz --markdown 20230411/h/hue-sunrise/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-11 10:03:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:39] INFO root fetch - processPackages [zodiax]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-11 10:03:40] INFO root fetch - processPackages [zodiax]: Downloading https://files.pythonhosted.org/packages/23/5a/5cebafbc86ddc8d9752a7aac79dfa394059af596f3ed579c78a3c4e6de06/zodiax-0.3.1.tar.gz
+[2023-04-11 10:03:40] INFO root fetch - processPackages [arkitekt]: Downloading https://files.pythonhosted.org/packages/46/75/bea92baa2b5fb8ae3f84353228effb8dccdb7f500f8bc6e3eb53824c72f0/arkitekt-0.4.9.tar.gz
+[2023-04-11 10:03:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:40] INFO root fetch - processPackages [lilyanncabinets]: New version: [1.5.1] Old Version: [0.5.2]
+[2023-04-11 10:03:40] INFO root fetch - processPackages [lilyanncabinets]: Downloading https://files.pythonhosted.org/packages/6b/54/64e961458d67e32e5fc5fae6dde17701f5935fd06b766828c6d1840258bc/lilyanncabinets-0.5.2.tar.gz
+[2023-04-11 10:03:40] INFO root fetch - processPackages [arkitekt]: executing diffoscope
+[2023-04-11 10:03:40] INFO root fetch - processPackages [arkitekt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkitekt-0.4.8.tar.gz tmp/arkitekt-0.4.9.tar.gz --markdown 20230411/a/arkitekt/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-11 10:03:40] INFO root fetch - processPackages [zodiax]: Downloading https://files.pythonhosted.org/packages/a4/02/06df0f98534540e1117cb43d618cc4b017293d2c717ff13f981e1a023cba/zodiax-0.3.2.tar.gz
+[2023-04-11 10:03:40] INFO root fetch - processPackages [zodiax]: executing diffoscope
+[2023-04-11 10:03:40] INFO root fetch - processPackages [zodiax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zodiax-0.3.1.tar.gz tmp/zodiax-0.3.2.tar.gz --markdown 20230411/z/zodiax/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 10:03:40] INFO root fetch - processPackages [lilyanncabinets]: Downloading https://files.pythonhosted.org/packages/9c/0d/b28efd2620d3d1f486541acde57276ccfe826c366bd5db396c5453a386e3/lilyanncabinets-1.5.1.tar.gz
+[2023-04-11 10:03:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:40] INFO root fetch - processPackages [odoo12-addon-stock-cycle-count]: New version: [12.0.1.1.1.99.dev6] Old Version: [12.0.1.1.1.99.dev5]
+[2023-04-11 10:03:41] INFO root fetch - processPackages [lilyanncabinets]: executing diffoscope
+[2023-04-11 10:03:41] INFO root fetch - processPackages [lilyanncabinets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lilyanncabinets-0.5.2.tar.gz tmp/lilyanncabinets-1.5.1.tar.gz --markdown 20230411/l/lilyanncabinets/0.5.2-1.5.1/diff.md --exclude *.pyd
+[2023-04-11 10:03:41] INFO root fetch - processPackages [odoo12-addon-stock-cycle-count]: Downloading https://files.pythonhosted.org/packages/1f/16/ebf59e35952136c0e264e105a162933d41774c756b3b362c7cc13736d1ab/odoo12_addon_stock_cycle_count-12.0.1.1.1.99.dev5-py3-none-any.whl
+[2023-04-11 10:03:41] INFO root fetch - processPackages [odoo12-addon-stock-cycle-count]: Downloading https://files.pythonhosted.org/packages/9b/d2/02dd8a85b73676212adeff9177f2416b798028ecbd144d3cde062cc13caa/odoo12_addon_stock_cycle_count-12.0.1.1.1.99.dev6-py3-none-any.whl
+[2023-04-11 10:03:41] INFO root fetch - processPackages [odoo12-addon-stock-cycle-count]: executing diffoscope
+[2023-04-11 10:03:41] INFO root fetch - processPackages [odoo12-addon-stock-cycle-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_cycle_count-12.0.1.1.1.99.dev5-py3-none-any.whl.zip tmp/odoo12_addon_stock_cycle_count-12.0.1.1.1.99.dev6-py3-none-any.whl.zip --markdown 20230411/o/odoo12-addon-stock-cycle-count/12.0.1.1.1.99.dev5-12.0.1.1.1.99.dev6/diff.md --exclude *.pyd
+[2023-04-11 10:03:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:41] INFO root fetch - processPackages [img2table]: New version: [0.0.24] Old Version: [0.0.23]
+[2023-04-11 10:03:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:41] INFO root fetch - processPackages [odoo13-addon-stock-cycle-count]: New version: [13.0.1.2.2.dev8] Old Version: [13.0.1.2.2.dev7]
+[2023-04-11 10:03:42] INFO root fetch - processPackages [img2table]: Downloading https://files.pythonhosted.org/packages/66/36/00a764e0959593421e17c62ae8f0a3397ebdf45463bf1a8aa10c79393235/img2table-0.0.24.tar.gz
+[2023-04-11 10:03:42] INFO root fetch - processPackages [odoo13-addon-stock-cycle-count]: Downloading https://files.pythonhosted.org/packages/07/98/23c81f2c10f830c24036f0c6c1a68df378d51840835d1080c5a811bcbfaa/odoo13_addon_stock_cycle_count-13.0.1.2.2.dev8-py3-none-any.whl
+[2023-04-11 10:03:42] INFO root fetch - processPackages [odoo13-addon-stock-cycle-count]: executing diffoscope
+[2023-04-11 10:03:42] INFO root fetch - processPackages [odoo13-addon-stock-cycle-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_stock_cycle_count-13.0.1.2.2.dev7-py3-none-any.whl.zip tmp/odoo13_addon_stock_cycle_count-13.0.1.2.2.dev8-py3-none-any.whl.zip --markdown 20230411/o/odoo13-addon-stock-cycle-count/13.0.1.2.2.dev7-13.0.1.2.2.dev8/diff.md --exclude *.pyd
+[2023-04-11 10:03:42] INFO root fetch - processPackages [img2table]: executing diffoscope
+[2023-04-11 10:03:42] INFO root fetch - processPackages [img2table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/img2table-0.0.23.tar.gz tmp/img2table-0.0.24.tar.gz --markdown 20230411/i/img2table/0.0.23-0.0.24/diff.md --exclude *.pyd
+[2023-04-11 10:03:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:42] INFO root fetch - processPackages [ScaleConvertion]: New version: [0.4] Old Version: [0.3]
+[2023-04-11 10:03:43] INFO root fetch - processPackages [ScaleConvertion]: Downloading https://files.pythonhosted.org/packages/ad/8b/8c359e4dc7edc1735eddf368a7677ef70d651a7bc961cf5a04e0cba670b6/ScaleConvertion-0.4.tar.gz
+[2023-04-11 10:03:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:43] INFO root fetch - processPackages [modelbase2]: New version: [0.1.8] Old Version: [0.1.6]
+[2023-04-11 10:03:43] INFO root fetch - processPackages [ScaleConvertion]: executing diffoscope
+[2023-04-11 10:03:43] INFO root fetch - processPackages [ScaleConvertion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScaleConvertion-0.3.tar.gz tmp/ScaleConvertion-0.4.tar.gz --markdown 20230411/S/ScaleConvertion/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-11 10:03:43] INFO root fetch - processPackages [modelbase2]: Downloading https://files.pythonhosted.org/packages/8d/bd/b41d464497049fedd938b2379a9d639742a2655fda7fbb6407d6a924ad62/modelbase2-0.1.6.tar.gz
+[2023-04-11 10:03:43] INFO root fetch - processPackages [modelbase2]: Downloading https://files.pythonhosted.org/packages/c7/a5/defd22a8fa0611c0f23090b874a5fec8cad7478e893dcd17bc4edea068d4/modelbase2-0.1.8.tar.gz
+[2023-04-11 10:03:44] INFO root fetch - processPackages [modelbase2]: executing diffoscope
+[2023-04-11 10:03:44] INFO root fetch - processPackages [modelbase2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelbase2-0.1.6.tar.gz tmp/modelbase2-0.1.8.tar.gz --markdown 20230411/m/modelbase2/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2023-04-11 10:03:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:44] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: New version: [12.0.1.2.0.99.dev6] Old Version: [12.0.1.2.0.99.dev5]
+[2023-04-11 10:03:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:44] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/6b/8b/466e680b0ce3c8c662a62a071affb59838baa08d38d2e3afb7e6075c779c/odoo12_addon_stock_quant_manual_assign-12.0.1.2.0.99.dev5-py3-none-any.whl
+[2023-04-11 10:03:44] INFO root fetch - processPackages [odoo13-addon-stock-quant-manual-assign]: New version: [13.0.1.2.1.dev4] Old Version: [13.0.1.2.1.dev3]
+[2023-04-11 10:03:44] INFO root fetch - processPackages [odoo13-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/a6/49/acae46d29b2bd4e1244f03a45baef3fb2389428c383fa6ffe00a71dc95c6/odoo13_addon_stock_quant_manual_assign-13.0.1.2.1.dev3-py3-none-any.whl
+[2023-04-11 10:03:44] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/90/38/4c4e80d3e0cff17935c0f756e0cfec408d70fb303c221346a8beed23ff40/odoo12_addon_stock_quant_manual_assign-12.0.1.2.0.99.dev6-py3-none-any.whl
+[2023-04-11 10:03:45] INFO root fetch - processPackages [odoo13-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/0e/29/2ddc16d130bfa9acd4382a1b0ce1b22950b1d7bbe6110a980caf11dfcd4c/odoo13_addon_stock_quant_manual_assign-13.0.1.2.1.dev4-py3-none-any.whl
+[2023-04-11 10:03:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:45] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230411] Old Version: [0.3.1.dev20230410]
+[2023-04-11 10:03:45] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: executing diffoscope
+[2023-04-11 10:03:45] INFO root fetch - processPackages [odoo12-addon-stock-quant-manual-assign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_quant_manual_assign-12.0.1.2.0.99.dev5-py3-none-any.whl.zip tmp/odoo12_addon_stock_quant_manual_assign-12.0.1.2.0.99.dev6-py3-none-any.whl.zip --markdown 20230411/o/odoo12-addon-stock-quant-manual-assign/12.0.1.2.0.99.dev5-12.0.1.2.0.99.dev6/diff.md --exclude *.pyd
+[2023-04-11 10:03:45] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/02/9a/8e0b4d80048a1c43eec89c7e4ee62ec80458ce31385890dddbf50f268211/pyglove-0.3.1.dev20230411.tar.gz
+[2023-04-11 10:03:45] INFO root fetch - processPackages [odoo13-addon-stock-quant-manual-assign]: executing diffoscope
+[2023-04-11 10:03:45] INFO root fetch - processPackages [odoo13-addon-stock-quant-manual-assign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_stock_quant_manual_assign-13.0.1.2.1.dev3-py3-none-any.whl.zip tmp/odoo13_addon_stock_quant_manual_assign-13.0.1.2.1.dev4-py3-none-any.whl.zip --markdown 20230411/o/odoo13-addon-stock-quant-manual-assign/13.0.1.2.1.dev3-13.0.1.2.1.dev4/diff.md --exclude *.pyd
+[2023-04-11 10:03:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:45] INFO root fetch - processPackages [ygka]: New version: [2023.4.11] Old Version: [2023.3.5.post1]
+[2023-04-11 10:03:45] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-04-11 10:03:45] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230410.tar.gz tmp/pyglove-0.3.1.dev20230411.tar.gz --markdown 20230411/p/pyglove/0.3.1.dev20230410-0.3.1.dev20230411/diff.md --exclude *.pyd
+[2023-04-11 10:03:45] INFO root fetch - processPackages [ygka]: Downloading https://files.pythonhosted.org/packages/d4/15/4d7c219f51c6a1e6be7477a2d16265714af99226d87b9615aa31c8f67012/ygka-2023.3.5.post1.tar.gz
+[2023-04-11 10:03:45] INFO root fetch - processPackages [ygka]: Downloading https://files.pythonhosted.org/packages/26/22/788e7fd9387975eddbdeeab01483941e2ebdefc6e0dbbfb917c257affbe9/ygka-2023.4.11.tar.gz
+[2023-04-11 10:03:46] INFO root fetch - processPackages [ygka]: executing diffoscope
+[2023-04-11 10:03:46] INFO root fetch - processPackages [ygka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ygka-2023.3.5.post1.tar.gz tmp/ygka-2023.4.11.tar.gz --markdown 20230411/y/ygka/2023.3.5.post1-2023.4.11/diff.md --exclude *.pyd
+[2023-04-11 10:03:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:46] INFO root fetch - processPackages [DLMS-SPODES]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-11 10:03:46] INFO root fetch - processPackages [DLMS-SPODES]: executing diffoscope
+[2023-04-11 10:03:46] INFO root fetch - processPackages [DLMS-SPODES]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DLMS_SPODES-0.8.3.tar.gz tmp/DLMS_SPODES-0.9.0.tar.gz --markdown 20230411/D/DLMS-SPODES/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 10:03:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:03:48] INFO root fetch - main [MainThread]: Store serial: [17657930]
