@@ -7366,3 +7366,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-11 06:53:10] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:54:12] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:54:12] INFO root fetch - main [MainThread]: Store serial: [17656197]
+[2023-04-11 06:59:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656197]
+[2023-04-11 06:59:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-11 06:59:21] INFO root fetch - processPackages [pynecone]: New version: [0.1.24a0] Old Version: [0.1.24]
+[2023-04-11 06:59:21] INFO root fetch - processPackages [chat-research]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 06:59:21] INFO root fetch - processPackages [fusionauth-client]: New version: [1.9.0] Old Version: [1.8.0rc1]
+[2023-04-11 06:59:21] INFO root fetch - processPackages [streamsets]: New version: [5.2.0b3] Old Version: [5.2.0b2]
+[2023-04-11 06:59:21] INFO root fetch - processPackages [pydantic-core]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-11 06:59:21] INFO root fetch - processPackages [pynecone]: Downloading https://files.pythonhosted.org/packages/46/60/bd75d14010f200d6c6a4061fdb9ac27b2590b476d8aae8507ab32f771905/pynecone-0.1.24.tar.gz
+[2023-04-11 06:59:21] INFO root fetch - processPackages [streamsets]: Downloading https://files.pythonhosted.org/packages/52/07/5fd6afbe5ea33414664ca598cd8144ff9b5a785b40d888a94bcd7932cc4f/streamsets-5.2.0b2.tar.gz
+[2023-04-11 06:59:21] INFO root fetch - processPackages [fusionauth-client]: Downloading https://files.pythonhosted.org/packages/d8/84/e46ec5a1e6f80a51ebf2197fe25b9dc085e575efc040b435ba0c492e6511/fusionauth-client-1.8.0rc1.tar.gz
+[2023-04-11 06:59:21] INFO root fetch - processPackages [chat-research]: executing diffoscope
+[2023-04-11 06:59:21] INFO root fetch - processPackages [chat-research]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat_research-0.1.8.tar.gz tmp/chat_research-0.1.9.tar.gz --markdown 20230411/c/chat-research/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 06:59:21] INFO root fetch - processPackages [pydantic-core]: Downloading https://files.pythonhosted.org/packages/ec/21/c8889a7018bc7a93463884087ac6e4cc1af5a54f974b442c9b7a8f26829f/pydantic_core-0.8.2.tar.gz
+[2023-04-11 06:59:21] INFO root fetch - processPackages [pynecone]: executing diffoscope
+[2023-04-11 06:59:21] INFO root fetch - processPackages [pynecone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynecone-0.1.24.tar.gz tmp/pynecone-0.1.24a0.tar.gz --markdown 20230411/p/pynecone/0.1.24-0.1.24a0/diff.md --exclude *.pyd
+[2023-04-11 06:59:21] INFO root fetch - processPackages [fusionauth-client]: Downloading https://files.pythonhosted.org/packages/f4/7e/f5ec80945dc807b6a48ee23f3640cc9e7c7b2341f0d9e88ff39f1ac4d4bd/fusionauth-client-1.9.0.tar.gz
+[2023-04-11 06:59:21] INFO root fetch - processPackages [fusionauth-client]: executing diffoscope
+[2023-04-11 06:59:21] INFO root fetch - processPackages [fusionauth-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusionauth-client-1.8.0rc1.tar.gz tmp/fusionauth-client-1.9.0.tar.gz --markdown 20230411/f/fusionauth-client/1.8.0rc1-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 06:59:21] INFO root fetch - processPackages [pydantic-core]: Downloading https://files.pythonhosted.org/packages/73/d2/71067fc29dbd97ad9dc288b715da55c8dfaa72d17617642f96c30d880981/pydantic_core-0.9.0.tar.gz
+[2023-04-11 06:59:22] INFO root fetch - processPackages [pydantic-core]: executing diffoscope
+[2023-04-11 06:59:22] INFO root fetch - processPackages [pydantic-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_core-0.8.2.tar.gz tmp/pydantic_core-0.9.0.tar.gz --markdown 20230411/p/pydantic-core/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 06:59:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:59:23] INFO root fetch - processPackages [easierfile]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 06:59:23] INFO root fetch - processPackages [easierfile]: Downloading https://files.pythonhosted.org/packages/36/85/90586b8f3ec7645b999688dc7a2a207f07e918ecdd9c04d4fe4ec42f47d6/easierfile-1.0.0.tar.gz
+[2023-04-11 06:59:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:59:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:59:23] INFO root fetch - processPackages [badi-users]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-11 06:59:23] INFO root fetch - processPackages [easierfile]: Downloading https://files.pythonhosted.org/packages/0e/f0/499bd222f61bd9bec1574aa63b09c99df84ccec04b68936542f276764f39/easierfile-1.0.1.tar.gz
+[2023-04-11 06:59:23] INFO root fetch - processPackages [easierfile]: executing diffoscope
+[2023-04-11 06:59:23] INFO root fetch - processPackages [easierfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easierfile-1.0.0.tar.gz tmp/easierfile-1.0.1.tar.gz --markdown 20230411/e/easierfile/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 06:59:23] INFO root fetch - processPackages [badi-users]: Downloading https://files.pythonhosted.org/packages/58/0f/991f49f0ea701ca5e756543eddd1f7284298646e64d48a74a4db5110f101/badi_users-0.9.0.tar.gz
+[2023-04-11 06:59:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:59:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:59:24] INFO root fetch - processPackages [badi-users]: Downloading https://files.pythonhosted.org/packages/ba/2b/23cecdbb95cd00daca99fde75f817239f6f24687d106af1fa36169f7c0a4/badi_users-0.9.1.tar.gz
+[2023-04-11 06:59:25] INFO root fetch - processPackages [badi-users]: executing diffoscope
+[2023-04-11 06:59:25] INFO root fetch - processPackages [badi-users]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badi_users-0.9.0.tar.gz tmp/badi_users-0.9.1.tar.gz --markdown 20230411/b/badi-users/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-11 06:59:26] INFO root fetch - processPackages [streamsets]: Downloading https://files.pythonhosted.org/packages/d0/ee/ca295667c579915a1f1e2925273104639f1b2eb2e260a5e71e0a9e82b9b4/streamsets-5.2.0b3.tar.gz
+[2023-04-11 06:59:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:59:31] INFO root fetch - processPackages [streamsets]: executing diffoscope
+[2023-04-11 06:59:31] INFO root fetch - processPackages [streamsets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamsets-5.2.0b2.tar.gz tmp/streamsets-5.2.0b3.tar.gz --markdown 20230411/s/streamsets/5.2.0b2-5.2.0b3/diff.md --exclude *.pyd
+[2023-04-11 06:59:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:59:34] INFO root fetch - main [MainThread]: Store serial: [17656282]
