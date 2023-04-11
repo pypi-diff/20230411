@@ -4337,3 +4337,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 04:24:51] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:24:53] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:24:53] INFO root fetch - main [MainThread]: Store serial: [17654192]
+[2023-04-11 04:29:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17654192]
+[2023-04-11 04:30:01] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-11 04:30:01] INFO root fetch - processPackages [libdyson-neon]: New version: [0.9.0] Old Version: [0.10.1]
+[2023-04-11 04:30:01] INFO root fetch - processPackages [py-madvr]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-11 04:30:01] WARNING root fetch - processPackages [yichaeyoung]: Skipping, unable to determine old version
+[2023-04-11 04:30:01] WARNING root fetch - processPackages [jieunim2243255]: Skipping, unable to determine old version
+[2023-04-11 04:30:01] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:30:01] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:30:01] INFO root fetch - processPackages [arkdata]: New version: [0.0.50] Old Version: [0.0.49]
+[2023-04-11 04:30:01] INFO root fetch - processPackages [thinks-dash-components]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-11 04:30:01] WARNING root fetch - processPackages [juseokson2024193]: Skipping, unable to determine old version
+[2023-04-11 04:30:01] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:30:01] WARNING root fetch - processPackages [eokjae12]: Skipping, unable to determine old version
+[2023-04-11 04:30:01] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:30:01] INFO root fetch - processPackages [libdyson-neon]: Downloading https://files.pythonhosted.org/packages/a7/a5/1caceeb7b102ad7dea835586b221739415cf8b85c5a7c7cab83092b07d61/libdyson-neon-0.10.1.tar.gz
+[2023-04-11 04:30:01] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/53/61/0b07ccaa3851cf9994105b27f6e25394a66404528cf4f578280cedbf77bc/arkdata-0.0.49.tar.gz
+[2023-04-11 04:30:01] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/94/04/aa2cf08a55798d3541ff8eb61f1c1b4f6f8e898f68472dd7b3b8737bcbb7/py_madvr-1.3.1.tar.gz
+[2023-04-11 04:30:01] INFO root fetch - processPackages [thinks-dash-components]: Downloading https://files.pythonhosted.org/packages/2e/58/d3b02b9399aaee154bc3150162f202d383e9ba4515ba9ee2016da7f910af/thinks_dash_components-0.3.0.tar.gz
+[2023-04-11 04:30:01] INFO root fetch - processPackages [needle-shape-sensing]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-11 04:30:01] INFO root fetch - processPackages [libdyson-neon]: executing diffoscope
+[2023-04-11 04:30:01] INFO root fetch - processPackages [libdyson-neon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libdyson-neon-0.10.1.tar.gz tmp/libdyson-neon-0.9.0.tar.gz --markdown 20230411/l/libdyson-neon/0.10.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 04:30:01] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-04-11 04:30:01] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.3.0.tar.gz tmp/py_madvr-1.3.1.tar.gz --markdown 20230411/p/py-madvr/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-11 04:30:01] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/6d/28/798e1407c3480510fca3ee9ae50698b2d3abbd61f99d73530456e65e9806/arkdata-0.0.50.tar.gz
+[2023-04-11 04:30:01] INFO root fetch - processPackages [needle-shape-sensing]: Downloading https://files.pythonhosted.org/packages/e3/5b/9942c0623e834759ba1dfc634f3264882ab9edfabd08c01ed9b7ce6cec30/needle-shape-sensing-0.8.2.tar.gz
+[2023-04-11 04:30:01] INFO root fetch - processPackages [thinks-dash-components]: Downloading https://files.pythonhosted.org/packages/cd/b3/75dc4d379536acb1c4290b25234f4dfb239e4edcd58ac7530aff2bbc42f1/thinks_dash_components-0.3.1.tar.gz
+[2023-04-11 04:30:01] INFO root fetch - processPackages [needle-shape-sensing]: Downloading https://files.pythonhosted.org/packages/57/6c/6ef8b648f29d99225e75005c39d818f5e21c766d886aaec4baaab283f229/needle-shape-sensing-0.8.3.tar.gz
+[2023-04-11 04:30:01] INFO root fetch - processPackages [thinks-dash-components]: executing diffoscope
+[2023-04-11 04:30:01] INFO root fetch - processPackages [thinks-dash-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thinks_dash_components-0.3.0.tar.gz tmp/thinks_dash_components-0.3.1.tar.gz --markdown 20230411/t/thinks-dash-components/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-11 04:30:02] INFO root fetch - processPackages [needle-shape-sensing]: executing diffoscope
+[2023-04-11 04:30:02] INFO root fetch - processPackages [needle-shape-sensing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/needle-shape-sensing-0.8.2.tar.gz tmp/needle-shape-sensing-0.8.3.tar.gz --markdown 20230411/n/needle-shape-sensing/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-11 04:30:02] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-11 04:30:02] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-0.0.49.tar.gz tmp/arkdata-0.0.50.tar.gz --markdown 20230411/a/arkdata/0.0.49-0.0.50/diff.md --exclude *.pyd
+[2023-04-11 04:30:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:30:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:30:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:30:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:30:04] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:30:04] INFO root fetch - main [MainThread]: Store serial: [17654223]
