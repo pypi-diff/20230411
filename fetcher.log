@@ -14607,3 +14607,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 14:55:34] INFO root fetch - main [MainThread]: success
 [2023-04-11 14:55:35] INFO root fetch - main [MainThread]: success
 [2023-04-11 14:55:35] INFO root fetch - main [MainThread]: Store serial: [17660918]
+[2023-04-11 15:00:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17660918]
+[2023-04-11 15:00:43] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 15:00:43] INFO root fetch - processPackages [policyengine-api]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-11 15:00:43] INFO root fetch - processPackages [django-unical-bootstrap-italia]: New version: [2.0.1] Old Version: [1.2.0]
+[2023-04-11 15:00:43] INFO root fetch - processPackages [appstream-python]: New version: [0.6] Old Version: [0.5.1]
+[2023-04-11 15:00:43] INFO root fetch - processPackages [tdnpathviz]: New version: [0.1.2.2] Old Version: [0.1.2.1]
+[2023-04-11 15:00:43] INFO root fetch - processPackages [creosote]: New version: [2.6.0rc1] Old Version: [2.5.0]
+[2023-04-11 15:00:43] INFO root fetch - processPackages [django-unical-bootstrap-italia]: Downloading https://files.pythonhosted.org/packages/e3/cc/efc04d6c1ea6f164bf20d987904071a891ceb48ac4a7ef805583b40c4edb/django-unical-bootstrap-italia-1.2.0.tar.gz
+[2023-04-11 15:00:43] INFO root fetch - processPackages [appstream-python]: Downloading https://files.pythonhosted.org/packages/31/d3/4a2bec69fb533d6854079d5e8916d7abdc0eb5d745176abb422f95b6813d/appstream-python-0.5.1.tar.gz
+[2023-04-11 15:00:43] INFO root fetch - processPackages [policyengine-api]: Downloading https://files.pythonhosted.org/packages/c7/6a/015a7525084f4bdf205e5918a86010c6921b6472ef4228c376d2dff6c0d0/policyengine-api-1.0.1.tar.gz
+[2023-04-11 15:00:43] INFO root fetch - processPackages [creosote]: Downloading https://files.pythonhosted.org/packages/a6/e9/38a7b6df138a7592f4ab5441a34f7400b8db8cbf3547277843ed348eb292/creosote-2.5.0-py3-none-any.whl
+[2023-04-11 15:00:43] INFO root fetch - processPackages [tdnpathviz]: Downloading https://files.pythonhosted.org/packages/54/bf/493e3adfe9903010cfedc042b5d988413ad4a384a7672457bcab1f74d294/tdnpathviz-0.1.2.2-py3-none-any.whl
+[2023-04-11 15:00:44] INFO root fetch - processPackages [tdnpathviz]: executing diffoscope
+[2023-04-11 15:00:44] INFO root fetch - processPackages [tdnpathviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdnpathviz-0.1.2.1-py3-none-any.whl.zip tmp/tdnpathviz-0.1.2.2-py3-none-any.whl.zip --markdown 20230411/t/tdnpathviz/0.1.2.1-0.1.2.2/diff.md --exclude *.pyd
+[2023-04-11 15:00:44] INFO root fetch - processPackages [policyengine-api]: Downloading https://files.pythonhosted.org/packages/ea/d3/c3eb64d25edbb5479ff1678e9ad3d54842c9b120175b9fce644eb03170bc/policyengine-api-1.1.0.tar.gz
+[2023-04-11 15:00:44] INFO root fetch - processPackages [creosote]: Downloading https://files.pythonhosted.org/packages/0c/4e/09899d1ffe935cfa0339a3ba5a9ddec09d36794a386fbf9329391f96bac4/creosote-2.6.0rc1-py3-none-any.whl
+[2023-04-11 15:00:44] INFO root fetch - processPackages [appstream-python]: Downloading https://files.pythonhosted.org/packages/fc/c1/a52573ee64e10647c04483836f2e84961b84e5702923e69b16149c97ef0d/appstream-python-0.6.tar.gz
+[2023-04-11 15:00:44] INFO root fetch - processPackages [django-unical-bootstrap-italia]: executing diffoscope
+[2023-04-11 15:00:44] INFO root fetch - processPackages [django-unical-bootstrap-italia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-unical-bootstrap-italia-1.2.0.tar.gz tmp/django-unical-bootstrap-italia-2.0.1.tar.gz --markdown 20230411/d/django-unical-bootstrap-italia/1.2.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-11 15:00:44] INFO root fetch - processPackages [policyengine-api]: executing diffoscope
+[2023-04-11 15:00:44] INFO root fetch - processPackages [policyengine-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-api-1.0.1.tar.gz tmp/policyengine-api-1.1.0.tar.gz --markdown 20230411/p/policyengine-api/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 15:00:44] INFO root fetch - processPackages [creosote]: executing diffoscope
+[2023-04-11 15:00:44] INFO root fetch - processPackages [creosote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/creosote-2.5.0-py3-none-any.whl.zip tmp/creosote-2.6.0rc1-py3-none-any.whl.zip --markdown 20230411/c/creosote/2.5.0-2.6.0rc1/diff.md --exclude *.pyd
+[2023-04-11 15:00:44] INFO root fetch - processPackages [appstream-python]: executing diffoscope
+[2023-04-11 15:00:44] INFO root fetch - processPackages [appstream-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appstream-python-0.5.1.tar.gz tmp/appstream-python-0.6.tar.gz --markdown 20230411/a/appstream-python/0.5.1-0.6/diff.md --exclude *.pyd
+[2023-04-11 15:00:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:45] INFO root fetch - processPackages [MotorDeCalidad]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-11 15:00:45] INFO root fetch - processPackages [MotorDeCalidad]: executing diffoscope
+[2023-04-11 15:00:45] INFO root fetch - processPackages [MotorDeCalidad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MotorDeCalidad-1.9.8.tar.gz tmp/MotorDeCalidad-1.9.9.tar.gz --markdown 20230411/M/MotorDeCalidad/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-11 15:00:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:45] INFO root fetch - processPackages [serious-scaffold]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 15:00:45] INFO root fetch - processPackages [os2mo-data-import]: New version: [5.2.1] Old Version: [5.2.0]
+[2023-04-11 15:00:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:45] INFO root fetch - processPackages [cdktf-cdktf-provider-dnsimple]: New version: [4.0.0] Old Version: [3.0.3]
+[2023-04-11 15:00:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:45] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 15:00:45] INFO root fetch - processPackages [os2mo-data-import]: Downloading https://files.pythonhosted.org/packages/9c/39/325614baa3b19527b652e428504e72922928b584c2f25aed60477716e2f4/os2mo_data_import-5.2.1.tar.gz
+[2023-04-11 15:00:45] INFO root fetch - processPackages [serious-scaffold]: Downloading https://files.pythonhosted.org/packages/32/3c/e6484de31530bf7bb33e95077503fb7ea842aa301478cb4c472fadef987f/serious-scaffold-0.0.8.tar.gz
+[2023-04-11 15:00:45] INFO root fetch - processPackages [cdktf-cdktf-provider-dnsimple]: Downloading https://files.pythonhosted.org/packages/c2/26/35749a8d55731fd8baf3fde981be4dfb3337041099119d24d78579dd6c12/cdktf-cdktf-provider-dnsimple-3.0.3.tar.gz
+[2023-04-11 15:00:45] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-04-11 15:00:45] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.4.8-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.4.9-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230411/f/fbgemm-gpu-nightly-cpu/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-11 15:00:45] INFO root fetch - processPackages [os2mo-data-import]: executing diffoscope
+[2023-04-11 15:00:45] INFO root fetch - processPackages [os2mo-data-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/os2mo_data_import-5.2.0.tar.gz tmp/os2mo_data_import-5.2.1.tar.gz --markdown 20230411/o/os2mo-data-import/5.2.0-5.2.1/diff.md --exclude *.pyd
+[2023-04-11 15:00:46] INFO root fetch - processPackages [serious-scaffold]: Downloading https://files.pythonhosted.org/packages/28/1d/90200135e74525af4f58a5c732e1a7ff8c5603e519f5e35d6968fe6e1e76/serious-scaffold-0.0.9.tar.gz
+[2023-04-11 15:00:46] INFO root fetch - processPackages [serious-scaffold]: executing diffoscope
+[2023-04-11 15:00:46] INFO root fetch - processPackages [serious-scaffold]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serious-scaffold-0.0.8.tar.gz tmp/serious-scaffold-0.0.9.tar.gz --markdown 20230411/s/serious-scaffold/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 15:00:46] INFO root fetch - processPackages [cdktf-cdktf-provider-dnsimple]: Downloading https://files.pythonhosted.org/packages/fb/7b/1ff84b1e4fac6087f0202b2f78705a8c026cf85ecacbf74a9e353f718597/cdktf-cdktf-provider-dnsimple-4.0.0.tar.gz
+[2023-04-11 15:00:46] INFO root fetch - processPackages [cdktf-cdktf-provider-dnsimple]: executing diffoscope
+[2023-04-11 15:00:46] INFO root fetch - processPackages [cdktf-cdktf-provider-dnsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-dnsimple-3.0.3.tar.gz tmp/cdktf-cdktf-provider-dnsimple-4.0.0.tar.gz --markdown 20230411/c/cdktf-cdktf-provider-dnsimple/3.0.3-4.0.0/diff.md --exclude *.pyd
+[2023-04-11 15:00:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:46] INFO root fetch - processPackages [quanturf-blankly]: New version: [0.2] Old Version: [0.1]
+[2023-04-11 15:00:46] INFO root fetch - processPackages [quanturf-blankly]: executing diffoscope
+[2023-04-11 15:00:46] INFO root fetch - processPackages [quanturf-blankly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quanturf_blankly-0.1.tar.gz tmp/quanturf_blankly-0.2.tar.gz --markdown 20230411/q/quanturf-blankly/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-11 15:00:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:00:47] INFO root fetch - main [MainThread]: Store serial: [17660949]
