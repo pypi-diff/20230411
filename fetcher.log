@@ -1689,3 +1689,59 @@
 [2023-04-11 02:32:14] INFO root fetch - main [MainThread]: error
 [2023-04-11 02:32:14] INFO root fetch - main [MainThread]: success
 [2023-04-11 02:32:14] INFO root fetch - main [MainThread]: Store serial: [17652252]
+[2023-04-11 02:37:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17652252]
+[2023-04-11 02:37:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 02:37:21] INFO root fetch - processPackages [dcTrackClient]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-04-11 02:37:21] INFO root fetch - processPackages [gdcbeutils]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-11 02:37:21] INFO root fetch - processPackages [label-studio-converter]: New version: [0.48rc0] Old Version: [0.0.9]
+[2023-04-11 02:37:21] INFO root fetch - processPackages [PyNiteFEA]: New version: [0.0.72] Old Version: [0.0.71]
+[2023-04-11 02:37:21] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a8]
+[2023-04-11 02:37:21] INFO root fetch - processPackages [label-studio-converter]: executing diffoscope
+[2023-04-11 02:37:21] INFO root fetch - processPackages [label-studio-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/label-studio-converter-0.0.9.tar.gz tmp/label-studio-converter-0.48rc0.tar.gz --markdown 20230411/l/label-studio-converter/0.0.9-0.48rc0/diff.md --exclude *.pyd
+[2023-04-11 02:37:21] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-04-11 02:37:21] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a8.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230411/c/cbra/2.0.0a8-3.0.0a7/diff.md --exclude *.pyd
+[2023-04-11 02:37:21] INFO root fetch - processPackages [dcTrackClient]: Downloading https://files.pythonhosted.org/packages/5f/d1/28685e687c2305518c441942e1f478d0775af10d9cae897825a6ae0fd952/dctrackclient-0.0.3.tar.gz
+[2023-04-11 02:37:22] INFO root fetch - processPackages [gdcbeutils]: Downloading https://files.pythonhosted.org/packages/92/c9/bb3d261f108f9b210237af9f9b0c39a1989a6426b13fc6774d8efc8fe596/gdcbeutils-1.1.1.tar.gz
+[2023-04-11 02:37:22] INFO root fetch - processPackages [PyNiteFEA]: Downloading https://files.pythonhosted.org/packages/bf/b0/d61e86e4c6e5d3d34a0267da7c11884798276b6a4501ada67ace1be97a8b/PyNiteFEA-0.0.71.tar.gz
+[2023-04-11 02:37:22] INFO root fetch - processPackages [gdcbeutils]: executing diffoscope
+[2023-04-11 02:37:22] INFO root fetch - processPackages [gdcbeutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdcbeutils-1.1.0.tar.gz tmp/gdcbeutils-1.1.1.tar.gz --markdown 20230411/g/gdcbeutils/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-11 02:37:22] INFO root fetch - processPackages [dcTrackClient]: Downloading https://files.pythonhosted.org/packages/49/74/d57cde2dd9fc1be80088f0986e423245f7289734ff29c9e6f6f0aa3f52a0/dctrackclient-0.1.0.tar.gz
+[2023-04-11 02:37:22] INFO root fetch - processPackages [dcTrackClient]: executing diffoscope
+[2023-04-11 02:37:22] INFO root fetch - processPackages [dcTrackClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dctrackclient-0.0.3.tar.gz tmp/dctrackclient-0.1.0.tar.gz --markdown 20230411/d/dcTrackClient/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 02:37:22] INFO root fetch - processPackages [PyNiteFEA]: Downloading https://files.pythonhosted.org/packages/8a/91/c4eefb96c3e0fa549568d3d9fa5eb3e7d132aa1f251dbf8e9dd2e968d64e/PyNiteFEA-0.0.72.tar.gz
+[2023-04-11 02:37:22] INFO root fetch - processPackages [PyNiteFEA]: executing diffoscope
+[2023-04-11 02:37:22] INFO root fetch - processPackages [PyNiteFEA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyNiteFEA-0.0.71.tar.gz tmp/PyNiteFEA-0.0.72.tar.gz --markdown 20230411/P/PyNiteFEA/0.0.71-0.0.72/diff.md --exclude *.pyd
+[2023-04-11 02:37:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:23] WARNING root fetch - processPackages [flaticon]: Skipping, unable to determine old version
+[2023-04-11 02:37:23] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:37:23] INFO root fetch - processPackages [pepperize.cdk-github]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 02:37:23] INFO root fetch - processPackages [pepperize.cdk-github]: executing diffoscope
+[2023-04-11 02:37:23] INFO root fetch - processPackages [pepperize.cdk-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-github-0.0.98.tar.gz tmp/pepperize.cdk-github-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-github/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 02:37:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:23] INFO root fetch - processPackages [pynubank]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-04-11 02:37:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:23] INFO root fetch - processPackages [buildlackey]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-11 02:37:23] INFO root fetch - processPackages [pynubank]: Downloading https://files.pythonhosted.org/packages/ed/2a/f5cd715bd6ccece4e2726a342485312cb4d2060004469719490eca3f33d1/pynubank-2.9.0.tar.gz
+[2023-04-11 02:37:23] INFO root fetch - processPackages [buildlackey]: Downloading https://files.pythonhosted.org/packages/0b/60/a2b1b680def6882d51e83996af86ebc712d8778e87e5c611f28ca791a349/buildlackey-0.5.0.tar.gz
+[2023-04-11 02:37:23] INFO root fetch - processPackages [pynubank]: Downloading https://files.pythonhosted.org/packages/d2/1f/bf72658c19b9d038c2a1bfcb84fc12ad70b31fb097ede791770963b06c19/pynubank-2.9.1.tar.gz
+[2023-04-11 02:37:24] INFO root fetch - processPackages [buildlackey]: Downloading https://files.pythonhosted.org/packages/d6/57/b1c4ed45b607ffa037a7cfbe9cd3c8e34c378308394a1e30cb884c949498/buildlackey-0.6.0.tar.gz
+[2023-04-11 02:37:24] INFO root fetch - processPackages [pynubank]: executing diffoscope
+[2023-04-11 02:37:24] INFO root fetch - processPackages [pynubank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynubank-2.9.0.tar.gz tmp/pynubank-2.9.1.tar.gz --markdown 20230411/p/pynubank/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-04-11 02:37:24] INFO root fetch - processPackages [buildlackey]: executing diffoscope
+[2023-04-11 02:37:24] INFO root fetch - processPackages [buildlackey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildlackey-0.5.0.tar.gz tmp/buildlackey-0.6.0.tar.gz --markdown 20230411/b/buildlackey/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-11 02:37:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:24] INFO root fetch - processPackages [pipster]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-11 02:37:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:24] INFO root fetch - processPackages [jarvis-toolkit]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 02:37:24] INFO root fetch - processPackages [pipster]: executing diffoscope
+[2023-04-11 02:37:24] INFO root fetch - processPackages [pipster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipster-0.0.7.tar.gz tmp/pipster-0.0.9.tar.gz --markdown 20230411/p/pipster/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 02:37:24] INFO root fetch - processPackages [jarvis-toolkit]: Downloading https://files.pythonhosted.org/packages/96/a2/d80aee686ed1d0a5bbd7438a50f93eac3496e7ad5641f2c3d95b56ebbb75/jarvis-toolkit-0.0.1.tar.gz
+[2023-04-11 02:37:25] INFO root fetch - processPackages [jarvis-toolkit]: Downloading https://files.pythonhosted.org/packages/81/53/4c901586b7e8845bed2e86bfa6cf00d0b906546b934313efb26e8c6b96a5/jarvis-toolkit-0.0.2.tar.gz
+[2023-04-11 02:37:25] INFO root fetch - processPackages [jarvis-toolkit]: executing diffoscope
+[2023-04-11 02:37:25] INFO root fetch - processPackages [jarvis-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis-toolkit-0.0.1.tar.gz tmp/jarvis-toolkit-0.0.2.tar.gz --markdown 20230411/j/jarvis-toolkit/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 02:37:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:37:26] INFO root fetch - main [MainThread]: Store serial: [17652287]
