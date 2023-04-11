@@ -11376,3 +11376,74 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 11:05:26] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:05:27] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:05:27] INFO root fetch - main [MainThread]: Store serial: [17658621]
+[2023-04-11 11:10:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658621]
+[2023-04-11 11:10:35] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 11:10:35] INFO root fetch - processPackages [cis-checks-2023]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-11 11:10:35] INFO root fetch - processPackages [balderich]: New version: [1.2] Old Version: [1.1]
+[2023-04-11 11:10:35] INFO root fetch - processPackages [skl-graph]: New version: [2023.9] Old Version: [2023.8]
+[2023-04-11 11:10:35] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: New version: [2.1.0.dev3871883101] Old Version: [2.0.0.dev4665807934]
+[2023-04-11 11:10:35] INFO root fetch - processPackages [kcli]: New version: [99.0.202304110909] Old Version: [99.0.202304102130]
+[2023-04-11 11:10:35] INFO root fetch - processPackages [cis-checks-2023]: Downloading https://files.pythonhosted.org/packages/9c/45/baaaeb4dc44f0b6f4743b25973faf7061787b8f22ef55e95f81194e593c7/cis_checks_2023-2.0.1.tar.gz
+[2023-04-11 11:10:35] INFO root fetch - processPackages [skl-graph]: Downloading https://files.pythonhosted.org/packages/15/a7/d7345fc604e1c94faa76a02b3050cefbf5c3e7be452108acbd957bef14e0/skl-graph-2023.8.tar.gz
+[2023-04-11 11:10:35] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: Downloading https://files.pythonhosted.org/packages/a8/70/4934992117a5275618220554c2f01d8b0bf1094ad8d363e8362bdacc6d66/th2_grpc_lw_data_provider-2.0.0.dev4665807934.tar.gz
+[2023-04-11 11:10:35] INFO root fetch - processPackages [balderich]: Downloading https://files.pythonhosted.org/packages/2b/c8/9697e8e46381332db48a711d55943f94efd526602916453ed3553f4ec504/balderich-1.1-py3-none-any.whl
+[2023-04-11 11:10:35] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/ce/1d/e4c37e04a27ae2930e8a1bf5cabac4d4f26bdc6dcc795efd22fbcf2d777d/kcli-99.0.202304102130-py3-none-any.whl
+[2023-04-11 11:10:35] INFO root fetch - processPackages [balderich]: Downloading https://files.pythonhosted.org/packages/7f/da/d97ecf44a140cf9bbed7dd661a8b8bafb0203f5b89c57c677c69356cb314/balderich-1.2.tar.gz
+[2023-04-11 11:10:35] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: executing diffoscope
+[2023-04-11 11:10:35] INFO root fetch - processPackages [th2-grpc-lw-data-provider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_grpc_lw_data_provider-2.0.0.dev4665807934.tar.gz tmp/th2_grpc_lw_data_provider-2.1.0.dev3871883101.tar.gz --markdown 20230411/t/th2-grpc-lw-data-provider/2.0.0.dev4665807934-2.1.0.dev3871883101/diff.md --exclude *.pyd
+[2023-04-11 11:10:35] INFO root fetch - processPackages [cis-checks-2023]: Downloading https://files.pythonhosted.org/packages/6b/90/f3263e897857dd3331c40151ac988020cf34485efe55a6fdabb601db26ce/cis_checks_2023-2.0.2.tar.gz
+[2023-04-11 11:10:35] INFO root fetch - processPackages [skl-graph]: Downloading https://files.pythonhosted.org/packages/b1/0f/0929f13352edcf9f573edac5d68206a6f8ef2512983829ddf07833acdb97/skl-graph-2023.9.tar.gz
+[2023-04-11 11:10:35] INFO root fetch - processPackages [balderich]: executing diffoscope
+[2023-04-11 11:10:35] INFO root fetch - processPackages [balderich]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balderich-1.1-py3-none-any.whl.zip tmp/balderich-1.2.tar.gz --markdown 20230411/b/balderich/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-11 11:10:36] INFO root fetch - processPackages [cis-checks-2023]: executing diffoscope
+[2023-04-11 11:10:36] INFO root fetch - processPackages [cis-checks-2023]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cis_checks_2023-2.0.1.tar.gz tmp/cis_checks_2023-2.0.2.tar.gz --markdown 20230411/c/cis-checks-2023/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-11 11:10:36] INFO root fetch - processPackages [skl-graph]: executing diffoscope
+[2023-04-11 11:10:36] INFO root fetch - processPackages [skl-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skl-graph-2023.8.tar.gz tmp/skl-graph-2023.9.tar.gz --markdown 20230411/s/skl-graph/2023.8-2023.9/diff.md --exclude *.pyd
+[2023-04-11 11:10:36] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/d6/04/5dd98691be253fcfddb5ec202619b2011e115fb45bd612ae08671ce7d531/kcli-99.0.202304110909-py3-none-any.whl
+[2023-04-11 11:10:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:36] INFO root fetch - processPackages [plunk]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-11 11:10:36] INFO root fetch - processPackages [dcb-admin-page-generator]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 11:10:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:37] INFO root fetch - processPackages [syngen]: New version: [0.0.9] Old Version: [0.0.89]
+[2023-04-11 11:10:37] INFO root fetch - processPackages [dcb-admin-page-generator]: Downloading https://files.pythonhosted.org/packages/15/72/2840cb39b2166a79a3283b687631c63fb68aeffd609fb3de0ab3e188eb6e/dcb_admin_page_generator-0.0.5.tar.gz
+[2023-04-11 11:10:37] INFO root fetch - processPackages [plunk]: executing diffoscope
+[2023-04-11 11:10:37] INFO root fetch - processPackages [plunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plunk-0.1.98.tar.gz tmp/plunk-0.1.99.tar.gz --markdown 20230411/p/plunk/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-11 11:10:37] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-11 11:10:37] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304102130-py3-none-any.whl.zip tmp/kcli-99.0.202304110909-py3-none-any.whl.zip --markdown 20230411/k/kcli/99.0.202304102130-99.0.202304110909/diff.md --exclude *.pyd
+[2023-04-11 11:10:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:37] INFO root fetch - processPackages [syngen]: Downloading https://files.pythonhosted.org/packages/25/ed/c6c7b544572b3c01d1634683de10fb21ce17447bfc6e39a14910ae09d4d5/syngen-0.0.89.tar.gz
+[2023-04-11 11:10:37] INFO root fetch - processPackages [deepdriver]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-11 11:10:37] INFO root fetch - processPackages [deepdriver]: executing diffoscope
+[2023-04-11 11:10:37] INFO root fetch - processPackages [deepdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdriver-0.9.4.tar.gz tmp/deepdriver-0.9.5.tar.gz --markdown 20230411/d/deepdriver/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-11 11:10:37] INFO root fetch - processPackages [dcb-admin-page-generator]: executing diffoscope
+[2023-04-11 11:10:37] INFO root fetch - processPackages [dcb-admin-page-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcb_admin_page_generator-0.0.4.tar.gz tmp/dcb_admin_page_generator-0.0.5.tar.gz --markdown 20230411/d/dcb-admin-page-generator/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 11:10:37] INFO root fetch - processPackages [syngen]: executing diffoscope
+[2023-04-11 11:10:37] INFO root fetch - processPackages [syngen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syngen-0.0.89.tar.gz tmp/syngen-0.0.9.tar.gz --markdown 20230411/s/syngen/0.0.89-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 11:10:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:38] INFO root fetch - processPackages [kcli]: New version: [99.0.202304110913] Old Version: [99.0.202304110909]
+[2023-04-11 11:10:38] INFO root fetch - processPackages [MeUtils]: New version: [2023.4.6.14.28.33] Old Version: [2023.4.6.14.19.58]
+[2023-04-11 11:10:38] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/71/78/4f4c54455292d6d2e7ea52b65ecab4682558cfa19488fa92910f2fa1c988/kcli-99.0.202304110913-py3-none-any.whl
+[2023-04-11 11:10:39] INFO root fetch - processPackages [MeUtils]: Downloading https://files.pythonhosted.org/packages/49/01/681d5da0b0dd175ce86adab3ba306b21b05b6a27b0618eb945d88498f3d7/MeUtils-2023.4.6.14.19.58.tar.gz
+[2023-04-11 11:10:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:39] INFO root fetch - processPackages [basicthainlp]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-11 11:10:39] INFO root fetch - processPackages [basicthainlp]: Downloading https://files.pythonhosted.org/packages/45/40/539e5ff8dd0bda64393bd2ce084819061600ec0422f06d0e8605db8a870d/basicthainlp-0.3.3.tar.gz
+[2023-04-11 11:10:39] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-04-11 11:10:39] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202304110909-py3-none-any.whl.zip tmp/kcli-99.0.202304110913-py3-none-any.whl.zip --markdown 20230411/k/kcli/99.0.202304110909-99.0.202304110913/diff.md --exclude *.pyd
+[2023-04-11 11:10:39] WARNING root fetch - processPackages [basicthainlp]: Skipping package: exceeds size limit 34768901>=10485760
+[2023-04-11 11:10:39] INFO root fetch - main [MainThread]: error
+[2023-04-11 11:10:40] INFO root fetch - processPackages [t2iapi]: New version: [3.0.0.dev125] Old Version: [3.0.0.dev120]
+[2023-04-11 11:10:40] INFO root fetch - processPackages [t2iapi]: Downloading https://files.pythonhosted.org/packages/d1/c9/53e1e7655abfba77bc230e71b1822b8021ad36480c2f3137866c3bf5533a/t2iapi-3.0.0.dev120.tar.gz
+[2023-04-11 11:10:40] INFO root fetch - processPackages [t2iapi]: Downloading https://files.pythonhosted.org/packages/7c/54/37fef57a68f7e567441e86b21d1e0b1005ba980485f4f14f2790c984b7b4/t2iapi-3.0.0.dev125.tar.gz
+[2023-04-11 11:10:40] INFO root fetch - processPackages [t2iapi]: executing diffoscope
+[2023-04-11 11:10:40] INFO root fetch - processPackages [t2iapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2iapi-3.0.0.dev120.tar.gz tmp/t2iapi-3.0.0.dev125.tar.gz --markdown 20230411/t/t2iapi/3.0.0.dev120-3.0.0.dev125/diff.md --exclude *.pyd
+[2023-04-11 11:10:41] INFO root fetch - processPackages [MeUtils]: Downloading https://files.pythonhosted.org/packages/30/94/23ffde338484b09b2d829f807b44b0a4c77b110eab969c4ab0a8a041d27a/MeUtils-2023.4.6.14.28.33.tar.gz
+[2023-04-11 11:10:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:42] INFO root fetch - processPackages [MeUtils]: executing diffoscope
+[2023-04-11 11:10:42] INFO root fetch - processPackages [MeUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeUtils-2023.4.6.14.19.58.tar.gz tmp/MeUtils-2023.4.6.14.28.33.tar.gz --markdown 20230411/M/MeUtils/2023.4.6.14.19.58-2023.4.6.14.28.33/diff.md --exclude *.pyd
+[2023-04-11 11:10:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:10:47] INFO root fetch - main [MainThread]: Store serial: [17658652]
