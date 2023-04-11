@@ -19402,3 +19402,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 19:48:56] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:49:05] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:49:05] INFO root fetch - main [MainThread]: Store serial: [17664236]
+[2023-04-11 19:54:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17664236]
+[2023-04-11 19:54:12] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 19:54:12] INFO root fetch - processPackages [asts]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-04-11 19:54:12] INFO root fetch - processPackages [dojo-truant]: New version: [2023.4.7.3] Old Version: [2023.4.7.2]
+[2023-04-11 19:54:12] INFO root fetch - processPackages [gpcam]: New version: [7.4.8] Old Version: [7.4.7]
+[2023-04-11 19:54:12] INFO root fetch - processPackages [telescope-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 19:54:12] INFO root fetch - processPackages [sdmetrics]: New version: [0.9.3.dev0] Old Version: [0.9.2.dev0]
+[2023-04-11 19:54:12] INFO root fetch - processPackages [dojo-truant]: executing diffoscope
+[2023-04-11 19:54:12] INFO root fetch - processPackages [dojo-truant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dojo_truant-2023.4.7.2.tar.gz tmp/dojo_truant-2023.4.7.3.tar.gz --markdown 20230411/d/dojo-truant/2023.4.7.2-2023.4.7.3/diff.md --exclude *.pyd
+[2023-04-11 19:54:12] INFO root fetch - processPackages [telescope-sdk]: executing diffoscope
+[2023-04-11 19:54:12] INFO root fetch - processPackages [telescope-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telescope_sdk-0.1.8.tar.gz tmp/telescope_sdk-0.1.9.tar.gz --markdown 20230411/t/telescope-sdk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 19:54:12] INFO root fetch - processPackages [asts]: Downloading https://files.pythonhosted.org/packages/af/80/312719f64b282b0fa7ce255843c702369b2ffefbe409a62fe2397aae16cf/asts-0.9.6-py3-none-manylinux_2_24_x86_64.whl
+[2023-04-11 19:54:12] INFO root fetch - processPackages [gpcam]: Downloading https://files.pythonhosted.org/packages/09/1d/87815761fe6018d696e2bedc45c6a6cd4266027ec5d3b8249f4a72e97801/gpcam-7.4.7.tar.gz
+[2023-04-11 19:54:13] INFO root fetch - processPackages [sdmetrics]: Downloading https://files.pythonhosted.org/packages/7f/26/afe05f238b5df97dab8a19551c5758b54d6fc72f0d62361563d7dfce4806/sdmetrics-0.9.2.dev0.tar.gz
+[2023-04-11 19:54:13] WARNING root fetch - processPackages [asts]: Skipping package: exceeds size limit 35691131>=10485760
+[2023-04-11 19:54:13] INFO root fetch - main [MainThread]: error
+[2023-04-11 19:54:13] INFO root fetch - processPackages [repl-python-codestats]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 19:54:13] WARNING root fetch - processPackages [gpcam]: Skipping package: exceeds size limit 11855235>=10485760
+[2023-04-11 19:54:13] INFO root fetch - main [MainThread]: error
+[2023-04-11 19:54:13] INFO root fetch - processPackages [science-optimization]: New version: [9.0.2] Old Version: [9.0.1]
+[2023-04-11 19:54:13] INFO root fetch - processPackages [repl-python-codestats]: Downloading https://files.pythonhosted.org/packages/d8/79/1356dc62767682a3764a05beb2cda359bc6e88fa428d77d519780b9c1180/repl-python-codestats-0.0.3.tar.gz
+[2023-04-11 19:54:13] INFO root fetch - processPackages [sdmetrics]: Downloading https://files.pythonhosted.org/packages/a8/db/42fbc36b72c135b4512d26097431c73a50b24f710d7fe298b9085ec79e70/sdmetrics-0.9.3.dev0.tar.gz
+[2023-04-11 19:54:13] INFO root fetch - processPackages [science-optimization]: executing diffoscope
+[2023-04-11 19:54:13] INFO root fetch - processPackages [science-optimization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/science_optimization-9.0.1.tar.gz tmp/science_optimization-9.0.2.tar.gz --markdown 20230411/s/science-optimization/9.0.1-9.0.2/diff.md --exclude *.pyd
+[2023-04-11 19:54:13] INFO root fetch - processPackages [sdmetrics]: executing diffoscope
+[2023-04-11 19:54:13] INFO root fetch - processPackages [sdmetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdmetrics-0.9.2.dev0.tar.gz tmp/sdmetrics-0.9.3.dev0.tar.gz --markdown 20230411/s/sdmetrics/0.9.2.dev0-0.9.3.dev0/diff.md --exclude *.pyd
+[2023-04-11 19:54:13] INFO root fetch - processPackages [repl-python-codestats]: Downloading https://files.pythonhosted.org/packages/0d/b6/f4175869bb24c64b336a1b6722552e7a9d9e7cc4b955eaa60067dc6a6598/repl-python-codestats-0.0.4.tar.gz
+[2023-04-11 19:54:13] INFO root fetch - processPackages [repl-python-codestats]: executing diffoscope
+[2023-04-11 19:54:13] INFO root fetch - processPackages [repl-python-codestats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repl-python-codestats-0.0.3.tar.gz tmp/repl-python-codestats-0.0.4.tar.gz --markdown 20230411/r/repl-python-codestats/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 19:54:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:54:14] INFO root fetch - processPackages [flow-helpers-tps]: New version: [2023.4.11.1755] Old Version: [2023.4.11.1713]
+[2023-04-11 19:54:14] INFO root fetch - processPackages [flow-helpers-tps]: Downloading https://files.pythonhosted.org/packages/05/c9/ddfcf18cad5599ac79b01f1e168dd444de4b9df4ffd19f7b367c7fa6f600/flow_helpers_tps-2023.4.11.1755.tar.gz
+[2023-04-11 19:54:14] INFO root fetch - processPackages [flow-helpers-tps]: executing diffoscope
+[2023-04-11 19:54:14] INFO root fetch - processPackages [flow-helpers-tps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flow_helpers_tps-2023.4.11.1713.tar.gz tmp/flow_helpers_tps-2023.4.11.1755.tar.gz --markdown 20230411/f/flow-helpers-tps/2023.4.11.1713-2023.4.11.1755/diff.md --exclude *.pyd
+[2023-04-11 19:54:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:54:14] INFO root fetch - processPackages [pyinflux3]: New version: [0.7.0] Old Version: [0.6.3]
+[2023-04-11 19:54:14] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/8a/a9/fde30f5a72cdc4abfcf01420d5ff53c524bffdd51aaa79ef94ec674e1837/pyinflux3-0.7.0.tar.gz
+[2023-04-11 19:54:14] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-11 19:54:14] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.6.3.tar.gz tmp/pyinflux3-0.7.0.tar.gz --markdown 20230411/p/pyinflux3/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2023-04-11 19:54:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:54:15] INFO root fetch - processPackages [phenodata]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-11 19:54:15] INFO root fetch - processPackages [phenodata]: executing diffoscope
+[2023-04-11 19:54:15] INFO root fetch - processPackages [phenodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phenodata-0.9.3.tar.gz tmp/phenodata-0.9.4.tar.gz --markdown 20230411/p/phenodata/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-11 19:54:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:54:15] INFO root fetch - processPackages [oak9-tython]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 19:54:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:54:15] INFO root fetch - processPackages [oak9-tython]: Downloading https://files.pythonhosted.org/packages/99/cd/52af35720c59ee3718b2e86a4c4cf1e4f689085bef1d77eacf257b64951f/oak9.tython-1.0.1.tar.gz
+[2023-04-11 19:54:15] INFO root fetch - processPackages [moto]: New version: [4.1.8.dev2] Old Version: [4.1.7.dev9]
+[2023-04-11 19:54:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:54:15] INFO root fetch - processPackages [django-otp-twilio]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 19:54:15] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/70/3e/5edfe1461f0e299a7817f648debfd308cb68923363bd56109f73ba561d63/moto-4.1.8.dev2.tar.gz
+[2023-04-11 19:54:16] INFO root fetch - processPackages [oak9-tython]: Downloading https://files.pythonhosted.org/packages/80/6e/d0ce77b79d8c4b85f745d66d260892967e06f93583cddd81527224e091b3/oak9_tython-1.0.2.tar.gz
+[2023-04-11 19:54:16] INFO root fetch - processPackages [django-otp-twilio]: Downloading https://files.pythonhosted.org/packages/28/fc/748f20e7fe5b623d0cc94f0d8c32c277a3cd548149e3f10a3f2bea2ebd4a/django-otp-twilio-1.0.1.tar.gz
+[2023-04-11 19:54:16] INFO root fetch - processPackages [django-otp-twilio]: Downloading https://files.pythonhosted.org/packages/be/1f/5e031636194c9e751f61cc46ccbef7c4ccfd97c5c93c17feb7e20c2a005e/django-otp-twilio-1.0.2.tar.gz
+[2023-04-11 19:54:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:54:16] INFO root fetch - processPackages [django-otp-twilio]: executing diffoscope
+[2023-04-11 19:54:16] INFO root fetch - processPackages [django-otp-twilio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-otp-twilio-1.0.1.tar.gz tmp/django-otp-twilio-1.0.2.tar.gz --markdown 20230411/d/django-otp-twilio/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 19:54:16] INFO root fetch - processPackages [oak9-tython]: executing diffoscope
+[2023-04-11 19:54:16] INFO root fetch - processPackages [oak9-tython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oak9.tython-1.0.1.tar.gz tmp/oak9_tython-1.0.2.tar.gz --markdown 20230411/o/oak9-tython/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 19:54:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:54:16] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-11 19:54:16] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.7.dev9.tar.gz tmp/moto-4.1.8.dev2.tar.gz --markdown 20230411/m/moto/4.1.7.dev9-4.1.8.dev2/diff.md --exclude *.pyd
+[2023-04-11 19:54:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:54:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:55:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:55:52] INFO root fetch - main [MainThread]: Store serial: [17664277]
