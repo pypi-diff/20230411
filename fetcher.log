@@ -19127,3 +19127,78 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 19:32:10] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:32:25] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:32:25] INFO root fetch - main [MainThread]: Store serial: [17664079]
+[2023-04-11 19:37:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17664079]
+[2023-04-11 19:37:35] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 19:37:35] INFO root fetch - processPackages [controlnet-aux]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 19:37:35] INFO root fetch - processPackages [ewoksdata]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 19:37:35] INFO root fetch - processPackages [easytypes]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 19:37:35] INFO root fetch - processPackages [pelican-youtube-thumbnails]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-11 19:37:35] INFO root fetch - processPackages [hearthstone-data]: New version: [95431.1] Old Version: [93849.1]
+[2023-04-11 19:37:35] INFO root fetch - processPackages [easytypes]: Downloading https://files.pythonhosted.org/packages/49/8c/d48e356d3a9c6e430c3e77de0932b54b52b9e7b5c40ac4aacbed2c8bff9b/easytypes-0.1.0.tar.gz
+[2023-04-11 19:37:35] INFO root fetch - processPackages [pelican-youtube-thumbnails]: Downloading https://files.pythonhosted.org/packages/c5/71/70af52c0c5845ba214cd22ca0eb7c53891cb7c06f7afccc49e12a73814ee/pelican-youtube-thumbnails-0.3.2.tar.gz
+[2023-04-11 19:37:35] INFO root fetch - processPackages [controlnet-aux]: Downloading https://files.pythonhosted.org/packages/9b/bd/9472125f09d718300bd4db9545cf5a13bd6b353df5a2c3540455e4c6e05d/controlnet_aux-0.0.1.tar.gz
+[2023-04-11 19:37:35] INFO root fetch - processPackages [ewoksdata]: Downloading https://files.pythonhosted.org/packages/1b/51/e11c757a5524c0e676e0e0ae3380640dbbd0a4b76af553989a01d8fc0bd2/ewoksdata-0.2.1.tar.gz
+[2023-04-11 19:37:35] INFO root fetch - processPackages [hearthstone-data]: Downloading https://files.pythonhosted.org/packages/1a/44/1cb20e8bc14aefd26e671bade62b6a741594351391784f21fb5385d4cd6a/hearthstone_data-93849.1.tar.gz
+[2023-04-11 19:37:35] INFO root fetch - processPackages [pelican-youtube-thumbnails]: executing diffoscope
+[2023-04-11 19:37:35] INFO root fetch - processPackages [pelican-youtube-thumbnails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican-youtube-thumbnails-0.3.1.tar.gz tmp/pelican-youtube-thumbnails-0.3.2.tar.gz --markdown 20230411/p/pelican-youtube-thumbnails/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 19:37:35] INFO root fetch - processPackages [controlnet-aux]: Downloading https://files.pythonhosted.org/packages/6c/db/43acfd2a0ccc87b797fbfcf509875564fe49d1b0bb1bda4bfde3257b49b2/controlnet_aux-0.0.2.tar.gz
+[2023-04-11 19:37:35] INFO root fetch - processPackages [ewoksdata]: Downloading https://files.pythonhosted.org/packages/5c/7f/b3b3b49461fca9413771c45195c8720737394acd82423b923645c2f7b7ae/ewoksdata-0.2.2.tar.gz
+[2023-04-11 19:37:35] INFO root fetch - processPackages [easytypes]: Downloading https://files.pythonhosted.org/packages/7f/8a/872b1adf180a2ff4c7481f3338d63eea8b599c51ccf398c6bc80490ecbe5/easytypes-0.1.1.tar.gz
+[2023-04-11 19:37:35] INFO root fetch - processPackages [controlnet-aux]: executing diffoscope
+[2023-04-11 19:37:35] INFO root fetch - processPackages [controlnet-aux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/controlnet_aux-0.0.1.tar.gz tmp/controlnet_aux-0.0.2.tar.gz --markdown 20230411/c/controlnet-aux/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 19:37:35] INFO root fetch - processPackages [ewoksdata]: executing diffoscope
+[2023-04-11 19:37:35] INFO root fetch - processPackages [ewoksdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ewoksdata-0.2.1.tar.gz tmp/ewoksdata-0.2.2.tar.gz --markdown 20230411/e/ewoksdata/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 19:37:35] INFO root fetch - processPackages [easytypes]: executing diffoscope
+[2023-04-11 19:37:35] INFO root fetch - processPackages [easytypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytypes-0.1.0.tar.gz tmp/easytypes-0.1.1.tar.gz --markdown 20230411/e/easytypes/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 19:37:35] INFO root fetch - processPackages [hearthstone-data]: Downloading https://files.pythonhosted.org/packages/75/07/ae8721c5e7f122730842bbaa36b121d3ff5d598d4dfe37e2809b41ac9f2c/hearthstone_data-95431.1.tar.gz
+[2023-04-11 19:37:36] INFO root fetch - processPackages [hearthstone-data]: executing diffoscope
+[2023-04-11 19:37:36] INFO root fetch - processPackages [hearthstone-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hearthstone_data-93849.1.tar.gz tmp/hearthstone_data-95431.1.tar.gz --markdown 20230411/h/hearthstone-data/93849.1-95431.1/diff.md --exclude *.pyd
+[2023-04-11 19:37:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:36] INFO root fetch - processPackages [actymath]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 19:37:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:36] INFO root fetch - processPackages [actymath]: Downloading https://files.pythonhosted.org/packages/37/ad/422c3c681e47959a0ad36834ba8120d94c859dc12b42d084e0f0966c8ade/actymath-0.1.1.tar.gz
+[2023-04-11 19:37:36] INFO root fetch - processPackages [fschat]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 19:37:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:36] INFO root fetch - processPackages [REFPROP-connector]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-11 19:37:37] INFO root fetch - processPackages [REFPROP-connector]: Downloading https://files.pythonhosted.org/packages/d8/9d/60b3fe1ca7c27df2d837bd7d28230b39bdbf93af2703d9e1dd860ac1e47c/REFPROP_connector-0.3.1.tar.gz
+[2023-04-11 19:37:37] INFO root fetch - processPackages [actymath]: Downloading https://files.pythonhosted.org/packages/f7/1a/34d8827f5e7b16a129d0cc34a80cabab69128228e76aff0df979791c4626/actymath-0.1.2.tar.gz
+[2023-04-11 19:37:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:37] INFO root fetch - processPackages [fschat]: executing diffoscope
+[2023-04-11 19:37:37] INFO root fetch - processPackages [fschat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fschat-0.1.8.tar.gz tmp/fschat-0.1.9.tar.gz --markdown 20230411/f/fschat/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 19:37:37] INFO root fetch - processPackages [LocalResolver]: New version: [1.0.0] Old Version: [0.0.3]
+[2023-04-11 19:37:37] INFO root fetch - processPackages [actymath]: executing diffoscope
+[2023-04-11 19:37:37] INFO root fetch - processPackages [actymath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/actymath-0.1.1.tar.gz tmp/actymath-0.1.2.tar.gz --markdown 20230411/a/actymath/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 19:37:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:37] INFO root fetch - processPackages [zimran-events]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-11 19:37:37] INFO root fetch - processPackages [LocalResolver]: Downloading https://files.pythonhosted.org/packages/40/b8/b81e6e74b2a9d7afb0f8d14f15a39573cfd69dffe816c3b8de058238acae/LocalResolver-1.0.0.tar.gz
+[2023-04-11 19:37:37] INFO root fetch - processPackages [zimran-events]: Downloading https://files.pythonhosted.org/packages/74/14/83a20c37c87c64cd1f9a3ffbab6b76c7544606f5306ba848627707f7e0ec/zimran-events-0.2.0.tar.gz
+[2023-04-11 19:37:37] INFO root fetch - processPackages [LocalResolver]: executing diffoscope
+[2023-04-11 19:37:37] INFO root fetch - processPackages [LocalResolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LocalResolver-0.0.3.tar.gz tmp/LocalResolver-1.0.0.tar.gz --markdown 20230411/L/LocalResolver/0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-04-11 19:37:37] INFO root fetch - processPackages [zimran-events]: Downloading https://files.pythonhosted.org/packages/04/80/c570379a7a91f2fd25777d3b62043c221e705bd3a847b9d66d96b4953d70/zimran-events-0.2.1.tar.gz
+[2023-04-11 19:37:38] INFO root fetch - processPackages [REFPROP-connector]: Downloading https://files.pythonhosted.org/packages/2a/80/3e428a7cb31000e9382ed0c42a2b2dc7c6ed1e4cbacad80fd1571de92691/REFPROP_connector-0.3.2.tar.gz
+[2023-04-11 19:37:38] INFO root fetch - processPackages [zimran-events]: executing diffoscope
+[2023-04-11 19:37:38] INFO root fetch - processPackages [zimran-events]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zimran-events-0.2.0.tar.gz tmp/zimran-events-0.2.1.tar.gz --markdown 20230411/z/zimran-events/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-11 19:37:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:38] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-04-11 19:37:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:38] INFO root fetch - processPackages [musort]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-11 19:37:38] INFO root fetch - processPackages [nanopb]: New version: [0.4.8.dev1401] Old Version: [0.4.8.dev1400]
+[2023-04-11 19:37:39] INFO root fetch - processPackages [musort]: Downloading https://files.pythonhosted.org/packages/c6/05/e0023b584460d6b8533746045d565c86ba4ab9d0a16b2d4f0b0342259cdb/musort-0.1.0.tar.gz
+[2023-04-11 19:37:39] INFO root fetch - processPackages [nanopb]: Downloading https://files.pythonhosted.org/packages/d5/41/803fddaf7b8afff1afbaea1979c5b2d055a6fb66bb1d96bc81760056b103/nanopb-0.4.8.dev1400.tar.gz
+[2023-04-11 19:37:39] INFO root fetch - processPackages [REFPROP-connector]: executing diffoscope
+[2023-04-11 19:37:39] INFO root fetch - processPackages [REFPROP-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REFPROP_connector-0.3.1.tar.gz tmp/REFPROP_connector-0.3.2.tar.gz --markdown 20230411/R/REFPROP-connector/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 19:37:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:39] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-04-11 19:37:39] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230411/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-04-11 19:37:39] INFO root fetch - processPackages [musort]: Downloading https://files.pythonhosted.org/packages/0b/72/90a24ad0981b8421aff98794d56bf0cd036c0de6c46c37da03ce61445908/musort-0.2.0.tar.gz
+[2023-04-11 19:37:39] INFO root fetch - processPackages [musort]: executing diffoscope
+[2023-04-11 19:37:39] INFO root fetch - processPackages [musort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musort-0.1.0.tar.gz tmp/musort-0.2.0.tar.gz --markdown 20230411/m/musort/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 19:37:39] INFO root fetch - processPackages [nanopb]: Downloading https://files.pythonhosted.org/packages/ee/74/4d126dfed7f7bf7075774c722012241ad6e4e09a978b3939a2d4a69e98c2/nanopb-0.4.8.dev1401-py2.py3-none-any.whl
+[2023-04-11 19:37:39] INFO root fetch - processPackages [nanopb]: executing diffoscope
+[2023-04-11 19:37:39] INFO root fetch - processPackages [nanopb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanopb-0.4.8.dev1400.tar.gz tmp/nanopb-0.4.8.dev1401-py2.py3-none-any.whl.zip --markdown 20230411/n/nanopb/0.4.8.dev1400-0.4.8.dev1401/diff.md --exclude *.pyd
+[2023-04-11 19:37:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:37:41] INFO root fetch - main [MainThread]: Store serial: [17664118]
