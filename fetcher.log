@@ -7691,3 +7691,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 07:23:27] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:23:43] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:23:43] INFO root fetch - main [MainThread]: Store serial: [17656440]
+[2023-04-11 07:28:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656440]
+[2023-04-11 07:28:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-11 07:28:51] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-11 07:28:51] INFO root fetch - processPackages [tvault]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-11 07:28:51] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1430] Old Version: [0.20230411.1411]
+[2023-04-11 07:28:51] WARNING root fetch - processPackages [stablesam]: Skipping, unable to determine old version
+[2023-04-11 07:28:51] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:28:51] INFO root fetch - processPackages [github-rest-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-11 07:28:51] INFO root fetch - processPackages [bigbucks-port]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-04-11 07:28:51] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-11 07:28:51] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.2.8-py3-none-any.whl.zip tmp/tvault-0.2.9-py3-none-any.whl.zip --markdown 20230411/t/tvault/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-11 07:28:51] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/60/13/31fd9be0ef362784725b2f77ca5fb7c4f7e175585c789a2f2fb8a894b4e9/krutils-0.20230411.1430.tar.gz
+[2023-04-11 07:28:52] INFO root fetch - processPackages [bigbucks-port]: Downloading https://files.pythonhosted.org/packages/21/a2/816c2efd5b1427f9b657b7b398077a28eb4e9192046114e26332b10547f4/bigbucks_port-0.1.0.tar.gz
+[2023-04-11 07:28:52] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-11 07:28:52] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230411/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-11 07:28:52] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 07:28:52] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1411.tar.gz tmp/krutils-0.20230411.1430.tar.gz --markdown 20230411/k/krutils/0.20230411.1411-0.20230411.1430/diff.md --exclude *.pyd
+[2023-04-11 07:28:52] INFO root fetch - processPackages [bigbucks-port]: executing diffoscope
+[2023-04-11 07:28:52] INFO root fetch - processPackages [bigbucks-port]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigbucks_port-0.0.7.tar.gz tmp/bigbucks_port-0.1.0.tar.gz --markdown 20230411/b/bigbucks-port/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 07:28:52] INFO root fetch - processPackages [github-rest-api]: executing diffoscope
+[2023-04-11 07:28:52] INFO root fetch - processPackages [github-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_rest_api-0.8.0.tar.gz tmp/github_rest_api-0.9.0.tar.gz --markdown 20230411/g/github-rest-api/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 07:28:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:28:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:28:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:28:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:28:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:28:53] INFO root fetch - main [MainThread]: Store serial: [17656462]
