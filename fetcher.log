@@ -10662,3 +10662,242 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 10:28:01] ERROR root fetch - processPackages [oci-cli]: Timeout during execution of pkgdiff
 [2023-04-11 10:28:01] INFO root fetch - main [MainThread]: error
 [2023-04-11 10:28:01] INFO root fetch - main [MainThread]: Store serial: [17658219]
+[2023-04-11 10:33:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658219]
+[2023-04-11 10:33:08] INFO root fetch - main [MainThread]: Found 28 changed packages
+[2023-04-11 10:33:08] INFO root fetch - processPackages [twitscrape]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 10:33:08] INFO root fetch - processPackages [irissqlcli]: New version: [0.5.2b1] Old Version: [0.5.1]
+[2023-04-11 10:33:08] INFO root fetch - processPackages [datagen-protocol-core]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-11 10:33:08] INFO root fetch - processPackages [datagen-protocol-functional]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-11 10:33:08] INFO root fetch - processPackages [datagen-validation-protocol]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-11 10:33:08] INFO root fetch - processPackages [datagen-protocol-core]: Downloading https://files.pythonhosted.org/packages/57/59/4ebf774c106dcbc6271c9a2652fbee9da94442550053ee65c293393490a5/datagen_protocol_core-0.8.3.tar.gz
+[2023-04-11 10:33:08] INFO root fetch - processPackages [datagen-protocol-functional]: Downloading https://files.pythonhosted.org/packages/73/cf/d72a66b042acdd5ce2d20ac72a57d6124200bdf5b8e1b6b0585cde8d7aa7/datagen_protocol_functional-0.8.3.tar.gz
+[2023-04-11 10:33:08] INFO root fetch - processPackages [twitscrape]: Downloading https://files.pythonhosted.org/packages/cd/33/90ab79958d6e4c486c822b3f28120adb2cbd89052d0cf9d18f230f5111a4/twitscrape-0.0.5.tar.gz
+[2023-04-11 10:33:08] INFO root fetch - processPackages [datagen-validation-protocol]: Downloading https://files.pythonhosted.org/packages/73/e7/1ffbff7f1f243699f2a7cd2ace260907e7e5c1149d4c4f05639125d4887c/datagen_validation_protocol-0.8.3.tar.gz
+[2023-04-11 10:33:08] INFO root fetch - processPackages [irissqlcli]: Downloading https://files.pythonhosted.org/packages/d3/6b/f1015882faa44e09e37f3a3cb31570e40e6a5ffee1925146b305f79c8f39/irissqlcli-0.5.2b1.tar.gz
+[2023-04-11 10:33:09] INFO root fetch - processPackages [datagen-protocol-functional]: Downloading https://files.pythonhosted.org/packages/3e/52/fdba1e8d2d19879e3ab38685476d5b3a3dfca41ba6b919505acc733cfe8c/datagen_protocol_functional-0.9.0.tar.gz
+[2023-04-11 10:33:09] INFO root fetch - processPackages [twitscrape]: executing diffoscope
+[2023-04-11 10:33:09] INFO root fetch - processPackages [twitscrape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitscrape-0.0.4.tar.gz tmp/twitscrape-0.0.5.tar.gz --markdown 20230411/t/twitscrape/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 10:33:09] INFO root fetch - processPackages [datagen-protocol-core]: Downloading https://files.pythonhosted.org/packages/39/74/f7713c45abf230a8f0db23c6c02f5d5d0b5203573afa931ed6d67228a510/datagen_protocol_core-0.9.0.tar.gz
+[2023-04-11 10:33:09] INFO root fetch - processPackages [datagen-protocol-functional]: executing diffoscope
+[2023-04-11 10:33:09] INFO root fetch - processPackages [datagen-protocol-functional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_protocol_functional-0.8.3.tar.gz tmp/datagen_protocol_functional-0.9.0.tar.gz --markdown 20230411/d/datagen-protocol-functional/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 10:33:09] INFO root fetch - processPackages [datagen-validation-protocol]: Downloading https://files.pythonhosted.org/packages/43/94/0d069cac7f9b7e0f430c6f1ddd8e7af9e56e43aa6cab0054e71e9b067dc8/datagen_validation_protocol-0.9.0.tar.gz
+[2023-04-11 10:33:09] INFO root fetch - processPackages [irissqlcli]: executing diffoscope
+[2023-04-11 10:33:09] INFO root fetch - processPackages [irissqlcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irissqlcli-0.5.1.tar.gz tmp/irissqlcli-0.5.2b1.tar.gz --markdown 20230411/i/irissqlcli/0.5.1-0.5.2b1/diff.md --exclude *.pyd
+[2023-04-11 10:33:09] INFO root fetch - processPackages [datagen-protocol-core]: executing diffoscope
+[2023-04-11 10:33:09] INFO root fetch - processPackages [datagen-protocol-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_protocol_core-0.8.3.tar.gz tmp/datagen_protocol_core-0.9.0.tar.gz --markdown 20230411/d/datagen-protocol-core/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 10:33:09] INFO root fetch - processPackages [datagen-validation-protocol]: executing diffoscope
+[2023-04-11 10:33:09] INFO root fetch - processPackages [datagen-validation-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_validation_protocol-0.8.3.tar.gz tmp/datagen_validation_protocol-0.9.0.tar.gz --markdown 20230411/d/datagen-validation-protocol/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 10:33:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:10] INFO root fetch - processPackages [taospyudf]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 10:33:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:10] INFO root fetch - processPackages [storpool.spopenstack]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-04-11 10:33:10] INFO root fetch - processPackages [taospyudf]: Downloading https://files.pythonhosted.org/packages/02/b2/acc03ddebf818e39812de2b207d98699548e30158e81d60640b2ecab4cb5/taospyudf-0.0.8.tar.gz
+[2023-04-11 10:33:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:10] INFO root fetch - processPackages [movie-rec-marking-aicore]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 10:33:10] INFO root fetch - processPackages [storpool.spopenstack]: Downloading https://files.pythonhosted.org/packages/61/ef/f283bb4f08a6ca7a0e7c4e58fa5cd4dc31176155a15909fcecff32e64fbf/storpool.spopenstack-3.1.0.tar.gz
+[2023-04-11 10:33:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:10] INFO root fetch - processPackages [datagen-protocol-core]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-11 10:33:10] INFO root fetch - processPackages [taospyudf]: Downloading https://files.pythonhosted.org/packages/36/cc/bcfc56ed0212bbad6daf17d8ece674bf23af8f57ed8c573f8c72adbadc02/taospyudf-0.0.9.tar.gz
+[2023-04-11 10:33:10] INFO root fetch - processPackages [movie-rec-marking-aicore]: Downloading https://files.pythonhosted.org/packages/4a/93/112f015e321da22933250d5d49673dab75432df757fdb9b504081c869b09/movie-rec-marking-aicore-0.1.2.tar.gz
+[2023-04-11 10:33:10] INFO root fetch - processPackages [datagen-protocol-core]: executing diffoscope
+[2023-04-11 10:33:10] INFO root fetch - processPackages [datagen-protocol-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_protocol_core-0.8.3.tar.gz tmp/datagen_protocol_core-0.9.0.tar.gz --markdown 20230411/d/datagen-protocol-core/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 10:33:10] INFO root fetch - processPackages [storpool.spopenstack]: Downloading https://files.pythonhosted.org/packages/b6/e8/f967c3a6066c4e2821e35553d9b368b497fd7476b606521c3ee10f96fe9a/storpool.spopenstack-3.2.0.tar.gz
+[2023-04-11 10:33:10] INFO root fetch - processPackages [movie-rec-marking-aicore]: Downloading https://files.pythonhosted.org/packages/44/29/d36d1133515655b99c205ebae29641c6a9631b92b1abfadfc2517d348d89/movie-rec-marking-aicore-0.1.3.tar.gz
+[2023-04-11 10:33:10] INFO root fetch - processPackages [taospyudf]: executing diffoscope
+[2023-04-11 10:33:10] INFO root fetch - processPackages [taospyudf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taospyudf-0.0.8.tar.gz tmp/taospyudf-0.0.9.tar.gz --markdown 20230411/t/taospyudf/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 10:33:11] INFO root fetch - processPackages [storpool.spopenstack]: executing diffoscope
+[2023-04-11 10:33:11] INFO root fetch - processPackages [storpool.spopenstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/storpool.spopenstack-3.1.0.tar.gz tmp/storpool.spopenstack-3.2.0.tar.gz --markdown 20230411/s/storpool.spopenstack/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-04-11 10:33:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:11] INFO root fetch - processPackages [datagen-protocol-functional]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-11 10:33:11] INFO root fetch - processPackages [datagen-protocol-functional]: executing diffoscope
+[2023-04-11 10:33:11] INFO root fetch - processPackages [datagen-protocol-functional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_protocol_functional-0.8.3.tar.gz tmp/datagen_protocol_functional-0.9.0.tar.gz --markdown 20230411/d/datagen-protocol-functional/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 10:33:11] INFO root fetch - processPackages [movie-rec-marking-aicore]: executing diffoscope
+[2023-04-11 10:33:11] INFO root fetch - processPackages [movie-rec-marking-aicore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movie-rec-marking-aicore-0.1.2.tar.gz tmp/movie-rec-marking-aicore-0.1.3.tar.gz --markdown 20230411/m/movie-rec-marking-aicore/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 10:33:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:12] INFO root fetch - processPackages [datagen-validation-protocol]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-11 10:33:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:12] INFO root fetch - processPackages [lophat]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-11 10:33:12] INFO root fetch - processPackages [datagen-validation-protocol]: executing diffoscope
+[2023-04-11 10:33:12] INFO root fetch - processPackages [datagen-validation-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_validation_protocol-0.8.3.tar.gz tmp/datagen_validation_protocol-0.9.0.tar.gz --markdown 20230411/d/datagen-validation-protocol/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 10:33:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:12] INFO root fetch - processPackages [zmeiapi]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-11 10:33:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:12] INFO root fetch - processPackages [lophat]: Downloading https://files.pythonhosted.org/packages/6e/a5/ab4d4d60e515462c1bc54e8d03dd818eb0bde93cdf4d4c720646f230684d/lophat-0.8.0.tar.gz
+[2023-04-11 10:33:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:12] WARNING root fetch - processPackages [gcode-metadata]: Skipping, unable to determine old version
+[2023-04-11 10:33:12] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:33:12] INFO root fetch - processPackages [lupin-danquin]: New version: [0.0.1.dev3] Old Version: [0.0.1.dev2]
+[2023-04-11 10:33:12] INFO root fetch - processPackages [django-email-log]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-11 10:33:12] INFO root fetch - processPackages [zmeiapi]: Downloading https://files.pythonhosted.org/packages/3c/0a/40a404653b381335b8c32f3a179dbfd99012f19f593ab20ac722f5f59f03/zmeiapi-0.1.4.tar.gz
+[2023-04-11 10:33:12] INFO root fetch - processPackages [lophat]: Downloading https://files.pythonhosted.org/packages/ec/99/688f55df2c2ea02499dc17619a08d22cb72c15a3f2260a80abb3a9c15d10/lophat-0.8.1.tar.gz
+[2023-04-11 10:33:12] INFO root fetch - processPackages [zmeiapi]: executing diffoscope
+[2023-04-11 10:33:12] INFO root fetch - processPackages [zmeiapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zmeiapi-0.1.3.tar.gz tmp/zmeiapi-0.1.4.tar.gz --markdown 20230411/z/zmeiapi/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-11 10:33:12] INFO root fetch - processPackages [lupin-danquin]: Downloading https://files.pythonhosted.org/packages/b2/fc/3ca0f3b79f79ad5f40d1accb94cbbddbf301602f5efd883dd58efb93fdb1/lupin-danquin-0.0.1.dev3.tar.gz
+[2023-04-11 10:33:12] INFO root fetch - processPackages [django-email-log]: Downloading https://files.pythonhosted.org/packages/fa/83/5ea80da92f40dc1cf0eceb3b4dd1dd51a11247d950d4d45701b29f109bcd/django-email-log-1.3.0.tar.gz
+[2023-04-11 10:33:12] INFO root fetch - processPackages [lophat]: executing diffoscope
+[2023-04-11 10:33:12] INFO root fetch - processPackages [lophat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lophat-0.8.0.tar.gz tmp/lophat-0.8.1.tar.gz --markdown 20230411/l/lophat/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-11 10:33:12] INFO root fetch - processPackages [django-email-log]: Downloading https://files.pythonhosted.org/packages/09/54/27c71bea32a3d47c90d84aed0edcaf0e2aca101e727c0a189b2339a0c848/django-email-log-1.4.0.tar.gz
+[2023-04-11 10:33:12] INFO root fetch - processPackages [lupin-danquin]: executing diffoscope
+[2023-04-11 10:33:12] INFO root fetch - processPackages [lupin-danquin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-danquin-0.0.1.dev2.tar.gz tmp/lupin-danquin-0.0.1.dev3.tar.gz --markdown 20230411/l/lupin-danquin/0.0.1.dev2-0.0.1.dev3/diff.md --exclude *.pyd
+[2023-04-11 10:33:13] INFO root fetch - processPackages [django-email-log]: executing diffoscope
+[2023-04-11 10:33:13] INFO root fetch - processPackages [django-email-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-email-log-1.3.0.tar.gz tmp/django-email-log-1.4.0.tar.gz --markdown 20230411/d/django-email-log/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-11 10:33:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:13] INFO root fetch - processPackages [graphql-api]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-11 10:33:13] INFO root fetch - processPackages [graphql-api]: Downloading https://files.pythonhosted.org/packages/01/27/10fd317267bf2c4c583857971a9f1bad548c85d3e4dbb8bc8addec649de5/graphql-api-1.2.8.tar.gz
+[2023-04-11 10:33:13] INFO root fetch - processPackages [graphql-api]: Downloading https://files.pythonhosted.org/packages/a3/ad/441dd10a03ddbaccc4b51f7956eb95f6d5d35b0c6b5448a82bb01008d919/graphql-api-1.2.9.tar.gz
+[2023-04-11 10:33:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:13] INFO root fetch - processPackages [graphql-api]: executing diffoscope
+[2023-04-11 10:33:13] INFO root fetch - processPackages [graphql-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql-api-1.2.8.tar.gz tmp/graphql-api-1.2.9.tar.gz --markdown 20230411/g/graphql-api/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-11 10:33:13] INFO root fetch - processPackages [open-aea]: New version: [1.9.0.post1] Old Version: [1.9.0]
+[2023-04-11 10:33:14] INFO root fetch - processPackages [open-aea]: Downloading https://files.pythonhosted.org/packages/7f/40/3bc96b026068c72069daaa6c85cc6c0c5904acc0c80107b1752886595b2b/open-aea-1.9.0.tar.gz
+[2023-04-11 10:33:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:14] INFO root fetch - processPackages [routingblocks]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 10:33:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:14] INFO root fetch - processPackages [ckanext-status]: New version: [2.2.7] Old Version: [2.2.6]
+[2023-04-11 10:33:14] INFO root fetch - processPackages [ckanext-status]: Downloading https://files.pythonhosted.org/packages/80/d5/60734f743cfbb89be48227f8ba1581c027b1d2538246dbd5180565f84f00/ckanext-status-2.2.6.tar.gz
+[2023-04-11 10:33:14] INFO root fetch - processPackages [routingblocks]: Downloading https://files.pythonhosted.org/packages/b3/8c/e4446727ac36cd3071f9f9e7bcf1f3406687a158d6288486c2c3ae95c26e/routingblocks-0.1.1.tar.gz
+[2023-04-11 10:33:14] WARNING root fetch - processPackages [open-aea]: Skipping package: exceeds size limit 16774114>=10485760
+[2023-04-11 10:33:14] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:33:14] INFO root fetch - processPackages [open-aea-cli-benchmark]: New version: [1.32.0] Old Version: [1.31.0]
+[2023-04-11 10:33:14] INFO root fetch - processPackages [ckanext-status]: Downloading https://files.pythonhosted.org/packages/18/d7/94c85c2db2534f088c09d206d2af28e6efb0f0466824f9b2f4458728c1aa/ckanext-status-2.2.7.tar.gz
+[2023-04-11 10:33:14] INFO root fetch - processPackages [open-aea-cli-benchmark]: Downloading https://files.pythonhosted.org/packages/ec/38/751d8ffe8b7b534506abd0a85cd1258ad2edffd529b386c7f676ec921737/open-aea-cli-benchmark-1.31.0.tar.gz
+[2023-04-11 10:33:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:14] INFO root fetch - processPackages [open-aea-cli-ipfs]: New version: [1.9.0.post1] Old Version: [1.9.0]
+[2023-04-11 10:33:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:14] INFO root fetch - processPackages [ckanext-twitter]: New version: [2.2.7] Old Version: [2.2.6]
+[2023-04-11 10:33:14] INFO root fetch - processPackages [ckanext-status]: executing diffoscope
+[2023-04-11 10:33:14] INFO root fetch - processPackages [ckanext-status]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-status-2.2.6.tar.gz tmp/ckanext-status-2.2.7.tar.gz --markdown 20230411/c/ckanext-status/2.2.6-2.2.7/diff.md --exclude *.pyd
+[2023-04-11 10:33:14] INFO root fetch - processPackages [open-aea-cli-benchmark]: Downloading https://files.pythonhosted.org/packages/48/81/7f87ad17383eab3596cc86b01992750d87d1764f72e8cf7cb29c00b5d7c9/open-aea-cli-benchmark-1.32.0.tar.gz
+[2023-04-11 10:33:14] INFO root fetch - processPackages [routingblocks]: Downloading https://files.pythonhosted.org/packages/18/fa/e8e2c75b35dd71bb025bd533374ac8ba19751f6e58553311608a8f433d80/routingblocks-0.1.2.tar.gz
+[2023-04-11 10:33:14] INFO root fetch - processPackages [open-aea-cli-ipfs]: Downloading https://files.pythonhosted.org/packages/ee/91/2e992d2fbb21f1c4976404b5f9f6d72aff9c1444a80f3ac7d0bcd8cf805e/open-aea-cli-ipfs-1.9.0.tar.gz
+[2023-04-11 10:33:15] INFO root fetch - processPackages [ckanext-twitter]: Downloading https://files.pythonhosted.org/packages/34/85/6bfd52fb2cc2bf28c31d595992cbccab47a1fc5912c2d7e7533000a7bc2e/ckanext-twitter-2.2.6.tar.gz
+[2023-04-11 10:33:15] INFO root fetch - processPackages [open-aea-cli-benchmark]: executing diffoscope
+[2023-04-11 10:33:15] INFO root fetch - processPackages [open-aea-cli-benchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-aea-cli-benchmark-1.31.0.tar.gz tmp/open-aea-cli-benchmark-1.32.0.tar.gz --markdown 20230411/o/open-aea-cli-benchmark/1.31.0-1.32.0/diff.md --exclude *.pyd
+[2023-04-11 10:33:15] INFO root fetch - processPackages [routingblocks]: executing diffoscope
+[2023-04-11 10:33:15] INFO root fetch - processPackages [routingblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/routingblocks-0.1.1.tar.gz tmp/routingblocks-0.1.2.tar.gz --markdown 20230411/r/routingblocks/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 10:33:15] INFO root fetch - processPackages [ckanext-twitter]: Downloading https://files.pythonhosted.org/packages/a5/bf/63c8d6dab1db5031ece68b6f947815ada23d575add35a42570288ef71655/ckanext-twitter-2.2.7.tar.gz
+[2023-04-11 10:33:15] INFO root fetch - processPackages [ckanext-twitter]: executing diffoscope
+[2023-04-11 10:33:15] INFO root fetch - processPackages [ckanext-twitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-twitter-2.2.6.tar.gz tmp/ckanext-twitter-2.2.7.tar.gz --markdown 20230411/c/ckanext-twitter/2.2.6-2.2.7/diff.md --exclude *.pyd
+[2023-04-11 10:33:15] INFO root fetch - processPackages [open-aea-cli-ipfs]: Downloading https://files.pythonhosted.org/packages/e4/34/810547261a12125c890b47a5e3ed32ef550369d1e4c298604ae35d4216cb/open-aea-cli-ipfs-1.9.0.post1.tar.gz
+[2023-04-11 10:33:15] INFO root fetch - processPackages [open-aea-cli-ipfs]: executing diffoscope
+[2023-04-11 10:33:15] INFO root fetch - processPackages [open-aea-cli-ipfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-aea-cli-ipfs-1.9.0.tar.gz tmp/open-aea-cli-ipfs-1.9.0.post1.tar.gz --markdown 20230411/o/open-aea-cli-ipfs/1.9.0-1.9.0.post1/diff.md --exclude *.pyd
+[2023-04-11 10:33:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:16] INFO root fetch - processPackages [open-aea-ledger-cosmos]: New version: [1.9.0.post1] Old Version: [1.9.0]
+[2023-04-11 10:33:16] INFO root fetch - processPackages [open-aea-ledger-cosmos]: Downloading https://files.pythonhosted.org/packages/8d/74/f371c3137a52ba978c1bb14e30533a29ec5f5648b1cdc3357ce5a9b48ef9/open-aea-ledger-cosmos-1.9.0.tar.gz
+[2023-04-11 10:33:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:16] INFO root fetch - processPackages [open-aea-ledger-ethereum]: New version: [1.9.0.post1] Old Version: [1.9.0]
+[2023-04-11 10:33:16] INFO root fetch - processPackages [open-aea-ledger-cosmos]: Downloading https://files.pythonhosted.org/packages/61/d2/94be4f42f237964ad50ffebdd1d35d5a2fa8ad842708135c5d7386d2426a/open-aea-ledger-cosmos-1.9.0.post1.tar.gz
+[2023-04-11 10:33:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:16] INFO root fetch - processPackages [pyzw]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 10:33:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:16] INFO root fetch - processPackages [open-aea-ledger-ethereum]: Downloading https://files.pythonhosted.org/packages/83/67/960e6fa3586afa96b5fc5cd411f1403706ae6993d9fc85456dae6175968f/open-aea-ledger-ethereum-1.9.0.tar.gz
+[2023-04-11 10:33:16] INFO root fetch - processPackages [sageintacctsdk]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-04-11 10:33:16] INFO root fetch - processPackages [open-aea-ledger-cosmos]: executing diffoscope
+[2023-04-11 10:33:16] INFO root fetch - processPackages [open-aea-ledger-cosmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-aea-ledger-cosmos-1.9.0.tar.gz tmp/open-aea-ledger-cosmos-1.9.0.post1.tar.gz --markdown 20230411/o/open-aea-ledger-cosmos/1.9.0-1.9.0.post1/diff.md --exclude *.pyd
+[2023-04-11 10:33:17] INFO root fetch - processPackages [pyzw]: executing diffoscope
+[2023-04-11 10:33:17] INFO root fetch - processPackages [pyzw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyzw-0.0.8-py3-none-any.whl.zip tmp/pyzw-0.0.9-py3-none-any.whl.zip --markdown 20230411/p/pyzw/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 10:33:17] INFO root fetch - processPackages [sageintacctsdk]: Downloading https://files.pythonhosted.org/packages/01/4e/267ea24dd957a0411483147331cca87466764344d8e2b2cae5037f321ce3/sageintacctsdk-1.9.5.tar.gz
+[2023-04-11 10:33:17] INFO root fetch - processPackages [open-aea-ledger-ethereum]: Downloading https://files.pythonhosted.org/packages/5a/2f/432a8948e4381bf374a78adafb58677bc83c853fe716108f745d13ecd673/open-aea-ledger-ethereum-1.9.0.post1.tar.gz
+[2023-04-11 10:33:17] INFO root fetch - processPackages [sageintacctsdk]: Downloading https://files.pythonhosted.org/packages/35/ff/573d6a77bb5debcc7d21e4ade0260e9eed23fda653497d686f8b60a44263/sageintacctsdk-1.9.6.tar.gz
+[2023-04-11 10:33:17] INFO root fetch - processPackages [open-aea-ledger-ethereum]: executing diffoscope
+[2023-04-11 10:33:17] INFO root fetch - processPackages [open-aea-ledger-ethereum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-aea-ledger-ethereum-1.9.0.tar.gz tmp/open-aea-ledger-ethereum-1.9.0.post1.tar.gz --markdown 20230411/o/open-aea-ledger-ethereum/1.9.0-1.9.0.post1/diff.md --exclude *.pyd
+[2023-04-11 10:33:17] INFO root fetch - processPackages [sageintacctsdk]: executing diffoscope
+[2023-04-11 10:33:17] INFO root fetch - processPackages [sageintacctsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sageintacctsdk-1.9.5.tar.gz tmp/sageintacctsdk-1.9.6.tar.gz --markdown 20230411/s/sageintacctsdk/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-04-11 10:33:17] ERROR root fetch - processPackages [pyzw]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid continuation byte
+
+[2023-04-11 10:33:17] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:33:17] INFO root fetch - processPackages [ckanext-userdatasets]: New version: [2.1.7] Old Version: [2.1.6]
+[2023-04-11 10:33:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:18] INFO root fetch - processPackages [ckanext-userdatasets]: Downloading https://files.pythonhosted.org/packages/ce/07/a156efaf4f7474d2e0806d33e4cbc412cdb318d3fc3f084d3a5a23401c51/ckanext-userdatasets-2.1.6.tar.gz
+[2023-04-11 10:33:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:18] INFO root fetch - processPackages [ckanext-userdatasets]: Downloading https://files.pythonhosted.org/packages/a4/a9/8eeac93e262174f2cc7c8f1ebed7397542c0fe33f314d30733105a646914/ckanext-userdatasets-2.1.7.tar.gz
+[2023-04-11 10:33:18] INFO root fetch - processPackages [ckanext-userdatasets]: executing diffoscope
+[2023-04-11 10:33:18] INFO root fetch - processPackages [ckanext-userdatasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-userdatasets-2.1.6.tar.gz tmp/ckanext-userdatasets-2.1.7.tar.gz --markdown 20230411/c/ckanext-userdatasets/2.1.6-2.1.7/diff.md --exclude *.pyd
+[2023-04-11 10:33:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:33:19] INFO root fetch - main [MainThread]: Store serial: [17658343]
