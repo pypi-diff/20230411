@@ -12408,3 +12408,61 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 12:13:02] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:13:02] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:13:02] INFO root fetch - main [MainThread]: Store serial: [17659309]
+[2023-04-11 12:18:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659309]
+[2023-04-11 12:18:11] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 12:18:12] INFO root fetch - processPackages [causal-testing-framework]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-04-11 12:18:12] INFO root fetch - processPackages [nvosscript]: New version: [1.1.9] Old Version: [1.1.7]
+[2023-04-11 12:18:12] INFO root fetch - processPackages [xeye]: New version: [0.37] Old Version: [0.36]
+[2023-04-11 12:18:12] WARNING root fetch - processPackages [kondo-ml]: Skipping, unable to determine old version
+[2023-04-11 12:18:12] INFO root fetch - processPackages [phaseportrait]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-04-11 12:18:12] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:18:12] INFO root fetch - processPackages [design.plone.contenttypes]: New version: [6.0.2] Old Version: [6.0.1]
+[2023-04-11 12:18:12] INFO root fetch - processPackages [causal-testing-framework]: Downloading https://files.pythonhosted.org/packages/d3/ba/14c997278980f4d0b2ef2024a18d29ca8c7b6b01ebf8a4e3e9ce8dfde515/causal_testing_framework-3.1.0.tar.gz
+[2023-04-11 12:18:12] INFO root fetch - processPackages [xeye]: Downloading https://files.pythonhosted.org/packages/2d/8e/f877f2a1fc0f0da95ac66567550ecef4012f76743a4cc5d919453619f4d4/xeye-0.36.tar.gz
+[2023-04-11 12:18:12] INFO root fetch - processPackages [phaseportrait]: Downloading https://files.pythonhosted.org/packages/6f/ed/7570f99f60fd6006b02bd89f47a2042cb22f757b2b95357040337411a808/phaseportrait-1.1.2.tar.gz
+[2023-04-11 12:18:12] INFO root fetch - processPackages [design.plone.contenttypes]: Downloading https://files.pythonhosted.org/packages/ff/33/252bf3a8b29703c99700ea18623b3c6d0df969006e87f838c3977cfb0511/design.plone.contenttypes-6.0.1.tar.gz
+[2023-04-11 12:18:12] INFO root fetch - processPackages [nvosscript]: Downloading https://files.pythonhosted.org/packages/73/99/eef185704f81ce33580f26d8cc8c5a260c03f8906bc79b873f174723e009/nvosscript-1.1.9.tar.gz
+[2023-04-11 12:18:12] INFO root fetch - processPackages [nvosscript]: executing diffoscope
+[2023-04-11 12:18:12] INFO root fetch - processPackages [nvosscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvosscript-1.1.7.tar.gz tmp/nvosscript-1.1.9.tar.gz --markdown 20230411/n/nvosscript/1.1.7-1.1.9/diff.md --exclude *.pyd
+[2023-04-11 12:18:12] WARNING root fetch - processPackages [phaseportrait]: Skipping package: exceeds size limit 10831598>=10485760
+[2023-04-11 12:18:12] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:18:12] INFO root fetch - processPackages [napari-sam]: New version: [0.2.5] Old Version: [0.2.3]
+[2023-04-11 12:18:12] INFO root fetch - processPackages [design.plone.contenttypes]: Downloading https://files.pythonhosted.org/packages/dc/a6/1ea8156b5e8dab9eee90ebb47e93deff132cfe0186fa16c97198f8495e1a/design.plone.contenttypes-6.0.2.tar.gz
+[2023-04-11 12:18:12] INFO root fetch - processPackages [xeye]: Downloading https://files.pythonhosted.org/packages/dc/ae/9bfb4d2ccaecbd8fa602580b5a0f08eff9b28cf6317a39d644c4ee1e7401/xeye-0.37.tar.gz
+[2023-04-11 12:18:12] INFO root fetch - processPackages [xeye]: executing diffoscope
+[2023-04-11 12:18:12] INFO root fetch - processPackages [xeye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xeye-0.36.tar.gz tmp/xeye-0.37.tar.gz --markdown 20230411/x/xeye/0.36-0.37/diff.md --exclude *.pyd
+[2023-04-11 12:18:12] INFO root fetch - processPackages [napari-sam]: Downloading https://files.pythonhosted.org/packages/0f/45/7689d1b0bb1ae93e53e58820a040f98d8e61f64d0450f853092759c516ce/napari-sam-0.2.5.tar.gz
+[2023-04-11 12:18:12] INFO root fetch - processPackages [design.plone.contenttypes]: executing diffoscope
+[2023-04-11 12:18:12] INFO root fetch - processPackages [design.plone.contenttypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/design.plone.contenttypes-6.0.1.tar.gz tmp/design.plone.contenttypes-6.0.2.tar.gz --markdown 20230411/d/design.plone.contenttypes/6.0.1-6.0.2/diff.md --exclude *.pyd
+[2023-04-11 12:18:12] INFO root fetch - processPackages [napari-sam]: executing diffoscope
+[2023-04-11 12:18:12] INFO root fetch - processPackages [napari-sam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-sam-0.2.3.tar.gz tmp/napari-sam-0.2.5.tar.gz --markdown 20230411/n/napari-sam/0.2.3-0.2.5/diff.md --exclude *.pyd
+[2023-04-11 12:18:12] INFO root fetch - processPackages [causal-testing-framework]: Downloading https://files.pythonhosted.org/packages/0a/a0/e569a08d1075e3c59456e7df7e04ce4e3a2c48e4e534c323d78ca034c03e/causal_testing_framework-3.2.0.tar.gz
+[2023-04-11 12:18:13] INFO root fetch - processPackages [causal-testing-framework]: executing diffoscope
+[2023-04-11 12:18:13] INFO root fetch - processPackages [causal-testing-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causal_testing_framework-3.1.0.tar.gz tmp/causal_testing_framework-3.2.0.tar.gz --markdown 20230411/c/causal-testing-framework/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-04-11 12:18:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:18:13] INFO root fetch - processPackages [my-python-package007]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-04-11 12:18:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:18:13] INFO root fetch - processPackages [odoo13-addon-photovoltaic-api]: New version: [13.0.1.1.0] Old Version: [13.0.1.0.4.dev6]
+[2023-04-11 12:18:13] INFO root fetch - processPackages [my-python-package007]: Downloading https://files.pythonhosted.org/packages/e2/48/04a3711d37e887af59adccb85c19e659da6642ef8fc2b2d7ae558e419b27/my_python_package007-0.5.7.tar.gz
+[2023-04-11 12:18:13] INFO root fetch - processPackages [my-python-package007]: executing diffoscope
+[2023-04-11 12:18:13] INFO root fetch - processPackages [my-python-package007]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_python_package007-0.5.6.tar.gz tmp/my_python_package007-0.5.7.tar.gz --markdown 20230411/m/my-python-package007/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-04-11 12:18:14] INFO root fetch - processPackages [odoo13-addon-photovoltaic-api]: Downloading https://files.pythonhosted.org/packages/fe/11/a6c872256961116e62318d3a5f0f6d623d4da8e3fe4dab9c5f9a63f57e76/odoo13-addon-photovoltaic_api-13.0.1.0.4.dev6.tar.gz
+[2023-04-11 12:18:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:18:14] INFO root fetch - processPackages [odoo13-addon-photovoltaic-mgmt-extended]: New version: [13.0.1.1.0] Old Version: [13.0.1.0.4.dev1]
+[2023-04-11 12:18:14] INFO root fetch - processPackages [odoo13-addon-photovoltaic-api]: Downloading https://files.pythonhosted.org/packages/65/93/e93b3a24b1d70e8c6e3475d5d16920bfc7fc2527e57c271766939a913ec2/odoo13-addon-photovoltaic_api-13.0.1.1.0.tar.gz
+[2023-04-11 12:18:14] INFO root fetch - processPackages [odoo13-addon-photovoltaic-api]: executing diffoscope
+[2023-04-11 12:18:14] INFO root fetch - processPackages [odoo13-addon-photovoltaic-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13-addon-photovoltaic_api-13.0.1.0.4.dev6.tar.gz tmp/odoo13-addon-photovoltaic_api-13.0.1.1.0.tar.gz --markdown 20230411/o/odoo13-addon-photovoltaic-api/13.0.1.0.4.dev6-13.0.1.1.0/diff.md --exclude *.pyd
+[2023-04-11 12:18:14] INFO root fetch - processPackages [odoo13-addon-photovoltaic-mgmt-extended]: Downloading https://files.pythonhosted.org/packages/b7/83/3b3ee63cf26cda606e38d9bc0029e914860447b81ee9acae07d9b85b56fc/odoo13-addon-photovoltaic_mgmt_extended-13.0.1.0.4.dev1.tar.gz
+[2023-04-11 12:18:14] INFO root fetch - processPackages [odoo13-addon-photovoltaic-mgmt-extended]: Downloading https://files.pythonhosted.org/packages/72/ec/cdfba909ab52f7b2a8a051da86d5e2d8d36ed7916a131ff89a9d58fe7c71/odoo13-addon-photovoltaic_mgmt_extended-13.0.1.1.0.tar.gz
+[2023-04-11 12:18:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:18:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:18:15] INFO root fetch - processPackages [odoo13-addon-photovoltaic-mgmt-extended]: executing diffoscope
+[2023-04-11 12:18:15] INFO root fetch - processPackages [odoo13-addon-photovoltaic-mgmt-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13-addon-photovoltaic_mgmt_extended-13.0.1.0.4.dev1.tar.gz tmp/odoo13-addon-photovoltaic_mgmt_extended-13.0.1.1.0.tar.gz --markdown 20230411/o/odoo13-addon-photovoltaic-mgmt-extended/13.0.1.0.4.dev1-13.0.1.1.0/diff.md --exclude *.pyd
+[2023-04-11 12:18:15] INFO root fetch - processPackages [interval-tools]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-11 12:18:15] INFO root fetch - processPackages [interval-tools]: executing diffoscope
+[2023-04-11 12:18:15] INFO root fetch - processPackages [interval-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interval-tools-0.9.0.tar.gz tmp/interval-tools-0.9.1.tar.gz --markdown 20230411/i/interval-tools/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-11 12:18:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:18:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:18:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:18:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:18:16] INFO root fetch - main [MainThread]: Store serial: [17659348]
