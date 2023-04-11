@@ -16384,3 +16384,76 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 16:37:07] INFO root fetch - main [MainThread]: success
 [2023-04-11 16:37:09] INFO root fetch - main [MainThread]: success
 [2023-04-11 16:37:09] INFO root fetch - main [MainThread]: Store serial: [17662263]
+[2023-04-11 16:42:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17662263]
+[2023-04-11 16:42:17] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 16:42:17] INFO root fetch - processPackages [filestorage-predeployed]: New version: [1.1.0b2] Old Version: [1.1.0b1]
+[2023-04-11 16:42:17] INFO root fetch - processPackages [morphcp]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-04-11 16:42:17] INFO root fetch - processPackages [conan-server]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-11 16:42:17] INFO root fetch - processPackages [ape-ganache]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-11 16:42:17] INFO root fetch - processPackages [conan]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-11 16:42:17] INFO root fetch - processPackages [morphcp]: executing diffoscope
+[2023-04-11 16:42:17] INFO root fetch - processPackages [morphcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphcp-0.0.6.tar.gz tmp/morphcp-0.0.9.tar.gz --markdown 20230411/m/morphcp/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 16:42:17] INFO root fetch - processPackages [filestorage-predeployed]: Downloading https://files.pythonhosted.org/packages/92/a6/cccf912f32fca3b89f7e63c69bd7518821ad1ba428d759192ad684c9259d/filestorage-predeployed-1.1.0b1.tar.gz
+[2023-04-11 16:42:17] INFO root fetch - processPackages [ape-ganache]: Downloading https://files.pythonhosted.org/packages/af/0b/3cc8e99989010366717e3107dd8cca543fb62ed00220c1aae1cd62453747/ape-ganache-0.6.3.tar.gz
+[2023-04-11 16:42:17] INFO root fetch - processPackages [conan-server]: Downloading https://files.pythonhosted.org/packages/4e/9d/c5491089c6f3a6f089e054682d73e891398d16b3a29190271e1aa48b6bd4/conan-server-2.0.3.tar.gz
+[2023-04-11 16:42:17] INFO root fetch - processPackages [conan]: Downloading https://files.pythonhosted.org/packages/a3/f9/72e76cce420505d3514a0601f6cbb01339bb304118aa01b61b1f9bc71714/conan-2.0.3.tar.gz
+[2023-04-11 16:42:17] INFO root fetch - processPackages [conan-server]: Downloading https://files.pythonhosted.org/packages/eb/c3/649ae1019658fa0b652c6991602be83550f976ce6bc85565925c3bb61f39/conan-server-2.0.4.tar.gz
+[2023-04-11 16:42:17] INFO root fetch - processPackages [conan]: Downloading https://files.pythonhosted.org/packages/20/f4/cf3035f9010390f5e4c524bf4bfba7001263c91f464e64bb7720f36e9fcc/conan-2.0.4.tar.gz
+[2023-04-11 16:42:17] INFO root fetch - processPackages [filestorage-predeployed]: Downloading https://files.pythonhosted.org/packages/fa/2c/4b4ccfb2b8732c5ad7f4771cd4f22fd11fdcf0e2ca972d341e8e3e96dec9/filestorage-predeployed-1.1.0b2.tar.gz
+[2023-04-11 16:42:17] INFO root fetch - processPackages [ape-ganache]: Downloading https://files.pythonhosted.org/packages/57/4a/feeb7ceb1c4e98613c9f6e6fa0d7f41b3ffd13353ad02277113b7b072746/ape-ganache-0.6.4.tar.gz
+[2023-04-11 16:42:18] INFO root fetch - processPackages [conan]: executing diffoscope
+[2023-04-11 16:42:18] INFO root fetch - processPackages [conan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conan-2.0.3.tar.gz tmp/conan-2.0.4.tar.gz --markdown 20230411/c/conan/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-11 16:42:18] INFO root fetch - processPackages [filestorage-predeployed]: executing diffoscope
+[2023-04-11 16:42:18] INFO root fetch - processPackages [filestorage-predeployed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filestorage-predeployed-1.1.0b1.tar.gz tmp/filestorage-predeployed-1.1.0b2.tar.gz --markdown 20230411/f/filestorage-predeployed/1.1.0b1-1.1.0b2/diff.md --exclude *.pyd
+[2023-04-11 16:42:18] INFO root fetch - processPackages [conan-server]: executing diffoscope
+[2023-04-11 16:42:18] INFO root fetch - processPackages [conan-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conan-server-2.0.3.tar.gz tmp/conan-server-2.0.4.tar.gz --markdown 20230411/c/conan-server/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-11 16:42:18] INFO root fetch - processPackages [ape-ganache]: executing diffoscope
+[2023-04-11 16:42:18] INFO root fetch - processPackages [ape-ganache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-ganache-0.6.3.tar.gz tmp/ape-ganache-0.6.4.tar.gz --markdown 20230411/a/ape-ganache/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-11 16:42:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:18] INFO root fetch - processPackages [ckanext-comments]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-11 16:42:18] INFO root fetch - processPackages [ckanext-comments]: Downloading https://files.pythonhosted.org/packages/9b/d7/5603e2ce166801a4cefa280e8bd76b8af5adfe7158d88a87ba9813813b60/ckanext-comments-0.2.0.tar.gz
+[2023-04-11 16:42:19] INFO root fetch - processPackages [ckanext-comments]: Downloading https://files.pythonhosted.org/packages/47/c9/16f36284f199dd745d833312fa885f74fe58840096544e4d85107f83bc07/ckanext-comments-0.3.0.tar.gz
+[2023-04-11 16:42:19] INFO root fetch - processPackages [ckanext-comments]: executing diffoscope
+[2023-04-11 16:42:19] INFO root fetch - processPackages [ckanext-comments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-comments-0.2.0.tar.gz tmp/ckanext-comments-0.3.0.tar.gz --markdown 20230411/c/ckanext-comments/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 16:42:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:19] INFO root fetch - processPackages [dstack]: New version: [0.7rc1] Old Version: [0.2rc1]
+[2023-04-11 16:42:19] INFO root fetch - processPackages [dstack]: Downloading https://files.pythonhosted.org/packages/f5/b0/2f9c1a112a68f06cc883816b3017fa073fd1288b2f249a9cc875a2c1773a/dstack-0.2rc1.tar.gz
+[2023-04-11 16:42:19] INFO root fetch - processPackages [dstack]: Downloading https://files.pythonhosted.org/packages/08/5c/761124343e4ea0fc0572537a0aebf4af7d60a318d1b370a3229bd2655f52/dstack-0.7rc1.tar.gz
+[2023-04-11 16:42:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:19] INFO root fetch - processPackages [whisper-dictation]: New version: [0.4.2] Old Version: [0.4.0]
+[2023-04-11 16:42:20] INFO root fetch - processPackages [dstack]: executing diffoscope
+[2023-04-11 16:42:20] INFO root fetch - processPackages [dstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dstack-0.2rc1.tar.gz tmp/dstack-0.7rc1.tar.gz --markdown 20230411/d/dstack/0.2rc1-0.7rc1/diff.md --exclude *.pyd
+[2023-04-11 16:42:20] INFO root fetch - processPackages [whisper-dictation]: Downloading https://files.pythonhosted.org/packages/29/9b/dbba7fe6ea61b412e6a4548acd5b791b1f8ead6416a31c19cabef471eff6/whisper_dictation-0.4.2.tar.gz
+[2023-04-11 16:42:20] INFO root fetch - processPackages [whisper-dictation]: executing diffoscope
+[2023-04-11 16:42:20] INFO root fetch - processPackages [whisper-dictation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_dictation-0.4.0.tar.gz tmp/whisper_dictation-0.4.2.tar.gz --markdown 20230411/w/whisper-dictation/0.4.0-0.4.2/diff.md --exclude *.pyd
+[2023-04-11 16:42:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:20] INFO root fetch - processPackages [ign-gpao-client]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-11 16:42:21] INFO root fetch - processPackages [ign-gpao-client]: Downloading https://files.pythonhosted.org/packages/19/58/da8ddd14bb8b2e0efed18be809457239829a9d383bffd429e15ee586341d/ign-gpao-client-0.8.0.tar.gz
+[2023-04-11 16:42:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:21] INFO root fetch - processPackages [zou]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-11 16:42:21] INFO root fetch - processPackages [zou]: Downloading https://files.pythonhosted.org/packages/3d/26/8a5c822e737ac50a4f66516c5b80f6cb5a2ce0b5258e3c904aa5abae876c/zou-0.9.8-py2.py3-none-any.whl
+[2023-04-11 16:42:21] INFO root fetch - processPackages [ign-gpao-client]: Downloading https://files.pythonhosted.org/packages/c0/f1/95b90e8ebd5ab62512fa3f4007cdca8cc81c685e691c2326fde428d948e2/ign-gpao-client-0.9.0.tar.gz
+[2023-04-11 16:42:21] INFO root fetch - processPackages [ign-gpao-client]: executing diffoscope
+[2023-04-11 16:42:21] INFO root fetch - processPackages [ign-gpao-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ign-gpao-client-0.8.0.tar.gz tmp/ign-gpao-client-0.9.0.tar.gz --markdown 20230411/i/ign-gpao-client/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 16:42:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:21] INFO root fetch - processPackages [data-engineering-pulumi-components]: New version: [0.4.1.dev7] Old Version: [0.4.1.dev6]
+[2023-04-11 16:42:21] INFO root fetch - processPackages [gotya-text-anonymizer]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-11 16:42:22] INFO root fetch - processPackages [data-engineering-pulumi-components]: Downloading https://files.pythonhosted.org/packages/14/06/305be1ee829edb9af712a657d8e45e51744e8c9027ea92116b31bcbf75a8/data-engineering-pulumi-components-0.4.1.dev6.tar.gz
+[2023-04-11 16:42:22] INFO root fetch - processPackages [gotya-text-anonymizer]: Downloading https://files.pythonhosted.org/packages/8c/88/0cb02dcc3c97e19b11ab7fe2a90e7eb882522d1875dd3e2bdf499d02a7bb/gotya-text-anonymizer-1.1.2.tar.gz
+[2023-04-11 16:42:22] INFO root fetch - processPackages [gotya-text-anonymizer]: executing diffoscope
+[2023-04-11 16:42:22] INFO root fetch - processPackages [gotya-text-anonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gotya-text-anonymizer-1.1.1.tar.gz tmp/gotya-text-anonymizer-1.1.2.tar.gz --markdown 20230411/g/gotya-text-anonymizer/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-11 16:42:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:22] INFO root fetch - processPackages [zou]: Downloading https://files.pythonhosted.org/packages/b4/cb/e536d9ca1d2e8c1820b5431cb69768c10b0f438a73bf846d3e2d008f896a/zou-0.9.9-py2.py3-none-any.whl
+[2023-04-11 16:42:22] WARNING root fetch - processPackages [oss-pip-jacobi]: Skipping, unable to determine old version
+[2023-04-11 16:42:22] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:42:22] INFO root fetch - processPackages [zou]: executing diffoscope
+[2023-04-11 16:42:22] INFO root fetch - processPackages [zou]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zou-0.9.8-py2.py3-none-any.whl.zip tmp/zou-0.9.9-py2.py3-none-any.whl.zip --markdown 20230411/z/zou/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-11 16:42:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:25] INFO root fetch - processPackages [data-engineering-pulumi-components]: Downloading https://files.pythonhosted.org/packages/e8/ee/a6dfcd17c8a1f4bed3781cf6f66ac1b46a52fee1c1505bb2365d662ae762/data-engineering-pulumi-components-0.4.1.dev7.tar.gz
+[2023-04-11 16:42:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:28] INFO root fetch - processPackages [data-engineering-pulumi-components]: executing diffoscope
+[2023-04-11 16:42:28] INFO root fetch - processPackages [data-engineering-pulumi-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-engineering-pulumi-components-0.4.1.dev6.tar.gz tmp/data-engineering-pulumi-components-0.4.1.dev7.tar.gz --markdown 20230411/d/data-engineering-pulumi-components/0.4.1.dev6-0.4.1.dev7/diff.md --exclude *.pyd
+[2023-04-11 16:42:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:42:30] INFO root fetch - main [MainThread]: Store serial: [17662303]
