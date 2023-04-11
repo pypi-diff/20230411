@@ -20645,3 +20645,22 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 20:50:38] INFO root fetch - main [MainThread]: success
 [2023-04-11 20:50:38] INFO root fetch - main [MainThread]: success
 [2023-04-11 20:50:38] INFO root fetch - main [MainThread]: Store serial: [17665026]
+[2023-04-11 20:55:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17665026]
+[2023-04-11 20:55:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-11 20:55:46] WARNING root fetch - processPackages [tokenring]: Skipping, unable to determine old version
+[2023-04-11 20:55:46] INFO root fetch - main [MainThread]: error
+[2023-04-11 20:55:46] WARNING root fetch - processPackages [image-processing-by-cbcj]: Skipping, unable to determine old version
+[2023-04-11 20:55:46] INFO root fetch - main [MainThread]: error
+[2023-04-11 20:55:46] INFO root fetch - processPackages [tcflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 20:55:46] INFO root fetch - processPackages [megamock]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-11 20:55:46] INFO root fetch - processPackages [tcflow]: Downloading https://files.pythonhosted.org/packages/57/19/81a64de31d7db8171e126d799f4701057432416ec9dcd463e26233fc7d37/tcflow-0.0.8.tar.gz
+[2023-04-11 20:55:46] INFO root fetch - processPackages [megamock]: Downloading https://files.pythonhosted.org/packages/22/b8/814445d890d46e08016ef264fa2bc87aea12355f80349592d82c842cb9ea/megamock-0.1.0a7.tar.gz
+[2023-04-11 20:55:47] INFO root fetch - processPackages [megamock]: Downloading https://files.pythonhosted.org/packages/23/33/c7d9f7e189becc5f2dc15bb53d09a3f4fb8553286b4e0005d3a1e4f52fa5/megamock-0.1.0a8.tar.gz
+[2023-04-11 20:55:47] INFO root fetch - processPackages [tcflow]: Downloading https://files.pythonhosted.org/packages/39/ff/8e0da9c9da61e4705f0dc96d922443efd8b863b2c4be09580e169505ca27/tcflow-0.0.9.tar.gz
+[2023-04-11 20:55:47] INFO root fetch - processPackages [tcflow]: executing diffoscope
+[2023-04-11 20:55:47] INFO root fetch - processPackages [tcflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcflow-0.0.8.tar.gz tmp/tcflow-0.0.9.tar.gz --markdown 20230411/t/tcflow/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 20:55:47] INFO root fetch - processPackages [megamock]: executing diffoscope
+[2023-04-11 20:55:47] INFO root fetch - processPackages [megamock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megamock-0.1.0a7.tar.gz tmp/megamock-0.1.0a8.tar.gz --markdown 20230411/m/megamock/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-11 20:55:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:55:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:55:48] INFO root fetch - main [MainThread]: Store serial: [17665042]
