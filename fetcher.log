@@ -21026,3 +21026,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 21:27:39] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:28:31] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:28:31] INFO root fetch - main [MainThread]: Store serial: [17665346]
+[2023-04-11 21:33:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17665346]
+[2023-04-11 21:33:40] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-11 21:33:40] INFO root fetch - processPackages [madgrad]: New version: [1.3] Old Version: [1.2]
+[2023-04-11 21:33:40] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-11 21:33:40] INFO root fetch - processPackages [mpai-cae-arp]: New version: [0.3.0] Old Version: [0.2.5]
+[2023-04-11 21:33:40] INFO root fetch - processPackages [odoo-addon-hr-employee-calendar-planning]: New version: [15.0.1.1.3] Old Version: [15.0.1.1.2]
+[2023-04-11 21:33:40] INFO root fetch - processPackages [codeflare-sdk]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-11 21:33:40] INFO root fetch - processPackages [madgrad]: Downloading https://files.pythonhosted.org/packages/c3/e4/e93c02dbb7d63293d1c9ec965140e6e05b58233b653e38c66783e70bae63/madgrad-1.2.tar.gz
+[2023-04-11 21:33:40] INFO root fetch - processPackages [codeflare-sdk]: Downloading https://files.pythonhosted.org/packages/d9/1e/f77fbbf921df674aa0c2efc4fc752ca1597561961fe9505174a09eaefc39/codeflare_sdk-0.4.1.tar.gz
+[2023-04-11 21:33:40] INFO root fetch - processPackages [odoo-addon-hr-employee-calendar-planning]: Downloading https://files.pythonhosted.org/packages/98/0d/11fff3d2e1cc334a4b5e57fd99004609bb6618fe53b738173a685b86a943/odoo_addon_hr_employee_calendar_planning-15.0.1.1.2-py3-none-any.whl
+[2023-04-11 21:33:40] INFO root fetch - processPackages [simple-hierarchical-transformer]: Downloading https://files.pythonhosted.org/packages/3a/43/baad6522c1e8987fefdf660ccd85447340646703ca4a04fe5361b0253401/simple-hierarchical-transformer-0.0.6.tar.gz
+[2023-04-11 21:33:40] INFO root fetch - processPackages [mpai-cae-arp]: Downloading https://files.pythonhosted.org/packages/ca/1b/82c6d9c57184e3b4d6f8d3651e76c377c6c9688b45a0cf928316797b8a45/mpai_cae_arp-0.3.0.tar.gz
+[2023-04-11 21:33:40] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-11 21:33:40] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.5.tar.gz tmp/simple-hierarchical-transformer-0.0.6.tar.gz --markdown 20230411/s/simple-hierarchical-transformer/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 21:33:41] INFO root fetch - processPackages [codeflare-sdk]: Downloading https://files.pythonhosted.org/packages/f9/58/3fb6d5e2d3d0063ce580c9e96aa818e24a9ea41a4306be164da25795628f/codeflare_sdk-0.4.2.tar.gz
+[2023-04-11 21:33:41] INFO root fetch - processPackages [madgrad]: Downloading https://files.pythonhosted.org/packages/18/ea/95435c2c4d55f51375468dfd1721d88a73f93991b765c5a04366d36472f2/madgrad-1.3.tar.gz
+[2023-04-11 21:33:41] INFO root fetch - processPackages [mpai-cae-arp]: executing diffoscope
+[2023-04-11 21:33:41] INFO root fetch - processPackages [mpai-cae-arp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpai_cae_arp-0.2.5.tar.gz tmp/mpai_cae_arp-0.3.0.tar.gz --markdown 20230411/m/mpai-cae-arp/0.2.5-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 21:33:41] INFO root fetch - processPackages [odoo-addon-hr-employee-calendar-planning]: Downloading https://files.pythonhosted.org/packages/33/80/1645975d275a2a321ce4f31b4584723b576f40d9cc795e0a4cba99614cfc/odoo_addon_hr_employee_calendar_planning-15.0.1.1.3-py3-none-any.whl
+[2023-04-11 21:33:41] INFO root fetch - processPackages [codeflare-sdk]: executing diffoscope
+[2023-04-11 21:33:41] INFO root fetch - processPackages [codeflare-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeflare_sdk-0.4.1.tar.gz tmp/codeflare_sdk-0.4.2.tar.gz --markdown 20230411/c/codeflare-sdk/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-11 21:33:41] INFO root fetch - processPackages [madgrad]: executing diffoscope
+[2023-04-11 21:33:41] INFO root fetch - processPackages [madgrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madgrad-1.2.tar.gz tmp/madgrad-1.3.tar.gz --markdown 20230411/m/madgrad/1.2-1.3/diff.md --exclude *.pyd
+[2023-04-11 21:33:41] INFO root fetch - processPackages [odoo-addon-hr-employee-calendar-planning]: executing diffoscope
+[2023-04-11 21:33:41] INFO root fetch - processPackages [odoo-addon-hr-employee-calendar-planning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_hr_employee_calendar_planning-15.0.1.1.2-py3-none-any.whl.zip tmp/odoo_addon_hr_employee_calendar_planning-15.0.1.1.3-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-hr-employee-calendar-planning/15.0.1.1.2-15.0.1.1.3/diff.md --exclude *.pyd
+[2023-04-11 21:33:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:33:42] INFO root fetch - processPackages [not1mm]: New version: [23.4.6] Old Version: [23.4.5]
+[2023-04-11 21:33:42] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-04-11 21:33:42] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.4.5.tar.gz tmp/not1mm-23.4.6.tar.gz --markdown 20230411/n/not1mm/23.4.5-23.4.6/diff.md --exclude *.pyd
+[2023-04-11 21:33:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:33:42] INFO root fetch - processPackages [trcli]: New version: [1.5.0] Old Version: [1.4.4]
+[2023-04-11 21:33:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:33:42] INFO root fetch - processPackages [trcli]: Downloading https://files.pythonhosted.org/packages/09/aa/784d38941040ea1cefea5f82ba4c91e35cefdaf532ff0e9dae12fca69812/trcli-1.4.4.tar.gz
+[2023-04-11 21:33:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:33:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:33:42] INFO root fetch - processPackages [trcli]: Downloading https://files.pythonhosted.org/packages/47/1f/2b2684197e05360dbe8959690edc5b65f8c1591e9a466ac6ff70ecc45ef2/trcli-1.5.0.tar.gz
+[2023-04-11 21:33:42] INFO root fetch - processPackages [trcli]: executing diffoscope
+[2023-04-11 21:33:42] INFO root fetch - processPackages [trcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trcli-1.4.4.tar.gz tmp/trcli-1.5.0.tar.gz --markdown 20230411/t/trcli/1.4.4-1.5.0/diff.md --exclude *.pyd
+[2023-04-11 21:33:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:33:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:33:44] INFO root fetch - main [MainThread]: Store serial: [17665380]
