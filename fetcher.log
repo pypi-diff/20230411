@@ -2078,3 +2078,98 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 03:00:24] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:02:12] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:02:12] INFO root fetch - main [MainThread]: Store serial: [17652452]
+[2023-04-11 03:07:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17652452]
+[2023-04-11 03:07:20] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-11 03:07:20] INFO root fetch - processPackages [ogr-tiller]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 03:07:20] INFO root fetch - processPackages [bitbucket-python]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-11 03:07:20] INFO root fetch - processPackages [alfred5]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-11 03:07:20] INFO root fetch - processPackages [headless]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-04-11 03:07:20] INFO root fetch - processPackages [gdsfactory]: New version: [6.9.0] Old Version: [6.80.0]
+[2023-04-11 03:07:20] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/99/8e/64c7eb7146bc05da23cd9ec6504cdf7519d4f4aaf19cba72a5be288d2d14/gdsfactory-6.80.0.tar.gz
+[2023-04-11 03:07:20] INFO root fetch - processPackages [bitbucket-python]: Downloading https://files.pythonhosted.org/packages/79/97/f87387ef036e2b330ec4da36bdbb55476fa8d6b8b76322e60f1d5f9724cf/bitbucket_python-0.3.0.tar.gz
+[2023-04-11 03:07:20] INFO root fetch - processPackages [headless]: executing diffoscope
+[2023-04-11 03:07:20] INFO root fetch - processPackages [headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-2.0.0a8.tar.gz tmp/headless-2.0.0a9.tar.gz --markdown 20230411/h/headless/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-04-11 03:07:20] INFO root fetch - processPackages [alfred5]: Downloading https://files.pythonhosted.org/packages/c5/02/81ce7dbf710823d3714af7ef57c9effd72fd56608b6875e0c7eb8b491d3d/alfred5-1.1.1.tar.gz
+[2023-04-11 03:07:20] INFO root fetch - processPackages [bitbucket-python]: Downloading https://files.pythonhosted.org/packages/a6/0d/2fbba4a2ef73a64281535e2ca75355d731b176627cc42e40fa4c6063a9c1/bitbucket_python-0.3.1.tar.gz
+[2023-04-11 03:07:20] INFO root fetch - processPackages [bitbucket-python]: executing diffoscope
+[2023-04-11 03:07:20] INFO root fetch - processPackages [bitbucket-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitbucket_python-0.3.0.tar.gz tmp/bitbucket_python-0.3.1.tar.gz --markdown 20230411/b/bitbucket-python/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-11 03:07:20] INFO root fetch - processPackages [alfred5]: executing diffoscope
+[2023-04-11 03:07:20] INFO root fetch - processPackages [alfred5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfred5-1.1.0.tar.gz tmp/alfred5-1.1.1.tar.gz --markdown 20230411/a/alfred5/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-11 03:07:20] INFO root fetch - processPackages [ogr-tiller]: executing diffoscope
+[2023-04-11 03:07:20] INFO root fetch - processPackages [ogr-tiller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogr_tiller-0.0.8.tar.gz tmp/ogr_tiller-0.0.9.tar.gz --markdown 20230411/o/ogr-tiller/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 03:07:20] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/51/e1/bea9be10e53a3f646a2bc569ab98aa0db7b687da72ac78a2d51eac5c8a5e/gdsfactory-6.9.0.tar.gz
+[2023-04-11 03:07:21] WARNING root fetch - processPackages [gdsfactory]: Skipping package: exceeds size limit 11141129>=10485760
+[2023-04-11 03:07:21] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:07:21] INFO root fetch - processPackages [hcs-cli]: New version: [0.1.27] Old Version: [0.1.26]
+[2023-04-11 03:07:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:21] INFO root fetch - processPackages [pyarmor.cli]: New version: [8.1.dev9] Old Version: [8.1.dev8]
+[2023-04-11 03:07:22] INFO root fetch - processPackages [hcs-cli]: Downloading https://files.pythonhosted.org/packages/ad/39/1093647f588eff5b079f03dc9fbe970cdd75fd8ead97649e676bbccf9052/hcs-cli-0.1.27.tar.gz
+[2023-04-11 03:07:22] INFO root fetch - processPackages [hcs-cli]: executing diffoscope
+[2023-04-11 03:07:22] INFO root fetch - processPackages [hcs-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcs-cli-0.1.26.tar.gz tmp/hcs-cli-0.1.27.tar.gz --markdown 20230411/h/hcs-cli/0.1.26-0.1.27/diff.md --exclude *.pyd
+[2023-04-11 03:07:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:22] INFO root fetch - processPackages [jefferson-street-singer-ingest]: New version: [2.8.1] Old Version: [2.8.0]
+[2023-04-11 03:07:22] INFO root fetch - processPackages [pyarmor.cli]: executing diffoscope
+[2023-04-11 03:07:22] INFO root fetch - processPackages [pyarmor.cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli-8.1.dev8-py2.py3-none-any.whl.zip tmp/pyarmor.cli-8.1.dev9-py2.py3-none-any.whl.zip --markdown 20230411/p/pyarmor.cli/8.1.dev8-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 03:07:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:22] INFO root fetch - processPackages [jefferson-street-singer-ingest]: Downloading https://files.pythonhosted.org/packages/cc/a8/e36e50f288e9736d888563aacba201f2a2f99fbf3ea37a081b91b1ee1363/jefferson-street-singer-ingest-2.8.0.tar.gz
+[2023-04-11 03:07:22] INFO root fetch - processPackages [pyarmor.cli.core]: New version: [2.1.dev9] Old Version: [2.1.dev7]
+[2023-04-11 03:07:22] INFO root fetch - processPackages [HiPart]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-11 03:07:22] INFO root fetch - processPackages [jefferson-street-singer-ingest]: Downloading https://files.pythonhosted.org/packages/03/f6/8c13f4c4845b7217f4a7a73c7abfa8e61f9b3b841eebdc56ed992cd6f4e7/jefferson-street-singer-ingest-2.8.1.tar.gz
+[2023-04-11 03:07:22] INFO root fetch - processPackages [HiPart]: Downloading https://files.pythonhosted.org/packages/68/c2/966456bf1d037304450c600b88dea24ab3f9113f227910b63b0b05413923/HiPart-0.3.0.tar.gz
+[2023-04-11 03:07:22] INFO root fetch - processPackages [jefferson-street-singer-ingest]: executing diffoscope
+[2023-04-11 03:07:22] INFO root fetch - processPackages [jefferson-street-singer-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jefferson-street-singer-ingest-2.8.0.tar.gz tmp/jefferson-street-singer-ingest-2.8.1.tar.gz --markdown 20230411/j/jefferson-street-singer-ingest/2.8.0-2.8.1/diff.md --exclude *.pyd
+[2023-04-11 03:07:22] INFO root fetch - processPackages [pyarmor.cli.core]: executing diffoscope
+[2023-04-11 03:07:22] INFO root fetch - processPackages [pyarmor.cli.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.core-2.1.dev7-cp39-none-win_amd64.whl.zip tmp/pyarmor.cli.core-2.1.dev9-cp39-none-win_amd64.whl.zip --markdown 20230411/p/pyarmor.cli.core/2.1.dev7-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 03:07:22] INFO root fetch - processPackages [HiPart]: Downloading https://files.pythonhosted.org/packages/ac/07/35582fab3d2c0f085d65213d2ab109b652a2ca7c15b9140dde334266e174/HiPart-0.3.1.tar.gz
+[2023-04-11 03:07:22] INFO root fetch - processPackages [HiPart]: executing diffoscope
+[2023-04-11 03:07:22] INFO root fetch - processPackages [HiPart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HiPart-0.3.0.tar.gz tmp/HiPart-0.3.1.tar.gz --markdown 20230411/H/HiPart/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-11 03:07:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:23] INFO root fetch - processPackages [pyschlage]: New version: [2023.4.1] Old Version: [2023.4.0]
+[2023-04-11 03:07:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:23] INFO root fetch - processPackages [jupyter-ai-magics]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-11 03:07:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:23] INFO root fetch - processPackages [jupyter-ai-magics]: Downloading https://files.pythonhosted.org/packages/9c/da/743276cdc65ca82b8e43983e3f534ec4241fe4508c8c6235158ab81c0cd9/jupyter_ai_magics-0.4.0-py3-none-any.whl
+[2023-04-11 03:07:23] INFO root fetch - processPackages [jupyter-ai]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-11 03:07:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:23] INFO root fetch - processPackages [jupyter-ai-dalle]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-11 03:07:23] INFO root fetch - processPackages [pyschlage]: Downloading https://files.pythonhosted.org/packages/c5/24/61e741fbc82da0d4639fe70718c018372b6a34620b42bfbdbb5996bf096c/pyschlage-2023.4.1.tar.gz
+[2023-04-11 03:07:23] INFO root fetch - processPackages [pyschlage]: executing diffoscope
+[2023-04-11 03:07:23] INFO root fetch - processPackages [pyschlage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyschlage-2023.4.0.tar.gz tmp/pyschlage-2023.4.1.tar.gz --markdown 20230411/p/pyschlage/2023.4.0-2023.4.1/diff.md --exclude *.pyd
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai]: Downloading https://files.pythonhosted.org/packages/69/32/b3602b730fe12a51581b605d1b820facbbe0e56ccd5e9251f72b07705a7a/jupyter_ai-0.4.0.tar.gz
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai-dalle]: Downloading https://files.pythonhosted.org/packages/80/06/150414caa2397942b24f925e0a2dd7510c8d5d0ff492cd21ce840b7f0c09/jupyter_ai_dalle-0.4.0.tar.gz
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai-magics]: Downloading https://files.pythonhosted.org/packages/ff/86/005fc11efdaca18c4c727f8237ff37e48d448b0cea18e0efdf47deb0476d/jupyter_ai_magics-0.5.0.tar.gz
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai-magics]: executing diffoscope
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai-magics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_ai_magics-0.4.0-py3-none-any.whl.zip tmp/jupyter_ai_magics-0.5.0.tar.gz --markdown 20230411/j/jupyter-ai-magics/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai]: Downloading https://files.pythonhosted.org/packages/7e/a4/cedba108efaa7995938810ebc56d4d3bc8f39a5788db23444dc1f7d72644/jupyter_ai-0.5.0.tar.gz
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai]: executing diffoscope
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_ai-0.4.0.tar.gz tmp/jupyter_ai-0.5.0.tar.gz --markdown 20230411/j/jupyter-ai/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai-dalle]: Downloading https://files.pythonhosted.org/packages/83/c8/2d09f60c24d099e7cfb4bc637a39ad99c6f654810e53350e29108ba4aba8/jupyter_ai_dalle-0.5.0.tar.gz
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai-dalle]: executing diffoscope
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai-dalle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_ai_dalle-0.4.0.tar.gz tmp/jupyter_ai_dalle-0.5.0.tar.gz --markdown 20230411/j/jupyter-ai-dalle/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 03:07:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai-chatgpt]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-11 03:07:24] INFO root fetch - processPackages [jupyter-ai-chatgpt]: Downloading https://files.pythonhosted.org/packages/3d/a4/7fe25611c8f0066bb944621d6c9c508b69cb9a96b8a9a44c772083509889/jupyter_ai_chatgpt-0.4.0.tar.gz
+[2023-04-11 03:07:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:25] INFO root fetch - processPackages [jupyter-ai-chatgpt]: Downloading https://files.pythonhosted.org/packages/5e/46/f2c7ad281071c74c9c8009e8ec7ea61175736f07c704d1713227bdbb2637/jupyter_ai_chatgpt-0.5.0.tar.gz
+[2023-04-11 03:07:25] INFO root fetch - processPackages [pyarmor]: New version: [8.1.dev9] Old Version: [8.1.dev7]
+[2023-04-11 03:07:25] INFO root fetch - processPackages [jupyter-ai-chatgpt]: executing diffoscope
+[2023-04-11 03:07:25] INFO root fetch - processPackages [jupyter-ai-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_ai_chatgpt-0.4.0.tar.gz tmp/jupyter_ai_chatgpt-0.5.0.tar.gz --markdown 20230411/j/jupyter-ai-chatgpt/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 03:07:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:25] INFO root fetch - processPackages [pyarmor.cli.runtime]: New version: [2.1.dev9] Old Version: [2.1.dev8]
+[2023-04-11 03:07:25] INFO root fetch - processPackages [pyarmor]: executing diffoscope
+[2023-04-11 03:07:25] INFO root fetch - processPackages [pyarmor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor-8.1.dev7.zip tmp/pyarmor-8.1.dev9.zip --markdown 20230411/p/pyarmor/8.1.dev7-8.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 03:07:25] INFO root fetch - processPackages [pyarmor.cli.runtime]: executing diffoscope
+[2023-04-11 03:07:25] INFO root fetch - processPackages [pyarmor.cli.runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.runtime-2.1.dev8-cp39-none-any.whl.zip tmp/pyarmor.cli.runtime-2.1.dev9-cp39-none-any.whl.zip --markdown 20230411/p/pyarmor.cli.runtime/2.1.dev8-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 03:07:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:26] WARNING root fetch - processPackages [pytorch-calibrated]: Skipping, unable to determine old version
+[2023-04-11 03:07:26] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:07:26] INFO root fetch - processPackages [screcode]: New version: [0.1.2.dev202304110017] Old Version: [0.1.2.dev202304101152]
+[2023-04-11 03:07:26] INFO root fetch - processPackages [screcode]: executing diffoscope
+[2023-04-11 03:07:26] INFO root fetch - processPackages [screcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screcode-0.1.2.dev202304101152-py3-none-any.whl.zip tmp/screcode-0.1.2.dev202304110017-py3-none-any.whl.zip --markdown 20230411/s/screcode/0.1.2.dev202304101152-0.1.2.dev202304110017/diff.md --exclude *.pyd
+[2023-04-11 03:07:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:07:35] INFO root fetch - main [MainThread]: Store serial: [17652546]
