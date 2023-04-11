@@ -14262,3 +14262,97 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 14:36:19] INFO root fetch - main [MainThread]: success
 [2023-04-11 14:36:32] INFO root fetch - main [MainThread]: success
 [2023-04-11 14:36:32] INFO root fetch - main [MainThread]: Store serial: [17660671]
+[2023-04-11 14:41:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17660671]
+[2023-04-11 14:41:44] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-11 14:41:44] INFO root fetch - processPackages [autumn8]: New version: [1.0.0rc3] Old Version: [1.0.0rc2]
+[2023-04-11 14:41:44] INFO root fetch - processPackages [sneaksmc]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 14:41:44] INFO root fetch - processPackages [adaux]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-04-11 14:41:44] INFO root fetch - processPackages [simplerabbit]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 14:41:44] INFO root fetch - processPackages [opsramp-analytics-utils]: New version: [3.2.8] Old Version: [3.2.7]
+[2023-04-11 14:41:45] INFO root fetch - processPackages [autumn8]: executing diffoscope
+[2023-04-11 14:41:45] INFO root fetch - processPackages [autumn8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autumn8-1.0.0rc2.tar.gz tmp/autumn8-1.0.0rc3.tar.gz --markdown 20230411/a/autumn8/1.0.0rc2-1.0.0rc3/diff.md --exclude *.pyd
+[2023-04-11 14:41:45] INFO root fetch - processPackages [adaux]: Downloading https://files.pythonhosted.org/packages/f0/5f/9c5c45c635758ade2c0702eb9b4a46f2bf6591513fe90117b0644927db46/adaux-2.1.1.tar.gz
+[2023-04-11 14:41:45] INFO root fetch - processPackages [simplerabbit]: Downloading https://files.pythonhosted.org/packages/e5/63/4405d78dbe5f8f635c747663cc9bd081d6678bd8c99823cdeec488de23c7/simplerabbit-0.0.5.tar.gz
+[2023-04-11 14:41:45] INFO root fetch - processPackages [sneaksmc]: Downloading https://files.pythonhosted.org/packages/d4/cb/7993a594c3a7962d843372d2b158e4da84050be1fa91e566c7dcef757eab/sneaksmc-0.0.1.tar.gz
+[2023-04-11 14:41:45] INFO root fetch - processPackages [opsramp-analytics-utils]: Downloading https://files.pythonhosted.org/packages/5f/a8/0e624390c3b885f6164b8dc1de46670366a06163eed4f7f80827f582f498/opsramp-analytics-utils-3.2.8.tar.gz
+[2023-04-11 14:41:45] INFO root fetch - processPackages [simplerabbit]: executing diffoscope
+[2023-04-11 14:41:45] INFO root fetch - processPackages [simplerabbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplerabbit-0.0.4.tar.gz tmp/simplerabbit-0.0.5.tar.gz --markdown 20230411/s/simplerabbit/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 14:41:45] INFO root fetch - processPackages [sneaksmc]: Downloading https://files.pythonhosted.org/packages/c3/06/bbdff99bd485531cb3c9a1611d410ea3f02cb6325733fc5406c89911c428/sneaksmc-0.0.2.tar.gz
+[2023-04-11 14:41:45] INFO root fetch - processPackages [opsramp-analytics-utils]: executing diffoscope
+[2023-04-11 14:41:45] INFO root fetch - processPackages [opsramp-analytics-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opsramp-analytics-utils-3.2.7.tar.gz tmp/opsramp-analytics-utils-3.2.8.tar.gz --markdown 20230411/o/opsramp-analytics-utils/3.2.7-3.2.8/diff.md --exclude *.pyd
+[2023-04-11 14:41:45] INFO root fetch - processPackages [sneaksmc]: executing diffoscope
+[2023-04-11 14:41:45] INFO root fetch - processPackages [sneaksmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sneaksmc-0.0.1.tar.gz tmp/sneaksmc-0.0.2.tar.gz --markdown 20230411/s/sneaksmc/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 14:41:45] INFO root fetch - processPackages [adaux]: Downloading https://files.pythonhosted.org/packages/5c/a5/809aa56bde2abde797f335cabd084f377779d79cb9abfd9db06f7bc2424e/adaux-2.2.0.tar.gz
+[2023-04-11 14:41:45] INFO root fetch - processPackages [adaux]: executing diffoscope
+[2023-04-11 14:41:45] INFO root fetch - processPackages [adaux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adaux-2.1.1.tar.gz tmp/adaux-2.2.0.tar.gz --markdown 20230411/a/adaux/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-04-11 14:41:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:41:46] INFO root fetch - processPackages [pytailor]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-11 14:41:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:41:46] INFO root fetch - processPackages [winorwin]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 14:41:46] INFO root fetch - processPackages [pytailor]: Downloading https://files.pythonhosted.org/packages/c9/2a/8340edc12aa4250a5affdf498ba3927650822e1cabc555a04ad551bbb7f0/pytailor-0.6.0.tar.gz
+[2023-04-11 14:41:46] INFO root fetch - processPackages [winorwin]: Downloading https://files.pythonhosted.org/packages/ae/00/b6703cb18ab423e3061d0f08aec54a740a309a517ede5877677c1072e300/winorwin-0.0.4.tar.gz
+[2023-04-11 14:41:46] WARNING root fetch - processPackages [winorwin]: Skipping package: exceeds size limit 28473587>=10485760
+[2023-04-11 14:41:46] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:41:46] INFO root fetch - processPackages [pyspark-extension]: New version: [2.6.0.3.3] Old Version: [2.6.0.3.2]
+[2023-04-11 14:41:46] INFO root fetch - processPackages [pyspark-extension]: Downloading https://files.pythonhosted.org/packages/43/c6/249f1626666e734a9cfb2f3588590cd84aef1aadeb66abc2d6bff858a16d/pyspark_extension-2.6.0.3.2-py3-none-any.whl
+[2023-04-11 14:41:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pyspark-extension]: New version: [2.6.0.3.3] Old Version: [2.6.0.3.2]
+[2023-04-11 14:41:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:41:47] INFO root fetch - processPackages [evince]: New version: [0.9] Old Version: [0.55.0]
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pytailor]: Downloading https://files.pythonhosted.org/packages/8a/f4/b55ce762c984c4b7fd1cafb2146883518ac8f6f4c73b24d0d2b0d2d962bf/pytailor-0.6.1.tar.gz
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pyspark-extension]: Downloading https://files.pythonhosted.org/packages/56/be/f82bc32d7efc209dc0330385b44b191089896001f352cffcf681641ce3bb/pyspark_extension-2.6.0.3.3-py3-none-any.whl
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pyspark-extension]: Downloading https://files.pythonhosted.org/packages/56/be/f82bc32d7efc209dc0330385b44b191089896001f352cffcf681641ce3bb/pyspark_extension-2.6.0.3.3-py3-none-any.whl
+[2023-04-11 14:41:47] INFO root fetch - processPackages [evince]: Downloading https://files.pythonhosted.org/packages/e1/24/a52d8e3737914bba3b50392b1ec881dce5b70ac24878301b2c6a4597a721/evince-0.55.0-py3-none-any.whl
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pytailor]: executing diffoscope
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pytailor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytailor-0.6.0.tar.gz tmp/pytailor-0.6.1.tar.gz --markdown 20230411/p/pytailor/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-11 14:41:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pyspark-extension]: executing diffoscope
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pyspark-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspark_extension-2.6.0.3.2-py3-none-any.whl.zip tmp/pyspark_extension-2.6.0.3.3-py3-none-any.whl.zip --markdown 20230411/p/pyspark-extension/2.6.0.3.2-2.6.0.3.3/diff.md --exclude *.pyd
+[2023-04-11 14:41:47] INFO root fetch - processPackages [akshare]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pyspark-extension]: executing diffoscope
+[2023-04-11 14:41:47] INFO root fetch - processPackages [pyspark-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspark_extension-2.6.0.3.2-py3-none-any.whl.zip tmp/pyspark_extension-2.6.0.3.3-py3-none-any.whl.zip --markdown 20230411/p/pyspark-extension/2.6.0.3.2-2.6.0.3.3/diff.md --exclude *.pyd
+[2023-04-11 14:41:47] INFO root fetch - processPackages [evince]: Downloading https://files.pythonhosted.org/packages/3e/2e/cf3683e9e08ca3ce9072fd7b593973dafe0d95fa945748fc1fdf955cee5a/Evince-0.9-py3-none-any.whl
+[2023-04-11 14:41:47] INFO root fetch - processPackages [evince]: executing diffoscope
+[2023-04-11 14:41:47] INFO root fetch - processPackages [evince]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evince-0.55.0-py3-none-any.whl.zip tmp/Evince-0.9-py3-none-any.whl.zip --markdown 20230411/e/evince/0.55.0-0.9/diff.md --exclude *.pyd
+[2023-04-11 14:41:47] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2023-04-11 14:41:47] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.8.tar.gz tmp/akshare-1.9.9.tar.gz --markdown 20230411/a/akshare/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-11 14:41:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:41:48] INFO root fetch - processPackages [pyspark-extension]: New version: [2.6.0.3.3] Old Version: [2.6.0.3.2]
+[2023-04-11 14:41:48] INFO root fetch - processPackages [pyspark-extension]: executing diffoscope
+[2023-04-11 14:41:48] INFO root fetch - processPackages [pyspark-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspark_extension-2.6.0.3.2-py3-none-any.whl.zip tmp/pyspark_extension-2.6.0.3.3-py3-none-any.whl.zip --markdown 20230411/p/pyspark-extension/2.6.0.3.2-2.6.0.3.3/diff.md --exclude *.pyd
+[2023-04-11 14:41:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:41:49] INFO root fetch - processPackages [pyspark-extension]: New version: [2.6.0.3.3] Old Version: [2.6.0.3.2]
+[2023-04-11 14:41:49] INFO root fetch - processPackages [pyspark-extension]: executing diffoscope
+[2023-04-11 14:41:49] INFO root fetch - processPackages [pyspark-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspark_extension-2.6.0.3.2-py3-none-any.whl.zip tmp/pyspark_extension-2.6.0.3.3-py3-none-any.whl.zip --markdown 20230411/p/pyspark-extension/2.6.0.3.2-2.6.0.3.3/diff.md --exclude *.pyd
+[2023-04-11 14:41:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:41:56] INFO root fetch - processPackages [asyncmy]: New version: [0.2.8rc1] Old Version: [0.2.7rc6]
+[2023-04-11 14:41:56] INFO root fetch - processPackages [asyncmy]: Downloading https://files.pythonhosted.org/packages/9a/15/e854350f838e1dec621aaaf00e5796e189e4250205d1280ea1a8568f4201/asyncmy-0.2.7rc6.tar.gz
+[2023-04-11 14:41:57] INFO root fetch - processPackages [asyncmy]: Downloading https://files.pythonhosted.org/packages/59/48/d5364430d90f37cd355e96a839d8828f6fb881c1aaf9e79518a6153a915a/asyncmy-0.2.8rc1-cp37-cp37m-musllinux_1_1_aarch64.whl
+[2023-04-11 14:41:58] INFO root fetch - processPackages [asyncmy]: executing diffoscope
+[2023-04-11 14:41:58] INFO root fetch - processPackages [asyncmy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncmy-0.2.7rc6.tar.gz tmp/asyncmy-0.2.8rc1-cp37-cp37m-musllinux_1_1_aarch64.whl.zip --markdown 20230411/a/asyncmy/0.2.7rc6-0.2.8rc1/diff.md --exclude *.pyd
+[2023-04-11 14:42:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:42:03] INFO root fetch - processPackages [VRPSolverEasy]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 14:42:03] INFO root fetch - processPackages [VRPSolverEasy]: Downloading https://files.pythonhosted.org/packages/88/2a/46383ad4bb4dafa84ffc15dbbe0dbe611e286b5a6bcbfb127cf20702dbd2/VRPSolverEasy-0.1.2.tar.gz
+[2023-04-11 14:42:06] INFO root fetch - processPackages [VRPSolverEasy]: Downloading https://files.pythonhosted.org/packages/3a/da/3916c5075f91a8410c737e12faa319e42034fdb33e0fc6ae31cb371a1996/VRPSolverEasy-0.1.3.tar.gz
+[2023-04-11 14:42:06] INFO root fetch - processPackages [VRPSolverEasy]: executing diffoscope
+[2023-04-11 14:42:06] INFO root fetch - processPackages [VRPSolverEasy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VRPSolverEasy-0.1.2.tar.gz tmp/VRPSolverEasy-0.1.3.tar.gz --markdown 20230411/V/VRPSolverEasy/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 14:42:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:42:23] INFO root fetch - processPackages [theheartbeat]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 14:42:23] INFO root fetch - processPackages [theheartbeat]: executing diffoscope
+[2023-04-11 14:42:23] INFO root fetch - processPackages [theheartbeat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/theheartbeat-0.1.0.tar.gz tmp/theheartbeat-0.1.1.tar.gz --markdown 20230411/t/theheartbeat/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 14:42:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:42:26] INFO root fetch - processPackages [pirate-weather-python]: New version: [0.0.6] Old Version: [0.0.4]
+[2023-04-11 14:42:27] INFO root fetch - processPackages [pirate-weather-python]: Downloading https://files.pythonhosted.org/packages/fc/82/ac2895a6af8e04e6f233e0823114ce5224cc5db1e1372431c85e78d5cd8b/pirate-weather-python-0.0.4.tar.gz
+[2023-04-11 14:42:27] INFO root fetch - processPackages [pirate-weather-python]: Downloading https://files.pythonhosted.org/packages/74/d4/91c3e2fe124860ac669a13077565a2d4e4b2d381360d56bc6f58cea7eb25/pirate-weather-python-0.0.6.tar.gz
+[2023-04-11 14:42:27] INFO root fetch - processPackages [pirate-weather-python]: executing diffoscope
+[2023-04-11 14:42:27] INFO root fetch - processPackages [pirate-weather-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pirate-weather-python-0.0.4.tar.gz tmp/pirate-weather-python-0.0.6.tar.gz --markdown 20230411/p/pirate-weather-python/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 14:42:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:44:47] ERROR root fetch - processPackages [pyspark-extension]: Timeout during execution of pkgdiff
+[2023-04-11 14:44:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:44:47] ERROR root fetch - processPackages [pyspark-extension]: Timeout during execution of pkgdiff
+[2023-04-11 14:44:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:44:48] ERROR root fetch - processPackages [pyspark-extension]: Timeout during execution of pkgdiff
+[2023-04-11 14:44:48] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:44:49] ERROR root fetch - processPackages [pyspark-extension]: Timeout during execution of pkgdiff
+[2023-04-11 14:44:49] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:44:49] INFO root fetch - main [MainThread]: Store serial: [17660727]
