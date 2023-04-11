@@ -15432,3 +15432,82 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 15:45:01] INFO root fetch - main [MainThread]: success
 [2023-04-11 15:45:32] INFO root fetch - main [MainThread]: success
 [2023-04-11 15:45:32] INFO root fetch - main [MainThread]: Store serial: [17661538]
+[2023-04-11 15:50:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17661538]
+[2023-04-11 15:50:40] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-11 15:50:40] WARNING root fetch - processPackages [pyinflux3]: Skipping, unable to determine old version
+[2023-04-11 15:50:40] INFO root fetch - main [MainThread]: error
+[2023-04-11 15:50:40] INFO root fetch - processPackages [jupyterlab-nbconvert-nocode]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-11 15:50:40] INFO root fetch - processPackages [pyroll-core]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-11 15:50:40] INFO root fetch - processPackages [use-case-registry]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-11 15:50:40] INFO root fetch - processPackages [TemperatureMonitor-MQTT-sldewit]: New version: [1.0.0] Old Version: [0.0.5]
+[2023-04-11 15:50:40] INFO root fetch - processPackages [tinybird-cdk]: New version: [0.16.2] Old Version: [0.16.1]
+[2023-04-11 15:50:40] INFO root fetch - processPackages [use-case-registry]: executing diffoscope
+[2023-04-11 15:50:40] INFO root fetch - processPackages [use-case-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/use_case_registry-1.4.8.tar.gz tmp/use_case_registry-1.4.9.tar.gz --markdown 20230411/u/use-case-registry/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-11 15:50:40] INFO root fetch - processPackages [pyroll-core]: Downloading https://files.pythonhosted.org/packages/d2/e1/33daac366535683232cba25b4cf91192fe3e632d4b05c2b6c14882ef115b/pyroll_core-2.0.1.tar.gz
+[2023-04-11 15:50:40] INFO root fetch - processPackages [jupyterlab-nbconvert-nocode]: Downloading https://files.pythonhosted.org/packages/14/13/99dbccdef31a122a3bd2e2fe7afd829d604ba05d5a3c60741791f40c0dfe/jupyterlab_nbconvert_nocode-0.3.1.tar.gz
+[2023-04-11 15:50:40] INFO root fetch - processPackages [TemperatureMonitor-MQTT-sldewit]: Downloading https://files.pythonhosted.org/packages/40/f9/127c01ca31556e7534805766f3893accc5cc25d7539a261fe42fe03fdf13/temperaturemonitor_mqtt_sldewit-0.0.5.tar.gz
+[2023-04-11 15:50:40] INFO root fetch - processPackages [tinybird-cdk]: Downloading https://files.pythonhosted.org/packages/12/f0/30e15e2c4f2e999c7191f4984cec2c2a2830a8e9cdf125a15c177b2b0ab2/tinybird-cdk-0.16.1.tar.gz
+[2023-04-11 15:50:41] INFO root fetch - processPackages [pyroll-core]: Downloading https://files.pythonhosted.org/packages/90/ea/e46b4c2904f2527a5409395b2bd931448673864865e068f037c8c3f95124/pyroll_core-2.0.2.tar.gz
+[2023-04-11 15:50:41] INFO root fetch - processPackages [jupyterlab-nbconvert-nocode]: Downloading https://files.pythonhosted.org/packages/03/5f/7e87f23d59f000997f68d04bf3b696cca81f4d54e2b178d318b5c6a3ed1f/jupyterlab_nbconvert_nocode-0.4.0.tar.gz
+[2023-04-11 15:50:41] INFO root fetch - processPackages [TemperatureMonitor-MQTT-sldewit]: Downloading https://files.pythonhosted.org/packages/eb/ae/31bb11933b20f115f223291c1d00beee3840a503884862ca9e2c583dd4c1/temperaturemonitor_mqtt_sldewit-1.0.0.tar.gz
+[2023-04-11 15:50:41] INFO root fetch - processPackages [pyroll-core]: executing diffoscope
+[2023-04-11 15:50:41] INFO root fetch - processPackages [pyroll-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroll_core-2.0.1.tar.gz tmp/pyroll_core-2.0.2.tar.gz --markdown 20230411/p/pyroll-core/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-11 15:50:41] INFO root fetch - processPackages [TemperatureMonitor-MQTT-sldewit]: executing diffoscope
+[2023-04-11 15:50:41] INFO root fetch - processPackages [TemperatureMonitor-MQTT-sldewit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/temperaturemonitor_mqtt_sldewit-0.0.5.tar.gz tmp/temperaturemonitor_mqtt_sldewit-1.0.0.tar.gz --markdown 20230411/T/TemperatureMonitor-MQTT-sldewit/0.0.5-1.0.0/diff.md --exclude *.pyd
+[2023-04-11 15:50:41] INFO root fetch - processPackages [tinybird-cdk]: Downloading https://files.pythonhosted.org/packages/6a/45/f72c9cfade9b8c533e21d9612e7d1ba08a0a1e5fbd841f3a7a5c7461abb3/tinybird-cdk-0.16.2.tar.gz
+[2023-04-11 15:50:41] INFO root fetch - processPackages [jupyterlab-nbconvert-nocode]: executing diffoscope
+[2023-04-11 15:50:41] INFO root fetch - processPackages [jupyterlab-nbconvert-nocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_nbconvert_nocode-0.3.1.tar.gz tmp/jupyterlab_nbconvert_nocode-0.4.0.tar.gz --markdown 20230411/j/jupyterlab-nbconvert-nocode/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-11 15:50:41] INFO root fetch - processPackages [tinybird-cdk]: executing diffoscope
+[2023-04-11 15:50:41] INFO root fetch - processPackages [tinybird-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cdk-0.16.1.tar.gz tmp/tinybird-cdk-0.16.2.tar.gz --markdown 20230411/t/tinybird-cdk/0.16.1-0.16.2/diff.md --exclude *.pyd
+[2023-04-11 15:50:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:42] INFO root fetch - processPackages [golem-garden]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-11 15:50:42] INFO root fetch - processPackages [golem-garden]: Downloading https://files.pythonhosted.org/packages/68/4c/46e7a0d8fd861aee8703760ba453f2bc0d1dacc1c009eba59e3089232e16/golem_garden-0.4.4.tar.gz
+[2023-04-11 15:50:42] INFO root fetch - processPackages [golem-garden]: Downloading https://files.pythonhosted.org/packages/d4/47/7092deb414683ff88572659045229f17fa29f72ff7e38057cb1be6180397/golem_garden-0.4.5.tar.gz
+[2023-04-11 15:50:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:42] INFO root fetch - processPackages [quanturf-blankly]: New version: [0.5] Old Version: [0.4]
+[2023-04-11 15:50:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:42] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-11 15:50:42] INFO root fetch - processPackages [quanturf-blankly]: Downloading https://files.pythonhosted.org/packages/0e/15/429431561162bc15ebb834588acd5d950622b92a767bf86687cb40de1087/quanturf_blankly-0.5.tar.gz
+[2023-04-11 15:50:42] INFO root fetch - processPackages [golem-garden]: executing diffoscope
+[2023-04-11 15:50:42] INFO root fetch - processPackages [golem-garden]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/golem_garden-0.4.4.tar.gz tmp/golem_garden-0.4.5.tar.gz --markdown 20230411/g/golem-garden/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-11 15:50:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:42] INFO root fetch - processPackages [python-pypi-mirror]: New version: [5.2.0] Old Version: [5.1.0]
+[2023-04-11 15:50:42] INFO root fetch - processPackages [quanturf-blankly]: executing diffoscope
+[2023-04-11 15:50:42] INFO root fetch - processPackages [quanturf-blankly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quanturf_blankly-0.4.tar.gz tmp/quanturf_blankly-0.5.tar.gz --markdown 20230411/q/quanturf-blankly/0.4-0.5/diff.md --exclude *.pyd
+[2023-04-11 15:50:43] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-11 15:50:43] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230411/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-11 15:50:43] INFO root fetch - processPackages [python-pypi-mirror]: Downloading https://files.pythonhosted.org/packages/a0/6d/265ea07c72d9607a96543717ed4f9d381692ab5026901504ad3d160027d9/python-pypi-mirror-5.1.0.tar.gz
+[2023-04-11 15:50:43] INFO root fetch - processPackages [python-pypi-mirror]: Downloading https://files.pythonhosted.org/packages/c5/57/2156ed4b727072522a2d2a367b9a7beeba267d55acbfcd18101745d15dae/python-pypi-mirror-5.2.0.tar.gz
+[2023-04-11 15:50:43] INFO root fetch - processPackages [python-pypi-mirror]: executing diffoscope
+[2023-04-11 15:50:43] INFO root fetch - processPackages [python-pypi-mirror]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-pypi-mirror-5.1.0.tar.gz tmp/python-pypi-mirror-5.2.0.tar.gz --markdown 20230411/p/python-pypi-mirror/5.1.0-5.2.0/diff.md --exclude *.pyd
+[2023-04-11 15:50:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:43] INFO root fetch - processPackages [sneaksmc]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 15:50:43] INFO root fetch - processPackages [sneaksmc]: Downloading https://files.pythonhosted.org/packages/95/bd/2b20b788348b0076b7d5950cdf1afe125f4564f3becd5afed661673dec64/sneaksmc-0.0.3.tar.gz
+[2023-04-11 15:50:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:44] INFO root fetch - processPackages [Products.MeetingPROVHainaut]: New version: [4.2b6] Old Version: [4.2b5]
+[2023-04-11 15:50:44] INFO root fetch - processPackages [sneaksmc]: executing diffoscope
+[2023-04-11 15:50:44] INFO root fetch - processPackages [sneaksmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sneaksmc-0.0.2.tar.gz tmp/sneaksmc-0.0.3.tar.gz --markdown 20230411/s/sneaksmc/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 15:50:44] INFO root fetch - processPackages [Products.MeetingPROVHainaut]: Downloading https://files.pythonhosted.org/packages/ba/66/c2579a3b976b13e54784eebf6ebbc8832438fdbbb8d544876524f21cb4d8/Products.MeetingPROVHainaut-4.2b5.tar.gz
+[2023-04-11 15:50:44] INFO root fetch - processPackages [Products.MeetingPROVHainaut]: Downloading https://files.pythonhosted.org/packages/23/7f/8df588927ee0e51f062491ae4464ea213d80ada10f93209b15acfd569869/Products.MeetingPROVHainaut-4.2b6.tar.gz
+[2023-04-11 15:50:44] INFO root fetch - processPackages [Products.MeetingPROVHainaut]: executing diffoscope
+[2023-04-11 15:50:44] INFO root fetch - processPackages [Products.MeetingPROVHainaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Products.MeetingPROVHainaut-4.2b5.tar.gz tmp/Products.MeetingPROVHainaut-4.2b6.tar.gz --markdown 20230411/P/Products.MeetingPROVHainaut/4.2b5-4.2b6/diff.md --exclude *.pyd
+[2023-04-11 15:50:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:44] INFO root fetch - processPackages [gardener-component-model]: New version: [0.0.90] Old Version: [0.0.9]
+[2023-04-11 15:50:44] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 15:50:45] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 15:50:45] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 15:50:45] INFO root fetch - processPackages [gardener-component-model]: Downloading https://files.pythonhosted.org/packages/cb/aa/104e0ed495d5db4cba35bef5707a5fbe70dc43969fdc5c8dec9c42e89372/gardener-component-model-0.0.9.tar.gz
+[2023-04-11 15:50:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:45] INFO root fetch - processPackages [cellar-extractor]: New version: [1.0.46] Old Version: [1.0.45]
+[2023-04-11 15:50:45] INFO root fetch - processPackages [cellar-extractor]: executing diffoscope
+[2023-04-11 15:50:45] INFO root fetch - processPackages [cellar-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellar_extractor-1.0.45.tar.gz tmp/cellar_extractor-1.0.46.tar.gz --markdown 20230411/c/cellar-extractor/1.0.45-1.0.46/diff.md --exclude *.pyd
+[2023-04-11 15:50:46] INFO root fetch - processPackages [gardener-component-model]: Downloading https://files.pythonhosted.org/packages/da/1b/06a3e85050c12592e43d5f8be5af88c4ac78f63b13fc17e312849dc4aa66/gardener-component-model-0.0.90.tar.gz
+[2023-04-11 15:50:46] INFO root fetch - processPackages [gardener-component-model]: executing diffoscope
+[2023-04-11 15:50:46] INFO root fetch - processPackages [gardener-component-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-component-model-0.0.9.tar.gz tmp/gardener-component-model-0.0.90.tar.gz --markdown 20230411/g/gardener-component-model/0.0.9-0.0.90/diff.md --exclude *.pyd
+[2023-04-11 15:50:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 15:50:51] INFO root fetch - main [MainThread]: Store serial: [17661587]
