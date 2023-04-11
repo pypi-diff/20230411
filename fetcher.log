@@ -17536,3 +17536,98 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 17:49:58] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:50:03] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:50:03] INFO root fetch - main [MainThread]: Store serial: [17663046]
+[2023-04-11 17:55:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663046]
+[2023-04-11 17:55:14] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-11 17:55:14] INFO root fetch - processPackages [collective.solr]: New version: [9.1.3] Old Version: [9.1.2]
+[2023-04-11 17:55:14] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 17:55:14] INFO root fetch - processPackages [nerualpha]: New version: [4.1.0rc5] Old Version: [4.1.0rc4]
+[2023-04-11 17:55:14] INFO root fetch - processPackages [magicsoup]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-11 17:55:14] INFO root fetch - processPackages [wtt02]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-11 17:55:14] INFO root fetch - processPackages [magicsoup]: executing diffoscope
+[2023-04-11 17:55:14] INFO root fetch - processPackages [magicsoup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magicsoup-0.3.3.tar.gz tmp/magicsoup-0.3.4.tar.gz --markdown 20230411/m/magicsoup/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-11 17:55:14] INFO root fetch - processPackages [nerualpha]: Downloading https://files.pythonhosted.org/packages/2f/48/fe9cb89b65eb86b02269df9332564a8e8123ff36695aee98fc445a2e24f3/nerualpha-4.1.0rc4.tar.gz
+[2023-04-11 17:55:14] INFO root fetch - processPackages [collective.solr]: Downloading https://files.pythonhosted.org/packages/f2/30/08be0b3473919ed824710d1ab71adc3dab6be532c42766402467c3889e48/collective.solr-9.1.2.tar.gz
+[2023-04-11 17:55:14] INFO root fetch - processPackages [simple-hierarchical-transformer]: Downloading https://files.pythonhosted.org/packages/5f/58/d6520ea8ae17933b51715ce0c491049459a10fb48707dc5b76f01c62364a/simple-hierarchical-transformer-0.0.4.tar.gz
+[2023-04-11 17:55:14] INFO root fetch - processPackages [wtt02]: Downloading https://files.pythonhosted.org/packages/79/23/a2c1a844fd05ae42f8a2d193eb050825db644af2cd1511f6122fc02d62cc/wtt02-0.2.3.tar.gz
+[2023-04-11 17:55:14] INFO root fetch - processPackages [wtt02]: executing diffoscope
+[2023-04-11 17:55:14] INFO root fetch - processPackages [wtt02]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtt02-0.2.2.tar.gz tmp/wtt02-0.2.3.tar.gz --markdown 20230411/w/wtt02/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-11 17:55:14] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-11 17:55:14] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.3.tar.gz tmp/simple-hierarchical-transformer-0.0.4.tar.gz --markdown 20230411/s/simple-hierarchical-transformer/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 17:55:14] INFO root fetch - processPackages [nerualpha]: Downloading https://files.pythonhosted.org/packages/aa/08/aeb8bc44f297a11151020409863f97b8301a8424263d93e5a53606908680/nerualpha-4.1.0rc5.tar.gz
+[2023-04-11 17:55:15] INFO root fetch - processPackages [collective.solr]: Downloading https://files.pythonhosted.org/packages/fb/4c/2d43522010d6f69f0014f90b3c0c09f39b54be2ff49f02d71cadf593fbd9/collective.solr-9.1.3.tar.gz
+[2023-04-11 17:55:15] INFO root fetch - processPackages [nerualpha]: executing diffoscope
+[2023-04-11 17:55:15] INFO root fetch - processPackages [nerualpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nerualpha-4.1.0rc4.tar.gz tmp/nerualpha-4.1.0rc5.tar.gz --markdown 20230411/n/nerualpha/4.1.0rc4-4.1.0rc5/diff.md --exclude *.pyd
+[2023-04-11 17:55:15] INFO root fetch - processPackages [collective.solr]: executing diffoscope
+[2023-04-11 17:55:15] INFO root fetch - processPackages [collective.solr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/collective.solr-9.1.2.tar.gz tmp/collective.solr-9.1.3.tar.gz --markdown 20230411/c/collective.solr/9.1.2-9.1.3/diff.md --exclude *.pyd
+[2023-04-11 17:55:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:16] INFO root fetch - processPackages [terka]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-11 17:55:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:16] INFO root fetch - processPackages [aws-credentialer]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-04-11 17:55:16] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/9c/a2/f06db7324595012fddade7b94a84aa5acfa7f90832d1e89af95d182c031d/terka-1.3.3.tar.gz
+[2023-04-11 17:55:16] INFO root fetch - processPackages [aws-credentialer]: Downloading https://files.pythonhosted.org/packages/ee/37/4ca38052b1c26b0b2beca30f4520c80ade05df3348df7b5060bbc9c5bb8a/aws-credentialer-0.1.2.tar.gz
+[2023-04-11 17:55:16] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-11 17:55:16] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.3.2.tar.gz tmp/terka-1.3.3.tar.gz --markdown 20230411/t/terka/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-11 17:55:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:16] INFO root fetch - processPackages [aws-credentialer]: executing diffoscope
+[2023-04-11 17:55:16] INFO root fetch - processPackages [aws-credentialer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-credentialer-0.1.0.tar.gz tmp/aws-credentialer-0.1.2.tar.gz --markdown 20230411/a/aws-credentialer/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 17:55:16] INFO root fetch - processPackages [Felog]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 17:55:16] INFO root fetch - processPackages [Felog]: Downloading https://files.pythonhosted.org/packages/c1/c5/ca165b92c994bf549f415e5040cb1c7bd8772f720be5b0da06c1074718a1/Felog-1.0.0.tar.gz
+[2023-04-11 17:55:17] INFO root fetch - processPackages [Felog]: Downloading https://files.pythonhosted.org/packages/f3/bc/e7a473b5da74ef6d3df21d9d590aaded77f546dc3a765f3a7ff281c56eda/Felog-1.0.1.tar.gz
+[2023-04-11 17:55:17] INFO root fetch - processPackages [Felog]: executing diffoscope
+[2023-04-11 17:55:17] INFO root fetch - processPackages [Felog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Felog-1.0.0.tar.gz tmp/Felog-1.0.1.tar.gz --markdown 20230411/F/Felog/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 17:55:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:17] INFO root fetch - processPackages [Biblioteca-RIT]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-04-11 17:55:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:17] WARNING root fetch - processPackages [DR-lord-sdk]: Skipping, unable to determine old version
+[2023-04-11 17:55:17] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:55:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:17] INFO root fetch - processPackages [wds-client]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-11 17:55:17] INFO root fetch - processPackages [pyngrok]: New version: [5.2.2] Old Version: [5.2.1]
+[2023-04-11 17:55:17] INFO root fetch - processPackages [Biblioteca-RIT]: Downloading https://files.pythonhosted.org/packages/b9/f4/0701e5c15b50ff9f3d6255b30f4562b9efe89b616e572fba0a485e9d496c/Biblioteca_RIT-1.0.0-py3-none-any.whl
+[2023-04-11 17:55:17] INFO root fetch - processPackages [pyngrok]: Downloading https://files.pythonhosted.org/packages/bd/36/169c177c3124a69abaee285b1572e5ed9d27088fa4c5fa104d1da8f17326/pyngrok-5.2.1.tar.gz
+[2023-04-11 17:55:17] INFO root fetch - processPackages [wds-client]: Downloading https://files.pythonhosted.org/packages/c9/9a/afe09d3d9d7ff6f141490f56276dd810de4cc2aec3cfbbd44fc9b7fd82d4/wds-client-0.2.7.tar.gz
+[2023-04-11 17:55:18] INFO root fetch - processPackages [pyngrok]: Downloading https://files.pythonhosted.org/packages/ef/18/d00f6bf101812b64048f385b00105e9f478f5edba0f226b8643ecec96bf7/pyngrok-5.2.2.tar.gz
+[2023-04-11 17:55:18] INFO root fetch - processPackages [Biblioteca-RIT]: Downloading https://files.pythonhosted.org/packages/43/ba/d7ff3d2eb4ef04433536fc90bfa9233c3f74b38f81a45b34b49771e2b64d/Biblioteca_RIT-2.0.0-py3-none-any.whl
+[2023-04-11 17:55:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:18] INFO root fetch - processPackages [async-firebase]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-04-11 17:55:18] INFO root fetch - processPackages [pyngrok]: executing diffoscope
+[2023-04-11 17:55:18] INFO root fetch - processPackages [pyngrok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyngrok-5.2.1.tar.gz tmp/pyngrok-5.2.2.tar.gz --markdown 20230411/p/pyngrok/5.2.1-5.2.2/diff.md --exclude *.pyd
+[2023-04-11 17:55:18] INFO root fetch - processPackages [Biblioteca-RIT]: executing diffoscope
+[2023-04-11 17:55:18] INFO root fetch - processPackages [Biblioteca-RIT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Biblioteca_RIT-1.0.0-py3-none-any.whl.zip tmp/Biblioteca_RIT-2.0.0-py3-none-any.whl.zip --markdown 20230411/B/Biblioteca-RIT/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-11 17:55:18] INFO root fetch - processPackages [wds-client]: Downloading https://files.pythonhosted.org/packages/52/0e/257f94b1a1dad6198f1dcee34010593590873dd1d6100c15affe4662bbea/wds-client-0.2.8.tar.gz
+[2023-04-11 17:55:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:18] INFO root fetch - processPackages [mitzu]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-11 17:55:18] INFO root fetch - processPackages [async-firebase]: Downloading https://files.pythonhosted.org/packages/31/c5/06bdc69eec8f13dd9017ae8971201c0515db94a18eddf3bdafb6cecbbaa8/async_firebase-3.1.0.tar.gz
+[2023-04-11 17:55:18] INFO root fetch - processPackages [mitzu]: executing diffoscope
+[2023-04-11 17:55:18] INFO root fetch - processPackages [mitzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitzu-0.5.8.tar.gz tmp/mitzu-0.5.9.tar.gz --markdown 20230411/m/mitzu/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-11 17:55:18] INFO root fetch - processPackages [wds-client]: executing diffoscope
+[2023-04-11 17:55:18] INFO root fetch - processPackages [wds-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wds-client-0.2.7.tar.gz tmp/wds-client-0.2.8.tar.gz --markdown 20230411/w/wds-client/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-11 17:55:18] INFO root fetch - processPackages [async-firebase]: executing diffoscope
+[2023-04-11 17:55:18] INFO root fetch - processPackages [async-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_firebase-3.0.0.tar.gz tmp/async_firebase-3.1.0.tar.gz --markdown 20230411/a/async-firebase/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-04-11 17:55:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:19] INFO root fetch - processPackages [clarifai]: New version: [9.3.1] Old Version: [9.3.0]
+[2023-04-11 17:55:19] INFO root fetch - processPackages [clarifai]: Downloading https://files.pythonhosted.org/packages/d2/08/b3519eabeca595c21f47d90649871793f7d00938b18ac2b26ad361cfd438/clarifai-9.3.0.tar.gz
+[2023-04-11 17:55:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:20] INFO root fetch - processPackages [gotya-text-anonymizer]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-11 17:55:20] INFO root fetch - processPackages [clarifai]: Downloading https://files.pythonhosted.org/packages/a0/8b/23f6864281107a43b7943aeff1cfdecd0f58403843efa13739fffe6aded9/clarifai-9.3.1.tar.gz
+[2023-04-11 17:55:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:20] INFO root fetch - processPackages [gotya-text-anonymizer]: Downloading https://files.pythonhosted.org/packages/b0/32/fda6e718f3ec873f91360703235ad01480d53d87500e2a62cd2d4a751b0d/gotya-text-anonymizer-1.1.5.tar.gz
+[2023-04-11 17:55:20] INFO root fetch - processPackages [veetility]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 17:55:20] INFO root fetch - processPackages [clarifai]: executing diffoscope
+[2023-04-11 17:55:20] INFO root fetch - processPackages [clarifai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clarifai-9.3.0.tar.gz tmp/clarifai-9.3.1.tar.gz --markdown 20230411/c/clarifai/9.3.0-9.3.1/diff.md --exclude *.pyd
+[2023-04-11 17:55:20] INFO root fetch - processPackages [gotya-text-anonymizer]: executing diffoscope
+[2023-04-11 17:55:20] INFO root fetch - processPackages [veetility]: Downloading https://files.pythonhosted.org/packages/dc/cf/4772d523e1caa972a6184c0058fe3637ebc539109c8d11d8e5cdfee00baf/veetility-0.1.8.tar.gz
+[2023-04-11 17:55:20] INFO root fetch - processPackages [gotya-text-anonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gotya-text-anonymizer-1.1.4.tar.gz tmp/gotya-text-anonymizer-1.1.5.tar.gz --markdown 20230411/g/gotya-text-anonymizer/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-11 17:55:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:20] INFO root fetch - processPackages [ocench]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-11 17:55:20] INFO root fetch - processPackages [ocench]: executing diffoscope
+[2023-04-11 17:55:20] INFO root fetch - processPackages [ocench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocench-0.0.5.tar.gz tmp/ocench-0.0.6.tar.gz --markdown 20230411/o/ocench/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 17:55:21] INFO root fetch - processPackages [veetility]: Downloading https://files.pythonhosted.org/packages/e4/27/6bf604a25bb2458a80de6e113a5e7478938a23d9c7100bad80dac3b5e3c8/veetility-0.1.9.tar.gz
+[2023-04-11 17:55:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:21] INFO root fetch - processPackages [veetility]: executing diffoscope
+[2023-04-11 17:55:21] INFO root fetch - processPackages [veetility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veetility-0.1.8.tar.gz tmp/veetility-0.1.9.tar.gz --markdown 20230411/v/veetility/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 17:55:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:55:22] INFO root fetch - main [MainThread]: Store serial: [17663099]
