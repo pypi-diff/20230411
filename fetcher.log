@@ -17321,3 +17321,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 17:34:13] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:34:13] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:34:13] INFO root fetch - main [MainThread]: Store serial: [17662920]
+[2023-04-11 17:39:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17662920]
+[2023-04-11 17:39:23] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-11 17:39:23] INFO root fetch - processPackages [ocench]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-11 17:39:23] WARNING root fetch - processPackages [mw-api-parser]: Skipping, unable to determine old version
+[2023-04-11 17:39:23] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:39:23] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-11 17:39:23] INFO root fetch - processPackages [polyaxon-sdk]: New version: [2.0.0rc5] Old Version: [2.0.0rc4]
+[2023-04-11 17:39:23] INFO root fetch - processPackages [medvedi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 17:39:23] WARNING root fetch - processPackages [botcity-ms365excel-plugin]: Skipping, unable to determine old version
+[2023-04-11 17:39:23] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:39:23] INFO root fetch - processPackages [stewchef]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 17:39:23] INFO root fetch - processPackages [ocench]: Downloading https://files.pythonhosted.org/packages/ee/c3/4ea53a397f38ab8eadb7e6e9ef427f566dbb50f039ee582e91308c1f2f95/ocench-0.0.6.tar.gz
+[2023-04-11 17:39:23] INFO root fetch - processPackages [polyaxon-sdk]: Downloading https://files.pythonhosted.org/packages/74/c9/95fe111ee1a58f0f61f2891ccb318ef9f0b2744e42de30d1393cfab72b44/polyaxon-sdk-2.0.0rc5.tar.gz
+[2023-04-11 17:39:23] INFO root fetch - processPackages [medvedi]: Downloading https://files.pythonhosted.org/packages/d5/6b/55e00aaa6ba46cca6cac1c19a129e114fc670a07f6372c841fec4a6faeb6/medvedi-0.1.8.tar.gz
+[2023-04-11 17:39:23] INFO root fetch - processPackages [stewchef]: Downloading https://files.pythonhosted.org/packages/ba/09/30b5f16e6f78a74bde117d568e53681332f729c16dec950d3f00a9aea2b8/stewchef-0.1.0.tar.gz
+[2023-04-11 17:39:23] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: Downloading https://files.pythonhosted.org/packages/81/77/355711b961cea929bd8e20c24c5d768b6d89e963e5b01ec39d683930f23a/nonebot_plugin_talk_with_chatgpt-0.2.1.tar.gz
+[2023-04-11 17:39:23] INFO root fetch - processPackages [ocench]: executing diffoscope
+[2023-04-11 17:39:23] INFO root fetch - processPackages [ocench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocench-0.0.5.tar.gz tmp/ocench-0.0.6.tar.gz --markdown 20230411/o/ocench/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 17:39:23] INFO root fetch - processPackages [polyaxon-sdk]: executing diffoscope
+[2023-04-11 17:39:23] INFO root fetch - processPackages [polyaxon-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-sdk-2.0.0rc4.tar.gz tmp/polyaxon-sdk-2.0.0rc5.tar.gz --markdown 20230411/p/polyaxon-sdk/2.0.0rc4-2.0.0rc5/diff.md --exclude *.pyd
+[2023-04-11 17:39:23] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: executing diffoscope
+[2023-04-11 17:39:23] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_talk_with_chatgpt-0.2.0.tar.gz tmp/nonebot_plugin_talk_with_chatgpt-0.2.1.tar.gz --markdown 20230411/n/nonebot-plugin-talk-with-chatgpt/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-11 17:39:23] INFO root fetch - processPackages [stewchef]: Downloading https://files.pythonhosted.org/packages/c1/25/213ae234b333c207d25580c888eda55cef67216586928b9d19f4267fd705/stewchef-0.1.1.tar.gz
+[2023-04-11 17:39:24] INFO root fetch - processPackages [stewchef]: executing diffoscope
+[2023-04-11 17:39:24] INFO root fetch - processPackages [stewchef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stewchef-0.1.0.tar.gz tmp/stewchef-0.1.1.tar.gz --markdown 20230411/s/stewchef/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 17:39:24] INFO root fetch - processPackages [medvedi]: Downloading https://files.pythonhosted.org/packages/c9/24/ed022b9cf2f8c3c785cb5a052839a3dd2addf6c47546bc94faeb066c2cf9/medvedi-0.1.9.tar.gz
+[2023-04-11 17:39:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:24] WARNING root fetch - processPackages [pyilcd]: Skipping, unable to determine old version
+[2023-04-11 17:39:24] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:39:24] INFO root fetch - processPackages [pretix-plugin-extended-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 17:39:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:24] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-11 17:39:24] INFO root fetch - processPackages [pretix-plugin-extended-api]: executing diffoscope
+[2023-04-11 17:39:24] INFO root fetch - processPackages [pretix-plugin-extended-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-plugin-extended-api-0.1.8.tar.gz tmp/pretix-plugin-extended-api-0.1.9.tar.gz --markdown 20230411/p/pretix-plugin-extended-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 17:39:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:25] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-11 17:39:25] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230411/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-11 17:39:25] INFO root fetch - processPackages [highrise-bot-sdk]: New version: [23.1.0b5] Old Version: [23.1.0b4]
+[2023-04-11 17:39:25] INFO root fetch - processPackages [medvedi]: executing diffoscope
+[2023-04-11 17:39:25] INFO root fetch - processPackages [medvedi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medvedi-0.1.8.tar.gz tmp/medvedi-0.1.9.tar.gz --markdown 20230411/m/medvedi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 17:39:25] INFO root fetch - processPackages [highrise-bot-sdk]: Downloading https://files.pythonhosted.org/packages/ad/0c/e8fa4fdf5387dca776caf7ad5290af8ccce4fd8fc165c2bd5ad0b692fb4d/highrise_bot_sdk-23.1.0b4.tar.gz
+[2023-04-11 17:39:25] INFO root fetch - processPackages [highrise-bot-sdk]: Downloading https://files.pythonhosted.org/packages/34/a5/1f4d6521cf6d458e417992f6321a67937bc1f56f10a8aebf4ebfd9b540cb/highrise_bot_sdk-23.1.0b5.tar.gz
+[2023-04-11 17:39:25] INFO root fetch - processPackages [highrise-bot-sdk]: executing diffoscope
+[2023-04-11 17:39:25] INFO root fetch - processPackages [highrise-bot-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/highrise_bot_sdk-23.1.0b4.tar.gz tmp/highrise_bot_sdk-23.1.0b5.tar.gz --markdown 20230411/h/highrise-bot-sdk/23.1.0b4-23.1.0b5/diff.md --exclude *.pyd
+[2023-04-11 17:39:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:26] INFO root fetch - processPackages [terka]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-11 17:39:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:26] INFO root fetch - processPackages [gdsfactory]: New version: [6.9.0] Old Version: [6.80.0]
+[2023-04-11 17:39:26] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/51/e1/bea9be10e53a3f646a2bc569ab98aa0db7b687da72ac78a2d51eac5c8a5e/gdsfactory-6.9.0.tar.gz
+[2023-04-11 17:39:26] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/b6/b3/a18a887846162eb25841a7a728ce86e4308eb16d0b375222d862bea4aafa/terka-1.3.1.tar.gz
+[2023-04-11 17:39:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:26] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-04-11 17:39:26] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.3.0.tar.gz tmp/terka-1.3.1.tar.gz --markdown 20230411/t/terka/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-11 17:39:26] INFO root fetch - processPackages [h5pyd]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-11 17:39:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:26] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 17:39:26] INFO root fetch - processPackages [h5pyd]: Downloading https://files.pythonhosted.org/packages/01/2a/ef4ba24c2a40476a37d6aa3ef1e542ea65b96bfced3816c4c5228cee2802/h5pyd-0.9.1.tar.gz
+[2023-04-11 17:39:27] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: Downloading https://files.pythonhosted.org/packages/98/99/5e19408e6401aa222f3d614e354ff50b9e91166e74ecccdbf38d81306112/nonebot_plugin_talk_with_chatgpt-0.2.2.tar.gz
+[2023-04-11 17:39:27] WARNING root fetch - processPackages [gdsfactory]: Skipping package: exceeds size limit 11141129>=10485760
+[2023-04-11 17:39:27] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:39:27] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: executing diffoscope
+[2023-04-11 17:39:27] INFO root fetch - processPackages [nonebot-plugin-talk-with-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_talk_with_chatgpt-0.2.1.tar.gz tmp/nonebot_plugin_talk_with_chatgpt-0.2.2.tar.gz --markdown 20230411/n/nonebot-plugin-talk-with-chatgpt/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 17:39:27] INFO root fetch - processPackages [h5pyd]: Downloading https://files.pythonhosted.org/packages/e7/16/50dd8c4efec8fb434c7f2df147b46b9a90600a8fe37e3cc11ac950a0c3e3/h5pyd-0.9.2.tar.gz
+[2023-04-11 17:39:27] INFO root fetch - processPackages [h5pyd]: executing diffoscope
+[2023-04-11 17:39:27] INFO root fetch - processPackages [h5pyd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/h5pyd-0.9.1.tar.gz tmp/h5pyd-0.9.2.tar.gz --markdown 20230411/h/h5pyd/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-11 17:39:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:39:29] INFO root fetch - main [MainThread]: Store serial: [17662969]
