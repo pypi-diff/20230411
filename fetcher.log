@@ -4092,3 +4092,75 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 04:04:02] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:04:02] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:04:02] INFO root fetch - main [MainThread]: Store serial: [17653970]
+[2023-04-11 04:09:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17653970]
+[2023-04-11 04:09:09] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-11 04:09:09] INFO root fetch - processPackages [cchenutils]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-11 04:09:09] INFO root fetch - processPackages [selene]: New version: [2.0.0rc1] Old Version: [2.0.0b9]
+[2023-04-11 04:09:09] INFO root fetch - processPackages [regula.facesdk.webclient]: New version: [5.1.1] Old Version: [5.1.0]
+[2023-04-11 04:09:09] WARNING root fetch - processPackages [dayy9984]: Skipping, unable to determine old version
+[2023-04-11 04:09:09] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:09:09] INFO root fetch - processPackages [core-universal]: New version: [2.4.9] Old Version: [2.4.8]
+[2023-04-11 04:09:09] WARNING root fetch - processPackages [yummongi]: Skipping, unable to determine old version
+[2023-04-11 04:09:09] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:09:09] INFO root fetch - processPackages [rec-pangu]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-11 04:09:09] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/bb/aa/1212682acd8770faba066e715cd871f2d258ceb244b100cd69f93d7dba20/cchenutils-0.0.6-py3-none-any.whl
+[2023-04-11 04:09:09] INFO root fetch - processPackages [regula.facesdk.webclient]: Downloading https://files.pythonhosted.org/packages/f2/96/cc69486cd2915abc39688b2b14159c76e53511012dcc0169cceca20486fe/regula.facesdk.webclient-5.1.0.tar.gz
+[2023-04-11 04:09:09] INFO root fetch - processPackages [core-universal]: Downloading https://files.pythonhosted.org/packages/21/d3/671229efeeae3c217ddde89070c91662c2dcde269cf929f23e3e02d8c451/core_universal-2.4.8-py2.py3-none-win_amd64.whl
+[2023-04-11 04:09:09] INFO root fetch - processPackages [selene]: Downloading https://files.pythonhosted.org/packages/f6/11/8f009cff83addf704f754a41d48f37269c144b82136d39d9242d744c255d/selene-2.0.0b9.tar.gz
+[2023-04-11 04:09:09] INFO root fetch - processPackages [rec-pangu]: Downloading https://files.pythonhosted.org/packages/6d/45/1d7712f817c0f3debd1520a752a3bab4cd9f40a98a700144ac8700b5eb99/rec_pangu-0.3.4-py3-none-any.whl
+[2023-04-11 04:09:09] INFO root fetch - processPackages [regula.facesdk.webclient]: Downloading https://files.pythonhosted.org/packages/b6/fb/2cbb2be7f481d3093c42d5fa75344df1a4cc4c39ff84c7ec9cf6b2807acc/regula.facesdk.webclient-5.1.1.tar.gz
+[2023-04-11 04:09:09] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/68/4d/4c6c9c84168fb86826fec3e1b4907d30418f9d9ef308f85d0fa853352b56/cchenutils-0.0.7-py3-none-any.whl
+[2023-04-11 04:09:09] INFO root fetch - processPackages [rec-pangu]: Downloading https://files.pythonhosted.org/packages/00/5e/2cae751e2edf336889eb02d9cde5a68644b2b6921e82e5c235f90dd1f290/rec_pangu-0.3.5-py3-none-any.whl
+[2023-04-11 04:09:09] INFO root fetch - processPackages [selene]: Downloading https://files.pythonhosted.org/packages/3d/cb/ce781464124326e5858f7fd2856348bda84fbcc33213c2312c9f1766a9d0/selene-2.0.0rc1.tar.gz
+[2023-04-11 04:09:09] INFO root fetch - processPackages [regula.facesdk.webclient]: executing diffoscope
+[2023-04-11 04:09:09] INFO root fetch - processPackages [regula.facesdk.webclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regula.facesdk.webclient-5.1.0.tar.gz tmp/regula.facesdk.webclient-5.1.1.tar.gz --markdown 20230411/r/regula.facesdk.webclient/5.1.0-5.1.1/diff.md --exclude *.pyd
+[2023-04-11 04:09:09] INFO root fetch - processPackages [rec-pangu]: executing diffoscope
+[2023-04-11 04:09:09] INFO root fetch - processPackages [rec-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rec_pangu-0.3.4-py3-none-any.whl.zip tmp/rec_pangu-0.3.5-py3-none-any.whl.zip --markdown 20230411/r/rec-pangu/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-11 04:09:09] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-11 04:09:09] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.0.6-py3-none-any.whl.zip tmp/cchenutils-0.0.7-py3-none-any.whl.zip --markdown 20230411/c/cchenutils/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-11 04:09:10] WARNING root fetch - processPackages [core-universal]: Skipping package: exceeds size limit 23920061>=10485760
+[2023-04-11 04:09:10] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:09:10] INFO root fetch - processPackages [selene]: executing diffoscope
+[2023-04-11 04:09:10] INFO root fetch - processPackages [selene]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selene-2.0.0b9.tar.gz tmp/selene-2.0.0rc1.tar.gz --markdown 20230411/s/selene/2.0.0b9-2.0.0rc1/diff.md --exclude *.pyd
+[2023-04-11 04:09:10] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 04:09:10] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 04:09:10] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 04:09:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:11] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 04:09:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:11] INFO root fetch - processPackages [goby-sdk]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 04:09:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:11] INFO root fetch - processPackages [cchenutils]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-11 04:09:11] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/62/dc/735d9d12ecb4f45fbeec425ce346e9dda4180273b7b8a3b7d1bd7c2aaf3d/cdk-budibase-0.0.8.tar.gz
+[2023-04-11 04:09:11] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-11 04:09:11] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.0.6-py3-none-any.whl.zip tmp/cchenutils-0.0.7-py3-none-any.whl.zip --markdown 20230411/c/cchenutils/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-11 04:09:11] INFO root fetch - processPackages [goby-sdk]: Downloading https://files.pythonhosted.org/packages/9f/6f/5342284cd102e46439b193ac318d9388aeaedd2146a2144ddd2bbbda24a0/goby_sdk-1.0.9.tar.gz
+[2023-04-11 04:09:11] INFO root fetch - processPackages [goby-sdk]: executing diffoscope
+[2023-04-11 04:09:11] INFO root fetch - processPackages [goby-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goby_sdk-1.0.8.tar.gz tmp/goby_sdk-1.0.9.tar.gz --markdown 20230411/g/goby-sdk/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 04:09:12] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/da/f5/b8a55cb7b91c83756a41eda4ae26245020499ddf771f27b33c7dc1a4ce2d/cdk-budibase-0.0.9.tar.gz
+[2023-04-11 04:09:12] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2023-04-11 04:09:12] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.8.tar.gz tmp/cdk-budibase-0.0.9.tar.gz --markdown 20230411/c/cdk-budibase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 04:09:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:12] WARNING root fetch - processPackages [hanjaekim]: Skipping, unable to determine old version
+[2023-04-11 04:09:12] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:09:12] WARNING root fetch - processPackages [0411-test]: Skipping, unable to determine old version
+[2023-04-11 04:09:12] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:09:12] INFO root fetch - processPackages [sparrow-order-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 04:09:12] INFO root fetch - processPackages [sparrow-order-lib]: executing diffoscope
+[2023-04-11 04:09:12] INFO root fetch - processPackages [sparrow-order-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow-order-lib-0.1.8.tar.gz tmp/sparrow-order-lib-0.1.9.tar.gz --markdown 20230411/s/sparrow-order-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 04:09:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:13] INFO root fetch - processPackages [python-rdma-qe]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 04:09:13] INFO root fetch - processPackages [python-rdma-qe]: Downloading https://files.pythonhosted.org/packages/c0/88/3f94e5d616e7476926bfddeb706c2abdb02af878f063a2a834ab57bddcc2/python_rdma_qe-0.0.1.tar.gz
+[2023-04-11 04:09:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:13] INFO root fetch - processPackages [naturtag]: New version: [0.8.0.dev2] Old Version: [0.8.0.dev1]
+[2023-04-11 04:09:13] INFO root fetch - processPackages [python-rdma-qe]: Downloading https://files.pythonhosted.org/packages/17/2d/356a86da340e7b2e41e948e331d853861d7725db66082e72a42c06cb97ad/python_rdma_qe-0.0.2.tar.gz
+[2023-04-11 04:09:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:13] INFO root fetch - processPackages [python-rdma-qe]: executing diffoscope
+[2023-04-11 04:09:13] INFO root fetch - processPackages [python-rdma-qe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_rdma_qe-0.0.1.tar.gz tmp/python_rdma_qe-0.0.2.tar.gz --markdown 20230411/p/python-rdma-qe/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 04:09:13] INFO root fetch - processPackages [naturtag]: Downloading https://files.pythonhosted.org/packages/09/6c/5e8e023c09cb41965328996c0cc469c99a1f8d0d171f03a1498b099b2a63/naturtag-0.8.0.dev1.tar.gz
+[2023-04-11 04:09:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:14] WARNING root fetch - processPackages [naturtag]: Skipping package: exceeds size limit 21617354>=10485760
+[2023-04-11 04:09:14] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:09:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:09:15] INFO root fetch - main [MainThread]: Store serial: [17654024]
