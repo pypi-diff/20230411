@@ -17631,3 +17631,81 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 17:55:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:55:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:55:22] INFO root fetch - main [MainThread]: Store serial: [17663099]
+[2023-04-11 18:00:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663099]
+[2023-04-11 18:00:31] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-11 18:00:31] INFO root fetch - processPackages [Biblioteca-RIT]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-11 18:00:31] INFO root fetch - processPackages [github-vulnerability-exporter]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-11 18:00:31] INFO root fetch - processPackages [toollib]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-04-11 18:00:31] INFO root fetch - processPackages [OgreInterface]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 18:00:31] INFO root fetch - processPackages [biobb-vs]: New version: [4.0.0] Old Version: [3.9.0]
+[2023-04-11 18:00:31] INFO root fetch - processPackages [OgreInterface]: Downloading https://files.pythonhosted.org/packages/32/39/12c899b8f078f22f88721e8d268dd5d4f3b22a2605240f516bacd63bf2cb/OgreInterface-1.0.8.tar.gz
+[2023-04-11 18:00:31] INFO root fetch - processPackages [github-vulnerability-exporter]: Downloading https://files.pythonhosted.org/packages/b4/02/551a5e00298a203c27d1495a9e3e28c2eb0f474fa1fe4c8f720f81bcae60/github_vulnerability_exporter-1.5.0.tar.gz
+[2023-04-11 18:00:31] INFO root fetch - processPackages [Biblioteca-RIT]: Downloading https://files.pythonhosted.org/packages/01/3d/187352aaa22abffa11f43e1ee88f4532f7485b546d1add5e94a68e95fa4f/Biblioteca_RIT-2.0.1-py3-none-any.whl
+[2023-04-11 18:00:31] INFO root fetch - processPackages [biobb-vs]: Downloading https://files.pythonhosted.org/packages/8e/bb/5a00c6503f82afa6fac8babcb752c2f6db941364901083b4b711b53b1d86/biobb_vs-3.9.0.tar.gz
+[2023-04-11 18:00:31] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/7a/79/e5626096962532dd403400ea89cdf63d4cb6d21ae35fa692b8873e7167ba/toollib-1.2.8-py3-none-any.whl
+[2023-04-11 18:00:31] INFO root fetch - processPackages [Biblioteca-RIT]: executing diffoscope
+[2023-04-11 18:00:31] INFO root fetch - processPackages [Biblioteca-RIT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Biblioteca_RIT-2.0.0-py3-none-any.whl.zip tmp/Biblioteca_RIT-2.0.1-py3-none-any.whl.zip --markdown 20230411/B/Biblioteca-RIT/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-11 18:00:31] INFO root fetch - processPackages [github-vulnerability-exporter]: Downloading https://files.pythonhosted.org/packages/d0/6b/47a11ff59ecb38e5bf6739dfd728993698bad04b5ac90d10e05907c95716/github_vulnerability_exporter-1.5.1.tar.gz
+[2023-04-11 18:00:31] INFO root fetch - processPackages [biobb-vs]: Downloading https://files.pythonhosted.org/packages/24/46/ccbf4d6a21059e1de4e2d918d2d2c4f30dbea5c7ce092ab109159499be37/biobb_vs-4.0.0.tar.gz
+[2023-04-11 18:00:31] INFO root fetch - processPackages [OgreInterface]: Downloading https://files.pythonhosted.org/packages/af/58/450f1c7aa5bd23d607f869b1981e3610e1aaee541c6f51c2c9461ccebc29/OgreInterface-1.0.9.tar.gz
+[2023-04-11 18:00:31] INFO root fetch - processPackages [toollib]: executing diffoscope
+[2023-04-11 18:00:31] INFO root fetch - processPackages [toollib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toollib-1.2.7-py3-none-any.whl.zip tmp/toollib-1.2.8-py3-none-any.whl.zip --markdown 20230411/t/toollib/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-04-11 18:00:32] INFO root fetch - processPackages [github-vulnerability-exporter]: executing diffoscope
+[2023-04-11 18:00:32] INFO root fetch - processPackages [github-vulnerability-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_vulnerability_exporter-1.5.0.tar.gz tmp/github_vulnerability_exporter-1.5.1.tar.gz --markdown 20230411/g/github-vulnerability-exporter/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-11 18:00:32] INFO root fetch - processPackages [OgreInterface]: executing diffoscope
+[2023-04-11 18:00:32] INFO root fetch - processPackages [OgreInterface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OgreInterface-1.0.8.tar.gz tmp/OgreInterface-1.0.9.tar.gz --markdown 20230411/O/OgreInterface/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 18:00:32] INFO root fetch - processPackages [biobb-vs]: executing diffoscope
+[2023-04-11 18:00:32] INFO root fetch - processPackages [biobb-vs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobb_vs-3.9.0.tar.gz tmp/biobb_vs-4.0.0.tar.gz --markdown 20230411/b/biobb-vs/3.9.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-11 18:00:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:33] INFO root fetch - processPackages [packstack]: New version: [22.0.0.0rc1] Old Version: [21.0.0.0rc1]
+[2023-04-11 18:00:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:33] INFO root fetch - processPackages [boa-framework]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-04-11 18:00:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:33] INFO root fetch - processPackages [inductiva]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-11 18:00:33] INFO root fetch - processPackages [packstack]: Downloading https://files.pythonhosted.org/packages/bf/8f/e2b1de1b4a479487263a2fe307d844245bd4fe020ddb1f85db07108500cb/packstack-21.0.0.0rc1.tar.gz
+[2023-04-11 18:00:33] INFO root fetch - processPackages [boa-framework]: Downloading https://files.pythonhosted.org/packages/14/aa/08a25237967bf39105d9efd33b2ffeb70d1fd3fc698c0dfe55bb92597496/boa-framework-0.8.3.tar.gz
+[2023-04-11 18:00:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:33] INFO root fetch - processPackages [pulumi-azure-native]: New version: [1.99.2a1681224843] Old Version: [1.99.2a1681223897]
+[2023-04-11 18:00:33] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/cb/f0/f32f42e0676ea3a0257b768aa036e081c225d93cbfbc5c5293feb36c41b7/pulumi_azure_native-1.99.2a1681223897.tar.gz
+[2023-04-11 18:00:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:33] WARNING root fetch - processPackages [boa-framework]: Skipping package: exceeds size limit 12052218>=10485760
+[2023-04-11 18:00:33] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:00:33] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 62791296>=10485760
+[2023-04-11 18:00:33] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:00:33] INFO root fetch - processPackages [strkit]: New version: [0.8.0a9] Old Version: [0.8.0a8]
+[2023-04-11 18:00:33] INFO root fetch - processPackages [bbot]: New version: [1.0.5.1612rc0] Old Version: [1.0.5.1598]
+[2023-04-11 18:00:33] INFO root fetch - processPackages [inductiva]: Downloading https://files.pythonhosted.org/packages/cb/9e/32933da2487239de9ddbdf4cffb37ece52c1543a5f284667a69f8e75f642/inductiva-0.0.5.tar.gz
+[2023-04-11 18:00:33] INFO root fetch - processPackages [regisoup]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 18:00:33] INFO root fetch - processPackages [packstack]: Downloading https://files.pythonhosted.org/packages/c5/84/f146805c1edeccdd687fb4b08462258c57d611b8d1e62edf16cb574fcfcf/packstack-22.0.0.0rc1.tar.gz
+[2023-04-11 18:00:33] INFO root fetch - processPackages [bbot]: Downloading https://files.pythonhosted.org/packages/c7/96/ae0c787e0673a66d224595eb97be7887f8a80311e5420294711381deccdb/bbot-1.0.5.1612rc0.tar.gz
+[2023-04-11 18:00:33] INFO root fetch - processPackages [regisoup]: Downloading https://files.pythonhosted.org/packages/36/80/b5ce65a1adaecbba3e326f79c58e776bba6a266a86be5d02b2e44497f167/regisoup-0.1.9.tar.gz
+[2023-04-11 18:00:33] INFO root fetch - processPackages [inductiva]: Downloading https://files.pythonhosted.org/packages/3d/0f/e57e9128e1ddd28139894399143ec8ab8a403140ec23722815672a85d09e/inductiva-0.0.6.tar.gz
+[2023-04-11 18:00:33] INFO root fetch - processPackages [packstack]: executing diffoscope
+[2023-04-11 18:00:33] INFO root fetch - processPackages [packstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packstack-21.0.0.0rc1.tar.gz tmp/packstack-22.0.0.0rc1.tar.gz --markdown 20230411/p/packstack/21.0.0.0rc1-22.0.0.0rc1/diff.md --exclude *.pyd
+[2023-04-11 18:00:34] INFO root fetch - processPackages [regisoup]: executing diffoscope
+[2023-04-11 18:00:34] INFO root fetch - processPackages [regisoup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regisoup-0.1.8.tar.gz tmp/regisoup-0.1.9.tar.gz --markdown 20230411/r/regisoup/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 18:00:34] INFO root fetch - processPackages [strkit]: executing diffoscope
+[2023-04-11 18:00:34] INFO root fetch - processPackages [strkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strkit-0.8.0a8.tar.gz tmp/strkit-0.8.0a9.tar.gz --markdown 20230411/s/strkit/0.8.0a8-0.8.0a9/diff.md --exclude *.pyd
+[2023-04-11 18:00:34] INFO root fetch - processPackages [inductiva]: executing diffoscope
+[2023-04-11 18:00:34] INFO root fetch - processPackages [inductiva]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inductiva-0.0.5.tar.gz tmp/inductiva-0.0.6.tar.gz --markdown 20230411/i/inductiva/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 18:00:34] INFO root fetch - processPackages [bbot]: executing diffoscope
+[2023-04-11 18:00:34] INFO root fetch - processPackages [bbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbot-1.0.5.1598.tar.gz tmp/bbot-1.0.5.1612rc0.tar.gz --markdown 20230411/b/bbot/1.0.5.1598-1.0.5.1612rc0/diff.md --exclude *.pyd
+[2023-04-11 18:00:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:35] INFO root fetch - processPackages [pyright-polite]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-11 18:00:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:35] INFO root fetch - processPackages [moto]: New version: [4.1.7.dev9] Old Version: [4.1.7.dev8]
+[2023-04-11 18:00:35] INFO root fetch - processPackages [pyright-polite]: Downloading https://files.pythonhosted.org/packages/e3/d5/a21c4f663d49e682240271e201301fa5b122799833c3f9ae5b3ec42f03a0/pyright_polite-1.0.5.tar.gz
+[2023-04-11 18:00:35] INFO root fetch - processPackages [moto]: executing diffoscope
+[2023-04-11 18:00:35] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-4.1.7.dev8.tar.gz tmp/moto-4.1.7.dev9.tar.gz --markdown 20230411/m/moto/4.1.7.dev8-4.1.7.dev9/diff.md --exclude *.pyd
+[2023-04-11 18:00:35] INFO root fetch - processPackages [pyright-polite]: executing diffoscope
+[2023-04-11 18:00:35] INFO root fetch - processPackages [pyright-polite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyright_polite-1.0.4.tar.gz tmp/pyright_polite-1.0.5.tar.gz --markdown 20230411/p/pyright-polite/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-11 18:00:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:36] INFO root fetch - processPackages [ecmwflibs]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-11 18:00:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:36] INFO root fetch - processPackages [ecmwflibs]: Downloading https://files.pythonhosted.org/packages/db/3d/56559bc9dc1a65a7938b841f01351e99c4884ee0f91a3d25d62d41a48f49/ecmwflibs-0.5.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 18:00:36] WARNING root fetch - processPackages [ecmwflibs]: Skipping package: exceeds size limit 76049647>=10485760
+[2023-04-11 18:00:36] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:00:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:00:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:01:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:01:08] INFO root fetch - main [MainThread]: Store serial: [17663143]
