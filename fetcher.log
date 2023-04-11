@@ -17980,3 +17980,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 18:17:28] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:17:29] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:17:29] INFO root fetch - main [MainThread]: Store serial: [17663344]
+[2023-04-11 18:22:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663344]
+[2023-04-11 18:22:36] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 18:22:37] INFO root fetch - processPackages [Biblioteca-RIT]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-11 18:22:37] INFO root fetch - processPackages [DonatelloPyzza]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-04-11 18:22:37] INFO root fetch - processPackages [dequeai]: New version: [0.698] Old Version: [0.696]
+[2023-04-11 18:22:37] INFO root fetch - processPackages [deep-agent]: New version: [0.2.dev0] Old Version: [0.1.dev0]
+[2023-04-11 18:22:37] INFO root fetch - processPackages [ckanext-datagovtheme]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 18:22:37] INFO root fetch - processPackages [deep-agent]: executing diffoscope
+[2023-04-11 18:22:37] INFO root fetch - processPackages [deep-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_agent-0.1.dev0.tar.gz tmp/deep_agent-0.2.dev0.tar.gz --markdown 20230411/d/deep-agent/0.1.dev0-0.2.dev0/diff.md --exclude *.pyd
+[2023-04-11 18:22:37] INFO root fetch - processPackages [dequeai]: Downloading https://files.pythonhosted.org/packages/74/e3/c475b1ad36995bb5e797d9cd1fcf5b84e1103de504539b50e10011f5d6d0/dequeai-0.696.tar.gz
+[2023-04-11 18:22:37] INFO root fetch - processPackages [DonatelloPyzza]: Downloading https://files.pythonhosted.org/packages/e2/dd/86ce4f447070824debf4921be0f8b16e796bfa8c5cfb0a8b8e0c1b22a764/donatellopyzza-1.6.5.tar.gz
+[2023-04-11 18:22:37] INFO root fetch - processPackages [ckanext-datagovtheme]: Downloading https://files.pythonhosted.org/packages/62/6d/3a4ed3f7a733a1547148025c513ce67cc11910c4208ef9c88fe4e720a6d8/ckanext-datagovtheme-0.1.8.tar.gz
+[2023-04-11 18:22:37] INFO root fetch - processPackages [Biblioteca-RIT]: Downloading https://files.pythonhosted.org/packages/79/46/b1ba9fbe77f3acbf003faf714e221c09dad0be5bd4f8a9ab80254486ed9a/Biblioteca_RIT-2.0.2-py3-none-any.whl
+[2023-04-11 18:22:37] INFO root fetch - processPackages [DonatelloPyzza]: executing diffoscope
+[2023-04-11 18:22:37] INFO root fetch - processPackages [DonatelloPyzza]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/donatellopyzza-1.6.4.tar.gz tmp/donatellopyzza-1.6.5.tar.gz --markdown 20230411/D/DonatelloPyzza/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-04-11 18:22:37] INFO root fetch - processPackages [Biblioteca-RIT]: executing diffoscope
+[2023-04-11 18:22:37] INFO root fetch - processPackages [Biblioteca-RIT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Biblioteca_RIT-2.0.1-py3-none-any.whl.zip tmp/Biblioteca_RIT-2.0.2-py3-none-any.whl.zip --markdown 20230411/B/Biblioteca-RIT/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-11 18:22:37] INFO root fetch - processPackages [dequeai]: Downloading https://files.pythonhosted.org/packages/57/1f/15ad3a3ad8b8d7029fdd312f41156c7d7b141b4cbdeca1eb6cea5215cf49/dequeai-0.698.tar.gz
+[2023-04-11 18:22:37] INFO root fetch - processPackages [dequeai]: executing diffoscope
+[2023-04-11 18:22:37] INFO root fetch - processPackages [dequeai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dequeai-0.696.tar.gz tmp/dequeai-0.698.tar.gz --markdown 20230411/d/dequeai/0.696-0.698/diff.md --exclude *.pyd
+[2023-04-11 18:22:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:38] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 18:22:38] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-04-11 18:22:38] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 18:22:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:38] INFO root fetch - processPackages [unravel-python]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-04-11 18:22:38] WARNING root fetch - processPackages [odoo-addon-purchase-quick]: Skipping, unable to determine old version
+[2023-04-11 18:22:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:22:38] INFO root fetch - processPackages [bioat]: New version: [0.1.5.2] Old Version: [0.1.5.1]
+[2023-04-11 18:22:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:38] INFO root fetch - processPackages [cornflakes]: New version: [3.2.3] Old Version: [3.2.2]
+[2023-04-11 18:22:38] INFO root fetch - processPackages [bioat]: Downloading https://files.pythonhosted.org/packages/a5/46/b97a04d66ec4cc4f0c3891e41487b4f2bad326bee9d390073e0ab03b267a/bioat-0.1.5.1.tar.gz
+[2023-04-11 18:22:38] INFO root fetch - processPackages [unravel-python]: Downloading https://files.pythonhosted.org/packages/ae/f2/c6ef086fbb785eab628224f7806cc5bfffc66809b8bf0fbda0c221b00191/unravel-python-1.1.9.tar.gz
+[2023-04-11 18:22:39] INFO root fetch - processPackages [bioat]: Downloading https://files.pythonhosted.org/packages/11/9a/b310cde7dc5c59e9c973c6332564df405216db664eb25522fb363ee34921/bioat-0.1.5.2.tar.gz
+[2023-04-11 18:22:39] INFO root fetch - processPackages [bioat]: executing diffoscope
+[2023-04-11 18:22:39] INFO root fetch - processPackages [bioat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioat-0.1.5.1.tar.gz tmp/bioat-0.1.5.2.tar.gz --markdown 20230411/b/bioat/0.1.5.1-0.1.5.2/diff.md --exclude *.pyd
+[2023-04-11 18:22:39] INFO root fetch - processPackages [unravel-python]: Downloading https://files.pythonhosted.org/packages/84/5d/d477eff02b6825441cb5f8363924ddf0ca36f756bc553ff81040fbe555f4/unravel-python-1.2.0.tar.gz
+[2023-04-11 18:22:39] INFO root fetch - processPackages [cornflakes]: Downloading https://files.pythonhosted.org/packages/9d/f9/7005e188dc7614056f1b5d16d452e2479e826528b716d613d55cb1048cd7/cornflakes-3.2.3.tar.gz
+[2023-04-11 18:22:39] INFO root fetch - processPackages [unravel-python]: executing diffoscope
+[2023-04-11 18:22:39] INFO root fetch - processPackages [unravel-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unravel-python-1.1.9.tar.gz tmp/unravel-python-1.2.0.tar.gz --markdown 20230411/u/unravel-python/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-04-11 18:22:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:39] INFO root fetch - processPackages [cornflakes]: executing diffoscope
+[2023-04-11 18:22:39] INFO root fetch - processPackages [cornflakes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cornflakes-3.2.2.tar.gz tmp/cornflakes-3.2.3.tar.gz --markdown 20230411/c/cornflakes/3.2.2-3.2.3/diff.md --exclude *.pyd
+[2023-04-11 18:22:39] INFO root fetch - processPackages [dequeai]: New version: [0.698] Old Version: [0.696]
+[2023-04-11 18:22:39] INFO root fetch - processPackages [dequeai]: executing diffoscope
+[2023-04-11 18:22:39] INFO root fetch - processPackages [dequeai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dequeai-0.696.tar.gz tmp/dequeai-0.698.tar.gz --markdown 20230411/d/dequeai/0.696-0.698/diff.md --exclude *.pyd
+[2023-04-11 18:22:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:40] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-11 18:22:40] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-11 18:22:40] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.8.tar.gz tmp/nudecrawler-0.3.9.tar.gz --markdown 20230411/n/nudecrawler/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-11 18:22:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:40] INFO root fetch - processPackages [ckanext-datagovtheme]: Downloading https://files.pythonhosted.org/packages/60/0c/5c43260e7e756113f3dddece7ef140728cc853794f4594c62c7db95936e7/ckanext-datagovtheme-0.1.9.tar.gz
+[2023-04-11 18:22:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:43] INFO root fetch - processPackages [ckanext-datagovtheme]: executing diffoscope
+[2023-04-11 18:22:43] INFO root fetch - processPackages [ckanext-datagovtheme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-datagovtheme-0.1.8.tar.gz tmp/ckanext-datagovtheme-0.1.9.tar.gz --markdown 20230411/c/ckanext-datagovtheme/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 18:22:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:22:51] INFO root fetch - main [MainThread]: Store serial: [17663380]
