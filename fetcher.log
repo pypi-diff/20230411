@@ -13547,3 +13547,90 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 13:55:58] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:56:05] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:56:05] INFO root fetch - main [MainThread]: Store serial: [17660081]
+[2023-04-11 14:01:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17660081]
+[2023-04-11 14:01:13] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-11 14:01:13] INFO root fetch - processPackages [macrometa-target-bigquery]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 14:01:13] INFO root fetch - processPackages [pyskani]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 14:01:13] INFO root fetch - processPackages [auto-pypi-uploader]: New version: [1.1.1.1] Old Version: [1.1.1]
+[2023-04-11 14:01:13] INFO root fetch - processPackages [antchain-fairopennet]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-11 14:01:13] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 14:01:13] INFO root fetch - processPackages [macrometa-target-bigquery]: Downloading https://files.pythonhosted.org/packages/68/bc/8c05f2e9da6512b4af5dfcb2d03c8e9e3dd4b0f5490b88be9b3e795db901/macrometa-target-bigquery-0.0.3.tar.gz
+[2023-04-11 14:01:13] INFO root fetch - processPackages [pyskani]: Downloading https://files.pythonhosted.org/packages/6c/2b/e7e17ab843a0cc69b67f16414578848ce430813568e785bc38c1bc7581b7/pyskani-0.1.0.tar.gz
+[2023-04-11 14:01:13] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-11 14:01:13] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230411/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 14:01:13] INFO root fetch - processPackages [auto-pypi-uploader]: Downloading https://files.pythonhosted.org/packages/e5/89/fd15535e224ade5f83b9f4749f36ec8fcce7e8825b6be0be30eca43b0a99/auto_pypi_uploader-1.1.1.tar.gz
+[2023-04-11 14:01:13] INFO root fetch - processPackages [antchain-fairopennet]: Downloading https://files.pythonhosted.org/packages/1d/5b/27752cb1f2a44817bea0af34a5011818107c302bbacd299caec4a37130ff/antchain_fairopennet-1.0.3.tar.gz
+[2023-04-11 14:01:13] INFO root fetch - processPackages [macrometa-target-bigquery]: Downloading https://files.pythonhosted.org/packages/02/8f/69dee1dc2192bb5e9b7ca2ab47342a276f7691889e53c536e086a7d2340b/macrometa-target-bigquery-0.0.4.tar.gz
+[2023-04-11 14:01:13] INFO root fetch - processPackages [antchain-fairopennet]: Downloading https://files.pythonhosted.org/packages/65/2b/ed5d8d7059ead80c45fdbc95e7c35da4ff63550aa3b4de01273d782b968f/antchain_fairopennet-1.0.4.tar.gz
+[2023-04-11 14:01:13] INFO root fetch - processPackages [auto-pypi-uploader]: Downloading https://files.pythonhosted.org/packages/94/03/657d7209574cb4f569f76334ad796eb678710c2507c339cc31c804839817/auto_pypi_uploader-1.1.1.1.tar.gz
+[2023-04-11 14:01:13] INFO root fetch - processPackages [macrometa-target-bigquery]: executing diffoscope
+[2023-04-11 14:01:13] INFO root fetch - processPackages [macrometa-target-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-bigquery-0.0.3.tar.gz tmp/macrometa-target-bigquery-0.0.4.tar.gz --markdown 20230411/m/macrometa-target-bigquery/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 14:01:13] INFO root fetch - processPackages [pyskani]: Downloading https://files.pythonhosted.org/packages/66/b8/1810706d553d388a676cad1e7ecbaa3b5bbb929ad85fde2286c99bab2835/pyskani-0.1.1.tar.gz
+[2023-04-11 14:01:14] INFO root fetch - processPackages [antchain-fairopennet]: executing diffoscope
+[2023-04-11 14:01:14] INFO root fetch - processPackages [antchain-fairopennet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_fairopennet-1.0.3.tar.gz tmp/antchain_fairopennet-1.0.4.tar.gz --markdown 20230411/a/antchain-fairopennet/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-11 14:01:14] INFO root fetch - processPackages [auto-pypi-uploader]: executing diffoscope
+[2023-04-11 14:01:14] INFO root fetch - processPackages [auto-pypi-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_pypi_uploader-1.1.1.tar.gz tmp/auto_pypi_uploader-1.1.1.1.tar.gz --markdown 20230411/a/auto-pypi-uploader/1.1.1-1.1.1.1/diff.md --exclude *.pyd
+[2023-04-11 14:01:14] INFO root fetch - processPackages [pyskani]: executing diffoscope
+[2023-04-11 14:01:14] INFO root fetch - processPackages [pyskani]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyskani-0.1.0.tar.gz tmp/pyskani-0.1.1.tar.gz --markdown 20230411/p/pyskani/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 14:01:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:14] WARNING root fetch - processPackages [simplerabbit]: Skipping, unable to determine old version
+[2023-04-11 14:01:14] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:01:14] INFO root fetch - processPackages [macrometa-source-bigquery]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 14:01:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:15] INFO root fetch - processPackages [django-components]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-11 14:01:15] INFO root fetch - processPackages [macrometa-source-bigquery]: Downloading https://files.pythonhosted.org/packages/7e/66/c235a1cd533908f2edac0e4d0511bed2089d03ae9c5041f2099f6a896885/macrometa-source-bigquery-0.0.8.tar.gz
+[2023-04-11 14:01:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:15] WARNING root fetch - processPackages [odoo14-addon-product-variant-configurator-manual-creation]: Skipping, unable to determine old version
+[2023-04-11 14:01:15] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:01:15] INFO root fetch - processPackages [RuSocSci]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-11 14:01:15] INFO root fetch - processPackages [django-components]: Downloading https://files.pythonhosted.org/packages/d9/a9/0e17dfb6bc2c9ffafac974b36a0078d0df2730d82373e45392b15ca26fe1/django_components-0.9.1.tar.gz
+[2023-04-11 14:01:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:15] INFO root fetch - processPackages [atomicshop]: New version: [1.7.0] Old Version: [1.6.9]
+[2023-04-11 14:01:15] INFO root fetch - processPackages [RuSocSci]: Downloading https://files.pythonhosted.org/packages/f8/c0/3ef789cda4b3c30086bede93773049885565746cbd1a7e7ff35670bbf7b4/RuSocSci-0.9.0-py2.py3-none-any.whl
+[2023-04-11 14:01:15] INFO root fetch - processPackages [macrometa-source-bigquery]: Downloading https://files.pythonhosted.org/packages/af/fa/3ef99a2aa85c6350305cb6913216f9f253824112a62dc842e960f33863bd/macrometa-source-bigquery-0.0.9.tar.gz
+[2023-04-11 14:01:15] INFO root fetch - processPackages [atomicshop]: Downloading https://files.pythonhosted.org/packages/13/2b/62916203dccbacbb688655587a116197bc6ffabaeb93fe8a0a22b5f57044/atomicshop-1.7.0-py3-none-any.whl
+[2023-04-11 14:01:15] INFO root fetch - processPackages [macrometa-source-bigquery]: executing diffoscope
+[2023-04-11 14:01:15] INFO root fetch - processPackages [macrometa-source-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-bigquery-0.0.8.tar.gz tmp/macrometa-source-bigquery-0.0.9.tar.gz --markdown 20230411/m/macrometa-source-bigquery/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 14:01:15] INFO root fetch - processPackages [atomicshop]: executing diffoscope
+[2023-04-11 14:01:15] INFO root fetch - processPackages [atomicshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomicshop-1.6.9-py3-none-any.whl.zip tmp/atomicshop-1.7.0-py3-none-any.whl.zip --markdown 20230411/a/atomicshop/1.6.9-1.7.0/diff.md --exclude *.pyd
+[2023-04-11 14:01:15] INFO root fetch - processPackages [django-components]: Downloading https://files.pythonhosted.org/packages/01/b6/7465ad9480fe781bc5c56d355a7b96cc21758c50d747830e87dcac29a4db/django_components-0.9.2.tar.gz
+[2023-04-11 14:01:15] INFO root fetch - processPackages [RuSocSci]: Downloading https://files.pythonhosted.org/packages/bc/45/cad91c2e8bd5d092e8536552fe3d9c7558f0ed405c1b1720e91516c108ac/RuSocSci-0.9.1-py2.py3-none-any.whl
+[2023-04-11 14:01:16] INFO root fetch - processPackages [RuSocSci]: executing diffoscope
+[2023-04-11 14:01:16] INFO root fetch - processPackages [RuSocSci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RuSocSci-0.9.0-py2.py3-none-any.whl.zip tmp/RuSocSci-0.9.1-py2.py3-none-any.whl.zip --markdown 20230411/R/RuSocSci/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-11 14:01:16] INFO root fetch - processPackages [django-components]: executing diffoscope
+[2023-04-11 14:01:16] INFO root fetch - processPackages [django-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_components-0.9.1.tar.gz tmp/django_components-0.9.2.tar.gz --markdown 20230411/d/django-components/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-11 14:01:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:16] INFO root fetch - processPackages [text-mods]: New version: [1.30] Old Version: [1.22]
+[2023-04-11 14:01:17] INFO root fetch - processPackages [text-mods]: Downloading https://files.pythonhosted.org/packages/ed/e5/c56c90e0e21d4d4b3151df6475574b282fd2cd49e9062e2e19dfb00fff11/text_mods-1.22.tar.gz
+[2023-04-11 14:01:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:17] INFO root fetch - processPackages [auto-pypi-uploader]: New version: [1.1.1.1] Old Version: [1.1.1]
+[2023-04-11 14:01:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:17] INFO root fetch - processPackages [auto-pypi-uploader]: executing diffoscope
+[2023-04-11 14:01:17] INFO root fetch - processPackages [auto-pypi-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_pypi_uploader-1.1.1.tar.gz tmp/auto_pypi_uploader-1.1.1.1.tar.gz --markdown 20230411/a/auto-pypi-uploader/1.1.1-1.1.1.1/diff.md --exclude *.pyd
+[2023-04-11 14:01:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:17] INFO root fetch - processPackages [tuxsuite]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-11 14:01:17] INFO root fetch - processPackages [text-mods]: Downloading https://files.pythonhosted.org/packages/89/50/65cf7803e471e4ab53edaa10189eb9b11695dff814b9ee7377a3e7f6ac5f/text_mods-1.30.tar.gz
+[2023-04-11 14:01:17] INFO root fetch - processPackages [fisx]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-04-11 14:01:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:17] INFO root fetch - processPackages [tuxsuite]: Downloading https://files.pythonhosted.org/packages/27/14/f25c40bc531aff32551c08e4d9c8b6894d4749d5ad96f37b58cc307cfb29/tuxsuite-1.8.0.tar.gz
+[2023-04-11 14:01:17] WARNING root fetch - processPackages [ecstacy]: Skipping, unable to determine old version
+[2023-04-11 14:01:17] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:01:17] INFO root fetch - processPackages [ldap2pg]: New version: [5.9] Old Version: [5.8]
+[2023-04-11 14:01:17] INFO root fetch - processPackages [text-mods]: executing diffoscope
+[2023-04-11 14:01:17] INFO root fetch - processPackages [text-mods]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text_mods-1.22.tar.gz tmp/text_mods-1.30.tar.gz --markdown 20230411/t/text-mods/1.22-1.30/diff.md --exclude *.pyd
+[2023-04-11 14:01:17] INFO root fetch - processPackages [fisx]: Downloading https://files.pythonhosted.org/packages/d9/db/164fc6fad0bad203e9dffb16b2922ca93379b4cbc424f5b5c00b3a70e901/fisx-1.2.1.tar.gz
+[2023-04-11 14:01:17] INFO root fetch - processPackages [ldap2pg]: Downloading https://files.pythonhosted.org/packages/f8/0a/6b3c67e8854f3b80b3b856e2a74ec1ecb94f5047a10a55b85a055c970afb/ldap2pg-5.8.tar.gz
+[2023-04-11 14:01:17] INFO root fetch - processPackages [tuxsuite]: Downloading https://files.pythonhosted.org/packages/4d/5e/8be806f24d5782026eef566b71100557104f363339b8917671132eadf1ea/tuxsuite-1.9.0.tar.gz
+[2023-04-11 14:01:17] INFO root fetch - processPackages [ldap2pg]: Downloading https://files.pythonhosted.org/packages/12/3a/168db93a4cbd03b6b9058c3103343480ad68dd14e763579c0fee3807c5fc/ldap2pg-5.9.tar.gz
+[2023-04-11 14:01:18] INFO root fetch - processPackages [tuxsuite]: executing diffoscope
+[2023-04-11 14:01:18] INFO root fetch - processPackages [tuxsuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tuxsuite-1.8.0.tar.gz tmp/tuxsuite-1.9.0.tar.gz --markdown 20230411/t/tuxsuite/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 14:01:18] INFO root fetch - processPackages [ldap2pg]: executing diffoscope
+[2023-04-11 14:01:18] INFO root fetch - processPackages [ldap2pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldap2pg-5.8.tar.gz tmp/ldap2pg-5.9.tar.gz --markdown 20230411/l/ldap2pg/5.8-5.9/diff.md --exclude *.pyd
+[2023-04-11 14:01:18] INFO root fetch - processPackages [fisx]: Downloading https://files.pythonhosted.org/packages/63/d0/301414938b97af0ebdff79cac5005804ca080d441a4d2318fa6b1da194d8/fisx-1.3.0-cp38-cp38-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl
+[2023-04-11 14:01:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:19] WARNING root fetch - processPackages [fisx]: Skipping package: exceeds size limit 12916725>=10485760
+[2023-04-11 14:01:19] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:01:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:01:20] INFO root fetch - main [MainThread]: Store serial: [17660194]
