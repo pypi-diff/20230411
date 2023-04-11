@@ -7445,3 +7445,153 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-11 07:05:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:07:44] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:07:44] INFO root fetch - main [MainThread]: Store serial: [17656346]
+[2023-04-11 07:12:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656346]
+[2023-04-11 07:12:57] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 07:12:57] INFO root fetch - processPackages [promsoft-cdek-interface]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 07:12:57] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: New version: [15.0.1.0.0.9] Old Version: [15.0.1.0.0.8]
+[2023-04-11 07:12:57] INFO root fetch - processPackages [tvault]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-11 07:12:57] INFO root fetch - processPackages [cm-two]: New version: [2.2.63] Old Version: [2.2.62]
+[2023-04-11 07:12:57] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202304110509] Old Version: [0.4.3.dev202304100509]
+[2023-04-11 07:12:57] INFO root fetch - processPackages [promsoft-cdek-interface]: Downloading https://files.pythonhosted.org/packages/2b/84/4ed966f01bcd623d9909f2add7ba0748043bb22de530d06665fbcf5ecdf2/promsoft_cdek_interface-0.1.1.tar.gz
+[2023-04-11 07:12:57] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: Downloading https://files.pythonhosted.org/packages/b1/0a/46837fa1fe2a0547045430f43669d5f65b452868630ff3f0643d7eda6d43/odoo_addon_l10n_fr_ecotaxe-15.0.1.0.0.8-py3-none-any.whl
+[2023-04-11 07:12:57] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/04/53/9497214daa99fcfe4eb8d0c8d1b2fab67c8df0de0bfed2d4a0813188cb1e/tflite-model-maker-nightly-0.4.3.dev202304100509.tar.gz
+[2023-04-11 07:12:57] INFO root fetch - processPackages [cm-two]: Downloading https://files.pythonhosted.org/packages/f8/d5/7c626519d1d1e9fc550170d7884dba3fc6323af88787f5da3acf078cda42/cm_two-2.2.63-py3-none-any.whl
+[2023-04-11 07:12:57] INFO root fetch - processPackages [promsoft-cdek-interface]: Downloading https://files.pythonhosted.org/packages/59/19/bc1d924f6566916682a592ff6a1ebb9e83f8707c18c1d92d0a4743ad51da/promsoft_cdek_interface-0.1.2.tar.gz
+[2023-04-11 07:12:57] INFO root fetch - processPackages [cm-two]: executing diffoscope
+[2023-04-11 07:12:57] INFO root fetch - processPackages [cm-two]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cm_two-2.2.62-py3-none-any.whl.zip tmp/cm_two-2.2.63-py3-none-any.whl.zip --markdown 20230411/c/cm-two/2.2.62-2.2.63/diff.md --exclude *.pyd
+[2023-04-11 07:12:57] INFO root fetch - processPackages [promsoft-cdek-interface]: executing diffoscope
+[2023-04-11 07:12:57] INFO root fetch - processPackages [promsoft-cdek-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promsoft_cdek_interface-0.1.1.tar.gz tmp/promsoft_cdek_interface-0.1.2.tar.gz --markdown 20230411/p/promsoft-cdek-interface/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 07:12:57] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-11 07:12:57] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.2.8-py3-none-any.whl.zip tmp/tvault-0.2.9-py3-none-any.whl.zip --markdown 20230411/t/tvault/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-11 07:12:58] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: Downloading https://files.pythonhosted.org/packages/0b/e4/5f522e94c6f51960cdeaa6255c79bc12db3f6893b1d47c58a82186e4b5d6/odoo_addon_l10n_fr_ecotaxe-15.0.1.0.0.9-py3-none-any.whl
+[2023-04-11 07:12:58] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: executing diffoscope
+[2023-04-11 07:12:58] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_fr_ecotaxe-15.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_l10n_fr_ecotaxe-15.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-l10n-fr-ecotaxe/15.0.1.0.0.8-15.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-11 07:12:58] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/fd/71/1bea458e05411b3e964598b51518df4f503e054c46e2f946d98735225f59/tflite-model-maker-nightly-0.4.3.dev202304110509.tar.gz
+[2023-04-11 07:12:58] ERROR root fetch - processPackages [cm-two]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+[2023-04-11 07:12:58] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:12:58] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1411] Old Version: [0.20230407.1511]
+[2023-04-11 07:12:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:12:58] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-04-11 07:12:58] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202304100509.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202304110509.tar.gz --markdown 20230411/t/tflite-model-maker-nightly/0.4.3.dev202304100509-0.4.3.dev202304110509/diff.md --exclude *.pyd
+[2023-04-11 07:12:58] INFO root fetch - processPackages [macrostrat-database]: New version: [2.0.0.dev3] Old Version: [2.0.0.dev2]
+[2023-04-11 07:12:59] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/ff/a3/faa0577b2010a7c21947396acc32c047e799846cc39f7087856ea7d11efc/krutils-0.20230407.1511.tar.gz
+[2023-04-11 07:12:59] INFO root fetch - processPackages [macrostrat-database]: Downloading https://files.pythonhosted.org/packages/70/37/c075f6ec234c9b425715265535620f219a7c80d1f9f9c2247b59beae6c5f/macrostrat_database-2.0.0.dev2.tar.gz
+[2023-04-11 07:12:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:12:59] INFO root fetch - processPackages [macrostrat-dinosaur]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-11 07:12:59] INFO root fetch - processPackages [macrostrat-dinosaur]: Downloading https://files.pythonhosted.org/packages/e6/42/e6793151aeda6b0f3fdc9884c4294b063179816a12327ecf08e1fa7f8617/macrostrat.dinosaur-0.1.0.tar.gz
+[2023-04-11 07:12:59] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/19/06/9652417fce8d6d1dfc3e1ab5c62d1f5f1e49a8994ac678074ff81564a972/krutils-0.20230411.1411.tar.gz
+[2023-04-11 07:12:59] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 07:12:59] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230407.1511.tar.gz tmp/krutils-0.20230411.1411.tar.gz --markdown 20230411/k/krutils/0.20230407.1511-0.20230411.1411/diff.md --exclude *.pyd
+[2023-04-11 07:12:59] INFO root fetch - processPackages [macrostrat-database]: Downloading https://files.pythonhosted.org/packages/f4/87/e96c2f060c183b9edae2ad703b984d5c5ba8d2ad519162769723a0a1c034/macrostrat_database-2.0.0.dev3.tar.gz
+[2023-04-11 07:12:59] INFO root fetch - processPackages [macrostrat-dinosaur]: Downloading https://files.pythonhosted.org/packages/93/66/2ba68f93a4f150e652e6dc0017cb7e31d5e253c1c52e5bfb7592eb569c94/macrostrat_dinosaur-1.0.0.tar.gz
+[2023-04-11 07:12:59] INFO root fetch - processPackages [macrostrat-database]: executing diffoscope
+[2023-04-11 07:12:59] INFO root fetch - processPackages [macrostrat-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrostrat_database-2.0.0.dev2.tar.gz tmp/macrostrat_database-2.0.0.dev3.tar.gz --markdown 20230411/m/macrostrat-database/2.0.0.dev2-2.0.0.dev3/diff.md --exclude *.pyd
+[2023-04-11 07:12:59] INFO root fetch - processPackages [macrostrat-dinosaur]: executing diffoscope
+[2023-04-11 07:12:59] INFO root fetch - processPackages [macrostrat-dinosaur]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrostrat.dinosaur-0.1.0.tar.gz tmp/macrostrat_dinosaur-1.0.0.tar.gz --markdown 20230411/m/macrostrat-dinosaur/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-11 07:12:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:13:00] INFO root fetch - processPackages [pysen]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-11 07:13:00] INFO root fetch - processPackages [pysen]: Downloading https://files.pythonhosted.org/packages/79/2c/5122ff5388f3ea5cd0f21eb3688f9e49060e893f7dcc5369e67d55b60e3f/pysen-0.9.0.tar.gz
+[2023-04-11 07:13:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:13:00] INFO root fetch - processPackages [pysen]: Downloading https://files.pythonhosted.org/packages/ed/72/9691844926aedbbd67d2dd8ae9ded34145c039088d5d7b93cc0f9e502ce3/pysen-0.9.1.tar.gz
+[2023-04-11 07:13:00] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.0.9.dev20230323] Old Version: [0.0.9.dev20230322]
+[2023-04-11 07:13:00] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-04-11 07:13:00] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.0.9.dev20230322.tar.gz tmp/rapidpe_rift_pipe-0.0.9.dev20230323.tar.gz --markdown 20230411/r/rapidpe-rift-pipe/0.0.9.dev20230322-0.0.9.dev20230323/diff.md --exclude *.pyd
+[2023-04-11 07:13:00] INFO root fetch - processPackages [pysen]: executing diffoscope
+[2023-04-11 07:13:00] INFO root fetch - processPackages [pysen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysen-0.9.0.tar.gz tmp/pysen-0.9.1.tar.gz --markdown 20230411/p/pysen/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-11 07:13:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:13:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:13:01] INFO root fetch - processPackages [aliyun-python-sdk-alb]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 07:13:01] INFO root fetch - processPackages [aliyun-python-sdk-alb]: Downloading https://files.pythonhosted.org/packages/9f/00/da6eca27d9a4f2d5745ca29bbee68eba9f691ba582ecc1ee664ed8a2259b/aliyun-python-sdk-alb-1.0.8.tar.gz
+[2023-04-11 07:13:01] INFO root fetch - processPackages [aliyun-python-sdk-alb]: Downloading https://files.pythonhosted.org/packages/1b/d8/6158a4c184cde3c6e0ca4fca5699436bf34c37ce6b6f642d158e36f23c24/aliyun-python-sdk-alb-1.0.9.tar.gz
+[2023-04-11 07:13:01] INFO root fetch - processPackages [aliyun-python-sdk-alb]: executing diffoscope
+[2023-04-11 07:13:01] INFO root fetch - processPackages [aliyun-python-sdk-alb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-alb-1.0.8.tar.gz tmp/aliyun-python-sdk-alb-1.0.9.tar.gz --markdown 20230411/a/aliyun-python-sdk-alb/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 07:13:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:13:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:13:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:13:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:13:03] INFO root fetch - main [MainThread]: Store serial: [17656377]
