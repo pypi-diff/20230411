@@ -4376,3 +4376,28 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 04:30:03] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:30:04] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:30:04] INFO root fetch - main [MainThread]: Store serial: [17654223]
+[2023-04-11 04:35:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17654223]
+[2023-04-11 04:35:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-11 04:35:13] WARNING root fetch - processPackages [sunghyuk]: Skipping, unable to determine old version
+[2023-04-11 04:35:13] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:35:13] WARNING root fetch - processPackages [yejin230411]: Skipping, unable to determine old version
+[2023-04-11 04:35:13] INFO root fetch - processPackages [mediaify]: New version: [1.0.0] Old Version: [0.0.4]
+[2023-04-11 04:35:13] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:35:13] WARNING root fetch - processPackages [dss06023calc2]: Skipping, unable to determine old version
+[2023-04-11 04:35:13] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:35:13] INFO root fetch - processPackages [smithed-libraries]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-04-11 04:35:13] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.4] Old Version: [1.2.5.2]
+[2023-04-11 04:35:13] INFO root fetch - processPackages [pcl-pangu]: Downloading https://files.pythonhosted.org/packages/42/b2/d5e2d2570c69e457f9d95b2960e759801bb3fb3b25fbfc7fd920cf5d3c6a/pcl_pangu-1.2.5.2.tar.gz
+[2023-04-11 04:35:13] INFO root fetch - processPackages [smithed-libraries]: Downloading https://files.pythonhosted.org/packages/6a/d0/cb752aee51afdafda02bf5d6bf1d6cb44db24d80ed174b725b41adaaa119/smithed_libraries-0.5.0.tar.gz
+[2023-04-11 04:35:13] INFO root fetch - processPackages [smithed-libraries]: executing diffoscope
+[2023-04-11 04:35:13] INFO root fetch - processPackages [smithed-libraries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smithed_libraries-0.4.1.tar.gz tmp/smithed_libraries-0.5.0.tar.gz --markdown 20230411/s/smithed-libraries/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 04:35:13] INFO root fetch - processPackages [mediaify]: Downloading https://files.pythonhosted.org/packages/6f/85/23d4bd803c0df65f705f08d346cc49c559105d609d876528835fc126859d/mediaify-1.0.0.tar.gz
+[2023-04-11 04:35:13] INFO root fetch - processPackages [mediaify]: executing diffoscope
+[2023-04-11 04:35:13] INFO root fetch - processPackages [mediaify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mediaify-0.0.4.tar.gz tmp/mediaify-1.0.0.tar.gz --markdown 20230411/m/mediaify/0.0.4-1.0.0/diff.md --exclude *.pyd
+[2023-04-11 04:35:14] INFO root fetch - processPackages [pcl-pangu]: Downloading https://files.pythonhosted.org/packages/39/85/e4dc85a423fde9d9a63c9c8613ea667c6343d28a51a95f12ca68014e69af/pcl_pangu-1.2.5.4.tar.gz
+[2023-04-11 04:35:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:35:16] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-11 04:35:16] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.2.tar.gz tmp/pcl_pangu-1.2.5.4.tar.gz --markdown 20230411/p/pcl-pangu/1.2.5.2-1.2.5.4/diff.md --exclude *.pyd
+[2023-04-11 04:35:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:35:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:35:25] INFO root fetch - main [MainThread]: Store serial: [17654245]
