@@ -6908,3 +6908,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-11 06:10:19] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:10:20] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:10:20] INFO root fetch - main [MainThread]: Store serial: [17655887]
+[2023-04-11 06:15:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17655887]
+[2023-04-11 06:15:27] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-11 06:15:27] WARNING root fetch - processPackages [doro0001]: Skipping, unable to determine old version
+[2023-04-11 06:15:27] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:15:27] WARNING root fetch - processPackages [pydisort]: Skipping, unable to determine old version
+[2023-04-11 06:15:27] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:15:27] INFO root fetch - processPackages [orb-billing]: New version: [1.2.0] Old Version: [0.1.0]
+[2023-04-11 06:15:27] WARNING root fetch - processPackages [kimsehyeon]: Skipping, unable to determine old version
+[2023-04-11 06:15:27] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:15:27] INFO root fetch - processPackages [bigbucks-port]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-04-11 06:15:27] INFO root fetch - processPackages [policyengine-us]: New version: [0.284.0] Old Version: [0.283.0]
+[2023-04-11 06:15:27] INFO root fetch - processPackages [web3toolz]: New version: [0.8] Old Version: [0.7]
+[2023-04-11 06:15:27] INFO root fetch - processPackages [django-accounts-api]: New version: [0.2.0a1] Old Version: [0.2.0]
+[2023-04-11 06:15:28] INFO root fetch - processPackages [orb-billing]: Downloading https://files.pythonhosted.org/packages/87/f3/08687f77e5a4b6456d47f7359bdba99a1cac556011f17c1e6ce26a9a3baf/orb-billing-0.1.0.tar.gz
+[2023-04-11 06:15:28] INFO root fetch - processPackages [django-accounts-api]: Downloading https://files.pythonhosted.org/packages/10/13/1e100edeb5dfaa72f48e84933afc140070cfe9a8ed06a9b608801817755e/django_accounts_api-0.2.0.tar.gz
+[2023-04-11 06:15:28] INFO root fetch - processPackages [bigbucks-port]: Downloading https://files.pythonhosted.org/packages/1b/07/b223833e4d2fda105edba4a5c4f16b7983a7e103bb369ec6e6eb19b00ab3/bigbucks_port-0.0.7.tar.gz
+[2023-04-11 06:15:28] INFO root fetch - processPackages [web3toolz]: Downloading https://files.pythonhosted.org/packages/8f/1a/d54a418cbdacebde06a42122c54c18fe66adcc1694bcac65a930e7b0868f/web3toolz-0.7.tar.gz
+[2023-04-11 06:15:28] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/24/96/5a3c6ebdddbf22d27b04711d1d143072f7b96d48a6490715f40d0d8ef9d2/policyengine-us-0.283.0.tar.gz
+[2023-04-11 06:15:28] INFO root fetch - processPackages [bigbucks-port]: executing diffoscope
+[2023-04-11 06:15:28] INFO root fetch - processPackages [bigbucks-port]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigbucks_port-0.0.5.tar.gz tmp/bigbucks_port-0.0.7.tar.gz --markdown 20230411/b/bigbucks-port/0.0.5-0.0.7/diff.md --exclude *.pyd
+[2023-04-11 06:15:28] INFO root fetch - processPackages [django-accounts-api]: Downloading https://files.pythonhosted.org/packages/e5/54/4dbfac281895b9083e5593fa7fbc18c9e9fef387f824b2e21d0dccafd469/django_accounts_api-0.2.0a1.tar.gz
+[2023-04-11 06:15:28] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/16/a1/930d29edba23d8ff5f621ec37859b1a8b2df5e72b0a0c9d87f6a67dc0f43/policyengine-us-0.284.0.tar.gz
+[2023-04-11 06:15:28] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-11 06:15:28] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.283.0.tar.gz tmp/policyengine-us-0.284.0.tar.gz --markdown 20230411/p/policyengine-us/0.283.0-0.284.0/diff.md --exclude *.pyd
+[2023-04-11 06:15:28] INFO root fetch - processPackages [web3toolz]: Downloading https://files.pythonhosted.org/packages/1f/22/8788de74793d3f4da61816e3f505db211d97592263f3f1092f66df8501cb/web3toolz-0.8-py3-none-any.whl
+[2023-04-11 06:15:28] INFO root fetch - processPackages [orb-billing]: Downloading https://files.pythonhosted.org/packages/1a/16/86db32fce195d8e4dc9278bde16ddb94c1661295c690ac74cb06bffcefbd/orb-billing-1.2.0.tar.gz
+[2023-04-11 06:15:28] INFO root fetch - processPackages [web3toolz]: executing diffoscope
+[2023-04-11 06:15:28] INFO root fetch - processPackages [web3toolz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web3toolz-0.7.tar.gz tmp/web3toolz-0.8-py3-none-any.whl.zip --markdown 20230411/w/web3toolz/0.7-0.8/diff.md --exclude *.pyd
+[2023-04-11 06:15:28] INFO root fetch - processPackages [django-accounts-api]: executing diffoscope
+[2023-04-11 06:15:28] INFO root fetch - processPackages [django-accounts-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_accounts_api-0.2.0.tar.gz tmp/django_accounts_api-0.2.0a1.tar.gz --markdown 20230411/d/django-accounts-api/0.2.0-0.2.0a1/diff.md --exclude *.pyd
+[2023-04-11 06:15:28] INFO root fetch - processPackages [orb-billing]: executing diffoscope
+[2023-04-11 06:15:28] INFO root fetch - processPackages [orb-billing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orb-billing-0.1.0.tar.gz tmp/orb-billing-1.2.0.tar.gz --markdown 20230411/o/orb-billing/0.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-11 06:15:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:15:29] INFO root fetch - processPackages [policyengine-us]: New version: [0.284.0] Old Version: [0.283.0]
+[2023-04-11 06:15:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:15:29] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: New version: [3.0.99] Old Version: [3.0.98]
+[2023-04-11 06:15:29] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-11 06:15:29] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.283.0.tar.gz tmp/policyengine-us-0.284.0.tar.gz --markdown 20230411/p/policyengine-us/0.283.0-0.284.0/diff.md --exclude *.pyd
+[2023-04-11 06:15:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:15:29] WARNING root fetch - processPackages [hyorinn]: Skipping, unable to determine old version
+[2023-04-11 06:15:29] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:15:29] INFO root fetch - processPackages [seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-11 06:15:30] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: executing diffoscope
+[2023-04-11 06:15:30] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz tmp/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz --markdown 20230411/t/tencentcloud-sdk-python-intl-en/3.0.98-3.0.99/diff.md --exclude *.pyd
+[2023-04-11 06:15:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:15:30] INFO root fetch - processPackages [pywmataio]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-11 06:15:30] INFO root fetch - processPackages [seleniumbase]: executing diffoscope
+[2023-04-11 06:15:30] INFO root fetch - processPackages [seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seleniumbase-4.9.8.tar.gz tmp/seleniumbase-4.9.9.tar.gz --markdown 20230411/s/seleniumbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-11 06:15:30] INFO root fetch - processPackages [pywmataio]: Downloading https://files.pythonhosted.org/packages/eb/a1/4dda6145a6c291ea9fe2349f2003ed5bf3fd8580123696cfb407df7e9e5d/pywmataio-0.0.7.tar.gz
+[2023-04-11 06:15:30] INFO root fetch - processPackages [pywmataio]: Downloading https://files.pythonhosted.org/packages/40/0f/75360b15a57c4c1a9cc3ceb20bc8f110bd97368ad54ce31d59e6cc4775ed/pywmataio-0.0.8.tar.gz
+[2023-04-11 06:15:30] INFO root fetch - processPackages [pywmataio]: executing diffoscope
+[2023-04-11 06:15:30] INFO root fetch - processPackages [pywmataio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywmataio-0.0.7.tar.gz tmp/pywmataio-0.0.8.tar.gz --markdown 20230411/p/pywmataio/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-11 06:15:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:15:32] INFO root fetch - processPackages [SALTISE-course-flow]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-11 06:15:32] INFO root fetch - processPackages [SALTISE-course-flow]: Downloading https://files.pythonhosted.org/packages/c3/fa/65665152ed4816fc16ca1cd9f93d1dae26cb11ef4c81154ea51753d58ba6/SALTISE_course_flow-0.8.2.zip
+[2023-04-11 06:15:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:15:33] INFO root fetch - processPackages [SALTISE-course-flow]: Downloading https://files.pythonhosted.org/packages/3f/b6/20d957bcf794861cc1c2139796c548e631ac70a957c1f2ec597a20239e47/SALTISE_course_flow-0.8.3.tar.gz
+[2023-04-11 06:15:34] INFO root fetch - processPackages [SALTISE-course-flow]: executing diffoscope
+[2023-04-11 06:15:34] INFO root fetch - processPackages [SALTISE-course-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SALTISE_course_flow-0.8.2.zip tmp/SALTISE_course_flow-0.8.3.tar.gz --markdown 20230411/S/SALTISE-course-flow/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-11 06:15:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:15:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:16:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:16:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:16:34] INFO root fetch - main [MainThread]: Store serial: [17655932]
