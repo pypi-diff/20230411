@@ -22167,3 +22167,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 22:37:00] INFO root fetch - main [MainThread]: success
 [2023-04-11 22:37:01] INFO root fetch - main [MainThread]: success
 [2023-04-11 22:37:01] INFO root fetch - main [MainThread]: Store serial: [17665975]
+[2023-04-11 22:42:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17665975]
+[2023-04-11 22:42:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-11 22:42:09] INFO root fetch - processPackages [griptape-tools]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-11 22:42:09] INFO root fetch - processPackages [piScope]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 22:42:09] INFO root fetch - processPackages [cioc4d]: New version: [0.7.9] Old Version: [0.6.9]
+[2023-04-11 22:42:09] INFO root fetch - processPackages [contrast-agent]: New version: [5.9.1] Old Version: [5.9.0]
+[2023-04-11 22:42:09] INFO root fetch - processPackages [corgy]: New version: [7.0.0] Old Version: [6.0.0]
+[2023-04-11 22:42:10] INFO root fetch - processPackages [cioc4d]: Downloading https://files.pythonhosted.org/packages/ed/2d/c9ceabe34133a117c729144a7641e587585e1528408de5fc22f1699a3276/cioc4d-0.6.9-py2.py3-none-any.whl
+[2023-04-11 22:42:10] INFO root fetch - processPackages [contrast-agent]: Downloading https://files.pythonhosted.org/packages/fa/4f/561dff848ab959988cacc16c02374f870dfce30cde6aa7b8bb1e9d9a7b11/contrast-agent-5.9.0.tar.gz
+[2023-04-11 22:42:10] INFO root fetch - processPackages [corgy]: Downloading https://files.pythonhosted.org/packages/35/99/602030119cd85bccee85f0f2f6098c789c366ab2492c47cc42b2508aa0cd/corgy-6.0.0.tar.gz
+[2023-04-11 22:42:10] INFO root fetch - processPackages [griptape-tools]: Downloading https://files.pythonhosted.org/packages/93/eb/0e480d6e3a06a308fd15f6e4b3ea2d027611e5f1ab983a9e055b66d3b843/griptape_tools-0.4.0.tar.gz
+[2023-04-11 22:42:10] INFO root fetch - processPackages [piScope]: executing diffoscope
+[2023-04-11 22:42:10] INFO root fetch - processPackages [piScope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piScope-1.0.8.tar.gz tmp/piScope-1.0.9.tar.gz --markdown 20230411/p/piScope/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 22:42:10] INFO root fetch - processPackages [griptape-tools]: executing diffoscope
+[2023-04-11 22:42:10] INFO root fetch - processPackages [griptape-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape_tools-0.3.1.tar.gz tmp/griptape_tools-0.4.0.tar.gz --markdown 20230411/g/griptape-tools/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-11 22:42:10] INFO root fetch - processPackages [cioc4d]: Downloading https://files.pythonhosted.org/packages/c4/cb/026999921ff4da4a45dd6dd340734af3e50b1179c6759eaffa5d81b7f24c/cioc4d-0.7.9-py2.py3-none-any.whl
+[2023-04-11 22:42:10] WARNING root fetch - processPackages [contrast-agent]: Skipping package: exceeds size limit 10668876>=10485760
+[2023-04-11 22:42:10] INFO root fetch - main [MainThread]: error
+[2023-04-11 22:42:10] INFO root fetch - processPackages [corgy]: Downloading https://files.pythonhosted.org/packages/1d/78/548d4c84b33855c6b31465bc6ddb271a9c02697087ee0cb69af98307cec0/corgy-7.0.0.tar.gz
+[2023-04-11 22:42:10] INFO root fetch - processPackages [traducteur]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-04-11 22:42:10] INFO root fetch - processPackages [cioc4d]: executing diffoscope
+[2023-04-11 22:42:10] INFO root fetch - processPackages [cioc4d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cioc4d-0.6.9-py2.py3-none-any.whl.zip tmp/cioc4d-0.7.9-py2.py3-none-any.whl.zip --markdown 20230411/c/cioc4d/0.6.9-0.7.9/diff.md --exclude *.pyd
+[2023-04-11 22:42:10] INFO root fetch - processPackages [corgy]: executing diffoscope
+[2023-04-11 22:42:10] INFO root fetch - processPackages [corgy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corgy-6.0.0.tar.gz tmp/corgy-7.0.0.tar.gz --markdown 20230411/c/corgy/6.0.0-7.0.0/diff.md --exclude *.pyd
+[2023-04-11 22:42:10] INFO root fetch - processPackages [traducteur]: Downloading https://files.pythonhosted.org/packages/ba/5b/0d78b388d87ff7b9d648e69650be91d3d177eddce826dd68b0eac091a4fd/traducteur-0.4.5.tar.gz
+[2023-04-11 22:42:10] INFO root fetch - processPackages [traducteur]: executing diffoscope
+[2023-04-11 22:42:10] INFO root fetch - processPackages [traducteur]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traducteur-0.4.4.tar.gz tmp/traducteur-0.4.5.tar.gz --markdown 20230411/t/traducteur/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-04-11 22:42:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:42:11] INFO root fetch - processPackages [torch-utilities]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 22:42:11] INFO root fetch - processPackages [torch-utilities]: Downloading https://files.pythonhosted.org/packages/7c/c6/2ba8d34281c8c36f2e1d740c045110860485c1e13a9b7613707f8565294c/torch_utilities-1.0.1.tar.gz
+[2023-04-11 22:42:11] INFO root fetch - processPackages [torch-utilities]: executing diffoscope
+[2023-04-11 22:42:11] INFO root fetch - processPackages [torch-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_utilities-1.0.0.tar.gz tmp/torch_utilities-1.0.1.tar.gz --markdown 20230411/t/torch-utilities/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 22:42:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:42:12] WARNING root fetch - processPackages [qsea]: Skipping, unable to determine old version
+[2023-04-11 22:42:12] INFO root fetch - main [MainThread]: error
+[2023-04-11 22:42:12] INFO root fetch - processPackages [talkwave]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 22:42:12] INFO root fetch - processPackages [talkwave]: Downloading https://files.pythonhosted.org/packages/63/e5/66b838956c43b39b4992ee32c8eec6abfaf5a763ca19e4b103ce688af949/talkwave-0.0.4.tar.gz
+[2023-04-11 22:42:12] INFO root fetch - processPackages [talkwave]: executing diffoscope
+[2023-04-11 22:42:12] INFO root fetch - processPackages [talkwave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talkwave-0.0.3.tar.gz tmp/talkwave-0.0.4.tar.gz --markdown 20230411/t/talkwave/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 22:42:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:42:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:42:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:42:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:42:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 22:42:18] INFO root fetch - main [MainThread]: Store serial: [17666004]
