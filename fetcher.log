@@ -17100,3 +17100,90 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 17:23:05] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:23:16] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:23:16] INFO root fetch - main [MainThread]: Store serial: [17662771]
+[2023-04-11 17:28:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17662771]
+[2023-04-11 17:28:24] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-11 17:28:24] INFO root fetch - processPackages [beards-analytics]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 17:28:24] INFO root fetch - processPackages [panel]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-04-11 17:28:24] INFO root fetch - processPackages [cnocr]: New version: [2.2.2.3] Old Version: [2.2.2.2]
+[2023-04-11 17:28:24] INFO root fetch - processPackages [coinmetrics-api-client]: New version: [2023.4.7.13] Old Version: [2023.4.3.16]
+[2023-04-11 17:28:24] INFO root fetch - processPackages [algodojo]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-11 17:28:24] INFO root fetch - processPackages [panel]: Downloading https://files.pythonhosted.org/packages/82/cd/5c3589614bd7d434187d91ec69d6d3a7efd54282dd676f0da56ee1776ce2/panel-1.0.0b8.tar.gz
+[2023-04-11 17:28:24] INFO root fetch - processPackages [cnocr]: Downloading https://files.pythonhosted.org/packages/81/16/bf3359df7257112492b55e107422b5c21323683b1e59bf419ff758b39ccc/cnocr-2.2.2.2.tar.gz
+[2023-04-11 17:28:24] INFO root fetch - processPackages [algodojo]: Downloading https://files.pythonhosted.org/packages/b4/49/6e359b563005552c4745b5a8818d91514992da213fb4eeb32eb71f5237c3/algodojo-0.1.7.tar.gz
+[2023-04-11 17:28:24] INFO root fetch - processPackages [coinmetrics-api-client]: Downloading https://files.pythonhosted.org/packages/42/f4/acc2b09ea1f7b13ff3005d4fe0e3bd0d961db41e5df5335766208697bb12/coinmetrics_api_client-2023.4.3.16.tar.gz
+[2023-04-11 17:28:24] INFO root fetch - processPackages [beards-analytics]: Downloading https://files.pythonhosted.org/packages/75/9f/5e2aaaf4ecb8e2e1c9d86717dfa6e2ae1269056150bea59e9dcf419a02c3/beards_analytics-0.1.3-py3-none-any.whl
+[2023-04-11 17:28:25] INFO root fetch - processPackages [cnocr]: Downloading https://files.pythonhosted.org/packages/c5/dd/46c94aa92a5019aeb3c52a5e040ffbb264f49c93c70d0642bc29f4198919/cnocr-2.2.2.3.tar.gz
+[2023-04-11 17:28:25] WARNING root fetch - processPackages [panel]: Skipping package: exceeds size limit 25160245>=10485760
+[2023-04-11 17:28:25] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:28:25] INFO root fetch - processPackages [coinmetrics-api-client]: Downloading https://files.pythonhosted.org/packages/31/9f/dabf785f6da33afd92649188e8cf4504f777d8ca5ce4d15168045f5229e2/coinmetrics_api_client-2023.4.7.13.tar.gz
+[2023-04-11 17:28:25] INFO root fetch - processPackages [beards-analytics]: executing diffoscope
+[2023-04-11 17:28:25] INFO root fetch - processPackages [beards-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beards_analytics-0.1.2-py3-none-any.whl.zip tmp/beards_analytics-0.1.3-py3-none-any.whl.zip --markdown 20230411/b/beards-analytics/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 17:28:25] INFO root fetch - processPackages [nautikos]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-11 17:28:25] INFO root fetch - processPackages [cnocr]: executing diffoscope
+[2023-04-11 17:28:25] INFO root fetch - processPackages [cnocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnocr-2.2.2.2.tar.gz tmp/cnocr-2.2.2.3.tar.gz --markdown 20230411/c/cnocr/2.2.2.2-2.2.2.3/diff.md --exclude *.pyd
+[2023-04-11 17:28:25] INFO root fetch - processPackages [coinmetrics-api-client]: executing diffoscope
+[2023-04-11 17:28:25] INFO root fetch - processPackages [coinmetrics-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coinmetrics_api_client-2023.4.3.16.tar.gz tmp/coinmetrics_api_client-2023.4.7.13.tar.gz --markdown 20230411/c/coinmetrics-api-client/2023.4.3.16-2023.4.7.13/diff.md --exclude *.pyd
+[2023-04-11 17:28:25] INFO root fetch - processPackages [nautikos]: Downloading https://files.pythonhosted.org/packages/49/36/4b52f56e5e735b312e69e406621e36eb61d725e89d990487147ef198d135/nautikos-0.3.3.tar.gz
+[2023-04-11 17:28:25] INFO root fetch - processPackages [algodojo]: Downloading https://files.pythonhosted.org/packages/d6/3a/9f1a5fc94e07f1f2852cdb6a4048c3f0a42f929ae2983cb55821901d3f48/algodojo-0.1.8.tar.gz
+[2023-04-11 17:28:25] INFO root fetch - processPackages [nautikos]: executing diffoscope
+[2023-04-11 17:28:25] INFO root fetch - processPackages [nautikos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautikos-0.3.2.tar.gz tmp/nautikos-0.3.3.tar.gz --markdown 20230411/n/nautikos/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-11 17:28:26] INFO root fetch - processPackages [algodojo]: executing diffoscope
+[2023-04-11 17:28:26] INFO root fetch - processPackages [algodojo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algodojo-0.1.7.tar.gz tmp/algodojo-0.1.8.tar.gz --markdown 20230411/a/algodojo/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-11 17:28:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:26] INFO root fetch - processPackages [compact-distillation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 17:28:26] INFO root fetch - processPackages [compact-distillation]: Downloading https://files.pythonhosted.org/packages/b9/da/58721146959d6a5280e724afce724d8744cdef3b8f6620ee03ad37b84c8a/compact-distillation-0.0.8.tar.gz
+[2023-04-11 17:28:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:26] INFO root fetch - processPackages [playwrightcapture]: New version: [1.19.5] Old Version: [1.19.4]
+[2023-04-11 17:28:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:26] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 17:28:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:26] INFO root fetch - processPackages [pulumi-azure-native]: New version: [1.99.2a1681223789] Old Version: [1.99.2a1681223687]
+[2023-04-11 17:28:26] INFO root fetch - processPackages [playwrightcapture]: Downloading https://files.pythonhosted.org/packages/ec/22/351f5acec6317e0aa81b2d5fc22a334553bf0f7cfb653fb565dfb0c5dd61/playwrightcapture-1.19.5.tar.gz
+[2023-04-11 17:28:27] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/81/2c/39326f30eb875d3e83313afc946e27fa1fe3d3776aff26b36ce82e5b11cf/pulumi_azure_native-1.99.2a1681223687.tar.gz
+[2023-04-11 17:28:27] INFO root fetch - processPackages [simple-hierarchical-transformer]: Downloading https://files.pythonhosted.org/packages/cd/13/60b76354bae3629f449933d049412f7cf0a42a427279891c9344f4977515/simple-hierarchical-transformer-0.0.3.tar.gz
+[2023-04-11 17:28:27] INFO root fetch - processPackages [playwrightcapture]: executing diffoscope
+[2023-04-11 17:28:27] INFO root fetch - processPackages [playwrightcapture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playwrightcapture-1.19.4.tar.gz tmp/playwrightcapture-1.19.5.tar.gz --markdown 20230411/p/playwrightcapture/1.19.4-1.19.5/diff.md --exclude *.pyd
+[2023-04-11 17:28:27] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 62794268>=10485760
+[2023-04-11 17:28:27] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:28:27] WARNING root fetch - processPackages [funcpck]: Skipping, unable to determine old version
+[2023-04-11 17:28:27] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:28:27] INFO root fetch - processPackages [compact-distillation]: Downloading https://files.pythonhosted.org/packages/e5/85/2f7ba75e6f4d3213f9f424887a18aba46630f9d9291c67f34b798826e67c/compact-distillation-0.0.9.tar.gz
+[2023-04-11 17:28:27] INFO root fetch - processPackages [goes2go]: New version: [2023.4.2] Old Version: [2023.4.1]
+[2023-04-11 17:28:27] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-11 17:28:27] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.2.tar.gz tmp/simple-hierarchical-transformer-0.0.3.tar.gz --markdown 20230411/s/simple-hierarchical-transformer/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 17:28:27] INFO root fetch - processPackages [goes2go]: Downloading https://files.pythonhosted.org/packages/a4/e5/331d325316410bf9465ea23cf0945c963effda21e012c9bb0fcdc79354c8/goes2go-2023.4.2.tar.gz
+[2023-04-11 17:28:27] INFO root fetch - processPackages [goes2go]: executing diffoscope
+[2023-04-11 17:28:27] INFO root fetch - processPackages [goes2go]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goes2go-2023.4.1.tar.gz tmp/goes2go-2023.4.2.tar.gz --markdown 20230411/g/goes2go/2023.4.1-2023.4.2/diff.md --exclude *.pyd
+[2023-04-11 17:28:27] INFO root fetch - processPackages [compact-distillation]: executing diffoscope
+[2023-04-11 17:28:27] INFO root fetch - processPackages [compact-distillation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compact-distillation-0.0.8.tar.gz tmp/compact-distillation-0.0.9.tar.gz --markdown 20230411/c/compact-distillation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 17:28:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:28] INFO root fetch - processPackages [pulumi-azure-native]: New version: [1.99.2a1681223789] Old Version: [1.99.2a1681223687]
+[2023-04-11 17:28:28] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/81/2c/39326f30eb875d3e83313afc946e27fa1fe3d3776aff26b36ce82e5b11cf/pulumi_azure_native-1.99.2a1681223687.tar.gz
+[2023-04-11 17:28:28] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 62794268>=10485760
+[2023-04-11 17:28:28] INFO root fetch - main [MainThread]: error
+[2023-04-11 17:28:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:28] INFO root fetch - processPackages [aws-credentialer]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 17:28:28] INFO root fetch - processPackages [ogr-tiller]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 17:28:28] INFO root fetch - processPackages [ogr-tiller]: executing diffoscope
+[2023-04-11 17:28:28] INFO root fetch - processPackages [ogr-tiller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogr_tiller-0.0.8.tar.gz tmp/ogr_tiller-0.0.9.tar.gz --markdown 20230411/o/ogr-tiller/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 17:28:28] INFO root fetch - processPackages [aws-credentialer]: Downloading https://files.pythonhosted.org/packages/28/22/c86c973139208e1fd616669af82b2710e54a8aa56f7e1bf821f48271938e/aws-credentialer-0.1.0.tar.gz
+[2023-04-11 17:28:28] INFO root fetch - processPackages [aws-credentialer]: Downloading https://files.pythonhosted.org/packages/81/f9/9b02662a1e5783cfedfa85913399cf1caaa9f404f4fe50cb0b219ffcf396/aws-credentialer-0.1.1.tar.gz
+[2023-04-11 17:28:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:28] INFO root fetch - processPackages [DA4RDM-Vis-ProcessBased]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-11 17:28:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:28] INFO root fetch - processPackages [simple-gomoku]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-04-11 17:28:28] INFO root fetch - processPackages [aws-credentialer]: executing diffoscope
+[2023-04-11 17:28:28] INFO root fetch - processPackages [aws-credentialer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-credentialer-0.1.0.tar.gz tmp/aws-credentialer-0.1.1.tar.gz --markdown 20230411/a/aws-credentialer/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 17:28:29] INFO root fetch - processPackages [DA4RDM-Vis-ProcessBased]: Downloading https://files.pythonhosted.org/packages/20/0b/fa0e7f35de88d71f02c76176f14bbbfc86d8c7ccd454d1d09da7c5ce0fbc/DA4RDM_Vis_ProcessBased-0.1.7.tar.gz
+[2023-04-11 17:28:29] INFO root fetch - processPackages [simple-gomoku]: Downloading https://files.pythonhosted.org/packages/91/d6/8c568948ca0a6a3ba3ce9542ada03661b39759114372ea443bdd3393b8cf/simple_gomoku-2.1.1-py3-none-any.whl
+[2023-04-11 17:28:29] INFO root fetch - processPackages [DA4RDM-Vis-ProcessBased]: executing diffoscope
+[2023-04-11 17:28:29] INFO root fetch - processPackages [DA4RDM-Vis-ProcessBased]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DA4RDM_Vis_ProcessBased-0.1.6.tar.gz tmp/DA4RDM_Vis_ProcessBased-0.1.7.tar.gz --markdown 20230411/D/DA4RDM-Vis-ProcessBased/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-11 17:28:29] INFO root fetch - processPackages [simple-gomoku]: Downloading https://files.pythonhosted.org/packages/45/6d/4f69bc4b45ad9f817d9446de07112539df223c532c8b29f5b770e5feb598/simple_gomoku-2.2.0-py3-none-any.whl
+[2023-04-11 17:28:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:29] INFO root fetch - processPackages [simple-gomoku]: executing diffoscope
+[2023-04-11 17:28:29] INFO root fetch - processPackages [simple-gomoku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_gomoku-2.1.1-py3-none-any.whl.zip tmp/simple_gomoku-2.2.0-py3-none-any.whl.zip --markdown 20230411/s/simple-gomoku/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-04-11 17:28:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:28:45] INFO root fetch - main [MainThread]: Store serial: [17662823]
