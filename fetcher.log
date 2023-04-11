@@ -12466,3 +12466,72 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 12:18:16] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:18:16] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:18:16] INFO root fetch - main [MainThread]: Store serial: [17659348]
+[2023-04-11 12:23:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659348]
+[2023-04-11 12:23:25] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 12:23:25] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mssql]: New version: [16.0.1.0.1] Old Version: [15.0.1.0.0.2]
+[2023-04-11 12:23:25] INFO root fetch - processPackages [drakaina]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-11 12:23:25] INFO root fetch - processPackages [hagworm]: New version: [5.4.1] Old Version: [5.3.9]
+[2023-04-11 12:23:25] INFO root fetch - processPackages [promsoft-weight-calc-interface]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 12:23:25] INFO root fetch - processPackages [abraia]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-11 12:23:25] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mssql]: Downloading https://files.pythonhosted.org/packages/d2/a8/c0c3f951c97dc7b2c2b91165475126be068142d92adb19c10669b17e4bdc/odoo_addon_base_external_dbsource_mssql-15.0.1.0.0.2-py3-none-any.whl
+[2023-04-11 12:23:25] INFO root fetch - processPackages [abraia]: executing diffoscope
+[2023-04-11 12:23:25] INFO root fetch - processPackages [abraia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abraia-0.9.3.tar.gz tmp/abraia-0.9.4.tar.gz --markdown 20230411/a/abraia/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-11 12:23:25] INFO root fetch - processPackages [promsoft-weight-calc-interface]: Downloading https://files.pythonhosted.org/packages/c6/00/f8f0f464b7f2083f1609303e688887afedfe60f79e1783bc87d19d0e01ae/promsoft_weight_calc_interface-0.1.2.tar.gz
+[2023-04-11 12:23:25] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/24/a4/68ff4e8b6fce5d0acb278a90e0f0e92a86ce62dd59ff4cbc05dfdcf11336/hagworm-5.4.1.tar.gz
+[2023-04-11 12:23:25] INFO root fetch - processPackages [drakaina]: executing diffoscope
+[2023-04-11 12:23:25] INFO root fetch - processPackages [drakaina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drakaina-0.6.8.tar.gz tmp/drakaina-0.6.9.tar.gz --markdown 20230411/d/drakaina/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-11 12:23:25] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mssql]: Downloading https://files.pythonhosted.org/packages/a7/bd/a2d62ee8a978accf691d9b037ede71f1cf18c2ce16a43f734acb5665c050/odoo_addon_base_external_dbsource_mssql-16.0.1.0.1-py3-none-any.whl
+[2023-04-11 12:23:25] INFO root fetch - processPackages [hagworm]: executing diffoscope
+[2023-04-11 12:23:25] INFO root fetch - processPackages [hagworm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagworm-5.3.9.tar.gz tmp/hagworm-5.4.1.tar.gz --markdown 20230411/h/hagworm/5.3.9-5.4.1/diff.md --exclude *.pyd
+[2023-04-11 12:23:25] INFO root fetch - processPackages [promsoft-weight-calc-interface]: Downloading https://files.pythonhosted.org/packages/48/ec/0270634c1e9a126a4bbaf2de13261b3bdb343af502337617e280c57d3f48/promsoft_weight_calc_interface-0.1.3.tar.gz
+[2023-04-11 12:23:26] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mssql]: executing diffoscope
+[2023-04-11 12:23:26] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mssql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_external_dbsource_mssql-15.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_base_external_dbsource_mssql-16.0.1.0.1-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-base-external-dbsource-mssql/15.0.1.0.0.2-16.0.1.0.1/diff.md --exclude *.pyd
+[2023-04-11 12:23:26] INFO root fetch - processPackages [promsoft-weight-calc-interface]: executing diffoscope
+[2023-04-11 12:23:26] INFO root fetch - processPackages [promsoft-weight-calc-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promsoft_weight_calc_interface-0.1.2.tar.gz tmp/promsoft_weight_calc_interface-0.1.3.tar.gz --markdown 20230411/p/promsoft-weight-calc-interface/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 12:23:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:26] INFO root fetch - processPackages [open-dread-rando]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-11 12:23:26] INFO root fetch - processPackages [open-dread-rando]: Downloading https://files.pythonhosted.org/packages/7b/32/dbd7a502a54fd048fe2d0537dcdafd48bb07c3ef4cefda217460baab3391/open-dread-rando-1.8.0.tar.gz
+[2023-04-11 12:23:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:27] INFO root fetch - processPackages [fractal-server]: New version: [1.2.0a2] Old Version: [1.2.0a1]
+[2023-04-11 12:23:27] INFO root fetch - processPackages [fractal-server]: Downloading https://files.pythonhosted.org/packages/77/91/0e6da8b7143c5a8de567d6900f1ae0bb4918f864676a921cc411f84f78b6/fractal_server-1.2.0a2.tar.gz
+[2023-04-11 12:23:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:27] INFO root fetch - processPackages [django-composite-auto-field]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 12:23:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:27] INFO root fetch - processPackages [stigg-api-client]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-11 12:23:27] INFO root fetch - processPackages [fractal-server]: executing diffoscope
+[2023-04-11 12:23:27] INFO root fetch - processPackages [fractal-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fractal_server-1.2.0a1.tar.gz tmp/fractal_server-1.2.0a2.tar.gz --markdown 20230411/f/fractal-server/1.2.0a1-1.2.0a2/diff.md --exclude *.pyd
+[2023-04-11 12:23:27] INFO root fetch - processPackages [django-composite-auto-field]: Downloading https://files.pythonhosted.org/packages/f0/54/9e6e4671f802d935e141a731c1fd2749172d110f26f938639b5e05e69cf5/django-composite-auto-field-0.1.2.tar.gz
+[2023-04-11 12:23:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:27] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/7b/09/cdd82d761391eec8132770531c2f971ca171867c6611e6c428e03567327d/stigg-api-client-0.2.0.tar.gz
+[2023-04-11 12:23:27] INFO root fetch - processPackages [armonik]: New version: [3.7.3.dev257] Old Version: [3.7.3.dev252]
+[2023-04-11 12:23:27] INFO root fetch - processPackages [open-dread-rando]: Downloading https://files.pythonhosted.org/packages/f5/79/350fbf66dc7a27a13e44340d0f429e026276437a909f8a3347f58eed5bf9/open-dread-rando-1.9.0.tar.gz
+[2023-04-11 12:23:27] INFO root fetch - processPackages [django-composite-auto-field]: Downloading https://files.pythonhosted.org/packages/7a/cb/3f7c4cc1a685ec43f5a996e9689c8f58ecaa0e2cc99044aacc2edc46dab2/django-composite-auto-field-0.1.3.tar.gz
+[2023-04-11 12:23:27] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/a3/13/4598a8947096e7d98ab1cfc52778d974b4da2766df92273133646bebf7a5/armonik-3.7.3.dev252.tar.gz
+[2023-04-11 12:23:27] INFO root fetch - processPackages [django-composite-auto-field]: executing diffoscope
+[2023-04-11 12:23:27] INFO root fetch - processPackages [django-composite-auto-field]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-composite-auto-field-0.1.2.tar.gz tmp/django-composite-auto-field-0.1.3.tar.gz --markdown 20230411/d/django-composite-auto-field/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 12:23:28] INFO root fetch - processPackages [stigg-api-client]: Downloading https://files.pythonhosted.org/packages/ab/17/9737c0e29122d0adeccfa90069c8fadf8d0c7adc784df2f1b471e940c648/stigg-api-client-0.3.0.tar.gz
+[2023-04-11 12:23:28] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/b9/ce/e3243130d022d7cd335c73deac17ba6b304547bc76aa5faae54ddd835f7f/armonik-3.7.3.dev257.tar.gz
+[2023-04-11 12:23:28] INFO root fetch - processPackages [open-dread-rando]: executing diffoscope
+[2023-04-11 12:23:28] INFO root fetch - processPackages [open-dread-rando]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open-dread-rando-1.8.0.tar.gz tmp/open-dread-rando-1.9.0.tar.gz --markdown 20230411/o/open-dread-rando/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 12:23:28] INFO root fetch - processPackages [stigg-api-client]: executing diffoscope
+[2023-04-11 12:23:28] INFO root fetch - processPackages [stigg-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stigg-api-client-0.2.0.tar.gz tmp/stigg-api-client-0.3.0.tar.gz --markdown 20230411/s/stigg-api-client/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 12:23:28] INFO root fetch - processPackages [armonik]: executing diffoscope
+[2023-04-11 12:23:28] INFO root fetch - processPackages [armonik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armonik-3.7.3.dev252.tar.gz tmp/armonik-3.7.3.dev257.tar.gz --markdown 20230411/a/armonik/3.7.3.dev252-3.7.3.dev257/diff.md --exclude *.pyd
+[2023-04-11 12:23:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:29] INFO root fetch - processPackages [rai-sdk]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-11 12:23:29] INFO root fetch - processPackages [xtgeo]: New version: [3.0.0rc1] Old Version: [2.9.2]
+[2023-04-11 12:23:29] INFO root fetch - processPackages [rai-sdk]: Downloading https://files.pythonhosted.org/packages/26/2f/e96e3afb168e9b2137f61b5be52114f38f3360f0f84e23db1b47c354542f/rai-sdk-0.6.8.tar.gz
+[2023-04-11 12:23:29] INFO root fetch - processPackages [xtgeo]: Downloading https://files.pythonhosted.org/packages/8f/ba/bd53b7a3c08f7451192c348cf8fa41bc8d79d553e40aa91bef564c87c9bf/xtgeo-2.9.2-cp38-cp38-win_amd64.whl
+[2023-04-11 12:23:29] INFO root fetch - processPackages [rai-sdk]: Downloading https://files.pythonhosted.org/packages/84/cd/5fc48204dc435a5b258ed074a52393010e06fe340e6bbb3294ca93607d0c/rai-sdk-0.6.9.tar.gz
+[2023-04-11 12:23:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:29] INFO root fetch - processPackages [rai-sdk]: executing diffoscope
+[2023-04-11 12:23:29] INFO root fetch - processPackages [rai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rai-sdk-0.6.8.tar.gz tmp/rai-sdk-0.6.9.tar.gz --markdown 20230411/r/rai-sdk/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-11 12:23:29] INFO root fetch - processPackages [xtgeo]: Downloading https://files.pythonhosted.org/packages/89/d2/28ed0f24ec6e787d8895c4d836d24abad57c9ebc41d3d396223ef747b57f/xtgeo-3.0.0rc1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 12:23:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:30] INFO root fetch - processPackages [xtgeo]: executing diffoscope
+[2023-04-11 12:23:30] INFO root fetch - processPackages [xtgeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtgeo-2.9.2-cp38-cp38-win_amd64.whl.zip tmp/xtgeo-3.0.0rc1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230411/x/xtgeo/2.9.2-3.0.0rc1/diff.md --exclude *.pyd
+[2023-04-11 12:23:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:23:33] INFO root fetch - main [MainThread]: Store serial: [17659393]
