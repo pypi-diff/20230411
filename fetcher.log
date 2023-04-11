@@ -19062,3 +19062,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 19:26:53] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:26:58] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:26:58] INFO root fetch - main [MainThread]: Store serial: [17664041]
+[2023-04-11 19:32:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17664041]
+[2023-04-11 19:32:06] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 19:32:06] INFO root fetch - processPackages [osta]: New version: [0.6.16] Old Version: [0.6.15]
+[2023-04-11 19:32:06] WARNING root fetch - processPackages [easytypes]: Skipping, unable to determine old version
+[2023-04-11 19:32:06] INFO root fetch - main [MainThread]: error
+[2023-04-11 19:32:06] INFO root fetch - processPackages [pyinflux3]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-11 19:32:06] INFO root fetch - processPackages [kaiterra-async-client]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 19:32:06] INFO root fetch - processPackages [diopter]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 19:32:06] INFO root fetch - processPackages [dequeai]: New version: [0.702] Old Version: [0.700]
+[2023-04-11 19:32:06] INFO root fetch - processPackages [kaiterra-async-client]: Downloading https://files.pythonhosted.org/packages/dc/e1/5b0ee86f1b8d202bbbad9e2fa441d4c788d9a016063b6b4926b15db7df14/kaiterra-async-client-1.0.0.tar.gz
+[2023-04-11 19:32:06] INFO root fetch - processPackages [osta]: Downloading https://files.pythonhosted.org/packages/35/98/6cdbdc324282d914bb5acf4b40b750c191b041a72c4f2145f3486a333dcf/osta-0.6.15.tar.gz
+[2023-04-11 19:32:06] INFO root fetch - processPackages [dequeai]: Downloading https://files.pythonhosted.org/packages/04/c3/e48546c57644abd563154dee0ad6e20dabefc7ebfee50f034ce7da557531/dequeai-0.702.tar.gz
+[2023-04-11 19:32:06] INFO root fetch - processPackages [diopter]: Downloading https://files.pythonhosted.org/packages/11/53/65aac2bc97561a7820a91d8677351a2d12b1add9d53ce8e355e89e306246/diopter-0.0.8.tar.gz
+[2023-04-11 19:32:06] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/a1/7b/29e2d01be31dea3931bbb0a35daabdc5e6e709977f4b7bec6bd002726946/pyinflux3-0.6.2.tar.gz
+[2023-04-11 19:32:06] INFO root fetch - processPackages [dequeai]: executing diffoscope
+[2023-04-11 19:32:06] INFO root fetch - processPackages [dequeai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dequeai-0.700.tar.gz tmp/dequeai-0.702.tar.gz --markdown 20230411/d/dequeai/0.700-0.702/diff.md --exclude *.pyd
+[2023-04-11 19:32:06] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-11 19:32:06] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.6.1.tar.gz tmp/pyinflux3-0.6.2.tar.gz --markdown 20230411/p/pyinflux3/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-11 19:32:06] INFO root fetch - processPackages [osta]: Downloading https://files.pythonhosted.org/packages/d6/ca/39b3adf3811bc51868a86f67d9acad9b9f3997ef8287dfa3ce18912c67fe/osta-0.6.16.tar.gz
+[2023-04-11 19:32:06] INFO root fetch - processPackages [osta]: executing diffoscope
+[2023-04-11 19:32:06] INFO root fetch - processPackages [osta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osta-0.6.15.tar.gz tmp/osta-0.6.16.tar.gz --markdown 20230411/o/osta/0.6.15-0.6.16/diff.md --exclude *.pyd
+[2023-04-11 19:32:06] INFO root fetch - processPackages [kaiterra-async-client]: Downloading https://files.pythonhosted.org/packages/83/11/588a66eac0ce1eb334c5777accc452ce9c022b1b573ca1ba19260639f196/kaiterra-async-client-1.0.1.tar.gz
+[2023-04-11 19:32:06] INFO root fetch - processPackages [kaiterra-async-client]: executing diffoscope
+[2023-04-11 19:32:06] INFO root fetch - processPackages [kaiterra-async-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaiterra-async-client-1.0.0.tar.gz tmp/kaiterra-async-client-1.0.1.tar.gz --markdown 20230411/k/kaiterra-async-client/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 19:32:06] INFO root fetch - processPackages [diopter]: Downloading https://files.pythonhosted.org/packages/4f/5e/ec53c09c384e9d4df952677b4848e9d90e0726a9c8fd9398eabdb0480885/diopter-0.0.9.tar.gz
+[2023-04-11 19:32:06] INFO root fetch - processPackages [diopter]: executing diffoscope
+[2023-04-11 19:32:06] INFO root fetch - processPackages [diopter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diopter-0.0.8.tar.gz tmp/diopter-0.0.9.tar.gz --markdown 20230411/d/diopter/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 19:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:07] INFO root fetch - processPackages [apexpy]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-11 19:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:07] INFO root fetch - processPackages [passbolt]: New version: [1.24] Old Version: [1.23]
+[2023-04-11 19:32:07] INFO root fetch - processPackages [apexpy]: Downloading https://files.pythonhosted.org/packages/56/d8/4d93a5e3fb9d0330ed5421e46d270d556512a82b5d760022685d9466bbeb/apexpy-2.0.0.tar.gz
+[2023-04-11 19:32:07] INFO root fetch - processPackages [passbolt]: Downloading https://files.pythonhosted.org/packages/65/73/688c3b55be92790968e95ecb403df7661846071755610bcbdff4ce3786f6/passbolt-1.23.tar.gz
+[2023-04-11 19:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:07] INFO root fetch - processPackages [hiddifypanel]: New version: [3.1.5] Old Version: [3.1.4]
+[2023-04-11 19:32:08] INFO root fetch - processPackages [apexpy]: Downloading https://files.pythonhosted.org/packages/80/da/6593621a1180ff076a313836cd251f0d3d502b7fbc01c8e976265483691c/apexpy-2.0.1.tar.gz
+[2023-04-11 19:32:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:08] INFO root fetch - processPackages [translate-shell]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 19:32:08] INFO root fetch - processPackages [apexpy]: executing diffoscope
+[2023-04-11 19:32:08] INFO root fetch - processPackages [apexpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apexpy-2.0.0.tar.gz tmp/apexpy-2.0.1.tar.gz --markdown 20230411/a/apexpy/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-11 19:32:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:08] INFO root fetch - processPackages [passbolt]: Downloading https://files.pythonhosted.org/packages/7b/93/7bf618b5b4f1a4d91dbb04bd240801bf4f85e9e947de5d9ba13233d263fb/passbolt-1.24.tar.gz
+[2023-04-11 19:32:08] INFO root fetch - processPackages [astroemperor]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-04-11 19:32:08] INFO root fetch - processPackages [passbolt]: executing diffoscope
+[2023-04-11 19:32:08] INFO root fetch - processPackages [passbolt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/passbolt-1.23.tar.gz tmp/passbolt-1.24.tar.gz --markdown 20230411/p/passbolt/1.23-1.24/diff.md --exclude *.pyd
+[2023-04-11 19:32:08] INFO root fetch - processPackages [translate-shell]: Downloading https://files.pythonhosted.org/packages/aa/ed/e25a7c89f8e66c89b4f998bd2f4280d8a427b319670e155b018f04adf8d8/translate-shell-0.0.8.tar.gz
+[2023-04-11 19:32:08] INFO root fetch - processPackages [astroemperor]: Downloading https://files.pythonhosted.org/packages/a6/b2/bb9794bc59249ae4942e4b5f4e8d6bc68b9d4831722238da154a20d83bb3/astroemperor-0.8.2.tar.gz
+[2023-04-11 19:32:08] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/dc/b7/478c105f08d85df3cd75179497a05999abc98168d511aabcf72f72206dd4/hiddifypanel-3.1.5-cp39-cp39-manylinux2014_aarch64.whl
+[2023-04-11 19:32:08] INFO root fetch - processPackages [astroemperor]: executing diffoscope
+[2023-04-11 19:32:08] INFO root fetch - processPackages [astroemperor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astroemperor-0.8.1.tar.gz tmp/astroemperor-0.8.2.tar.gz --markdown 20230411/a/astroemperor/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-04-11 19:32:08] INFO root fetch - processPackages [translate-shell]: Downloading https://files.pythonhosted.org/packages/10/53/d1b2622fd5860f8b6f36dbdd934c30d2e357cd577f74de20d18e020079f4/translate-shell-0.0.9.tar.gz
+[2023-04-11 19:32:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:09] INFO root fetch - processPackages [DyaGram]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 19:32:09] INFO root fetch - processPackages [translate-shell]: executing diffoscope
+[2023-04-11 19:32:09] INFO root fetch - processPackages [translate-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translate-shell-0.0.8.tar.gz tmp/translate-shell-0.0.9.tar.gz --markdown 20230411/t/translate-shell/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 19:32:09] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-11 19:32:09] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.1.4-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.1.5-cp39-cp39-manylinux2014_aarch64.whl.zip --markdown 20230411/h/hiddifypanel/3.1.4-3.1.5/diff.md --exclude *.pyd
+[2023-04-11 19:32:09] INFO root fetch - processPackages [DyaGram]: executing diffoscope
+[2023-04-11 19:32:09] INFO root fetch - processPackages [DyaGram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DyaGram-0.0.98.tar.gz tmp/DyaGram-0.0.99.tar.gz --markdown 20230411/D/DyaGram/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 19:32:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:32:25] INFO root fetch - main [MainThread]: Store serial: [17664079]
