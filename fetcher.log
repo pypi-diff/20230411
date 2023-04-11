@@ -22358,3 +22358,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 22:58:03] INFO root fetch - main [MainThread]: success
 [2023-04-11 22:58:27] INFO root fetch - main [MainThread]: success
 [2023-04-11 22:58:27] INFO root fetch - main [MainThread]: Store serial: [17666102]
+[2023-04-11 23:03:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17666102]
+[2023-04-11 23:03:36] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 23:03:36] INFO root fetch - processPackages [nnusf]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-11 23:03:36] INFO root fetch - processPackages [IOTCommon]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-11 23:03:36] INFO root fetch - processPackages [sherlockpipe]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-04-11 23:03:36] INFO root fetch - processPackages [meltanolabs-target-postgres]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 23:03:36] INFO root fetch - processPackages [scalable-pypeline]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-11 23:03:36] INFO root fetch - processPackages [IOTCommon]: Downloading https://files.pythonhosted.org/packages/43/10/385be757217beb36587a42d76b91a66e4193f448094e195a3546ab453d95/IOTCommon-0.1.tar.gz
+[2023-04-11 23:03:36] INFO root fetch - processPackages [meltanolabs-target-postgres]: Downloading https://files.pythonhosted.org/packages/33/ca/26535ff73b906e7e3f63ab7a78f42355cf6729962e33c722a5d694470d25/meltanolabs_target_postgres-0.0.4.tar.gz
+[2023-04-11 23:03:36] INFO root fetch - processPackages [nnusf]: Downloading https://files.pythonhosted.org/packages/45/16/5364a7fb5fed55623d5201955839287aece177383ab42364262c007212a5/nnusf-0.2.4.tar.gz
+[2023-04-11 23:03:36] INFO root fetch - processPackages [scalable-pypeline]: Downloading https://files.pythonhosted.org/packages/cb/d7/ebf8f25c528c3a2c20d61337e58ec8950110c378cea453589d844ca9bb1d/scalable-pypeline-1.1.5.tar.gz
+[2023-04-11 23:03:36] INFO root fetch - processPackages [sherlockpipe]: executing diffoscope
+[2023-04-11 23:03:36] INFO root fetch - processPackages [sherlockpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherlockpipe-0.9.6.tar.gz tmp/sherlockpipe-0.9.7.tar.gz --markdown 20230411/s/sherlockpipe/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-04-11 23:03:37] INFO root fetch - processPackages [IOTCommon]: Downloading https://files.pythonhosted.org/packages/a8/3a/e010877fbdf807eb4e0ca6aa8f80a1c54596aa76b34aa5fd709b225e2e85/IOTCommon-0.1.1.tar.gz
+[2023-04-11 23:03:37] INFO root fetch - processPackages [scalable-pypeline]: executing diffoscope
+[2023-04-11 23:03:37] INFO root fetch - processPackages [scalable-pypeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalable-pypeline-1.1.4.tar.gz tmp/scalable-pypeline-1.1.5.tar.gz --markdown 20230411/s/scalable-pypeline/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-11 23:03:37] INFO root fetch - processPackages [meltanolabs-target-postgres]: Downloading https://files.pythonhosted.org/packages/09/01/1b5abf6edc690cd062ed718d17d27325d4d51f312b0a342b84ad3903821e/meltanolabs_target_postgres-0.0.5.tar.gz
+[2023-04-11 23:03:37] INFO root fetch - processPackages [nnusf]: Downloading https://files.pythonhosted.org/packages/ba/0a/f0737de759a29f3ea497ec617db67aaa0700592c4c2e417975005403319f/nnusf-0.2.5.tar.gz
+[2023-04-11 23:03:37] INFO root fetch - processPackages [IOTCommon]: executing diffoscope
+[2023-04-11 23:03:37] INFO root fetch - processPackages [IOTCommon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IOTCommon-0.1.tar.gz tmp/IOTCommon-0.1.1.tar.gz --markdown 20230411/I/IOTCommon/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 23:03:37] INFO root fetch - processPackages [meltanolabs-target-postgres]: executing diffoscope
+[2023-04-11 23:03:37] INFO root fetch - processPackages [meltanolabs-target-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meltanolabs_target_postgres-0.0.4.tar.gz tmp/meltanolabs_target_postgres-0.0.5.tar.gz --markdown 20230411/m/meltanolabs-target-postgres/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 23:03:37] INFO root fetch - processPackages [nnusf]: executing diffoscope
+[2023-04-11 23:03:37] INFO root fetch - processPackages [nnusf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnusf-0.2.4.tar.gz tmp/nnusf-0.2.5.tar.gz --markdown 20230411/n/nnusf/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-11 23:03:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:38] INFO root fetch - processPackages [caddo-tool]: New version: [0.9.1] Old Version: [0.8.1]
+[2023-04-11 23:03:38] INFO root fetch - processPackages [caddo-tool]: executing diffoscope
+[2023-04-11 23:03:38] INFO root fetch - processPackages [caddo-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caddo-tool-0.8.1.tar.gz tmp/caddo-tool-0.9.1.tar.gz --markdown 20230411/c/caddo-tool/0.8.1-0.9.1/diff.md --exclude *.pyd
+[2023-04-11 23:03:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:38] INFO root fetch - processPackages [dequeai]: New version: [0.710] Old Version: [0.708]
+[2023-04-11 23:03:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:38] INFO root fetch - processPackages [NEMO-billing]: New version: [2.0.0] Old Version: [1.9.1]
+[2023-04-11 23:03:38] INFO root fetch - processPackages [dequeai]: Downloading https://files.pythonhosted.org/packages/02/84/3eca47d66a548f265e3b29844d6f521f4764a335b3770f08434e2ff1d574/dequeai-0.710.tar.gz
+[2023-04-11 23:03:38] INFO root fetch - processPackages [NEMO-billing]: Downloading https://files.pythonhosted.org/packages/ec/17/faa29231e17f6965fac414b1bff84715ba711a2df26c9730fc325bd7c22e/NEMO_billing-1.9.1-py3-none-any.whl
+[2023-04-11 23:03:38] INFO root fetch - processPackages [dequeai]: executing diffoscope
+[2023-04-11 23:03:38] INFO root fetch - processPackages [dequeai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dequeai-0.708.tar.gz tmp/dequeai-0.710.tar.gz --markdown 20230411/d/dequeai/0.708-0.710/diff.md --exclude *.pyd
+[2023-04-11 23:03:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:39] INFO root fetch - processPackages [hcf-backend]: New version: [0.5] Old Version: [0.4.7]
+[2023-04-11 23:03:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:39] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 23:03:39] INFO root fetch - processPackages [NEMO-billing]: Downloading https://files.pythonhosted.org/packages/e7/26/3c8fe5f2ae45b54ec8a23d447bea0513426fa160508410121943cdc2612f/NEMO_billing-2.0.0-py3-none-any.whl
+[2023-04-11 23:03:39] INFO root fetch - processPackages [hcf-backend]: Downloading https://files.pythonhosted.org/packages/67/c2/2f10dd0d9a8214f00df791d15e961fb77089a78be339ca6654e29979fdae/hcf-backend-0.4.7.tar.gz
+[2023-04-11 23:03:39] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-11 23:03:39] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.8.tar.gz tmp/kfsdutils-0.0.9.tar.gz --markdown 20230411/k/kfsdutils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 23:03:39] INFO root fetch - processPackages [NEMO-billing]: executing diffoscope
+[2023-04-11 23:03:39] INFO root fetch - processPackages [NEMO-billing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_billing-1.9.1-py3-none-any.whl.zip tmp/NEMO_billing-2.0.0-py3-none-any.whl.zip --markdown 20230411/N/NEMO-billing/1.9.1-2.0.0/diff.md --exclude *.pyd
+[2023-04-11 23:03:39] INFO root fetch - processPackages [hcf-backend]: Downloading https://files.pythonhosted.org/packages/3f/3b/4e34be526bd6f6eac79b7547d29e6c4e526a7904bd25d3a2af3a297c77fc/hcf-backend-0.5.tar.gz
+[2023-04-11 23:03:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:39] WARNING root fetch - processPackages [flex-text-table]: Skipping, unable to determine old version
+[2023-04-11 23:03:39] INFO root fetch - main [MainThread]: error
+[2023-04-11 23:03:39] INFO root fetch - processPackages [hcf-backend]: executing diffoscope
+[2023-04-11 23:03:39] INFO root fetch - processPackages [hcf-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcf-backend-0.4.7.tar.gz tmp/hcf-backend-0.5.tar.gz --markdown 20230411/h/hcf-backend/0.4.7-0.5/diff.md --exclude *.pyd
+[2023-04-11 23:03:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 23:03:42] INFO root fetch - main [MainThread]: Store serial: [17666135]
