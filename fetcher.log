@@ -11099,3 +11099,80 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 10:44:08] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:44:16] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:44:16] INFO root fetch - main [MainThread]: Store serial: [17658444]
+[2023-04-11 10:49:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658444]
+[2023-04-11 10:49:24] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 10:49:24] INFO root fetch - processPackages [rcg]: New version: [0.0.11] Old Version: [0.0.10]
+[2023-04-11 10:49:24] INFO root fetch - processPackages [myiqoptionapi]: New version: [7.1.3] Old Version: [7.1.2]
+[2023-04-11 10:49:24] INFO root fetch - processPackages [pulumi-sdm]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-11 10:49:24] INFO root fetch - processPackages [quetz-server]: New version: [0.7.0] Old Version: [0.6.3]
+[2023-04-11 10:49:24] INFO root fetch - processPackages [dbm-agent]: New version: [8.32.8] Old Version: [8.32.6]
+[2023-04-11 10:49:24] INFO root fetch - processPackages [rcg]: Downloading https://files.pythonhosted.org/packages/cb/46/0da73a46c5799e638361a20b70e920bc005cf7b8b007221054095a2426be/rcg-0.0.10.tar.gz
+[2023-04-11 10:49:24] INFO root fetch - processPackages [myiqoptionapi]: Downloading https://files.pythonhosted.org/packages/5a/5d/9313e459befd9746f3ebc40917bab2577b068d6d523fd0618416374a54b5/myiqoptionapi-7.1.2.tar.gz
+[2023-04-11 10:49:24] INFO root fetch - processPackages [quetz-server]: Downloading https://files.pythonhosted.org/packages/5b/fc/cc72ae4ada423ebf0b890c0370323261d1deece426d7b7eb6f103851e418/quetz-server-0.6.3.tar.gz
+[2023-04-11 10:49:24] INFO root fetch - processPackages [pulumi-sdm]: Downloading https://files.pythonhosted.org/packages/06/57/c2f18694ae6292fb8d8cabc526e216149dd2f768a831d2ef68fae772feb8/pulumi_sdm-0.3.0.tar.gz
+[2023-04-11 10:49:24] INFO root fetch - processPackages [dbm-agent]: Downloading https://files.pythonhosted.org/packages/ab/65/67c8a0d4bb5688a9baaff0978e637a37c91577427f1ad66c4018d95f9d55/dbm-agent-8.32.6.tar.gz
+[2023-04-11 10:49:25] INFO root fetch - processPackages [rcg]: Downloading https://files.pythonhosted.org/packages/19/95/43c2e5407e55eb6202defc3fae948b6756297305a5364d1cdea1f624b78a/rcg-0.0.11.tar.gz
+[2023-04-11 10:49:25] INFO root fetch - processPackages [myiqoptionapi]: Downloading https://files.pythonhosted.org/packages/31/a9/8cada9fe0170738fc8a57b081f9c5eedc67b514da17139c6f5f6609b30f1/myiqoptionapi-7.1.3.tar.gz
+[2023-04-11 10:49:25] INFO root fetch - processPackages [dbm-agent]: Downloading https://files.pythonhosted.org/packages/9c/b9/7967c5de609a8fbc9a80e185a8686325b424373e6ca336567db4103bb269/dbm-agent-8.32.8.tar.gz
+[2023-04-11 10:49:25] INFO root fetch - processPackages [pulumi-sdm]: Downloading https://files.pythonhosted.org/packages/0a/a6/a1b63bdd0c5907dd32ad166a0d9ada77412aed5e8b213daaa39138467ce7/pulumi_sdm-0.4.0.tar.gz
+[2023-04-11 10:49:25] INFO root fetch - processPackages [rcg]: executing diffoscope
+[2023-04-11 10:49:25] INFO root fetch - processPackages [rcg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcg-0.0.10.tar.gz tmp/rcg-0.0.11.tar.gz --markdown 20230411/r/rcg/0.0.10-0.0.11/diff.md --exclude *.pyd
+[2023-04-11 10:49:25] INFO root fetch - processPackages [myiqoptionapi]: executing diffoscope
+[2023-04-11 10:49:25] INFO root fetch - processPackages [myiqoptionapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myiqoptionapi-7.1.2.tar.gz tmp/myiqoptionapi-7.1.3.tar.gz --markdown 20230411/m/myiqoptionapi/7.1.2-7.1.3/diff.md --exclude *.pyd
+[2023-04-11 10:49:25] INFO root fetch - processPackages [dbm-agent]: executing diffoscope
+[2023-04-11 10:49:25] INFO root fetch - processPackages [dbm-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbm-agent-8.32.6.tar.gz tmp/dbm-agent-8.32.8.tar.gz --markdown 20230411/d/dbm-agent/8.32.6-8.32.8/diff.md --exclude *.pyd
+[2023-04-11 10:49:25] INFO root fetch - processPackages [pulumi-sdm]: executing diffoscope
+[2023-04-11 10:49:25] INFO root fetch - processPackages [pulumi-sdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sdm-0.3.0.tar.gz tmp/pulumi_sdm-0.4.0.tar.gz --markdown 20230411/p/pulumi-sdm/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-11 10:49:25] INFO root fetch - processPackages [quetz-server]: Downloading https://files.pythonhosted.org/packages/16/36/df5d2c780a5ddfee100e37c3fec5ad35c66fc1fb82d0a2655bf80ffdd9d3/quetz-server-0.7.0.tar.gz
+[2023-04-11 10:49:25] INFO root fetch - processPackages [quetz-server]: executing diffoscope
+[2023-04-11 10:49:25] INFO root fetch - processPackages [quetz-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quetz-server-0.6.3.tar.gz tmp/quetz-server-0.7.0.tar.gz --markdown 20230411/q/quetz-server/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2023-04-11 10:49:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:26] INFO root fetch - processPackages [zmeiapi]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-11 10:49:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:26] INFO root fetch - processPackages [alibabacloud-alimt20181012-py2]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 10:49:26] INFO root fetch - processPackages [zmeiapi]: Downloading https://files.pythonhosted.org/packages/fa/d4/9f729b64428fa99c2799b9d95973104af1ddef883246d4a4bd03d1caaa89/zmeiapi-0.1.5.tar.gz
+[2023-04-11 10:49:26] INFO root fetch - processPackages [alibabacloud-alimt20181012-py2]: Downloading https://files.pythonhosted.org/packages/a5/9c/ddcf6bd0f2469d66cb7716efcd2de1c364eb2faa446986c368ce8cdd9f38/alibabacloud_alimt20181012_py2-1.0.0.tar.gz
+[2023-04-11 10:49:26] INFO root fetch - processPackages [zmeiapi]: executing diffoscope
+[2023-04-11 10:49:26] INFO root fetch - processPackages [zmeiapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zmeiapi-0.1.4.tar.gz tmp/zmeiapi-0.1.5.tar.gz --markdown 20230411/z/zmeiapi/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-11 10:49:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:26] INFO root fetch - processPackages [alibabacloud-alimt20181012]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-11 10:49:27] INFO root fetch - processPackages [alibabacloud-alimt20181012-py2]: Downloading https://files.pythonhosted.org/packages/20/3f/c909fb541382a42bc757d0c4362babfd57ffe8cc27bab9ec921745905773/alibabacloud_alimt20181012_py2-1.0.1.tar.gz
+[2023-04-11 10:49:27] INFO root fetch - processPackages [alibabacloud-alimt20181012]: Downloading https://files.pythonhosted.org/packages/ce/ee/e441eaab2d1752936f165154f23979af84cb26c25b54f66f1bafdd65ebde/alibabacloud_alimt20181012-1.0.3.tar.gz
+[2023-04-11 10:49:27] INFO root fetch - processPackages [alibabacloud-alimt20181012-py2]: executing diffoscope
+[2023-04-11 10:49:27] INFO root fetch - processPackages [alibabacloud-alimt20181012-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_alimt20181012_py2-1.0.0.tar.gz tmp/alibabacloud_alimt20181012_py2-1.0.1.tar.gz --markdown 20230411/a/alibabacloud-alimt20181012-py2/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 10:49:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:27] INFO root fetch - processPackages [kmergenetyper]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-11 10:49:27] INFO root fetch - processPackages [alibabacloud-alimt20181012]: Downloading https://files.pythonhosted.org/packages/7f/68/ec74f498f407e8c85e0ca550c4da18f0463ebded0ba8c87bfc6f7173f680/alibabacloud_alimt20181012-1.0.4.tar.gz
+[2023-04-11 10:49:27] INFO root fetch - processPackages [alibabacloud-alimt20181012]: executing diffoscope
+[2023-04-11 10:49:27] INFO root fetch - processPackages [alibabacloud-alimt20181012]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_alimt20181012-1.0.3.tar.gz tmp/alibabacloud_alimt20181012-1.0.4.tar.gz --markdown 20230411/a/alibabacloud-alimt20181012/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-11 10:49:27] INFO root fetch - processPackages [kmergenetyper]: Downloading https://files.pythonhosted.org/packages/f4/f9/8fe8e7c0cce978be0f000eaa3a1b9b9c49b3584a3913a2eec332a4146569/kmergenetyper-1.0.6.tar.gz
+[2023-04-11 10:49:27] INFO root fetch - processPackages [kmergenetyper]: executing diffoscope
+[2023-04-11 10:49:27] INFO root fetch - processPackages [kmergenetyper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmergenetyper-1.0.5.tar.gz tmp/kmergenetyper-1.0.6.tar.gz --markdown 20230411/k/kmergenetyper/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-11 10:49:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:27] INFO root fetch - processPackages [gudhi]: New version: [3.8.0rc1] Old Version: [3.7.1rc1]
+[2023-04-11 10:49:27] INFO root fetch - processPackages [gudhi]: Downloading https://files.pythonhosted.org/packages/65/2c/187386831d0d8305b76f7f2d76e9e720aa219588620eaf34ce9d9a66bb5d/gudhi-3.7.1rc1-cp39-cp39-win_amd64.whl
+[2023-04-11 10:49:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:28] INFO root fetch - processPackages [zodiax]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-11 10:49:28] INFO root fetch - processPackages [zodiax]: Downloading https://files.pythonhosted.org/packages/af/55/71e3e914fffd12b85e3f9a4cb659518cfdd773c07054cd7b997c3f4a0d03/zodiax-0.3.3.tar.gz
+[2023-04-11 10:49:28] INFO root fetch - processPackages [zodiax]: executing diffoscope
+[2023-04-11 10:49:28] INFO root fetch - processPackages [zodiax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zodiax-0.3.2.tar.gz tmp/zodiax-0.3.3.tar.gz --markdown 20230411/z/zodiax/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-11 10:49:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:28] INFO root fetch - processPackages [apkutils]: New version: [1.3.0] Old Version: [1.2.4]
+[2023-04-11 10:49:28] INFO root fetch - processPackages [apkutils]: Downloading https://files.pythonhosted.org/packages/77/05/d0b715a2304e0e7425b4ee72d707d6ca6e0a2781d89f28e233c348f832b2/apkutils-1.3.0.tar.gz
+[2023-04-11 10:49:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:28] INFO root fetch - processPackages [opengeode]: New version: [4.0.6] Old Version: [4.0.4]
+[2023-04-11 10:49:29] INFO root fetch - processPackages [gudhi]: Downloading https://files.pythonhosted.org/packages/8d/9a/9df17e09bb8236fd1613c903ab571b5d66295de9e59baf97c80f94e5fa2d/gudhi-3.8.0rc1.tar.gz
+[2023-04-11 10:49:29] INFO root fetch - processPackages [apkutils]: executing diffoscope
+[2023-04-11 10:49:29] INFO root fetch - processPackages [apkutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apkutils-1.2.4.tar.gz tmp/apkutils-1.3.0.tar.gz --markdown 20230411/a/apkutils/1.2.4-1.3.0/diff.md --exclude *.pyd
+[2023-04-11 10:49:29] INFO root fetch - processPackages [gudhi]: executing diffoscope
+[2023-04-11 10:49:29] INFO root fetch - processPackages [gudhi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gudhi-3.7.1rc1-cp39-cp39-win_amd64.whl.zip tmp/gudhi-3.8.0rc1.tar.gz --markdown 20230411/g/gudhi/3.7.1rc1-3.8.0rc1/diff.md --exclude *.pyd
+[2023-04-11 10:49:29] INFO root fetch - processPackages [opengeode]: Downloading https://files.pythonhosted.org/packages/02/49/7896f9e1d18dc25a58050d4900425bca03cf21c1d58904f594c72f1d3dca/opengeode-4.0.4.tar.gz
+[2023-04-11 10:49:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:29] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:31] INFO root fetch - processPackages [opengeode]: Downloading https://files.pythonhosted.org/packages/5f/86/e6418c4b5126d01f8fe687418e1e9d228316dad0a760dd42d1ac4f142aa4/opengeode-4.0.6.tar.gz
+[2023-04-11 10:49:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:36] INFO root fetch - processPackages [opengeode]: executing diffoscope
+[2023-04-11 10:49:36] INFO root fetch - processPackages [opengeode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opengeode-4.0.4.tar.gz tmp/opengeode-4.0.6.tar.gz --markdown 20230411/o/opengeode/4.0.4-4.0.6/diff.md --exclude *.pyd
+[2023-04-11 10:49:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:49:39] INFO root fetch - main [MainThread]: Store serial: [17658487]
