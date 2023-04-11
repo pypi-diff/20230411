@@ -4219,3 +4219,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 04:14:27] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:14:28] INFO root fetch - main [MainThread]: success
 [2023-04-11 04:14:28] INFO root fetch - main [MainThread]: Store serial: [17654090]
+[2023-04-11 04:19:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17654090]
+[2023-04-11 04:19:35] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-11 04:19:35] INFO root fetch - processPackages [alkymi]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-11 04:19:35] WARNING root fetch - processPackages [onegpt]: Skipping, unable to determine old version
+[2023-04-11 04:19:35] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:19:35] WARNING root fetch - processPackages [knyjs]: Skipping, unable to determine old version
+[2023-04-11 04:19:35] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:19:35] INFO root fetch - processPackages [AttentionMOI]: New version: [0.1] Old Version: [0.0.9]
+[2023-04-11 04:19:35] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 04:19:35] INFO root fetch - processPackages [rec-pangu]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-11 04:19:35] INFO root fetch - processPackages [torch-choice]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 04:19:36] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2023-04-11 04:19:36] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.8.tar.gz tmp/cdk-budibase-0.0.9.tar.gz --markdown 20230411/c/cdk-budibase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 04:19:36] INFO root fetch - processPackages [alkymi]: Downloading https://files.pythonhosted.org/packages/df/34/6ba3a91f7e5fb6a4cbdca57b2d5606ceca868602ef336323f49d78cbe93f/alkymi-0.1.0.tar.gz
+[2023-04-11 04:19:36] INFO root fetch - processPackages [AttentionMOI]: Downloading https://files.pythonhosted.org/packages/3a/26/0394ab2d1a30f47295dd4e45a463e0601db93dfc5fe9591f630ee6a5279c/AttentionMOI-0.1.tar.gz
+[2023-04-11 04:19:36] INFO root fetch - processPackages [rec-pangu]: Downloading https://files.pythonhosted.org/packages/df/82/b4c54ef3746d49d6006ddc0a86fe0bfff7887d8189f47fc5cd2744163e65/rec_pangu-0.3.6-py3-none-any.whl
+[2023-04-11 04:19:36] INFO root fetch - processPackages [AttentionMOI]: executing diffoscope
+[2023-04-11 04:19:36] INFO root fetch - processPackages [AttentionMOI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AttentionMOI-0.0.9.tar.gz tmp/AttentionMOI-0.1.tar.gz --markdown 20230411/A/AttentionMOI/0.0.9-0.1/diff.md --exclude *.pyd
+[2023-04-11 04:19:36] INFO root fetch - processPackages [rec-pangu]: executing diffoscope
+[2023-04-11 04:19:36] INFO root fetch - processPackages [rec-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rec_pangu-0.3.5-py3-none-any.whl.zip tmp/rec_pangu-0.3.6-py3-none-any.whl.zip --markdown 20230411/r/rec-pangu/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-11 04:19:36] INFO root fetch - processPackages [torch-choice]: Downloading https://files.pythonhosted.org/packages/0e/a8/c0f03c6ee9a3e925093c349b75e823f080b10932b97f4c743c56db4fc26e/torch_choice-1.0.1.tar.gz
+[2023-04-11 04:19:36] INFO root fetch - processPackages [torch-choice]: executing diffoscope
+[2023-04-11 04:19:36] INFO root fetch - processPackages [torch-choice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_choice-1.0.0.tar.gz tmp/torch_choice-1.0.1.tar.gz --markdown 20230411/t/torch-choice/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 04:19:36] INFO root fetch - processPackages [alkymi]: Downloading https://files.pythonhosted.org/packages/9f/6a/66928956f73a3fed89b0c167b6c5b21ae0f3286378db4566a5b42d163e2d/alkymi-0.2.0.tar.gz
+[2023-04-11 04:19:36] INFO root fetch - processPackages [alkymi]: executing diffoscope
+[2023-04-11 04:19:36] INFO root fetch - processPackages [alkymi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alkymi-0.1.0.tar.gz tmp/alkymi-0.2.0.tar.gz --markdown 20230411/a/alkymi/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 04:19:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:19:37] INFO root fetch - processPackages [jdmtool]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 04:19:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:19:37] INFO root fetch - processPackages [naplib]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-11 04:19:37] INFO root fetch - processPackages [jdmtool]: Downloading https://files.pythonhosted.org/packages/76/c7/668a91e5512349a45c5f5beec9fe7cfd3119c4be3e9aea8f880d4a499780/jdmtool-0.0.1.tar.gz
+[2023-04-11 04:19:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:19:37] WARNING root fetch - processPackages [streamlit-image-annotation]: Skipping, unable to determine old version
+[2023-04-11 04:19:37] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:19:37] INFO root fetch - processPackages [flowtask]: New version: [4.3.3] Old Version: [4.3.2]
+[2023-04-11 04:19:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:19:37] WARNING root fetch - processPackages [carusina01]: Skipping, unable to determine old version
+[2023-04-11 04:19:37] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:19:37] INFO root fetch - processPackages [arkdata]: New version: [0.0.48] Old Version: [0.0.47]
+[2023-04-11 04:19:38] INFO root fetch - processPackages [flowtask]: Downloading https://files.pythonhosted.org/packages/42/74/358a5a3eb09ba287991b911fd777180456e1ce53e88f717bd1a4fc1b610c/flowtask-4.3.3.tar.gz
+[2023-04-11 04:19:38] INFO root fetch - processPackages [jdmtool]: Downloading https://files.pythonhosted.org/packages/9c/af/85c30666fa7dc65baf988af2c4b2a819cf1d4277f5211351be196fe0eeae/jdmtool-0.0.2.tar.gz
+[2023-04-11 04:19:38] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-04-11 04:19:38] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.2.tar.gz tmp/flowtask-4.3.3.tar.gz --markdown 20230411/f/flowtask/4.3.2-4.3.3/diff.md --exclude *.pyd
+[2023-04-11 04:19:38] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/f5/27/f965ed31309f47b6e86197b7ed6127319eb5ad829676fc1a4cb7a7715108/arkdata-0.0.48.tar.gz
+[2023-04-11 04:19:38] INFO root fetch - processPackages [jdmtool]: executing diffoscope
+[2023-04-11 04:19:38] INFO root fetch - processPackages [jdmtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jdmtool-0.0.1.tar.gz tmp/jdmtool-0.0.2.tar.gz --markdown 20230411/j/jdmtool/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 04:19:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:19:38] WARNING root fetch - processPackages [ygmycalc001]: Skipping, unable to determine old version
+[2023-04-11 04:19:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:19:38] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-11 04:19:38] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-0.0.47.tar.gz tmp/arkdata-0.0.48.tar.gz --markdown 20230411/a/arkdata/0.0.47-0.0.48/diff.md --exclude *.pyd
+[2023-04-11 04:19:38] INFO root fetch - processPackages [naplib]: Downloading https://files.pythonhosted.org/packages/8c/fb/cf40a377c35bc66c68d69169e0402513890e5afedb430acb33c2b3111a1f/naplib-0.4.0.tar.gz
+[2023-04-11 04:19:38] WARNING root fetch - processPackages [naplib]: Skipping package: exceeds size limit 83204517>=10485760
+[2023-04-11 04:19:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:19:38] WARNING root fetch - processPackages [hwKim0524]: Skipping, unable to determine old version
+[2023-04-11 04:19:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:19:38] WARNING root fetch - processPackages [dss06023calc]: Skipping, unable to determine old version
+[2023-04-11 04:19:38] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:19:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:19:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:19:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:19:40] INFO root fetch - main [MainThread]: Store serial: [17654153]
