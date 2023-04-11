@@ -9791,3 +9791,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 09:41:20] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:41:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:41:22] INFO root fetch - main [MainThread]: Store serial: [17657681]
+[2023-04-11 09:46:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17657681]
+[2023-04-11 09:46:31] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 09:46:31] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1644] Old Version: [0.20230411.1625]
+[2023-04-11 09:46:31] INFO root fetch - processPackages [pawnlib]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 09:46:31] INFO root fetch - processPackages [murfey]: New version: [0.7.5] Old Version: [0.7.3]
+[2023-04-11 09:46:31] INFO root fetch - processPackages [abml-cli]: New version: [0.1.6] Old Version: [0.1.4]
+[2023-04-11 09:46:31] INFO root fetch - processPackages [dcb-admin-page-generator]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 09:46:31] INFO root fetch - processPackages [pawnlib]: Downloading https://files.pythonhosted.org/packages/7e/31/93c6566777677c192de7f70c286133bbfe69061a2ef025de60e6604ddc81/pawnlib-0.1.8-py3-none-any.whl
+[2023-04-11 09:46:31] INFO root fetch - processPackages [murfey]: Downloading https://files.pythonhosted.org/packages/e4/9d/28e945ad49da91c0030161926b2f69b1168f3396001d582409e72547cc0f/murfey-0.7.3.tar.gz
+[2023-04-11 09:46:31] INFO root fetch - processPackages [dcb-admin-page-generator]: Downloading https://files.pythonhosted.org/packages/27/db/b4f87ed1e38827494a41300853c38d09f6405ddae023880eb5db22592b37/dcb_admin_page_generator-0.0.3.tar.gz
+[2023-04-11 09:46:31] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/a4/90/a0475e749bdea5ed8394d51a4937a66c88e4991b467c022a37061f648e44/krutils-0.20230411.1644.tar.gz
+[2023-04-11 09:46:31] INFO root fetch - processPackages [abml-cli]: Downloading https://files.pythonhosted.org/packages/84/55/876eb51ff4f319f4be4aff8169cc2a2ad85570ac4f7e4677021e1d0ab8a5/abml_cli-0.1.6.tar.gz
+[2023-04-11 09:46:31] INFO root fetch - processPackages [dcb-admin-page-generator]: executing diffoscope
+[2023-04-11 09:46:31] INFO root fetch - processPackages [dcb-admin-page-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcb_admin_page_generator-0.0.2.tar.gz tmp/dcb_admin_page_generator-0.0.3.tar.gz --markdown 20230411/d/dcb-admin-page-generator/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 09:46:31] INFO root fetch - processPackages [murfey]: Downloading https://files.pythonhosted.org/packages/32/01/e752c45d91257c73d8438af99ce0076d7e48a81c92760e7f7ca9be96d36d/murfey-0.7.5.tar.gz
+[2023-04-11 09:46:31] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 09:46:31] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1625.tar.gz tmp/krutils-0.20230411.1644.tar.gz --markdown 20230411/k/krutils/0.20230411.1625-0.20230411.1644/diff.md --exclude *.pyd
+[2023-04-11 09:46:31] INFO root fetch - processPackages [abml-cli]: executing diffoscope
+[2023-04-11 09:46:31] INFO root fetch - processPackages [abml-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abml-cli-0.1.4.tar.gz tmp/abml_cli-0.1.6.tar.gz --markdown 20230411/a/abml-cli/0.1.4-0.1.6/diff.md --exclude *.pyd
+[2023-04-11 09:46:32] INFO root fetch - processPackages [pawnlib]: Downloading https://files.pythonhosted.org/packages/8f/9c/e15688ebfda0dfe3f6e46baca3902892a3c8bd314f3a4629dd9e584c29e2/pawnlib-0.1.9-py3-none-any.whl
+[2023-04-11 09:46:32] INFO root fetch - processPackages [pawnlib]: executing diffoscope
+[2023-04-11 09:46:32] INFO root fetch - processPackages [pawnlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pawnlib-0.1.8-py3-none-any.whl.zip tmp/pawnlib-0.1.9-py3-none-any.whl.zip --markdown 20230411/p/pawnlib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 09:46:32] INFO root fetch - processPackages [murfey]: executing diffoscope
+[2023-04-11 09:46:32] INFO root fetch - processPackages [murfey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/murfey-0.7.3.tar.gz tmp/murfey-0.7.5.tar.gz --markdown 20230411/m/murfey/0.7.3-0.7.5/diff.md --exclude *.pyd
+[2023-04-11 09:46:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:32] INFO root fetch - processPackages [hello2]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-04-11 09:46:32] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/64/c8/bce73a3503204151c9553644f1de28946831d99974029f2dc2a3339243b0/hello2-1.5.1.tar.gz
+[2023-04-11 09:46:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:33] INFO root fetch - processPackages [cmdint]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-11 09:46:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:33] INFO root fetch - processPackages [dcb-admin-page-generator]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 09:46:33] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/30/ce/735b1ea0cb9311a5f147f3d74e9dc962258ac1b2997610bc2d2f0707a79d/hello2-1.5.2.tar.gz
+[2023-04-11 09:46:33] INFO root fetch - processPackages [cmdint]: Downloading https://files.pythonhosted.org/packages/86/86/741f5cf4bcf34b8b80c1d7868c6a61e4e74f704adc5afd8730ebb41be12e/cmdint-3.0.4.tar.gz
+[2023-04-11 09:46:33] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-04-11 09:46:33] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.5.1.tar.gz tmp/hello2-1.5.2.tar.gz --markdown 20230411/h/hello2/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-04-11 09:46:33] INFO root fetch - processPackages [dcb-admin-page-generator]: Downloading https://files.pythonhosted.org/packages/17/f2/31b49b3b2a0dfc9f13f4e570b5dc1c233ddd3af8026570d7089208ef241e/dcb_admin_page_generator-0.0.4.tar.gz
+[2023-04-11 09:46:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:33] INFO root fetch - processPackages [cmdint]: Downloading https://files.pythonhosted.org/packages/17/82/cee65c37e7377006d36939dee802b0e7d54580f6a87b008e47d5d850fd94/cmdint-3.0.5.tar.gz
+[2023-04-11 09:46:33] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-04-11 09:46:33] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-04-11 09:46:33] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230411/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-04-11 09:46:33] INFO root fetch - processPackages [dcb-admin-page-generator]: executing diffoscope
+[2023-04-11 09:46:33] INFO root fetch - processPackages [dcb-admin-page-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcb_admin_page_generator-0.0.3.tar.gz tmp/dcb_admin_page_generator-0.0.4.tar.gz --markdown 20230411/d/dcb-admin-page-generator/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 09:46:33] INFO root fetch - processPackages [cmdint]: executing diffoscope
+[2023-04-11 09:46:33] INFO root fetch - processPackages [cmdint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmdint-3.0.4.tar.gz tmp/cmdint-3.0.5.tar.gz --markdown 20230411/c/cmdint/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-11 09:46:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:34] INFO root fetch - processPackages [elementpath]: New version: [4.1.1] Old Version: [4.1.0]
+[2023-04-11 09:46:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:34] INFO root fetch - processPackages [elementpath]: Downloading https://files.pythonhosted.org/packages/ff/cf/0d6f2c642d156b884b8e626332ece1f5c7243376fd207ec4e7bca89ab978/elementpath-4.1.0.tar.gz
+[2023-04-11 09:46:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:35] INFO root fetch - processPackages [elementpath]: Downloading https://files.pythonhosted.org/packages/3c/ab/fd32a0ca98b56feb18a1ac9b783faf73fc18d7c759c98843bf6b17c87fde/elementpath-4.1.1.tar.gz
+[2023-04-11 09:46:35] INFO root fetch - processPackages [elementpath]: executing diffoscope
+[2023-04-11 09:46:35] INFO root fetch - processPackages [elementpath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elementpath-4.1.0.tar.gz tmp/elementpath-4.1.1.tar.gz --markdown 20230411/e/elementpath/4.1.0-4.1.1/diff.md --exclude *.pyd
+[2023-04-11 09:46:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:46:41] INFO root fetch - main [MainThread]: Store serial: [17657712]
