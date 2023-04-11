@@ -9275,3 +9275,110 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 09:21:59] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:22:04] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:22:04] INFO root fetch - main [MainThread]: Store serial: [17657388]
+[2023-04-11 09:27:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17657388]
+[2023-04-11 09:27:12] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-11 09:27:12] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1625] Old Version: [0.20230411.1624]
+[2023-04-11 09:27:12] INFO root fetch - processPackages [dbt-trino]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-11 09:27:12] WARNING root fetch - processPackages [easyquery-query-builder]: Skipping, unable to determine old version
+[2023-04-11 09:27:12] INFO root fetch - main [MainThread]: error
+[2023-04-11 09:27:12] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: New version: [0.0.99] Old Version: [0.0.97]
+[2023-04-11 09:27:12] INFO root fetch - processPackages [certora-cli-alpha-oz-package-eqchecker]: New version: [20230411.7.27.849783] Old Version: [20230405.14.57.690119]
+[2023-04-11 09:27:12] INFO root fetch - processPackages [gidgetlab-kit]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-11 09:27:12] INFO root fetch - processPackages [dbt-trino]: executing diffoscope
+[2023-04-11 09:27:12] INFO root fetch - processPackages [dbt-trino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-trino-1.4.1.tar.gz tmp/dbt-trino-1.4.2.tar.gz --markdown 20230411/d/dbt-trino/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-11 09:27:12] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: executing diffoscope
+[2023-04-11 09:27:12] INFO root fetch - processPackages [pepperize.cdk-apigateway-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-apigateway-swagger-ui-0.0.97.tar.gz tmp/pepperize.cdk-apigateway-swagger-ui-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-apigateway-swagger-ui/0.0.97-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 09:27:12] INFO root fetch - processPackages [certora-cli-alpha-oz-package-eqchecker]: Downloading https://files.pythonhosted.org/packages/a3/a8/51dbee6cde490decee9c4c6671060954ff9fa7d685d78994e834a729c9ed/certora-cli-alpha-oz-package-eqchecker-20230405.14.57.690119.tar.gz
+[2023-04-11 09:27:12] INFO root fetch - processPackages [gidgetlab-kit]: Downloading https://files.pythonhosted.org/packages/9e/c2/302d3814bf40977a6d1a311b6a8a16109009b5aa7aa2c51d116497ef68b2/gidgetlab-kit-0.5.0.tar.gz
+[2023-04-11 09:27:12] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/03/6c/95d1d1a2176788611eedb9244bddbc34f4f36a6b05960b19be457a7523de/krutils-0.20230411.1625.tar.gz
+[2023-04-11 09:27:12] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 09:27:12] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1624.tar.gz tmp/krutils-0.20230411.1625.tar.gz --markdown 20230411/k/krutils/0.20230411.1624-0.20230411.1625/diff.md --exclude *.pyd
+[2023-04-11 09:27:12] INFO root fetch - processPackages [gidgetlab-kit]: Downloading https://files.pythonhosted.org/packages/ca/3f/68a5bc119eb829a0624b723cf1f9e9f83765c63c97237c779d2d439719a1/gidgetlab_kit-0.6.0.tar.gz
+[2023-04-11 09:27:12] INFO root fetch - processPackages [gidgetlab-kit]: executing diffoscope
+[2023-04-11 09:27:12] INFO root fetch - processPackages [gidgetlab-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gidgetlab-kit-0.5.0.tar.gz tmp/gidgetlab_kit-0.6.0.tar.gz --markdown 20230411/g/gidgetlab-kit/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-11 09:27:12] WARNING root fetch - processPackages [certora-cli-alpha-oz-package-eqchecker]: Skipping package: exceeds size limit 28061826>=10485760
+[2023-04-11 09:27:12] INFO root fetch - main [MainThread]: error
+[2023-04-11 09:27:12] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: New version: [16.0.20230327.0] Old Version: [16.0.20230324.0]
+[2023-04-11 09:27:13] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/5b/47/65cae59307446092bec6cf0bfc89b2910ace89ca0ebec2699b9e1c610969/odoo_addons_oca_sale_workflow-16.0.20230324.0-py3-none-any.whl
+[2023-04-11 09:27:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:13] INFO root fetch - processPackages [atlasofsmoothspaces]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 09:27:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:13] INFO root fetch - processPackages [idun-guardian-client]: New version: [1.1b4] Old Version: [1.1b3]
+[2023-04-11 09:27:13] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/3a/b3/144fbe8f7614cea614d13c74b317a928e74a0a9aaccd0f370ad40a289cce/odoo_addons_oca_sale_workflow-16.0.20230327.0-py3-none-any.whl
+[2023-04-11 09:27:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:13] WARNING root fetch - processPackages [mobio-monitor-system-sdk]: Skipping, unable to determine old version
+[2023-04-11 09:27:13] INFO root fetch - main [MainThread]: error
+[2023-04-11 09:27:13] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: executing diffoscope
+[2023-04-11 09:27:13] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_sale_workflow-16.0.20230324.0-py3-none-any.whl.zip tmp/odoo_addons_oca_sale_workflow-16.0.20230327.0-py3-none-any.whl.zip --markdown 20230411/o/odoo-addons-oca-sale-workflow/16.0.20230324.0-16.0.20230327.0/diff.md --exclude *.pyd
+[2023-04-11 09:27:13] INFO root fetch - processPackages [atlasofsmoothspaces]: Downloading https://files.pythonhosted.org/packages/e9/bc/c6e970d4be7c852353886821a83788b03393ba0badd04acf8b91be117aab/atlasofsmoothspaces-1.0.1.tar.gz
+[2023-04-11 09:27:13] INFO root fetch - processPackages [idun-guardian-client]: Downloading https://files.pythonhosted.org/packages/39/c0/2ee29d51b748f51aae35629821d9b33735ac10b2330298815d64f5b686a5/idun_guardian_client-1.1b4.tar.gz
+[2023-04-11 09:27:13] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: New version: [11.0.1.2.0.99.dev9] Old Version: [11.0.1.2.0.99.dev13]
+[2023-04-11 09:27:13] INFO root fetch - processPackages [idun-guardian-client]: executing diffoscope
+[2023-04-11 09:27:13] INFO root fetch - processPackages [idun-guardian-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idun_guardian_client-1.1b3.tar.gz tmp/idun_guardian_client-1.1b4.tar.gz --markdown 20230411/i/idun-guardian-client/1.1b3-1.1b4/diff.md --exclude *.pyd
+[2023-04-11 09:27:13] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: Downloading https://files.pythonhosted.org/packages/91/eb/4f529e18df42c1c6f23cef780592495543ad19448fb4e2754b192a524d22/odoo11_addon_auth_brute_force-11.0.1.2.0.99.dev13-py2.py3-none-any.whl
+[2023-04-11 09:27:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:13] INFO root fetch - processPackages [atlasofsmoothspaces]: Downloading https://files.pythonhosted.org/packages/8b/28/3d5fe100951f450d6c524d96b2f0c6d5e0694e2608e8a998f8caa6de0076/atlasofsmoothspaces-1.0.2.tar.gz
+[2023-04-11 09:27:13] INFO root fetch - processPackages [atlasofsmoothspaces]: executing diffoscope
+[2023-04-11 09:27:13] INFO root fetch - processPackages [atlasofsmoothspaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlasofsmoothspaces-1.0.1.tar.gz tmp/atlasofsmoothspaces-1.0.2.tar.gz --markdown 20230411/a/atlasofsmoothspaces/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 09:27:13] INFO root fetch - processPackages [oci]: New version: [2.98.0] Old Version: [2.97.0]
+[2023-04-11 09:27:14] INFO root fetch - processPackages [oci]: Downloading https://files.pythonhosted.org/packages/25/f1/eb24d387a7c812a31a50e7c02d68aa7c0330422506424dfd74cf8747a88b/oci-2.97.0.tar.gz
+[2023-04-11 09:27:14] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: Downloading https://files.pythonhosted.org/packages/bb/bb/37ea41077186ca89ca39344ebbf8a64ba51ec78f19ac22a4b0393f9992e7/odoo11_addon_auth_brute_force-11.0.1.2.0.99.dev9-py2.py3-none-any.whl
+[2023-04-11 09:27:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:14] INFO root fetch - processPackages [odoo11-addon-keychain]: New version: [11.0.3.0.0.99.dev5] Old Version: [11.0.3.0.0.99.dev4]
+[2023-04-11 09:27:14] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: executing diffoscope
+[2023-04-11 09:27:14] INFO root fetch - processPackages [odoo11-addon-auth-brute-force]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_auth_brute_force-11.0.1.2.0.99.dev13-py2.py3-none-any.whl.zip tmp/odoo11_addon_auth_brute_force-11.0.1.2.0.99.dev9-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-auth-brute-force/11.0.1.2.0.99.dev13-11.0.1.2.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-11 09:27:14] INFO root fetch - processPackages [odoo11-addon-keychain]: Downloading https://files.pythonhosted.org/packages/25/5f/3db779e87a68d70fd7dfed79b4ca779088124072be3830d675a9896669a6/odoo11_addon_keychain-11.0.3.0.0.99.dev4-py2.py3-none-any.whl
+[2023-04-11 09:27:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:14] INFO root fetch - processPackages [mdast-cli]: New version: [2023.4.3] Old Version: [2023.4.2]
+[2023-04-11 09:27:15] INFO root fetch - processPackages [odoo12-addon-users-ldap-populate]: New version: [12.0.1.0.2.99.dev2] Old Version: [12.0.1.0.2.99.dev1]
+[2023-04-11 09:27:15] INFO root fetch - processPackages [odoo11-addon-keychain]: Downloading https://files.pythonhosted.org/packages/76/aa/d5b08ab1b5bbab8608d8b1c66752d08f716579a85089c57e9b18f22edaa9/odoo11_addon_keychain-11.0.3.0.0.99.dev5-py2.py3-none-any.whl
+[2023-04-11 09:27:15] INFO root fetch - processPackages [odoo12-addon-users-ldap-populate]: Downloading https://files.pythonhosted.org/packages/0f/53/f156f2607894b1ecf6d94ccd40af65b134de6ac17cf6905d93012fb33dc2/odoo12_addon_users_ldap_populate-12.0.1.0.2.99.dev1-py3-none-any.whl
+[2023-04-11 09:27:15] INFO root fetch - processPackages [mdast-cli]: Downloading https://files.pythonhosted.org/packages/23/c5/95bb3fb632856ef67e52c80d0e24ac598182fab68b46ceb40b0cd62534e7/mdast_cli-2023.4.3.tar.gz
+[2023-04-11 09:27:15] INFO root fetch - processPackages [odoo11-addon-keychain]: executing diffoscope
+[2023-04-11 09:27:15] INFO root fetch - processPackages [odoo11-addon-keychain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_keychain-11.0.3.0.0.99.dev4-py2.py3-none-any.whl.zip tmp/odoo11_addon_keychain-11.0.3.0.0.99.dev5-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-keychain/11.0.3.0.0.99.dev4-11.0.3.0.0.99.dev5/diff.md --exclude *.pyd
+[2023-04-11 09:27:15] INFO root fetch - processPackages [mdast-cli]: executing diffoscope
+[2023-04-11 09:27:15] INFO root fetch - processPackages [mdast-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdast_cli-2023.4.2.tar.gz tmp/mdast_cli-2023.4.3.tar.gz --markdown 20230411/m/mdast-cli/2023.4.2-2023.4.3/diff.md --exclude *.pyd
+[2023-04-11 09:27:15] INFO root fetch - processPackages [odoo12-addon-users-ldap-populate]: Downloading https://files.pythonhosted.org/packages/b9/cf/c450155fc4aeecf75ebfa2c0ef10d9f81d2208d3a9aa03ba415e1529366f/odoo12_addon_users_ldap_populate-12.0.1.0.2.99.dev2-py3-none-any.whl
+[2023-04-11 09:27:15] INFO root fetch - processPackages [odoo12-addon-users-ldap-populate]: executing diffoscope
+[2023-04-11 09:27:15] INFO root fetch - processPackages [odoo12-addon-users-ldap-populate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_users_ldap_populate-12.0.1.0.2.99.dev1-py3-none-any.whl.zip tmp/odoo12_addon_users_ldap_populate-12.0.1.0.2.99.dev2-py3-none-any.whl.zip --markdown 20230411/o/odoo12-addon-users-ldap-populate/12.0.1.0.2.99.dev1-12.0.1.0.2.99.dev2/diff.md --exclude *.pyd
+[2023-04-11 09:27:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:16] INFO root fetch - processPackages [JablotronPy]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-04-11 09:27:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:16] INFO root fetch - processPackages [JablotronPy]: Downloading https://files.pythonhosted.org/packages/07/41/36e9e810be9d57fbb043ea8b84faf4d227983baaea31a0f6f2ddd91b59c1/JablotronPy-0.4.2.tar.gz
+[2023-04-11 09:27:16] INFO root fetch - processPackages [odoo11-addon-auth-totp]: New version: [11.0.1.1.0.99.dev3] Old Version: [11.0.1.1.0.99.dev2]
+[2023-04-11 09:27:16] INFO root fetch - processPackages [JablotronPy]: Downloading https://files.pythonhosted.org/packages/99/2b/e2c42ad30339589a51b9fb65c896370bd378559e27593a4c168d3c56f5ac/JablotronPy-0.5.0.tar.gz
+[2023-04-11 09:27:17] INFO root fetch - processPackages [odoo11-addon-auth-totp]: Downloading https://files.pythonhosted.org/packages/d4/3b/602f963a633cde3a28328fe2378e9c8633e505c5666b7695c463abf833d0/odoo11_addon_auth_totp-11.0.1.1.0.99.dev2-py2.py3-none-any.whl
+[2023-04-11 09:27:17] INFO root fetch - processPackages [JablotronPy]: executing diffoscope
+[2023-04-11 09:27:17] INFO root fetch - processPackages [JablotronPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JablotronPy-0.4.2.tar.gz tmp/JablotronPy-0.5.0.tar.gz --markdown 20230411/J/JablotronPy/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 09:27:17] INFO root fetch - processPackages [oci]: Downloading https://files.pythonhosted.org/packages/12/b2/c2241bec60d913a5a1453a598a9b3a47ce4af59005b96932a330ce2c7385/oci-2.98.0.tar.gz
+[2023-04-11 09:27:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:17] INFO root fetch - processPackages [odoo11-addon-auth-totp]: Downloading https://files.pythonhosted.org/packages/8f/7e/733eae36a3a64645619be50bb3718a3419277f7560ca5c696565d5a57117/odoo11_addon_auth_totp-11.0.1.1.0.99.dev3-py2.py3-none-any.whl
+[2023-04-11 09:27:17] INFO root fetch - processPackages [apitest-ezgo]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-11 09:27:17] INFO root fetch - processPackages [odoo11-addon-auth-totp]: executing diffoscope
+[2023-04-11 09:27:17] INFO root fetch - processPackages [odoo11-addon-auth-totp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_auth_totp-11.0.1.1.0.99.dev2-py2.py3-none-any.whl.zip tmp/odoo11_addon_auth_totp-11.0.1.1.0.99.dev3-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-auth-totp/11.0.1.1.0.99.dev2-11.0.1.1.0.99.dev3/diff.md --exclude *.pyd
+[2023-04-11 09:27:17] INFO root fetch - processPackages [apitest-ezgo]: Downloading https://files.pythonhosted.org/packages/16/bd/55366761fd26e1d2b87833078dbaa4bae205f1c4e05693bcd84a28c88fb8/apitest_ezgo-0.0.5-py2-none-any.whl
+[2023-04-11 09:27:18] INFO root fetch - processPackages [apitest-ezgo]: Downloading https://files.pythonhosted.org/packages/84/6d/df5c8f537687ba1ecb52023ad6209fb935199837df8c51d5346dfed4aa60/apitest_ezgo-0.0.6-py2-none-any.whl
+[2023-04-11 09:27:18] INFO root fetch - processPackages [apitest-ezgo]: executing diffoscope
+[2023-04-11 09:27:18] INFO root fetch - processPackages [apitest-ezgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apitest_ezgo-0.0.5-py2-none-any.whl.zip tmp/apitest_ezgo-0.0.6-py2-none-any.whl.zip --markdown 20230411/a/apitest-ezgo/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 09:27:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:18] INFO root fetch - processPackages [pynurex]: New version: [1.9.0] Old Version: [1.5]
+[2023-04-11 09:27:18] INFO root fetch - processPackages [pynurex]: Downloading https://files.pythonhosted.org/packages/a3/38/4020ca10ed7a8d139532896b470e06aaaeaa612f1663f09f5d475b891e2c/pynurex-1.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 09:27:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:19] INFO root fetch - processPackages [odoo13-addon-password-security]: New version: [13.0.1.0.1.dev9] Old Version: [13.0.1.0.1.dev8]
+[2023-04-11 09:27:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:19] INFO root fetch - processPackages [odoo13-addon-password-security]: Downloading https://files.pythonhosted.org/packages/25/1c/310a6e57f2b9597a5166dfb33902aef53395de7f1686f198c0d89a3b5727/odoo13_addon_password_security-13.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-11 09:27:19] INFO root fetch - processPackages [pynurex]: Downloading https://files.pythonhosted.org/packages/3a/ce/8a6fa77e6c9cce6c976dde6f554540b6ba80d742378644bcac00a7c60048/pynurex-1.9.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 09:27:19] INFO root fetch - processPackages [odoo13-addon-password-security]: Downloading https://files.pythonhosted.org/packages/21/30/9c8148f0279aa15d20a12f3e1049e8d02ec46170f635a6a2b5157ff6a62a/odoo13_addon_password_security-13.0.1.0.1.dev9-py3-none-any.whl
+[2023-04-11 09:27:20] INFO root fetch - processPackages [pynurex]: executing diffoscope
+[2023-04-11 09:27:20] INFO root fetch - processPackages [pynurex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynurex-1.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pynurex-1.9.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230411/p/pynurex/1.5-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 09:27:20] INFO root fetch - processPackages [odoo13-addon-password-security]: executing diffoscope
+[2023-04-11 09:27:20] INFO root fetch - processPackages [odoo13-addon-password-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_password_security-13.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo13_addon_password_security-13.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20230411/o/odoo13-addon-password-security/13.0.1.0.1.dev8-13.0.1.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 09:27:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:27:21] INFO root fetch - processPackages [oci]: executing diffoscope
+[2023-04-11 09:27:21] INFO root fetch - processPackages [oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oci-2.97.0.tar.gz tmp/oci-2.98.0.tar.gz --markdown 20230411/o/oci/2.97.0-2.98.0/diff.md --exclude *.pyd
+[2023-04-11 09:27:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:30:21] ERROR root fetch - processPackages [oci]: Timeout during execution of pkgdiff
+[2023-04-11 09:30:21] INFO root fetch - main [MainThread]: error
+[2023-04-11 09:30:21] INFO root fetch - main [MainThread]: Store serial: [17657446]
