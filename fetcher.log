@@ -17709,3 +17709,88 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 18:00:37] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:01:08] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:01:08] INFO root fetch - main [MainThread]: Store serial: [17663143]
+[2023-04-11 18:06:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663143]
+[2023-04-11 18:06:16] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-11 18:06:16] WARNING root fetch - processPackages [logo-standardizer]: Skipping, unable to determine old version
+[2023-04-11 18:06:16] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:06:16] INFO root fetch - processPackages [intel-extension-for-tensorflow-lib]: New version: [1.2.0.1rc0] Old Version: [1.2.0.0rc0]
+[2023-04-11 18:06:16] INFO root fetch - processPackages [intel-extension-for-tensorflow]: New version: [1.2.0rc0] Old Version: [1.1.0]
+[2023-04-11 18:06:16] INFO root fetch - processPackages [intel-extension-for-tensorflow-lib]: New version: [1.2.0.1rc0] Old Version: [1.2.0.0rc0]
+[2023-04-11 18:06:16] INFO root fetch - processPackages [py3d]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 18:06:16] INFO root fetch - processPackages [kiss-icp]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-11 18:06:17] INFO root fetch - processPackages [intel-extension-for-tensorflow-lib]: Downloading https://files.pythonhosted.org/packages/96/94/e5f6ecae71ad6c6b1faafa9e248e10ee04222d2a9fa7bde37df60e39d388/intel_extension_for_tensorflow_lib-1.2.0.0rc0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 18:06:17] INFO root fetch - processPackages [intel-extension-for-tensorflow-lib]: Downloading https://files.pythonhosted.org/packages/96/94/e5f6ecae71ad6c6b1faafa9e248e10ee04222d2a9fa7bde37df60e39d388/intel_extension_for_tensorflow_lib-1.2.0.0rc0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 18:06:17] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/a0/63/dec61e487a55c47f7aca69361e273f9004c562a7b02f2806e1c6133a3e3f/py3d-0.0.8.tar.gz
+[2023-04-11 18:06:17] INFO root fetch - processPackages [intel-extension-for-tensorflow]: Downloading https://files.pythonhosted.org/packages/ea/ab/019d5955d591c2f9c289e35705b8cacc2ae43312a2af90602a6282628acf/intel_extension_for_tensorflow-1.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 18:06:17] WARNING root fetch - processPackages [intel-extension-for-tensorflow-lib]: Skipping package: exceeds size limit 20983520>=10485760
+[2023-04-11 18:06:17] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:06:17] WARNING root fetch - processPackages [intel-extension-for-tensorflow-lib]: Skipping package: exceeds size limit 20983520>=10485760
+[2023-04-11 18:06:17] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:06:17] INFO root fetch - processPackages [cleanchausie]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-11 18:06:17] WARNING root fetch - processPackages [quantfreedom]: Skipping, unable to determine old version
+[2023-04-11 18:06:17] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:06:17] INFO root fetch - processPackages [kiss-icp]: Downloading https://files.pythonhosted.org/packages/81/37/dd3b1c470167770fb30b93670fbe4ad70a2d6675dd92c2f3839525335c66/kiss_icp-0.2.8.tar.gz
+[2023-04-11 18:06:17] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 18:06:17] INFO root fetch - processPackages [intel-extension-for-tensorflow]: Downloading https://files.pythonhosted.org/packages/5f/21/30999cd962443d0a9ead7f2036005bacde69a497fc63f610f59ed9952112/intel_extension_for_tensorflow-1.2.0rc0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 18:06:17] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-04-11 18:06:17] INFO root fetch - processPackages [kiss-icp]: executing diffoscope
+[2023-04-11 18:06:17] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.4.8.tar.gz tmp/notification_service_nightly-2023.4.9.tar.gz --markdown 20230411/n/notification-service-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-11 18:06:17] INFO root fetch - processPackages [kiss-icp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiss_icp-0.2.7.tar.gz tmp/kiss_icp-0.2.8.tar.gz --markdown 20230411/k/kiss-icp/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-11 18:06:17] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/42/7f/b468d9b3eb4a15d524dfa2757a79decc39cdb1d48240d423407d8440bb99/py3d-0.0.9.tar.gz
+[2023-04-11 18:06:17] INFO root fetch - processPackages [intel-extension-for-tensorflow]: executing diffoscope
+[2023-04-11 18:06:17] INFO root fetch - processPackages [intel-extension-for-tensorflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intel_extension_for_tensorflow-1.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/intel_extension_for_tensorflow-1.2.0rc0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230411/i/intel-extension-for-tensorflow/1.1.0-1.2.0rc0/diff.md --exclude *.pyd
+[2023-04-11 18:06:17] INFO root fetch - processPackages [cleanchausie]: executing diffoscope
+[2023-04-11 18:06:17] INFO root fetch - processPackages [cleanchausie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleanchausie-1.9.0.tar.gz tmp/cleanchausie-1.9.1.tar.gz --markdown 20230411/c/cleanchausie/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-11 18:06:18] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2023-04-11 18:06:18] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.0.8.tar.gz tmp/py3d-0.0.9.tar.gz --markdown 20230411/p/py3d/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 18:06:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:18] INFO root fetch - processPackages [tira]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 18:06:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:18] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 18:06:18] INFO root fetch - processPackages [bayanpy]: New version: [0.6] Old Version: [0.5]
+[2023-04-11 18:06:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:19] INFO root fetch - processPackages [atomicshop]: New version: [1.7.0] Old Version: [1.6.9]
+[2023-04-11 18:06:19] INFO root fetch - processPackages [atomicshop]: executing diffoscope
+[2023-04-11 18:06:19] INFO root fetch - processPackages [atomicshop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomicshop-1.6.9-py3-none-any.whl.zip tmp/atomicshop-1.7.0-py3-none-any.whl.zip --markdown 20230411/a/atomicshop/1.6.9-1.7.0/diff.md --exclude *.pyd
+[2023-04-11 18:06:19] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-04-11 18:06:19] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.4.8.tar.gz tmp/ai_flow_nightly-2023.4.9.tar.gz --markdown 20230411/a/ai-flow-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-11 18:06:19] INFO root fetch - processPackages [tira]: executing diffoscope
+[2023-04-11 18:06:19] INFO root fetch - processPackages [tira]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tira-0.0.8.tar.gz tmp/tira-0.0.9.tar.gz --markdown 20230411/t/tira/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 18:06:19] INFO root fetch - processPackages [bayanpy]: Downloading https://files.pythonhosted.org/packages/97/43/03cf2666d472717047f35ee94c065cbf5b9af02d65d8d9bbef6be5cceb63/bayanpy-0.6.tar.gz
+[2023-04-11 18:06:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:19] INFO root fetch - processPackages [bayanpy]: executing diffoscope
+[2023-04-11 18:06:19] INFO root fetch - processPackages [bayanpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bayanpy-0.5.tar.gz tmp/bayanpy-0.6.tar.gz --markdown 20230411/b/bayanpy/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-11 18:06:19] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 18:06:19] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 18:06:19] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 18:06:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:20] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-11 18:06:20] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-11 18:06:20] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.8.tar.gz tmp/nudecrawler-0.3.9.tar.gz --markdown 20230411/n/nudecrawler/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-11 18:06:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:20] INFO root fetch - processPackages [strawberry-django-plus]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-04-11 18:06:20] INFO root fetch - processPackages [strawberry-django-plus]: Downloading https://files.pythonhosted.org/packages/f1/fa/19db8e9dbce29e6741d211b60b23461c3d9017ebf5e1485f0dd8a75abb7f/strawberry_django_plus-2.1.0.tar.gz
+[2023-04-11 18:06:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:21] INFO root fetch - processPackages [ayeaye]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 18:06:21] INFO root fetch - processPackages [ayeaye]: executing diffoscope
+[2023-04-11 18:06:21] INFO root fetch - processPackages [ayeaye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ayeaye-0.0.8.tar.gz tmp/ayeaye-0.0.9.tar.gz --markdown 20230411/a/ayeaye/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 18:06:21] INFO root fetch - processPackages [strawberry-django-plus]: Downloading https://files.pythonhosted.org/packages/f6/d0/0ec7d7ef379eb5a18dc5d293e8d08e12eef436a3b54501915b3c9509c8de/strawberry_django_plus-2.2.0.tar.gz
+[2023-04-11 18:06:21] INFO root fetch - processPackages [strawberry-django-plus]: executing diffoscope
+[2023-04-11 18:06:21] INFO root fetch - processPackages [strawberry-django-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry_django_plus-2.1.0.tar.gz tmp/strawberry_django_plus-2.2.0.tar.gz --markdown 20230411/s/strawberry-django-plus/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-04-11 18:06:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:21] INFO root fetch - processPackages [jsmetrics]: New version: [0.1.1b0] Old Version: [0.1.0]
+[2023-04-11 18:06:21] INFO root fetch - processPackages [jsmetrics]: Downloading https://files.pythonhosted.org/packages/20/08/f52d82338371767964a74e58aa69ea80155c144bca84b4f91b9b0df2ee12/jsmetrics-0.1.0.tar.gz
+[2023-04-11 18:06:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:22] INFO root fetch - processPackages [github-vulnerability-exporter]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-11 18:06:22] INFO root fetch - processPackages [github-vulnerability-exporter]: executing diffoscope
+[2023-04-11 18:06:22] INFO root fetch - processPackages [github-vulnerability-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_vulnerability_exporter-1.5.0.tar.gz tmp/github_vulnerability_exporter-1.5.1.tar.gz --markdown 20230411/g/github-vulnerability-exporter/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-11 18:06:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:23] INFO root fetch - processPackages [jsmetrics]: Downloading https://files.pythonhosted.org/packages/3f/82/5373c22c8c36667ec15ff366f89521a655500ea16fdecd71bc5b152f9f18/jsmetrics-0.1.1b0.tar.gz
+[2023-04-11 18:06:24] INFO root fetch - processPackages [jsmetrics]: executing diffoscope
+[2023-04-11 18:06:24] INFO root fetch - processPackages [jsmetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsmetrics-0.1.0.tar.gz tmp/jsmetrics-0.1.1b0.tar.gz --markdown 20230411/j/jsmetrics/0.1.0-0.1.1b0/diff.md --exclude *.pyd
+[2023-04-11 18:06:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:06:26] INFO root fetch - main [MainThread]: Store serial: [17663221]
