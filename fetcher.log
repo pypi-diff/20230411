@@ -7893,3 +7893,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 07:44:41] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:44:49] INFO root fetch - main [MainThread]: success
 [2023-04-11 07:44:49] INFO root fetch - main [MainThread]: Store serial: [17656566]
+[2023-04-11 07:49:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656566]
+[2023-04-11 07:49:57] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 07:49:57] WARNING root fetch - processPackages [magpy-nc]: Skipping, unable to determine old version
+[2023-04-11 07:49:57] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:49:57] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-partner]: New version: [11.0.1.0.0.99.dev4] Old Version: [11.0.1.0.0.99.dev2]
+[2023-04-11 07:49:57] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-nonconformity]: New version: [11.0.1.1.2.99.dev9] Old Version: [11.0.1.1.2.99.dev60]
+[2023-04-11 07:49:57] INFO root fetch - processPackages [nlp2cron]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 07:49:57] INFO root fetch - processPackages [pylipd]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-11 07:49:57] INFO root fetch - processPackages [QuickStart-Rhy]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-11 07:49:57] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-nonconformity]: Downloading https://files.pythonhosted.org/packages/17/73/4de85d6e09d6e48c4a4bdf65f732a314d82c779587e016471eb705855e56/odoo11_addon_mgmtsystem_nonconformity-11.0.1.1.2.99.dev60-py2.py3-none-any.whl
+[2023-04-11 07:49:57] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-partner]: Downloading https://files.pythonhosted.org/packages/b8/55/47e7b0da589458d6312095492512e0464b12aabaa2faf24495158cbf426f/odoo11_addon_mgmtsystem_partner-11.0.1.0.0.99.dev2-py2.py3-none-any.whl
+[2023-04-11 07:49:57] INFO root fetch - processPackages [nlp2cron]: Downloading https://files.pythonhosted.org/packages/f0/31/36c538e8e1c3cc59daa5acfc228120b74e813fbcf5473a9fb711a358fd09/nlp2cron-0.1.0.tar.gz
+[2023-04-11 07:49:57] INFO root fetch - processPackages [QuickStart-Rhy]: Downloading https://files.pythonhosted.org/packages/c4/1e/4053b0d126e98f392d9408a5c666f7a0519650feabf80365cdc5cb64a756/QuickStart_Rhy-0.6.8.tar.gz
+[2023-04-11 07:49:57] INFO root fetch - processPackages [pylipd]: Downloading https://files.pythonhosted.org/packages/65/f0/72b5560857ca8d13de7e787070cea41a38979a70687aa96f861d8bb78bcd/pylipd-1.2.1.tar.gz
+[2023-04-11 07:49:57] INFO root fetch - processPackages [pylipd]: executing diffoscope
+[2023-04-11 07:49:57] INFO root fetch - processPackages [pylipd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylipd-1.2.0.tar.gz tmp/pylipd-1.2.1.tar.gz --markdown 20230411/p/pylipd/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-11 07:49:57] INFO root fetch - processPackages [nlp2cron]: Downloading https://files.pythonhosted.org/packages/50/1b/b34e1cbe3d288a9b3cbd54ea74ee88c53cd5f09a91c49d8d112f2a3c4d3a/nlp2cron-0.1.1.tar.gz
+[2023-04-11 07:49:57] INFO root fetch - processPackages [nlp2cron]: executing diffoscope
+[2023-04-11 07:49:57] INFO root fetch - processPackages [nlp2cron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlp2cron-0.1.0.tar.gz tmp/nlp2cron-0.1.1.tar.gz --markdown 20230411/n/nlp2cron/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 07:49:57] INFO root fetch - processPackages [QuickStart-Rhy]: Downloading https://files.pythonhosted.org/packages/ca/7d/c9f74268170260093e807e48238728845ab9c5149721300e7abea647e24b/QuickStart_Rhy-0.6.9.tar.gz
+[2023-04-11 07:49:57] INFO root fetch - processPackages [QuickStart-Rhy]: executing diffoscope
+[2023-04-11 07:49:57] INFO root fetch - processPackages [QuickStart-Rhy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuickStart_Rhy-0.6.8.tar.gz tmp/QuickStart_Rhy-0.6.9.tar.gz --markdown 20230411/Q/QuickStart-Rhy/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-11 07:49:57] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-partner]: Downloading https://files.pythonhosted.org/packages/08/b9/3ba25b38b69123062f6360c67cf16d502048807a84d26ec789f7f07f1203/odoo11_addon_mgmtsystem_partner-11.0.1.0.0.99.dev4-py2.py3-none-any.whl
+[2023-04-11 07:49:57] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-nonconformity]: Downloading https://files.pythonhosted.org/packages/b1/df/74cb3432fa18cf37c60f58fb2e7f03e8057049f87cbda9ff4a3991a72193/odoo11_addon_mgmtsystem_nonconformity-11.0.1.1.2.99.dev9-py2.py3-none-any.whl
+[2023-04-11 07:49:58] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-partner]: executing diffoscope
+[2023-04-11 07:49:58] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_mgmtsystem_partner-11.0.1.0.0.99.dev2-py2.py3-none-any.whl.zip tmp/odoo11_addon_mgmtsystem_partner-11.0.1.0.0.99.dev4-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-mgmtsystem-partner/11.0.1.0.0.99.dev2-11.0.1.0.0.99.dev4/diff.md --exclude *.pyd
+[2023-04-11 07:49:58] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-nonconformity]: executing diffoscope
+[2023-04-11 07:49:58] INFO root fetch - processPackages [odoo11-addon-mgmtsystem-nonconformity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_mgmtsystem_nonconformity-11.0.1.1.2.99.dev60-py2.py3-none-any.whl.zip tmp/odoo11_addon_mgmtsystem_nonconformity-11.0.1.1.2.99.dev9-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-mgmtsystem-nonconformity/11.0.1.1.2.99.dev60-11.0.1.1.2.99.dev9/diff.md --exclude *.pyd
+[2023-04-11 07:49:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:49:58] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1450] Old Version: [0.20230411.1438]
+[2023-04-11 07:49:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:49:58] WARNING root fetch - processPackages [DirectReport]: Skipping, unable to determine old version
+[2023-04-11 07:49:58] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:49:58] WARNING root fetch - processPackages [bkapi-plugins]: Skipping, unable to determine old version
+[2023-04-11 07:49:58] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:49:58] INFO root fetch - processPackages [odoo-addon-mgmtsystem-hazard]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-11 07:49:59] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/2f/ab/5fa495e4461d32ab6f710db52722bf02254c9f95bfa995b0ab5fd977b758/krutils-0.20230411.1450.tar.gz
+[2023-04-11 07:49:59] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 07:49:59] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1438.tar.gz tmp/krutils-0.20230411.1450.tar.gz --markdown 20230411/k/krutils/0.20230411.1438-0.20230411.1450/diff.md --exclude *.pyd
+[2023-04-11 07:49:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:49:59] WARNING root fetch - processPackages [auto-pypi-uploader]: Skipping, unable to determine old version
+[2023-04-11 07:49:59] INFO root fetch - main [MainThread]: error
+[2023-04-11 07:49:59] INFO root fetch - processPackages [muffin]: New version: [0.97.0] Old Version: [0.96.2]
+[2023-04-11 07:49:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:49:59] INFO root fetch - processPackages [odoo-addon-mgmtsystem-hazard]: executing diffoscope
+[2023-04-11 07:49:59] INFO root fetch - processPackages [odoo-addon-mgmtsystem-hazard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mgmtsystem_hazard-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_mgmtsystem_hazard-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-mgmtsystem-hazard/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-11 07:49:59] INFO root fetch - processPackages [muffin]: Downloading https://files.pythonhosted.org/packages/8a/8d/15475b7dcc5253d2e27d7ef5be2768c0e8b6104e58da4bb678c7074255b4/muffin-0.96.2.tar.gz
+[2023-04-11 07:49:59] INFO root fetch - processPackages [muffin]: Downloading https://files.pythonhosted.org/packages/dc/e8/1fec2f9232604b3315df6f352d4303cc2bea2bede7c88d3499913a07d27f/muffin-0.97.0.tar.gz
+[2023-04-11 07:50:00] INFO root fetch - processPackages [muffin]: executing diffoscope
+[2023-04-11 07:50:00] INFO root fetch - processPackages [muffin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muffin-0.96.2.tar.gz tmp/muffin-0.97.0.tar.gz --markdown 20230411/m/muffin/0.96.2-0.97.0/diff.md --exclude *.pyd
+[2023-04-11 07:50:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:50:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:50:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:50:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 07:50:01] INFO root fetch - main [MainThread]: Store serial: [17656605]
