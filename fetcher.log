@@ -7311,3 +7311,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-11 06:47:56] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:47:57] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:47:57] INFO root fetch - main [MainThread]: Store serial: [17656160]
+[2023-04-11 06:53:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656160]
+[2023-04-11 06:53:05] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 06:53:05] WARNING root fetch - processPackages [beam-postgres-connector]: Skipping, unable to determine old version
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-approval]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-11 06:53:05] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-tag]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-04-11 06:53:05] WARNING root fetch - processPackages [brainframe-sys-tools]: Skipping, unable to determine old version
+[2023-04-11 06:53:05] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:53:05] INFO root fetch - processPackages [policyengine-us]: New version: [0.285.0] Old Version: [0.284.0]
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page]: New version: [16.0.1.1.0.7] Old Version: [16.0.1.1.0.6]
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-approval]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-tag]: Downloading https://files.pythonhosted.org/packages/e3/c6/5250c77a516b26b6bcedd34750ddeea5f76df2bbdb74b670555e805edc13/odoo_addon_document_page_tag-16.0.1.0.0.5-py3-none-any.whl
+[2023-04-11 06:53:05] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/12/86/61fe1945ed983bc472281f1317a6b9782be20049c203bc4d4d830bea7961/policyengine-us-0.285.0.tar.gz
+[2023-04-11 06:53:05] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-04-11 06:53:05] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.284.0.tar.gz tmp/policyengine-us-0.285.0.tar.gz --markdown 20230411/p/policyengine-us/0.284.0-0.285.0/diff.md --exclude *.pyd
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-approval]: Downloading https://files.pythonhosted.org/packages/7b/ea/ea823bc5c552f9d6561b6ead2a5443e91b1a2980ed730452285b86027d32/odoo_addon_document_page_approval-16.0.1.0.0.9-py3-none-any.whl
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-approval]: Downloading https://files.pythonhosted.org/packages/7b/ea/ea823bc5c552f9d6561b6ead2a5443e91b1a2980ed730452285b86027d32/odoo_addon_document_page_approval-16.0.1.0.0.9-py3-none-any.whl
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page]: Downloading https://files.pythonhosted.org/packages/2f/d1/e563c7492448f0a0762a3df564cc76509b4d595e9b9ee0254d8c18f310d6/odoo_addon_document_page-16.0.1.1.0.7-py3-none-any.whl
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-approval]: executing diffoscope
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-approval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page_approval-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_document_page_approval-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-document-page-approval/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-approval]: executing diffoscope
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page-approval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page_approval-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_document_page_approval-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-document-page-approval/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page]: executing diffoscope
+[2023-04-11 06:53:05] INFO root fetch - processPackages [odoo-addon-document-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page-16.0.1.1.0.6-py3-none-any.whl.zip tmp/odoo_addon_document_page-16.0.1.1.0.7-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-document-page/16.0.1.1.0.6-16.0.1.1.0.7/diff.md --exclude *.pyd
+[2023-04-11 06:53:06] INFO root fetch - processPackages [odoo-addon-document-page-tag]: Downloading https://files.pythonhosted.org/packages/42/e1/4aec6be963b4ce05e7da40b8492f104b39041e46402f30fb3417a73d7481/odoo_addon_document_page_tag-16.0.1.0.0.6-py3-none-any.whl
+[2023-04-11 06:53:06] INFO root fetch - processPackages [odoo-addon-document-page-tag]: executing diffoscope
+[2023-04-11 06:53:06] INFO root fetch - processPackages [odoo-addon-document-page-tag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page_tag-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_document_page_tag-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-document-page-tag/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-04-11 06:53:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:53:07] INFO root fetch - processPackages [odoo-addon-document-page]: New version: [16.0.1.1.0.7] Old Version: [16.0.1.1.0.6]
+[2023-04-11 06:53:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:53:07] WARNING root fetch - processPackages [MySQLPandas]: Skipping, unable to determine old version
+[2023-04-11 06:53:07] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:53:07] INFO root fetch - processPackages [odoo-addon-document-page]: executing diffoscope
+[2023-04-11 06:53:07] INFO root fetch - processPackages [odoo-addon-document-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page-16.0.1.1.0.6-py3-none-any.whl.zip tmp/odoo_addon_document_page-16.0.1.1.0.7-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-document-page/16.0.1.1.0.6-16.0.1.1.0.7/diff.md --exclude *.pyd
+[2023-04-11 06:53:07] INFO root fetch - processPackages [RsaIt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 06:53:07] INFO root fetch - processPackages [RsaIt]: Downloading https://files.pythonhosted.org/packages/4e/79/1b96a3c87db6b56a0b24899290bebdcd163bf46a7f2d9a8bbfc20e545e88/RsaIt-0.0.3.tar.gz
+[2023-04-11 06:53:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:53:07] INFO root fetch - processPackages [muffin-babel]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-11 06:53:07] INFO root fetch - processPackages [RsaIt]: executing diffoscope
+[2023-04-11 06:53:07] INFO root fetch - processPackages [RsaIt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RsaIt-0.0.2.tar.gz tmp/RsaIt-0.0.3.tar.gz --markdown 20230411/R/RsaIt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 06:53:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:53:08] INFO root fetch - processPackages [gama-cli]: New version: [1.7.0] Old Version: [1.6.0]
+[2023-04-11 06:53:08] INFO root fetch - processPackages [muffin-babel]: Downloading https://files.pythonhosted.org/packages/c2/09/b43c5e9f7980c61b8cd48f3b5be366441ee4f34eddbc963ba7c148853278/muffin_babel-1.4.1.tar.gz
+[2023-04-11 06:53:08] INFO root fetch - processPackages [muffin-babel]: executing diffoscope
+[2023-04-11 06:53:08] INFO root fetch - processPackages [muffin-babel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muffin_babel-1.4.0.tar.gz tmp/muffin_babel-1.4.1.tar.gz --markdown 20230411/m/muffin-babel/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-11 06:53:08] INFO root fetch - processPackages [gama-cli]: Downloading https://files.pythonhosted.org/packages/b1/d3/7effb66ee5f1f56e658d6487dcc0295fee339cba12f59600489e2af9ee57/gama_cli-1.6.0.tar.gz
+[2023-04-11 06:53:08] INFO root fetch - processPackages [gama-cli]: Downloading https://files.pythonhosted.org/packages/df/bd/a03e28cba1107b12b4370e9f612ec9b8704aaefb57260608f032de425684/gama_cli-1.7.0.tar.gz
+[2023-04-11 06:53:08] INFO root fetch - processPackages [gama-cli]: executing diffoscope
+[2023-04-11 06:53:08] INFO root fetch - processPackages [gama-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_cli-1.6.0.tar.gz tmp/gama_cli-1.7.0.tar.gz --markdown 20230411/g/gama-cli/1.6.0-1.7.0/diff.md --exclude *.pyd
+[2023-04-11 06:53:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:53:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:53:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:53:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:54:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:54:12] INFO root fetch - main [MainThread]: Store serial: [17656197]
