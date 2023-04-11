@@ -16659,3 +16659,80 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 16:53:05] INFO root fetch - main [MainThread]: success
 [2023-04-11 16:53:25] INFO root fetch - main [MainThread]: success
 [2023-04-11 16:53:25] INFO root fetch - main [MainThread]: Store serial: [17662432]
+[2023-04-11 16:58:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17662432]
+[2023-04-11 16:58:35] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-11 16:58:35] INFO root fetch - processPackages [legacyplatequery]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 16:58:35] INFO root fetch - processPackages [videomass]: New version: [5.0.0] Old Version: [4.0.5]
+[2023-04-11 16:58:35] INFO root fetch - processPackages [bqplot]: New version: [0.9.1] Old Version: [0.9.0b9]
+[2023-04-11 16:58:35] WARNING root fetch - processPackages [pyzt]: Skipping, unable to determine old version
+[2023-04-11 16:58:35] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:58:35] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-11 16:58:35] INFO root fetch - processPackages [pycart]: New version: [0.1.19] Old Version: [0.1.18]
+[2023-04-11 16:58:35] INFO root fetch - processPackages [bqplot]: Downloading https://files.pythonhosted.org/packages/5c/b5/68e5f504e869d97fad1fcb63a1cf013bcca3a816aa529f9fa429ab530450/bqplot-0.9.0b9.tar.gz
+[2023-04-11 16:58:35] INFO root fetch - processPackages [legacyplatequery]: Downloading https://files.pythonhosted.org/packages/7c/2e/9e2e4acb68ce645e5438bedd7cc10d4b73094fff23c5ccb2a6493ce14a53/legacyplatequery-0.1.0.tar.gz
+[2023-04-11 16:58:35] INFO root fetch - processPackages [pycart]: Downloading https://files.pythonhosted.org/packages/27/74/30d0d13d4392273893e3ae44c6aece66cae674a20251a641b970b600240f/pycart-0.1.18.tar.gz
+[2023-04-11 16:58:35] INFO root fetch - processPackages [videomass]: Downloading https://files.pythonhosted.org/packages/0d/63/5f521d4e37e01f4236985bbe0c6d7de1c1292a2a69f283b0fd5a58d23dd7/videomass-4.0.5.tar.gz
+[2023-04-11 16:58:35] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-04-11 16:58:35] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230411/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-11 16:58:35] WARNING root fetch - processPackages [pycart]: Skipping package: exceeds size limit 33006673>=10485760
+[2023-04-11 16:58:35] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:58:35] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-04-11 16:58:36] INFO root fetch - processPackages [legacyplatequery]: Downloading https://files.pythonhosted.org/packages/75/2f/268f29628573d3fc8d212a13b76c7e502a89303db267c70c114f6283f55f/legacyplatequery-0.1.1.tar.gz
+[2023-04-11 16:58:36] INFO root fetch - processPackages [legacyplatequery]: executing diffoscope
+[2023-04-11 16:58:36] INFO root fetch - processPackages [legacyplatequery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legacyplatequery-0.1.0.tar.gz tmp/legacyplatequery-0.1.1.tar.gz --markdown 20230411/l/legacyplatequery/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 16:58:36] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-04-11 16:58:36] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230411/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-04-11 16:58:36] INFO root fetch - processPackages [videomass]: Downloading https://files.pythonhosted.org/packages/36/c2/862fc5252650e00e7719760a63b7c4ff399796ecac40dbaa8e830dd8ad58/videomass-5.0.0.tar.gz
+[2023-04-11 16:58:36] INFO root fetch - processPackages [videomass]: executing diffoscope
+[2023-04-11 16:58:36] INFO root fetch - processPackages [videomass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/videomass-4.0.5.tar.gz tmp/videomass-5.0.0.tar.gz --markdown 20230411/v/videomass/4.0.5-5.0.0/diff.md --exclude *.pyd
+[2023-04-11 16:58:36] INFO root fetch - processPackages [bqplot]: Downloading https://files.pythonhosted.org/packages/ee/f6/51d998ca1bc520c75636c6a580530863ee3c006a5bd9fcd4c8bf94665695/bqplot-0.9.1.tar.gz
+[2023-04-11 16:58:36] INFO root fetch - processPackages [bqplot]: executing diffoscope
+[2023-04-11 16:58:36] INFO root fetch - processPackages [bqplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bqplot-0.9.0b9.tar.gz tmp/bqplot-0.9.1.tar.gz --markdown 20230411/b/bqplot/0.9.0b9-0.9.1/diff.md --exclude *.pyd
+[2023-04-11 16:58:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:37] INFO root fetch - processPackages [dicebear]: New version: [2.6.1] Old Version: [2.5.2]
+[2023-04-11 16:58:37] INFO root fetch - processPackages [dicebear]: Downloading https://files.pythonhosted.org/packages/72/0f/85d640634059b76cea7eec0b9ebac8257b758e0a989207796a3ee1e019f3/dicebear-2.5.2.tar.gz
+[2023-04-11 16:58:38] INFO root fetch - processPackages [dicebear]: Downloading https://files.pythonhosted.org/packages/13/af/e7fb822b039e1607b501f18b9eedc7219539e9546d9e7cc293c4b1ae7808/dicebear-2.6.1.tar.gz
+[2023-04-11 16:58:38] INFO root fetch - processPackages [dicebear]: executing diffoscope
+[2023-04-11 16:58:38] INFO root fetch - processPackages [dicebear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicebear-2.5.2.tar.gz tmp/dicebear-2.6.1.tar.gz --markdown 20230411/d/dicebear/2.5.2-2.6.1/diff.md --exclude *.pyd
+[2023-04-11 16:58:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:39] INFO root fetch - processPackages [nowcasting-forecast]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-11 16:58:39] INFO root fetch - processPackages [nowcasting-forecast]: Downloading https://files.pythonhosted.org/packages/77/f7/fa180c2ea3876a07a93dabb5c9bc8181b774ba78693b1ad8521a21a5bb47/nowcasting_forecast-1.3.2.tar.gz
+[2023-04-11 16:58:39] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:39] INFO root fetch - processPackages [jakteristics]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-11 16:58:39] INFO root fetch - processPackages [jakteristics]: Downloading https://files.pythonhosted.org/packages/4d/9c/de2c05318208fd387a4e788738938bd88ca5ee635d565c844d4875bde981/jakteristics-0.5.0.tar.gz
+[2023-04-11 16:58:39] INFO root fetch - processPackages [nowcasting-forecast]: Downloading https://files.pythonhosted.org/packages/dd/df/7dbfe4a444d4c66947e0b678444b95bcd756a59d580748496f56d1844fba/nowcasting_forecast-1.3.3.tar.gz
+[2023-04-11 16:58:39] INFO root fetch - processPackages [nowcasting-forecast]: executing diffoscope
+[2023-04-11 16:58:39] INFO root fetch - processPackages [nowcasting-forecast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nowcasting_forecast-1.3.2.tar.gz tmp/nowcasting_forecast-1.3.3.tar.gz --markdown 20230411/n/nowcasting-forecast/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-11 16:58:40] INFO root fetch - processPackages [jakteristics]: Downloading https://files.pythonhosted.org/packages/70/a1/aab82a000da377b37ee5861d993100f3a92216dece10e56a69d848cff4c8/jakteristics-0.5.1.tar.gz
+[2023-04-11 16:58:40] INFO root fetch - processPackages [jakteristics]: executing diffoscope
+[2023-04-11 16:58:40] INFO root fetch - processPackages [jakteristics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jakteristics-0.5.0.tar.gz tmp/jakteristics-0.5.1.tar.gz --markdown 20230411/j/jakteristics/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-11 16:58:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:41] INFO root fetch - processPackages [biobb-flexserv]: New version: [4.0.0] Old Version: [3.9.1]
+[2023-04-11 16:58:41] INFO root fetch - processPackages [biobb-flexserv]: Downloading https://files.pythonhosted.org/packages/35/31/58af2076f65a26071ef66a31ef44b6044d5b57d4be469c8f8c5b1bb79cb6/biobb_flexserv-3.9.1.tar.gz
+[2023-04-11 16:58:41] INFO root fetch - processPackages [biobb-flexserv]: Downloading https://files.pythonhosted.org/packages/ca/8e/99bdcb256a97465f7d6f11079aa5704afa0c9726b9ee6e06e83e6317a19b/biobb_flexserv-4.0.0.tar.gz
+[2023-04-11 16:58:41] INFO root fetch - processPackages [biobb-flexserv]: executing diffoscope
+[2023-04-11 16:58:41] INFO root fetch - processPackages [biobb-flexserv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobb_flexserv-3.9.1.tar.gz tmp/biobb_flexserv-4.0.0.tar.gz --markdown 20230411/b/biobb-flexserv/3.9.1-4.0.0/diff.md --exclude *.pyd
+[2023-04-11 16:58:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:42] INFO root fetch - processPackages [deep-agent]: New version: [0.2.dev0] Old Version: [0.1.dev0]
+[2023-04-11 16:58:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:43] INFO root fetch - processPackages [deep-agent]: Downloading https://files.pythonhosted.org/packages/80/c9/4445b1a23601ba797137915609dc1b2de39d08489b2c08b295fa25672fed/deep_agent-0.1.dev0.tar.gz
+[2023-04-11 16:58:43] INFO root fetch - processPackages [openapify]: New version: [0.3] Old Version: [0.1.3]
+[2023-04-11 16:58:43] INFO root fetch - processPackages [openapify]: Downloading https://files.pythonhosted.org/packages/45/1c/27ceb640e39ca7ed279b7742afda4a89aee5c2da3db0c0ed0327c1dee64e/openapify-0.1.3.tar.gz
+[2023-04-11 16:58:43] INFO root fetch - processPackages [deep-agent]: Downloading https://files.pythonhosted.org/packages/4e/6c/7d5fa2b6618cc123dc6e6616dd6655315da7e980a0f4d67e336915514270/deep_agent-0.2.dev0.tar.gz
+[2023-04-11 16:58:43] INFO root fetch - processPackages [openapify]: Downloading https://files.pythonhosted.org/packages/73/8b/d6c12929dd9f4784855b7d0ebf73e6ce5ed564e9a9a8f1ce10082a0a2e9b/openapify-0.3.tar.gz
+[2023-04-11 16:58:43] INFO root fetch - processPackages [deep-agent]: executing diffoscope
+[2023-04-11 16:58:43] INFO root fetch - processPackages [deep-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_agent-0.1.dev0.tar.gz tmp/deep_agent-0.2.dev0.tar.gz --markdown 20230411/d/deep-agent/0.1.dev0-0.2.dev0/diff.md --exclude *.pyd
+[2023-04-11 16:58:43] INFO root fetch - processPackages [openapify]: executing diffoscope
+[2023-04-11 16:58:43] INFO root fetch - processPackages [openapify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapify-0.1.3.tar.gz tmp/openapify-0.3.tar.gz --markdown 20230411/o/openapify/0.1.3-0.3/diff.md --exclude *.pyd
+[2023-04-11 16:58:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:43] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-11 16:58:43] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-11 16:58:43] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230411/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-11 16:58:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:44] WARNING root fetch - processPackages [Data-Save]: Skipping, unable to determine old version
+[2023-04-11 16:58:44] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:58:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:58:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:59:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:59:19] INFO root fetch - main [MainThread]: Store serial: [17662492]
