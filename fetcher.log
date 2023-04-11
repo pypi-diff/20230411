@@ -12210,3 +12210,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 11:56:18] INFO root fetch - processPackages [pystack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystack-1.0.0-cp39-cp39-musllinux_1_1_x86_64.whl.zip tmp/pystack-1.0.1.tar.gz --markdown 20230411/p/pystack/1.0.0-1.0.1/diff.md --exclude *.pyd
 [2023-04-11 11:56:23] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:56:23] INFO root fetch - main [MainThread]: Store serial: [17659150]
+[2023-04-11 12:01:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659150]
+[2023-04-11 12:01:39] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 12:01:39] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 12:01:39] INFO root fetch - processPackages [httpx]: New version: [1.0.0b0] Old Version: [0.9.5]
+[2023-04-11 12:01:39] WARNING root fetch - processPackages [ler]: Skipping, unable to determine old version
+[2023-04-11 12:01:39] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:01:39] INFO root fetch - processPackages [ofdparser]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-11 12:01:39] INFO root fetch - processPackages [pyttsx4]: New version: [3.0.5] Old Version: [3.0.4]
+[2023-04-11 12:01:39] INFO root fetch - processPackages [vmilog-py]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-11 12:01:39] INFO root fetch - processPackages [httpx]: Downloading https://files.pythonhosted.org/packages/13/f4/ae99c743887398cd375b955683f349a55261a148faf0f0ff6ce71430e4ad/httpx-0.9.5.tar.gz
+[2023-04-11 12:01:39] INFO root fetch - processPackages [vmilog-py]: Downloading https://files.pythonhosted.org/packages/cd/57/08a26794174982764168b1932d77d1a274770ab88799120bae26cb1dac5d/vmilog-py-0.2.0.tar.gz
+[2023-04-11 12:01:40] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-11 12:01:40] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230411/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 12:01:40] INFO root fetch - processPackages [ofdparser]: Downloading https://files.pythonhosted.org/packages/0d/be/8b8928b340a6d1e09b0e0557763e65a56b28a09eff15ef09fb9fff345ed5/ofdparser-0.0.8.tar.gz
+[2023-04-11 12:01:40] INFO root fetch - processPackages [pyttsx4]: Downloading https://files.pythonhosted.org/packages/40/b4/bfb32b6667aa1e53c3e8e79074b310f16330abe4fa0c941ab2373c270b4b/pyttsx4-3.0.5-py3-none-any.whl
+[2023-04-11 12:01:40] INFO root fetch - processPackages [vmilog-py]: Downloading https://files.pythonhosted.org/packages/08/f6/50c266a0ba060e975a0335c2b9a23a83e71d69807a1499d9b5b34a68f8bf/vmilog-py-0.3.0.tar.gz
+[2023-04-11 12:01:40] INFO root fetch - processPackages [httpx]: Downloading https://files.pythonhosted.org/packages/c4/47/8eae197ec4f96c188f0f920209df091a8a580e7a6f1aa066bc4b018cbe91/httpx-1.0.0b0.tar.gz
+[2023-04-11 12:01:40] INFO root fetch - processPackages [ofdparser]: executing diffoscope
+[2023-04-11 12:01:40] INFO root fetch - processPackages [ofdparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofdparser-0.0.7.tar.gz tmp/ofdparser-0.0.8.tar.gz --markdown 20230411/o/ofdparser/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-11 12:01:40] INFO root fetch - processPackages [pyttsx4]: executing diffoscope
+[2023-04-11 12:01:40] INFO root fetch - processPackages [pyttsx4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttsx4-3.0.4-py3-none-any.whl.zip tmp/pyttsx4-3.0.5-py3-none-any.whl.zip --markdown 20230411/p/pyttsx4/3.0.4-3.0.5/diff.md --exclude *.pyd
+[2023-04-11 12:01:40] INFO root fetch - processPackages [httpx]: executing diffoscope
+[2023-04-11 12:01:40] INFO root fetch - processPackages [httpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httpx-0.9.5.tar.gz tmp/httpx-1.0.0b0.tar.gz --markdown 20230411/h/httpx/0.9.5-1.0.0b0/diff.md --exclude *.pyd
+[2023-04-11 12:01:40] INFO root fetch - processPackages [vmilog-py]: executing diffoscope
+[2023-04-11 12:01:40] INFO root fetch - processPackages [vmilog-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmilog-py-0.2.0.tar.gz tmp/vmilog-py-0.3.0.tar.gz --markdown 20230411/v/vmilog-py/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 12:01:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:41] INFO root fetch - processPackages [fractal-server]: New version: [1.2.0a1] Old Version: [1.2.0a0]
+[2023-04-11 12:01:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:41] INFO root fetch - processPackages [fastuml]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-04-11 12:01:41] INFO root fetch - processPackages [fractal-server]: Downloading https://files.pythonhosted.org/packages/e7/8e/978c81dfd12e7dbddfb5cd5e93f00afc42cb08b58928041830fa89b8778d/fractal_server-1.2.0a0.tar.gz
+[2023-04-11 12:01:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:41] INFO root fetch - processPackages [yyxx-game-pkg]: New version: [2023.4.7.1] Old Version: [2023.4.4.1]
+[2023-04-11 12:01:41] INFO root fetch - processPackages [fastuml]: Downloading https://files.pythonhosted.org/packages/b1/ba/f73ff32e78d1640ffee6f9d856f0b58e94362560ee2d1a369c353fc9e72a/fastuml-0.2.3.tar.gz
+[2023-04-11 12:01:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:41] INFO root fetch - processPackages [sdkit]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 12:01:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:41] INFO root fetch - processPackages [asimov]: New version: [0.6.0a2] Old Version: [0.6.0a1]
+[2023-04-11 12:01:41] INFO root fetch - processPackages [fractal-server]: Downloading https://files.pythonhosted.org/packages/09/4c/800ac9be26421b4ddd520842a8e0ccc563d7318fa227738ec32b6a4ed3de/fractal_server-1.2.0a1.tar.gz
+[2023-04-11 12:01:41] INFO root fetch - processPackages [sdkit]: executing diffoscope
+[2023-04-11 12:01:41] INFO root fetch - processPackages [sdkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkit-1.0.8.tar.gz tmp/sdkit-1.0.9.tar.gz --markdown 20230411/s/sdkit/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 12:01:41] INFO root fetch - processPackages [yyxx-game-pkg]: executing diffoscope
+[2023-04-11 12:01:41] INFO root fetch - processPackages [yyxx-game-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yyxx_game_pkg-2023.4.4.1.tar.gz tmp/yyxx_game_pkg-2023.4.7.1.tar.gz --markdown 20230411/y/yyxx-game-pkg/2023.4.4.1-2023.4.7.1/diff.md --exclude *.pyd
+[2023-04-11 12:01:41] INFO root fetch - processPackages [fastuml]: Downloading https://files.pythonhosted.org/packages/d7/ce/fe2f2f2ac608914884da1b3c3f3f8b9e9955197bc8b1e7d1a1e1206a3960/fastuml-0.3.0.tar.gz
+[2023-04-11 12:01:41] INFO root fetch - processPackages [asimov]: Downloading https://files.pythonhosted.org/packages/1b/b6/26d30a3188eb0491c3047effc799a5a38ca6ceae2f1189713b89fd1da2f3/asimov-0.6.0a1-py2.py3-none-any.whl
+[2023-04-11 12:01:42] INFO root fetch - processPackages [fractal-server]: executing diffoscope
+[2023-04-11 12:01:42] INFO root fetch - processPackages [fractal-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fractal_server-1.2.0a0.tar.gz tmp/fractal_server-1.2.0a1.tar.gz --markdown 20230411/f/fractal-server/1.2.0a0-1.2.0a1/diff.md --exclude *.pyd
+[2023-04-11 12:01:42] INFO root fetch - processPackages [fastuml]: executing diffoscope
+[2023-04-11 12:01:42] INFO root fetch - processPackages [fastuml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastuml-0.2.3.tar.gz tmp/fastuml-0.3.0.tar.gz --markdown 20230411/f/fastuml/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 12:01:42] INFO root fetch - processPackages [asimov]: Downloading https://files.pythonhosted.org/packages/2e/4f/1c4963f6a5a9d64455f78e44531e7d9f68eb89124065020bed355d420855/asimov-0.6.0a2-py2.py3-none-any.whl
+[2023-04-11 12:01:42] INFO root fetch - processPackages [asimov]: executing diffoscope
+[2023-04-11 12:01:42] INFO root fetch - processPackages [asimov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asimov-0.6.0a1-py2.py3-none-any.whl.zip tmp/asimov-0.6.0a2-py2.py3-none-any.whl.zip --markdown 20230411/a/asimov/0.6.0a1-0.6.0a2/diff.md --exclude *.pyd
+[2023-04-11 12:01:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:01:45] INFO root fetch - main [MainThread]: Store serial: [17659182]
