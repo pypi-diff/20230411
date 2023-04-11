@@ -1,0 +1,69 @@
+# Comparing `tmp/system32_critical-0.0.2.tar.gz` & `tmp/system32_critical-0.0.3.tar.gz`
+
+## Comparing `system32_critical-0.0.2.tar` & `system32_critical-0.0.3.tar`
+
+### file list
+
+```diff
+@@ -1,7 +1,14 @@
+--rw-r--r--   0        0        0       43 2020-02-02 00:00:00.000000 system32_critical-0.0.2/src/SYSTEM32_Critical/__init__.py
+--rw-r--r--   0        0        0    37443 2020-02-02 00:00:00.000000 system32_critical-0.0.2/src/SYSTEM32_Critical/example.py
+--rw-r--r--   0        0        0      345 2020-02-02 00:00:00.000000 system32_critical-0.0.2/.gitignore
+--rw-r--r--   0        0        0     1096 2020-02-02 00:00:00.000000 system32_critical-0.0.2/LICENSE
+--rw-r--r--   0        0        0        0 2020-02-02 00:00:00.000000 system32_critical-0.0.2/README.md
+--rw-r--r--   0        0        0      598 2020-02-02 00:00:00.000000 system32_critical-0.0.2/pyproject.toml
+--rw-r--r--   0        0        0      476 2020-02-02 00:00:00.000000 system32_critical-0.0.2/PKG-INFO
++-rw-r--r--   0        0        0       43 2020-02-02 00:00:00.000000 system32_critical-0.0.3/src/SYSTEM32_Critical/__init__.py
++-rw-r--r--   0        0        0     5947 2020-02-02 00:00:00.000000 system32_critical-0.0.3/src/SYSTEM32_Critical/adaboost_agnes_diana.py
++-rw-r--r--   0        0        0     7842 2020-02-02 00:00:00.000000 system32_critical-0.0.3/src/SYSTEM32_Critical/decision_trees_knn.py
++-rw-r--r--   0        0        0    37443 2020-02-02 00:00:00.000000 system32_critical-0.0.3/src/SYSTEM32_Critical/example.py
++-rw-r--r--   0        0        0     5267 2020-02-02 00:00:00.000000 system32_critical-0.0.3/src/SYSTEM32_Critical/finds_candidate.py
++-rw-r--r--   0        0        0     3816 2020-02-02 00:00:00.000000 system32_critical-0.0.3/src/SYSTEM32_Critical/k_means_k_modes_clustering.py
++-rw-r--r--   0        0        0     1948 2020-02-02 00:00:00.000000 system32_critical-0.0.3/src/SYSTEM32_Critical/linear_regression.py
++-rw-r--r--   0        0        0     4960 2020-02-02 00:00:00.000000 system32_critical-0.0.3/src/SYSTEM32_Critical/logistic.py
++-rw-r--r--   0        0        0     3458 2020-02-02 00:00:00.000000 system32_critical-0.0.3/src/SYSTEM32_Critical/svm.py
++-rw-r--r--   0        0        0      345 2020-02-02 00:00:00.000000 system32_critical-0.0.3/.gitignore
++-rw-r--r--   0        0        0     1096 2020-02-02 00:00:00.000000 system32_critical-0.0.3/LICENSE
++-rw-r--r--   0        0        0        0 2020-02-02 00:00:00.000000 system32_critical-0.0.3/README.md
++-rw-r--r--   0        0        0      598 2020-02-02 00:00:00.000000 system32_critical-0.0.3/pyproject.toml
++-rw-r--r--   0        0        0      476 2020-02-02 00:00:00.000000 system32_critical-0.0.3/PKG-INFO
+```
+
+### Comparing `system32_critical-0.0.2/src/SYSTEM32_Critical/example.py` & `system32_critical-0.0.3/src/SYSTEM32_Critical/example.py`
+
+ * *Files identical despite different names*
+
+### Comparing `system32_critical-0.0.2/LICENSE` & `system32_critical-0.0.3/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `system32_critical-0.0.2/pyproject.toml` & `system32_critical-0.0.3/pyproject.toml`
+
+ * *Files 2% similar despite different names*
+
+```diff
+@@ -1,20 +1,20 @@
+ [build-system]
+ requires = ["hatchling"]
+ build-backend = "hatchling.build"
+ 
+ [project]
+ name = "SYSTEM32_Critical"
+-version = "0.0.2"
++version = "0.0.3"
+ authors = [
+   { name="Harley Davidson", email="author@harley-davidson.com" },
+ ]
+ description = "A small example package"
+ readme = "README.md"
+-requires-python = ">=3.2"
++requires-python = ">=3.0"
+ classifiers = [
+     "Programming Language :: Python :: 3",
+     "License :: OSI Approved :: MIT License",
+     "Operating System :: OS Independent",
+ ]
+ 
+ [project.urls]
+```
+

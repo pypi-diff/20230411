@@ -11176,3 +11176,70 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 10:49:36] INFO root fetch - processPackages [opengeode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opengeode-4.0.4.tar.gz tmp/opengeode-4.0.6.tar.gz --markdown 20230411/o/opengeode/4.0.4-4.0.6/diff.md --exclude *.pyd
 [2023-04-11 10:49:39] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:49:39] INFO root fetch - main [MainThread]: Store serial: [17658487]
+[2023-04-11 10:54:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658487]
+[2023-04-11 10:54:51] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 10:54:51] INFO root fetch - processPackages [proxy-decorator]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 10:54:51] INFO root fetch - processPackages [open-mastr]: New version: [0.13.1] Old Version: [0.13.0]
+[2023-04-11 10:54:51] INFO root fetch - processPackages [atlas-densities]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-11 10:54:51] INFO root fetch - processPackages [searchkit]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 10:54:51] INFO root fetch - processPackages [pygoogalytics]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-11 10:54:51] INFO root fetch - processPackages [pygoogalytics]: Downloading https://files.pythonhosted.org/packages/56/4a/f1bc29fccd3266289c5d715c47cb72fb6c368faa118d44f10246248f4916/pygoogalytics-0.2.5.tar.gz
+[2023-04-11 10:54:51] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/a3/69/216b3ed23098b4edc753dc3428ea57617608fbaefe93ed1c9ab8282a8544/searchkit-0.1.8.tar.gz
+[2023-04-11 10:54:51] INFO root fetch - processPackages [open-mastr]: Downloading https://files.pythonhosted.org/packages/e7/76/4dbd7300bebcd1bbaab1999a032206e7bb71eaa2a279d1bbbfe53cebf8a6/open_mastr-0.13.0.tar.gz
+[2023-04-11 10:54:52] INFO root fetch - processPackages [proxy-decorator]: Downloading https://files.pythonhosted.org/packages/60/ea/98da3664a18a78c02cf4beffda9f7ddc155c8182cb5f53e09481caaceaae/proxy-decorator-0.1.2.tar.gz
+[2023-04-11 10:54:52] INFO root fetch - processPackages [atlas-densities]: Downloading https://files.pythonhosted.org/packages/d4/ff/487cd59cb1c04b581dfba1c835112a7d148c70f90af88e968e5013cfd229/atlas-densities-0.1.3.tar.gz
+[2023-04-11 10:54:52] INFO root fetch - processPackages [proxy-decorator]: executing diffoscope
+[2023-04-11 10:54:52] INFO root fetch - processPackages [proxy-decorator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxy-decorator-0.1.1.tar.gz tmp/proxy-decorator-0.1.2.tar.gz --markdown 20230411/p/proxy-decorator/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 10:54:52] INFO root fetch - processPackages [pygoogalytics]: Downloading https://files.pythonhosted.org/packages/f9/e9/666e4c25b3aee32fbe5606f2143e2536cd3761176ba9a9e537fd82dd0242/pygoogalytics-0.2.6.tar.gz
+[2023-04-11 10:54:52] INFO root fetch - processPackages [open-mastr]: Downloading https://files.pythonhosted.org/packages/ca/01/4b00711ade65f50e98fe5d9566390a60ca093724bd71b7f14f86e39cb345/open_mastr-0.13.1.tar.gz
+[2023-04-11 10:54:52] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/8d/0a/40f7ca6ba88ad7c79ed7e0cce22fe54c680bd0cb0c80e3d12e7cbc222bbe/searchkit-0.1.9.tar.gz
+[2023-04-11 10:54:52] INFO root fetch - processPackages [open-mastr]: executing diffoscope
+[2023-04-11 10:54:52] INFO root fetch - processPackages [open-mastr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_mastr-0.13.0.tar.gz tmp/open_mastr-0.13.1.tar.gz --markdown 20230411/o/open-mastr/0.13.0-0.13.1/diff.md --exclude *.pyd
+[2023-04-11 10:54:52] INFO root fetch - processPackages [pygoogalytics]: executing diffoscope
+[2023-04-11 10:54:52] INFO root fetch - processPackages [pygoogalytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygoogalytics-0.2.5.tar.gz tmp/pygoogalytics-0.2.6.tar.gz --markdown 20230411/p/pygoogalytics/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-11 10:54:52] INFO root fetch - processPackages [searchkit]: executing diffoscope
+[2023-04-11 10:54:52] INFO root fetch - processPackages [searchkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchkit-0.1.8.tar.gz tmp/searchkit-0.1.9.tar.gz --markdown 20230411/s/searchkit/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 10:54:52] INFO root fetch - processPackages [atlas-densities]: Downloading https://files.pythonhosted.org/packages/86/f5/7c7feea0c4c3d9bed1be86bed2d079ec3d076053276e24de09639bf6c4dd/atlas-densities-0.1.4.tar.gz
+[2023-04-11 10:54:52] INFO root fetch - processPackages [atlas-densities]: executing diffoscope
+[2023-04-11 10:54:52] INFO root fetch - processPackages [atlas-densities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlas-densities-0.1.3.tar.gz tmp/atlas-densities-0.1.4.tar.gz --markdown 20230411/a/atlas-densities/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-11 10:54:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:53] INFO root fetch - processPackages [berlin-appointment-finder]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 10:54:53] INFO root fetch - processPackages [berlin-appointment-finder]: Downloading https://files.pythonhosted.org/packages/fa/8b/389575ffa98f4d837232ecb74c2c15a9c005721fb26f8ffb499fb41036a5/berlin-appointment-finder-1.0.1.tar.gz
+[2023-04-11 10:54:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:53] INFO root fetch - processPackages [udls]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-11 10:54:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:53] INFO root fetch - processPackages [Jlab]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-11 10:54:53] INFO root fetch - processPackages [udls]: Downloading https://files.pythonhosted.org/packages/2b/5f/f4880e3d1ec17436a67b11bc3c4264ad484b7aa726046b6609e2c4902d38/udls-1.0.2-py3-none-any.whl
+[2023-04-11 10:54:53] INFO root fetch - processPackages [berlin-appointment-finder]: Downloading https://files.pythonhosted.org/packages/1a/ee/ccb942dfb9330ba9734bb8ee37c27aa94b9ff763c713b2ed326d42506790/berlin-appointment-finder-1.0.2.tar.gz
+[2023-04-11 10:54:53] INFO root fetch - processPackages [berlin-appointment-finder]: executing diffoscope
+[2023-04-11 10:54:53] INFO root fetch - processPackages [berlin-appointment-finder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/berlin-appointment-finder-1.0.1.tar.gz tmp/berlin-appointment-finder-1.0.2.tar.gz --markdown 20230411/b/berlin-appointment-finder/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 10:54:54] INFO root fetch - processPackages [Jlab]: executing diffoscope
+[2023-04-11 10:54:54] INFO root fetch - processPackages [Jlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jlab-1.1.8.tar.gz tmp/Jlab-1.1.9.tar.gz --markdown 20230411/J/Jlab/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-11 10:54:54] INFO root fetch - processPackages [udls]: Downloading https://files.pythonhosted.org/packages/52/d2/c6ef7dbccc2448885ff5ca0d0a48ec31a106d4d40c133669819682992411/udls-1.1.0.tar.gz
+[2023-04-11 10:54:54] INFO root fetch - processPackages [udls]: executing diffoscope
+[2023-04-11 10:54:54] INFO root fetch - processPackages [udls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udls-1.0.2-py3-none-any.whl.zip tmp/udls-1.1.0.tar.gz --markdown 20230411/u/udls/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 10:54:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:54] INFO root fetch - processPackages [magpy-nc]: New version: [2.1] Old Version: [2.0.1]
+[2023-04-11 10:54:54] INFO root fetch - processPackages [magpy-nc]: Downloading https://files.pythonhosted.org/packages/ca/3f/c4a1f9069ea4cbc83358d9786a2b9c5c9542fc807fb414db918b56b6a35c/magpy_nc-2.0.1.tar.gz
+[2023-04-11 10:54:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:54] INFO root fetch - processPackages [convocations]: New version: [0.9] Old Version: [0.8]
+[2023-04-11 10:54:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:55] INFO root fetch - processPackages [magpy-nc]: Downloading https://files.pythonhosted.org/packages/d0/f1/61e7032357b694215207e8c284be78e65d506e2d6fdbaae9e9fe51e12e6b/magpy_nc-2.1.tar.gz
+[2023-04-11 10:54:55] INFO root fetch - processPackages [SYSTEM32-Critical]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 10:54:55] WARNING root fetch - processPackages [besecure-developer-toolkit]: Skipping, unable to determine old version
+[2023-04-11 10:54:55] INFO root fetch - main [MainThread]: error
+[2023-04-11 10:54:55] INFO root fetch - processPackages [magpy-nc]: executing diffoscope
+[2023-04-11 10:54:55] INFO root fetch - processPackages [convocations]: Downloading https://files.pythonhosted.org/packages/89/ce/2d19543b26d195805bdab5420c20f93e8f3d5f6a9954648589996718fcb0/convocations-0.8.tar.gz
+[2023-04-11 10:54:55] INFO root fetch - processPackages [magpy-nc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magpy_nc-2.0.1.tar.gz tmp/magpy_nc-2.1.tar.gz --markdown 20230411/m/magpy-nc/2.0.1-2.1/diff.md --exclude *.pyd
+[2023-04-11 10:54:55] INFO root fetch - processPackages [convocations]: Downloading https://files.pythonhosted.org/packages/90/d1/1369957dcb347a73705514eb53550d2f2c602373a0719cbd1796c4a74827/convocations-0.9.tar.gz
+[2023-04-11 10:54:55] INFO root fetch - processPackages [SYSTEM32-Critical]: Downloading https://files.pythonhosted.org/packages/d8/46/42d94a1f4aff964da5cc014f5b53486662ebb5031df350514ec4e21137f0/system32_critical-0.0.3.tar.gz
+[2023-04-11 10:54:55] INFO root fetch - processPackages [SYSTEM32-Critical]: executing diffoscope
+[2023-04-11 10:54:55] INFO root fetch - processPackages [SYSTEM32-Critical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/system32_critical-0.0.2.tar.gz tmp/system32_critical-0.0.3.tar.gz --markdown 20230411/S/SYSTEM32-Critical/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 10:54:55] INFO root fetch - processPackages [convocations]: executing diffoscope
+[2023-04-11 10:54:55] INFO root fetch - processPackages [convocations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convocations-0.8.tar.gz tmp/convocations-0.9.tar.gz --markdown 20230411/c/convocations/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-11 10:54:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:54:59] INFO root fetch - main [MainThread]: Store serial: [17658525]
