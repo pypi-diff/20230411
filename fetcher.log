@@ -13129,3 +13129,49 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 13:19:00] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:19:01] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:19:01] INFO root fetch - main [MainThread]: Store serial: [17659791]
+[2023-04-11 13:24:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659791]
+[2023-04-11 13:24:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-11 13:24:09] INFO root fetch - processPackages [edwh-bundler-plugin]: New version: [0.1.1] Old Version: [0.0.0]
+[2023-04-11 13:24:09] INFO root fetch - processPackages [edwh-bundler-plugin]: New version: [0.1.1] Old Version: [0.0.0]
+[2023-04-11 13:24:09] WARNING root fetch - processPackages [zimran-events]: Skipping, unable to determine old version
+[2023-04-11 13:24:09] INFO root fetch - processPackages [richvalues]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-04-11 13:24:09] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:24:09] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 13:24:09] INFO root fetch - processPackages [pepotron]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-11 13:24:09] INFO root fetch - processPackages [edwh-bundler-plugin]: Downloading https://files.pythonhosted.org/packages/b4/ac/309f7719d82b13b1b57861025b6edf82037e28732a1f74ca1045626d4c0a/edwh_bundler_plugin-0.0.0.tar.gz
+[2023-04-11 13:24:09] INFO root fetch - processPackages [edwh-bundler-plugin]: Downloading https://files.pythonhosted.org/packages/b4/ac/309f7719d82b13b1b57861025b6edf82037e28732a1f74ca1045626d4c0a/edwh_bundler_plugin-0.0.0.tar.gz
+[2023-04-11 13:24:09] INFO root fetch - processPackages [richvalues]: Downloading https://files.pythonhosted.org/packages/aa/d6/03177f293aa1f367203a93eecc594ff3b81951a5ee9b70e9839f553ca4bd/richvalues-3.0.3.tar.gz
+[2023-04-11 13:24:09] INFO root fetch - processPackages [pepotron]: Downloading https://files.pythonhosted.org/packages/82/cd/1f42af8ae0ce70841d130ae7e89aa3cc75e89f41ab6b67534ea15f96aaa7/pepotron-0.7.0.tar.gz
+[2023-04-11 13:24:09] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-04-11 13:24:09] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.4.8.tar.gz tmp/torchtnt-nightly-2023.4.9.tar.gz --markdown 20230411/t/torchtnt-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-11 13:24:09] INFO root fetch - processPackages [richvalues]: executing diffoscope
+[2023-04-11 13:24:09] INFO root fetch - processPackages [richvalues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richvalues-3.0.2.tar.gz tmp/richvalues-3.0.3.tar.gz --markdown 20230411/r/richvalues/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-04-11 13:24:09] INFO root fetch - processPackages [edwh-bundler-plugin]: Downloading https://files.pythonhosted.org/packages/05/98/c5fe07e6c75ee1a67d9e0991d19ef109fa1c13ed5cf8e10edf172a5bcf4a/edwh_bundler_plugin-0.1.1.tar.gz
+[2023-04-11 13:24:09] INFO root fetch - processPackages [edwh-bundler-plugin]: Downloading https://files.pythonhosted.org/packages/05/98/c5fe07e6c75ee1a67d9e0991d19ef109fa1c13ed5cf8e10edf172a5bcf4a/edwh_bundler_plugin-0.1.1.tar.gz
+[2023-04-11 13:24:10] INFO root fetch - processPackages [edwh-bundler-plugin]: executing diffoscope
+[2023-04-11 13:24:10] INFO root fetch - processPackages [edwh-bundler-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh_bundler_plugin-0.0.0.tar.gz tmp/edwh_bundler_plugin-0.1.1.tar.gz --markdown 20230411/e/edwh-bundler-plugin/0.0.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 13:24:10] INFO root fetch - processPackages [edwh-bundler-plugin]: executing diffoscope
+[2023-04-11 13:24:10] INFO root fetch - processPackages [edwh-bundler-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh_bundler_plugin-0.0.0.tar.gz tmp/edwh_bundler_plugin-0.1.1.tar.gz --markdown 20230411/e/edwh-bundler-plugin/0.0.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 13:24:10] INFO root fetch - processPackages [pepotron]: Downloading https://files.pythonhosted.org/packages/35/2d/f265711e430bdab0981e80c5f1434a5f52f15f4afafb29ace147be199042/pepotron-0.8.0.tar.gz
+[2023-04-11 13:24:10] INFO root fetch - processPackages [pepotron]: executing diffoscope
+[2023-04-11 13:24:10] INFO root fetch - processPackages [pepotron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepotron-0.7.0.tar.gz tmp/pepotron-0.8.0.tar.gz --markdown 20230411/p/pepotron/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-11 13:24:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:24:10] INFO root fetch - processPackages [edwh]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-11 13:24:10] INFO root fetch - processPackages [edwh]: executing diffoscope
+[2023-04-11 13:24:10] INFO root fetch - processPackages [edwh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh-0.4.1.tar.gz tmp/edwh-0.4.2.tar.gz --markdown 20230411/e/edwh/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-11 13:24:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:24:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:24:11] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.23.0.dev2] Old Version: [0.23.0.dev1]
+[2023-04-11 13:24:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:24:11] INFO root fetch - processPackages [postleid]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-04-11 13:24:11] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2023-04-11 13:24:11] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.23.0.dev1.tar.gz tmp/pyastroweatherio-0.23.0.dev2.tar.gz --markdown 20230411/p/pyastroweatherio/0.23.0.dev1-0.23.0.dev2/diff.md --exclude *.pyd
+[2023-04-11 13:24:11] INFO root fetch - processPackages [postleid]: Downloading https://files.pythonhosted.org/packages/f4/9f/2fc9062be365d9777978ab88f0f3e203d2524a475a02af2df0ce83d9be92/postleid-0.6.3.tar.gz
+[2023-04-11 13:24:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:24:11] INFO root fetch - processPackages [postleid]: Downloading https://files.pythonhosted.org/packages/2d/64/ae2d18d0347f5bd6930aca13ba14e5fda866c5a8bdc8f9ffba322acebafc/postleid-0.6.4.tar.gz
+[2023-04-11 13:24:11] INFO root fetch - processPackages [postleid]: executing diffoscope
+[2023-04-11 13:24:11] INFO root fetch - processPackages [postleid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postleid-0.6.3.tar.gz tmp/postleid-0.6.4.tar.gz --markdown 20230411/p/postleid/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-04-11 13:24:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:24:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:24:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:24:12] INFO root fetch - main [MainThread]: Store serial: [17659819]
