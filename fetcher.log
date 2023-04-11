@@ -1158,3 +1158,65 @@
 [2023-04-11 01:55:09] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:55:10] INFO root fetch - main [MainThread]: success
 [2023-04-11 01:55:10] INFO root fetch - main [MainThread]: Store serial: [17651832]
+[2023-04-11 02:00:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651832]
+[2023-04-11 02:00:17] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 02:00:17] INFO root fetch - processPackages [arkdata]: New version: [0.0.46] Old Version: [0.0.45]
+[2023-04-11 02:00:17] INFO root fetch - processPackages [deltastore]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-11 02:00:17] WARNING root fetch - processPackages [jupyter-ai-magics]: Skipping, unable to determine old version
+[2023-04-11 02:00:17] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:00:17] INFO root fetch - processPackages [dojo-truant]: New version: [2023.4.7.3] Old Version: [2023.4.7.2]
+[2023-04-11 02:00:17] INFO root fetch - processPackages [arklibrary]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 02:00:17] INFO root fetch - processPackages [motion-python]: New version: [0.1.31] Old Version: [0.1.30]
+[2023-04-11 02:00:17] INFO root fetch - processPackages [dojo-truant]: executing diffoscope
+[2023-04-11 02:00:17] INFO root fetch - processPackages [dojo-truant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dojo_truant-2023.4.7.2.tar.gz tmp/dojo_truant-2023.4.7.3.tar.gz --markdown 20230411/d/dojo-truant/2023.4.7.2-2023.4.7.3/diff.md --exclude *.pyd
+[2023-04-11 02:00:17] INFO root fetch - processPackages [deltastore]: Downloading https://files.pythonhosted.org/packages/aa/15/4a14b3a191b619bf69974e6bc51f014208466b8715bb93290dadf4b63f44/deltastore-0.5.2-py3-none-any.whl
+[2023-04-11 02:00:17] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/fc/ed/27f182d6b2e5fdb30f30a4148d002224352d9717b90c7c72932202749239/arkdata-0.0.46.tar.gz
+[2023-04-11 02:00:17] INFO root fetch - processPackages [motion-python]: Downloading https://files.pythonhosted.org/packages/91/85/628048a72114b7b3a6f07120a081574299da5fa3ddfd54ca3241530da067/motion_python-0.1.31.tar.gz
+[2023-04-11 02:00:17] INFO root fetch - processPackages [arklibrary]: executing diffoscope
+[2023-04-11 02:00:17] INFO root fetch - processPackages [arklibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arklibrary-0.0.8.tar.gz tmp/arklibrary-0.0.9.tar.gz --markdown 20230411/a/arklibrary/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 02:00:17] INFO root fetch - processPackages [motion-python]: executing diffoscope
+[2023-04-11 02:00:17] INFO root fetch - processPackages [motion-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motion_python-0.1.30.tar.gz tmp/motion_python-0.1.31.tar.gz --markdown 20230411/m/motion-python/0.1.30-0.1.31/diff.md --exclude *.pyd
+[2023-04-11 02:00:17] INFO root fetch - processPackages [deltastore]: Downloading https://files.pythonhosted.org/packages/8f/fd/fa67aedccd14152b8c20c8caf1b582d0f3b974298c5f12fb1ca9aa86bba4/deltastore-0.5.3-py3-none-any.whl
+[2023-04-11 02:00:17] INFO root fetch - processPackages [deltastore]: executing diffoscope
+[2023-04-11 02:00:17] INFO root fetch - processPackages [deltastore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltastore-0.5.2-py3-none-any.whl.zip tmp/deltastore-0.5.3-py3-none-any.whl.zip --markdown 20230411/d/deltastore/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-11 02:00:18] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-11 02:00:18] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-0.0.45.tar.gz tmp/arkdata-0.0.46.tar.gz --markdown 20230411/a/arkdata/0.0.45-0.0.46/diff.md --exclude *.pyd
+[2023-04-11 02:00:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:18] INFO root fetch - processPackages [deepforest]: New version: [1.2.7] Old Version: [1.2.4]
+[2023-04-11 02:00:18] INFO root fetch - processPackages [deepforest]: Downloading https://files.pythonhosted.org/packages/ed/3d/0092384e54dd868c48f56d3eed1bbab1675df5598ca1a66f183156dca7c5/deepforest-1.2.4.tar.gz
+[2023-04-11 02:00:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:18] INFO root fetch - processPackages [e2eAIOK]: New version: [1.0.1b2023041100] Old Version: [1.0.1b2023040800]
+[2023-04-11 02:00:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:19] INFO root fetch - processPackages [phenodata]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-11 02:00:19] WARNING root fetch - processPackages [deepforest]: Skipping package: exceeds size limit 20008381>=10485760
+[2023-04-11 02:00:19] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:00:19] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1681084989] Old Version: [1680998625]
+[2023-04-11 02:00:19] INFO root fetch - processPackages [phenodata]: Downloading https://files.pythonhosted.org/packages/4a/62/6eeea0872404910611ae156f86bd92e644ff27c1ec1de760fc71b785b075/phenodata-0.9.3.tar.gz
+[2023-04-11 02:00:19] INFO root fetch - processPackages [e2eAIOK]: Downloading https://files.pythonhosted.org/packages/85/df/4c590c25cbb89d89300ead8a522fe50a56af3256a1361525a3dde341b270/e2eAIOK-1.0.1b2023041100.tar.gz
+[2023-04-11 02:00:19] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/6e/cc/13bdad2ed67e14199728bfe7597b883d59bdb1ad9bbba391d7d7d7fd0d8d/torchdatasets-nightly-1681084989.tar.gz
+[2023-04-11 02:00:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:19] INFO root fetch - processPackages [legion-cli]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-11 02:00:19] INFO root fetch - processPackages [legion-cli]: executing diffoscope
+[2023-04-11 02:00:19] INFO root fetch - processPackages [legion-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legion-cli-0.2.3.tar.gz tmp/legion-cli-0.2.4.tar.gz --markdown 20230411/l/legion-cli/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-11 02:00:19] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-04-11 02:00:19] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1680998625.tar.gz tmp/torchdatasets-nightly-1681084989.tar.gz --markdown 20230411/t/torchdatasets-nightly/1680998625-1681084989/diff.md --exclude *.pyd
+[2023-04-11 02:00:19] INFO root fetch - processPackages [phenodata]: Downloading https://files.pythonhosted.org/packages/e4/ce/a7557de52692cc49e02e3fe146dfa9b498c77c1149f4eadad3e3142e45e8/phenodata-0.9.4.tar.gz
+[2023-04-11 02:00:19] INFO root fetch - processPackages [e2eAIOK]: executing diffoscope
+[2023-04-11 02:00:19] INFO root fetch - processPackages [e2eAIOK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e2eAIOK-1.0.1b2023040800.tar.gz tmp/e2eAIOK-1.0.1b2023041100.tar.gz --markdown 20230411/e/e2eAIOK/1.0.1b2023040800-1.0.1b2023041100/diff.md --exclude *.pyd
+[2023-04-11 02:00:19] INFO root fetch - processPackages [phenodata]: executing diffoscope
+[2023-04-11 02:00:19] INFO root fetch - processPackages [phenodata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phenodata-0.9.3.tar.gz tmp/phenodata-0.9.4.tar.gz --markdown 20230411/p/phenodata/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-11 02:00:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:19] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9042023.post411] Old Version: [1.8.0.9032023.post431]
+[2023-04-11 02:00:20] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-04-11 02:00:20] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9032023.post431.tar.gz tmp/mct-nightly-1.8.0.9042023.post411.tar.gz --markdown 20230411/m/mct-nightly/1.8.0.9032023.post431-1.8.0.9042023.post411/diff.md --exclude *.pyd
+[2023-04-11 02:00:20] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:20] INFO root fetch - processPackages [e2eAIOK-sda]: New version: [1.0.1b2023041100] Old Version: [1.0.1b2023040800]
+[2023-04-11 02:00:21] INFO root fetch - processPackages [e2eAIOK-sda]: Downloading https://files.pythonhosted.org/packages/9c/41/0c58a31883cb60dd8e9e3989fcc9ec320214f4b37a3dd1048d07bbdbab4a/e2eAIOK_sda-1.0.1b2023041100-py3-none-any.whl
+[2023-04-11 02:00:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:21] INFO root fetch - processPackages [e2eAIOK-sda]: executing diffoscope
+[2023-04-11 02:00:21] INFO root fetch - processPackages [e2eAIOK-sda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e2eAIOK_sda-1.0.1b2023040800-py3-none-any.whl.zip tmp/e2eAIOK_sda-1.0.1b2023041100-py3-none-any.whl.zip --markdown 20230411/e/e2eAIOK-sda/1.0.1b2023040800-1.0.1b2023041100/diff.md --exclude *.pyd
+[2023-04-11 02:00:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:00:25] INFO root fetch - main [MainThread]: Store serial: [17651869]
