@@ -12267,3 +12267,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 12:01:44] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:01:45] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:01:45] INFO root fetch - main [MainThread]: Store serial: [17659182]
+[2023-04-11 12:06:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659182]
+[2023-04-11 12:06:53] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-11 12:06:54] INFO root fetch - processPackages [xpypact]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-11 12:06:54] WARNING root fetch - processPackages [colorsmaster]: Skipping, unable to determine old version
+[2023-04-11 12:06:54] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:06:54] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304111006] Old Version: [1.0.202304110958]
+[2023-04-11 12:06:54] INFO root fetch - processPackages [abraia]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-11 12:06:54] WARNING root fetch - processPackages [jpols]: Skipping, unable to determine old version
+[2023-04-11 12:06:54] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:06:54] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-04-11 12:06:54] INFO root fetch - processPackages [dapl-secure-bucket]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 12:06:54] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-04-11 12:06:54] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230411/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-04-11 12:06:54] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/86/69/967a7ee3737bf383ae4f45ba1332bdda9fc48157a2e07fa98192a324a025/mb_pytorch-1.0.202304111006-py3-none-any.whl
+[2023-04-11 12:06:54] INFO root fetch - processPackages [xpypact]: Downloading https://files.pythonhosted.org/packages/1b/88/017d00941d9880486fa0521fabb32745cbd0d6f6cdb66ff9863a5fcced07/xpypact-0.2.1.tar.gz
+[2023-04-11 12:06:54] INFO root fetch - processPackages [dapl-secure-bucket]: Downloading https://files.pythonhosted.org/packages/01/14/eedf7fb84ff1d77ab9d58972471ba5f23c76c8b1a492c1a9467f06b6d0e9/dapl-secure-bucket-0.0.2.tar.gz
+[2023-04-11 12:06:54] INFO root fetch - processPackages [abraia]: executing diffoscope
+[2023-04-11 12:06:54] INFO root fetch - processPackages [abraia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abraia-0.9.3.tar.gz tmp/abraia-0.9.4.tar.gz --markdown 20230411/a/abraia/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-11 12:06:54] INFO root fetch - processPackages [xpypact]: Downloading https://files.pythonhosted.org/packages/f3/0e/e4254ab38e60faf8619ccf37dd4228955143e17c3ec17aa47a8b080d6088/xpypact-0.3.0.tar.gz
+[2023-04-11 12:06:54] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-11 12:06:54] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304110958-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304111006-py3-none-any.whl.zip --markdown 20230411/m/mb-pytorch/1.0.202304110958-1.0.202304111006/diff.md --exclude *.pyd
+[2023-04-11 12:06:54] INFO root fetch - processPackages [dapl-secure-bucket]: Downloading https://files.pythonhosted.org/packages/c8/c1/666b7bc290ebf085ed71b18d60cd9d22733627807c80392277ccb60df5fb/dapl-secure-bucket-0.0.3.tar.gz
+[2023-04-11 12:06:54] INFO root fetch - processPackages [xpypact]: executing diffoscope
+[2023-04-11 12:06:54] INFO root fetch - processPackages [xpypact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpypact-0.2.1.tar.gz tmp/xpypact-0.3.0.tar.gz --markdown 20230411/x/xpypact/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 12:06:55] INFO root fetch - processPackages [dapl-secure-bucket]: executing diffoscope
+[2023-04-11 12:06:55] INFO root fetch - processPackages [dapl-secure-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dapl-secure-bucket-0.0.2.tar.gz tmp/dapl-secure-bucket-0.0.3.tar.gz --markdown 20230411/d/dapl-secure-bucket/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 12:06:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:06:55] INFO root fetch - processPackages [my-python-package007]: New version: [0.5.6] Old Version: [0.4.9]
+[2023-04-11 12:06:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:06:55] INFO root fetch - processPackages [fuse-client]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-11 12:06:55] INFO root fetch - processPackages [my-python-package007]: Downloading https://files.pythonhosted.org/packages/f9/d0/b94ed5acaca6fb496078840ed19782db9b19145a1cc6ce8954a695b42888/my_python_package007-0.4.9.tar.gz
+[2023-04-11 12:06:55] INFO root fetch - processPackages [fuse-client]: Downloading https://files.pythonhosted.org/packages/44/61/3a802dd7046ceaa336226d5751f658ba5f1310d47697ba15eecac90c6c71/fuse-client-1.0.7.tar.gz
+[2023-04-11 12:06:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:06:55] INFO root fetch - processPackages [my-python-package007]: Downloading https://files.pythonhosted.org/packages/14/63/1eb322f76e475dc5fc1a2b6c3948180e31e430ec315522e4512e7a1bd24c/my_python_package007-0.5.6.tar.gz
+[2023-04-11 12:06:56] INFO root fetch - processPackages [netunicorn-connector-salt]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-11 12:06:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:06:56] INFO root fetch - processPackages [my-python-package007]: executing diffoscope
+[2023-04-11 12:06:56] INFO root fetch - processPackages [my-python-package007]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_python_package007-0.4.9.tar.gz tmp/my_python_package007-0.5.6.tar.gz --markdown 20230411/m/my-python-package007/0.4.9-0.5.6/diff.md --exclude *.pyd
+[2023-04-11 12:06:56] INFO root fetch - processPackages [gitlint-core]: New version: [0.20.0.dev9] Old Version: [0.20.0.dev8]
+[2023-04-11 12:06:56] INFO root fetch - processPackages [fuse-client]: executing diffoscope
+[2023-04-11 12:06:56] INFO root fetch - processPackages [fuse-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuse-client-1.0.6.tar.gz tmp/fuse-client-1.0.7.tar.gz --markdown 20230411/f/fuse-client/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-11 12:06:56] INFO root fetch - processPackages [netunicorn-connector-salt]: Downloading https://files.pythonhosted.org/packages/56/74/fe649b87a1644d66c36af16c1bb73cfad06e5d0ccfc775fb00ff3e410c89/netunicorn-connector-salt-0.3.3.tar.gz
+[2023-04-11 12:06:56] INFO root fetch - processPackages [netunicorn-connector-salt]: executing diffoscope
+[2023-04-11 12:06:56] INFO root fetch - processPackages [netunicorn-connector-salt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netunicorn-connector-salt-0.3.2.tar.gz tmp/netunicorn-connector-salt-0.3.3.tar.gz --markdown 20230411/n/netunicorn-connector-salt/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-11 12:06:56] INFO root fetch - processPackages [gitlint-core]: executing diffoscope
+[2023-04-11 12:06:56] INFO root fetch - processPackages [gitlint-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlint_core-0.20.0.dev8.tar.gz tmp/gitlint_core-0.20.0.dev9.tar.gz --markdown 20230411/g/gitlint-core/0.20.0.dev8-0.20.0.dev9/diff.md --exclude *.pyd
+[2023-04-11 12:06:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:06:57] INFO root fetch - processPackages [gitlint]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-11 12:06:57] INFO root fetch - processPackages [gitlint]: executing diffoscope
+[2023-04-11 12:06:57] INFO root fetch - processPackages [gitlint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlint-0.8.2.tar.gz tmp/gitlint-0.9.0.tar.gz --markdown 20230411/g/gitlint/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 12:06:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:06:57] INFO root fetch - processPackages [hello2]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-04-11 12:06:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:06:57] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/0c/83/bbd388d1464372d5ad45de1d417bc1bf1718390628efddcbfa86ef75538e/hello2-1.5.3.tar.gz
+[2023-04-11 12:06:57] INFO root fetch - processPackages [valentine]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-11 12:06:58] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-04-11 12:06:58] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.5.2.tar.gz tmp/hello2-1.5.3.tar.gz --markdown 20230411/h/hello2/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-04-11 12:06:58] INFO root fetch - processPackages [valentine]: Downloading https://files.pythonhosted.org/packages/ad/c9/d07d0919021d497c1e70b33656d53c20e28e851475c6e50675635e5fac30/valentine-0.1.5.tar.gz
+[2023-04-11 12:06:58] WARNING root fetch - processPackages [valentine]: Skipping package: exceeds size limit 38203279>=10485760
+[2023-04-11 12:06:58] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:06:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:07:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:07:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:07:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:07:48] INFO root fetch - main [MainThread]: Store serial: [17659236]
