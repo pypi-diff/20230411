@@ -6998,3 +6998,85 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-11 06:21:47] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:21:50] INFO root fetch - main [MainThread]: success
 [2023-04-11 06:21:50] INFO root fetch - main [MainThread]: Store serial: [17655968]
+[2023-04-11 06:26:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17655968]
+[2023-04-11 06:26:57] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-11 06:26:57] WARNING root fetch - processPackages [EKONG45223688]: Skipping, unable to determine old version
+[2023-04-11 06:26:57] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:26:57] INFO root fetch - processPackages [tap-jotform]: New version: [0.0.5b1] Old Version: [0.0.5]
+[2023-04-11 06:26:57] WARNING root fetch - processPackages [htam26122001]: Skipping, unable to determine old version
+[2023-04-11 06:26:57] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:26:57] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.833275041.dev9076] Old Version: [0.2.831974621.dev9056]
+[2023-04-11 06:26:57] WARNING root fetch - processPackages [wjdwodnjs01]: Skipping, unable to determine old version
+[2023-04-11 06:26:57] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:26:57] INFO root fetch - processPackages [preprocessing-pgp]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-11 06:26:57] INFO root fetch - processPackages [luscioustwitch]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-11 06:26:57] INFO root fetch - processPackages [snowflake-connector-python-nightly]: New version: [2023.4.7] Old Version: [2023.4.6]
+[2023-04-11 06:26:57] INFO root fetch - processPackages [tap-jotform]: Downloading https://files.pythonhosted.org/packages/0e/94/77ebe73dc7e8cbead14fc0113168923347a422d9b13d4a51fff9e86bfae9/tap_jotform-0.0.5.tar.gz
+[2023-04-11 06:26:57] INFO root fetch - processPackages [luscioustwitch]: Downloading https://files.pythonhosted.org/packages/8d/46/ff37cf460f9a8f6a87321713987c5707704ffdc7194e5e1f56f8d4d1ab66/luscioustwitch-0.3.7.tar.gz
+[2023-04-11 06:26:57] INFO root fetch - processPackages [preprocessing-pgp]: Downloading https://files.pythonhosted.org/packages/d3/58/62832372441c3a93a381844d0f9a486cb65bf086029c06fb3b4169cc7819/preprocessing-pgp-0.2.6.tar.gz
+[2023-04-11 06:26:57] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/79/4f/ad9c1e8c8da6d34a0adcb526ea4eebb89d0f84724db7a3d55c5797497662/snowflake-connector-python-nightly-2023.4.6.tar.gz
+[2023-04-11 06:26:58] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/57/fb/13fef0447d0981c12cf1a5c6543de3b772d70ecc557b8eeddb56da991d0a/quickstart-vdk-0.2.833275041.dev9076.tar.gz
+[2023-04-11 06:26:58] INFO root fetch - processPackages [tap-jotform]: Downloading https://files.pythonhosted.org/packages/05/2c/6e3db0e3f6c450416af4744635eb21967132e8816f4b98a7fdc16a12712d/tap_jotform-0.0.5b1.tar.gz
+[2023-04-11 06:26:58] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-04-11 06:26:58] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.831974621.dev9056.tar.gz tmp/quickstart-vdk-0.2.833275041.dev9076.tar.gz --markdown 20230411/q/quickstart-vdk/0.2.831974621.dev9056-0.2.833275041.dev9076/diff.md --exclude *.pyd
+[2023-04-11 06:26:58] INFO root fetch - processPackages [luscioustwitch]: Downloading https://files.pythonhosted.org/packages/c2/6e/c5f29ce9cb22ea2ba041ca763b8d03dcfc1ab7ce9645fd9972766ac2812e/luscioustwitch-0.3.8.tar.gz
+[2023-04-11 06:26:58] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/b6/2c/ae6ad5be4f4381238126f4781cb802830351da9b01d90747652771f37191/snowflake-connector-python-nightly-2023.4.7.tar.gz
+[2023-04-11 06:26:58] INFO root fetch - processPackages [tap-jotform]: executing diffoscope
+[2023-04-11 06:26:58] INFO root fetch - processPackages [tap-jotform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_jotform-0.0.5.tar.gz tmp/tap_jotform-0.0.5b1.tar.gz --markdown 20230411/t/tap-jotform/0.0.5-0.0.5b1/diff.md --exclude *.pyd
+[2023-04-11 06:26:58] WARNING root fetch - processPackages [preprocessing-pgp]: Skipping package: exceeds size limit 53862417>=10485760
+[2023-04-11 06:26:58] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:26:58] INFO root fetch - processPackages [odoo13-addon-fleet-vehicle-service-kanban]: New version: [13.0.1.0.1.dev8] Old Version: [13.0.1.0.1.dev7]
+[2023-04-11 06:26:58] INFO root fetch - processPackages [luscioustwitch]: executing diffoscope
+[2023-04-11 06:26:58] INFO root fetch - processPackages [luscioustwitch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luscioustwitch-0.3.7.tar.gz tmp/luscioustwitch-0.3.8.tar.gz --markdown 20230411/l/luscioustwitch/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-11 06:26:58] INFO root fetch - processPackages [odoo13-addon-fleet-vehicle-service-kanban]: Downloading https://files.pythonhosted.org/packages/45/f1/08d689e309aff33806562776ec182529de3d51a8498c6963c5dff29311cc/odoo13_addon_fleet_vehicle_service_kanban-13.0.1.0.1.dev7-py3-none-any.whl
+[2023-04-11 06:26:58] INFO root fetch - processPackages [snowflake-connector-python-nightly]: executing diffoscope
+[2023-04-11 06:26:58] INFO root fetch - processPackages [snowflake-connector-python-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowflake-connector-python-nightly-2023.4.6.tar.gz tmp/snowflake-connector-python-nightly-2023.4.7.tar.gz --markdown 20230411/s/snowflake-connector-python-nightly/2023.4.6-2023.4.7/diff.md --exclude *.pyd
+[2023-04-11 06:26:59] INFO root fetch - processPackages [odoo13-addon-fleet-vehicle-service-kanban]: Downloading https://files.pythonhosted.org/packages/d4/82/ed5e5b69e530a288fda33a6d4cdf698e0bf1db479ec0464e5ee2ac875e77/odoo13_addon_fleet_vehicle_service_kanban-13.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-11 06:26:59] INFO root fetch - processPackages [odoo13-addon-fleet-vehicle-service-kanban]: executing diffoscope
+[2023-04-11 06:26:59] INFO root fetch - processPackages [odoo13-addon-fleet-vehicle-service-kanban]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_fleet_vehicle_service_kanban-13.0.1.0.1.dev7-py3-none-any.whl.zip tmp/odoo13_addon_fleet_vehicle_service_kanban-13.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20230411/o/odoo13-addon-fleet-vehicle-service-kanban/13.0.1.0.1.dev7-13.0.1.0.1.dev8/diff.md --exclude *.pyd
+[2023-04-11 06:26:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:26:59] INFO root fetch - processPackages [odoo12-addon-fleet-vehicle-inspection]: New version: [12.0.3.2.0.99.dev1] Old Version: [12.0.3.2.0]
+[2023-04-11 06:26:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:26:59] INFO root fetch - processPackages [odoo12-addon-fleet-vehicle-inspection]: Downloading https://files.pythonhosted.org/packages/36/b3/f4ab3c4ac2ccd71b75a1087dc10ae4efcfabd490b65a0bfd8ed1e6878995/odoo12_addon_fleet_vehicle_inspection-12.0.3.2.0-py3-none-any.whl
+[2023-04-11 06:26:59] INFO root fetch - processPackages [tap-jotform]: New version: [0.0.5b1] Old Version: [0.0.5]
+[2023-04-11 06:26:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:26:59] INFO root fetch - processPackages [odoo12-addon-fleet-config]: New version: [12.0.1.0.0.99.dev5] Old Version: [12.0.1.0.0.99.dev4]
+[2023-04-11 06:26:59] INFO root fetch - processPackages [tap-jotform]: executing diffoscope
+[2023-04-11 06:26:59] INFO root fetch - processPackages [tap-jotform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_jotform-0.0.5.tar.gz tmp/tap_jotform-0.0.5b1.tar.gz --markdown 20230411/t/tap-jotform/0.0.5-0.0.5b1/diff.md --exclude *.pyd
+[2023-04-11 06:26:59] INFO root fetch - processPackages [odoo12-addon-fleet-config]: Downloading https://files.pythonhosted.org/packages/dd/04/be3c35ede8dc629d7c3a8e6c6be2d90e0f8e38bef3ec48bbcabb2145c4e8/odoo12_addon_fleet_config-12.0.1.0.0.99.dev4-py3-none-any.whl
+[2023-04-11 06:27:00] INFO root fetch - processPackages [odoo12-addon-fleet-vehicle-inspection]: Downloading https://files.pythonhosted.org/packages/54/8f/6de397652df01d6c93057b35662e8869daa2cd295383c2c0ed88197f0261/odoo12_addon_fleet_vehicle_inspection-12.0.3.2.0.99.dev1-py3-none-any.whl
+[2023-04-11 06:27:00] INFO root fetch - processPackages [odoo12-addon-fleet-vehicle-inspection]: executing diffoscope
+[2023-04-11 06:27:00] INFO root fetch - processPackages [odoo12-addon-fleet-vehicle-inspection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_fleet_vehicle_inspection-12.0.3.2.0-py3-none-any.whl.zip tmp/odoo12_addon_fleet_vehicle_inspection-12.0.3.2.0.99.dev1-py3-none-any.whl.zip --markdown 20230411/o/odoo12-addon-fleet-vehicle-inspection/12.0.3.2.0-12.0.3.2.0.99.dev1/diff.md --exclude *.pyd
+[2023-04-11 06:27:00] INFO root fetch - processPackages [odoo12-addon-fleet-config]: Downloading https://files.pythonhosted.org/packages/20/57/6df3f1c9583124623bb67e1ef8671a6cf3fb056db65bea30a65fa422eb22/odoo12_addon_fleet_config-12.0.1.0.0.99.dev5-py3-none-any.whl
+[2023-04-11 06:27:00] INFO root fetch - processPackages [odoo12-addon-fleet-config]: executing diffoscope
+[2023-04-11 06:27:00] INFO root fetch - processPackages [odoo12-addon-fleet-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_fleet_config-12.0.1.0.0.99.dev4-py3-none-any.whl.zip tmp/odoo12_addon_fleet_config-12.0.1.0.0.99.dev5-py3-none-any.whl.zip --markdown 20230411/o/odoo12-addon-fleet-config/12.0.1.0.0.99.dev4-12.0.1.0.0.99.dev5/diff.md --exclude *.pyd
+[2023-04-11 06:27:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:27:00] INFO root fetch - processPackages [neon-skill-user-settings]: New version: [0.4.2a1] Old Version: [0.4.2a0]
+[2023-04-11 06:27:00] INFO root fetch - processPackages [neon-skill-user-settings]: Downloading https://files.pythonhosted.org/packages/71/72/4182972e9ae427025c4c119f8242b4bc35f64348e83866816b84293e9412/neon_skill_user_settings-0.4.2a0-py3-none-any.whl
+[2023-04-11 06:27:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:27:00] INFO root fetch - processPackages [sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-11 06:27:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:27:01] INFO root fetch - processPackages [bdilab-detect]: New version: [0.2.7.dev0] Old Version: [0.2.6.dev0]
+[2023-04-11 06:27:01] INFO root fetch - processPackages [neon-skill-user-settings]: Downloading https://files.pythonhosted.org/packages/6a/08/e946a923c9682664feb1eb55ebd452abbbb3cf531d75298fe7217fb59d48/neon_skill_user_settings-0.4.2a1-py3-none-any.whl
+[2023-04-11 06:27:01] INFO root fetch - processPackages [bdilab-detect]: Downloading https://files.pythonhosted.org/packages/1a/d9/b7e9b22441eb5211ecae0e29e171ec16fb6fe578d7f39b450555c6295a34/bdilab-detect-0.2.6.dev0.tar.gz
+[2023-04-11 06:27:01] INFO root fetch - processPackages [sbase]: executing diffoscope
+[2023-04-11 06:27:01] INFO root fetch - processPackages [sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbase-4.9.8.tar.gz tmp/sbase-4.9.9.tar.gz --markdown 20230411/s/sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-11 06:27:01] INFO root fetch - processPackages [neon-skill-user-settings]: executing diffoscope
+[2023-04-11 06:27:01] INFO root fetch - processPackages [neon-skill-user-settings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_skill_user_settings-0.4.2a0-py3-none-any.whl.zip tmp/neon_skill_user_settings-0.4.2a1-py3-none-any.whl.zip --markdown 20230411/n/neon-skill-user-settings/0.4.2a0-0.4.2a1/diff.md --exclude *.pyd
+[2023-04-11 06:27:01] WARNING root fetch - processPackages [bdilab-detect]: Skipping package: exceeds size limit 16297153>=10485760
+[2023-04-11 06:27:01] INFO root fetch - main [MainThread]: error
+[2023-04-11 06:27:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:27:01] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-configuration]: New version: [15.0.1.0.0.6] Old Version: [15.0.1.0.0.5]
+[2023-04-11 06:27:01] INFO root fetch - processPackages [selenium-base]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-11 06:27:01] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-configuration]: Downloading https://files.pythonhosted.org/packages/ca/ef/747afa90b84874e73b932f4f2e2e1226b84406634f0508bf7db69ae538bb/odoo_addon_fleet_vehicle_configuration-15.0.1.0.0.5-py3-none-any.whl
+[2023-04-11 06:27:02] INFO root fetch - processPackages [selenium-base]: executing diffoscope
+[2023-04-11 06:27:02] INFO root fetch - processPackages [selenium-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-base-4.9.8.tar.gz tmp/selenium-base-4.9.9.tar.gz --markdown 20230411/s/selenium-base/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-11 06:27:02] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-configuration]: Downloading https://files.pythonhosted.org/packages/fa/da/0e2e0eded4afe898f6af040bcd7617323c6174b74dcd69f971a4cb60aa94/odoo_addon_fleet_vehicle_configuration-15.0.1.0.0.6-py3-none-any.whl
+[2023-04-11 06:27:02] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-configuration]: executing diffoscope
+[2023-04-11 06:27:02] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-configuration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fleet_vehicle_configuration-15.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_fleet_vehicle_configuration-15.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-fleet-vehicle-configuration/15.0.1.0.0.5-15.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-04-11 06:27:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:27:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:27:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:27:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:27:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 06:27:03] INFO root fetch - main [MainThread]: Store serial: [17656042]
