@@ -15692,3 +15692,130 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 16:04:38] ERROR root fetch - processPackages [collective.ckeditor]: Timeout during execution of pkgdiff
 [2023-04-11 16:04:38] INFO root fetch - main [MainThread]: error
 [2023-04-11 16:04:38] INFO root fetch - main [MainThread]: Store serial: [17661724]
+[2023-04-11 16:09:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17661724]
+[2023-04-11 16:09:46] INFO root fetch - main [MainThread]: Found 26 changed packages
+[2023-04-11 16:09:46] WARNING root fetch - processPackages [wirepas-positioning-messaging]: Skipping, unable to determine old version
+[2023-04-11 16:09:46] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:09:46] INFO root fetch - processPackages [jpols]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 16:09:46] INFO root fetch - processPackages [matrix-synapse]: New version: [1.9.1] Old Version: [1.9.0rc1]
+[2023-04-11 16:09:46] INFO root fetch - processPackages [unknowncode]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 16:09:46] INFO root fetch - processPackages [rhoas-sdks]: New version: [1.0.2b2] Old Version: [1.0.2]
+[2023-04-11 16:09:46] INFO root fetch - processPackages [robohive]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-11 16:09:46] INFO root fetch - processPackages [rhoas-sdks]: Downloading https://files.pythonhosted.org/packages/52/f4/80a19c17270c13913fc2e53e97d7d8ff880f0c6a939a0ecef3cebe6c3919/rhoas_sdks-1.0.2.tar.gz
+[2023-04-11 16:09:46] INFO root fetch - processPackages [matrix-synapse]: Downloading https://files.pythonhosted.org/packages/38/92/fe537943f778c5448a77d841fc4b23f0aadfb189248bdaa757b3135d13ba/matrix-synapse-1.9.0rc1.tar.gz
+[2023-04-11 16:09:46] INFO root fetch - processPackages [unknowncode]: Downloading https://files.pythonhosted.org/packages/45/43/f1f4f6d0c406770ee744de013e36121c8a57ebe64768e207b3e44e666126/unknowncode-0.2.1.tar.gz
+[2023-04-11 16:09:47] INFO root fetch - processPackages [robohive]: Downloading https://files.pythonhosted.org/packages/0e/d6/8bcb611ea874aeaf810219ead680857946dde91a5d8a0c4641de6981028b/robohive-0.3.0-py3-none-any.whl
+[2023-04-11 16:09:47] ERROR root fetch - processPackages [jpols]: Unable to fetch info: No such project/version 'jpols' 0.0.1
+[2023-04-11 16:09:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:09:47] INFO root fetch - processPackages [rhoas-sdks]: Downloading https://files.pythonhosted.org/packages/5b/97/ff886225e722ef16ccf246a5d3a17c07ee7a4df025aadbbb641811c83dc1/rhoas_sdks-1.0.2b2.tar.gz
+[2023-04-11 16:09:47] INFO root fetch - processPackages [add-testing]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-11 16:09:47] INFO root fetch - processPackages [unknowncode]: Downloading https://files.pythonhosted.org/packages/3f/83/81937f0e5c0355c31854535deee395bbe393ee9186e2b7631f13eed6c7d7/unknowncode-0.2.2.tar.gz
+[2023-04-11 16:09:47] WARNING root fetch - processPackages [robohive]: Skipping package: exceeds size limit 62697387>=10485760
+[2023-04-11 16:09:47] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:09:47] INFO root fetch - processPackages [rhoas-sdks]: executing diffoscope
+[2023-04-11 16:09:47] INFO root fetch - processPackages [rhoas-sdks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rhoas_sdks-1.0.2.tar.gz tmp/rhoas_sdks-1.0.2b2.tar.gz --markdown 20230411/r/rhoas-sdks/1.0.2-1.0.2b2/diff.md --exclude *.pyd
+[2023-04-11 16:09:47] INFO root fetch - processPackages [shelephant]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-11 16:09:47] INFO root fetch - processPackages [unknowncode]: executing diffoscope
+[2023-04-11 16:09:47] INFO root fetch - processPackages [unknowncode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unknowncode-0.2.1.tar.gz tmp/unknowncode-0.2.2.tar.gz --markdown 20230411/u/unknowncode/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 16:09:47] INFO root fetch - processPackages [add-testing]: Downloading https://files.pythonhosted.org/packages/96/3c/463e78b763264adb1287203d62df7d84e41a6a25faf55446feda5f05aa66/add-testing-1.3.4.tar.gz
+[2023-04-11 16:09:47] INFO root fetch - processPackages [shelephant]: Downloading https://files.pythonhosted.org/packages/2d/a4/eb89174621cb4db480e5ee671940c1839e2aa2d7672091785663efee5de7/shelephant-0.8.1.tar.gz
+[2023-04-11 16:09:47] INFO root fetch - processPackages [add-testing]: executing diffoscope
+[2023-04-11 16:09:47] INFO root fetch - processPackages [add-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/add-testing-1.3.3.tar.gz tmp/add-testing-1.3.4.tar.gz --markdown 20230411/a/add-testing/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-11 16:09:47] INFO root fetch - processPackages [matrix-synapse]: Downloading https://files.pythonhosted.org/packages/ca/c7/4673bb5cb9ec9a2b850f118077e24c3f5fda08b973bbed512caf26dd9604/matrix-synapse-1.9.1.tar.gz
+[2023-04-11 16:09:47] INFO root fetch - processPackages [shelephant]: Downloading https://files.pythonhosted.org/packages/93/46/ce850f729de093ce798c0d10e2125a344d87d2cf42e56b9380fbf5578cef/shelephant-0.9.0.tar.gz
+[2023-04-11 16:09:48] INFO root fetch - processPackages [shelephant]: executing diffoscope
+[2023-04-11 16:09:48] INFO root fetch - processPackages [shelephant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelephant-0.8.1.tar.gz tmp/shelephant-0.9.0.tar.gz --markdown 20230411/s/shelephant/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 16:09:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:48] INFO root fetch - processPackages [gov-uk-dashboards]: New version: [8.0.1] Old Version: [8.0.0]
+[2023-04-11 16:09:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:48] INFO root fetch - processPackages [gov-uk-dashboards]: Downloading https://files.pythonhosted.org/packages/e7/5c/b20f3c207e41045319b169b8fb478bbfa77f1ad2d1c87b47c88ea3f5f9b5/gov_uk_dashboards-8.0.0.tar.gz
+[2023-04-11 16:09:48] INFO root fetch - processPackages [harborapi]: New version: [0.9.0] Old Version: [0.8.6]
+[2023-04-11 16:09:48] INFO root fetch - processPackages [matrix-synapse]: executing diffoscope
+[2023-04-11 16:09:48] INFO root fetch - processPackages [matrix-synapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matrix-synapse-1.9.0rc1.tar.gz tmp/matrix-synapse-1.9.1.tar.gz --markdown 20230411/m/matrix-synapse/1.9.0rc1-1.9.1/diff.md --exclude *.pyd
+[2023-04-11 16:09:48] INFO root fetch - processPackages [harborapi]: Downloading https://files.pythonhosted.org/packages/5c/2a/58d6ecd57c3d1b448b9dc47dc94b6192a2d2a954d42fc450e4d4e9ac2017/harborapi-0.8.6.tar.gz
+[2023-04-11 16:09:48] INFO root fetch - processPackages [gov-uk-dashboards]: Downloading https://files.pythonhosted.org/packages/75/af/70edb4cc04447ed845193f1d08c636530005b98cd9b7b43e28b4e2416950/gov_uk_dashboards-8.0.1.tar.gz
+[2023-04-11 16:09:49] INFO root fetch - processPackages [gov-uk-dashboards]: executing diffoscope
+[2023-04-11 16:09:49] INFO root fetch - processPackages [gov-uk-dashboards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gov_uk_dashboards-8.0.0.tar.gz tmp/gov_uk_dashboards-8.0.1.tar.gz --markdown 20230411/g/gov-uk-dashboards/8.0.0-8.0.1/diff.md --exclude *.pyd
+[2023-04-11 16:09:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:49] INFO root fetch - processPackages [gotya-text-anonymizer]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-11 16:09:49] INFO root fetch - processPackages [gotya-text-anonymizer]: executing diffoscope
+[2023-04-11 16:09:49] INFO root fetch - processPackages [gotya-text-anonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gotya-text-anonymizer-1.1.0.tar.gz tmp/gotya-text-anonymizer-1.1.1.tar.gz --markdown 20230411/g/gotya-text-anonymizer/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-11 16:09:49] INFO root fetch - processPackages [harborapi]: Downloading https://files.pythonhosted.org/packages/27/2c/7ea076b0aa166efe412bad3f442cd6278d311f903fcb51e89039fee40d71/harborapi-0.9.0.tar.gz
+[2023-04-11 16:09:49] INFO root fetch - processPackages [harborapi]: executing diffoscope
+[2023-04-11 16:09:49] INFO root fetch - processPackages [harborapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harborapi-0.8.6.tar.gz tmp/harborapi-0.9.0.tar.gz --markdown 20230411/h/harborapi/0.8.6-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 16:09:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:50] INFO root fetch - processPackages [tkinterweb]: New version: [3.9.7] Old Version: [3.9.6]
+[2023-04-11 16:09:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:50] WARNING root fetch - processPackages [legacyplatequery]: Skipping, unable to determine old version
+[2023-04-11 16:09:50] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:09:50] INFO root fetch - processPackages [django-admin-safe-login]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-11 16:09:50] INFO root fetch - processPackages [tkinterweb]: Downloading https://files.pythonhosted.org/packages/fb/88/c86c5a5baae51628333717b42e4fb53d2b159233ba97f5089fcb5e1f65cb/tkinterweb-3.9.6.tar.gz
+[2023-04-11 16:09:50] INFO root fetch - processPackages [django-admin-safe-login]: Downloading https://files.pythonhosted.org/packages/a8/45/1c59be4574530a479ef1661e49a9f566492f2ba94f88f0301cb12d0988ee/django-admin-safe-login-0.3.4.tar.gz
+[2023-04-11 16:09:50] INFO root fetch - processPackages [django-admin-safe-login]: Downloading https://files.pythonhosted.org/packages/ef/24/a0833f081244a384ea75a96592039d8da34cb39f74821933d28d2c7e25a3/django-admin-safe-login-0.3.5.tar.gz
+[2023-04-11 16:09:51] INFO root fetch - processPackages [django-admin-safe-login]: executing diffoscope
+[2023-04-11 16:09:51] INFO root fetch - processPackages [django-admin-safe-login]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-safe-login-0.3.4.tar.gz tmp/django-admin-safe-login-0.3.5.tar.gz --markdown 20230411/d/django-admin-safe-login/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-11 16:09:51] INFO root fetch - processPackages [tkinterweb]: Downloading https://files.pythonhosted.org/packages/00/e1/a22d4bc360d1eaed4590da7adf3b45a448f6055ca35ab8939a8019e0203f/tkinterweb-3.9.7.tar.gz
+[2023-04-11 16:09:51] INFO root fetch - processPackages [tkinterweb]: executing diffoscope
+[2023-04-11 16:09:51] INFO root fetch - processPackages [tkinterweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkinterweb-3.9.6.tar.gz tmp/tkinterweb-3.9.7.tar.gz --markdown 20230411/t/tkinterweb/3.9.6-3.9.7/diff.md --exclude *.pyd
+[2023-04-11 16:09:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:51] INFO root fetch - processPackages [crc-bonfire]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-04-11 16:09:51] INFO root fetch - processPackages [crc-bonfire]: Downloading https://files.pythonhosted.org/packages/ec/43/d4a18b6e91e52fcc868550728bd4237359831940e8e73ac46edff325841c/crc-bonfire-4.9.1.tar.gz
+[2023-04-11 16:09:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:52] INFO root fetch - processPackages [cgal]: New version: [5.5.post202210051748] Old Version: [5.5.post202210041706]
+[2023-04-11 16:09:52] INFO root fetch - processPackages [cgal]: Downloading https://files.pythonhosted.org/packages/f1/8b/8797ca6667ff371f14f3cdc628ed811c71d00c6b6f803e016ed37c80e4f9/cgal-5.5.post202210041706.tar.gz
+[2023-04-11 16:09:52] INFO root fetch - processPackages [crc-bonfire]: Downloading https://files.pythonhosted.org/packages/df/98/861b02d59f40ec0ae35780637b8ee0c72448ce302809d22a4accf04773c2/crc-bonfire-4.9.2.tar.gz
+[2023-04-11 16:09:52] INFO root fetch - processPackages [cgal]: Downloading https://files.pythonhosted.org/packages/10/10/b91b612499db338fbc7b1cf7fb120a12e5022407d9aeba6d6c9fbc1a5e1d/cgal-5.5.post202210051748.tar.gz
+[2023-04-11 16:09:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:52] INFO root fetch - processPackages [pyinflux3]: New version: [0.2] Old Version: [0.1]
+[2023-04-11 16:09:52] WARNING root fetch - processPackages [wiredflow]: Skipping, unable to determine old version
+[2023-04-11 16:09:52] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:09:52] INFO root fetch - processPackages [cgal]: executing diffoscope
+[2023-04-11 16:09:52] INFO root fetch - processPackages [cgal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cgal-5.5.post202210041706.tar.gz tmp/cgal-5.5.post202210051748.tar.gz --markdown 20230411/c/cgal/5.5.post202210041706-5.5.post202210051748/diff.md --exclude *.pyd
+[2023-04-11 16:09:52] INFO root fetch - processPackages [crc-bonfire]: executing diffoscope
+[2023-04-11 16:09:52] INFO root fetch - processPackages [crc-bonfire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crc-bonfire-4.9.1.tar.gz tmp/crc-bonfire-4.9.2.tar.gz --markdown 20230411/c/crc-bonfire/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-04-11 16:09:52] INFO root fetch - processPackages [bigraph-viz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 16:09:52] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/24/66/f6a3df686ce5ca60922eab23d0af7809662c9b410f64f57d2a7bc0f7bd97/pyinflux3-0.1.tar.gz
+[2023-04-11 16:09:53] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/95/82/c4f1107004ff42243b130cd5b4d59eb45fb4811718a9f7dfb428d3809cfb/pyinflux3-0.2.tar.gz
+[2023-04-11 16:09:53] INFO root fetch - processPackages [bigraph-viz]: executing diffoscope
+[2023-04-11 16:09:53] INFO root fetch - processPackages [bigraph-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigraph-viz-0.0.8.tar.gz tmp/bigraph-viz-0.0.9.tar.gz --markdown 20230411/b/bigraph-viz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 16:09:53] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-11 16:09:53] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.1.tar.gz tmp/pyinflux3-0.2.tar.gz --markdown 20230411/p/pyinflux3/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-11 16:09:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:54] INFO root fetch - processPackages [twilog-web-archiver]: New version: [1.0.0] Old Version: [0.1.2]
+[2023-04-11 16:09:54] INFO root fetch - processPackages [google-api-python-client]: New version: [2.9.0] Old Version: [2.85.0]
+[2023-04-11 16:09:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:54] INFO root fetch - processPackages [twilog-web-archiver]: executing diffoscope
+[2023-04-11 16:09:54] INFO root fetch - processPackages [twilog-web-archiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twilog-web-archiver-0.1.2.tar.gz tmp/twilog-web-archiver-1.0.0.tar.gz --markdown 20230411/t/twilog-web-archiver/0.1.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-11 16:09:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:54] INFO root fetch - processPackages [google-api-python-client]: Downloading https://files.pythonhosted.org/packages/ae/ef/81769edd4b013fc90acd1d0878b1e6a9708b3b821122bda7a730b4a0d4d5/google-api-python-client-2.85.0.tar.gz
+[2023-04-11 16:09:54] INFO root fetch - processPackages [google-cloud-container]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-04-11 16:09:54] INFO root fetch - processPackages [ign-gpao-project-builder]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-11 16:09:54] WARNING root fetch - processPackages [google-api-python-client]: Skipping package: exceeds size limit 10747605>=10485760
+[2023-04-11 16:09:54] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:09:54] INFO root fetch - processPackages [google-cloud-container]: Downloading https://files.pythonhosted.org/packages/9f/8d/5d2864511401e860531a2dc96c9b966237756ea7efcabaff757e216c3eff/google-cloud-container-2.8.1.tar.gz
+[2023-04-11 16:09:54] INFO root fetch - processPackages [google-cloud-retail]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-11 16:09:54] INFO root fetch - processPackages [ign-gpao-project-builder]: Downloading https://files.pythonhosted.org/packages/46/e7/128daeb96f45ee0b01f849df3ed3bcbb1f3414fad028bb009eea8942d9eb/ign-gpao-project-builder-0.8.0.tar.gz
+[2023-04-11 16:09:54] INFO root fetch - processPackages [google-cloud-retail]: Downloading https://files.pythonhosted.org/packages/61/fd/4901fa49db1833141afd8c28ef9237dff30be89bc2d7cc17fbf204dee90b/google-cloud-retail-1.8.1.tar.gz
+[2023-04-11 16:09:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:55] INFO root fetch - processPackages [ign-gpao-project-builder]: Downloading https://files.pythonhosted.org/packages/c1/a0/8d0707546ec89b9149ebf558b32ea1c2cf1af46738635558eeca431cf5be/ign-gpao-project-builder-0.9.0.tar.gz
+[2023-04-11 16:09:55] INFO root fetch - processPackages [RockyRoad]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 16:09:55] INFO root fetch - processPackages [google-cloud-retail]: Downloading https://files.pythonhosted.org/packages/d9/f2/6965463bb30d193b79fe52fc079c7b37c87c4e6e0254772543f812ad2fac/google-cloud-retail-1.9.0.tar.gz
+[2023-04-11 16:09:55] INFO root fetch - processPackages [google-cloud-container]: Downloading https://files.pythonhosted.org/packages/a6/0f/71a16bec82f5b84b1aa6c4b9e6d8d7c40de8f7abe8d0b150e7a45bbb927c/google-cloud-container-2.9.0.tar.gz
+[2023-04-11 16:09:55] INFO root fetch - processPackages [ign-gpao-project-builder]: executing diffoscope
+[2023-04-11 16:09:55] INFO root fetch - processPackages [ign-gpao-project-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ign-gpao-project-builder-0.8.0.tar.gz tmp/ign-gpao-project-builder-0.9.0.tar.gz --markdown 20230411/i/ign-gpao-project-builder/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 16:09:55] INFO root fetch - processPackages [RockyRoad]: executing diffoscope
+[2023-04-11 16:09:55] INFO root fetch - processPackages [RockyRoad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RockyRoad-0.0.98-py3-none-any.whl.zip tmp/RockyRoad-0.0.99-py3-none-any.whl.zip --markdown 20230411/R/RockyRoad/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 16:09:56] INFO root fetch - processPackages [google-cloud-container]: executing diffoscope
+[2023-04-11 16:09:56] INFO root fetch - processPackages [google-cloud-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-container-2.8.1.tar.gz tmp/google-cloud-container-2.9.0.tar.gz --markdown 20230411/g/google-cloud-container/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-04-11 16:09:56] INFO root fetch - processPackages [google-cloud-retail]: executing diffoscope
+[2023-04-11 16:09:56] INFO root fetch - processPackages [google-cloud-retail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-retail-1.8.1.tar.gz tmp/google-cloud-retail-1.9.0.tar.gz --markdown 20230411/g/google-cloud-retail/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-11 16:09:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:56] WARNING root fetch - processPackages [packagefortesting]: Skipping, unable to determine old version
+[2023-04-11 16:09:56] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:09:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:09:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:10:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:10:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:10:03] INFO root fetch - main [MainThread]: Store serial: [17661850]
