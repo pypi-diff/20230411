@@ -13955,3 +13955,140 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 14:19:45] INFO root fetch - main [MainThread]: success
 [2023-04-11 14:19:56] INFO root fetch - main [MainThread]: success
 [2023-04-11 14:19:56] INFO root fetch - main [MainThread]: Store serial: [17660448]
+[2023-04-11 14:24:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17660448]
+[2023-04-11 14:25:04] INFO root fetch - main [MainThread]: Found 27 changed packages
+[2023-04-11 14:25:04] INFO root fetch - processPackages [autumn8]: New version: [1.0.0rc3] Old Version: [1.0.0rc2]
+[2023-04-11 14:25:04] INFO root fetch - processPackages [whisper-dictation]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-11 14:25:04] INFO root fetch - processPackages [blitzml]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-11 14:25:04] INFO root fetch - processPackages [pretix-plugin-extended-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 14:25:04] INFO root fetch - processPackages [Winfo]: New version: [0.0.2.7] Old Version: [0.0.2.6]
+[2023-04-11 14:25:04] INFO root fetch - processPackages [whisper-dictation]: Downloading https://files.pythonhosted.org/packages/e4/ea/352e9d34d5c78c9ce8ae15689221cb0f03eace0053a9d6b45281efc9063e/whisper_dictation-0.1.0.tar.gz
+[2023-04-11 14:25:04] INFO root fetch - processPackages [pretix-plugin-extended-api]: Downloading https://files.pythonhosted.org/packages/3e/e9/e84630b11ef5b63318cdad9489b7e9e552e96a24a74b33088578d78265b2/pretix-plugin-extended-api-0.1.8.tar.gz
+[2023-04-11 14:25:04] INFO root fetch - processPackages [autumn8]: Downloading https://files.pythonhosted.org/packages/7e/c8/781c77a4addf687a32c2843cd444169a3f17df14cf4d2b478e7d45d32063/autumn8-1.0.0rc2.tar.gz
+[2023-04-11 14:25:04] INFO root fetch - processPackages [blitzml]: Downloading https://files.pythonhosted.org/packages/05/a6/a7c54b2325042ecce212d5d8a5cdf9bef260a1c1456a10f4c752cee6506d/blitzml-0.8.0.tar.gz
+[2023-04-11 14:25:04] INFO root fetch - processPackages [Winfo]: Downloading https://files.pythonhosted.org/packages/07/47/8c1415b16ac116876ce4b3331f9ae91271666f5fa81b3ebee5bcfe0aac7c/Winfo-0.0.2.6.tar.gz
+[2023-04-11 14:25:04] INFO root fetch - processPackages [whisper-dictation]: Downloading https://files.pythonhosted.org/packages/95/30/675e446e601c4a54420bfce1829b36b28b26735bc5b89a2833fec137cf8b/whisper_dictation-0.2.0.tar.gz
+[2023-04-11 14:25:04] INFO root fetch - processPackages [pretix-plugin-extended-api]: Downloading https://files.pythonhosted.org/packages/ee/8b/5705e30accefcdd2976224b50ee91ad1d664bed6f4ffc3a79c64f1ed2763/pretix-plugin-extended-api-0.1.9.tar.gz
+[2023-04-11 14:25:04] INFO root fetch - processPackages [Winfo]: Downloading https://files.pythonhosted.org/packages/81/fc/9d10f2218e1aa1b3fef5fe1ecaf3aff14fab2326a1f29404b310c212cbc2/Winfo-0.0.2.7.tar.gz
+[2023-04-11 14:25:04] INFO root fetch - processPackages [autumn8]: Downloading https://files.pythonhosted.org/packages/5f/45/3018b859891a8d45d104ff76c695dc24c86027206461c6b4af688572b00d/autumn8-1.0.0rc3.tar.gz
+[2023-04-11 14:25:05] INFO root fetch - processPackages [pretix-plugin-extended-api]: executing diffoscope
+[2023-04-11 14:25:05] INFO root fetch - processPackages [pretix-plugin-extended-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix-plugin-extended-api-0.1.8.tar.gz tmp/pretix-plugin-extended-api-0.1.9.tar.gz --markdown 20230411/p/pretix-plugin-extended-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 14:25:05] INFO root fetch - processPackages [whisper-dictation]: executing diffoscope
+[2023-04-11 14:25:05] INFO root fetch - processPackages [whisper-dictation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_dictation-0.1.0.tar.gz tmp/whisper_dictation-0.2.0.tar.gz --markdown 20230411/w/whisper-dictation/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 14:25:05] INFO root fetch - processPackages [Winfo]: executing diffoscope
+[2023-04-11 14:25:05] INFO root fetch - processPackages [Winfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Winfo-0.0.2.6.tar.gz tmp/Winfo-0.0.2.7.tar.gz --markdown 20230411/W/Winfo/0.0.2.6-0.0.2.7/diff.md --exclude *.pyd
+[2023-04-11 14:25:05] INFO root fetch - processPackages [blitzml]: Downloading https://files.pythonhosted.org/packages/6c/b5/770386536f95214a18c751243d94d70bb21df9320eae6c71d4b8bd90a0ca/blitzml-0.9.0-py3-none-any.whl
+[2023-04-11 14:25:05] INFO root fetch - processPackages [autumn8]: executing diffoscope
+[2023-04-11 14:25:05] INFO root fetch - processPackages [autumn8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autumn8-1.0.0rc2.tar.gz tmp/autumn8-1.0.0rc3.tar.gz --markdown 20230411/a/autumn8/1.0.0rc2-1.0.0rc3/diff.md --exclude *.pyd
+[2023-04-11 14:25:05] INFO root fetch - processPackages [blitzml]: executing diffoscope
+[2023-04-11 14:25:05] INFO root fetch - processPackages [blitzml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blitzml-0.8.0.tar.gz tmp/blitzml-0.9.0-py3-none-any.whl.zip --markdown 20230411/b/blitzml/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-11 14:25:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:06] INFO root fetch - processPackages [boinc-client]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-11 14:25:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:06] INFO root fetch - processPackages [django-unical-bootstrap-italia]: New version: [2.0.1] Old Version: [1.0.5]
+[2023-04-11 14:25:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:06] INFO root fetch - processPackages [fh-fablib]: New version: [1.0.20230411] Old Version: [1.0.20230303]
+[2023-04-11 14:25:06] INFO root fetch - processPackages [boinc-client]: Downloading https://files.pythonhosted.org/packages/c6/10/aa5697038d34c068ca6ccadf36d33a7730ef2de2f24c022f77f435df8575/boinc_client-1.2.0.tar.gz
+[2023-04-11 14:25:06] INFO root fetch - processPackages [django-unical-bootstrap-italia]: Downloading https://files.pythonhosted.org/packages/c4/be/44a55ebefdcee901cc2540d7e0df31a2ae672c231cd01edc08d1f1b4d2f1/django-unical-bootstrap-italia-1.0.5.tar.gz
+[2023-04-11 14:25:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:06] INFO root fetch - processPackages [fh-fablib]: Downloading https://files.pythonhosted.org/packages/7e/c6/bcc58b990e4c923a59d8bb8de6b48a4185fae338e5e1660a684323724d80/fh_fablib-1.0.20230303.tar.gz
+[2023-04-11 14:25:06] INFO root fetch - processPackages [auto-pypi-uploader]: New version: [1.1.1.3] Old Version: [1.1.1.2]
+[2023-04-11 14:25:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:06] INFO root fetch - processPackages [edwh-pipcompile-plugin]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 14:25:06] INFO root fetch - processPackages [boinc-client]: Downloading https://files.pythonhosted.org/packages/5b/f6/c4c44bf5621272fb2e9256e43936a025f665d4bdac73e36a58478cf4693c/boinc_client-1.3.0.tar.gz
+[2023-04-11 14:25:06] INFO root fetch - processPackages [django-unical-bootstrap-italia]: Downloading https://files.pythonhosted.org/packages/91/c5/8fe15b1a20631dd74ff7a47f805f65039330daf1c486b43013ed55be50d3/django-unical-bootstrap-italia-2.0.1.tar.gz
+[2023-04-11 14:25:06] INFO root fetch - processPackages [auto-pypi-uploader]: Downloading https://files.pythonhosted.org/packages/8a/37/983a281b1bbd1f79e6ec21afa62e0b6cfa26fd2d6e7f13d7eea786a991b2/auto_pypi_uploader-1.1.1.2.tar.gz
+[2023-04-11 14:25:06] INFO root fetch - processPackages [fh-fablib]: Downloading https://files.pythonhosted.org/packages/e6/c3/7047ca2dbbe01ee1c2944dc2568bb727856a9e171b3f3a506f64afa5cc26/fh_fablib-1.0.20230411.tar.gz
+[2023-04-11 14:25:06] INFO root fetch - processPackages [boinc-client]: executing diffoscope
+[2023-04-11 14:25:06] INFO root fetch - processPackages [boinc-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boinc_client-1.2.0.tar.gz tmp/boinc_client-1.3.0.tar.gz --markdown 20230411/b/boinc-client/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-11 14:25:06] INFO root fetch - processPackages [fh-fablib]: executing diffoscope
+[2023-04-11 14:25:06] INFO root fetch - processPackages [fh-fablib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fh_fablib-1.0.20230303.tar.gz tmp/fh_fablib-1.0.20230411.tar.gz --markdown 20230411/f/fh-fablib/1.0.20230303-1.0.20230411/diff.md --exclude *.pyd
+[2023-04-11 14:25:06] INFO root fetch - processPackages [django-unical-bootstrap-italia]: executing diffoscope
+[2023-04-11 14:25:06] INFO root fetch - processPackages [django-unical-bootstrap-italia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-unical-bootstrap-italia-1.0.5.tar.gz tmp/django-unical-bootstrap-italia-2.0.1.tar.gz --markdown 20230411/d/django-unical-bootstrap-italia/1.0.5-2.0.1/diff.md --exclude *.pyd
+[2023-04-11 14:25:07] INFO root fetch - processPackages [auto-pypi-uploader]: Downloading https://files.pythonhosted.org/packages/c6/3a/6b051268643d4c952a28987e73bdc70368b13224dbecd3cad2c6941f41ea/auto_pypi_uploader-1.1.1.3.tar.gz
+[2023-04-11 14:25:07] INFO root fetch - processPackages [edwh-pipcompile-plugin]: Downloading https://files.pythonhosted.org/packages/0a/26/c393b3bf658444fc6ffb3b3f95d148efec6f2f775ba9cf6643a0e299cb02/edwh_pipcompile_plugin-0.1.2.tar.gz
+[2023-04-11 14:25:07] INFO root fetch - processPackages [auto-pypi-uploader]: executing diffoscope
+[2023-04-11 14:25:07] INFO root fetch - processPackages [auto-pypi-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_pypi_uploader-1.1.1.2.tar.gz tmp/auto_pypi_uploader-1.1.1.3.tar.gz --markdown 20230411/a/auto-pypi-uploader/1.1.1.2-1.1.1.3/diff.md --exclude *.pyd
+[2023-04-11 14:25:07] INFO root fetch - processPackages [edwh-pipcompile-plugin]: executing diffoscope
+[2023-04-11 14:25:07] INFO root fetch - processPackages [edwh-pipcompile-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh_pipcompile_plugin-0.1.1.tar.gz tmp/edwh_pipcompile_plugin-0.1.2.tar.gz --markdown 20230411/e/edwh-pipcompile-plugin/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 14:25:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:08] INFO root fetch - processPackages [CTADIRAC]: New version: [2.2a3] Old Version: [2.2.9]
+[2023-04-11 14:25:08] INFO root fetch - processPackages [CTADIRAC]: executing diffoscope
+[2023-04-11 14:25:08] INFO root fetch - processPackages [CTADIRAC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTADIRAC-2.2.9.tar.gz tmp/CTADIRAC-2.2a3.tar.gz --markdown 20230411/C/CTADIRAC/2.2.9-2.2a3/diff.md --exclude *.pyd
+[2023-04-11 14:25:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:08] INFO root fetch - processPackages [goodreadsscraper]: New version: [0.4] Old Version: [0.3]
+[2023-04-11 14:25:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:08] INFO root fetch - processPackages [cchenutils]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-11 14:25:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:08] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc262] Old Version: [3.0.2rc261]
+[2023-04-11 14:25:08] INFO root fetch - processPackages [goodreadsscraper]: Downloading https://files.pythonhosted.org/packages/f5/d5/d4050d3e75834ca6b5d69613df86162ba0d02b677a3de4bff9fb2d3cc184/goodreadsscraper-0.4.tar.gz
+[2023-04-11 14:25:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:08] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc262] Old Version: [3.0.2rc261]
+[2023-04-11 14:25:08] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/77/e3/1f0d989d7301e0113945fc34993d557aade96bdff38619665b17284e8b01/cchenutils-0.4.4-py3-none-any.whl
+[2023-04-11 14:25:08] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/75/5f/70390b9c0e0b87a4295465285c9533ccab650b4c6997fcea96177e7b7ad8/car-connector-framework-3.0.2rc261.tar.gz
+[2023-04-11 14:25:08] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/75/5f/70390b9c0e0b87a4295465285c9533ccab650b4c6997fcea96177e7b7ad8/car-connector-framework-3.0.2rc261.tar.gz
+[2023-04-11 14:25:08] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-11 14:25:08] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.4.3-py3-none-any.whl.zip tmp/cchenutils-0.4.4-py3-none-any.whl.zip --markdown 20230411/c/cchenutils/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-11 14:25:08] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/0a/97/4eef2a96acc83ae421abd9cc4fd7a5bb7cd2b639659bbc82fc165a5e71c9/car-connector-framework-3.0.2rc262.tar.gz
+[2023-04-11 14:25:08] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/0a/97/4eef2a96acc83ae421abd9cc4fd7a5bb7cd2b639659bbc82fc165a5e71c9/car-connector-framework-3.0.2rc262.tar.gz
+[2023-04-11 14:25:09] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-11 14:25:09] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc261.tar.gz tmp/car-connector-framework-3.0.2rc262.tar.gz --markdown 20230411/c/car-connector-framework/3.0.2rc261-3.0.2rc262/diff.md --exclude *.pyd
+[2023-04-11 14:25:09] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-11 14:25:09] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc261.tar.gz tmp/car-connector-framework-3.0.2rc262.tar.gz --markdown 20230411/c/car-connector-framework/3.0.2rc261-3.0.2rc262/diff.md --exclude *.pyd
+[2023-04-11 14:25:09] INFO root fetch - processPackages [goodreadsscraper]: executing diffoscope
+[2023-04-11 14:25:09] INFO root fetch - processPackages [goodreadsscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goodreadsscraper-0.3.tar.gz tmp/goodreadsscraper-0.4.tar.gz --markdown 20230411/g/goodreadsscraper/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-11 14:25:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:10] INFO root fetch - processPackages [arkitekt]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-11 14:25:10] INFO root fetch - processPackages [arkitekt]: executing diffoscope
+[2023-04-11 14:25:10] INFO root fetch - processPackages [arkitekt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkitekt-0.4.8.tar.gz tmp/arkitekt-0.4.9.tar.gz --markdown 20230411/a/arkitekt/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-11 14:25:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:10] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc262] Old Version: [3.0.2rc261]
+[2023-04-11 14:25:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:10] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-11 14:25:10] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc261.tar.gz tmp/car-connector-framework-3.0.2rc262.tar.gz --markdown 20230411/c/car-connector-framework/3.0.2rc261-3.0.2rc262/diff.md --exclude *.pyd
+[2023-04-11 14:25:10] INFO root fetch - processPackages [auto-pypi-uploader]: New version: [1.1.1.3] Old Version: [1.1.1.2]
+[2023-04-11 14:25:10] INFO root fetch - processPackages [auto-pypi-uploader]: executing diffoscope
+[2023-04-11 14:25:10] INFO root fetch - processPackages [auto-pypi-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_pypi_uploader-1.1.1.2.tar.gz tmp/auto_pypi_uploader-1.1.1.3.tar.gz --markdown 20230411/a/auto-pypi-uploader/1.1.1.2-1.1.1.3/diff.md --exclude *.pyd
+[2023-04-11 14:25:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:10] WARNING root fetch - processPackages [pyequal]: Skipping, unable to determine old version
+[2023-04-11 14:25:10] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:25:10] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc262] Old Version: [3.0.2rc261]
+[2023-04-11 14:25:11] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-11 14:25:11] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc261.tar.gz tmp/car-connector-framework-3.0.2rc262.tar.gz --markdown 20230411/c/car-connector-framework/3.0.2rc261-3.0.2rc262/diff.md --exclude *.pyd
+[2023-04-11 14:25:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:11] INFO root fetch - processPackages [python-gitlab]: New version: [3.9.0] Old Version: [3.8.1]
+[2023-04-11 14:25:11] INFO root fetch - processPackages [python-gitlab]: Downloading https://files.pythonhosted.org/packages/c4/b8/399c07ceb7322356d1e8d37728e3cdc2330bb3b201148daa12a7705e0c37/python-gitlab-3.8.1.tar.gz
+[2023-04-11 14:25:11] INFO root fetch - processPackages [python-gitlab]: Downloading https://files.pythonhosted.org/packages/a8/9b/9406073c64d9a9cb066f75cb12590c436e2788f90b341dbb9346703e4334/python-gitlab-3.9.0.tar.gz
+[2023-04-11 14:25:11] INFO root fetch - processPackages [python-gitlab]: executing diffoscope
+[2023-04-11 14:25:11] INFO root fetch - processPackages [python-gitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-gitlab-3.8.1.tar.gz tmp/python-gitlab-3.9.0.tar.gz --markdown 20230411/p/python-gitlab/3.8.1-3.9.0/diff.md --exclude *.pyd
+[2023-04-11 14:25:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:11] WARNING root fetch - processPackages [samclipdiffusion]: Skipping, unable to determine old version
+[2023-04-11 14:25:11] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:25:11] WARNING root fetch - processPackages [samclipdiffusion]: Skipping, unable to determine old version
+[2023-04-11 14:25:11] INFO root fetch - main [MainThread]: error
+[2023-04-11 14:25:11] INFO root fetch - processPackages [OpenGeode-core]: New version: [9.9.1] Old Version: [9.9.0]
+[2023-04-11 14:25:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:12] INFO root fetch - processPackages [pyproject-parser]: New version: [0.8.0] Old Version: [0.7.0b1]
+[2023-04-11 14:25:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:12] INFO root fetch - processPackages [file-writer-control]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-11 14:25:12] INFO root fetch - processPackages [pyproject-parser]: Downloading https://files.pythonhosted.org/packages/bb/51/6409d79594dd8d4ed64ec9e57283e2aebfdc27182cd798d76e46995f2cfa/pyproject-parser-0.7.0b1.tar.gz
+[2023-04-11 14:25:12] INFO root fetch - processPackages [OpenGeode-core]: executing diffoscope
+[2023-04-11 14:25:12] INFO root fetch - processPackages [OpenGeode-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_core-9.9.0-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_core-9.9.1-cp39-cp39-win_amd64.whl.zip --markdown 20230411/O/OpenGeode-core/9.9.0-9.9.1/diff.md --exclude *.pyd
+[2023-04-11 14:25:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:12] INFO root fetch - processPackages [simplerabbit]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 14:25:12] INFO root fetch - processPackages [file-writer-control]: Downloading https://files.pythonhosted.org/packages/64/2b/615becfa4b8e9a64f2f401174872fcde0ffcf40a271499d6f2bfd7de93cf/file_writer_control-1.2.4.tar.gz
+[2023-04-11 14:25:12] INFO root fetch - processPackages [simplerabbit]: Downloading https://files.pythonhosted.org/packages/83/a2/dab0bb21d032616d6f0f2456ce1ae69e4f177ef93ca0490fefa17671231d/simplerabbit-0.0.4.tar.gz
+[2023-04-11 14:25:12] INFO root fetch - processPackages [pyproject-parser]: Downloading https://files.pythonhosted.org/packages/0f/42/5a3ef456683026069cc24a59be8d9ba15f4d5da83bc182fe6934b52482b0/pyproject-parser-0.8.0.tar.gz
+[2023-04-11 14:25:12] INFO root fetch - processPackages [simplerabbit]: executing diffoscope
+[2023-04-11 14:25:12] INFO root fetch - processPackages [simplerabbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplerabbit-0.0.3.tar.gz tmp/simplerabbit-0.0.4.tar.gz --markdown 20230411/s/simplerabbit/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 14:25:12] INFO root fetch - processPackages [file-writer-control]: Downloading https://files.pythonhosted.org/packages/03/47/06ea8678cb6b2561d15c94cc9a9a5b9afae7bb1a6e1c217f15580faef35b/file_writer_control-1.2.5.tar.gz
+[2023-04-11 14:25:12] INFO root fetch - processPackages [pyproject-parser]: executing diffoscope
+[2023-04-11 14:25:12] INFO root fetch - processPackages [pyproject-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject-parser-0.7.0b1.tar.gz tmp/pyproject-parser-0.8.0.tar.gz --markdown 20230411/p/pyproject-parser/0.7.0b1-0.8.0/diff.md --exclude *.pyd
+[2023-04-11 14:25:12] INFO root fetch - processPackages [file-writer-control]: executing diffoscope
+[2023-04-11 14:25:12] INFO root fetch - processPackages [file-writer-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_writer_control-1.2.4.tar.gz tmp/file_writer_control-1.2.5.tar.gz --markdown 20230411/f/file-writer-control/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-11 14:25:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 14:25:48] INFO root fetch - main [MainThread]: Store serial: [17660532]
