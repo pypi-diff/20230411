@@ -8746,3 +8746,74 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 08:39:05] INFO root fetch - main [MainThread]: success
 [2023-04-11 08:39:48] INFO root fetch - main [MainThread]: success
 [2023-04-11 08:39:48] INFO root fetch - main [MainThread]: Store serial: [17657085]
+[2023-04-11 08:44:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17657085]
+[2023-04-11 08:44:57] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 08:44:57] INFO root fetch - processPackages [echoai-dev]: New version: [0.2.0rc1] Old Version: [0.1.2]
+[2023-04-11 08:44:57] INFO root fetch - processPackages [doubleagent]: New version: [1.62] Old Version: [1.61]
+[2023-04-11 08:44:57] INFO root fetch - processPackages [tap-shortcut]: New version: [0.0.2a1] Old Version: [0.0.2]
+[2023-04-11 08:44:57] INFO root fetch - processPackages [ddtank]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-11 08:44:57] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-11 08:44:57] INFO root fetch - processPackages [doubleagent]: Downloading https://files.pythonhosted.org/packages/fa/ec/b2fb01e8bf185934d05a883744a91975490fa6ce8b142b2f962f9caa7adb/doubleagent-1.61-py3-none-any.whl
+[2023-04-11 08:44:57] INFO root fetch - processPackages [tap-shortcut]: Downloading https://files.pythonhosted.org/packages/2b/60/e8c87e29b1b5218ec4c87d44d60bf3447cbff58f8bdd1bc49a77c5285bf7/tap_shortcut-0.0.2.tar.gz
+[2023-04-11 08:44:57] INFO root fetch - processPackages [echoai-dev]: Downloading https://files.pythonhosted.org/packages/e4/f8/5c5d86756ddf97f481268822d00c233e6d2ae7f16a50abdc5c99656ff767/echoai-dev-0.1.2.tar.gz
+[2023-04-11 08:44:57] INFO root fetch - processPackages [qontract-reconcile]: Downloading https://files.pythonhosted.org/packages/ee/0e/ac8ef8d8ff9114b5366efefac8ac0a94430168107cf051385aa73efdd7ef/qontract_reconcile-0.9.1rc98-py3-none-any.whl
+[2023-04-11 08:44:57] INFO root fetch - processPackages [ddtank]: Downloading https://files.pythonhosted.org/packages/91/ef/f0459ac1e7e02ab67e7036b3503cb62ea6536c796210a55923bf675c867b/ddtank-1.1.2.tar.gz
+[2023-04-11 08:44:57] INFO root fetch - processPackages [tap-shortcut]: executing diffoscope
+[2023-04-11 08:44:57] INFO root fetch - processPackages [tap-shortcut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_shortcut-0.0.2.tar.gz tmp/tap_shortcut-0.0.2a1.tar.gz --markdown 20230411/t/tap-shortcut/0.0.2-0.0.2a1/diff.md --exclude *.pyd
+[2023-04-11 08:44:57] INFO root fetch - processPackages [echoai-dev]: Downloading https://files.pythonhosted.org/packages/a3/21/5868b22f759274c158834e9299426fc550057a1b1449f281815fe315bcff/echoai-dev-0.2.0rc1.tar.gz
+[2023-04-11 08:44:57] INFO root fetch - processPackages [doubleagent]: Downloading https://files.pythonhosted.org/packages/b7/9b/b4c481d313713fd973123c2c74ce59cb5e8e12baf7da3d627538d4009569/doubleagent-1.62.tar.gz
+[2023-04-11 08:44:57] INFO root fetch - processPackages [ddtank]: Downloading https://files.pythonhosted.org/packages/8a/68/b2bf1a4eb26e3c984d4b676452bfe60afe1e83ca9b2da60df8b6afd185f4/ddtank-1.1.3.tar.gz
+[2023-04-11 08:44:57] INFO root fetch - processPackages [doubleagent]: executing diffoscope
+[2023-04-11 08:44:57] INFO root fetch - processPackages [doubleagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doubleagent-1.61-py3-none-any.whl.zip tmp/doubleagent-1.62.tar.gz --markdown 20230411/d/doubleagent/1.61-1.62/diff.md --exclude *.pyd
+[2023-04-11 08:44:57] INFO root fetch - processPackages [echoai-dev]: executing diffoscope
+[2023-04-11 08:44:57] INFO root fetch - processPackages [echoai-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/echoai-dev-0.1.2.tar.gz tmp/echoai-dev-0.2.0rc1.tar.gz --markdown 20230411/e/echoai-dev/0.1.2-0.2.0rc1/diff.md --exclude *.pyd
+[2023-04-11 08:44:57] INFO root fetch - processPackages [qontract-reconcile]: Downloading https://files.pythonhosted.org/packages/dd/8b/9de8b95ca80c898ecaafa95edc3438d306b82ab0d29d3895dd6e8f152129/qontract_reconcile-0.9.1rc99-py3-none-any.whl
+[2023-04-11 08:44:57] INFO root fetch - processPackages [ddtank]: executing diffoscope
+[2023-04-11 08:44:57] INFO root fetch - processPackages [ddtank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddtank-1.1.2.tar.gz tmp/ddtank-1.1.3.tar.gz --markdown 20230411/d/ddtank/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-11 08:44:57] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-11 08:44:57] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230411/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-11 08:44:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:44:58] INFO root fetch - processPackages [idun-guardian-client]: New version: [1.1b3] Old Version: [1.1b2]
+[2023-04-11 08:44:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:44:59] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 08:44:59] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-11 08:44:59] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230411/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 08:44:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:44:59] INFO root fetch - processPackages [odoo11-addon-project-task-material]: New version: [11.0.1.0.0.99.dev9] Old Version: [11.0.1.0.0.99.dev8]
+[2023-04-11 08:44:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:44:59] INFO root fetch - processPackages [ima-predeployed]: New version: [1.5.0b1] Old Version: [1.5.0b0]
+[2023-04-11 08:44:59] INFO root fetch - processPackages [idun-guardian-client]: Downloading https://files.pythonhosted.org/packages/43/68/e6695cf7a4d65f90990aec64dafa2ff8e06de0b3fc6ac744eda2fcaa67db/idun_guardian_client-1.1b3.tar.gz
+[2023-04-11 08:44:59] INFO root fetch - processPackages [odoo11-addon-project-task-material]: Downloading https://files.pythonhosted.org/packages/eb/e2/9ff3b06d87fa741602cf44f260a9be4a498274fbcfee96bd844642240ea9/odoo11_addon_project_task_material-11.0.1.0.0.99.dev8-py2.py3-none-any.whl
+[2023-04-11 08:44:59] INFO root fetch - processPackages [ima-predeployed]: Downloading https://files.pythonhosted.org/packages/a0/23/75d92bcc6076ffa3944a04255534b469a5b33bd53b453fd2bf7891310f03/ima-predeployed-1.5.0b0.tar.gz
+[2023-04-11 08:44:59] INFO root fetch - processPackages [idun-guardian-client]: executing diffoscope
+[2023-04-11 08:44:59] INFO root fetch - processPackages [idun-guardian-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idun_guardian_client-1.1b2.tar.gz tmp/idun_guardian_client-1.1b3.tar.gz --markdown 20230411/i/idun-guardian-client/1.1b2-1.1b3/diff.md --exclude *.pyd
+[2023-04-11 08:44:59] INFO root fetch - processPackages [odoo11-addon-project-task-material]: Downloading https://files.pythonhosted.org/packages/49/d0/3e4de0135f27dc52f2bb9574d2b82ebc65cf53f101ae0516130cc66b913c/odoo11_addon_project_task_material-11.0.1.0.0.99.dev9-py2.py3-none-any.whl
+[2023-04-11 08:44:59] INFO root fetch - processPackages [odoo11-addon-project-task-material]: executing diffoscope
+[2023-04-11 08:44:59] INFO root fetch - processPackages [odoo11-addon-project-task-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_project_task_material-11.0.1.0.0.99.dev8-py2.py3-none-any.whl.zip tmp/odoo11_addon_project_task_material-11.0.1.0.0.99.dev9-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-project-task-material/11.0.1.0.0.99.dev8-11.0.1.0.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-11 08:45:00] INFO root fetch - processPackages [ima-predeployed]: Downloading https://files.pythonhosted.org/packages/b0/55/7210bf2075108f6a1d1f43aba927d45e473171a263b508f467799d9f471d/ima-predeployed-1.5.0b1.tar.gz
+[2023-04-11 08:45:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:45:00] INFO root fetch - processPackages [huawei-solar]: New version: [2.2.7b6] Old Version: [2.2.7b5]
+[2023-04-11 08:45:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:45:00] INFO root fetch - processPackages [odoo12-addon-project-task-material-stock]: New version: [12.0.1.2.1.99.dev1] Old Version: [12.0.1.2.1]
+[2023-04-11 08:45:00] INFO root fetch - processPackages [huawei-solar]: Downloading https://files.pythonhosted.org/packages/cb/6f/bd8c62c8a954ac4c4d1987fd571ae3739d4b63b77a55a570ae46eaf664aa/huawei-solar-2.2.7b5.tar.gz
+[2023-04-11 08:45:00] INFO root fetch - processPackages [ima-predeployed]: executing diffoscope
+[2023-04-11 08:45:00] INFO root fetch - processPackages [ima-predeployed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ima-predeployed-1.5.0b0.tar.gz tmp/ima-predeployed-1.5.0b1.tar.gz --markdown 20230411/i/ima-predeployed/1.5.0b0-1.5.0b1/diff.md --exclude *.pyd
+[2023-04-11 08:45:00] INFO root fetch - processPackages [odoo12-addon-project-task-material-stock]: Downloading https://files.pythonhosted.org/packages/e2/41/f54449e8938dfcad53e0c1c1306cff3fa88f9132f8e9dc2fe3cc89c3c545/odoo12_addon_project_task_material_stock-12.0.1.2.1-py3-none-any.whl
+[2023-04-11 08:45:01] INFO root fetch - processPackages [huawei-solar]: Downloading https://files.pythonhosted.org/packages/28/af/1957a83950be1746a14e5a72e046939c3979d48c844d59192c81f1ea4256/huawei-solar-2.2.7b6.tar.gz
+[2023-04-11 08:45:01] INFO root fetch - processPackages [odoo12-addon-project-task-material-stock]: Downloading https://files.pythonhosted.org/packages/ac/5c/ff1e2b8177357a2eac5ae608a9ea86c69e346d957a85a4fbbf5d626f6286/odoo12_addon_project_task_material_stock-12.0.1.2.1.99.dev1-py3-none-any.whl
+[2023-04-11 08:45:01] INFO root fetch - processPackages [huawei-solar]: executing diffoscope
+[2023-04-11 08:45:01] INFO root fetch - processPackages [huawei-solar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huawei-solar-2.2.7b5.tar.gz tmp/huawei-solar-2.2.7b6.tar.gz --markdown 20230411/h/huawei-solar/2.2.7b5-2.2.7b6/diff.md --exclude *.pyd
+[2023-04-11 08:45:01] INFO root fetch - processPackages [odoo12-addon-project-task-material-stock]: executing diffoscope
+[2023-04-11 08:45:01] INFO root fetch - processPackages [odoo12-addon-project-task-material-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_project_task_material_stock-12.0.1.2.1-py3-none-any.whl.zip tmp/odoo12_addon_project_task_material_stock-12.0.1.2.1.99.dev1-py3-none-any.whl.zip --markdown 20230411/o/odoo12-addon-project-task-material-stock/12.0.1.2.1-12.0.1.2.1.99.dev1/diff.md --exclude *.pyd
+[2023-04-11 08:45:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:45:01] INFO root fetch - processPackages [odoo13-addon-project-task-material]: New version: [13.0.1.0.2.dev3] Old Version: [13.0.1.0.2.dev2]
+[2023-04-11 08:45:01] INFO root fetch - processPackages [odoo13-addon-project-task-material]: Downloading https://files.pythonhosted.org/packages/92/91/22d7d9cbdbc2377324e6171bfeb4e1a50558d8ef1c893f37978deb6ce37d/odoo13_addon_project_task_material-13.0.1.0.2.dev2-py3-none-any.whl
+[2023-04-11 08:45:02] INFO root fetch - processPackages [odoo13-addon-project-task-material]: Downloading https://files.pythonhosted.org/packages/81/2d/e39669e2e5637318f081b1eaf7694dd7b4e21d84d4cda7a8ccb4bc60388a/odoo13_addon_project_task_material-13.0.1.0.2.dev3-py3-none-any.whl
+[2023-04-11 08:45:02] INFO root fetch - processPackages [odoo13-addon-project-task-material]: executing diffoscope
+[2023-04-11 08:45:02] INFO root fetch - processPackages [odoo13-addon-project-task-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_project_task_material-13.0.1.0.2.dev2-py3-none-any.whl.zip tmp/odoo13_addon_project_task_material-13.0.1.0.2.dev3-py3-none-any.whl.zip --markdown 20230411/o/odoo13-addon-project-task-material/13.0.1.0.2.dev2-13.0.1.0.2.dev3/diff.md --exclude *.pyd
+[2023-04-11 08:45:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:45:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:45:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:45:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:45:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:45:03] INFO root fetch - main [MainThread]: Store serial: [17657117]
