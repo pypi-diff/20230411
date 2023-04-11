@@ -19355,3 +19355,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 19:43:21] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:43:44] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:43:44] INFO root fetch - main [MainThread]: Store serial: [17664191]
+[2023-04-11 19:48:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17664191]
+[2023-04-11 19:48:52] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 19:48:52] INFO root fetch - processPackages [sqlalchemy-extras]: New version: [2.0.0] Old Version: [1.3.6]
+[2023-04-11 19:48:52] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 19:48:52] INFO root fetch - processPackages [arize]: New version: [7.0.0rc5] Old Version: [7.0.0rc4]
+[2023-04-11 19:48:52] INFO root fetch - processPackages [doveseed]: New version: [1.1.0a7] Old Version: [1.1.0a6]
+[2023-04-11 19:48:52] INFO root fetch - processPackages [hiddifypanel]: New version: [3.1.6] Old Version: [3.1.5]
+[2023-04-11 19:48:53] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-11 19:48:53] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230411/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 19:48:53] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/d9/65/da80e188d481d280c2c49c9bfbfadfd97c6237608a2f5f9bad0e3bc89057/hiddifypanel-3.1.5-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-11 19:48:53] INFO root fetch - processPackages [sqlalchemy-extras]: Downloading https://files.pythonhosted.org/packages/c6/d5/84fe3fe00b7c6756d864cd173246668e83025a9250c8f4e42ebe7680c3e3/sqlalchemy_extras-1.3.6.tar.gz
+[2023-04-11 19:48:53] INFO root fetch - processPackages [doveseed]: Downloading https://files.pythonhosted.org/packages/53/a0/f9c873853a9f9ca37f3439473e1f87776c4b764a079c5e701f3d2e19ccd7/doveseed-1.1.0a6.tar.gz
+[2023-04-11 19:48:53] INFO root fetch - processPackages [arize]: Downloading https://files.pythonhosted.org/packages/09/e4/0f920d72047ea478be4abc9ed799cf457b7bbc4999dd7f66fdfff99639c6/arize-7.0.0rc5.tar.gz
+[2023-04-11 19:48:53] INFO root fetch - processPackages [doveseed]: Downloading https://files.pythonhosted.org/packages/3e/83/239d44c88325d9c9a9ad750743046f04a6133bac245af4a918a54e71dbc3/doveseed-1.1.0a7.tar.gz
+[2023-04-11 19:48:53] INFO root fetch - processPackages [sqlalchemy-extras]: Downloading https://files.pythonhosted.org/packages/22/13/cd08aa8be1d30f6ab604e13658ef8381a844e320b7024a7728caf2d91797/sqlalchemy_extras-2.0.0.tar.gz
+[2023-04-11 19:48:53] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/cb/64/ae64ad52a2ceef1c07856768f3f7bc9c6740a1f45286a47f17b02e1c9e70/hiddifypanel-3.1.6-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-11 19:48:53] INFO root fetch - processPackages [arize]: executing diffoscope
+[2023-04-11 19:48:53] INFO root fetch - processPackages [arize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arize-7.0.0rc4.tar.gz tmp/arize-7.0.0rc5.tar.gz --markdown 20230411/a/arize/7.0.0rc4-7.0.0rc5/diff.md --exclude *.pyd
+[2023-04-11 19:48:53] INFO root fetch - processPackages [sqlalchemy-extras]: executing diffoscope
+[2023-04-11 19:48:53] INFO root fetch - processPackages [sqlalchemy-extras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy_extras-1.3.6.tar.gz tmp/sqlalchemy_extras-2.0.0.tar.gz --markdown 20230411/s/sqlalchemy-extras/1.3.6-2.0.0/diff.md --exclude *.pyd
+[2023-04-11 19:48:53] INFO root fetch - processPackages [doveseed]: executing diffoscope
+[2023-04-11 19:48:53] INFO root fetch - processPackages [doveseed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doveseed-1.1.0a6.tar.gz tmp/doveseed-1.1.0a7.tar.gz --markdown 20230411/d/doveseed/1.1.0a6-1.1.0a7/diff.md --exclude *.pyd
+[2023-04-11 19:48:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:48:54] INFO root fetch - processPackages [pyinflux3]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-11 19:48:54] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-04-11 19:48:54] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-3.1.5-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-3.1.6-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230411/h/hiddifypanel/3.1.5-3.1.6/diff.md --exclude *.pyd
+[2023-04-11 19:48:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:48:54] WARNING root fetch - processPackages [dfeed]: Skipping, unable to determine old version
+[2023-04-11 19:48:54] INFO root fetch - main [MainThread]: error
+[2023-04-11 19:48:54] WARNING root fetch - processPackages [enexis-friends-quiz]: Skipping, unable to determine old version
+[2023-04-11 19:48:54] INFO root fetch - main [MainThread]: error
+[2023-04-11 19:48:54] WARNING root fetch - processPackages [TuringDSCalculator]: Skipping, unable to determine old version
+[2023-04-11 19:48:54] INFO root fetch - main [MainThread]: error
+[2023-04-11 19:48:54] INFO root fetch - processPackages [pyinflux3]: Downloading https://files.pythonhosted.org/packages/5a/66/a9d17f6351d1a7865f9be3c0e088a6cd62570466aaa997313c46850fbf43/pyinflux3-0.6.3.tar.gz
+[2023-04-11 19:48:54] INFO root fetch - processPackages [asi4py]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 19:48:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:48:54] INFO root fetch - processPackages [pyinflux3]: executing diffoscope
+[2023-04-11 19:48:54] INFO root fetch - processPackages [pyinflux3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinflux3-0.6.2.tar.gz tmp/pyinflux3-0.6.3.tar.gz --markdown 20230411/p/pyinflux3/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-11 19:48:55] INFO root fetch - processPackages [asi4py]: Downloading https://files.pythonhosted.org/packages/16/a6/4a7d84a6b58c22f06b8dddee173874387551d35e01c600e8579aafc84b89/asi4py-0.0.8.tar.gz
+[2023-04-11 19:48:55] INFO root fetch - processPackages [asi4py]: Downloading https://files.pythonhosted.org/packages/d4/e0/ebf9fdc5e64c47e7e0219c456f5e8bf0fd89f03038b5abbd351df7d13471/asi4py-0.0.9.tar.gz
+[2023-04-11 19:48:55] INFO root fetch - processPackages [asi4py]: executing diffoscope
+[2023-04-11 19:48:55] INFO root fetch - processPackages [asi4py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asi4py-0.0.8.tar.gz tmp/asi4py-0.0.9.tar.gz --markdown 20230411/a/asi4py/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 19:48:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:48:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:48:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:49:05] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:49:05] INFO root fetch - main [MainThread]: Store serial: [17664236]
