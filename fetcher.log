@@ -4051,3 +4051,44 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 03:58:47] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:58:50] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:58:50] INFO root fetch - main [MainThread]: Store serial: [17653934]
+[2023-04-11 04:03:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17653934]
+[2023-04-11 04:04:00] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 04:04:00] INFO root fetch - processPackages [goby-sdk]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-11 04:04:00] WARNING root fetch - processPackages [sejin230411]: Skipping, unable to determine old version
+[2023-04-11 04:04:00] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:04:00] WARNING root fetch - processPackages [kyeongmo230411]: Skipping, unable to determine old version
+[2023-04-11 04:04:00] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:04:00] INFO root fetch - processPackages [goby-sdk]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-11 04:04:00] INFO root fetch - processPackages [py-madvr]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-11 04:04:00] INFO root fetch - processPackages [mediaify]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 04:04:00] WARNING root fetch - processPackages [hwKim0524]: Skipping, unable to determine old version
+[2023-04-11 04:04:00] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:04:00] INFO root fetch - processPackages [dsci-310-group-11-pkg]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 04:04:00] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/62/d4/cc8d2816244e18b2553e976eb28e7f5ff112e998470c772b8fa167b20658/py_madvr-1.2.9.tar.gz
+[2023-04-11 04:04:00] INFO root fetch - processPackages [goby-sdk]: Downloading https://files.pythonhosted.org/packages/7f/6a/19daf100c9b2629f70f74de98e39935182b52557eeb6da66feb9f560ad8d/goby_sdk-1.0.8.tar.gz
+[2023-04-11 04:04:00] INFO root fetch - processPackages [goby-sdk]: Downloading https://files.pythonhosted.org/packages/7f/6a/19daf100c9b2629f70f74de98e39935182b52557eeb6da66feb9f560ad8d/goby_sdk-1.0.8.tar.gz
+[2023-04-11 04:04:00] INFO root fetch - processPackages [mediaify]: Downloading https://files.pythonhosted.org/packages/3e/03/8a9e6c4d99c03b35f43c99f08f06a7dd22dfde6dfcb2e2b4431afcad289a/mediaify-0.0.1.tar.gz
+[2023-04-11 04:04:00] INFO root fetch - processPackages [goby-sdk]: executing diffoscope
+[2023-04-11 04:04:00] INFO root fetch - processPackages [goby-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goby_sdk-1.0.7.tar.gz tmp/goby_sdk-1.0.8.tar.gz --markdown 20230411/g/goby-sdk/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-11 04:04:00] INFO root fetch - processPackages [goby-sdk]: executing diffoscope
+[2023-04-11 04:04:00] INFO root fetch - processPackages [goby-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goby_sdk-1.0.7.tar.gz tmp/goby_sdk-1.0.8.tar.gz --markdown 20230411/g/goby-sdk/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-11 04:04:00] INFO root fetch - processPackages [dsci-310-group-11-pkg]: Downloading https://files.pythonhosted.org/packages/c6/10/6a5a61ea6b3fa1dba3064a080d7d559ed922f30286fc74149f0b55ae36ff/dsci_310_group_11_pkg-0.1.0.tar.gz
+[2023-04-11 04:04:00] INFO root fetch - processPackages [mediaify]: Downloading https://files.pythonhosted.org/packages/97/db/c2186ff7fd70fc2a45b567eb4b85606a32b6ec73d4beee5419408341cad8/mediaify-0.0.2.tar.gz
+[2023-04-11 04:04:00] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/51/9f/16c9ef44fb8ce87b1b6b0cbd648fcd1fbb83cb1e7cd675970ac02b762a54/py_madvr-1.3.0.tar.gz
+[2023-04-11 04:04:00] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-04-11 04:04:00] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.2.9.tar.gz tmp/py_madvr-1.3.0.tar.gz --markdown 20230411/p/py-madvr/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-11 04:04:00] INFO root fetch - processPackages [mediaify]: executing diffoscope
+[2023-04-11 04:04:00] INFO root fetch - processPackages [mediaify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mediaify-0.0.1.tar.gz tmp/mediaify-0.0.2.tar.gz --markdown 20230411/m/mediaify/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 04:04:00] INFO root fetch - processPackages [dsci-310-group-11-pkg]: Downloading https://files.pythonhosted.org/packages/12/73/26d03aacb6615dd495e159ce24564ff8b119a41789a048147410b72d2d40/dsci_310_group_11_pkg-0.1.1.tar.gz
+[2023-04-11 04:04:00] INFO root fetch - processPackages [dsci-310-group-11-pkg]: executing diffoscope
+[2023-04-11 04:04:00] INFO root fetch - processPackages [dsci-310-group-11-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsci_310_group_11_pkg-0.1.0.tar.gz tmp/dsci_310_group_11_pkg-0.1.1.tar.gz --markdown 20230411/d/dsci-310-group-11-pkg/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 04:04:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:04:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:04:01] WARNING root fetch - processPackages [ynm3000]: Skipping, unable to determine old version
+[2023-04-11 04:04:01] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:04:01] WARNING root fetch - processPackages [hyj230411]: Skipping, unable to determine old version
+[2023-04-11 04:04:01] INFO root fetch - main [MainThread]: error
+[2023-04-11 04:04:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:04:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:04:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 04:04:02] INFO root fetch - main [MainThread]: Store serial: [17653970]
