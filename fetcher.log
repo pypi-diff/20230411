@@ -3946,3 +3946,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 03:48:15] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:48:15] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:48:15] INFO root fetch - main [MainThread]: Store serial: [17653862]
+[2023-04-11 03:53:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17653862]
+[2023-04-11 03:53:24] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-11 03:53:24] INFO root fetch - processPackages [goby-sdk]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-11 03:53:24] INFO root fetch - processPackages [qp-prob]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-04-11 03:53:24] INFO root fetch - processPackages [atprotocol]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 03:53:24] INFO root fetch - processPackages [pyfmtools]: New version: [0.81] Old Version: [0.80]
+[2023-04-11 03:53:24] INFO root fetch - processPackages [oakvar]: New version: [2.9.3] Old Version: [2.8.9]
+[2023-04-11 03:53:24] INFO root fetch - processPackages [goby-sdk]: Downloading https://files.pythonhosted.org/packages/95/5c/29e1664f038647d92d0b1d22a9ae3582a4d84959102f0dc275c3a3399821/goby_sdk-1.0.5.tar.gz
+[2023-04-11 03:53:24] INFO root fetch - processPackages [qp-prob]: Downloading https://files.pythonhosted.org/packages/05/75/885b9566784fd2a9fb08e87543c16c3004f2cf6c26e811d821558c423492/qp-prob-0.7.1.tar.gz
+[2023-04-11 03:53:24] INFO root fetch - processPackages [atprotocol]: Downloading https://files.pythonhosted.org/packages/07/36/5c0e9f22991fa3609ce866aba50e30f772345dce1190dc2ad059cdfa35b0/atprotocol-0.0.1.tar.gz
+[2023-04-11 03:53:24] INFO root fetch - processPackages [pyfmtools]: Downloading https://files.pythonhosted.org/packages/ed/89/6a44bcd8011ab2d971a8f5abf87df7b6e440079388c84d13a062311ea385/pyfmtools-0.80.tar.gz
+[2023-04-11 03:53:24] INFO root fetch - processPackages [goby-sdk]: executing diffoscope
+[2023-04-11 03:53:24] INFO root fetch - processPackages [goby-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goby_sdk-1.0.4.tar.gz tmp/goby_sdk-1.0.5.tar.gz --markdown 20230411/g/goby-sdk/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-11 03:53:24] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/1a/67/6f8e966091e56b33d137af25a9eb8effce6b633612cb1b8d00356e11911c/oakvar-2.9.3.tar.gz
+[2023-04-11 03:53:24] INFO root fetch - processPackages [atprotocol]: Downloading https://files.pythonhosted.org/packages/78/9c/0f8ee2cd93dd07e9c22c979cd33fdf70ee649b73b79df9b6c27816db4a5e/atprotocol-0.0.2.tar.gz
+[2023-04-11 03:53:24] INFO root fetch - processPackages [pyfmtools]: Downloading https://files.pythonhosted.org/packages/db/d0/9fca1cf7539dec3a409bc216014f47890b1756e98cbfd2dc7e83b6847b4d/pyfmtools-0.81.tar.gz
+[2023-04-11 03:53:24] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-04-11 03:53:24] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.8.9.tar.gz tmp/oakvar-2.9.3.tar.gz --markdown 20230411/o/oakvar/2.8.9-2.9.3/diff.md --exclude *.pyd
+[2023-04-11 03:53:24] INFO root fetch - processPackages [atprotocol]: executing diffoscope
+[2023-04-11 03:53:24] INFO root fetch - processPackages [atprotocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atprotocol-0.0.1.tar.gz tmp/atprotocol-0.0.2.tar.gz --markdown 20230411/a/atprotocol/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 03:53:24] INFO root fetch - processPackages [pyfmtools]: executing diffoscope
+[2023-04-11 03:53:24] INFO root fetch - processPackages [pyfmtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfmtools-0.80.tar.gz tmp/pyfmtools-0.81.tar.gz --markdown 20230411/p/pyfmtools/0.80-0.81/diff.md --exclude *.pyd
+[2023-04-11 03:53:25] INFO root fetch - processPackages [qp-prob]: Downloading https://files.pythonhosted.org/packages/b3/2a/8b521de65fd447cd76e1522e6b0da504ff7f1ddc55cc0bf89b2c5c88dac9/qp-prob-0.8.0.tar.gz
+[2023-04-11 03:53:25] INFO root fetch - processPackages [qp-prob]: executing diffoscope
+[2023-04-11 03:53:25] INFO root fetch - processPackages [qp-prob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qp-prob-0.7.1.tar.gz tmp/qp-prob-0.8.0.tar.gz --markdown 20230411/q/qp-prob/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2023-04-11 03:53:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:53:25] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 03:53:25] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-04-11 03:53:25] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230411/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:53:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:53:26] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-11 03:53:26] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-11 03:53:26] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230411/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-11 03:53:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:53:26] WARNING root fetch - processPackages [colortools-lentolen]: Skipping, unable to determine old version
+[2023-04-11 03:53:26] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:53:26] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-11 03:53:26] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-11 03:53:26] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230411/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-11 03:53:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:53:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:53:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:53:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:53:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:53:33] INFO root fetch - main [MainThread]: Store serial: [17653891]
