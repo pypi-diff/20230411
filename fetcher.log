@@ -12332,3 +12332,79 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 12:07:00] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:07:48] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:07:48] INFO root fetch - main [MainThread]: Store serial: [17659236]
+[2023-04-11 12:12:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659236]
+[2023-04-11 12:12:56] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 12:12:56] INFO root fetch - processPackages [ddd-struct]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-11 12:12:56] INFO root fetch - processPackages [pulumi-sdm]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-04-11 12:12:56] INFO root fetch - processPackages [edwh]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-11 12:12:56] INFO root fetch - processPackages [ds2g]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 12:12:56] INFO root fetch - processPackages [qoqo-aqt]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-11 12:12:56] INFO root fetch - processPackages [ddd-struct]: Downloading https://files.pythonhosted.org/packages/6f/f0/d1b581d0b498c7179f56874be7e4d5ee8ce0f49f02e5b44f1f2420c6c748/ddd-struct-0.2.2.tar.gz
+[2023-04-11 12:12:56] INFO root fetch - processPackages [ds2g]: Downloading https://files.pythonhosted.org/packages/08/ff/37cf3bb736eb0f606c6b42c04ed89fa732138b645699ae509d34f080fd19/ds2g-1.0.0.tar.gz
+[2023-04-11 12:12:56] INFO root fetch - processPackages [qoqo-aqt]: Downloading https://files.pythonhosted.org/packages/92/5b/f72eed3ac8aeb45a9444fb6a6d7d31bdb93ca865e3d8054d47c8f3bba394/qoqo_aqt-0.6.2.tar.gz
+[2023-04-11 12:12:56] INFO root fetch - processPackages [edwh]: Downloading https://files.pythonhosted.org/packages/8b/f9/e9c7a8a6267ad5f47b9dcc77cffeaf008d23e2488b4d846f78e20ff5981b/edwh-0.3.3.tar.gz
+[2023-04-11 12:12:56] INFO root fetch - processPackages [pulumi-sdm]: Downloading https://files.pythonhosted.org/packages/e8/15/53e89ac983770c26dd2b01bcd3f729bc4e5d306d057f524554b9059111f9/pulumi_sdm-0.4.1.tar.gz
+[2023-04-11 12:12:56] INFO root fetch - processPackages [ds2g]: Downloading https://files.pythonhosted.org/packages/e3/ec/1798c6348e897d9973711be7e9da08077b1ca3a29e485a1af36c57df86b6/ds2g-1.0.1.tar.gz
+[2023-04-11 12:12:56] INFO root fetch - processPackages [qoqo-aqt]: Downloading https://files.pythonhosted.org/packages/e4/29/a74a84845dc44c269cc5bd7cb0fa9505cd621cc8faf92c4e830542b1a719/qoqo_aqt-0.6.3.tar.gz
+[2023-04-11 12:12:56] INFO root fetch - processPackages [ddd-struct]: Downloading https://files.pythonhosted.org/packages/f1/41/cf21af2394840a62dd487452932600834ee52158e7acbdf490a442aa0264/ddd-struct-0.2.3.tar.gz
+[2023-04-11 12:12:56] INFO root fetch - processPackages [edwh]: executing diffoscope
+[2023-04-11 12:12:56] INFO root fetch - processPackages [edwh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh-0.3.2.tar.gz tmp/edwh-0.3.3.tar.gz --markdown 20230411/e/edwh/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-11 12:12:56] INFO root fetch - processPackages [pulumi-sdm]: executing diffoscope
+[2023-04-11 12:12:56] INFO root fetch - processPackages [pulumi-sdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sdm-0.4.0.tar.gz tmp/pulumi_sdm-0.4.1.tar.gz --markdown 20230411/p/pulumi-sdm/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-04-11 12:12:57] INFO root fetch - processPackages [ds2g]: executing diffoscope
+[2023-04-11 12:12:57] INFO root fetch - processPackages [ds2g]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds2g-1.0.0.tar.gz tmp/ds2g-1.0.1.tar.gz --markdown 20230411/d/ds2g/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 12:12:57] INFO root fetch - processPackages [ddd-struct]: executing diffoscope
+[2023-04-11 12:12:57] INFO root fetch - processPackages [ddd-struct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddd-struct-0.2.2.tar.gz tmp/ddd-struct-0.2.3.tar.gz --markdown 20230411/d/ddd-struct/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-11 12:12:57] INFO root fetch - processPackages [qoqo-aqt]: executing diffoscope
+[2023-04-11 12:12:57] INFO root fetch - processPackages [qoqo-aqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qoqo_aqt-0.6.2.tar.gz tmp/qoqo_aqt-0.6.3.tar.gz --markdown 20230411/q/qoqo-aqt/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-11 12:12:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:12:58] INFO root fetch - processPackages [slowtestreporter]: New version: [0.0.8.dev1] Old Version: [0.0.7]
+[2023-04-11 12:12:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:12:58] INFO root fetch - processPackages [django-feedback-govuk]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 12:12:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:12:58] INFO root fetch - processPackages [django-feedback-govuk]: Downloading https://files.pythonhosted.org/packages/6b/53/b93e21aabcfaa7bf85b0564d32c4b92a213ed8e8c835fc6105ec61498f89/django_feedback_govuk-0.1.0.tar.gz
+[2023-04-11 12:12:58] INFO root fetch - processPackages [MNN]: New version: [2.4.2] Old Version: [2.4.1]
+[2023-04-11 12:12:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:12:58] INFO root fetch - processPackages [slowtestreporter]: Downloading https://files.pythonhosted.org/packages/45/ce/212187cc9d3e53a1fc75ae77a2f82b433d3b2059f7f29933595323188707/slowtestreporter-0.0.8.dev1.tar.gz
+[2023-04-11 12:12:58] INFO root fetch - processPackages [jsoninja]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 12:12:58] INFO root fetch - processPackages [MNN]: Downloading https://files.pythonhosted.org/packages/24/60/0d1d419cc4d614e43773390290ca4232e772c3cabeafb71c1aa0b29e69ad/MNN-2.4.1-cp39-cp39-win_amd64.whl
+[2023-04-11 12:12:58] INFO root fetch - processPackages [django-feedback-govuk]: Downloading https://files.pythonhosted.org/packages/83/9d/6a971d1445a2adf683b80a828d188318dabd2b858e7f32406d48f08437d4/django_feedback_govuk-0.1.1.tar.gz
+[2023-04-11 12:12:58] INFO root fetch - processPackages [jsoninja]: Downloading https://files.pythonhosted.org/packages/6b/cb/d8bcb1544f1cc8928253fffc964a2ad4d0d066b3e2bff72a2024eeb64d0b/jsoninja-1.0.0.tar.gz
+[2023-04-11 12:12:58] INFO root fetch - processPackages [slowtestreporter]: executing diffoscope
+[2023-04-11 12:12:58] INFO root fetch - processPackages [slowtestreporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slowtestreporter-0.0.7.tar.gz tmp/slowtestreporter-0.0.8.dev1.tar.gz --markdown 20230411/s/slowtestreporter/0.0.7-0.0.8.dev1/diff.md --exclude *.pyd
+[2023-04-11 12:12:58] WARNING root fetch - processPackages [MNN]: Skipping package: exceeds size limit 39762582>=10485760
+[2023-04-11 12:12:58] INFO root fetch - main [MainThread]: error
+[2023-04-11 12:12:58] INFO root fetch - processPackages [django-feedback-govuk]: executing diffoscope
+[2023-04-11 12:12:58] INFO root fetch - processPackages [django-feedback-govuk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_feedback_govuk-0.1.0.tar.gz tmp/django_feedback_govuk-0.1.1.tar.gz --markdown 20230411/d/django-feedback-govuk/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 12:12:58] INFO root fetch - processPackages [wunderkafka]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-11 12:12:58] INFO root fetch - processPackages [jsoninja]: Downloading https://files.pythonhosted.org/packages/99/53/855d36812b1c7f3c923dc1c1e8acf9478538fb21d0cc7c7555bc5afc3e81/jsoninja-1.0.1.tar.gz
+[2023-04-11 12:12:59] INFO root fetch - processPackages [wunderkafka]: Downloading https://files.pythonhosted.org/packages/64/3d/24c4fbef1f489d3bc85481d47115b551288301eb778561e12ce054618d88/wunderkafka-0.9.8.tar.gz
+[2023-04-11 12:12:59] INFO root fetch - processPackages [jsoninja]: executing diffoscope
+[2023-04-11 12:12:59] INFO root fetch - processPackages [jsoninja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsoninja-1.0.0.tar.gz tmp/jsoninja-1.0.1.tar.gz --markdown 20230411/j/jsoninja/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 12:12:59] INFO root fetch - processPackages [wunderkafka]: Downloading https://files.pythonhosted.org/packages/73/6b/c7da4cd4a1fe68f675a140e07dd20bd7a46b9a18eb10eca99b2d3c656557/wunderkafka-0.9.9.tar.gz
+[2023-04-11 12:12:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:12:59] INFO root fetch - processPackages [wunderkafka]: executing diffoscope
+[2023-04-11 12:12:59] INFO root fetch - processPackages [wunderkafka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wunderkafka-0.9.8.tar.gz tmp/wunderkafka-0.9.9.tar.gz --markdown 20230411/w/wunderkafka/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-11 12:12:59] INFO root fetch - processPackages [helisol]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-11 12:12:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:13:00] INFO root fetch - processPackages [lumen]: New version: [0.6.0a9] Old Version: [0.6.0a8]
+[2023-04-11 12:13:00] INFO root fetch - processPackages [helisol]: Downloading https://files.pythonhosted.org/packages/04/11/32df5aa5c7cff90eb1b33d09da3c6630200ecf98c8669b71c6db555a20d0/helisol-0.5.0.tar.gz
+[2023-04-11 12:13:00] INFO root fetch - processPackages [lumen]: Downloading https://files.pythonhosted.org/packages/cc/b7/3a39e8cd9fcb8a320952ad56a2707b2b460c0ca7220bcaf1a4b9c56f409e/lumen-0.6.0a8.tar.gz
+[2023-04-11 12:13:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:13:00] INFO root fetch - processPackages [django-leaflet-admin-list]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-11 12:13:00] INFO root fetch - processPackages [helisol]: Downloading https://files.pythonhosted.org/packages/75/45/4a1e10f916a50b7274acac37fb886f67bcdc9b09fd61c3e1471e25ae2c25/helisol-0.5.1.tar.gz
+[2023-04-11 12:13:00] INFO root fetch - processPackages [lumen]: Downloading https://files.pythonhosted.org/packages/28/0f/6437832097c50fad89bbf6b0607a2891fd4345992d37099a809479c16c9a/lumen-0.6.0a9.tar.gz
+[2023-04-11 12:13:00] INFO root fetch - processPackages [django-leaflet-admin-list]: Downloading https://files.pythonhosted.org/packages/b9/94/0866d9a59813a97268e6083fad256a7f9708a51d17d00cb0aa85ed9a6acc/django-leaflet-admin-list-0.0.6.tar.gz
+[2023-04-11 12:13:00] INFO root fetch - processPackages [helisol]: executing diffoscope
+[2023-04-11 12:13:00] INFO root fetch - processPackages [helisol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helisol-0.5.0.tar.gz tmp/helisol-0.5.1.tar.gz --markdown 20230411/h/helisol/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-11 12:13:00] INFO root fetch - processPackages [lumen]: executing diffoscope
+[2023-04-11 12:13:00] INFO root fetch - processPackages [lumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumen-0.6.0a8.tar.gz tmp/lumen-0.6.0a9.tar.gz --markdown 20230411/l/lumen/0.6.0a8-0.6.0a9/diff.md --exclude *.pyd
+[2023-04-11 12:13:01] INFO root fetch - processPackages [django-leaflet-admin-list]: Downloading https://files.pythonhosted.org/packages/3f/33/0f6b527afeebc890fc804a68df886b0ab355339ac808e5f0114923d2b823/django-leaflet-admin-list-0.0.7.tar.gz
+[2023-04-11 12:13:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:13:01] INFO root fetch - processPackages [django-leaflet-admin-list]: executing diffoscope
+[2023-04-11 12:13:01] INFO root fetch - processPackages [django-leaflet-admin-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-leaflet-admin-list-0.0.6.tar.gz tmp/django-leaflet-admin-list-0.0.7.tar.gz --markdown 20230411/d/django-leaflet-admin-list/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-11 12:13:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:13:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:13:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:13:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:13:02] INFO root fetch - main [MainThread]: Store serial: [17659309]
