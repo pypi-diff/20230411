@@ -13277,3 +13277,55 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 13:29:26] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:29:32] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:29:32] INFO root fetch - main [MainThread]: Store serial: [17659887]
+[2023-04-11 13:34:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659887]
+[2023-04-11 13:34:40] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 13:34:40] INFO root fetch - processPackages [ocench]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 13:34:40] INFO root fetch - processPackages [danielutils]: New version: [0.8.0] Old Version: [0.7.9]
+[2023-04-11 13:34:40] INFO root fetch - processPackages [probabilistic-reconciliation]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 13:34:40] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 13:34:40] INFO root fetch - processPackages [returnn]: New version: [1.20230411.4301] Old Version: [1.20230411.132032]
+[2023-04-11 13:34:40] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-04-11 13:34:40] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.4.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230411/t/torchx-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-11 13:34:40] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/ce/36/ac315240eea91d693d6f5aa5630d30d9f54d73dfb5073d8b09ccd2ff5dd2/returnn-1.20230411.132032.tar.gz
+[2023-04-11 13:34:40] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/09/52/f2553adca757b7c70853a104647c6ba5781fb5e33ed2eeccd449f45cb163/danielutils-0.7.9.tar.gz
+[2023-04-11 13:34:40] INFO root fetch - processPackages [probabilistic-reconciliation]: Downloading https://files.pythonhosted.org/packages/82/9c/b9c4cbc09996be1e73d8dea4834c8d9c9143beba450b970e2c06c29f4e90/probabilistic_reconciliation-0.0.3.tar.gz
+[2023-04-11 13:34:40] INFO root fetch - processPackages [ocench]: Downloading https://files.pythonhosted.org/packages/cc/bf/facc612a17ca1df7614218fa8a88bf4f924dbee19df62662183fc3201ef6/ocench-0.0.1.tar.gz
+[2023-04-11 13:34:40] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/c5/38/70961b579d862f5c0919a41cc2dc2b2fea42608a97bd35e03eb9be0e37ef/danielutils-0.8.0.tar.gz
+[2023-04-11 13:34:40] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-11 13:34:40] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230411.132032.tar.gz tmp/returnn-1.20230411.4301.tar.gz --markdown 20230411/r/returnn/1.20230411.132032-1.20230411.4301/diff.md --exclude *.pyd
+[2023-04-11 13:34:40] INFO root fetch - processPackages [probabilistic-reconciliation]: Downloading https://files.pythonhosted.org/packages/91/51/1a7737f509e037598fb1d0c0292aca5b33a9f1da4e44d421f2ae4a6287ab/probabilistic_reconciliation-0.0.4.tar.gz
+[2023-04-11 13:34:40] INFO root fetch - processPackages [ocench]: Downloading https://files.pythonhosted.org/packages/63/7d/4dbcd1f74cd17e6e35608dcc681a0c070b0f27b1fcc38eb2f25645a458b7/ocench-0.0.2.tar.gz
+[2023-04-11 13:34:40] INFO root fetch - processPackages [danielutils]: executing diffoscope
+[2023-04-11 13:34:40] INFO root fetch - processPackages [danielutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danielutils-0.7.9.tar.gz tmp/danielutils-0.8.0.tar.gz --markdown 20230411/d/danielutils/0.7.9-0.8.0/diff.md --exclude *.pyd
+[2023-04-11 13:34:41] INFO root fetch - processPackages [probabilistic-reconciliation]: executing diffoscope
+[2023-04-11 13:34:41] INFO root fetch - processPackages [probabilistic-reconciliation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/probabilistic_reconciliation-0.0.3.tar.gz tmp/probabilistic_reconciliation-0.0.4.tar.gz --markdown 20230411/p/probabilistic-reconciliation/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 13:34:41] INFO root fetch - processPackages [ocench]: executing diffoscope
+[2023-04-11 13:34:41] INFO root fetch - processPackages [ocench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocench-0.0.1.tar.gz tmp/ocench-0.0.2.tar.gz --markdown 20230411/o/ocench/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 13:34:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:34:42] INFO root fetch - processPackages [pinecone-text]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-11 13:34:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:34:42] INFO root fetch - processPackages [samna]: New version: [0.9.39.0] Old Version: [0.9.38.0]
+[2023-04-11 13:34:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:34:42] INFO root fetch - processPackages [gplately]: New version: [0.4] Old Version: [0.3.3]
+[2023-04-11 13:34:42] INFO root fetch - processPackages [pinecone-text]: Downloading https://files.pythonhosted.org/packages/83/00/50b6039b1dddaee2333423b6b2a3936da25dbfbe124884512246dd73a9ba/pinecone_text-0.4.1.tar.gz
+[2023-04-11 13:34:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:34:42] INFO root fetch - processPackages [gplately]: Downloading https://files.pythonhosted.org/packages/08/f7/4fda24c70b459553045fff29a0b2fc0a13241e409e1f46a8f883a8db3e2b/gplately-0.3.3.tar.gz
+[2023-04-11 13:34:42] WARNING root fetch - processPackages [EasyPythonLanguage]: Skipping, unable to determine old version
+[2023-04-11 13:34:42] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:34:42] INFO root fetch - processPackages [pinecone-text]: Downloading https://files.pythonhosted.org/packages/e3/4e/c6299945037b84f32356dcb02b0abaa844a786b0d1963a73efba84164543/pinecone_text-0.4.2.tar.gz
+[2023-04-11 13:34:42] INFO root fetch - processPackages [adviz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 13:34:42] INFO root fetch - processPackages [samna]: executing diffoscope
+[2023-04-11 13:34:42] INFO root fetch - processPackages [samna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/samna-0.9.38.0-py3-none-any.whl.zip tmp/samna-0.9.39.0-py3-none-any.whl.zip --markdown 20230411/s/samna/0.9.38.0-0.9.39.0/diff.md --exclude *.pyd
+[2023-04-11 13:34:42] INFO root fetch - processPackages [pinecone-text]: executing diffoscope
+[2023-04-11 13:34:42] INFO root fetch - processPackages [pinecone-text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinecone_text-0.4.1.tar.gz tmp/pinecone_text-0.4.2.tar.gz --markdown 20230411/p/pinecone-text/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-11 13:34:42] INFO root fetch - processPackages [gplately]: Downloading https://files.pythonhosted.org/packages/7f/14/bd6e630c27dacdc1911d17e80cb9ba3123d7bb5a727ff237f86d5554d1a4/gplately-0.4.tar.gz
+[2023-04-11 13:34:43] INFO root fetch - processPackages [gplately]: executing diffoscope
+[2023-04-11 13:34:43] INFO root fetch - processPackages [gplately]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gplately-0.3.3.tar.gz tmp/gplately-0.4.tar.gz --markdown 20230411/g/gplately/0.3.3-0.4/diff.md --exclude *.pyd
+[2023-04-11 13:34:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:34:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:34:44] INFO root fetch - processPackages [adviz]: executing diffoscope
+[2023-04-11 13:34:44] INFO root fetch - processPackages [adviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adviz-0.0.8.tar.gz tmp/adviz-0.0.9.tar.gz --markdown 20230411/a/adviz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 13:34:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:34:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:34:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:34:49] INFO root fetch - main [MainThread]: Store serial: [17659915]
