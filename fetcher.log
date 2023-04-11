@@ -18349,3 +18349,85 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 18:43:53] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:43:54] INFO root fetch - main [MainThread]: success
 [2023-04-11 18:43:54] INFO root fetch - main [MainThread]: Store serial: [17663586]
+[2023-04-11 18:49:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663586]
+[2023-04-11 18:49:07] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-11 18:49:07] INFO root fetch - processPackages [nowcasting-datamodel]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-04-11 18:49:07] INFO root fetch - processPackages [tupa123]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-11 18:49:07] WARNING root fetch - processPackages [SweIoTCommon]: Skipping, unable to determine old version
+[2023-04-11 18:49:07] INFO root fetch - main [MainThread]: error
+[2023-04-11 18:49:07] INFO root fetch - processPackages [DyaGram]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 18:49:07] INFO root fetch - processPackages [clipcrop]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-11 18:49:07] INFO root fetch - processPackages [morphcp]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-04-11 18:49:07] INFO root fetch - processPackages [DyaGram]: executing diffoscope
+[2023-04-11 18:49:07] INFO root fetch - processPackages [DyaGram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DyaGram-0.0.98.tar.gz tmp/DyaGram-0.0.99.tar.gz --markdown 20230411/D/DyaGram/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 18:49:07] INFO root fetch - processPackages [nowcasting-datamodel]: Downloading https://files.pythonhosted.org/packages/3f/4a/1780b74fd99d0b5395996048a8123a9284dfefa967160fd590ffb39726e2/nowcasting_datamodel-1.2.6.tar.gz
+[2023-04-11 18:49:07] INFO root fetch - processPackages [tupa123]: Downloading https://files.pythonhosted.org/packages/42/3b/35fbcbf49232465460987cf783ca09fbb37b62b15d231f2097b1d23ec994/tupa123-1.2.8.tar.gz
+[2023-04-11 18:49:07] INFO root fetch - processPackages [clipcrop]: Downloading https://files.pythonhosted.org/packages/1a/1a/3101e14d75ec039f9752a246a180528a623d7a76d33e19f3977f4b5b0cc5/clipcrop-1.0.5.tar.gz
+[2023-04-11 18:49:07] INFO root fetch - processPackages [morphcp]: executing diffoscope
+[2023-04-11 18:49:07] INFO root fetch - processPackages [morphcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphcp-0.0.6.tar.gz tmp/morphcp-0.0.9.tar.gz --markdown 20230411/m/morphcp/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 18:49:07] INFO root fetch - processPackages [nowcasting-datamodel]: executing diffoscope
+[2023-04-11 18:49:07] INFO root fetch - processPackages [nowcasting-datamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nowcasting_datamodel-1.2.5.tar.gz tmp/nowcasting_datamodel-1.2.6.tar.gz --markdown 20230411/n/nowcasting-datamodel/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-04-11 18:49:07] INFO root fetch - processPackages [clipcrop]: Downloading https://files.pythonhosted.org/packages/7e/ca/0b46268ceff414bce01540a0908c8a6f0275ca34da12a32de5b46fa4cd65/clipcrop-1.0.6.tar.gz
+[2023-04-11 18:49:07] INFO root fetch - processPackages [tupa123]: Downloading https://files.pythonhosted.org/packages/e5/78/1f9e56c96b3146abcebc7b9ba6793461a167e9ac73ba0fee9ef78b7cd353/tupa123-1.2.9.tar.gz
+[2023-04-11 18:49:07] INFO root fetch - processPackages [clipcrop]: executing diffoscope
+[2023-04-11 18:49:07] INFO root fetch - processPackages [clipcrop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipcrop-1.0.5.tar.gz tmp/clipcrop-1.0.6.tar.gz --markdown 20230411/c/clipcrop/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-11 18:49:08] INFO root fetch - processPackages [tupa123]: executing diffoscope
+[2023-04-11 18:49:08] INFO root fetch - processPackages [tupa123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tupa123-1.2.8.tar.gz tmp/tupa123-1.2.9.tar.gz --markdown 20230411/t/tupa123/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-11 18:49:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:08] INFO root fetch - processPackages [bigdict]: New version: [22.5.29] Old Version: [21.4.11]
+[2023-04-11 18:49:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:08] INFO root fetch - processPackages [querysource]: New version: [3.6.9] Old Version: [3.6.8]
+[2023-04-11 18:49:08] INFO root fetch - processPackages [querysource]: executing diffoscope
+[2023-04-11 18:49:08] INFO root fetch - processPackages [querysource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querysource-3.6.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/querysource-3.6.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230411/q/querysource/3.6.8-3.6.9/diff.md --exclude *.pyd
+[2023-04-11 18:49:08] INFO root fetch - processPackages [bigdict]: executing diffoscope
+[2023-04-11 18:49:08] INFO root fetch - processPackages [bigdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdict-21.4.11.tar.gz tmp/bigdict-22.5.29.tar.gz --markdown 20230411/b/bigdict/21.4.11-22.5.29/diff.md --exclude *.pyd
+[2023-04-11 18:49:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:09] INFO root fetch - processPackages [stockprice-cli]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-11 18:49:09] INFO root fetch - processPackages [stockprice-cli]: Downloading https://files.pythonhosted.org/packages/48/68/fd120c038684b94fe8dd98d5290afd90ae301155186cb4f4e9ff77ecf240/stockprice_cli-2.0.5-py3-none-any.whl
+[2023-04-11 18:49:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:09] INFO root fetch - processPackages [cloudcix]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-11 18:49:09] INFO root fetch - processPackages [stockprice-cli]: executing diffoscope
+[2023-04-11 18:49:09] INFO root fetch - processPackages [stockprice-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockprice_cli-2.0.4-py3-none-any.whl.zip tmp/stockprice_cli-2.0.5-py3-none-any.whl.zip --markdown 20230411/s/stockprice-cli/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-11 18:49:09] INFO root fetch - processPackages [cloudcix]: Downloading https://files.pythonhosted.org/packages/9d/1b/5f81490f3c41fa442338229d37dc500974f82349d475a97f8732f5f5ee61/cloudcix-0.9.4.tar.gz
+[2023-04-11 18:49:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:09] INFO root fetch - processPackages [glean-sdk]: New version: [52.5.0] Old Version: [52.4.3]
+[2023-04-11 18:49:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:10] INFO root fetch - processPackages [granola-py]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-11 18:49:10] INFO root fetch - processPackages [cloudcix]: Downloading https://files.pythonhosted.org/packages/b8/1c/a17e6f9695686dbb90b7d69b2bd7e7040c03a64f5c1b64bfc1b1e14b5edd/cloudcix-0.9.5.tar.gz
+[2023-04-11 18:49:10] INFO root fetch - processPackages [glean-sdk]: Downloading https://files.pythonhosted.org/packages/65/1d/22fde41dacf6b9f20da670303ed5207286107b2ce6e255fb1bcb9e12c9cd/glean-sdk-52.4.3.tar.gz
+[2023-04-11 18:49:10] INFO root fetch - processPackages [cloudcix]: executing diffoscope
+[2023-04-11 18:49:10] INFO root fetch - processPackages [cloudcix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudcix-0.9.4.tar.gz tmp/cloudcix-0.9.5.tar.gz --markdown 20230411/c/cloudcix/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-11 18:49:10] INFO root fetch - processPackages [granola-py]: Downloading https://files.pythonhosted.org/packages/4f/64/796055c1ad8041e326b20d0bbde82370029032172786d502135db3d9f051/granola_py-1.0.6.tar.gz
+[2023-04-11 18:49:10] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:10] INFO root fetch - processPackages [glean-sdk]: Downloading https://files.pythonhosted.org/packages/21/d3/ee781e2935411781a5511fb93f3f19c4e5dadd14785a4fc9b221b27fa21c/glean-sdk-52.5.0.tar.gz
+[2023-04-11 18:49:10] INFO root fetch - processPackages [pulp-container]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-11 18:49:10] INFO root fetch - processPackages [granola-py]: executing diffoscope
+[2023-04-11 18:49:10] INFO root fetch - processPackages [granola-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granola_py-1.0.5.tar.gz tmp/granola_py-1.0.6.tar.gz --markdown 20230411/g/granola-py/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-11 18:49:10] INFO root fetch - processPackages [pulp-container]: Downloading https://files.pythonhosted.org/packages/57/4c/de95a198cf3ae576fad5962898a4437820d9482a608240abc66d5bebe2c1/pulp-container-2.9.8.tar.gz
+[2023-04-11 18:49:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:11] INFO root fetch - processPackages [glean-sdk]: executing diffoscope
+[2023-04-11 18:49:11] INFO root fetch - processPackages [glean-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glean-sdk-52.4.3.tar.gz tmp/glean-sdk-52.5.0.tar.gz --markdown 20230411/g/glean-sdk/52.4.3-52.5.0/diff.md --exclude *.pyd
+[2023-04-11 18:49:11] INFO root fetch - processPackages [pulp-container]: Downloading https://files.pythonhosted.org/packages/d4/6d/3386b11359dfd542f3fd8f302eb8bb09777dfbd1caff886578e05374938f/pulp-container-2.9.9.tar.gz
+[2023-04-11 18:49:11] INFO root fetch - processPackages [pulp-container-client]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-11 18:49:11] INFO root fetch - processPackages [pulp-container]: executing diffoscope
+[2023-04-11 18:49:11] INFO root fetch - processPackages [pulp-container]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp-container-2.9.8.tar.gz tmp/pulp-container-2.9.9.tar.gz --markdown 20230411/p/pulp-container/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-11 18:49:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:11] INFO root fetch - processPackages [morphcp]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-04-11 18:49:11] INFO root fetch - processPackages [pulp-container-client]: Downloading https://files.pythonhosted.org/packages/e9/01/a3daad08d76d51b9e0347223055817e98861ea9bf1c8cf02987348bb3357/pulp_container-client-2.9.8.tar.gz
+[2023-04-11 18:49:11] INFO root fetch - processPackages [morphcp]: executing diffoscope
+[2023-04-11 18:49:11] INFO root fetch - processPackages [morphcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphcp-0.0.6.tar.gz tmp/morphcp-0.0.9.tar.gz --markdown 20230411/m/morphcp/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 18:49:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:11] INFO root fetch - processPackages [pulp-container-client]: Downloading https://files.pythonhosted.org/packages/fb/1f/d65523f406ba6275db9e0fdb44160109d2c5b1ac2db48bec3fd97cb5ccc3/pulp_container-client-2.9.9.tar.gz
+[2023-04-11 18:49:12] INFO root fetch - processPackages [rtea]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-11 18:49:12] INFO root fetch - processPackages [rtea]: Downloading https://files.pythonhosted.org/packages/b6/fb/9678c73085ac565f4b70a4609df50c42e9cfd99b79b68e938aa310e53918/rtea-0.3.4.tar.gz
+[2023-04-11 18:49:12] INFO root fetch - processPackages [pulp-container-client]: executing diffoscope
+[2023-04-11 18:49:12] INFO root fetch - processPackages [pulp-container-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulp_container-client-2.9.8.tar.gz tmp/pulp_container-client-2.9.9.tar.gz --markdown 20230411/p/pulp-container-client/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-11 18:49:12] INFO root fetch - processPackages [rtea]: Downloading https://files.pythonhosted.org/packages/bc/65/45d7a6fbc1778a12eb81eeb729ec7f5680688b0c73a8a704d681a1888e66/rtea-0.3.5-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 18:49:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:12] INFO root fetch - processPackages [rtea]: executing diffoscope
+[2023-04-11 18:49:12] INFO root fetch - processPackages [rtea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtea-0.3.4.tar.gz tmp/rtea-0.3.5-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230411/r/rtea/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-11 18:49:12] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:14] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 18:49:21] INFO root fetch - main [MainThread]: Store serial: [17663633]
