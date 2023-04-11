@@ -16838,3 +16838,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 17:04:40] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:05:48] INFO root fetch - main [MainThread]: success
 [2023-04-11 17:05:48] INFO root fetch - main [MainThread]: Store serial: [17662556]
+[2023-04-11 17:11:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17662556]
+[2023-04-11 17:11:05] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 17:11:05] INFO root fetch - processPackages [m4-utils]: New version: [0.1.0a1] Old Version: [0.0.9]
+[2023-04-11 17:11:05] INFO root fetch - processPackages [scalable-pypeline]: New version: [1.1.4] Old Version: [1.1.0]
+[2023-04-11 17:11:05] INFO root fetch - processPackages [seqnado]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-11 17:11:05] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-04-11 17:11:05] INFO root fetch - processPackages [pepperize.cdk-security-group]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 17:11:05] INFO root fetch - processPackages [scalable-pypeline]: Downloading https://files.pythonhosted.org/packages/d4/68/849c03a6da26620fe3328db933390fa9a1f0c361efc53b923d0567d5e21f/scalable-pypeline-1.1.0.tar.gz
+[2023-04-11 17:11:05] INFO root fetch - processPackages [m4-utils]: Downloading https://files.pythonhosted.org/packages/88/60/90869c5300e6256472058b3f9d285b481dfa9049c894f965b74e07472657/m4-utils-0.0.9.tar.gz
+[2023-04-11 17:11:05] INFO root fetch - processPackages [seqnado]: Downloading https://files.pythonhosted.org/packages/f0/05/9ff7e41165c7a12ead00edb04b42bc1eae7b38d11351d99d633c5f777bcb/seqnado-0.3.1.tar.gz
+[2023-04-11 17:11:05] INFO root fetch - processPackages [pepperize.cdk-security-group]: executing diffoscope
+[2023-04-11 17:11:05] INFO root fetch - processPackages [pepperize.cdk-security-group]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-security-group-0.0.98.tar.gz tmp/pepperize.cdk-security-group-0.0.99.tar.gz --markdown 20230411/p/pepperize.cdk-security-group/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 17:11:05] INFO root fetch - processPackages [scalable-pypeline]: Downloading https://files.pythonhosted.org/packages/38/90/7edacf2a4a0ba363aa54829593591e427102a47b92300d2683bd415881c2/scalable-pypeline-1.1.4.tar.gz
+[2023-04-11 17:11:05] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-04-11 17:11:05] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230411/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-04-11 17:11:05] INFO root fetch - processPackages [seqnado]: Downloading https://files.pythonhosted.org/packages/41/be/4d75d0fba6f1632ed405b4965eb2dd2fbe522bbf89b08e980794aa4387ca/seqnado-0.3.2.tar.gz
+[2023-04-11 17:11:05] INFO root fetch - processPackages [scalable-pypeline]: executing diffoscope
+[2023-04-11 17:11:05] INFO root fetch - processPackages [scalable-pypeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalable-pypeline-1.1.0.tar.gz tmp/scalable-pypeline-1.1.4.tar.gz --markdown 20230411/s/scalable-pypeline/1.1.0-1.1.4/diff.md --exclude *.pyd
+[2023-04-11 17:11:05] INFO root fetch - processPackages [m4-utils]: Downloading https://files.pythonhosted.org/packages/45/bb/4185dc9e2d49f550624b4c97aead88edac34816dae0863681f63e99dfc7f/m4-utils-0.1.0a1.tar.gz
+[2023-04-11 17:11:05] INFO root fetch - processPackages [seqnado]: executing diffoscope
+[2023-04-11 17:11:05] INFO root fetch - processPackages [seqnado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqnado-0.3.1.tar.gz tmp/seqnado-0.3.2.tar.gz --markdown 20230411/s/seqnado/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 17:11:05] INFO root fetch - processPackages [m4-utils]: executing diffoscope
+[2023-04-11 17:11:05] INFO root fetch - processPackages [m4-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m4-utils-0.0.9.tar.gz tmp/m4-utils-0.1.0a1.tar.gz --markdown 20230411/m/m4-utils/0.0.9-0.1.0a1/diff.md --exclude *.pyd
+[2023-04-11 17:11:06] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:06] INFO root fetch - processPackages [cdk-eks-karpenter]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-11 17:11:06] INFO root fetch - processPackages [cdk-eks-karpenter]: Downloading https://files.pythonhosted.org/packages/25/22/3cd0001147dde7e28df6625053eead4e2cd59fcc37d39100dd51a87604a6/cdk-eks-karpenter-0.0.7.tar.gz
+[2023-04-11 17:11:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:07] INFO root fetch - processPackages [legacyplatequery]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 17:11:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:07] INFO root fetch - processPackages [ansible-anonymizer]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-11 17:11:07] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:07] INFO root fetch - processPackages [nautikos]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-11 17:11:07] INFO root fetch - processPackages [legacyplatequery]: Downloading https://files.pythonhosted.org/packages/41/bb/6429e87aae2be2b1776392a290f9ba8ce5b4dc149bfb159479779ee0beb0/legacyplatequery-0.1.2.tar.gz
+[2023-04-11 17:11:07] INFO root fetch - processPackages [cdk-eks-karpenter]: Downloading https://files.pythonhosted.org/packages/f0/f5/e0e7d6df216e8c13dd208a660f9c67d945ce533f249211e96610b87c1c67/cdk-eks-karpenter-0.0.8.tar.gz
+[2023-04-11 17:11:07] INFO root fetch - processPackages [nautikos]: Downloading https://files.pythonhosted.org/packages/2c/67/791bd46b76272d51473d22552d0ddcfbefcd0421ab1c7cb95e65ecac0c0c/nautikos-0.3.1.tar.gz
+[2023-04-11 17:11:07] INFO root fetch - processPackages [ansible-anonymizer]: Downloading https://files.pythonhosted.org/packages/53/2f/e40b4684dadd70a0526551b086a52fc0e63e66f966e339f54eb1bbf27653/ansible-anonymizer-1.1.3.tar.gz
+[2023-04-11 17:11:07] INFO root fetch - processPackages [legacyplatequery]: executing diffoscope
+[2023-04-11 17:11:07] INFO root fetch - processPackages [legacyplatequery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legacyplatequery-0.1.1.tar.gz tmp/legacyplatequery-0.1.2.tar.gz --markdown 20230411/l/legacyplatequery/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 17:11:07] INFO root fetch - processPackages [nautikos]: executing diffoscope
+[2023-04-11 17:11:07] INFO root fetch - processPackages [nautikos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautikos-0.3.0.tar.gz tmp/nautikos-0.3.1.tar.gz --markdown 20230411/n/nautikos/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-11 17:11:07] INFO root fetch - processPackages [ansible-anonymizer]: Downloading https://files.pythonhosted.org/packages/bd/9e/c61585c1679c8d24205c9b75f7e6e49982e7a5c9ea08d7e239e00ed151a7/ansible-anonymizer-1.1.4.tar.gz
+[2023-04-11 17:11:07] INFO root fetch - processPackages [cdk-eks-karpenter]: executing diffoscope
+[2023-04-11 17:11:07] INFO root fetch - processPackages [cdk-eks-karpenter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-eks-karpenter-0.0.7.tar.gz tmp/cdk-eks-karpenter-0.0.8.tar.gz --markdown 20230411/c/cdk-eks-karpenter/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-11 17:11:07] INFO root fetch - processPackages [ansible-anonymizer]: executing diffoscope
+[2023-04-11 17:11:07] INFO root fetch - processPackages [ansible-anonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-anonymizer-1.1.3.tar.gz tmp/ansible-anonymizer-1.1.4.tar.gz --markdown 20230411/a/ansible-anonymizer/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-11 17:11:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:08] INFO root fetch - processPackages [FlexGet]: New version: [3.6.0] Old Version: [3.5.9]
+[2023-04-11 17:11:08] INFO root fetch - processPackages [FlexGet]: executing diffoscope
+[2023-04-11 17:11:08] INFO root fetch - processPackages [FlexGet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlexGet-3.5.9.tar.gz tmp/FlexGet-3.6.0.tar.gz --markdown 20230411/F/FlexGet/3.5.9-3.6.0/diff.md --exclude *.pyd
+[2023-04-11 17:11:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:08] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:09] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 17:11:21] INFO root fetch - main [MainThread]: Store serial: [17662596]
