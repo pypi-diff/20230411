@@ -13175,3 +13175,105 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 13:24:12] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:24:12] INFO root fetch - main [MainThread]: success
 [2023-04-11 13:24:12] INFO root fetch - main [MainThread]: Store serial: [17659819]
+[2023-04-11 13:29:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659819]
+[2023-04-11 13:29:20] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-11 13:29:20] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.23.0.dev3] Old Version: [0.23.0.dev2]
+[2023-04-11 13:29:20] INFO root fetch - processPackages [admin-form-image-preivew]: New version: [1.4] Old Version: [1.3]
+[2023-04-11 13:29:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 13:29:20] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 13:29:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 13:29:20] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/00/82/319f3c998c1b886c648e7560fce0ad6d68fa06b6b8807405ce7adbe77519/torchserve_nightly-2023.4.8-py3-none-any.whl
+[2023-04-11 13:29:20] INFO root fetch - processPackages [admin-form-image-preivew]: Downloading https://files.pythonhosted.org/packages/ef/95/998301da4b043c83d03cb31c22c5630a9deabe7e22d930a3466800e55d44/admin-form-image-preivew-1.3.tar.gz
+[2023-04-11 13:29:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-04-11 13:29:20] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230411/t/torch-model-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-11 13:29:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-04-11 13:29:20] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.4.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.4.9-py3-none-any.whl.zip --markdown 20230411/t/torch-workflow-archiver-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-11 13:29:20] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/92/33/06bbea496a47be5e594bc4a7193e4a30b697facaa6db131abebb6f4234a5/pyastroweatherio-0.23.0.dev3.tar.gz
+[2023-04-11 13:29:20] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2023-04-11 13:29:20] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.23.0.dev2.tar.gz tmp/pyastroweatherio-0.23.0.dev3.tar.gz --markdown 20230411/p/pyastroweatherio/0.23.0.dev2-0.23.0.dev3/diff.md --exclude *.pyd
+[2023-04-11 13:29:20] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23695640>=10485760
+[2023-04-11 13:29:20] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:29:20] INFO root fetch - processPackages [VVER-1000package]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 13:29:20] INFO root fetch - processPackages [admin-form-image-preivew]: Downloading https://files.pythonhosted.org/packages/f6/23/c1f8bb15cf6e024474fd9a1128765a6ac9607559ba37a493dab57735f111/admin-form-image-preivew-1.4.tar.gz
+[2023-04-11 13:29:20] INFO root fetch - processPackages [VVER-1000package]: Downloading https://files.pythonhosted.org/packages/3b/5b/978bc099eae797d49a595b8bb840c13cd2c6f29df4e96b1ac091fc15bc99/VVER-1000package-0.0.3.tar.gz
+[2023-04-11 13:29:21] INFO root fetch - processPackages [admin-form-image-preivew]: executing diffoscope
+[2023-04-11 13:29:21] INFO root fetch - processPackages [admin-form-image-preivew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/admin-form-image-preivew-1.3.tar.gz tmp/admin-form-image-preivew-1.4.tar.gz --markdown 20230411/a/admin-form-image-preivew/1.3-1.4/diff.md --exclude *.pyd
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: Downloading https://files.pythonhosted.org/packages/ef/10/c5aec4fc920c22dab7de80962882823c725946139c2bb84df64859d7fb12/VVER-1000package-0.0.4.tar.gz
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: executing diffoscope
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VVER-1000package-0.0.3.tar.gz tmp/VVER-1000package-0.0.4.tar.gz --markdown 20230411/V/VVER-1000package/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 13:29:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: executing diffoscope
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VVER-1000package-0.0.3.tar.gz tmp/VVER-1000package-0.0.4.tar.gz --markdown 20230411/V/VVER-1000package/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: executing diffoscope
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VVER-1000package-0.0.3.tar.gz tmp/VVER-1000package-0.0.4.tar.gz --markdown 20230411/V/VVER-1000package/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 13:29:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: executing diffoscope
+[2023-04-11 13:29:21] INFO root fetch - processPackages [VVER-1000package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/VVER-1000package-0.0.3.tar.gz tmp/VVER-1000package-0.0.4.tar.gz --markdown 20230411/V/VVER-1000package/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 13:29:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:22] WARNING root fetch - processPackages [DACBench]: Skipping, unable to determine old version
+[2023-04-11 13:29:22] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:29:22] INFO root fetch - processPackages [csvcubed]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-11 13:29:22] INFO root fetch - processPackages [csvcubed]: Downloading https://files.pythonhosted.org/packages/a0/62/29780e4487af862c519cf4fa8cfe0967bd06f808380f51f70e6df16c36bb/csvcubed-0.3.4-py3-none-any.whl
+[2023-04-11 13:29:22] INFO root fetch - processPackages [csvcubed]: Downloading https://files.pythonhosted.org/packages/73/38/7f519169f4dd22c0c32889ec89c37a4af117cd36cfcf994fce9bea337da2/csvcubed-0.3.5-py3-none-any.whl
+[2023-04-11 13:29:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:22] WARNING root fetch - processPackages [contact-enegry-nz]: Skipping, unable to determine old version
+[2023-04-11 13:29:22] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:29:22] INFO root fetch - processPackages [napari-cellseg3d]: New version: [0.0.2rc3] Old Version: [0.0.2rc2]
+[2023-04-11 13:29:22] INFO root fetch - processPackages [csvcubed]: executing diffoscope
+[2023-04-11 13:29:22] INFO root fetch - processPackages [csvcubed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csvcubed-0.3.4-py3-none-any.whl.zip tmp/csvcubed-0.3.5-py3-none-any.whl.zip --markdown 20230411/c/csvcubed/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-11 13:29:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:22] INFO root fetch - processPackages [myqueue]: New version: [23.4.0] Old Version: [23.1.0]
+[2023-04-11 13:29:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:22] INFO root fetch - processPackages [edwh]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-11 13:29:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:22] INFO root fetch - processPackages [napari-cellseg3d]: Downloading https://files.pythonhosted.org/packages/7e/76/65b3c390eb3ff612fcc089d18a5d57a939cf0025565004c1b6dc8df34d6a/napari_cellseg3d-0.0.2rc3.tar.gz
+[2023-04-11 13:29:23] INFO root fetch - processPackages [edwh]: Downloading https://files.pythonhosted.org/packages/9a/56/72a81d9eb219b86263c774a67b9750723d2305673066956cffe4ce24ed30/edwh-0.4.3.tar.gz
+[2023-04-11 13:29:23] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101681211430] Old Version: [0.0.101681125095]
+[2023-04-11 13:29:23] INFO root fetch - processPackages [myqueue]: Downloading https://files.pythonhosted.org/packages/85/98/3d5c12f36bdd5dae03f5c1d340a4f17367d995bb84ed3f1ba706d28883e2/myqueue-23.1.0.tar.gz
+[2023-04-11 13:29:23] INFO root fetch - processPackages [napari-cellseg3d]: executing diffoscope
+[2023-04-11 13:29:23] INFO root fetch - processPackages [napari-cellseg3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_cellseg3d-0.0.2rc2.tar.gz tmp/napari_cellseg3d-0.0.2rc3.tar.gz --markdown 20230411/n/napari-cellseg3d/0.0.2rc2-0.0.2rc3/diff.md --exclude *.pyd
+[2023-04-11 13:29:23] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/35/19/c0ee7c2f6fb488d8ca949bae2b94328183586f106fbb48a329dcdb3ef52b/pyre-check-nightly-0.0.101681125095.tar.gz
+[2023-04-11 13:29:23] INFO root fetch - processPackages [myqueue]: Downloading https://files.pythonhosted.org/packages/52/e2/2249d779dbeb08ab30f3da43726f97853f1d96b4ec58a4e514285b58d4de/myqueue-23.4.0.tar.gz
+[2023-04-11 13:29:23] INFO root fetch - processPackages [edwh]: Downloading https://files.pythonhosted.org/packages/61/25/b733ca93cd7365d42acb92c5f1d286aa2e64a5b3861559812ff6184c34e0/edwh-0.4.4.tar.gz
+[2023-04-11 13:29:23] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23002571>=10485760
+[2023-04-11 13:29:23] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:29:23] INFO root fetch - processPackages [bycon]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 13:29:23] INFO root fetch - processPackages [myqueue]: executing diffoscope
+[2023-04-11 13:29:23] INFO root fetch - processPackages [myqueue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myqueue-23.1.0.tar.gz tmp/myqueue-23.4.0.tar.gz --markdown 20230411/m/myqueue/23.1.0-23.4.0/diff.md --exclude *.pyd
+[2023-04-11 13:29:23] INFO root fetch - processPackages [edwh]: executing diffoscope
+[2023-04-11 13:29:23] INFO root fetch - processPackages [edwh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edwh-0.4.3.tar.gz tmp/edwh-0.4.4.tar.gz --markdown 20230411/e/edwh/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-11 13:29:23] INFO root fetch - processPackages [bycon]: Downloading https://files.pythonhosted.org/packages/d8/52/9205bbdcf60c69e8870bca5c3a21b54dc9acc3dc4e845822e9f9630cbb34/bycon-1.0.8.tar.gz
+[2023-04-11 13:29:24] INFO root fetch - processPackages [bycon]: Downloading https://files.pythonhosted.org/packages/0c/b2/ef8a7b90b711214a2f00741f476f95ddd0b540bf9732ac39a993a39e0d03/bycon-1.0.9.tar.gz
+[2023-04-11 13:29:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:24] INFO root fetch - processPackages [admin-form-image-preivew]: New version: [1.4] Old Version: [1.3]
+[2023-04-11 13:29:24] INFO root fetch - processPackages [admin-form-image-preivew]: executing diffoscope
+[2023-04-11 13:29:24] INFO root fetch - processPackages [admin-form-image-preivew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/admin-form-image-preivew-1.3.tar.gz tmp/admin-form-image-preivew-1.4.tar.gz --markdown 20230411/a/admin-form-image-preivew/1.3-1.4/diff.md --exclude *.pyd
+[2023-04-11 13:29:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:24] INFO root fetch - processPackages [urlwatch]: New version: [2.9] Old Version: [2.8]
+[2023-04-11 13:29:24] INFO root fetch - processPackages [urlwatch]: Downloading https://files.pythonhosted.org/packages/10/49/062c7a7d97a33c095e857a260f7dd0f1946362804f7b651586b4d0d75b43/urlwatch-2.8.tar.gz
+[2023-04-11 13:29:24] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:24] WARNING root fetch - processPackages [CHRC-holamundoplayer]: Skipping, unable to determine old version
+[2023-04-11 13:29:24] INFO root fetch - main [MainThread]: error
+[2023-04-11 13:29:24] INFO root fetch - processPackages [antchain-identitymarriage]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-11 13:29:25] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:25] INFO root fetch - processPackages [bycon]: executing diffoscope
+[2023-04-11 13:29:25] INFO root fetch - processPackages [bycon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bycon-1.0.8.tar.gz tmp/bycon-1.0.9.tar.gz --markdown 20230411/b/bycon/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 13:29:25] INFO root fetch - processPackages [anduin]: New version: [8.4.9] Old Version: [8.4.8]
+[2023-04-11 13:29:25] INFO root fetch - processPackages [antchain-identitymarriage]: Downloading https://files.pythonhosted.org/packages/f0/f5/eb4bd577f6c980e25fd0a58a8ebe2ad93a1eb165c4750bb50c071e7ad787/antchain_identitymarriage-1.0.6.tar.gz
+[2023-04-11 13:29:25] INFO root fetch - processPackages [antchain-identitymarriage]: executing diffoscope
+[2023-04-11 13:29:25] INFO root fetch - processPackages [antchain-identitymarriage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_identitymarriage-1.0.5.tar.gz tmp/antchain_identitymarriage-1.0.6.tar.gz --markdown 20230411/a/antchain-identitymarriage/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-11 13:29:25] INFO root fetch - processPackages [urlwatch]: Downloading https://files.pythonhosted.org/packages/ed/ec/9840e5a935a35b1779a26748861d7929a4a36fd304c380fb44c639731ef3/urlwatch-2.9.tar.gz
+[2023-04-11 13:29:25] INFO root fetch - processPackages [anduin]: executing diffoscope
+[2023-04-11 13:29:25] INFO root fetch - processPackages [anduin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anduin-8.4.8.tar.gz tmp/anduin-8.4.9.tar.gz --markdown 20230411/a/anduin/8.4.8-8.4.9/diff.md --exclude *.pyd
+[2023-04-11 13:29:25] INFO root fetch - processPackages [urlwatch]: executing diffoscope
+[2023-04-11 13:29:25] INFO root fetch - processPackages [urlwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urlwatch-2.8.tar.gz tmp/urlwatch-2.9.tar.gz --markdown 20230411/u/urlwatch/2.8-2.9/diff.md --exclude *.pyd
+[2023-04-11 13:29:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:26] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 13:29:32] INFO root fetch - main [MainThread]: Store serial: [17659887]
