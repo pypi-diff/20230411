@@ -3713,3 +3713,87 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 03:25:20] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:27:19] INFO root fetch - main [MainThread]: success
 [2023-04-11 03:27:19] INFO root fetch - main [MainThread]: Store serial: [17653685]
+[2023-04-11 03:32:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17653685]
+[2023-04-11 03:32:28] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-11 03:32:28] WARNING root fetch - processPackages [np-gui]: Skipping, unable to determine old version
+[2023-04-11 03:32:28] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:32:28] INFO root fetch - processPackages [kwcoco]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-11 03:32:28] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304110129] Old Version: [1.0.1.dev202304101240]
+[2023-04-11 03:32:28] INFO root fetch - processPackages [jquants-api-client]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-11 03:32:28] INFO root fetch - processPackages [shard-client]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-11 03:32:28] INFO root fetch - processPackages [pepperize.cdk-organizations]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-11 03:32:28] INFO root fetch - processPackages [jquants-api-client]: Downloading https://files.pythonhosted.org/packages/f0/97/ea0a5c5a85d954ee68695a66be3a58c497e916a63239cfc998d92a8364ff/jquants_api_client-1.1.0.tar.gz
+[2023-04-11 03:32:28] INFO root fetch - processPackages [kwcoco]: Downloading https://files.pythonhosted.org/packages/be/04/6f125a16aaed53e4a9d59d8132f65f498d089afc21cd5d5c945c4a327625/kwcoco-0.6.0-py3-none-any.whl
+[2023-04-11 03:32:28] INFO root fetch - processPackages [shard-client]: Downloading https://files.pythonhosted.org/packages/d2/94/28a08474ec3794975a1c55bf045f20190a98759ec18447e354a8a380df9d/shard_client-0.0.5.tar.gz
+[2023-04-11 03:32:28] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/e8/4a/a7fc5f8145ac98b495c320a49806b4c4ed0b4bbbb4a74ab97ca96df032a4/cellmap-1.0.1.dev202304110129-py3-none-any.whl
+[2023-04-11 03:32:28] INFO root fetch - processPackages [pepperize.cdk-organizations]: executing diffoscope
+[2023-04-11 03:32:28] INFO root fetch - processPackages [pepperize.cdk-organizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-organizations-0.7.98.tar.gz tmp/pepperize.cdk-organizations-0.7.99.tar.gz --markdown 20230411/p/pepperize.cdk-organizations/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-11 03:32:28] INFO root fetch - processPackages [shard-client]: executing diffoscope
+[2023-04-11 03:32:28] INFO root fetch - processPackages [shard-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shard_client-0.0.4.tar.gz tmp/shard_client-0.0.5.tar.gz --markdown 20230411/s/shard-client/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-11 03:32:28] INFO root fetch - processPackages [jquants-api-client]: Downloading https://files.pythonhosted.org/packages/c1/a1/75a6a335c8e866b365cf9739e8620911cb6a71c188be74ff77bf45e7c72f/jquants_api_client-1.1.1.tar.gz
+[2023-04-11 03:32:29] INFO root fetch - processPackages [jquants-api-client]: executing diffoscope
+[2023-04-11 03:32:29] INFO root fetch - processPackages [jquants-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jquants_api_client-1.1.0.tar.gz tmp/jquants_api_client-1.1.1.tar.gz --markdown 20230411/j/jquants-api-client/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-11 03:32:29] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-11 03:32:29] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304101240-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304110129-py3-none-any.whl.zip --markdown 20230411/c/cellmap/1.0.1.dev202304101240-1.0.1.dev202304110129/diff.md --exclude *.pyd
+[2023-04-11 03:32:29] INFO root fetch - processPackages [kwcoco]: Downloading https://files.pythonhosted.org/packages/79/82/45edd9b6ea7e51b5c356b292dcadd35f01784537897b4b9cf51601cd603f/kwcoco-0.6.1-py3-none-any.whl
+[2023-04-11 03:32:29] INFO root fetch - processPackages [kwcoco]: executing diffoscope
+[2023-04-11 03:32:29] INFO root fetch - processPackages [kwcoco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kwcoco-0.6.0-py3-none-any.whl.zip tmp/kwcoco-0.6.1-py3-none-any.whl.zip --markdown 20230411/k/kwcoco/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-11 03:32:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:30] INFO root fetch - processPackages [processplatform]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 03:32:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:30] INFO root fetch - processPackages [neer]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-11 03:32:30] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 03:32:30] INFO root fetch - processPackages [processplatform]: Downloading https://files.pythonhosted.org/packages/ca/b6/963744b124e4612d1149851cb7606539c0a95695b941420fd45e26e55daf/processplatform-1.0.2.tar.gz
+[2023-04-11 03:32:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:30] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 03:32:30] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-11 03:32:30] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230411/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:32:30] INFO root fetch - processPackages [processplatform]: executing diffoscope
+[2023-04-11 03:32:30] INFO root fetch - processPackages [processplatform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/processplatform-1.0.1.tar.gz tmp/processplatform-1.0.2.tar.gz --markdown 20230411/p/processplatform/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 03:32:30] INFO root fetch - processPackages [neer]: Downloading https://files.pythonhosted.org/packages/24/06/005a11208bd5b274ded9b4eb35f4e80e828596f80562af9eb5e3510a6764/neer-0.0.7.tar.gz
+[2023-04-11 03:32:30] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2023-04-11 03:32:30] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.0.98.tar.gz tmp/cdk-events-notify-2.0.99.tar.gz --markdown 20230411/c/cdk-events-notify/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:32:31] INFO root fetch - processPackages [neer]: Downloading https://files.pythonhosted.org/packages/e6/c3/062ca72fe675da3d2063e37741731f143915fc13bf526e776bcfee391f36/neer-0.0.8.tar.gz
+[2023-04-11 03:32:31] INFO root fetch - processPackages [neer]: executing diffoscope
+[2023-04-11 03:32:31] INFO root fetch - processPackages [neer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neer-0.0.7.tar.gz tmp/neer-0.0.8.tar.gz --markdown 20230411/n/neer/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-11 03:32:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:31] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 03:32:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:31] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2023-04-11 03:32:31] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.0.98.tar.gz tmp/cdk-events-notify-2.0.99.tar.gz --markdown 20230411/c/cdk-events-notify/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:32:31] INFO root fetch - processPackages [cdk-lambda-layer-zip]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 03:32:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:32] INFO root fetch - processPackages [dspawpy]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-04-11 03:32:32] INFO root fetch - processPackages [cdk-lambda-layer-zip]: executing diffoscope
+[2023-04-11 03:32:32] INFO root fetch - processPackages [cdk-lambda-layer-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-zip-2.0.98.tar.gz tmp/cdk-lambda-layer-zip-2.0.99.tar.gz --markdown 20230411/c/cdk-lambda-layer-zip/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:32:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:32] WARNING root fetch - processPackages [config-joker]: Skipping, unable to determine old version
+[2023-04-11 03:32:32] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:32:32] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 03:32:32] INFO root fetch - processPackages [dspawpy]: Downloading https://files.pythonhosted.org/packages/d9/53/0674f59d61d4ee8cb6becd513ce67716597b83562c00f23749c43d2ed01a/dspawpy-0.8.5-py3-none-any.whl
+[2023-04-11 03:32:32] INFO root fetch - processPackages [dspawpy]: Downloading https://files.pythonhosted.org/packages/56/99/c4eaef2879b1d6443ac3c033e437a35ba6ec17ec9cd2d24390fb41124e0c/dspawpy-0.8.6-py3-none-any.whl
+[2023-04-11 03:32:32] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-11 03:32:32] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230411/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:32:32] INFO root fetch - processPackages [dspawpy]: executing diffoscope
+[2023-04-11 03:32:32] INFO root fetch - processPackages [dspawpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dspawpy-0.8.5-py3-none-any.whl.zip tmp/dspawpy-0.8.6-py3-none-any.whl.zip --markdown 20230411/d/dspawpy/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-11 03:32:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:32] WARNING root fetch - processPackages [easierfile]: Skipping, unable to determine old version
+[2023-04-11 03:32:32] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:32:32] INFO root fetch - processPackages [pyuvdata]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-04-11 03:32:33] INFO root fetch - processPackages [pyuvdata]: Downloading https://files.pythonhosted.org/packages/ea/f0/212864ec9c63e4f3f60f725b4cd52257979b19c303e97d87ec34dc3197ab/pyuvdata-2.3.1.tar.gz
+[2023-04-11 03:32:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:33] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 03:32:33] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-11 03:32:33] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230411/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-11 03:32:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:33] WARNING root fetch - processPackages [pyuvdata]: Skipping package: exceeds size limit 63620834>=10485760
+[2023-04-11 03:32:33] INFO root fetch - main [MainThread]: error
+[2023-04-11 03:32:33] INFO root fetch - processPackages [CircleBlock]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-11 03:32:33] INFO root fetch - processPackages [CircleBlock]: executing diffoscope
+[2023-04-11 03:32:33] INFO root fetch - processPackages [CircleBlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CircleBlock-1.0.7.tar.gz tmp/circleblock-1.0.8.tar.gz --markdown 20230411/C/CircleBlock/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-11 03:32:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:37] INFO root fetch - main [MainThread]: success
+[2023-04-11 03:32:37] INFO root fetch - main [MainThread]: Store serial: [17653756]
