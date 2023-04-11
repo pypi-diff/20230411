@@ -9189,3 +9189,89 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 09:16:41] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:16:42] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:16:42] INFO root fetch - main [MainThread]: Store serial: [17657341]
+[2023-04-11 09:21:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17657341]
+[2023-04-11 09:21:50] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-11 09:21:50] INFO root fetch - processPackages [ojtool]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 09:21:50] INFO root fetch - processPackages [qtl-ctp-api]: New version: [6.6.9.4] Old Version: [6.6.9.3]
+[2023-04-11 09:21:50] INFO root fetch - processPackages [isqlab]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-11 09:21:50] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1616] Old Version: [0.20230411.1615]
+[2023-04-11 09:21:50] INFO root fetch - processPackages [dbt-trino]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-11 09:21:50] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 09:21:50] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1615.tar.gz tmp/krutils-0.20230411.1616.tar.gz --markdown 20230411/k/krutils/0.20230411.1615-0.20230411.1616/diff.md --exclude *.pyd
+[2023-04-11 09:21:50] INFO root fetch - processPackages [qtl-ctp-api]: Downloading https://files.pythonhosted.org/packages/e9/cb/50aeefdadc8fe8ee1a7efdcab133f0171cf2aa18b440cdd08d304ceedbb0/qtl-ctp-api-6.6.9.3.tar.gz
+[2023-04-11 09:21:50] INFO root fetch - processPackages [isqlab]: Downloading https://files.pythonhosted.org/packages/79/2a/c798d18e88f558603ab2528a497482e4c2bcab49534b2b68a17600ba4c78/isqlab-0.2.0.tar.gz
+[2023-04-11 09:21:50] INFO root fetch - processPackages [ojtool]: Downloading https://files.pythonhosted.org/packages/25/49/29fd15aeec5bb6fffa0b6eb7992875ee528bb841c97648c98668b95a74c1/ojtool-0.1.1.tar.gz
+[2023-04-11 09:21:50] INFO root fetch - processPackages [ojtool]: executing diffoscope
+[2023-04-11 09:21:50] INFO root fetch - processPackages [ojtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ojtool-0.1.0.tar.gz tmp/ojtool-0.1.1.tar.gz --markdown 20230411/o/ojtool/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 09:21:50] INFO root fetch - processPackages [dbt-trino]: executing diffoscope
+[2023-04-11 09:21:50] INFO root fetch - processPackages [dbt-trino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-trino-1.4.1.tar.gz tmp/dbt-trino-1.4.2.tar.gz --markdown 20230411/d/dbt-trino/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-11 09:21:50] INFO root fetch - processPackages [isqlab]: Downloading https://files.pythonhosted.org/packages/bf/0e/0ac955867c4a9535208e50da605c37b8da98d2a5b34d531c3ea8c35eb08f/isqlab-0.3.0.tar.gz
+[2023-04-11 09:21:50] INFO root fetch - processPackages [isqlab]: executing diffoscope
+[2023-04-11 09:21:50] INFO root fetch - processPackages [isqlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isqlab-0.2.0.tar.gz tmp/isqlab-0.3.0.tar.gz --markdown 20230411/i/isqlab/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 09:21:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:51] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-11 09:21:51] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: executing diffoscope
+[2023-04-11 09:21:51] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blive_danmaku-0.1.4.tar.gz tmp/nonebot_plugin_blive_danmaku-0.1.5.tar.gz --markdown 20230411/n/nonebot-plugin-blive-danmaku/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-11 09:21:51] INFO root fetch - processPackages [qtl-ctp-api]: Downloading https://files.pythonhosted.org/packages/f8/6b/392e79d7adf0169dac9d3b7b11885eeaf6add86e062469abc8ebd66c1298/qtl-ctp-api-6.6.9.4.tar.gz
+[2023-04-11 09:21:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:51] INFO root fetch - processPackages [qtl-ctp-api]: executing diffoscope
+[2023-04-11 09:21:51] INFO root fetch - processPackages [qtl-ctp-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtl-ctp-api-6.6.9.3.tar.gz tmp/qtl-ctp-api-6.6.9.4.tar.gz --markdown 20230411/q/qtl-ctp-api/6.6.9.3-6.6.9.4/diff.md --exclude *.pyd
+[2023-04-11 09:21:51] INFO root fetch - processPackages [dcb-admin-page-generator]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 09:21:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:51] INFO root fetch - processPackages [cloud-diffusion]: New version: [0.5.1] Old Version: [0.4.0]
+[2023-04-11 09:21:51] INFO root fetch - processPackages [dcb-admin-page-generator]: Downloading https://files.pythonhosted.org/packages/d7/20/dac3da082a3bf803a0c041ece357ecdf2330da290d0030a1bee05ba31c43/dcb_admin_page_generator-0.0.1.tar.gz
+[2023-04-11 09:21:52] INFO root fetch - processPackages [cloud-diffusion]: Downloading https://files.pythonhosted.org/packages/50/a5/3285009093d7b72e26c3206a021b4f3c2c880b4f3c4fb33b0f8de26c786d/cloud_diffusion-0.4.0.tar.gz
+[2023-04-11 09:21:52] INFO root fetch - processPackages [dcb-admin-page-generator]: Downloading https://files.pythonhosted.org/packages/4e/fc/03b62d12d04e8d562fd7d6809abe9bf05e746f39aaab84356ba623f6c645/dcb_admin_page_generator-0.0.2.tar.gz
+[2023-04-11 09:21:52] INFO root fetch - processPackages [dcb-admin-page-generator]: executing diffoscope
+[2023-04-11 09:21:52] INFO root fetch - processPackages [dcb-admin-page-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcb_admin_page_generator-0.0.1.tar.gz tmp/dcb_admin_page_generator-0.0.2.tar.gz --markdown 20230411/d/dcb-admin-page-generator/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 09:21:52] INFO root fetch - processPackages [cloud-diffusion]: Downloading https://files.pythonhosted.org/packages/d6/d4/feeb4703c8dc0d94e8818b47257345fa64bf3a04ce5886ef6de4bca4942c/cloud_diffusion-0.5.1.tar.gz
+[2023-04-11 09:21:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:52] INFO root fetch - processPackages [cloud-diffusion]: executing diffoscope
+[2023-04-11 09:21:52] INFO root fetch - processPackages [cloud-diffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud_diffusion-0.4.0.tar.gz tmp/cloud_diffusion-0.5.1.tar.gz --markdown 20230411/c/cloud-diffusion/0.4.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-11 09:21:52] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1624] Old Version: [0.20230411.1623]
+[2023-04-11 09:21:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:52] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/0a/c5/10bd3327e0604a8b9cd64cc40b23adbc51b7a6057e4c869da9206f0c5ca0/krutils-0.20230411.1623.tar.gz
+[2023-04-11 09:21:52] INFO root fetch - processPackages [phonenumberslite]: New version: [8.9.9] Old Version: [8.9.8]
+[2023-04-11 09:21:52] INFO root fetch - processPackages [phonenumberslite]: Downloading https://files.pythonhosted.org/packages/2a/34/673df63018e24dd0e697c0c1d47fbaab6775c15d1798ed9e0b834b78ac65/phonenumberslite-8.9.8.tar.gz
+[2023-04-11 09:21:53] INFO root fetch - processPackages [krutils]: Downloading https://files.pythonhosted.org/packages/62/c1/63e6197d9e7a89ca46d430ff34794f2ec8a1417db53a51145208b6f4d40b/krutils-0.20230411.1624.tar.gz
+[2023-04-11 09:21:53] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 09:21:53] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1623.tar.gz tmp/krutils-0.20230411.1624.tar.gz --markdown 20230411/k/krutils/0.20230411.1623-0.20230411.1624/diff.md --exclude *.pyd
+[2023-04-11 09:21:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:53] INFO root fetch - processPackages [phonenumberslite]: Downloading https://files.pythonhosted.org/packages/1b/d2/a02b729fceb0f6e61adf61ac7dc258345c724815ff446e3d8204cae3e838/phonenumberslite-8.9.9.tar.gz
+[2023-04-11 09:21:53] INFO root fetch - processPackages [phonenumbers]: New version: [8.9.9] Old Version: [8.9.8]
+[2023-04-11 09:21:53] INFO root fetch - processPackages [phonenumberslite]: executing diffoscope
+[2023-04-11 09:21:53] INFO root fetch - processPackages [phonenumberslite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phonenumberslite-8.9.8.tar.gz tmp/phonenumberslite-8.9.9.tar.gz --markdown 20230411/p/phonenumberslite/8.9.8-8.9.9/diff.md --exclude *.pyd
+[2023-04-11 09:21:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:53] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1624] Old Version: [0.20230411.1623]
+[2023-04-11 09:21:53] INFO root fetch - processPackages [ksux]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-11 09:21:53] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 09:21:53] INFO root fetch - processPackages [phonenumbers]: Downloading https://files.pythonhosted.org/packages/61/7b/90d90d52bf1a407405c8b13f5701c40d4ed9574fa05f456f232296b5390d/phonenumbers-8.9.8.tar.gz
+[2023-04-11 09:21:53] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1623.tar.gz tmp/krutils-0.20230411.1624.tar.gz --markdown 20230411/k/krutils/0.20230411.1623-0.20230411.1624/diff.md --exclude *.pyd
+[2023-04-11 09:21:53] INFO root fetch - processPackages [ksux]: Downloading https://files.pythonhosted.org/packages/14/fa/aa9a9f84a3b0c03061f2d5dfb4229ce00b98e45fc3b3a0a2e3bd3130a221/ksux-0.5.3.tar.gz
+[2023-04-11 09:21:54] INFO root fetch - processPackages [ksux]: Downloading https://files.pythonhosted.org/packages/ac/0c/9407e6361aaace041dfec55dcdcc417d74945b08291fcefbb1136e6383ec/ksux-0.5.4.tar.gz
+[2023-04-11 09:21:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:54] INFO root fetch - processPackages [deep-training]: New version: [0.1.2rc0] Old Version: [0.1.1]
+[2023-04-11 09:21:54] INFO root fetch - processPackages [ksux]: executing diffoscope
+[2023-04-11 09:21:54] INFO root fetch - processPackages [ksux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ksux-0.5.3.tar.gz tmp/ksux-0.5.4.tar.gz --markdown 20230411/k/ksux/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-11 09:21:54] INFO root fetch - processPackages [deep-training]: executing diffoscope
+[2023-04-11 09:21:54] INFO root fetch - processPackages [deep-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_training-0.1.1-py3-none-any.whl.zip tmp/deep_training-0.1.2rc0-py3-none-any.whl.zip --markdown 20230411/d/deep-training/0.1.1-0.1.2rc0/diff.md --exclude *.pyd
+[2023-04-11 09:21:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:54] INFO root fetch - processPackages [smdb-api]: New version: [0.9.12] Old Version: [0.9.1]
+[2023-04-11 09:21:54] INFO root fetch - processPackages [smdb-api]: Downloading https://files.pythonhosted.org/packages/8b/7c/462aee1f0b31705fd270ae4f3e269115e2d4d915b3f0af107c97f2e51531/smdb_api-0.9.1.tar.gz
+[2023-04-11 09:21:55] INFO root fetch - processPackages [phonenumbers]: Downloading https://files.pythonhosted.org/packages/bc/2a/0ad24a36f6763be01df1b427f23a38456a351fdf205b0c19041499a9f82c/phonenumbers-8.9.9.tar.gz
+[2023-04-11 09:21:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:55] INFO root fetch - processPackages [krutils]: New version: [0.20230411.1624] Old Version: [0.20230411.1623]
+[2023-04-11 09:21:55] INFO root fetch - processPackages [smdb-api]: Downloading https://files.pythonhosted.org/packages/7c/40/4f246c09d870d252aea285313cdb40d34031bafd148e7448cd55500393fa/smdb_api-0.9.12.tar.gz
+[2023-04-11 09:21:55] INFO root fetch - processPackages [krutils]: executing diffoscope
+[2023-04-11 09:21:55] INFO root fetch - processPackages [krutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krutils-0.20230411.1623.tar.gz tmp/krutils-0.20230411.1624.tar.gz --markdown 20230411/k/krutils/0.20230411.1623-0.20230411.1624/diff.md --exclude *.pyd
+[2023-04-11 09:21:55] INFO root fetch - processPackages [smdb-api]: executing diffoscope
+[2023-04-11 09:21:55] INFO root fetch - processPackages [smdb-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smdb_api-0.9.1.tar.gz tmp/smdb_api-0.9.12.tar.gz --markdown 20230411/s/smdb-api/0.9.1-0.9.12/diff.md --exclude *.pyd
+[2023-04-11 09:21:55] INFO root fetch - processPackages [phonenumbers]: executing diffoscope
+[2023-04-11 09:21:55] INFO root fetch - processPackages [phonenumbers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phonenumbers-8.9.8.tar.gz tmp/phonenumbers-8.9.9.tar.gz --markdown 20230411/p/phonenumbers/8.9.8-8.9.9/diff.md --exclude *.pyd
+[2023-04-11 09:21:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:21:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:22:04] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:22:04] INFO root fetch - main [MainThread]: Store serial: [17657388]
