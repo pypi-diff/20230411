@@ -8595,3 +8595,91 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 08:27:27] INFO root fetch - processPackages [dolphindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolphindb-1.30.21.1-cp39-cp39-win_amd64.whl.zip tmp/dolphindb-1.30.21.2-cp310-cp310-win_amd64.whl.zip --markdown 20230411/d/dolphindb/1.30.21.1-1.30.21.2/diff.md --exclude *.pyd
 [2023-04-11 08:28:26] INFO root fetch - main [MainThread]: success
 [2023-04-11 08:28:26] INFO root fetch - main [MainThread]: Store serial: [17656964]
+[2023-04-11 08:33:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17656964]
+[2023-04-11 08:33:40] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-11 08:33:40] INFO root fetch - processPackages [sharry-jira-tool]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-11 08:33:40] INFO root fetch - processPackages [odoo14-addon-pos-show-config-name]: New version: [14.0.1.0.1.dev3] Old Version: [14.0.1.0.1.dev2]
+[2023-04-11 08:33:40] INFO root fetch - processPackages [discordapiwebhooks]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 08:33:40] INFO root fetch - processPackages [llm4gpt]: New version: [2023.4.11.14.35.6] Old Version: [2023.4.11.14.33.49]
+[2023-04-11 08:33:40] INFO root fetch - processPackages [tap-belvo]: New version: [0.0.1b2] Old Version: [0.0.1b1]
+[2023-04-11 08:33:40] INFO root fetch - processPackages [llm4gpt]: Downloading https://files.pythonhosted.org/packages/da/0a/a479f4e5aeb745d94bde745ad6fad6ed5cb63cba0933dec9b0e88addf195/llm4gpt-2023.4.11.14.33.49.tar.gz
+[2023-04-11 08:33:40] INFO root fetch - processPackages [tap-belvo]: Downloading https://files.pythonhosted.org/packages/e0/b8/631e59e781ba0e50e451cda2e5b2607a58ea6276da691d26a04b8dcedbf8/tap_belvo-0.0.1b1.tar.gz
+[2023-04-11 08:33:40] INFO root fetch - processPackages [odoo14-addon-pos-show-config-name]: Downloading https://files.pythonhosted.org/packages/96/f6/334f273f6057c63d9e78e3cb3e117d7b971cc6ca26fc97169f20f192db2b/odoo14_addon_pos_show_config_name-14.0.1.0.1.dev2-py3-none-any.whl
+[2023-04-11 08:33:40] INFO root fetch - processPackages [sharry-jira-tool]: Downloading https://files.pythonhosted.org/packages/17/2f/420bfa0aa26a467ae1c0524fed77c2a24f07735991c5f53487e2fc16ffc3/sharry-jira-tool-0.2.4.tar.gz
+[2023-04-11 08:33:41] INFO root fetch - processPackages [discordapiwebhooks]: Downloading https://files.pythonhosted.org/packages/80/9e/bcba0fad09d16e3046c3009f6028395d165686fe2ca22e7d9f1c9dc77443/discordapiwebhooks-1.0.2.tar.gz
+[2023-04-11 08:33:41] INFO root fetch - processPackages [tap-belvo]: Downloading https://files.pythonhosted.org/packages/63/de/5a4b98d885c3c630fa36e8d11fd3b02246d2771f3f848fe658280611e4d1/tap_belvo-0.0.1b2.tar.gz
+[2023-04-11 08:33:41] INFO root fetch - processPackages [odoo14-addon-pos-show-config-name]: Downloading https://files.pythonhosted.org/packages/b5/77/5145381706c040d893dffcf1ff2e817d7cf04fe943b133ba6b18e4fd612b/odoo14_addon_pos_show_config_name-14.0.1.0.1.dev3-py3-none-any.whl
+[2023-04-11 08:33:41] INFO root fetch - processPackages [sharry-jira-tool]: Downloading https://files.pythonhosted.org/packages/a4/eb/b0ae9e2b3fd408530d86778f2775a778644581066d2f5ea40d40ae12eee0/sharry-jira-tool-0.2.5.tar.gz
+[2023-04-11 08:33:41] INFO root fetch - processPackages [discordapiwebhooks]: executing diffoscope
+[2023-04-11 08:33:41] INFO root fetch - processPackages [discordapiwebhooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discordapiwebhooks-1.0.1.tar.gz tmp/discordapiwebhooks-1.0.2.tar.gz --markdown 20230411/d/discordapiwebhooks/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 08:33:41] INFO root fetch - processPackages [llm4gpt]: Downloading https://files.pythonhosted.org/packages/fb/5b/0886cc2eeeaa1da3c5519bc0636c2e71f42b97dcd7ec4af0b29145369a69/llm4gpt-2023.4.11.14.35.6.tar.gz
+[2023-04-11 08:33:41] INFO root fetch - processPackages [odoo14-addon-pos-show-config-name]: executing diffoscope
+[2023-04-11 08:33:41] INFO root fetch - processPackages [odoo14-addon-pos-show-config-name]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pos_show_config_name-14.0.1.0.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_pos_show_config_name-14.0.1.0.1.dev3-py3-none-any.whl.zip --markdown 20230411/o/odoo14-addon-pos-show-config-name/14.0.1.0.1.dev2-14.0.1.0.1.dev3/diff.md --exclude *.pyd
+[2023-04-11 08:33:41] INFO root fetch - processPackages [tap-belvo]: executing diffoscope
+[2023-04-11 08:33:41] INFO root fetch - processPackages [tap-belvo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_belvo-0.0.1b1.tar.gz tmp/tap_belvo-0.0.1b2.tar.gz --markdown 20230411/t/tap-belvo/0.0.1b1-0.0.1b2/diff.md --exclude *.pyd
+[2023-04-11 08:33:41] INFO root fetch - processPackages [sharry-jira-tool]: executing diffoscope
+[2023-04-11 08:33:41] INFO root fetch - processPackages [sharry-jira-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharry-jira-tool-0.2.4.tar.gz tmp/sharry-jira-tool-0.2.5.tar.gz --markdown 20230411/s/sharry-jira-tool/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-11 08:33:41] INFO root fetch - processPackages [llm4gpt]: executing diffoscope
+[2023-04-11 08:33:41] INFO root fetch - processPackages [llm4gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm4gpt-2023.4.11.14.33.49.tar.gz tmp/llm4gpt-2023.4.11.14.35.6.tar.gz --markdown 20230411/l/llm4gpt/2023.4.11.14.33.49-2023.4.11.14.35.6/diff.md --exclude *.pyd
+[2023-04-11 08:33:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:42] INFO root fetch - processPackages [ga-vqc]: New version: [0.0.53] Old Version: [0.0.52]
+[2023-04-11 08:33:42] INFO root fetch - processPackages [ga-vqc]: Downloading https://files.pythonhosted.org/packages/b0/2b/55eb0f70accbb70add30868d72e222427556f9ca5bb46ee6d66ed62c8094/ga_vqc-0.0.53.tar.gz
+[2023-04-11 08:33:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:42] INFO root fetch - processPackages [txt2tei]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-11 08:33:43] INFO root fetch - processPackages [ga-vqc]: executing diffoscope
+[2023-04-11 08:33:43] INFO root fetch - processPackages [ga-vqc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ga_vqc-0.0.52.tar.gz tmp/ga_vqc-0.0.53.tar.gz --markdown 20230411/g/ga-vqc/0.0.52-0.0.53/diff.md --exclude *.pyd
+[2023-04-11 08:33:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:43] INFO root fetch - processPackages [chartparse]: New version: [0.3.1] Old Version: [0.2.0]
+[2023-04-11 08:33:43] INFO root fetch - processPackages [txt2tei]: Downloading https://files.pythonhosted.org/packages/ac/88/fbfc0a2ca91e62953f6505985d55c5d28608beaedfc3d4e43d87b868f2bc/txt2tei-1.0.5.tar.gz
+[2023-04-11 08:33:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:43] INFO root fetch - processPackages [pylipd]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-11 08:33:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:43] INFO root fetch - processPackages [odoo-addon-pos-event-sale]: New version: [15.0.3.0.1.2] Old Version: [15.0.3.0.1.1]
+[2023-04-11 08:33:43] INFO root fetch - processPackages [chartparse]: Downloading https://files.pythonhosted.org/packages/9b/f1/1307bcfb708b7fe4bad7370d8c055c9ef882739d4781027f1e9ae333c48e/chartparse-0.2.0.tar.gz
+[2023-04-11 08:33:43] INFO root fetch - processPackages [pylipd]: Downloading https://files.pythonhosted.org/packages/76/09/9e14352884a27d462eaf5bd4e0a5c34da7884916fecc2d0fd4348f570276/pylipd-1.2.2.tar.gz
+[2023-04-11 08:33:43] INFO root fetch - processPackages [txt2tei]: Downloading https://files.pythonhosted.org/packages/1f/03/9f1e8082dfe7b4f14afaddd241fb6c1510c2398c3f6ccec72e1372e6c37a/txt2tei-1.0.6.tar.gz
+[2023-04-11 08:33:43] INFO root fetch - processPackages [chartparse]: Downloading https://files.pythonhosted.org/packages/00/93/c5825f20cf8c14c874ea169d15988358110c0313584d545f6eb9d2af2236/chartparse-0.3.1.tar.gz
+[2023-04-11 08:33:43] INFO root fetch - processPackages [odoo-addon-pos-event-sale]: Downloading https://files.pythonhosted.org/packages/69/fc/5b9cf0701accd42f3c174dbef362ddd95c1c659a7a7d4dc0d9b4d0cdee59/odoo_addon_pos_event_sale-15.0.3.0.1.2-py3-none-any.whl
+[2023-04-11 08:33:43] INFO root fetch - processPackages [txt2tei]: executing diffoscope
+[2023-04-11 08:33:43] INFO root fetch - processPackages [txt2tei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2tei-1.0.5.tar.gz tmp/txt2tei-1.0.6.tar.gz --markdown 20230411/t/txt2tei/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-11 08:33:43] INFO root fetch - processPackages [pylipd]: executing diffoscope
+[2023-04-11 08:33:43] INFO root fetch - processPackages [pylipd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylipd-1.2.1.tar.gz tmp/pylipd-1.2.2.tar.gz --markdown 20230411/p/pylipd/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-11 08:33:43] INFO root fetch - processPackages [chartparse]: executing diffoscope
+[2023-04-11 08:33:43] INFO root fetch - processPackages [chartparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chartparse-0.2.0.tar.gz tmp/chartparse-0.3.1.tar.gz --markdown 20230411/c/chartparse/0.2.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-11 08:33:43] INFO root fetch - processPackages [odoo-addon-pos-event-sale]: executing diffoscope
+[2023-04-11 08:33:43] INFO root fetch - processPackages [odoo-addon-pos-event-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_event_sale-15.0.3.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_pos_event_sale-15.0.3.0.1.2-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-pos-event-sale/15.0.3.0.1.1-15.0.3.0.1.2/diff.md --exclude *.pyd
+[2023-04-11 08:33:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:44] INFO root fetch - processPackages [llm4gpt]: New version: [2023.4.11.14.35.6] Old Version: [2023.4.11.14.33.49]
+[2023-04-11 08:33:44] INFO root fetch - processPackages [llm4gpt]: executing diffoscope
+[2023-04-11 08:33:44] INFO root fetch - processPackages [llm4gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm4gpt-2023.4.11.14.33.49.tar.gz tmp/llm4gpt-2023.4.11.14.35.6.tar.gz --markdown 20230411/l/llm4gpt/2023.4.11.14.33.49-2023.4.11.14.35.6/diff.md --exclude *.pyd
+[2023-04-11 08:33:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:45] INFO root fetch - processPackages [odoo-addon-pos-product-display-default-code]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.3]
+[2023-04-11 08:33:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:45] INFO root fetch - processPackages [deepdriver]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-11 08:33:45] INFO root fetch - processPackages [xj-finance]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-11 08:33:45] INFO root fetch - processPackages [deepdriver]: executing diffoscope
+[2023-04-11 08:33:45] INFO root fetch - processPackages [deepdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdriver-0.9.4.tar.gz tmp/deepdriver-0.9.5.tar.gz --markdown 20230411/d/deepdriver/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-11 08:33:45] INFO root fetch - processPackages [odoo-addon-pos-product-display-default-code]: Downloading https://files.pythonhosted.org/packages/eb/d3/03d28c4cec741b3db893f5c3601495efe51122979a0587e4ac4c39e00045/odoo_addon_pos_product_display_default_code-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-11 08:33:45] INFO root fetch - processPackages [xj-finance]: Downloading https://files.pythonhosted.org/packages/79/ee/ffee5d97341adf165b65013671f4fbcd6ac20cf148fe5cb3e17724fa215c/xj_finance-1.1.3.tar.gz
+[2023-04-11 08:33:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:45] INFO root fetch - processPackages [gl-webhooks]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-11 08:33:45] INFO root fetch - processPackages [xj-finance]: executing diffoscope
+[2023-04-11 08:33:45] INFO root fetch - processPackages [xj-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_finance-1.1.2.tar.gz tmp/xj_finance-1.1.3.tar.gz --markdown 20230411/x/xj-finance/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-11 08:33:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:45] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-11 08:33:45] INFO root fetch - processPackages [gl-webhooks]: Downloading https://files.pythonhosted.org/packages/09/25/f2c230ba6a57d4f487aa351df7e9c8176c62e1e4b54199dc398ce404e3f6/gl-webhooks-1.1.8.tar.gz
+[2023-04-11 08:33:45] INFO root fetch - processPackages [odoo-addon-pos-product-display-default-code]: Downloading https://files.pythonhosted.org/packages/66/5d/29f69092cffa92c79d38796d9a8040822325f38d5884c68d6618767a8a69/odoo_addon_pos_product_display_default_code-16.0.1.0.0.5-py3-none-any.whl
+[2023-04-11 08:33:45] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-11 08:33:45] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230411/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-11 08:33:46] INFO root fetch - processPackages [odoo-addon-pos-product-display-default-code]: executing diffoscope
+[2023-04-11 08:33:46] INFO root fetch - processPackages [odoo-addon-pos-product-display-default-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_product_display_default_code-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_pos_product_display_default_code-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-pos-product-display-default-code/16.0.1.0.0.3-16.0.1.0.0.5/diff.md --exclude *.pyd
+[2023-04-11 08:33:46] INFO root fetch - processPackages [gl-webhooks]: Downloading https://files.pythonhosted.org/packages/fc/93/358a231949131af2f285b58c3c17e2d8cbca12a9d0f00f4a37241ad737da/gl-webhooks-1.1.9.tar.gz
+[2023-04-11 08:33:46] INFO root fetch - processPackages [gl-webhooks]: executing diffoscope
+[2023-04-11 08:33:46] INFO root fetch - processPackages [gl-webhooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gl-webhooks-1.1.8.tar.gz tmp/gl-webhooks-1.1.9.tar.gz --markdown 20230411/g/gl-webhooks/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-11 08:33:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:33:51] INFO root fetch - main [MainThread]: Store serial: [17657027]
