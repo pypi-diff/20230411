@@ -20762,3 +20762,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 21:01:04] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:01:21] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:01:21] INFO root fetch - main [MainThread]: Store serial: [17665116]
+[2023-04-11 21:06:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17665116]
+[2023-04-11 21:06:30] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-11 21:06:30] INFO root fetch - processPackages [flet]: New version: [0.6.0.dev1299] Old Version: [0.6.0.dev1298]
+[2023-04-11 21:06:30] INFO root fetch - processPackages [rio-tiler-pds]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-11 21:06:30] INFO root fetch - processPackages [flet-core]: New version: [0.6.0.dev1299] Old Version: [0.6.0.dev1298]
+[2023-04-11 21:06:30] INFO root fetch - processPackages [airflow-provider-mlflow]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 21:06:30] INFO root fetch - processPackages [metaseg]: New version: [0.4.7] Old Version: [0.4.5]
+[2023-04-11 21:06:30] INFO root fetch - processPackages [rio-tiler-pds]: Downloading https://files.pythonhosted.org/packages/90/5d/dae544615b6b11388f3faf256ba1dc6019b611bd76675d0849fa56759150/rio-tiler-pds-0.7.0.tar.gz
+[2023-04-11 21:06:30] INFO root fetch - processPackages [flet-core]: Downloading https://files.pythonhosted.org/packages/ef/15/d4fa907a58259293b436eed8c7f200c89ad5c8bc73f9f154c7343de91488/flet_core-0.6.0.dev1299.tar.gz
+[2023-04-11 21:06:30] INFO root fetch - processPackages [airflow-provider-mlflow]: Downloading https://files.pythonhosted.org/packages/05/b9/3068dd38f7a0eaa5c6677f4c87a5f9f7c2b221333d195f36a1f4dcc6c66e/airflow-provider-mlflow-1.0.1.tar.gz
+[2023-04-11 21:06:30] INFO root fetch - processPackages [flet]: Downloading https://files.pythonhosted.org/packages/b8/ba/52e79d220018d5b71112c29dd9bb43c91c33d4e9b81d2c2cb9dfddb58e2d/flet-0.6.0.dev1299.tar.gz
+[2023-04-11 21:06:30] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/b4/15/c0ad402482a92f670433d97e6256ce7018334607e9a796cca18927f2df5e/metaseg-0.4.7.tar.gz
+[2023-04-11 21:06:30] INFO root fetch - processPackages [flet-core]: executing diffoscope
+[2023-04-11 21:06:30] INFO root fetch - processPackages [flet-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_core-0.6.0.dev1298.tar.gz tmp/flet_core-0.6.0.dev1299.tar.gz --markdown 20230411/f/flet-core/0.6.0.dev1298-0.6.0.dev1299/diff.md --exclude *.pyd
+[2023-04-11 21:06:30] INFO root fetch - processPackages [rio-tiler-pds]: Downloading https://files.pythonhosted.org/packages/f8/56/42f022859f5eba2cc2920259eaa1924a7dc4c0eb29e755e390dca75cf3b6/rio-tiler-pds-0.8.0.tar.gz
+[2023-04-11 21:06:30] INFO root fetch - processPackages [airflow-provider-mlflow]: executing diffoscope
+[2023-04-11 21:06:30] INFO root fetch - processPackages [airflow-provider-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-provider-mlflow-1.0.0.tar.gz tmp/airflow-provider-mlflow-1.0.1.tar.gz --markdown 20230411/a/airflow-provider-mlflow/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 21:06:30] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-11 21:06:30] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.4.5.tar.gz tmp/metaseg-0.4.7.tar.gz --markdown 20230411/m/metaseg/0.4.5-0.4.7/diff.md --exclude *.pyd
+[2023-04-11 21:06:30] INFO root fetch - processPackages [rio-tiler-pds]: executing diffoscope
+[2023-04-11 21:06:30] INFO root fetch - processPackages [rio-tiler-pds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio-tiler-pds-0.7.0.tar.gz tmp/rio-tiler-pds-0.8.0.tar.gz --markdown 20230411/r/rio-tiler-pds/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-11 21:06:31] INFO root fetch - processPackages [flet]: executing diffoscope
+[2023-04-11 21:06:31] INFO root fetch - processPackages [flet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet-0.6.0.dev1298.tar.gz tmp/flet-0.6.0.dev1299.tar.gz --markdown 20230411/f/flet/0.6.0.dev1298-0.6.0.dev1299/diff.md --exclude *.pyd
+[2023-04-11 21:06:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:32] INFO root fetch - processPackages [flet-pyodide]: New version: [0.6.0.dev1299] Old Version: [0.6.0.dev1298]
+[2023-04-11 21:06:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:32] INFO root fetch - processPackages [QualysPy]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-11 21:06:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:32] INFO root fetch - processPackages [flet-pyodide]: Downloading https://files.pythonhosted.org/packages/6a/b5/2705f3182e2c07debcc8d60230442023785663e2fbf430f3369ecdc94abf/flet_pyodide-0.6.0.dev1299.tar.gz
+[2023-04-11 21:06:32] INFO root fetch - processPackages [django-silly-auth]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-11 21:06:32] INFO root fetch - processPackages [QualysPy]: Downloading https://files.pythonhosted.org/packages/04/b7/fa5ac6de544ef4143f4f77bb6f46a2a657facb51bb5d40f465f1a0fdd086/qualyspy-0.2.4.tar.gz
+[2023-04-11 21:06:32] INFO root fetch - processPackages [django-silly-auth]: Downloading https://files.pythonhosted.org/packages/cd/53/5252d00f9a51756532af6d3bc39026eb9a6eb2d488522a6b3d6b42eb0cbd/django-silly-auth-1.0.3.tar.gz
+[2023-04-11 21:06:32] INFO root fetch - processPackages [flet-pyodide]: executing diffoscope
+[2023-04-11 21:06:32] INFO root fetch - processPackages [flet-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_pyodide-0.6.0.dev1298.tar.gz tmp/flet_pyodide-0.6.0.dev1299.tar.gz --markdown 20230411/f/flet-pyodide/0.6.0.dev1298-0.6.0.dev1299/diff.md --exclude *.pyd
+[2023-04-11 21:06:32] INFO root fetch - processPackages [django-silly-auth]: executing diffoscope
+[2023-04-11 21:06:32] INFO root fetch - processPackages [django-silly-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-silly-auth-1.0.2.tar.gz tmp/django-silly-auth-1.0.3.tar.gz --markdown 20230411/d/django-silly-auth/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-11 21:06:32] INFO root fetch - processPackages [QualysPy]: executing diffoscope
+[2023-04-11 21:06:32] INFO root fetch - processPackages [QualysPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualyspy-0.2.3.tar.gz tmp/qualyspy-0.2.4.tar.gz --markdown 20230411/Q/QualysPy/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-11 21:06:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:33] WARNING root fetch - processPackages [deep-tracking]: Skipping, unable to determine old version
+[2023-04-11 21:06:33] INFO root fetch - main [MainThread]: error
+[2023-04-11 21:06:33] INFO root fetch - processPackages [meter-gear]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-11 21:06:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:33] INFO root fetch - processPackages [dojo-truant]: New version: [2023.4.7.3] Old Version: [2023.4.7.2]
+[2023-04-11 21:06:33] INFO root fetch - processPackages [dojo-truant]: executing diffoscope
+[2023-04-11 21:06:33] INFO root fetch - processPackages [dojo-truant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dojo_truant-2023.4.7.2.tar.gz tmp/dojo_truant-2023.4.7.3.tar.gz --markdown 20230411/d/dojo-truant/2023.4.7.2-2023.4.7.3/diff.md --exclude *.pyd
+[2023-04-11 21:06:33] INFO root fetch - processPackages [meter-gear]: executing diffoscope
+[2023-04-11 21:06:33] INFO root fetch - processPackages [meter-gear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meter-gear-1.2.8.tar.gz tmp/meter-gear-1.2.9.tar.gz --markdown 20230411/m/meter-gear/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-11 21:06:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:33] INFO root fetch - processPackages [altb]: New version: [0.5.1] Old Version: [0.4.5]
+[2023-04-11 21:06:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:33] WARNING root fetch - processPackages [firecli]: Skipping, unable to determine old version
+[2023-04-11 21:06:33] INFO root fetch - main [MainThread]: error
+[2023-04-11 21:06:34] INFO root fetch - processPackages [clipped]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 21:06:34] INFO root fetch - processPackages [clipped]: executing diffoscope
+[2023-04-11 21:06:34] INFO root fetch - processPackages [clipped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipped-0.0.2.tar.gz tmp/clipped-0.0.3.tar.gz --markdown 20230411/c/clipped/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 21:06:34] INFO root fetch - processPackages [altb]: Downloading https://files.pythonhosted.org/packages/80/7c/80b33b52694f6713c1bb3b011d629d958da8b17d96769a762186f2c292bd/altb-0.4.5.tar.gz
+[2023-04-11 21:06:34] INFO root fetch - processPackages [altb]: Downloading https://files.pythonhosted.org/packages/83/a7/6adbb99be2de484b6a7d9f807052f0ad8b3a3d7d69e25bded048eba0de5a/altb-0.5.1.tar.gz
+[2023-04-11 21:06:34] INFO root fetch - processPackages [altb]: executing diffoscope
+[2023-04-11 21:06:34] INFO root fetch - processPackages [altb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altb-0.4.5.tar.gz tmp/altb-0.5.1.tar.gz --markdown 20230411/a/altb/0.4.5-0.5.1/diff.md --exclude *.pyd
+[2023-04-11 21:06:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:34] INFO root fetch - processPackages [ansible-anonymizer]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-11 21:06:34] INFO root fetch - processPackages [ansible-anonymizer]: executing diffoscope
+[2023-04-11 21:06:34] INFO root fetch - processPackages [ansible-anonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-anonymizer-1.1.3.tar.gz tmp/ansible-anonymizer-1.1.4.tar.gz --markdown 20230411/a/ansible-anonymizer/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-11 21:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:06:36] INFO root fetch - main [MainThread]: Store serial: [17665170]
