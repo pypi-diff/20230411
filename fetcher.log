@@ -4921,3 +4921,131 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-11 05:07:06] INFO root fetch - main [MainThread]: success
 [2023-04-11 05:07:07] INFO root fetch - main [MainThread]: success
 [2023-04-11 05:07:07] INFO root fetch - main [MainThread]: Store serial: [17654522]
+[2023-04-11 05:12:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17654522]
+[2023-04-11 05:12:14] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 05:12:15] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: New version: [16.0.1.0.2.2] Old Version: [16.0.1.0.2]
+[2023-04-11 05:12:15] WARNING root fetch - processPackages [obsutil]: Skipping, unable to determine old version
+[2023-04-11 05:12:15] INFO root fetch - main [MainThread]: error
+[2023-04-11 05:12:15] INFO root fetch - processPackages [cujirax]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-11 05:12:15] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230411] Old Version: [0.0.16.dev20230410]
+[2023-04-11 05:12:15] INFO root fetch - processPackages [mystring]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 05:12:15] INFO root fetch - processPackages [UtilsRL]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-04-11 05:12:15] INFO root fetch - processPackages [mystring]: executing diffoscope
+[2023-04-11 05:12:15] INFO root fetch - processPackages [mystring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystring-0.0.8.tar.gz tmp/mystring-0.0.9.tar.gz --markdown 20230411/m/mystring/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 05:12:15] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: Downloading https://files.pythonhosted.org/packages/ac/fd/c111ba60bfa5454bb20e89a1c61aa07d7f06ad058aa0090052a265b49a5a/odoo_addon_account_reconcile_oca-16.0.1.0.2-py3-none-any.whl
+[2023-04-11 05:12:15] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/99/fd/d71d7f89f10f583f6838f4d2751cca914e9afa6b659b4f93995a4be4307a/GANDLF-0.0.16.dev20230411.tar.gz
+[2023-04-11 05:12:15] INFO root fetch - processPackages [cujirax]: Downloading https://files.pythonhosted.org/packages/60/27/51c05f71e375da73bd82d9618cbfdd993dd8cb7783b889853e9c48c6005b/cujirax-0.5.8.tar.gz
+[2023-04-11 05:12:15] INFO root fetch - processPackages [UtilsRL]: Downloading https://files.pythonhosted.org/packages/ac/09/fd0a43d79349173da3e333709bd2f94713872abb4bd831ba05c06a107c2d/UtilsRL-0.5.5.tar.gz
+[2023-04-11 05:12:15] INFO root fetch - processPackages [UtilsRL]: Downloading https://files.pythonhosted.org/packages/db/70/591560055b91e4bb2b898752eada4810bc8870905844d54fe70f93a8cf0d/UtilsRL-0.5.6.tar.gz
+[2023-04-11 05:12:15] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: Downloading https://files.pythonhosted.org/packages/ec/7d/a3dd17e5c523a8b2fcb50e86869a0fa88c2e34ae2ac633ac9c6b0657a399/odoo_addon_account_reconcile_oca-16.0.1.0.2.2-py3-none-any.whl
+[2023-04-11 05:12:15] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: executing diffoscope
+[2023-04-11 05:12:15] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_reconcile_oca-16.0.1.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_reconcile_oca-16.0.1.0.2.2-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-account-reconcile-oca/16.0.1.0.2-16.0.1.0.2.2/diff.md --exclude *.pyd
+[2023-04-11 05:12:15] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-04-11 05:12:15] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230410.tar.gz tmp/GANDLF-0.0.16.dev20230411.tar.gz --markdown 20230411/G/GANDLF/0.0.16.dev20230410-0.0.16.dev20230411/diff.md --exclude *.pyd
+[2023-04-11 05:12:15] INFO root fetch - processPackages [UtilsRL]: executing diffoscope
+[2023-04-11 05:12:15] INFO root fetch - processPackages [UtilsRL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UtilsRL-0.5.5.tar.gz tmp/UtilsRL-0.5.6.tar.gz --markdown 20230411/U/UtilsRL/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-04-11 05:12:15] INFO root fetch - processPackages [cujirax]: Downloading https://files.pythonhosted.org/packages/eb/bb/e71f7393a1f8c7bc6c248ef4289c11d109324be654ed663980dc2d4dde0c/cujirax-0.5.9.tar.gz
+[2023-04-11 05:12:15] INFO root fetch - processPackages [cujirax]: executing diffoscope
+[2023-04-11 05:12:15] INFO root fetch - processPackages [cujirax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cujirax-0.5.8.tar.gz tmp/cujirax-0.5.9.tar.gz --markdown 20230411/c/cujirax/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-11 05:12:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 05:12:16] INFO root fetch - processPackages [ai-transform]: New version: [0.30.3] Old Version: [0.30.2]
+[2023-04-11 05:12:16] INFO root fetch - processPackages [ai-transform]: Downloading https://files.pythonhosted.org/packages/df/b2/eb3b1c698f5e4820e7342510f2f345958717cfc13c766c3198138fc8ae5d/ai_transform-0.30.2.tar.gz
+[2023-04-11 05:12:16] INFO root fetch - processPackages [ai-transform]: Downloading https://files.pythonhosted.org/packages/4c/d0/6fb57194a548ed0d5a41103d6b41f27c026f73484f5cbbae1918602d9434/ai_transform-0.30.3.tar.gz
+[2023-04-11 05:12:16] INFO root fetch - processPackages [ai-transform]: executing diffoscope
+[2023-04-11 05:12:16] INFO root fetch - processPackages [ai-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_transform-0.30.2.tar.gz tmp/ai_transform-0.30.3.tar.gz --markdown 20230411/a/ai-transform/0.30.2-0.30.3/diff.md --exclude *.pyd
+[2023-04-11 05:12:16] INFO root fetch - main [MainThread]: success
+[2023-04-11 05:12:16] INFO root fetch - processPackages [icetcore]: New version: [6.2.9] Old Version: [6.2.8]
+[2023-04-11 05:12:17] INFO root fetch - processPackages [icetcore]: executing diffoscope
+[2023-04-11 05:12:17] INFO root fetch - processPackages [icetcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icetcore-6.2.8-py3-none-any.whl.zip tmp/icetcore-6.2.9.tar.gz --markdown 20230411/i/icetcore/6.2.8-6.2.9/diff.md --exclude *.pyd
+[2023-04-11 05:12:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 05:12:17] INFO root fetch - processPackages [types-Pygments]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-04-11 05:12:17] INFO root fetch - processPackages [types-Pygments]: Downloading https://files.pythonhosted.org/packages/c9/56/b2ad30fcb1d8adc4eecfa5a32fa94dd044da60de58ab44120bd3503a3074/types-Pygments-2.9.8.tar.gz
+[2023-04-11 05:12:17] INFO root fetch - main [MainThread]: success
+[2023-04-11 05:12:17] INFO root fetch - processPackages [arkdriver]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 05:12:17] INFO root fetch - processPackages [arkdriver]: Downloading https://files.pythonhosted.org/packages/fc/07/bbb2e4f0042e5c0c25db38911dd89d60c147d1044392120aa839e3b15c25/arkdriver-0.1.8.tar.gz
+[2023-04-11 05:12:17] WARNING root fetch - processPackages [arkdriver]: Skipping package: exceeds size limit 23411222>=10485760
+[2023-04-11 05:12:17] INFO root fetch - main [MainThread]: error
+[2023-04-11 05:12:18] INFO root fetch - processPackages [types-Pygments]: Downloading https://files.pythonhosted.org/packages/a5/78/069a5801bd89176dcd3bafc8423c87aba8533725658bd19d7c34284a4e9d/types-Pygments-2.9.9.tar.gz
+[2023-04-11 05:12:18] INFO root fetch - processPackages [types-Pygments]: executing diffoscope
+[2023-04-11 05:12:18] INFO root fetch - processPackages [types-Pygments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-Pygments-2.9.8.tar.gz tmp/types-Pygments-2.9.9.tar.gz --markdown 20230411/t/types-Pygments/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-04-11 05:12:18] ERROR root fetch - processPackages [icetcore]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 138, in feeder
+    raise subprocess.CalledProcessError(
+subprocess.CalledProcessError: Command '['zipinfo {}']' returned non-zero exit status 9.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid start byte
+
+[2023-04-11 05:12:18] INFO root fetch - main [MainThread]: error
+[2023-04-11 05:12:18] INFO root fetch - main [MainThread]: success
+[2023-04-11 05:12:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 05:12:19] INFO root fetch - main [MainThread]: success
+[2023-04-11 05:12:19] INFO root fetch - main [MainThread]: Store serial: [17654583]
