@@ -11996,3 +11996,98 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 11:45:34] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:45:35] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:45:35] INFO root fetch - main [MainThread]: Store serial: [17659028]
+[2023-04-11 11:50:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659028]
+[2023-04-11 11:50:43] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-11 11:50:43] INFO root fetch - processPackages [kaflow]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-11 11:50:43] INFO root fetch - processPackages [polyfactory]: New version: [1.0.0a1] Old Version: [1.0.0a0]
+[2023-04-11 11:50:43] INFO root fetch - processPackages [griffon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 11:50:43] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304110949] Old Version: [1.0.202304110027]
+[2023-04-11 11:50:43] INFO root fetch - processPackages [alibabacloud-dingtalk]: New version: [1.5.63] Old Version: [1.5.62]
+[2023-04-11 11:50:43] INFO root fetch - processPackages [griffon]: executing diffoscope
+[2023-04-11 11:50:43] INFO root fetch - processPackages [griffon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffon-0.1.8.tar.gz tmp/griffon-0.1.9.tar.gz --markdown 20230411/g/griffon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 11:50:43] INFO root fetch - processPackages [polyfactory]: Downloading https://files.pythonhosted.org/packages/1a/c9/23406e52721fd24cdef67b638e1512807b6efd72a1b32bc698af314a8a76/polyfactory-1.0.0a0.tar.gz
+[2023-04-11 11:50:43] INFO root fetch - processPackages [alibabacloud-dingtalk]: Downloading https://files.pythonhosted.org/packages/63/ea/62deb656ab0448be670f8ab85595c956bd2be99123593e274b0ae702ac50/alibabacloud_dingtalk-1.5.62.tar.gz
+[2023-04-11 11:50:43] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/c5/61/9aee3a64ab78b40d264ea30dc2f459bfbda5f684f96aabee8576d3620e71/mb_pytorch-1.0.202304110949-py3-none-any.whl
+[2023-04-11 11:50:43] INFO root fetch - processPackages [kaflow]: Downloading https://files.pythonhosted.org/packages/d2/73/bc39da9b7224285f9ed3cafe5c25044326092a5d4404f8b7dbcc665d9885/kaflow-0.1.4.tar.gz
+[2023-04-11 11:50:43] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-11 11:50:43] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304110027-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304110949-py3-none-any.whl.zip --markdown 20230411/m/mb-pytorch/1.0.202304110027-1.0.202304110949/diff.md --exclude *.pyd
+[2023-04-11 11:50:43] INFO root fetch - processPackages [kaflow]: executing diffoscope
+[2023-04-11 11:50:43] INFO root fetch - processPackages [kaflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaflow-0.1.3.tar.gz tmp/kaflow-0.1.4.tar.gz --markdown 20230411/k/kaflow/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-11 11:50:43] INFO root fetch - processPackages [polyfactory]: Downloading https://files.pythonhosted.org/packages/9a/cc/13fa37f0e6b12d43d545ea821477b3d798ea8d3e207ef10cdb08c922a4b9/polyfactory-1.0.0a1.tar.gz
+[2023-04-11 11:50:43] INFO root fetch - processPackages [alibabacloud-dingtalk]: Downloading https://files.pythonhosted.org/packages/b5/56/002566d6acc5a2c52405d9ea0d0d1bd064f7bc6c7d0fb9b5d825dec85ff5/alibabacloud_dingtalk-1.5.63.tar.gz
+[2023-04-11 11:50:43] INFO root fetch - processPackages [alibabacloud-dingtalk]: executing diffoscope
+[2023-04-11 11:50:43] INFO root fetch - processPackages [alibabacloud-dingtalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dingtalk-1.5.62.tar.gz tmp/alibabacloud_dingtalk-1.5.63.tar.gz --markdown 20230411/a/alibabacloud-dingtalk/1.5.62-1.5.63/diff.md --exclude *.pyd
+[2023-04-11 11:50:43] INFO root fetch - processPackages [polyfactory]: executing diffoscope
+[2023-04-11 11:50:43] INFO root fetch - processPackages [polyfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyfactory-1.0.0a0.tar.gz tmp/polyfactory-1.0.0a1.tar.gz --markdown 20230411/p/polyfactory/1.0.0a0-1.0.0a1/diff.md --exclude *.pyd
+[2023-04-11 11:50:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:44] INFO root fetch - processPackages [collection-framework-taa]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 11:50:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:44] INFO root fetch - processPackages [secure-bucket-construct]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-04-11 11:50:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:44] INFO root fetch - processPackages [nvosscript]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-11 11:50:44] INFO root fetch - processPackages [collection-framework-taa]: Downloading https://files.pythonhosted.org/packages/cf/22/b4f83eadfef585a715712a0c0841ff5fc044f3a8088cf05f4c6ab0b94075/collection_framework_taa-0.0.3.tar.gz
+[2023-04-11 11:50:44] INFO root fetch - processPackages [secure-bucket-construct]: Downloading https://files.pythonhosted.org/packages/36/2c/4f25fb49a8dcf11725f249ceced4d4cd7915cd625d8d2f659fce27ada6a9/secure-bucket-construct-2.1.8.tar.gz
+[2023-04-11 11:50:44] INFO root fetch - processPackages [collection-framework-taa]: executing diffoscope
+[2023-04-11 11:50:44] INFO root fetch - processPackages [collection-framework-taa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/collection_framework_taa-0.0.2.tar.gz tmp/collection_framework_taa-0.0.3.tar.gz --markdown 20230411/c/collection-framework-taa/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 11:50:44] INFO root fetch - processPackages [nvosscript]: Downloading https://files.pythonhosted.org/packages/8a/47/a398e5939d97281d281ab6ca06b2edfd6d7130fb0572cb0359b42ef59f4b/nvosscript-1.1.8.tar.gz
+[2023-04-11 11:50:44] INFO root fetch - processPackages [nvosscript]: executing diffoscope
+[2023-04-11 11:50:44] INFO root fetch - processPackages [nvosscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvosscript-1.1.7.tar.gz tmp/nvosscript-1.1.8.tar.gz --markdown 20230411/n/nvosscript/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-11 11:50:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:45] INFO root fetch - processPackages [stronger-password-package]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-11 11:50:45] INFO root fetch - processPackages [secure-bucket-construct]: Downloading https://files.pythonhosted.org/packages/61/93/ae4154ba1da46576bb64b498ef477474d7f96ec26782e1df0132647afd99/secure-bucket-construct-2.1.9.tar.gz
+[2023-04-11 11:50:45] INFO root fetch - processPackages [stronger-password-package]: Downloading https://files.pythonhosted.org/packages/db/8e/353a4c04a0cd4f03b66b2b3791a3d6b1b58c6885467553a832d754e12c78/stronger%20password%20package-1.0.2.tar.gz
+[2023-04-11 11:50:45] INFO root fetch - processPackages [secure-bucket-construct]: executing diffoscope
+[2023-04-11 11:50:45] INFO root fetch - processPackages [secure-bucket-construct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secure-bucket-construct-2.1.8.tar.gz tmp/secure-bucket-construct-2.1.9.tar.gz --markdown 20230411/s/secure-bucket-construct/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-04-11 11:50:45] INFO root fetch - processPackages [stronger-password-package]: Downloading https://files.pythonhosted.org/packages/24/64/f016ee5b1b0c8007585f8c6c805113112e9115c079f8108a7091566d03fc/stronger%20password%20package-1.0.3.tar.gz
+[2023-04-11 11:50:45] INFO root fetch - processPackages [stronger-password-package]: executing diffoscope
+[2023-04-11 11:50:45] INFO root fetch - processPackages [stronger-password-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stronger password package-1.0.2.tar.gz tmp/stronger password package-1.0.3.tar.gz --markdown 20230411/s/stronger-password-package/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-11 11:50:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:45] INFO root fetch - processPackages [stronger-password-package]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-11 11:50:46] INFO root fetch - processPackages [stronger-password-package]: executing diffoscope
+[2023-04-11 11:50:46] INFO root fetch - processPackages [stronger-password-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stronger password package-1.0.2.tar.gz tmp/stronger password package-1.0.3.tar.gz --markdown 20230411/s/stronger-password-package/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-11 11:50:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:46] INFO root fetch - processPackages [stronger-password-package]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-11 11:50:46] INFO root fetch - processPackages [stronger-password-package]: executing diffoscope
+[2023-04-11 11:50:46] INFO root fetch - processPackages [stronger-password-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stronger password package-1.0.2.tar.gz tmp/stronger password package-1.0.3.tar.gz --markdown 20230411/s/stronger-password-package/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-11 11:50:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:46] INFO root fetch - processPackages [django-cradmin]: New version: [9.2.0] Old Version: [9.1.0]
+[2023-04-11 11:50:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:47] INFO root fetch - processPackages [lcapy]: New version: [1.9.1] Old Version: [1.9]
+[2023-04-11 11:50:47] INFO root fetch - processPackages [django-cradmin]: executing diffoscope
+[2023-04-11 11:50:47] INFO root fetch - processPackages [django-cradmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cradmin-9.1.0.tar.gz tmp/django-cradmin-9.2.0.tar.gz --markdown 20230411/d/django-cradmin/9.1.0-9.2.0/diff.md --exclude *.pyd
+[2023-04-11 11:50:47] INFO root fetch - processPackages [lcapy]: Downloading https://files.pythonhosted.org/packages/2c/f0/54cd6070f09dfebf91290600c1a22606d2e1528ed532f69bf71067b838f0/lcapy-1.9.tar.gz
+[2023-04-11 11:50:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:47] INFO root fetch - processPackages [valueguard]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-11 11:50:47] INFO root fetch - processPackages [layerx-sdk-beta]: New version: [1.0.9b2] Old Version: [1.0.9b1]
+[2023-04-11 11:50:47] INFO root fetch - processPackages [valueguard]: Downloading https://files.pythonhosted.org/packages/0b/17/d2baf6ccf7bfde267d617760a55433402cd8d18b6ba0c221c6c6c3bbd681/valueguard-0.1.3.tar.gz
+[2023-04-11 11:50:47] INFO root fetch - processPackages [layerx-sdk-beta]: executing diffoscope
+[2023-04-11 11:50:47] INFO root fetch - processPackages [layerx-sdk-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layerx-sdk-beta-1.0.9b1.tar.gz tmp/layerx-sdk-beta-1.0.9b2.tar.gz --markdown 20230411/l/layerx-sdk-beta/1.0.9b1-1.0.9b2/diff.md --exclude *.pyd
+[2023-04-11 11:50:47] INFO root fetch - processPackages [lcapy]: Downloading https://files.pythonhosted.org/packages/a5/d9/dab72456450c501743169a0e3f18050943fb6d589dc163d95440a5ded2e2/lcapy-1.9.1.tar.gz
+[2023-04-11 11:50:47] INFO root fetch - processPackages [valueguard]: Downloading https://files.pythonhosted.org/packages/81/2f/8d44fb8b564b14030b2a3fc1e9c1781f7f2038a1cc73a42ab3c5c6f3d551/valueguard-0.2.0.tar.gz
+[2023-04-11 11:50:47] INFO root fetch - processPackages [valueguard]: executing diffoscope
+[2023-04-11 11:50:47] INFO root fetch - processPackages [valueguard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valueguard-0.1.3.tar.gz tmp/valueguard-0.2.0.tar.gz --markdown 20230411/v/valueguard/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-11 11:50:48] INFO root fetch - processPackages [lcapy]: executing diffoscope
+[2023-04-11 11:50:48] INFO root fetch - processPackages [lcapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcapy-1.9.tar.gz tmp/lcapy-1.9.1.tar.gz --markdown 20230411/l/lcapy/1.9-1.9.1/diff.md --exclude *.pyd
+[2023-04-11 11:50:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:48] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.9] Old Version: [3.3.8]
+[2023-04-11 11:50:48] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-04-11 11:50:48] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.8-py3-none-any.whl.zip tmp/ScriptCollection-3.3.9-py3-none-any.whl.zip --markdown 20230411/S/ScriptCollection/3.3.8-3.3.9/diff.md --exclude *.pyd
+[2023-04-11 11:50:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:48] INFO root fetch - processPackages [gmltools]: New version: [0.0.41] Old Version: [0.0.40]
+[2023-04-11 11:50:49] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/18/b3/27409c5c4b0bdf9b9912c1bf44549003c9c5ac1c83fa81791042dc06ea08/gmltools-0.0.40.tar.gz
+[2023-04-11 11:50:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:49] INFO root fetch - processPackages [apphelpers]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-11 11:50:49] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/c8/45/cf030729282e1a136d2944251973e02c72686fb52006503f9b7056292d89/gmltools-0.0.41.tar.gz
+[2023-04-11 11:50:49] INFO root fetch - processPackages [apphelpers]: Downloading https://files.pythonhosted.org/packages/47/49/4c7dd32dd7e28a68392fc063d9e8ffc309e9621abe6ff53a6b3465cb601c/apphelpers-0.9.1.tar.gz
+[2023-04-11 11:50:49] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-11 11:50:49] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.40.tar.gz tmp/gmltools-0.0.41.tar.gz --markdown 20230411/g/gmltools/0.0.40-0.0.41/diff.md --exclude *.pyd
+[2023-04-11 11:50:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:49] INFO root fetch - processPackages [apphelpers]: Downloading https://files.pythonhosted.org/packages/82/45/8767a258a28a0bb1f9a3c1a785ca493a563dd385fcbd8d6d30891ae64e4a/apphelpers-0.9.2.tar.gz
+[2023-04-11 11:50:50] INFO root fetch - processPackages [apphelpers]: executing diffoscope
+[2023-04-11 11:50:50] INFO root fetch - processPackages [apphelpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apphelpers-0.9.1.tar.gz tmp/apphelpers-0.9.2.tar.gz --markdown 20230411/a/apphelpers/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-11 11:50:50] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:50:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:51:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:51:00] INFO root fetch - main [MainThread]: Store serial: [17659081]
