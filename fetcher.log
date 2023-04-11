@@ -1281,3 +1281,93 @@
 [2023-04-11 02:05:40] INFO root fetch - processPackages [dacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dacy-2.4.2.tar.gz tmp/dacy-2.5.0.tar.gz --markdown 20230411/d/dacy/2.4.2-2.5.0/diff.md --exclude *.pyd
 [2023-04-11 02:05:43] INFO root fetch - main [MainThread]: success
 [2023-04-11 02:05:43] INFO root fetch - main [MainThread]: Store serial: [17651924]
+[2023-04-11 02:10:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17651924]
+[2023-04-11 02:10:50] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-11 02:10:50] INFO root fetch - processPackages [questions]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-04-11 02:10:50] INFO root fetch - processPackages [notionshell]: New version: [0.2] Old Version: [0.1]
+[2023-04-11 02:10:50] INFO root fetch - processPackages [arkdata]: New version: [0.0.47] Old Version: [0.0.46]
+[2023-04-11 02:10:50] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-04-11 02:10:50] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc1.dev20230411] Old Version: [3.0.0rc1.dev20230410]
+[2023-04-11 02:10:50] INFO root fetch - processPackages [questions]: Downloading https://files.pythonhosted.org/packages/73/60/a1396d8b2277f229fabf56323ebdf6c4195edd224c0e19023518c21c9104/questions-0.7.1.tar.gz
+[2023-04-11 02:10:50] INFO root fetch - processPackages [notionshell]: Downloading https://files.pythonhosted.org/packages/e7/0a/3c208b76d9571fc696fdac7959cc19bd7c0af8960013b67bb1128884e399/notionshell-0.1.tar.gz
+[2023-04-11 02:10:50] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/4d/6e/ecbe18491b71088d1c1905434d5fa8e4455afee29a28563abb86c42e2fe4/arkdata-0.0.47.tar.gz
+[2023-04-11 02:10:51] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/c4/8f/02ac559bd2a8bf9cc183b17d56293b4a258283c9ece0ca2683fb6cf38e44/openbb_nightly-3.0.0rc1.dev20230410.tar.gz
+[2023-04-11 02:10:51] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-04-11 02:10:51] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230411/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-04-11 02:10:51] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-11 02:10:51] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-0.0.46.tar.gz tmp/arkdata-0.0.47.tar.gz --markdown 20230411/a/arkdata/0.0.46-0.0.47/diff.md --exclude *.pyd
+[2023-04-11 02:10:51] INFO root fetch - processPackages [questions]: Downloading https://files.pythonhosted.org/packages/35/b0/cf10e034bb8815434e28c947f24297ff08b888b9585a1d8c6f8ae09831e4/questions-0.8.0.tar.gz
+[2023-04-11 02:10:51] INFO root fetch - processPackages [notionshell]: Downloading https://files.pythonhosted.org/packages/9a/e9/ba976defafae13ddcdeeeaedda7cbff137e23d957e1d8030c03a0ab1e256/notionshell-0.2.tar.gz
+[2023-04-11 02:10:51] INFO root fetch - processPackages [notionshell]: executing diffoscope
+[2023-04-11 02:10:51] INFO root fetch - processPackages [notionshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notionshell-0.1.tar.gz tmp/notionshell-0.2.tar.gz --markdown 20230411/n/notionshell/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-11 02:10:51] INFO root fetch - processPackages [questions]: executing diffoscope
+[2023-04-11 02:10:51] INFO root fetch - processPackages [questions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/questions-0.7.1.tar.gz tmp/questions-0.8.0.tar.gz --markdown 20230411/q/questions/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2023-04-11 02:10:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:52] INFO root fetch - processPackages [warp-lang]: New version: [0.8.0] Old Version: [0.7.2]
+[2023-04-11 02:10:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:52] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-11 02:10:52] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Downloading https://files.pythonhosted.org/packages/df/6c/78f1bfa2ffc81709ec21b0077aff92b7460ad1f071d595e2d767653cedc0/cdklabs.codepipeline-extensions-0.0.98.tar.gz
+[2023-04-11 02:10:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:52] INFO root fetch - processPackages [e2eAIOK-denas]: New version: [1.0.1b2023041100] Old Version: [1.0.1b2023040800]
+[2023-04-11 02:10:52] INFO root fetch - processPackages [warp-lang]: Downloading https://files.pythonhosted.org/packages/94/ce/404891f352927d8db7c8195fbe253e09631b21e4ef1f7819e5c7532daf3b/warp-lang-0.7.2.tar.gz
+[2023-04-11 02:10:52] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:52] INFO root fetch - processPackages [pyarmor.cli.runtime]: New version: [2.1.dev9] Old Version: [2.1.dev8]
+[2023-04-11 02:10:53] INFO root fetch - processPackages [e2eAIOK-denas]: Downloading https://files.pythonhosted.org/packages/a6/d1/31383c0b752d020555f913c97206d8945fba6271c894ae29ea21cedc53b8/e2eAIOK_denas-1.0.1b2023041100-py3-none-any.whl
+[2023-04-11 02:10:53] INFO root fetch - processPackages [pyarmor.cli.runtime]: executing diffoscope
+[2023-04-11 02:10:53] INFO root fetch - processPackages [pyarmor.cli.runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyarmor.cli.runtime-2.1.dev8-cp39-none-any.whl.zip tmp/pyarmor.cli.runtime-2.1.dev9-cp39-none-any.whl.zip --markdown 20230411/p/pyarmor.cli.runtime/2.1.dev8-2.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 02:10:53] WARNING root fetch - processPackages [cdklabs.codepipeline-extensions]: Skipping package: exceeds size limit 12637726>=10485760
+[2023-04-11 02:10:53] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:10:53] INFO root fetch - processPackages [headless]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-04-11 02:10:53] WARNING root fetch - processPackages [warp-lang]: Skipping package: exceeds size limit 44704617>=10485760
+[2023-04-11 02:10:53] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:10:53] INFO root fetch - processPackages [headless]: executing diffoscope
+[2023-04-11 02:10:53] INFO root fetch - processPackages [headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-2.0.0a8.tar.gz tmp/headless-2.0.0a9.tar.gz --markdown 20230411/h/headless/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-04-11 02:10:53] INFO root fetch - processPackages [e2eAIOK-denas]: executing diffoscope
+[2023-04-11 02:10:53] INFO root fetch - processPackages [e2eAIOK-denas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e2eAIOK_denas-1.0.1b2023040800-py3-none-any.whl.zip tmp/e2eAIOK_denas-1.0.1b2023041100-py3-none-any.whl.zip --markdown 20230411/e/e2eAIOK-denas/1.0.1b2023040800-1.0.1b2023041100/diff.md --exclude *.pyd
+[2023-04-11 02:10:53] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2023-04-11 02:10:53] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2023-04-11 02:10:53] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2023-04-11 02:10:54] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2023-04-11 02:10:54] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20230411/s/sqlglot/9.0.5-9.0.6/diff.md --exclude *.pyd
+[2023-04-11 02:10:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:54] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304110012] Old Version: [1.0.202304101942]
+[2023-04-11 02:10:54] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/81/c6/bdfcea859e825ab012531f0cd5e410694113530856dcec3bc0974ef1f50b/mb_pytorch-1.0.202304110012-py3-none-any.whl
+[2023-04-11 02:10:54] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-11 02:10:54] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304101942-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304110012-py3-none-any.whl.zip --markdown 20230411/m/mb-pytorch/1.0.202304101942-1.0.202304110012/diff.md --exclude *.pyd
+[2023-04-11 02:10:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:55] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 02:10:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:55] INFO root fetch - processPackages [notionshell]: New version: [0.3] Old Version: [0.2]
+[2023-04-11 02:10:55] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 02:10:55] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 02:10:55] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/8a/ef/3a913fe621a78779e344b1d89cab10349e47fe927aaa12a82bdd16df4792/openbb_nightly-3.0.0rc1.dev20230411.tar.gz
+[2023-04-11 02:10:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:55] INFO root fetch - processPackages [notionshell]: Downloading https://files.pythonhosted.org/packages/22/82/ff0c8926ef6ac45787ce7f94b89b3bf511595b496c3f7a118d71e687165f/notionshell-0.3.tar.gz
+[2023-04-11 02:10:55] INFO root fetch - processPackages [wtt02]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 02:10:55] INFO root fetch - processPackages [notionshell]: executing diffoscope
+[2023-04-11 02:10:55] INFO root fetch - processPackages [notionshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notionshell-0.2.tar.gz tmp/notionshell-0.3.tar.gz --markdown 20230411/n/notionshell/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-11 02:10:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:55] INFO root fetch - processPackages [notionshell]: New version: [0.3] Old Version: [0.2]
+[2023-04-11 02:10:55] INFO root fetch - processPackages [wtt02]: Downloading https://files.pythonhosted.org/packages/47/b5/e991901a76515c9f584eaf7db03dbf0258bd39cb3cfe2631bdf5aa9c60c5/wtt02-0.2.2.tar.gz
+[2023-04-11 02:10:56] INFO root fetch - processPackages [notionshell]: executing diffoscope
+[2023-04-11 02:10:56] INFO root fetch - processPackages [notionshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notionshell-0.2.tar.gz tmp/notionshell-0.3.tar.gz --markdown 20230411/n/notionshell/0.2-0.3/diff.md --exclude *.pyd
+[2023-04-11 02:10:56] INFO root fetch - processPackages [wtt02]: executing diffoscope
+[2023-04-11 02:10:56] INFO root fetch - processPackages [wtt02]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtt02-0.2.1.tar.gz tmp/wtt02-0.2.2.tar.gz --markdown 20230411/w/wtt02/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 02:10:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:56] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.5.0.dev20230410] Old Version: [0.5.0.dev20230409]
+[2023-04-11 02:10:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:57] WARNING root fetch - processPackages [jarvis-toolkit]: Skipping, unable to determine old version
+[2023-04-11 02:10:57] INFO root fetch - main [MainThread]: error
+[2023-04-11 02:10:57] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:57] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.93] Old Version: [1.1.92]
+[2023-04-11 02:10:57] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2023-04-11 02:10:57] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-ignite-0.5.0.dev20230409.tar.gz tmp/pytorch-ignite-0.5.0.dev20230410.tar.gz --markdown 20230411/p/pytorch-ignite/0.5.0.dev20230409-0.5.0.dev20230410/diff.md --exclude *.pyd
+[2023-04-11 02:10:57] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2023-04-11 02:10:57] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.92.tar.gz tmp/cdk-skylight-1.1.93.tar.gz --markdown 20230411/c/cdk-skylight/1.1.92-1.1.93/diff.md --exclude *.pyd
+[2023-04-11 02:10:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:10:58] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:11:00] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-04-11 02:11:00] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc1.dev20230410.tar.gz tmp/openbb_nightly-3.0.0rc1.dev20230411.tar.gz --markdown 20230411/o/openbb-nightly/3.0.0rc1.dev20230410-3.0.0rc1.dev20230411/diff.md --exclude *.pyd
+[2023-04-11 02:11:15] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:11:15] INFO root fetch - main [MainThread]: Store serial: [17652003]
