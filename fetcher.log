@@ -12853,3 +12853,49 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 12:52:24] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:52:24] INFO root fetch - main [MainThread]: success
 [2023-04-11 12:52:24] INFO root fetch - main [MainThread]: Store serial: [17659609]
+[2023-04-11 12:57:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17659609]
+[2023-04-11 12:57:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-11 12:57:32] INFO root fetch - processPackages [pjy]: New version: [0.13.0] Old Version: [0.12.0]
+[2023-04-11 12:57:32] INFO root fetch - processPackages [EasyPylan]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-11 12:57:32] INFO root fetch - processPackages [acquire]: New version: [3.6.dev3] Old Version: [3.6.dev2]
+[2023-04-11 12:57:32] INFO root fetch - processPackages [frinx-conductor-workers]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-11 12:57:32] INFO root fetch - processPackages [ejtraderCT]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-11 12:57:32] INFO root fetch - processPackages [EasyPylan]: Downloading https://files.pythonhosted.org/packages/d4/1f/3f03bfef82411a5547392843a0888e7adf54a43b04f80c17c24dd4cc71c5/EasyPylan-0.0.1.tar.gz
+[2023-04-11 12:57:32] INFO root fetch - processPackages [frinx-conductor-workers]: Downloading https://files.pythonhosted.org/packages/f6/23/961ed269aec9d7f55aa26aeb36be9b34127b0f27cf0222b02821f778b925/frinx_conductor_workers-1.1.8.tar.gz
+[2023-04-11 12:57:32] INFO root fetch - processPackages [pjy]: Downloading https://files.pythonhosted.org/packages/e2/97/51d8de4768feaffe0d7dba4edc2617956c972a4c92c9e08ba03bac171497/pjy-0.12.0.tar.gz
+[2023-04-11 12:57:32] INFO root fetch - processPackages [ejtraderCT]: Downloading https://files.pythonhosted.org/packages/e5/fb/2ee4217cd2ea725b6f6dd2d0b525b6127d5c5e9f8f4f6441cbdc598e4ee0/ejtraderCT-1.0.7.tar.gz
+[2023-04-11 12:57:32] INFO root fetch - processPackages [acquire]: Downloading https://files.pythonhosted.org/packages/b8/ee/43d02b8dc2908f6b71c6d73b97a5c57abe9ceb9e91c3f930fa4ae240bdae/acquire-3.6.dev2.tar.gz
+[2023-04-11 12:57:32] INFO root fetch - processPackages [EasyPylan]: Downloading https://files.pythonhosted.org/packages/fc/23/a3a58beb1b21702e1ad3d72db3e06d7af8b0eb49f4c7afee15178c91a44f/EasyPylan-0.0.2.tar.gz
+[2023-04-11 12:57:32] INFO root fetch - processPackages [pjy]: Downloading https://files.pythonhosted.org/packages/20/8a/4c3458646f8e5365d23083e2fa53e5c8828ad8b55fd3f82333e7a739e952/pjy-0.13.0.tar.gz
+[2023-04-11 12:57:32] INFO root fetch - processPackages [frinx-conductor-workers]: Downloading https://files.pythonhosted.org/packages/f5/0f/f4429e8ab1c0fd36ea1a54feef0bf2641cd68be9061a9893f3c72d4be432/frinx_conductor_workers-1.1.9.tar.gz
+[2023-04-11 12:57:32] INFO root fetch - processPackages [ejtraderCT]: Downloading https://files.pythonhosted.org/packages/70/3f/4c472d51d65e40effec0822e407cd22ce02c56d6a56e6ab77ff1be202709/ejtraderCT-1.0.8.tar.gz
+[2023-04-11 12:57:33] INFO root fetch - processPackages [acquire]: Downloading https://files.pythonhosted.org/packages/c2/a4/e8b805c62400fd6e618767332e8222bc728c888d16c1dc0d334f5ed3763c/acquire-3.6.dev3.tar.gz
+[2023-04-11 12:57:33] INFO root fetch - processPackages [EasyPylan]: executing diffoscope
+[2023-04-11 12:57:33] INFO root fetch - processPackages [EasyPylan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EasyPylan-0.0.1.tar.gz tmp/EasyPylan-0.0.2.tar.gz --markdown 20230411/E/EasyPylan/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-11 12:57:33] INFO root fetch - processPackages [pjy]: executing diffoscope
+[2023-04-11 12:57:33] INFO root fetch - processPackages [pjy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pjy-0.12.0.tar.gz tmp/pjy-0.13.0.tar.gz --markdown 20230411/p/pjy/0.12.0-0.13.0/diff.md --exclude *.pyd
+[2023-04-11 12:57:33] INFO root fetch - processPackages [frinx-conductor-workers]: executing diffoscope
+[2023-04-11 12:57:33] INFO root fetch - processPackages [frinx-conductor-workers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frinx_conductor_workers-1.1.8.tar.gz tmp/frinx_conductor_workers-1.1.9.tar.gz --markdown 20230411/f/frinx-conductor-workers/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-11 12:57:33] INFO root fetch - processPackages [ejtraderCT]: executing diffoscope
+[2023-04-11 12:57:33] INFO root fetch - processPackages [ejtraderCT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ejtraderCT-1.0.7.tar.gz tmp/ejtraderCT-1.0.8.tar.gz --markdown 20230411/e/ejtraderCT/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-11 12:57:33] INFO root fetch - processPackages [acquire]: executing diffoscope
+[2023-04-11 12:57:33] INFO root fetch - processPackages [acquire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acquire-3.6.dev2.tar.gz tmp/acquire-3.6.dev3.tar.gz --markdown 20230411/a/acquire/3.6.dev2-3.6.dev3/diff.md --exclude *.pyd
+[2023-04-11 12:57:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:57:34] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-11 12:57:34] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-11 12:57:34] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230411/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-11 12:57:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:57:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:57:34] INFO root fetch - processPackages [cg]: New version: [27.2.1] Old Version: [27.2.0]
+[2023-04-11 12:57:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:57:34] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 12:57:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:57:34] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2023-04-11 12:57:34] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.8.tar.gz tmp/p-template-generator-0.1.9.tar.gz --markdown 20230411/p/p-template-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 12:57:34] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/bc/fe/85375204d34a097e4ae86a9e3390bdc79b2622c1458d3db0f2c99b1cc1c3/cg-27.2.1.tar.gz
+[2023-04-11 12:57:34] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-04-11 12:57:34] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-27.2.0.tar.gz tmp/cg-27.2.1.tar.gz --markdown 20230411/c/cg/27.2.0-27.2.1/diff.md --exclude *.pyd
+[2023-04-11 12:57:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:57:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:57:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 12:57:46] INFO root fetch - main [MainThread]: Store serial: [17659635]
