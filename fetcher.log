@@ -11742,3 +11742,56 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 11:26:49] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:26:49] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:26:49] INFO root fetch - main [MainThread]: Store serial: [17658855]
+[2023-04-11 11:31:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658855]
+[2023-04-11 11:31:57] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 11:31:57] INFO root fetch - processPackages [stackdiac]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-04-11 11:31:57] INFO root fetch - processPackages [chatblade]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-11 11:31:57] INFO root fetch - processPackages [mobio-monitor-system-sdk]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-11 11:31:57] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-11 11:31:57] INFO root fetch - processPackages [fake-bge-module-latest]: New version: [20230411] Old Version: [20230410]
+[2023-04-11 11:31:57] INFO root fetch - processPackages [mobio-monitor-system-sdk]: Downloading https://files.pythonhosted.org/packages/86/57/124ee836c003210c01ccbae143738cbcde12277f24669d2864a2e38d7c4a/mobio-monitor-system-sdk-1.0.3.tar.gz
+[2023-04-11 11:31:57] INFO root fetch - processPackages [stackdiac]: Downloading https://files.pythonhosted.org/packages/dc/94/94084cb72519dcf0fa1bf5c24d767fce4e8fc419108c362c3884cce53693/stackdiac-0.0.1.dev8.tar.gz
+[2023-04-11 11:31:57] INFO root fetch - processPackages [gym-trading-env]: Downloading https://files.pythonhosted.org/packages/25/f9/1dba1e70a1d50ba6aa3984421971643d51fa14101565e0cf8d0fb9f6eb3d/gym-trading-env-0.1.3.tar.gz
+[2023-04-11 11:31:57] INFO root fetch - processPackages [chatblade]: Downloading https://files.pythonhosted.org/packages/68/76/45a547aa1685a99d030c0d584bea18158d48e33c7a3d75e82992a54ba5b5/chatblade-0.2.1.tar.gz
+[2023-04-11 11:31:57] INFO root fetch - processPackages [fake-bge-module-latest]: Downloading https://files.pythonhosted.org/packages/51/4a/ac27e6c54c1808eaa9419969901436dad736c48f1e6948dca4cb72af4b0d/fake-bge-module-latest-20230411.tar.gz
+[2023-04-11 11:31:57] INFO root fetch - processPackages [mobio-monitor-system-sdk]: executing diffoscope
+[2023-04-11 11:31:57] INFO root fetch - processPackages [mobio-monitor-system-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobio-monitor-system-sdk-1.0.2.tar.gz tmp/mobio-monitor-system-sdk-1.0.3.tar.gz --markdown 20230411/m/mobio-monitor-system-sdk/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-11 11:31:57] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-11 11:31:57] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.2.tar.gz tmp/gym-trading-env-0.1.3.tar.gz --markdown 20230411/g/gym-trading-env/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-11 11:31:57] INFO root fetch - processPackages [stackdiac]: Downloading https://files.pythonhosted.org/packages/65/2f/611431a65490020aabb8876306d33599cd75c049c5a7f95b9dc8df7b9919/stackdiac-0.0.1.dev9.tar.gz
+[2023-04-11 11:31:58] INFO root fetch - processPackages [chatblade]: Downloading https://files.pythonhosted.org/packages/08/14/ceb7f7d0d948321361b47d113274eb753ab63a4dc4eecf545a0b463465cc/chatblade-0.2.2.tar.gz
+[2023-04-11 11:31:58] INFO root fetch - processPackages [stackdiac]: executing diffoscope
+[2023-04-11 11:31:58] INFO root fetch - processPackages [stackdiac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackdiac-0.0.1.dev8.tar.gz tmp/stackdiac-0.0.1.dev9.tar.gz --markdown 20230411/s/stackdiac/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 11:31:58] INFO root fetch - processPackages [fake-bge-module-latest]: executing diffoscope
+[2023-04-11 11:31:58] INFO root fetch - processPackages [fake-bge-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bge-module-latest-20230410.tar.gz tmp/fake-bge-module-latest-20230411.tar.gz --markdown 20230411/f/fake-bge-module-latest/20230410-20230411/diff.md --exclude *.pyd
+[2023-04-11 11:31:58] INFO root fetch - processPackages [chatblade]: executing diffoscope
+[2023-04-11 11:31:58] INFO root fetch - processPackages [chatblade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatblade-0.2.1.tar.gz tmp/chatblade-0.2.2.tar.gz --markdown 20230411/c/chatblade/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-11 11:31:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:31:59] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 11:31:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:31:59] INFO root fetch - processPackages [jdcloud-sdk]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-04-11 11:31:59] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-11 11:31:59] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230411/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 11:31:59] INFO root fetch - processPackages [jdcloud-sdk]: Downloading https://files.pythonhosted.org/packages/95/4f/825f3e2814e962db5d30b644c7fdfc01996a9bbe76c789866aeaf20d1d82/jdcloud_sdk-1.6.98.tar.gz
+[2023-04-11 11:31:59] INFO root fetch - processPackages [jdcloud-sdk]: Downloading https://files.pythonhosted.org/packages/14/1e/7f5fff16d7e0e2793fdd72a4eb17de3ad540cf935be128a7c69d1ee161c0/jdcloud_sdk-1.6.99.tar.gz
+[2023-04-11 11:32:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:32:00] WARNING root fetch - processPackages [crawler-commons]: Skipping, unable to determine old version
+[2023-04-11 11:32:00] INFO root fetch - main [MainThread]: error
+[2023-04-11 11:32:00] INFO root fetch - processPackages [bpelib]: New version: [v0.1.2] Old Version: [v0.1.0]
+[2023-04-11 11:32:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:32:00] INFO root fetch - processPackages [appsurifyci]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-11 11:32:00] INFO root fetch - processPackages [jdcloud-sdk]: executing diffoscope
+[2023-04-11 11:32:00] INFO root fetch - processPackages [jdcloud-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jdcloud_sdk-1.6.98.tar.gz tmp/jdcloud_sdk-1.6.99.tar.gz --markdown 20230411/j/jdcloud-sdk/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-04-11 11:32:00] INFO root fetch - processPackages [appsurifyci]: Downloading https://files.pythonhosted.org/packages/7e/96/55ed722a50f37704d85424369753fd288ab06a5ade348f0e46bafe7690f7/appsurifyci-0.1.5.tar.gz
+[2023-04-11 11:32:00] INFO root fetch - processPackages [bpelib]: executing diffoscope
+[2023-04-11 11:32:00] INFO root fetch - processPackages [bpelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bpelib-v0.1.0.tar.gz tmp/bpelib-v0.1.2.tar.gz --markdown 20230411/b/bpelib/v0.1.0-v0.1.2/diff.md --exclude *.pyd
+[2023-04-11 11:32:00] INFO root fetch - processPackages [appsurifyci]: Downloading https://files.pythonhosted.org/packages/e3/a5/4e392da071f4b9bd08ab56384982eccb1786231ffbbd83fbc89b25a4c3db/appsurifyci-0.1.6.tar.gz
+[2023-04-11 11:32:00] INFO root fetch - processPackages [appsurifyci]: executing diffoscope
+[2023-04-11 11:32:00] INFO root fetch - processPackages [appsurifyci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appsurifyci-0.1.5.tar.gz tmp/appsurifyci-0.1.6.tar.gz --markdown 20230411/a/appsurifyci/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-11 11:32:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:32:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:32:04] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:32:13] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:35:00] ERROR root fetch - processPackages [jdcloud-sdk]: Timeout during execution of pkgdiff
+[2023-04-11 11:35:00] INFO root fetch - main [MainThread]: error
+[2023-04-11 11:35:00] INFO root fetch - main [MainThread]: Store serial: [17658887]
