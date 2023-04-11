@@ -10901,3 +10901,79 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 10:33:19] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:33:19] INFO root fetch - main [MainThread]: success
 [2023-04-11 10:33:19] INFO root fetch - main [MainThread]: Store serial: [17658343]
+[2023-04-11 10:38:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658343]
+[2023-04-11 10:38:28] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 10:38:28] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-04-11 10:38:28] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 10:38:28] INFO root fetch - processPackages [ckanext-versioned-datastore]: New version: [4.2.1] Old Version: [4.2.0]
+[2023-04-11 10:38:28] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-04-11 10:38:28] INFO root fetch - processPackages [oarepo-model-builder]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-04-11 10:38:29] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: Downloading https://files.pythonhosted.org/packages/87/9b/02c844b0bdebe70804891dc21386d1f379a2a96b2ed71aaa9057117737bb/dcentralab_qa_infra_automation-0.1.1.tar.gz
+[2023-04-11 10:38:29] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-04-11 10:38:29] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230411/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-04-11 10:38:29] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: Downloading https://files.pythonhosted.org/packages/9e/2b/ed6e86562ce4859241a1b62fe47dee41064486487ed4e5f70ae8f5983868/ckanext-versioned-tiledmap-2.1.8.tar.gz
+[2023-04-11 10:38:29] INFO root fetch - processPackages [ckanext-versioned-datastore]: Downloading https://files.pythonhosted.org/packages/fa/ad/19621f26dc8bb12f4dcae531ec7e1aa1ae915f657fc57495d469487580c2/ckanext-versioned-datastore-4.2.0.tar.gz
+[2023-04-11 10:38:29] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: Downloading https://files.pythonhosted.org/packages/ed/42/41e73f6ba0d9198a1a7ec265dd1d3a92c97cb12e48b0794a6e42c1a0fe42/dcentralab_qa_infra_automation-0.1.2.tar.gz
+[2023-04-11 10:38:29] INFO root fetch - processPackages [oarepo-model-builder]: executing diffoscope
+[2023-04-11 10:38:29] INFO root fetch - processPackages [oarepo-model-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-3.2.8.tar.gz tmp/oarepo-model-builder-3.2.9.tar.gz --markdown 20230411/o/oarepo-model-builder/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-04-11 10:38:29] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: executing diffoscope
+[2023-04-11 10:38:29] INFO root fetch - processPackages [dcentralab-qa-infra-automation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcentralab_qa_infra_automation-0.1.1.tar.gz tmp/dcentralab_qa_infra_automation-0.1.2.tar.gz --markdown 20230411/d/dcentralab-qa-infra-automation/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 10:38:29] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: Downloading https://files.pythonhosted.org/packages/1d/36/4edf1e2c5b01003f24506b94d459b0c8ddeb3718225ecc54c15c14afe963/ckanext-versioned-tiledmap-2.1.9.tar.gz
+[2023-04-11 10:38:29] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: executing diffoscope
+[2023-04-11 10:38:29] INFO root fetch - processPackages [ckanext-versioned-tiledmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-versioned-tiledmap-2.1.8.tar.gz tmp/ckanext-versioned-tiledmap-2.1.9.tar.gz --markdown 20230411/c/ckanext-versioned-tiledmap/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-04-11 10:38:29] INFO root fetch - processPackages [ckanext-versioned-datastore]: Downloading https://files.pythonhosted.org/packages/12/b8/7928aa88f1ade3a882cea4a1e07ff686c7606b3fa306ed90039864c49770/ckanext-versioned-datastore-4.2.1.tar.gz
+[2023-04-11 10:38:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:30] INFO root fetch - processPackages [umep-reqs]: New version: [2.0.1] Old Version: [2.0]
+[2023-04-11 10:38:30] INFO root fetch - processPackages [umep-reqs]: Downloading https://files.pythonhosted.org/packages/b1/9e/d3d089920bf0ac156d540f6dce6a568547d66625f0be719df240769b9c70/umep-reqs-2.0.tar.gz
+[2023-04-11 10:38:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:30] INFO root fetch - processPackages [flagsmith-flag-engine]: New version: [3.4.0] Old Version: [3.3.2]
+[2023-04-11 10:38:30] INFO root fetch - processPackages [umep-reqs]: Downloading https://files.pythonhosted.org/packages/99/02/2e6b88bdae544b02a32a4dc4d29f0a10f2665bc42697f83208fb8831aacc/umep-reqs-2.0.1.tar.gz
+[2023-04-11 10:38:30] INFO root fetch - processPackages [umep-reqs]: executing diffoscope
+[2023-04-11 10:38:30] INFO root fetch - processPackages [umep-reqs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/umep-reqs-2.0.tar.gz tmp/umep-reqs-2.0.1.tar.gz --markdown 20230411/u/umep-reqs/2.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-11 10:38:30] INFO root fetch - processPackages [flagsmith-flag-engine]: Downloading https://files.pythonhosted.org/packages/7a/42/5c7357197ca43621fc24935aa0e73afa36fa1c0ad5f8082e414e7dea87e7/flagsmith-flag-engine-3.3.2.tar.gz
+[2023-04-11 10:38:31] INFO root fetch - processPackages [ckanext-versioned-datastore]: executing diffoscope
+[2023-04-11 10:38:31] INFO root fetch - processPackages [ckanext-versioned-datastore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-versioned-datastore-4.2.0.tar.gz tmp/ckanext-versioned-datastore-4.2.1.tar.gz --markdown 20230411/c/ckanext-versioned-datastore/4.2.0-4.2.1/diff.md --exclude *.pyd
+[2023-04-11 10:38:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:31] INFO root fetch - processPackages [flagsmith-flag-engine]: Downloading https://files.pythonhosted.org/packages/ca/5d/267b0f728f7a932160188a705be9530e3c078ce07de6d4ce0a3da4aae2d1/flagsmith-flag-engine-3.4.0.tar.gz
+[2023-04-11 10:38:31] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: New version: [16.0.1.1.0.4] Old Version: [16.0.1.1.0.3]
+[2023-04-11 10:38:31] INFO root fetch - processPackages [flagsmith-flag-engine]: executing diffoscope
+[2023-04-11 10:38:31] INFO root fetch - processPackages [flagsmith-flag-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flagsmith-flag-engine-3.3.2.tar.gz tmp/flagsmith-flag-engine-3.4.0.tar.gz --markdown 20230411/f/flagsmith-flag-engine/3.3.2-3.4.0/diff.md --exclude *.pyd
+[2023-04-11 10:38:31] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: Downloading https://files.pythonhosted.org/packages/96/39/fd2762526aa7b3b186fc5cbfc7a60a296af24df9df447dc59714fb6b1ad5/odoo_addon_web_m2x_options-16.0.1.1.0.3-py3-none-any.whl
+[2023-04-11 10:38:31] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: Downloading https://files.pythonhosted.org/packages/b2/01/6d721cd5f431b5f1d6dad03ca26c204835b76152a65a5145138aff76fe39/odoo_addon_web_m2x_options-16.0.1.1.0.4-py3-none-any.whl
+[2023-04-11 10:38:31] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: executing diffoscope
+[2023-04-11 10:38:31] INFO root fetch - processPackages [odoo-addon-web-m2x-options]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_web_m2x_options-16.0.1.1.0.3-py3-none-any.whl.zip tmp/odoo_addon_web_m2x_options-16.0.1.1.0.4-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-web-m2x-options/16.0.1.1.0.3-16.0.1.1.0.4/diff.md --exclude *.pyd
+[2023-04-11 10:38:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:31] INFO root fetch - processPackages [tdnpathviz]: New version: [0.1.2.1] Old Version: [0.1.2]
+[2023-04-11 10:38:32] INFO root fetch - processPackages [tdnpathviz]: Downloading https://files.pythonhosted.org/packages/8d/2f/c339d3e4a7b119eacf00663ab80ca5d4d750e27d50fbb62dd34a223b136f/tdnpathviz-0.1.2-py3-none-any.whl
+[2023-04-11 10:38:32] INFO root fetch - processPackages [tdnpathviz]: Downloading https://files.pythonhosted.org/packages/13/15/b0bbf5112290b32b4027fd63959beb53ebbf0b686c56cb6504c265a171ef/tdnpathviz-0.1.2.1-py3-none-any.whl
+[2023-04-11 10:38:32] INFO root fetch - processPackages [tdnpathviz]: executing diffoscope
+[2023-04-11 10:38:32] INFO root fetch - processPackages [tdnpathviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdnpathviz-0.1.2-py3-none-any.whl.zip tmp/tdnpathviz-0.1.2.1-py3-none-any.whl.zip --markdown 20230411/t/tdnpathviz/0.1.2-0.1.2.1/diff.md --exclude *.pyd
+[2023-04-11 10:38:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:32] INFO root fetch - processPackages [intelliprove]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 10:38:32] INFO root fetch - processPackages [intelliprove]: Downloading https://files.pythonhosted.org/packages/2b/da/73768294397b581f2655dcea5e448e6f8206749a71d94f800114f279f210/intelliprove-1.0.0.tar.gz
+[2023-04-11 10:38:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:32] INFO root fetch - processPackages [keras-visualizer]: New version: [3.1.2] Old Version: [3.1.1]
+[2023-04-11 10:38:33] INFO root fetch - processPackages [keras-visualizer]: Downloading https://files.pythonhosted.org/packages/84/21/3d86e05ed8fab9cbe3a3bff92710935e7d1f41d35927e6544e93053c5e3a/keras-visualizer-3.1.1.tar.gz
+[2023-04-11 10:38:33] INFO root fetch - processPackages [intelliprove]: Downloading https://files.pythonhosted.org/packages/a6/7e/2054c63f12b265963600197e57f1246760bfb117d6c4d7b6c8befb6e7397/intelliprove-1.0.1.tar.gz
+[2023-04-11 10:38:33] INFO root fetch - processPackages [intelliprove]: executing diffoscope
+[2023-04-11 10:38:33] INFO root fetch - processPackages [intelliprove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intelliprove-1.0.0.tar.gz tmp/intelliprove-1.0.1.tar.gz --markdown 20230411/i/intelliprove/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 10:38:33] INFO root fetch - processPackages [keras-visualizer]: Downloading https://files.pythonhosted.org/packages/77/0a/3c061992d82687060bef130b3cd7e7862e0b929c5762dd6e814d04c96cef/keras-visualizer-3.1.2.tar.gz
+[2023-04-11 10:38:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:33] INFO root fetch - processPackages [keras-visualizer]: executing diffoscope
+[2023-04-11 10:38:33] INFO root fetch - processPackages [keras-visualizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-visualizer-3.1.1.tar.gz tmp/keras-visualizer-3.1.2.tar.gz --markdown 20230411/k/keras-visualizer/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2023-04-11 10:38:33] INFO root fetch - processPackages [azure-mgmt-sql]: New version: [4.0.0b9] Old Version: [4.0.0b8]
+[2023-04-11 10:38:33] INFO root fetch - processPackages [azure-mgmt-sql]: Downloading https://files.pythonhosted.org/packages/b5/4f/a5dfd452b1c4969300a38d0ee5fce4f2f24d7e935afb1cc33c3ee78c0302/azure-mgmt-sql-4.0.0b8.zip
+[2023-04-11 10:38:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:34] INFO root fetch - processPackages [sql2mermaid]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-04-11 10:38:34] INFO root fetch - processPackages [azure-mgmt-sql]: Downloading https://files.pythonhosted.org/packages/87/bf/8641af0272d36dd2e3c709f6331087efbccb34475cce793b767db5791f90/azure-mgmt-sql-4.0.0b9.zip
+[2023-04-11 10:38:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:34] INFO root fetch - processPackages [sql2mermaid]: Downloading https://files.pythonhosted.org/packages/c0/35/a2a0771f6bdd44b3ff7d56c38dfa2fba13233071c3e3eaf3b83e89f42f06/sql2mermaid-1.1.0.tar.gz
+[2023-04-11 10:38:34] INFO root fetch - processPackages [azure-mgmt-sql]: executing diffoscope
+[2023-04-11 10:38:34] INFO root fetch - processPackages [azure-mgmt-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-mgmt-sql-4.0.0b8.zip tmp/azure-mgmt-sql-4.0.0b9.zip --markdown 20230411/a/azure-mgmt-sql/4.0.0b8-4.0.0b9/diff.md --exclude *.pyd
+[2023-04-11 10:38:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:34] INFO root fetch - processPackages [sql2mermaid]: executing diffoscope
+[2023-04-11 10:38:34] INFO root fetch - processPackages [sql2mermaid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql2mermaid-1.0.3.tar.gz tmp/sql2mermaid-1.1.0.tar.gz --markdown 20230411/s/sql2mermaid/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 10:38:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:35] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 10:38:49] INFO root fetch - main [MainThread]: Store serial: [17658382]
