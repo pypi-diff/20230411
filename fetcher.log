@@ -1818,3 +1818,58 @@
 [2023-04-11 02:42:41] INFO root fetch - main [MainThread]: success
 [2023-04-11 02:42:50] INFO root fetch - main [MainThread]: success
 [2023-04-11 02:42:50] INFO root fetch - main [MainThread]: Store serial: [17652324]
+[2023-04-11 02:47:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17652324]
+[2023-04-11 02:47:58] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-11 02:47:58] INFO root fetch - processPackages [yoctools]: New version: [2.0.9] Old Version: [2.0.7]
+[2023-04-11 02:47:58] INFO root fetch - processPackages [dcTrackClient]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-11 02:47:58] INFO root fetch - processPackages [querysource]: New version: [3.6.9] Old Version: [3.6.8]
+[2023-04-11 02:47:58] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-11 02:47:58] INFO root fetch - processPackages [cdk-slack-chatbot]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-04-11 02:47:58] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-04-11 02:47:58] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.4.8.tar.gz tmp/kubric-nightly-2023.4.9.tar.gz --markdown 20230411/k/kubric-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-11 02:47:58] INFO root fetch - processPackages [yoctools]: Downloading https://files.pythonhosted.org/packages/09/20/a6c22149ead092bcf5bfddd514b11bce936edc3d917fba0b87e50edba2dd/yoctools-2.0.7.tar.gz
+[2023-04-11 02:47:58] INFO root fetch - processPackages [dcTrackClient]: Downloading https://files.pythonhosted.org/packages/a6/52/53fb721e15bb17514967e1a789c23426943602ca86e85a6a6b6cc1fab152/dctrackclient-0.1.1.tar.gz
+[2023-04-11 02:47:58] INFO root fetch - processPackages [querysource]: Downloading https://files.pythonhosted.org/packages/ab/50/018cb101f002f53a882706970a666f7fabfdaef68902e2363149b998910b/querysource-3.6.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-11 02:47:58] INFO root fetch - processPackages [cdk-slack-chatbot]: executing diffoscope
+[2023-04-11 02:47:58] INFO root fetch - processPackages [cdk-slack-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-slack-chatbot-1.0.98.tar.gz tmp/cdk-slack-chatbot-1.0.99.tar.gz --markdown 20230411/c/cdk-slack-chatbot/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-04-11 02:47:58] INFO root fetch - processPackages [dcTrackClient]: executing diffoscope
+[2023-04-11 02:47:58] INFO root fetch - processPackages [dcTrackClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dctrackclient-0.1.0.tar.gz tmp/dctrackclient-0.1.1.tar.gz --markdown 20230411/d/dcTrackClient/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-11 02:47:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:47:59] INFO root fetch - processPackages [pvcheetahdemo]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-11 02:47:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:47:59] INFO root fetch - processPackages [pvleoparddemo]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-11 02:47:59] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:47:59] INFO root fetch - processPackages [pvcobrademo]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvcheetahdemo]: Downloading https://files.pythonhosted.org/packages/0b/72/af5393e942159b04f55aa2c85297c2352db86924e0b5c3d80e84f369dcb0/pvcheetahdemo-1.1.3.tar.gz
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvleoparddemo]: Downloading https://files.pythonhosted.org/packages/53/a5/de54e1895d056f0a63922ef07e0e77ce11246c659b7f656120f24135eca7/pvleoparddemo-1.2.1.tar.gz
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvcobrademo]: Downloading https://files.pythonhosted.org/packages/8e/a8/f8eaad69cb6c73410a1069729b6d7ace3c69eca8d128015923bcd9663993/pvcobrademo-1.2.1.tar.gz
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvcheetahdemo]: Downloading https://files.pythonhosted.org/packages/15/e7/8a8491491e9b43ae3224f185d81a34a0ec8468a2b6d1475ea800dcdd2213/pvcheetahdemo-1.1.4.tar.gz
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvleoparddemo]: Downloading https://files.pythonhosted.org/packages/fa/ba/e8db97fd0b5f728da9a9c55003bf86f25278e7250774928471190f963454/pvleoparddemo-1.2.2.tar.gz
+[2023-04-11 02:48:00] INFO root fetch - processPackages [querysource]: executing diffoscope
+[2023-04-11 02:48:00] INFO root fetch - processPackages [querysource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querysource-3.6.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/querysource-3.6.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230411/q/querysource/3.6.8-3.6.9/diff.md --exclude *.pyd
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvcobrademo]: Downloading https://files.pythonhosted.org/packages/b5/79/3c033cc83eb8f0016cbddb130af6b36550eabb2ef8189a40c3eb825ca179/pvcobrademo-1.2.2.tar.gz
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvcheetahdemo]: executing diffoscope
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvcheetahdemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvcheetahdemo-1.1.3.tar.gz tmp/pvcheetahdemo-1.1.4.tar.gz --markdown 20230411/p/pvcheetahdemo/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvleoparddemo]: executing diffoscope
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvleoparddemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvleoparddemo-1.2.1.tar.gz tmp/pvleoparddemo-1.2.2.tar.gz --markdown 20230411/p/pvleoparddemo/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvcobrademo]: executing diffoscope
+[2023-04-11 02:48:00] INFO root fetch - processPackages [pvcobrademo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvcobrademo-1.2.1.tar.gz tmp/pvcobrademo-1.2.2.tar.gz --markdown 20230411/p/pvcobrademo/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-11 02:48:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:48:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:48:01] INFO root fetch - processPackages [pvkoalademo]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-11 02:48:01] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-11 02:48:01] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:48:01] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-04-11 02:48:01] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230411/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-11 02:48:01] INFO root fetch - processPackages [pvkoalademo]: Downloading https://files.pythonhosted.org/packages/ce/0c/37c0de6c402962e78fc8c5b0a087d0d926e787be2a75873f0aec5fdaedcb/pvkoalademo-1.0.1.tar.gz
+[2023-04-11 02:48:02] INFO root fetch - processPackages [pvkoalademo]: Downloading https://files.pythonhosted.org/packages/02/1d/498aac1d37771604489a80b77436b55c16affeccbd1f63173add935413b4/pvkoalademo-1.0.2.tar.gz
+[2023-04-11 02:48:02] INFO root fetch - processPackages [yoctools]: Downloading https://files.pythonhosted.org/packages/72/8f/1faa61e65723d613fb6313f889b8da66ca965420bbbc147155105d89936d/yoctools-2.0.9.tar.gz
+[2023-04-11 02:48:02] INFO root fetch - processPackages [pvkoalademo]: executing diffoscope
+[2023-04-11 02:48:02] INFO root fetch - processPackages [pvkoalademo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvkoalademo-1.0.1.tar.gz tmp/pvkoalademo-1.0.2.tar.gz --markdown 20230411/p/pvkoalademo/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-11 02:48:02] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:48:03] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:48:04] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:48:06] INFO root fetch - processPackages [yoctools]: executing diffoscope
+[2023-04-11 02:48:06] INFO root fetch - processPackages [yoctools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoctools-2.0.7.tar.gz tmp/yoctools-2.0.9.tar.gz --markdown 20230411/y/yoctools/2.0.7-2.0.9/diff.md --exclude *.pyd
+[2023-04-11 02:49:11] INFO root fetch - main [MainThread]: success
+[2023-04-11 02:49:11] INFO root fetch - main [MainThread]: Store serial: [17652357]
