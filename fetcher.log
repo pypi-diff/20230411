@@ -9848,3 +9848,88 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 09:46:38] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:46:41] INFO root fetch - main [MainThread]: success
 [2023-04-11 09:46:41] INFO root fetch - main [MainThread]: Store serial: [17657712]
+[2023-04-11 09:51:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17657712]
+[2023-04-11 09:51:49] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-11 09:51:50] INFO root fetch - processPackages [osmsg]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 09:51:50] INFO root fetch - processPackages [iLiaShahpy]: New version: [3.8.6] Old Version: [3.8.5]
+[2023-04-11 09:51:50] INFO root fetch - processPackages [roboweb-extension]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 09:51:50] INFO root fetch - processPackages [aishell]: New version: [2023.4.11] Old Version: [2023.3.4.post3]
+[2023-04-11 09:51:50] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.13.0.dev20230411] Old Version: [2.13.0.dev20230410]
+[2023-04-11 09:51:50] INFO root fetch - processPackages [iLiaShahpy]: Downloading https://files.pythonhosted.org/packages/d3/24/852cf81f9795f17bcf1bd303df6293bb440360e3cec3af8ba624e641ca96/iLiaShahpy-3.8.5.tar.gz
+[2023-04-11 09:51:50] INFO root fetch - processPackages [osmsg]: Downloading https://files.pythonhosted.org/packages/7f/ee/203fe4b605d2c1613b13cfd363f229d5f1ed63db1709241e4e5002600adb/osmsg-0.1.8.tar.gz
+[2023-04-11 09:51:50] INFO root fetch - processPackages [aishell]: Downloading https://files.pythonhosted.org/packages/bb/f9/f0116b2de40264cefc9063d5c549dfd778cd4971ff7a651d8b097afdfe31/aishell-2023.3.4.post3.tar.gz
+[2023-04-11 09:51:50] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/a0/85/b70789cbf848bc6fa1a0ec0b83a59ba5b4b16911526b989ddb0da8a755a5/tf_nightly_cpu-2.13.0.dev20230411-cp39-cp39-win_amd64.whl
+[2023-04-11 09:51:50] INFO root fetch - processPackages [roboweb-extension]: executing diffoscope
+[2023-04-11 09:51:50] INFO root fetch - processPackages [roboweb-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb-extension-0.1.8.tar.gz tmp/roboweb_extension-0.1.9.tar.gz --markdown 20230411/r/roboweb-extension/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 09:51:50] INFO root fetch - processPackages [iLiaShahpy]: Downloading https://files.pythonhosted.org/packages/38/34/5d23ab90c7948ef4374642951cfb89cec9432152de6c51972f53437b54c1/iLiaShahpy-3.8.6.tar.gz
+[2023-04-11 09:51:50] INFO root fetch - processPackages [iLiaShahpy]: executing diffoscope
+[2023-04-11 09:51:50] INFO root fetch - processPackages [iLiaShahpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iLiaShahpy-3.8.5.tar.gz tmp/iLiaShahpy-3.8.6.tar.gz --markdown 20230411/i/iLiaShahpy/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2023-04-11 09:51:50] INFO root fetch - processPackages [aishell]: Downloading https://files.pythonhosted.org/packages/9c/6f/038801deebe847fc010997b1dc03e5cc40da5effd7c38c2afc47cf1a541a/aishell-2023.4.11.tar.gz
+[2023-04-11 09:51:50] INFO root fetch - processPackages [aishell]: executing diffoscope
+[2023-04-11 09:51:50] INFO root fetch - processPackages [aishell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aishell-2023.3.4.post3.tar.gz tmp/aishell-2023.4.11.tar.gz --markdown 20230411/a/aishell/2023.3.4.post3-2023.4.11/diff.md --exclude *.pyd
+[2023-04-11 09:51:50] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-04-11 09:51:50] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230410-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230411-cp39-cp39-win_amd64.whl.zip --markdown 20230411/t/tf-nightly-cpu/2.13.0.dev20230410-2.13.0.dev20230411/diff.md --exclude *.pyd
+[2023-04-11 09:51:51] INFO root fetch - processPackages [osmsg]: Downloading https://files.pythonhosted.org/packages/fd/ec/2cc46c93a1eba20d64e795f3a62d11e4c46bdb031578f8079798844f660e/osmsg-0.1.9.tar.gz
+[2023-04-11 09:51:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:51] INFO root fetch - processPackages [roboweb-server]: New version: [0.1.36] Old Version: [0.1.35]
+[2023-04-11 09:51:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:51] INFO root fetch - processPackages [jit-env]: New version: [0.1.0] Old Version: [0.0.dev0]
+[2023-04-11 09:51:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:51] INFO root fetch - processPackages [setuptools-monorepo]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-11 09:51:51] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:51] WARNING root fetch - processPackages [sag-py-fastapi-health]: Skipping, unable to determine old version
+[2023-04-11 09:51:52] INFO root fetch - main [MainThread]: error
+[2023-04-11 09:51:52] INFO root fetch - processPackages [setuptools-monorepo]: Downloading https://files.pythonhosted.org/packages/1d/57/c5dbc173bfb30bc0f910d8a42ea970fdba6702240b6dfaaa40932f2fa6ff/setuptools-monorepo-0.0.3.tar.gz
+[2023-04-11 09:51:52] INFO root fetch - processPackages [roboweb-server]: Downloading https://files.pythonhosted.org/packages/d8/64/6a7d6ee628f8a1e2c86c4f769698c4a63c2a6291505c1cbb00cee53f58d1/roboweb_server-0.1.36.tar.gz
+[2023-04-11 09:51:52] INFO root fetch - processPackages [datastock]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 09:51:52] INFO root fetch - processPackages [jit-env]: Downloading https://files.pythonhosted.org/packages/2e/60/4f310df2297be08fd1caadae8921bee317e9caac4e4a0a1e5b04643910b3/jit_env-0.1.0.tar.gz
+[2023-04-11 09:51:52] INFO root fetch - processPackages [roboweb-server]: executing diffoscope
+[2023-04-11 09:51:52] INFO root fetch - processPackages [roboweb-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboweb_server-0.1.35.tar.gz tmp/roboweb_server-0.1.36.tar.gz --markdown 20230411/r/roboweb-server/0.1.35-0.1.36/diff.md --exclude *.pyd
+[2023-04-11 09:51:52] INFO root fetch - processPackages [jit-env]: executing diffoscope
+[2023-04-11 09:51:52] INFO root fetch - processPackages [jit-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jit_env-0.0.dev0.tar.gz tmp/jit_env-0.1.0.tar.gz --markdown 20230411/j/jit-env/0.0.dev0-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 09:51:52] INFO root fetch - processPackages [datastock]: Downloading https://files.pythonhosted.org/packages/c8/f7/e07340de43d9d6d744876c43f358a21d55efd542531841ef720870ca1aaf/datastock-0.0.8.tar.gz
+[2023-04-11 09:51:52] INFO root fetch - processPackages [setuptools-monorepo]: Downloading https://files.pythonhosted.org/packages/92/6e/b3bb65bf11bfab800b81f25e6c02841c3a490fed27d35b80e13aa4b51e4d/setuptools-monorepo-0.0.4.tar.gz
+[2023-04-11 09:51:52] INFO root fetch - processPackages [setuptools-monorepo]: executing diffoscope
+[2023-04-11 09:51:52] INFO root fetch - processPackages [setuptools-monorepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setuptools-monorepo-0.0.3.tar.gz tmp/setuptools-monorepo-0.0.4.tar.gz --markdown 20230411/s/setuptools-monorepo/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-11 09:51:52] INFO root fetch - processPackages [osmsg]: executing diffoscope
+[2023-04-11 09:51:52] INFO root fetch - processPackages [osmsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osmsg-0.1.8.tar.gz tmp/osmsg-0.1.9.tar.gz --markdown 20230411/o/osmsg/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 09:51:52] INFO root fetch - processPackages [datastock]: Downloading https://files.pythonhosted.org/packages/03/b4/7f4385d77149be9940d3589c24518d334ca588aece06d503e3c8fc7fb57f/datastock-0.0.9.tar.gz
+[2023-04-11 09:51:52] INFO root fetch - processPackages [datastock]: executing diffoscope
+[2023-04-11 09:51:52] INFO root fetch - processPackages [datastock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datastock-0.0.8.tar.gz tmp/datastock-0.0.9.tar.gz --markdown 20230411/d/datastock/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 09:51:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:53] INFO root fetch - processPackages [OpenGeode-core]: New version: [9.9.1] Old Version: [9.9.0]
+[2023-04-11 09:51:53] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:53] WARNING root fetch - processPackages [Missing-Values-Check]: Skipping, unable to determine old version
+[2023-04-11 09:51:53] INFO root fetch - main [MainThread]: error
+[2023-04-11 09:51:53] INFO root fetch - processPackages [antchain-bccr]: New version: [1.8.15] Old Version: [1.17.48]
+[2023-04-11 09:51:53] INFO root fetch - processPackages [OpenGeode-core]: Downloading https://files.pythonhosted.org/packages/cc/b8/c5be0f9b51377f68d7e80129448fa1e53155b1049c067ebced97c315ffa7/OpenGeode_core-9.9.0-cp39-cp39-win_amd64.whl
+[2023-04-11 09:51:53] INFO root fetch - processPackages [antchain-bccr]: Downloading https://files.pythonhosted.org/packages/8c/33/15e6c3943a3247577804859b7e9c76cd0db9e13ec96ae824dfb80555eac7/antchain_bccr-1.17.48.tar.gz
+[2023-04-11 09:51:53] INFO root fetch - processPackages [antchain-bccr]: Downloading https://files.pythonhosted.org/packages/fd/cb/0b4e2048f81a8e2498ba2c0f5180ce333aabefa79808dd5f924efcad36da/antchain_bccr-1.8.15.tar.gz
+[2023-04-11 09:51:54] INFO root fetch - processPackages [antchain-bccr]: executing diffoscope
+[2023-04-11 09:51:54] INFO root fetch - processPackages [antchain-bccr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_bccr-1.17.48.tar.gz tmp/antchain_bccr-1.8.15.tar.gz --markdown 20230411/a/antchain-bccr/1.17.48-1.8.15/diff.md --exclude *.pyd
+[2023-04-11 09:51:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:54] INFO root fetch - processPackages [nextpcg]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-11 09:51:54] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:54] WARNING root fetch - processPackages [proxy-decorator]: Skipping, unable to determine old version
+[2023-04-11 09:51:54] INFO root fetch - main [MainThread]: error
+[2023-04-11 09:51:54] INFO root fetch - processPackages [kmergenetyper]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-11 09:51:54] INFO root fetch - processPackages [nextpcg]: Downloading https://files.pythonhosted.org/packages/d6/7a/0b4272bf24e20472ea0773a3019a5be90c77a081bbad047c3ffec8c5d713/nextpcg-0.4.0.tar.gz
+[2023-04-11 09:51:54] INFO root fetch - processPackages [kmergenetyper]: Downloading https://files.pythonhosted.org/packages/43/78/c63fbd748d8a0ebe0451ec683eb39c2402c05cf366bf298b352eaaf05378/kmergenetyper-1.0.4.tar.gz
+[2023-04-11 09:51:54] INFO root fetch - processPackages [nextpcg]: executing diffoscope
+[2023-04-11 09:51:54] INFO root fetch - processPackages [nextpcg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextpcg-0.3.1.tar.gz tmp/nextpcg-0.4.0.tar.gz --markdown 20230411/n/nextpcg/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-11 09:51:54] INFO root fetch - processPackages [OpenGeode-core]: Downloading https://files.pythonhosted.org/packages/69/24/2df14c5172a146904eb312729eb2c712afe03196e734d3734adc2a1fdda5/OpenGeode_core-9.9.1-cp39-cp39-win_amd64.whl
+[2023-04-11 09:51:54] INFO root fetch - processPackages [kmergenetyper]: Downloading https://files.pythonhosted.org/packages/91/e7/399c3dc59073bec9c6ee33ea6b3c6b12d1cc23e1393fa0cc6e2c53fe7937/kmergenetyper-1.0.5.tar.gz
+[2023-04-11 09:51:54] INFO root fetch - processPackages [kmergenetyper]: executing diffoscope
+[2023-04-11 09:51:54] INFO root fetch - processPackages [kmergenetyper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmergenetyper-1.0.4.tar.gz tmp/kmergenetyper-1.0.5.tar.gz --markdown 20230411/k/kmergenetyper/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-11 09:51:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:55] INFO root fetch - processPackages [beartype]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-11 09:51:55] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:51:55] INFO root fetch - processPackages [OpenGeode-core]: executing diffoscope
+[2023-04-11 09:51:55] INFO root fetch - processPackages [OpenGeode-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_core-9.9.0-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_core-9.9.1-cp39-cp39-win_amd64.whl.zip --markdown 20230411/O/OpenGeode-core/9.9.0-9.9.1/diff.md --exclude *.pyd
+[2023-04-11 09:51:56] INFO root fetch - processPackages [beartype]: executing diffoscope
+[2023-04-11 09:51:56] INFO root fetch - processPackages [beartype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beartype-0.9.0.tar.gz tmp/beartype-0.9.1.tar.gz --markdown 20230411/b/beartype/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-11 09:51:56] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:52:00] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:52:28] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:52:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 09:52:30] INFO root fetch - main [MainThread]: Store serial: [17657769]
