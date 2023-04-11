@@ -20586,3 +20586,62 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 20:45:17] INFO root fetch - main [MainThread]: success
 [2023-04-11 20:45:25] INFO root fetch - main [MainThread]: success
 [2023-04-11 20:45:25] INFO root fetch - main [MainThread]: Store serial: [17664970]
+[2023-04-11 20:50:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17664970]
+[2023-04-11 20:50:32] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 20:50:32] INFO root fetch - processPackages [astronomica]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-11 20:50:32] INFO root fetch - processPackages [repl-python-codestats]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-11 20:50:32] INFO root fetch - processPackages [clipped]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 20:50:32] INFO root fetch - processPackages [cross-cal-resourcesat]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 20:50:32] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-04-11 20:50:32] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-04-11 20:50:32] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230411/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-04-11 20:50:33] INFO root fetch - processPackages [astronomica]: Downloading https://files.pythonhosted.org/packages/13/ae/393cb302bb93247452711c0cfe2eb5939aeb1d2a7c325ecaf1a5d0e0e131/astronomica-0.0.6.tar.gz
+[2023-04-11 20:50:33] INFO root fetch - processPackages [cross-cal-resourcesat]: Downloading https://files.pythonhosted.org/packages/11/d3/65620e12119323b4d4102b92f3fd8d4b99680bf0f7e383f7c59189a484ce/cross_cal_resourcesat-0.1.2.tar.gz
+[2023-04-11 20:50:33] INFO root fetch - processPackages [clipped]: Downloading https://files.pythonhosted.org/packages/52/f6/e56cdb4b24ede63b285cbe1c70bf66fc4b7730eb436d10154fa082cd1ad7/clipped-0.0.2.tar.gz
+[2023-04-11 20:50:33] INFO root fetch - processPackages [repl-python-codestats]: Downloading https://files.pythonhosted.org/packages/6d/26/d9ac5fb32adc77982a0b3de9fae122eb274736664d5a35906001d24c0267/repl-python-codestats-0.0.6.tar.gz
+[2023-04-11 20:50:33] INFO root fetch - processPackages [astronomica]: executing diffoscope
+[2023-04-11 20:50:33] INFO root fetch - processPackages [astronomica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astronomica-0.0.5.tar.gz tmp/astronomica-0.0.6.tar.gz --markdown 20230411/a/astronomica/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 20:50:33] INFO root fetch - processPackages [cross-cal-resourcesat]: executing diffoscope
+[2023-04-11 20:50:33] INFO root fetch - processPackages [cross-cal-resourcesat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cross_cal_resourcesat-0.1.1.tar.gz tmp/cross_cal_resourcesat-0.1.2.tar.gz --markdown 20230411/c/cross-cal-resourcesat/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 20:50:33] INFO root fetch - processPackages [repl-python-codestats]: executing diffoscope
+[2023-04-11 20:50:33] INFO root fetch - processPackages [repl-python-codestats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repl-python-codestats-0.0.5.tar.gz tmp/repl-python-codestats-0.0.6.tar.gz --markdown 20230411/r/repl-python-codestats/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-11 20:50:33] INFO root fetch - processPackages [clipped]: Downloading https://files.pythonhosted.org/packages/89/90/7593b8d83979cff8ecbd8819018a76aa82a4014006ddae2a447e20db04b8/clipped-0.0.3.tar.gz
+[2023-04-11 20:50:33] INFO root fetch - processPackages [clipped]: executing diffoscope
+[2023-04-11 20:50:33] INFO root fetch - processPackages [clipped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipped-0.0.2.tar.gz tmp/clipped-0.0.3.tar.gz --markdown 20230411/c/clipped/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 20:50:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:34] INFO root fetch - processPackages [pytpu]: New version: [14.7.0] Old Version: [14.6.8]
+[2023-04-11 20:50:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:34] WARNING root fetch - processPackages [apa-logbook-parser]: Skipping, unable to determine old version
+[2023-04-11 20:50:34] INFO root fetch - main [MainThread]: error
+[2023-04-11 20:50:34] WARNING root fetch - processPackages [artkov-square]: Skipping, unable to determine old version
+[2023-04-11 20:50:34] INFO root fetch - main [MainThread]: error
+[2023-04-11 20:50:34] INFO root fetch - processPackages [pytpu]: Downloading https://files.pythonhosted.org/packages/ba/5d/847666d4b956e100175f2c1fb92e1bf8a2bfa3a79c213ff4167edd95fe28/pytpu-14.7.0.tar.gz
+[2023-04-11 20:50:34] INFO root fetch - processPackages [simplug]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-04-11 20:50:34] INFO root fetch - processPackages [pytpu]: executing diffoscope
+[2023-04-11 20:50:34] INFO root fetch - processPackages [pytpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytpu-14.6.8.tar.gz tmp/pytpu-14.7.0.tar.gz --markdown 20230411/p/pytpu/14.6.8-14.7.0/diff.md --exclude *.pyd
+[2023-04-11 20:50:34] WARNING root fetch - processPackages [git-timemachine]: Skipping, unable to determine old version
+[2023-04-11 20:50:34] INFO root fetch - main [MainThread]: error
+[2023-04-11 20:50:34] INFO root fetch - processPackages [graphql-api]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-11 20:50:34] INFO root fetch - processPackages [simplug]: Downloading https://files.pythonhosted.org/packages/7f/39/f9dadb8dc0e98aa9e3e4552bd4ccad2c1a345d19d2b0e43107bd8128a4d5/simplug-0.2.3.tar.gz
+[2023-04-11 20:50:34] INFO root fetch - processPackages [graphql-api]: executing diffoscope
+[2023-04-11 20:50:34] INFO root fetch - processPackages [graphql-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql-api-1.2.8.tar.gz tmp/graphql-api-1.2.9.tar.gz --markdown 20230411/g/graphql-api/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-11 20:50:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:34] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 20:50:35] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-11 20:50:35] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230411/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 20:50:35] INFO root fetch - processPackages [simplug]: Downloading https://files.pythonhosted.org/packages/1a/63/caf51359b8f4c9fa88526e1b08f4732e9beff30ac96e4ba16be94a0301db/simplug-0.3.0.tar.gz
+[2023-04-11 20:50:35] INFO root fetch - processPackages [simplug]: executing diffoscope
+[2023-04-11 20:50:35] INFO root fetch - processPackages [simplug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplug-0.2.3.tar.gz tmp/simplug-0.3.0.tar.gz --markdown 20230411/s/simplug/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-04-11 20:50:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:36] INFO root fetch - processPackages [tendril-filestore]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 20:50:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:36] INFO root fetch - processPackages [tendril-filestore]: Downloading https://files.pythonhosted.org/packages/dd/5b/430033b161ad1da7961d17e3ffadd94cb64686282f922ee615ea7a50603b/tendril-filestore-0.1.8.tar.gz
+[2023-04-11 20:50:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:37] INFO root fetch - processPackages [tendril-filestore]: Downloading https://files.pythonhosted.org/packages/71/53/ea1a6bcb7bf7ab6043dacbcaf07f470ca1457f4b58d345db7c39284b5a78/tendril-filestore-0.1.9.tar.gz
+[2023-04-11 20:50:37] INFO root fetch - processPackages [tendril-filestore]: executing diffoscope
+[2023-04-11 20:50:37] INFO root fetch - processPackages [tendril-filestore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-filestore-0.1.8.tar.gz tmp/tendril-filestore-0.1.9.tar.gz --markdown 20230411/t/tendril-filestore/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 20:50:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:38] INFO root fetch - main [MainThread]: success
+[2023-04-11 20:50:38] INFO root fetch - main [MainThread]: Store serial: [17665026]
