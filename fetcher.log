@@ -16457,3 +16457,107 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 16:42:28] INFO root fetch - processPackages [data-engineering-pulumi-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-engineering-pulumi-components-0.4.1.dev6.tar.gz tmp/data-engineering-pulumi-components-0.4.1.dev7.tar.gz --markdown 20230411/d/data-engineering-pulumi-components/0.4.1.dev6-0.4.1.dev7/diff.md --exclude *.pyd
 [2023-04-11 16:42:30] INFO root fetch - main [MainThread]: success
 [2023-04-11 16:42:30] INFO root fetch - main [MainThread]: Store serial: [17662303]
+[2023-04-11 16:47:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17662303]
+[2023-04-11 16:47:38] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-11 16:47:38] INFO root fetch - processPackages [shootout-opt]: New version: [0.2.1] Old Version: [0.2]
+[2023-04-11 16:47:38] INFO root fetch - processPackages [forwarderd]: New version: [9] Old Version: [8]
+[2023-04-11 16:47:38] INFO root fetch - processPackages [medialoopster]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 16:47:38] INFO root fetch - processPackages [morphcp]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-04-11 16:47:38] INFO root fetch - processPackages [dxsp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 16:47:38] INFO root fetch - processPackages [morphcp]: executing diffoscope
+[2023-04-11 16:47:38] INFO root fetch - processPackages [morphcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphcp-0.0.6.tar.gz tmp/morphcp-0.0.9.tar.gz --markdown 20230411/m/morphcp/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 16:47:38] INFO root fetch - processPackages [medialoopster]: executing diffoscope
+[2023-04-11 16:47:38] INFO root fetch - processPackages [medialoopster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medialoopster-0.0.8.tar.gz tmp/medialoopster-0.0.9.tar.gz --markdown 20230411/m/medialoopster/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 16:47:38] INFO root fetch - processPackages [shootout-opt]: Downloading https://files.pythonhosted.org/packages/0e/35/97b5026223446ea3be2c5ef8174e7e3979e5c9fa74f5246275362d10abbf/shootout-opt-0.2.tar.gz
+[2023-04-11 16:47:39] INFO root fetch - processPackages [forwarderd]: Downloading https://files.pythonhosted.org/packages/99/fb/7fb67e6a6ae259fcadde67a2b08af22157cb9eda5628ec1e467cca3be741/forwarderd-8.tar.gz
+[2023-04-11 16:47:39] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-11 16:47:39] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.8.tar.gz tmp/dxsp-0.0.9.tar.gz --markdown 20230411/d/dxsp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 16:47:39] INFO root fetch - processPackages [shootout-opt]: Downloading https://files.pythonhosted.org/packages/e3/c4/e128b391b9b6ac07fadeca9260071dd6b04c4e6cbd808ebc1a36a98c9a72/shootout-opt-0.2.1.tar.gz
+[2023-04-11 16:47:39] INFO root fetch - processPackages [shootout-opt]: executing diffoscope
+[2023-04-11 16:47:39] INFO root fetch - processPackages [shootout-opt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shootout-opt-0.2.tar.gz tmp/shootout-opt-0.2.1.tar.gz --markdown 20230411/s/shootout-opt/0.2-0.2.1/diff.md --exclude *.pyd
+[2023-04-11 16:47:39] INFO root fetch - processPackages [forwarderd]: Downloading https://files.pythonhosted.org/packages/7c/12/2afbd26517bb18252d106140aa6af61647510ecd7e3846f73784cd90b674/forwarderd-9.tar.gz
+[2023-04-11 16:47:39] INFO root fetch - processPackages [forwarderd]: executing diffoscope
+[2023-04-11 16:47:39] INFO root fetch - processPackages [forwarderd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forwarderd-8.tar.gz tmp/forwarderd-9.tar.gz --markdown 20230411/f/forwarderd/8-9/diff.md --exclude *.pyd
+[2023-04-11 16:47:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:40] INFO root fetch - processPackages [ape-foundry]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-04-11 16:47:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:40] INFO root fetch - processPackages [mexa]: New version: [0.6] Old Version: [0.5]
+[2023-04-11 16:47:40] INFO root fetch - processPackages [ape-foundry]: Downloading https://files.pythonhosted.org/packages/9e/1f/a225ae588c6c4e7fb880e43265dd8a3559cd0893e0dd04ecf8cb01fda974/ape-foundry-0.6.5.tar.gz
+[2023-04-11 16:47:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:40] INFO root fetch - processPackages [odoo-addon-session-db]: New version: [16.0.1.0.4] Old Version: [16.0.1.0.3]
+[2023-04-11 16:47:40] INFO root fetch - processPackages [lycoris-lora]: New version: [0.1.5.dev5] Old Version: [0.1.5.dev4]
+[2023-04-11 16:47:40] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:40] INFO root fetch - processPackages [ape-foundry]: Downloading https://files.pythonhosted.org/packages/43/64/f74169540762fa7812d729f208568d8d513ded7626a544ec21b09bd32be9/ape-foundry-0.6.6.tar.gz
+[2023-04-11 16:47:40] INFO root fetch - processPackages [lycoris-lora]: New version: [0.1.5.dev5] Old Version: [0.1.5.dev4]
+[2023-04-11 16:47:40] INFO root fetch - processPackages [ape-foundry]: executing diffoscope
+[2023-04-11 16:47:40] INFO root fetch - processPackages [ape-foundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ape-foundry-0.6.5.tar.gz tmp/ape-foundry-0.6.6.tar.gz --markdown 20230411/a/ape-foundry/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-04-11 16:47:40] INFO root fetch - processPackages [mexa]: Downloading https://files.pythonhosted.org/packages/d5/26/3b36daae4248797f9e92c73dbbf25d73da8dcef46c38068647389b87b8df/mexa-0.6.tar.gz
+[2023-04-11 16:47:40] INFO root fetch - processPackages [odoo-addon-session-db]: Downloading https://files.pythonhosted.org/packages/80/a6/5486da549ead99fb0966150617ea2245e97231f1304879e53aef0bb05ec6/odoo_addon_session_db-16.0.1.0.3-py3-none-any.whl
+[2023-04-11 16:47:40] INFO root fetch - processPackages [mexa]: executing diffoscope
+[2023-04-11 16:47:40] INFO root fetch - processPackages [mexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mexa-0.5.tar.gz tmp/mexa-0.6.tar.gz --markdown 20230411/m/mexa/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-11 16:47:40] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/01/0f/9c9e9d5f12332b4b46371037edc66fb7fc9659d7d61a63c44ab769aafb3b/lycoris_lora-0.1.5.dev5.tar.gz
+[2023-04-11 16:47:40] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/01/0f/9c9e9d5f12332b4b46371037edc66fb7fc9659d7d61a63c44ab769aafb3b/lycoris_lora-0.1.5.dev5.tar.gz
+[2023-04-11 16:47:41] INFO root fetch - processPackages [odoo-addon-session-db]: Downloading https://files.pythonhosted.org/packages/67/17/02b8422b2b4dd1d872f1a2def0b5714210f8802806fa11332096bb7e77d6/odoo_addon_session_db-16.0.1.0.4-py3-none-any.whl
+[2023-04-11 16:47:41] INFO root fetch - processPackages [lycoris-lora]: executing diffoscope
+[2023-04-11 16:47:41] INFO root fetch - processPackages [lycoris-lora]: executing diffoscope
+[2023-04-11 16:47:41] INFO root fetch - processPackages [lycoris-lora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lycoris_lora-0.1.5.dev4.tar.gz tmp/lycoris_lora-0.1.5.dev5.tar.gz --markdown 20230411/l/lycoris-lora/0.1.5.dev4-0.1.5.dev5/diff.md --exclude *.pyd
+[2023-04-11 16:47:41] INFO root fetch - processPackages [lycoris-lora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lycoris_lora-0.1.5.dev4.tar.gz tmp/lycoris_lora-0.1.5.dev5.tar.gz --markdown 20230411/l/lycoris-lora/0.1.5.dev4-0.1.5.dev5/diff.md --exclude *.pyd
+[2023-04-11 16:47:41] INFO root fetch - processPackages [odoo-addon-session-db]: executing diffoscope
+[2023-04-11 16:47:41] INFO root fetch - processPackages [odoo-addon-session-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_session_db-16.0.1.0.3-py3-none-any.whl.zip tmp/odoo_addon_session_db-16.0.1.0.4-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-session-db/16.0.1.0.3-16.0.1.0.4/diff.md --exclude *.pyd
+[2023-04-11 16:47:41] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:41] INFO root fetch - processPackages [async-firebase]: New version: [3.0.0] Old Version: [2.7.0]
+[2023-04-11 16:47:42] INFO root fetch - processPackages [async-firebase]: Downloading https://files.pythonhosted.org/packages/00/b5/61c24fe5356db01b8594d51f64f9d038d303732075d645c69ee2e1abac92/async_firebase-2.7.0.tar.gz
+[2023-04-11 16:47:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:42] WARNING root fetch - processPackages [iupy-restconf]: Skipping, unable to determine old version
+[2023-04-11 16:47:42] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:47:42] INFO root fetch - processPackages [cpctools]: New version: [0.1.0rc0] Old Version: [0.1.0]
+[2023-04-11 16:47:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:42] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-11 16:47:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:42] INFO root fetch - processPackages [async-firebase]: Downloading https://files.pythonhosted.org/packages/7f/22/4251420829265f93b17ba5eb4fd66f65af96db1b721143643ee5aa417cfb/async_firebase-3.0.0.tar.gz
+[2023-04-11 16:47:42] INFO root fetch - processPackages [iboxstacksops]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-11 16:47:42] INFO root fetch - processPackages [async-firebase]: executing diffoscope
+[2023-04-11 16:47:42] INFO root fetch - processPackages [async-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_firebase-2.7.0.tar.gz tmp/async_firebase-3.0.0.tar.gz --markdown 20230411/a/async-firebase/2.7.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-11 16:47:42] INFO root fetch - processPackages [cpctools]: Downloading https://files.pythonhosted.org/packages/f7/dd/aae2e7f1a0db4bba7a1201430fa895c577d6cdda79c33657d72d6e0a92fd/cpctools-0.1.0.tar.gz
+[2023-04-11 16:47:42] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-11 16:47:42] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230411/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-11 16:47:42] INFO root fetch - processPackages [iboxstacksops]: Downloading https://files.pythonhosted.org/packages/73/53/a5e585f9bfd54d7d905250899ddc106534967dde3b32f2dcc4f46f636814/iboxstacksops-0.7.1.tar.gz
+[2023-04-11 16:47:42] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:42] INFO root fetch - processPackages [pysatproc]: New version: [0.2.1] Old Version: [0.2.0a0]
+[2023-04-11 16:47:42] INFO root fetch - processPackages [cpctools]: Downloading https://files.pythonhosted.org/packages/d9/90/c1669a5b45c2c2d1b0fa3e448d0a0305d6c309b685a1c4a3c73bfe6e9493/cpctools-0.1.0rc0.tar.gz
+[2023-04-11 16:47:42] INFO root fetch - processPackages [cpctools]: executing diffoscope
+[2023-04-11 16:47:42] INFO root fetch - processPackages [cpctools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpctools-0.1.0.tar.gz tmp/cpctools-0.1.0rc0.tar.gz --markdown 20230411/c/cpctools/0.1.0-0.1.0rc0/diff.md --exclude *.pyd
+[2023-04-11 16:47:42] INFO root fetch - processPackages [iboxstacksops]: Downloading https://files.pythonhosted.org/packages/a1/27/458a8bd73166735c010d57375f220afd1ef1f5e90dbf945dc74d0d140821/iboxstacksops-0.7.2.tar.gz
+[2023-04-11 16:47:42] INFO root fetch - processPackages [pysatproc]: Downloading https://files.pythonhosted.org/packages/ea/c7/7c604e5e801a3338dfe3af23e7b3f0e7445c765eaf937866d1a3572c5092/pysatproc-0.2.0a0.tar.gz
+[2023-04-11 16:47:42] INFO root fetch - processPackages [iboxstacksops]: executing diffoscope
+[2023-04-11 16:47:42] INFO root fetch - processPackages [iboxstacksops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iboxstacksops-0.7.1.tar.gz tmp/iboxstacksops-0.7.2.tar.gz --markdown 20230411/i/iboxstacksops/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-11 16:47:43] INFO root fetch - processPackages [pysatproc]: Downloading https://files.pythonhosted.org/packages/71/fd/0ff5bc950e267643376f85d51c1f9346540b7da62f7f4952a628df7d600c/pysatproc-0.2.1.tar.gz
+[2023-04-11 16:47:43] INFO root fetch - processPackages [pysatproc]: executing diffoscope
+[2023-04-11 16:47:43] INFO root fetch - processPackages [pysatproc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysatproc-0.2.0a0.tar.gz tmp/pysatproc-0.2.1.tar.gz --markdown 20230411/p/pysatproc/0.2.0a0-0.2.1/diff.md --exclude *.pyd
+[2023-04-11 16:47:43] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:43] INFO root fetch - processPackages [unetseg]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-11 16:47:43] INFO root fetch - processPackages [unetseg]: Downloading https://files.pythonhosted.org/packages/73/c9/d7805970167bcd5e1650a6c2a8d320a614c640d517845b4909f4aecc92ca/unetseg-0.2.2.tar.gz
+[2023-04-11 16:47:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:44] INFO root fetch - processPackages [tap-facebook]: New version: [1.9.7] Old Version: [1.9.6]
+[2023-04-11 16:47:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:44] INFO root fetch - processPackages [unetseg]: Downloading https://files.pythonhosted.org/packages/fc/ec/6badf08a265e4f7d8e4213a51ed53317a9011e042224b00d2d63af3f879c/unetseg-0.2.3.tar.gz
+[2023-04-11 16:47:44] WARNING root fetch - processPackages [pyspal]: Skipping, unable to determine old version
+[2023-04-11 16:47:44] INFO root fetch - main [MainThread]: error
+[2023-04-11 16:47:44] INFO root fetch - processPackages [unetseg]: executing diffoscope
+[2023-04-11 16:47:44] INFO root fetch - processPackages [unetseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unetseg-0.2.2.tar.gz tmp/unetseg-0.2.3.tar.gz --markdown 20230411/u/unetseg/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-11 16:47:44] INFO root fetch - processPackages [tap-facebook]: Downloading https://files.pythonhosted.org/packages/13/1e/bd8f4ff44dc2b3d2b9dc085c68d7244ee5c9f79cd01af30a0e428cc80bab/tap-facebook-1.9.6.tar.gz
+[2023-04-11 16:47:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:44] INFO root fetch - processPackages [osc-sdk-python]: New version: [0.25.0] Old Version: [0.24.0]
+[2023-04-11 16:47:44] INFO root fetch - processPackages [tap-facebook]: Downloading https://files.pythonhosted.org/packages/6c/71/7a39d23b96039020caab8dca07e366f8538192eea5d6fff51158abd1fcbb/tap-facebook-1.9.7.tar.gz
+[2023-04-11 16:47:44] INFO root fetch - processPackages [osc-sdk-python]: Downloading https://files.pythonhosted.org/packages/a4/f9/573cab9e05c2fd0b8400fd577c93176eb84e9910ef8b711957e4dc306342/osc_sdk_python-0.24.0.tar.gz
+[2023-04-11 16:47:45] INFO root fetch - processPackages [tap-facebook]: executing diffoscope
+[2023-04-11 16:47:45] INFO root fetch - processPackages [tap-facebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap-facebook-1.9.6.tar.gz tmp/tap-facebook-1.9.7.tar.gz --markdown 20230411/t/tap-facebook/1.9.6-1.9.7/diff.md --exclude *.pyd
+[2023-04-11 16:47:45] INFO root fetch - processPackages [osc-sdk-python]: Downloading https://files.pythonhosted.org/packages/b4/80/3955f82d530b8c0b696024e760b3986afd48a4a5d714e3c8b340055f89de/osc_sdk_python-0.25.0.tar.gz
+[2023-04-11 16:47:45] INFO root fetch - processPackages [osc-sdk-python]: executing diffoscope
+[2023-04-11 16:47:45] INFO root fetch - processPackages [osc-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osc_sdk_python-0.24.0.tar.gz tmp/osc_sdk_python-0.25.0.tar.gz --markdown 20230411/o/osc-sdk-python/0.24.0-0.25.0/diff.md --exclude *.pyd
+[2023-04-11 16:47:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 16:47:46] INFO root fetch - main [MainThread]: Store serial: [17662362]
