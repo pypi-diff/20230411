@@ -18638,3 +18638,64 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 19:00:08] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:00:22] INFO root fetch - main [MainThread]: success
 [2023-04-11 19:00:22] INFO root fetch - main [MainThread]: Store serial: [17663766]
+[2023-04-11 19:05:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17663766]
+[2023-04-11 19:05:30] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-11 19:05:30] INFO root fetch - processPackages [nlp-pipeline]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 19:05:30] INFO root fetch - processPackages [gym-saturation]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-11 19:05:30] WARNING root fetch - processPackages [pyobfadvance]: Skipping, unable to determine old version
+[2023-04-11 19:05:30] INFO root fetch - main [MainThread]: error
+[2023-04-11 19:05:30] INFO root fetch - processPackages [pipen]: New version: [0.8.0] Old Version: [0.7.3]
+[2023-04-11 19:05:30] INFO root fetch - processPackages [upyog]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-04-11 19:05:30] INFO root fetch - processPackages [astronomica]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-11 19:05:30] INFO root fetch - processPackages [gym-saturation]: Downloading https://files.pythonhosted.org/packages/85/e9/227bc6de46a0c7b95d0d6d8af19ae0c4da14f0e8fca2a4f209c2477197cd/gym_saturation-0.9.1.tar.gz
+[2023-04-11 19:05:30] INFO root fetch - processPackages [nlp-pipeline]: Downloading https://files.pythonhosted.org/packages/6d/68/f423cb7b4c6c7b84145cef4b2d5e75f6ace46e0c9c03a55b21276f0233b4/nlp_pipeline-0.0.8.tar.gz
+[2023-04-11 19:05:30] INFO root fetch - processPackages [upyog]: Downloading https://files.pythonhosted.org/packages/04/33/f720033d9456c3481f5440fb96672ac2417ad4ee7de24736f63f08e65b5a/upyog-0.6.1.tar.gz
+[2023-04-11 19:05:30] INFO root fetch - processPackages [astronomica]: Downloading https://files.pythonhosted.org/packages/48/5b/74694590f27e90e4af9162ed5551c84fd16da3e0bf8508e98489e81a63fe/astronomica-0.0.3.tar.gz
+[2023-04-11 19:05:30] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/aa/40/747548ada5c2cce1f83d837bde586d906c8c2e3c6b1b5c563c866412668e/pipen-0.8.0.tar.gz
+[2023-04-11 19:05:30] INFO root fetch - processPackages [gym-saturation]: Downloading https://files.pythonhosted.org/packages/a1/28/ff4b16cdf85c4a62f8ac5d0965076231ba341bb8627385755e30800edc2d/gym_saturation-0.9.2.tar.gz
+[2023-04-11 19:05:30] INFO root fetch - processPackages [astronomica]: executing diffoscope
+[2023-04-11 19:05:30] INFO root fetch - processPackages [astronomica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astronomica-0.0.2.tar.gz tmp/astronomica-0.0.3.tar.gz --markdown 20230411/a/astronomica/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-11 19:05:30] INFO root fetch - processPackages [upyog]: Downloading https://files.pythonhosted.org/packages/84/b0/66d0509b8e638384ff784ad939487bd2f72facd313b1f9a1a11a31f1582c/upyog-0.6.2.tar.gz
+[2023-04-11 19:05:30] INFO root fetch - processPackages [pipen]: executing diffoscope
+[2023-04-11 19:05:30] INFO root fetch - processPackages [pipen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen-0.7.3.tar.gz tmp/pipen-0.8.0.tar.gz --markdown 20230411/p/pipen/0.7.3-0.8.0/diff.md --exclude *.pyd
+[2023-04-11 19:05:30] INFO root fetch - processPackages [gym-saturation]: executing diffoscope
+[2023-04-11 19:05:30] INFO root fetch - processPackages [gym-saturation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym_saturation-0.9.1.tar.gz tmp/gym_saturation-0.9.2.tar.gz --markdown 20230411/g/gym-saturation/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-11 19:05:30] INFO root fetch - processPackages [upyog]: executing diffoscope
+[2023-04-11 19:05:30] INFO root fetch - processPackages [upyog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upyog-0.6.1.tar.gz tmp/upyog-0.6.2.tar.gz --markdown 20230411/u/upyog/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-04-11 19:05:31] INFO root fetch - processPackages [nlp-pipeline]: Downloading https://files.pythonhosted.org/packages/28/b8/2312ab3f5ddcbd5f394f72746eb42cb63db9ffbe24458ac13b4c189c4d94/nlp_pipeline-0.0.9.tar.gz
+[2023-04-11 19:05:31] INFO root fetch - processPackages [nlp-pipeline]: executing diffoscope
+[2023-04-11 19:05:31] INFO root fetch - processPackages [nlp-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlp_pipeline-0.0.8.tar.gz tmp/nlp_pipeline-0.0.9.tar.gz --markdown 20230411/n/nlp-pipeline/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 19:05:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:31] INFO root fetch - processPackages [solvency2-data]: New version: [0.1.7] Old Version: [0.1.5]
+[2023-04-11 19:05:31] INFO root fetch - processPackages [solvency2-data]: Downloading https://files.pythonhosted.org/packages/f3/41/5852926e5f26b5a5bc8ba932a27e0d33a71b0bc5c36cf10e2655c35ecb90/solvency2_data-0.1.5.tar.gz
+[2023-04-11 19:05:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:32] INFO root fetch - processPackages [trend-lines-generator]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-11 19:05:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:32] INFO root fetch - processPackages [multibotkit]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 19:05:32] INFO root fetch - processPackages [trend-lines-generator]: Downloading https://files.pythonhosted.org/packages/2b/e4/3dbeac666a21e15825cee9197969f4829f74b78fa7d15fe023e44d89fdd1/trend_lines_generator-0.1.1.tar.gz
+[2023-04-11 19:05:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:32] INFO root fetch - processPackages [clipcrop]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-11 19:05:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:32] INFO root fetch - processPackages [multibotkit]: Downloading https://files.pythonhosted.org/packages/ba/32/dd4d3ba8adc4d378d5de1bf897d7a3ee7f76db1634791bf14c77523d3e78/multibotkit-0.1.8.tar.gz
+[2023-04-11 19:05:32] INFO root fetch - processPackages [lacuscore]: New version: [1.4.7] Old Version: [1.4.6]
+[2023-04-11 19:05:32] INFO root fetch - processPackages [clipcrop]: Downloading https://files.pythonhosted.org/packages/c0/1f/19a25b2de92fa0763ab40b0b387c4b5d81a2562e2e230d95ea4c27a31af7/clipcrop-1.0.9.tar.gz
+[2023-04-11 19:05:32] INFO root fetch - processPackages [lacuscore]: Downloading https://files.pythonhosted.org/packages/40/22/76199178388f1d64f5020b609b6756abb94278258012bcd6e48b9e792c41/lacuscore-1.4.7-py3-none-any.whl
+[2023-04-11 19:05:32] INFO root fetch - processPackages [trend-lines-generator]: Downloading https://files.pythonhosted.org/packages/31/f6/10ca4fd573662a8ce4e695750d4a9e0b8e6ecf00497481a454ec3422c179/trend_lines_generator-0.1.2.tar.gz
+[2023-04-11 19:05:32] INFO root fetch - processPackages [multibotkit]: Downloading https://files.pythonhosted.org/packages/ba/fd/98feb2af8adf32a4682746334a2195fa6774dcc8693ba9f7f8de8a8b8546/multibotkit-0.1.9.tar.gz
+[2023-04-11 19:05:32] INFO root fetch - processPackages [clipcrop]: executing diffoscope
+[2023-04-11 19:05:32] INFO root fetch - processPackages [clipcrop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipcrop-1.0.8.tar.gz tmp/clipcrop-1.0.9.tar.gz --markdown 20230411/c/clipcrop/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-11 19:05:32] INFO root fetch - processPackages [lacuscore]: executing diffoscope
+[2023-04-11 19:05:32] INFO root fetch - processPackages [lacuscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lacuscore-1.4.6.tar.gz tmp/lacuscore-1.4.7-py3-none-any.whl.zip --markdown 20230411/l/lacuscore/1.4.6-1.4.7/diff.md --exclude *.pyd
+[2023-04-11 19:05:32] INFO root fetch - processPackages [trend-lines-generator]: executing diffoscope
+[2023-04-11 19:05:32] INFO root fetch - processPackages [trend-lines-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trend_lines_generator-0.1.1.tar.gz tmp/trend_lines_generator-0.1.2.tar.gz --markdown 20230411/t/trend-lines-generator/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-11 19:05:32] INFO root fetch - processPackages [multibotkit]: executing diffoscope
+[2023-04-11 19:05:32] INFO root fetch - processPackages [multibotkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multibotkit-0.1.8.tar.gz tmp/multibotkit-0.1.9.tar.gz --markdown 20230411/m/multibotkit/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 19:05:32] INFO root fetch - processPackages [solvency2-data]: Downloading https://files.pythonhosted.org/packages/7e/77/07dc1b5014ca288600d1eb77e32e9d90edc40d78e397797daac1bbe91969/solvency2_data-0.1.7.tar.gz
+[2023-04-11 19:05:33] INFO root fetch - processPackages [solvency2-data]: executing diffoscope
+[2023-04-11 19:05:33] INFO root fetch - processPackages [solvency2-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solvency2_data-0.1.5.tar.gz tmp/solvency2_data-0.1.7.tar.gz --markdown 20230411/s/solvency2-data/0.1.5-0.1.7/diff.md --exclude *.pyd
+[2023-04-11 19:05:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 19:05:34] INFO root fetch - main [MainThread]: Store serial: [17663796]
