@@ -11669,3 +11669,76 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 11:21:34] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:21:34] INFO root fetch - main [MainThread]: success
 [2023-04-11 11:21:34] INFO root fetch - main [MainThread]: Store serial: [17658811]
+[2023-04-11 11:26:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17658811]
+[2023-04-11 11:26:42] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-11 11:26:43] INFO root fetch - processPackages [django-ipghrms-employee]: New version: [1.2] Old Version: [1.1]
+[2023-04-11 11:26:43] INFO root fetch - processPackages [aliyun-python-sdk-alimt]: New version: [3.2.0] Old Version: [3.1.1]
+[2023-04-11 11:26:43] INFO root fetch - processPackages [dwh-oppfolging]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 11:26:43] INFO root fetch - processPackages [anndata]: New version: [0.9.0rc1] Old Version: [0.9.0]
+[2023-04-11 11:26:43] INFO root fetch - processPackages [home-assistant-frontend]: New version: [20230411.0] Old Version: [20230406.1]
+[2023-04-11 11:26:43] INFO root fetch - processPackages [anndata]: Downloading https://files.pythonhosted.org/packages/8d/c6/7a9eead099257402c53aa67130d41b28be870bfd40c221fbeb40a923009f/anndata-0.9.0.tar.gz
+[2023-04-11 11:26:43] INFO root fetch - processPackages [home-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/13/3a/76fec307d30fb56385f26bf52e0f4d2fb4f553266af9d25cb745a1a9b2a1/home_assistant_frontend-20230406.1-py3-none-any.whl
+[2023-04-11 11:26:43] INFO root fetch - processPackages [aliyun-python-sdk-alimt]: Downloading https://files.pythonhosted.org/packages/3a/d8/779d2e6b1a9b4cb29ad85ed966f1877b28365d9e564ed72d04f473e34672/aliyun-python-sdk-alimt-3.1.1.tar.gz
+[2023-04-11 11:26:43] INFO root fetch - processPackages [dwh-oppfolging]: Downloading https://files.pythonhosted.org/packages/bd/7e/5b047e6145691fd94030b91144fa2afefbfdc63cb48e64510f7889eb3d1e/dwh_oppfolging-0.0.8.tar.gz
+[2023-04-11 11:26:43] WARNING root fetch - processPackages [home-assistant-frontend]: Skipping package: exceeds size limit 49274563>=10485760
+[2023-04-11 11:26:43] INFO root fetch - main [MainThread]: error
+[2023-04-11 11:26:43] INFO root fetch - processPackages [django-ipghrms-employee]: Downloading https://files.pythonhosted.org/packages/c5/a8/8e21cf9d953f866e417bfd915e163546fcb79c7b0bccec44121c15a4ec13/django-ipghrms-employee-1.1.tar.gz
+[2023-04-11 11:26:43] INFO root fetch - processPackages [django-ipghrms-log]: New version: [1.3] Old Version: [1.2]
+[2023-04-11 11:26:43] INFO root fetch - processPackages [aliyun-python-sdk-alimt]: Downloading https://files.pythonhosted.org/packages/3f/5f/b89b7ec66f1df7b56b611dc7a5683d2448ec560549a00e8ee909a20b90d0/aliyun-python-sdk-alimt-3.2.0.tar.gz
+[2023-04-11 11:26:43] INFO root fetch - processPackages [django-ipghrms-log]: Downloading https://files.pythonhosted.org/packages/56/76/a77262af5c1ee03a32b01cd6f6d700f8ca5c413b607e25f63a0d7392362d/django-ipghrms-log-1.2.tar.gz
+[2023-04-11 11:26:43] INFO root fetch - processPackages [anndata]: Downloading https://files.pythonhosted.org/packages/b6/c1/242c684e2c1e5a21e74ffbe03a2e69173b7087bf95779e3157cf0d976657/anndata-0.9.0rc1.tar.gz
+[2023-04-11 11:26:43] INFO root fetch - processPackages [aliyun-python-sdk-alimt]: executing diffoscope
+[2023-04-11 11:26:43] INFO root fetch - processPackages [aliyun-python-sdk-alimt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-alimt-3.1.1.tar.gz tmp/aliyun-python-sdk-alimt-3.2.0.tar.gz --markdown 20230411/a/aliyun-python-sdk-alimt/3.1.1-3.2.0/diff.md --exclude *.pyd
+[2023-04-11 11:26:43] INFO root fetch - processPackages [anndata]: executing diffoscope
+[2023-04-11 11:26:43] INFO root fetch - processPackages [anndata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anndata-0.9.0.tar.gz tmp/anndata-0.9.0rc1.tar.gz --markdown 20230411/a/anndata/0.9.0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-04-11 11:26:43] INFO root fetch - processPackages [dwh-oppfolging]: Downloading https://files.pythonhosted.org/packages/d7/53/d6168fd1cf2cce707cc3d8f9c54f278c6cb5a0b20d7af3d70b4516681c1b/dwh_oppfolging-0.0.9.tar.gz
+[2023-04-11 11:26:43] INFO root fetch - processPackages [django-ipghrms-log]: Downloading https://files.pythonhosted.org/packages/59/2d/142df3c65f1f15e121eb0f9b37611603626b02014a1763a1054b9b226aa5/django-ipghrms-log-1.3.tar.gz
+[2023-04-11 11:26:43] INFO root fetch - processPackages [django-ipghrms-employee]: Downloading https://files.pythonhosted.org/packages/94/74/e5ee9690ab3416ec8e8e9d6e2b9fbd3701c4b0734135993ffaec7e75b1b3/django-ipghrms-employee-1.2.tar.gz
+[2023-04-11 11:26:43] INFO root fetch - processPackages [django-ipghrms-log]: executing diffoscope
+[2023-04-11 11:26:43] INFO root fetch - processPackages [django-ipghrms-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ipghrms-log-1.2.tar.gz tmp/django-ipghrms-log-1.3.tar.gz --markdown 20230411/d/django-ipghrms-log/1.2-1.3/diff.md --exclude *.pyd
+[2023-04-11 11:26:44] INFO root fetch - processPackages [dwh-oppfolging]: executing diffoscope
+[2023-04-11 11:26:44] INFO root fetch - processPackages [dwh-oppfolging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwh_oppfolging-0.0.8.tar.gz tmp/dwh_oppfolging-0.0.9.tar.gz --markdown 20230411/d/dwh-oppfolging/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 11:26:44] INFO root fetch - processPackages [django-ipghrms-employee]: executing diffoscope
+[2023-04-11 11:26:44] INFO root fetch - processPackages [django-ipghrms-employee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ipghrms-employee-1.1.tar.gz tmp/django-ipghrms-employee-1.2.tar.gz --markdown 20230411/d/django-ipghrms-employee/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-11 11:26:44] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:44] INFO root fetch - processPackages [pywas]: New version: [0.1.4b0] Old Version: [0.1.3]
+[2023-04-11 11:26:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:45] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:45] INFO root fetch - processPackages [MeUtils]: New version: [2023.4.6.14.28.33] Old Version: [2023.4.6.14.19.58]
+[2023-04-11 11:26:45] INFO root fetch - processPackages [pywas]: Downloading https://files.pythonhosted.org/packages/eb/b6/e0acb97a2c4384ff67a5dcb2bd25daacb99e0c3822ac279ffc710a41fba6/pywas-0.1.3.tar.gz
+[2023-04-11 11:26:45] INFO root fetch - processPackages [frinx-python-sdk]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-11 11:26:45] INFO root fetch - processPackages [thinks-dash-components]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-11 11:26:45] INFO root fetch - processPackages [MeUtils]: executing diffoscope
+[2023-04-11 11:26:45] INFO root fetch - processPackages [MeUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MeUtils-2023.4.6.14.19.58.tar.gz tmp/MeUtils-2023.4.6.14.28.33.tar.gz --markdown 20230411/M/MeUtils/2023.4.6.14.19.58-2023.4.6.14.28.33/diff.md --exclude *.pyd
+[2023-04-11 11:26:45] INFO root fetch - processPackages [frinx-python-sdk]: Downloading https://files.pythonhosted.org/packages/12/00/7530891fdae251924a64e6005a85cf274ca08419d43a421012922a540806/frinx-python-sdk-0.0.7.tar.gz
+[2023-04-11 11:26:45] INFO root fetch - processPackages [thinks-dash-components]: Downloading https://files.pythonhosted.org/packages/d5/70/d5a628288ed893bf960b7bb694560324b3c5face27f256455a366b618d49/thinks_dash_components-0.3.2.tar.gz
+[2023-04-11 11:26:45] INFO root fetch - processPackages [thinks-dash-components]: executing diffoscope
+[2023-04-11 11:26:45] INFO root fetch - processPackages [thinks-dash-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thinks_dash_components-0.3.1.tar.gz tmp/thinks_dash_components-0.3.2.tar.gz --markdown 20230411/t/thinks-dash-components/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-11 11:26:45] INFO root fetch - processPackages [pywas]: Downloading https://files.pythonhosted.org/packages/44/de/099f2e1a6609ff15b11a7c46d3cd5d19ae384137cc167442948df022f067/pywas-0.1.4b0.tar.gz
+[2023-04-11 11:26:45] INFO root fetch - processPackages [frinx-python-sdk]: Downloading https://files.pythonhosted.org/packages/20/e9/160a56a5ff78fc6810fc83098d03555efe0dfbb5a271f28de4ae0d3c48af/frinx-python-sdk-0.0.8.tar.gz
+[2023-04-11 11:26:45] INFO root fetch - processPackages [frinx-python-sdk]: executing diffoscope
+[2023-04-11 11:26:45] INFO root fetch - processPackages [frinx-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frinx-python-sdk-0.0.7.tar.gz tmp/frinx-python-sdk-0.0.8.tar.gz --markdown 20230411/f/frinx-python-sdk/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-11 11:26:45] INFO root fetch - processPackages [pywas]: executing diffoscope
+[2023-04-11 11:26:45] INFO root fetch - processPackages [pywas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywas-0.1.3.tar.gz tmp/pywas-0.1.4b0.tar.gz --markdown 20230411/p/pywas/0.1.3-0.1.4b0/diff.md --exclude *.pyd
+[2023-04-11 11:26:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:46] INFO root fetch - processPackages [griffon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-11 11:26:46] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:47] INFO root fetch - processPackages [alibabacloud-alimt20181012]: New version: [1.1.0] Old Version: [1.0.4]
+[2023-04-11 11:26:47] INFO root fetch - processPackages [griffon]: Downloading https://files.pythonhosted.org/packages/c8/c4/c6f94dfcb710178b29d7c7e4ef3c728359e0c45e66c75298a5e17ec63ba8/griffon-0.1.8.tar.gz
+[2023-04-11 11:26:47] INFO root fetch - processPackages [alibabacloud-alimt20181012]: Downloading https://files.pythonhosted.org/packages/c0/0b/5ce305cff410e0f7d7c858442c7498518f74c169739922258f03b983619e/alibabacloud_alimt20181012-1.1.0.tar.gz
+[2023-04-11 11:26:47] INFO root fetch - processPackages [alibabacloud-alimt20181012]: executing diffoscope
+[2023-04-11 11:26:47] INFO root fetch - processPackages [alibabacloud-alimt20181012]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_alimt20181012-1.0.4.tar.gz tmp/alibabacloud_alimt20181012-1.1.0.tar.gz --markdown 20230411/a/alibabacloud-alimt20181012/1.0.4-1.1.0/diff.md --exclude *.pyd
+[2023-04-11 11:26:47] INFO root fetch - processPackages [griffon]: Downloading https://files.pythonhosted.org/packages/23/dd/c076acb3cff7bd03ce910d70419c262f1825bfa0ce32c3d4b7d44996ecc2/griffon-0.1.9.tar.gz
+[2023-04-11 11:26:47] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:47] INFO root fetch - processPackages [alibabacloud-alimt20181012-py2]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-11 11:26:47] INFO root fetch - processPackages [alibabacloud-alimt20181012-py2]: executing diffoscope
+[2023-04-11 11:26:47] INFO root fetch - processPackages [griffon]: executing diffoscope
+[2023-04-11 11:26:47] INFO root fetch - processPackages [alibabacloud-alimt20181012-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_alimt20181012_py2-1.0.0.tar.gz tmp/alibabacloud_alimt20181012_py2-1.0.1.tar.gz --markdown 20230411/a/alibabacloud-alimt20181012-py2/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-11 11:26:47] INFO root fetch - processPackages [griffon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffon-0.1.8.tar.gz tmp/griffon-0.1.9.tar.gz --markdown 20230411/g/griffon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-11 11:26:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:48] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:49] INFO root fetch - main [MainThread]: success
+[2023-04-11 11:26:49] INFO root fetch - main [MainThread]: Store serial: [17658855]
