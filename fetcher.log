@@ -8892,3 +8892,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-11 08:50:19] INFO root fetch - main [MainThread]: success
 [2023-04-11 08:50:20] INFO root fetch - main [MainThread]: success
 [2023-04-11 08:50:20] INFO root fetch - main [MainThread]: Store serial: [17657148]
+[2023-04-11 08:55:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17657148]
+[2023-04-11 08:55:28] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-11 08:55:28] INFO root fetch - processPackages [kz-iin-validator]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo-fast-report-mapper-equitania]: New version: [0.1.8] Old Version: [0.1.5]
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo11-addon-purchase-request]: New version: [11.0.1.2.6.99.dev4] Old Version: [11.0.1.2.6.99.dev3]
+[2023-04-11 08:55:28] WARNING root fetch - processPackages [admin-form-image-preivew]: Skipping, unable to determine old version
+[2023-04-11 08:55:28] INFO root fetch - main [MainThread]: error
+[2023-04-11 08:55:28] INFO root fetch - processPackages [coredis]: New version: [4.9.0] Old Version: [4.8.3]
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo13-addon-purchase-request]: New version: [13.0.4.3.1.dev9] Old Version: [13.0.4.3.1.dev7]
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo11-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/42/76/8846d49dba9f79895521053fc08222e4ee418514f084bf7fef4f1a2fa6a3/odoo11_addon_purchase_request-11.0.1.2.6.99.dev3-py2.py3-none-any.whl
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo-fast-report-mapper-equitania]: Downloading https://files.pythonhosted.org/packages/59/40/3d4b991aa1efbd71ca6ca7c7805cb40e3dbfcd82e8fe93c928462ad39c3c/odoo-fast-report-mapper-equitania-0.1.5.tar.gz
+[2023-04-11 08:55:28] INFO root fetch - processPackages [kz-iin-validator]: Downloading https://files.pythonhosted.org/packages/a8/39/4aff2c849835b91dfae9256db502ba1c6d141acb2a7cf66a7cb7842ba8b2/kz_iin_validator-0.5.0.tar.gz
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo13-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/31/3d/2ef21782ad94f8f377ffb18e19fe23b1cd34cb3fdc23d599769c20e19688/odoo13_addon_purchase_request-13.0.4.3.1.dev7-py3-none-any.whl
+[2023-04-11 08:55:28] INFO root fetch - processPackages [coredis]: Downloading https://files.pythonhosted.org/packages/9e/15/9498630a748dec93a44ce80042c02bf7978e61fd9f327ff91cdafe3f6552/coredis-4.8.3.tar.gz
+[2023-04-11 08:55:28] INFO root fetch - processPackages [kz-iin-validator]: Downloading https://files.pythonhosted.org/packages/8f/75/6a409073ab653b029b47a6245259b5868265ca2b9b4f415529209815e507/kz_iin_validator-0.6.0.tar.gz
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo-fast-report-mapper-equitania]: Downloading https://files.pythonhosted.org/packages/4b/a7/679c8e108b16941940670f3802f6999245b27e16795edfb0478922ecbe62/odoo-fast-report-mapper-equitania-0.1.8.tar.gz
+[2023-04-11 08:55:28] INFO root fetch - processPackages [kz-iin-validator]: executing diffoscope
+[2023-04-11 08:55:28] INFO root fetch - processPackages [kz-iin-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kz_iin_validator-0.5.0.tar.gz tmp/kz_iin_validator-0.6.0.tar.gz --markdown 20230411/k/kz-iin-validator/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo13-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/9d/9d/2b4348dad0180400f8763fcd0fbed4fd5f9c75c6db98470e0a2167bd6d55/odoo13_addon_purchase_request-13.0.4.3.1.dev9-py3-none-any.whl
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo-fast-report-mapper-equitania]: executing diffoscope
+[2023-04-11 08:55:28] INFO root fetch - processPackages [odoo-fast-report-mapper-equitania]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo-fast-report-mapper-equitania-0.1.5.tar.gz tmp/odoo-fast-report-mapper-equitania-0.1.8.tar.gz --markdown 20230411/o/odoo-fast-report-mapper-equitania/0.1.5-0.1.8/diff.md --exclude *.pyd
+[2023-04-11 08:55:29] INFO root fetch - processPackages [odoo13-addon-purchase-request]: executing diffoscope
+[2023-04-11 08:55:29] INFO root fetch - processPackages [odoo13-addon-purchase-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_purchase_request-13.0.4.3.1.dev7-py3-none-any.whl.zip tmp/odoo13_addon_purchase_request-13.0.4.3.1.dev9-py3-none-any.whl.zip --markdown 20230411/o/odoo13-addon-purchase-request/13.0.4.3.1.dev7-13.0.4.3.1.dev9/diff.md --exclude *.pyd
+[2023-04-11 08:55:29] INFO root fetch - processPackages [odoo11-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/27/fc/1b6782393f6fbcaad79860abc80ada6317bb2b81ef7b9958ea5dac66388e/odoo11_addon_purchase_request-11.0.1.2.6.99.dev4-py2.py3-none-any.whl
+[2023-04-11 08:55:29] INFO root fetch - processPackages [coredis]: Downloading https://files.pythonhosted.org/packages/cf/dc/6d8ed835ed3561c0e006b8e2719ac4acc5b2be330a6c40f810ea0b579237/coredis-4.9.0.tar.gz
+[2023-04-11 08:55:29] INFO root fetch - processPackages [odoo11-addon-purchase-request]: executing diffoscope
+[2023-04-11 08:55:29] INFO root fetch - processPackages [odoo11-addon-purchase-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_purchase_request-11.0.1.2.6.99.dev3-py2.py3-none-any.whl.zip tmp/odoo11_addon_purchase_request-11.0.1.2.6.99.dev4-py2.py3-none-any.whl.zip --markdown 20230411/o/odoo11-addon-purchase-request/11.0.1.2.6.99.dev3-11.0.1.2.6.99.dev4/diff.md --exclude *.pyd
+[2023-04-11 08:55:29] INFO root fetch - processPackages [coredis]: executing diffoscope
+[2023-04-11 08:55:29] INFO root fetch - processPackages [coredis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coredis-4.8.3.tar.gz tmp/coredis-4.9.0.tar.gz --markdown 20230411/c/coredis/4.8.3-4.9.0/diff.md --exclude *.pyd
+[2023-04-11 08:55:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:30] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-11 08:55:30] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:30] INFO root fetch - processPackages [ANYstructure]: New version: [4.8] Old Version: [4.7]
+[2023-04-11 08:55:30] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-11 08:55:30] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230411/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-11 08:55:30] INFO root fetch - processPackages [ANYstructure]: Downloading https://files.pythonhosted.org/packages/83/1a/a7db92eb3184fdf0eace87cd254bfa35558dba8db682fcc12c0fc7cedd3d/ANYstructure-4.7.tar.gz
+[2023-04-11 08:55:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:31] INFO root fetch - processPackages [diskcache]: New version: [5.5.1] Old Version: [5.4.0]
+[2023-04-11 08:55:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:31] INFO root fetch - processPackages [diskcache]: Downloading https://files.pythonhosted.org/packages/c7/34/d23a9bc5b2a84917879b977f00fdb97a7700b186a32bf7b0cf5f29f4c2d9/diskcache-5.4.0.tar.gz
+[2023-04-11 08:55:31] INFO root fetch - processPackages [odoo-addon-purchase-request]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2023-04-11 08:55:31] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:31] WARNING root fetch - processPackages [ZiTa67]: Skipping, unable to determine old version
+[2023-04-11 08:55:31] INFO root fetch - main [MainThread]: error
+[2023-04-11 08:55:31] INFO root fetch - processPackages [eargait]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-04-11 08:55:31] INFO root fetch - processPackages [diskcache]: Downloading https://files.pythonhosted.org/packages/1e/18/c34803f2df72589189bca2432c05302d2c3ae1c513f81181a786d1c25487/diskcache-5.5.1.tar.gz
+[2023-04-11 08:55:31] INFO root fetch - processPackages [odoo-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/8e/89/c33368b2f4ded99972244364d8910251fb06ce52c594020efc1973045a9c/odoo_addon_purchase_request-16.0.1.0.0.8-py3-none-any.whl
+[2023-04-11 08:55:31] INFO root fetch - processPackages [diskcache]: executing diffoscope
+[2023-04-11 08:55:31] INFO root fetch - processPackages [diskcache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diskcache-5.4.0.tar.gz tmp/diskcache-5.5.1.tar.gz --markdown 20230411/d/diskcache/5.4.0-5.5.1/diff.md --exclude *.pyd
+[2023-04-11 08:55:31] INFO root fetch - processPackages [eargait]: Downloading https://files.pythonhosted.org/packages/ef/fb/196397e596f07e74fdb500e590e78338612ea5fdda485074f4fd9d73660a/eargait-1.5.0.tar.gz
+[2023-04-11 08:55:31] INFO root fetch - processPackages [ANYstructure]: Downloading https://files.pythonhosted.org/packages/95/f5/6f3c3c5f75c96c56fba62e2715f98760902703c16b6dd630d16153424635/ANYstructure-4.8.tar.gz
+[2023-04-11 08:55:32] INFO root fetch - processPackages [eargait]: Downloading https://files.pythonhosted.org/packages/32/7f/fe7a6564e885e792ceab3d8d28e7a7af3f65371497ca01b83c5e47242a56/eargait-1.6.0.tar.gz
+[2023-04-11 08:55:32] INFO root fetch - processPackages [ANYstructure]: executing diffoscope
+[2023-04-11 08:55:32] INFO root fetch - processPackages [ANYstructure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ANYstructure-4.7.tar.gz tmp/ANYstructure-4.8.tar.gz --markdown 20230411/A/ANYstructure/4.7-4.8/diff.md --exclude *.pyd
+[2023-04-11 08:55:32] INFO root fetch - processPackages [odoo-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/0d/d1/4e43b9e658f256b20633846c736938767c0d80a2abd356e00d6d293485e7/odoo_addon_purchase_request-16.0.1.0.0.9-py3-none-any.whl
+[2023-04-11 08:55:32] INFO root fetch - processPackages [eargait]: executing diffoscope
+[2023-04-11 08:55:32] INFO root fetch - processPackages [eargait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eargait-1.5.0.tar.gz tmp/eargait-1.6.0.tar.gz --markdown 20230411/e/eargait/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-04-11 08:55:32] INFO root fetch - processPackages [odoo-addon-purchase-request]: executing diffoscope
+[2023-04-11 08:55:32] INFO root fetch - processPackages [odoo-addon-purchase-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_purchase_request-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_purchase_request-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230411/o/odoo-addon-purchase-request/16.0.1.0.0.8-16.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-04-11 08:55:32] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:33] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:34] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:36] INFO root fetch - main [MainThread]: success
+[2023-04-11 08:55:36] INFO root fetch - main [MainThread]: Store serial: [17657202]
