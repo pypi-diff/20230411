@@ -20934,3 +20934,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 60: invalid
 [2023-04-11 21:17:12] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:17:12] INFO root fetch - main [MainThread]: success
 [2023-04-11 21:17:12] INFO root fetch - main [MainThread]: Store serial: [17665234]
+[2023-04-11 21:22:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17665234]
+[2023-04-11 21:22:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-11 21:22:20] INFO root fetch - processPackages [dojo-truant]: New version: [2023.4.7.3] Old Version: [2023.4.7.2]
+[2023-04-11 21:22:20] INFO root fetch - processPackages [metaseg]: New version: [0.5.0] Old Version: [0.4.7]
+[2023-04-11 21:22:20] WARNING root fetch - processPackages [libmav]: Skipping, unable to determine old version
+[2023-04-11 21:22:20] INFO root fetch - main [MainThread]: error
+[2023-04-11 21:22:20] INFO root fetch - processPackages [cobib]: New version: [3.5.5] Old Version: [3.5.4]
+[2023-04-11 21:22:20] INFO root fetch - processPackages [elektra]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-11 21:22:20] INFO root fetch - processPackages [dojo-truant]: executing diffoscope
+[2023-04-11 21:22:20] INFO root fetch - processPackages [dojo-truant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dojo_truant-2023.4.7.2.tar.gz tmp/dojo_truant-2023.4.7.3.tar.gz --markdown 20230411/d/dojo-truant/2023.4.7.2-2023.4.7.3/diff.md --exclude *.pyd
+[2023-04-11 21:22:20] INFO root fetch - processPackages [traducteur]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-11 21:22:20] INFO root fetch - processPackages [elektra]: Downloading https://files.pythonhosted.org/packages/d7/34/23e468ff67b092f9acd388c83b9ab0b75a70f6abd3f24fd3b8e8c577a664/elektra-0.0.8.tar.gz
+[2023-04-11 21:22:20] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/bb/47/3f298f7b072d227a59e3bc8dd062ca3fd796fb1ac4d9bfdb2515af2bf24e/metaseg-0.5.0.tar.gz
+[2023-04-11 21:22:20] INFO root fetch - processPackages [cobib]: Downloading https://files.pythonhosted.org/packages/b9/4e/1951544cedce56f86208c96dd238910aefd3d2b4e0990296216a75b392c5/cobib-3.5.4.tar.gz
+[2023-04-11 21:22:20] INFO root fetch - processPackages [traducteur]: Downloading https://files.pythonhosted.org/packages/90/ae/d22fa1aab2d35c54d54761c36335560b53718ebc02aeddb2f4dcaf98417b/traducteur-0.4.3.tar.gz
+[2023-04-11 21:22:20] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-11 21:22:20] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.4.7.tar.gz tmp/metaseg-0.5.0.tar.gz --markdown 20230411/m/metaseg/0.4.7-0.5.0/diff.md --exclude *.pyd
+[2023-04-11 21:22:20] INFO root fetch - processPackages [cobib]: Downloading https://files.pythonhosted.org/packages/63/9a/682aa9acc5972bfa6449d3eca525b6ab5e9720345482fb747576237f45dd/cobib-3.5.5.tar.gz
+[2023-04-11 21:22:20] INFO root fetch - processPackages [traducteur]: Downloading https://files.pythonhosted.org/packages/1d/05/6c9e41e082165b8353fbb7ff360b5efe7f7effd7c9fac4e1c8424fb70c75/traducteur-0.4.4.tar.gz
+[2023-04-11 21:22:20] INFO root fetch - processPackages [cobib]: executing diffoscope
+[2023-04-11 21:22:20] INFO root fetch - processPackages [cobib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cobib-3.5.4.tar.gz tmp/cobib-3.5.5.tar.gz --markdown 20230411/c/cobib/3.5.4-3.5.5/diff.md --exclude *.pyd
+[2023-04-11 21:22:21] INFO root fetch - processPackages [traducteur]: executing diffoscope
+[2023-04-11 21:22:21] INFO root fetch - processPackages [traducteur]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traducteur-0.4.3.tar.gz tmp/traducteur-0.4.4.tar.gz --markdown 20230411/t/traducteur/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-11 21:22:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:22:21] INFO root fetch - processPackages [gliderpy]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-11 21:22:21] INFO root fetch - processPackages [gliderpy]: Downloading https://files.pythonhosted.org/packages/e5/9c/a0683a69ad5cd8f33acf046a5870523038b1529f86479ab180a57cefbaff/gliderpy-0.0.4.tar.gz
+[2023-04-11 21:22:21] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:22:22] INFO root fetch - processPackages [gliderpy]: Downloading https://files.pythonhosted.org/packages/e0/a9/f64c480718caaa9e6ed8f421c048c5060c98bfc570cb3d6d88608f1254bd/gliderpy-0.1.0.tar.gz
+[2023-04-11 21:22:22] INFO root fetch - processPackages [gliderpy]: executing diffoscope
+[2023-04-11 21:22:22] INFO root fetch - processPackages [gliderpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gliderpy-0.0.4.tar.gz tmp/gliderpy-0.1.0.tar.gz --markdown 20230411/g/gliderpy/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-11 21:22:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:22:22] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:22:23] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:22:25] INFO root fetch - processPackages [elektra]: Downloading https://files.pythonhosted.org/packages/4e/1c/7d63827b11e412ff6cdc47e0e74d6474f44576a825fc6ef3992b06836c0e/elektra-0.0.9.tar.gz
+[2023-04-11 21:22:26] INFO root fetch - processPackages [elektra]: executing diffoscope
+[2023-04-11 21:22:26] INFO root fetch - processPackages [elektra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230411:/home/abi/fetcher/20230411:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elektra-0.0.8.tar.gz tmp/elektra-0.0.9.tar.gz --markdown 20230411/e/elektra/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-11 21:22:27] INFO root fetch - main [MainThread]: success
+[2023-04-11 21:22:27] INFO root fetch - main [MainThread]: Store serial: [17665293]
